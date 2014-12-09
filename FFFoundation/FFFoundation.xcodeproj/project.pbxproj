@@ -12,6 +12,18 @@
 		07FF5E3A1A3761D1006928A9 /* FFFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E391A3761D1006928A9 /* FFFoundationTests.swift */; };
 		07FF5E441A376219006928A9 /* FunctionsAndHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */; };
 		07FF5E451A376219006928A9 /* FunctionsAndHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */; };
+		07FF5E491A376345006928A9 /* FFCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E471A376345006928A9 /* FFCacheManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07FF5E4A1A376345006928A9 /* FFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E481A376345006928A9 /* FFCacheManager.m */; };
+		07FF5E4B1A376345006928A9 /* FFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E481A376345006928A9 /* FFCacheManager.m */; };
+		07FF5E4E1A3765E2006928A9 /* FFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E4C1A3765E2006928A9 /* FFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07FF5E4F1A3765E2006928A9 /* FFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E4D1A3765E2006928A9 /* FFTimer.m */; };
+		07FF5E501A3765E2006928A9 /* FFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E4D1A3765E2006928A9 /* FFTimer.m */; };
+		07FF5E531A3768DD006928A9 /* FFObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E511A3768DD006928A9 /* FFObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07FF5E541A3768DD006928A9 /* FFObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E521A3768DD006928A9 /* FFObserver.m */; };
+		07FF5E551A3768DD006928A9 /* FFObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E521A3768DD006928A9 /* FFObserver.m */; };
+		07FF5E581A376960006928A9 /* NSOperationQueue+FFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E561A376960006928A9 /* NSOperationQueue+FFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07FF5E591A376960006928A9 /* NSOperationQueue+FFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E571A376960006928A9 /* NSOperationQueue+FFAdditions.m */; };
+		07FF5E5A1A376960006928A9 /* NSOperationQueue+FFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E571A376960006928A9 /* NSOperationQueue+FFAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +44,15 @@
 		07FF5E381A3761D1006928A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FF5E391A3761D1006928A9 /* FFFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFFoundationTests.swift; sourceTree = "<group>"; };
 		07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsAndHelpers.swift; sourceTree = "<group>"; };
+		07FF5E461A376344006928A9 /* FFFoundationTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FFFoundationTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		07FF5E471A376345006928A9 /* FFCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFCacheManager.h; sourceTree = "<group>"; };
+		07FF5E481A376345006928A9 /* FFCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFCacheManager.m; sourceTree = "<group>"; };
+		07FF5E4C1A3765E2006928A9 /* FFTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTimer.h; sourceTree = "<group>"; };
+		07FF5E4D1A3765E2006928A9 /* FFTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTimer.m; sourceTree = "<group>"; };
+		07FF5E511A3768DD006928A9 /* FFObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFObserver.h; sourceTree = "<group>"; };
+		07FF5E521A3768DD006928A9 /* FFObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFObserver.m; sourceTree = "<group>"; };
+		07FF5E561A376960006928A9 /* NSOperationQueue+FFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperationQueue+FFAdditions.h"; sourceTree = "<group>"; };
+		07FF5E571A376960006928A9 /* NSOperationQueue+FFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperationQueue+FFAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +95,17 @@
 		07FF5E291A3761D0006928A9 /* FFFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				07FF5E561A376960006928A9 /* NSOperationQueue+FFAdditions.h */,
+				07FF5E571A376960006928A9 /* NSOperationQueue+FFAdditions.m */,
+				07FF5E511A3768DD006928A9 /* FFObserver.h */,
+				07FF5E521A3768DD006928A9 /* FFObserver.m */,
+				07FF5E4C1A3765E2006928A9 /* FFTimer.h */,
+				07FF5E4D1A3765E2006928A9 /* FFTimer.m */,
+				07FF5E471A376345006928A9 /* FFCacheManager.h */,
+				07FF5E481A376345006928A9 /* FFCacheManager.m */,
 				07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */,
 				07FF5E2C1A3761D0006928A9 /* FFFoundation.h */,
+				07FF5E461A376344006928A9 /* FFFoundationTests-Bridging-Header.h */,
 				07FF5E2A1A3761D0006928A9 /* Supporting Files */,
 			);
 			path = FFFoundation;
@@ -114,6 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				07FF5E2D1A3761D0006928A9 /* FFFoundation.h in Headers */,
+				07FF5E491A376345006928A9 /* FFCacheManager.h in Headers */,
+				07FF5E581A376960006928A9 /* NSOperationQueue+FFAdditions.h in Headers */,
+				07FF5E531A3768DD006928A9 /* FFObserver.h in Headers */,
+				07FF5E4E1A3765E2006928A9 /* FFTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FF5E4A1A376345006928A9 /* FFCacheManager.m in Sources */,
 				07FF5E441A376219006928A9 /* FunctionsAndHelpers.swift in Sources */,
+				07FF5E591A376960006928A9 /* NSOperationQueue+FFAdditions.m in Sources */,
+				07FF5E4F1A3765E2006928A9 /* FFTimer.m in Sources */,
+				07FF5E541A3768DD006928A9 /* FFObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				07FF5E3A1A3761D1006928A9 /* FFFoundationTests.swift in Sources */,
+				07FF5E501A3765E2006928A9 /* FFTimer.m in Sources */,
+				07FF5E551A3768DD006928A9 /* FFObserver.m in Sources */,
 				07FF5E451A376219006928A9 /* FunctionsAndHelpers.swift in Sources */,
+				07FF5E5A1A376960006928A9 /* NSOperationQueue+FFAdditions.m in Sources */,
+				07FF5E4B1A376345006928A9 /* FFCacheManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +403,7 @@
 		07FF5E411A3761D1006928A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -372,12 +415,15 @@
 				INFOPLIST_FILE = FFFoundationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FFFoundation/FFFoundationTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		07FF5E421A3761D1006928A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -385,6 +431,7 @@
 				INFOPLIST_FILE = FFFoundationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FFFoundation/FFFoundationTests-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -5,24 +5,19 @@
 //  Copyright (c) 2013 Florian Friedrich. All rights reserved.
 //
 
-#import "FFCacheManager.h"
+#import <FFFoundation/FFCacheManager.h>
+#import <FFFoundation/FFTimer.h>
 #import <sys/xattr.h>
 
 #ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
 @import UIKit;
 #endif
 
-#if FFTIMER_AVAILABLE
-#import "FFTimer.h"
-#endif
-
 #pragma mark - static vars
 NSString *const FFDefaultCacheManagerName =  @"FFDefaultCacheManager";
 
-#if FFTIMER_AVAILABLE
 static NSTimeInterval const FFCacheManagerDefaultTimeout = 30.0;
 static NSTimeInterval const FFCacheManagerDefaultTimeoutTolerance = 10.0;
-#endif
 
 static char *const FFCacheIdentifyingAttributeName = "FFCMIdentifyingAttribute";
 
@@ -33,18 +28,13 @@ static NSDateFormatter *FFCacheDateFormatter = nil;
 @interface FFCacheManager ()
 @property (nonatomic, strong, readonly) NSMutableDictionary *cacheDict;
 @property (nonatomic, strong) NSFileManager *fileManager;
-
-#if FFTIMER_AVAILABLE
 @property (nonatomic, strong) FFTimer *clearCacheArrayTimer;
-#endif
 
 + (void)initStaticVars;
 
 - (void)checkForFolderCreation;
 
-#if FFTIMER_AVAILABLE
 - (void)setupClearCacheTimer;
-#endif
 
 - (void)resetCacheDict;
 
@@ -94,9 +84,6 @@ static NSDateFormatter *FFCacheDateFormatter = nil;
         
         [self checkForFolderCreation];
         
-#if FFTIMER_AVAILABLE
-        self.clearsMemoryCachePeriodically = YES;
-#endif
 #ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(resetCacheDict)
@@ -112,15 +99,12 @@ static NSDateFormatter *FFCacheDateFormatter = nil;
 }
 
 - (void)dealloc {
-#if FFTIMER_AVAILABLE
     [self.clearCacheArrayTimer invalidate];
-#endif
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [self.cacheDict removeAllObjects];
 }
 
 #pragma mark - properties
-#if FFTIMER_AVAILABLE
 - (void)setClearsMemoryCachePeriodically:(BOOL)clearsMemoryCachePeriodically {
     if (_clearsMemoryCachePeriodically != clearsMemoryCachePeriodically) {
         _clearsMemoryCachePeriodically = clearsMemoryCachePeriodically;
@@ -132,7 +116,6 @@ static NSDateFormatter *FFCacheDateFormatter = nil;
         }
     }
 }
-#endif
 
 #pragma mark - helper methods
 - (BOOL)isFileCachedWithUniqueName:(NSString *)uniqueName {
@@ -140,7 +123,6 @@ static NSDateFormatter *FFCacheDateFormatter = nil;
     [self.fileManager fileExistsAtPath:[self fullCachePathForFileWithUniqueName:uniqueName]];
 }
 
-#if FFTIMER_AVAILABLE
 - (void)setupClearCacheTimer {
     FFTimer *timer = [FFTimer timerWithTimeInterval:FFCacheManagerDefaultTimeout
                                              target:self selector:@selector(resetCacheDict)
@@ -151,7 +133,6 @@ static NSDateFormatter *FFCacheDateFormatter = nil;
     [[NSRunLoop mainRunLoop] addFFTimer:timer forMode:NSDefaultRunLoopMode];
     self.clearCacheArrayTimer = timer;
 }
-#endif
 
 - (void)checkForFolderCreation {
     NSString *path = [self managersCachePath];
@@ -167,8 +148,7 @@ static NSDateFormatter *FFCacheDateFormatter = nil;
 }
 
 - (NSString *)managersCachePath {
-    NSString *path = [FFCacheFolderPath stringByAppendingPathComponent:self.name];
-    return path;
+    return [FFCacheFolderPath stringByAppendingPathComponent:self.name];
 }
 
 - (NSString *)fullCachePathForFileWithUniqueName:(NSString *)name {

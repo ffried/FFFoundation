@@ -23,9 +23,7 @@ extern NSString *const FFDefaultCacheManagerName;
 
 @property (nonatomic, strong, readonly) NSString *name;
 
-#if FFTIMER_AVAILABLE
 @property (nonatomic) BOOL clearsMemoryCachePeriodically;
-#endif
 
 + (instancetype)defaultManager;
 - (instancetype)initWithName:(NSString *)name;

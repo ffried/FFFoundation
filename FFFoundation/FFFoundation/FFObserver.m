@@ -5,8 +5,8 @@
 //  Copyright (c) 2013 Florian Friedrich. All rights reserved.
 //
 
-#import "FFObserver.h"
-#import "NSOperationQueue+FFAdditions.h"
+#import <FFFoundation/FFObserver.h>
+#import <FFFoundation/FFFoundation-Swift.h>
 #import <objc/runtime.h>
 
 @interface NSObject (FFObserver)
@@ -158,12 +158,12 @@ static NSKeyValueObservingOptions const FFObserverOptions = (NSKeyValueObserving
     if (context == FF_CONTEXT) {
         if (self.block != nil) {
             __weak __typeof(self) welf = self;
-            [self.queue addOperationWithBlock:^{
+            [self.queue addOperationWithBlockAndWaitIfNotCurrentQueue:^{
                 __strong __typeof(welf) sself = welf;
                 if (sself.block != nil) {
                     sself.block(sself, object, keyPath, change);
                 }
-            } waitUntilFinished:!self.queue.isCurrentQueue];
+            }];
         }
     } else {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];

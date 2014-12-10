@@ -8,15 +8,14 @@
 
 import Foundation
 
-internal class FunctionsAndHelpers {}
-
-public func delay(delay: Double, block: ()->()) {
+public func delay(delay: Double, block: () -> ()) {
     dispatch_after(
         dispatch_time(
             DISPATCH_TIME_NOW,
             Int64(delay * Double(NSEC_PER_SEC))
         ),
-        dispatch_get_main_queue(), block)
+        dispatch_get_main_queue(),
+        block)
 }
 
 public func localizedString(key: String, comment: String = "") -> String {

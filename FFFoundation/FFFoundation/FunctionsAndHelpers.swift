@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Florian Friedrich. All rights reserved.
 //
 
-import Foundation
+import FFFoundation
 
 public func delay(delay: Double, block: () -> ()) {
     dispatch_after(

@@ -22,14 +22,14 @@ public func localizedString(key: String, comment: String = "") -> String {
     return NSLocalizedString(key, comment: comment)
 }
 
-func +=<K, V> (inout left: [K: V], right: [K: V]) -> [K: V] {
+public func +=<K, V> (inout left: [K: V], right: [K: V]) -> [K: V] {
     for (k, v) in right {
         left.updateValue(v, forKey: k)
     }
     return left
 }
 
-func +<K, V> (left: [K: V], right: [K: V]) -> [K: V] {
+public func +<K, V> (left: [K: V], right: [K: V]) -> [K: V] {
     var newDict = left
     newDict += right
     return newDict

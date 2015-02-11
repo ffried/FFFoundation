@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07B2F40D1A8BC68200F854FC /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */; };
 		07B37F411A38B91B00911042 /* NSOperationQueue+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */; };
 		07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */; };
 		07FF5E2D1A3761D0006928A9 /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E2C1A3761D0006928A9 /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
 		07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSOperationQueue+FFAdditions.swift"; sourceTree = "<group>"; };
 		07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+FFAdditions.swift"; sourceTree = "<group>"; };
 		07FF5E271A3761D0006928A9 /* FFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 			children = (
 				07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */,
 				07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */,
+				07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */,
 				07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */,
 				07FF5E511A3768DD006928A9 /* FFObserver.h */,
 				07FF5E521A3768DD006928A9 /* FFObserver.m */,
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07FF5E4A1A376345006928A9 /* FFCacheManager.m in Sources */,
+				07B2F40D1A8BC68200F854FC /* NotificationObserver.swift in Sources */,
 				07FF5E441A376219006928A9 /* FunctionsAndHelpers.swift in Sources */,
 				07B37F411A38B91B00911042 /* NSOperationQueue+FFAdditions.swift in Sources */,
 				07FF5E4F1A3765E2006928A9 /* FFTimer.m in Sources */,

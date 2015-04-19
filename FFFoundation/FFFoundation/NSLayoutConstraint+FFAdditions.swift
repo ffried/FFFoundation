@@ -15,9 +15,15 @@ import FFFoundation
 #endif
 
 public extension NSLayoutConstraint {
-    public class func constraintsWithVisualFormats(formats: [String], metrics: [NSObject: AnyObject]?, views: [NSObject: AnyObject]) -> [AnyObject] {
+    #if os(iOS)
+    typealias View = UIView
+    #else
+    typealias View = NSView
+    #endif
+    
+    public class func constraintsWithVisualFormats(formats: [String], metrics: [String: Float]?, views: [String: View]) -> [NSLayoutConstraint] {
         return formats.reduce([AnyObject]()) { constraints, format in
             return constraints + self.constraintsWithVisualFormat(format, options: nil, metrics: metrics, views: views)
-        }
+        } as! [NSLayoutConstraint]
     }
 }

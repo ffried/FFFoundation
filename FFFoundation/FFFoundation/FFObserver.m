@@ -74,7 +74,7 @@ static NSKeyValueObservingOptions const FFObserverOptions = (NSKeyValueObserving
         _observedObject = object;
         _keyPaths = keyPaths;
         _block = block;
-        self.queue = queue ?: [NSOperationQueue mainQueue];
+        self.queue = queue;
         [self.keyPaths enumerateObjectsUsingBlock:^(NSString *keyPath, NSUInteger idx, BOOL *stop) {
             [object addObserver:self forKeyPath:keyPath options:FFObserverOptions context:FF_CONTEXT];
         }];
@@ -107,7 +107,8 @@ static NSKeyValueObservingOptions const FFObserverOptions = (NSKeyValueObserving
                          queue:(NSOperationQueue *)queue {
     NSParameterAssert(target);
     NSParameterAssert(selector);
-    self = [self initWithObject:object keyPaths:keyPaths queue:queue block:nil];
+    FFObserverBlock tempBlock = ^(FFObserver *observer, id object, NSString *keyPath, NSDictionary *changeDictionary) {};
+    self = [self initWithObject:object keyPaths:keyPaths queue:queue block:tempBlock];
     if (self) {
         // Define the missing vars
         _target = target;
@@ -150,21 +151,25 @@ static NSKeyValueObservingOptions const FFObserverOptions = (NSKeyValueObserving
     return (self.keyPaths.count == 1) ? [self.keyPaths firstObject] : nil;
 }
 
+- (void)setQueue:(NSOperationQueue *)queue {
+    if (_queue != queue) {
+        _queue = queue ?: [NSOperationQueue mainQueue];
+    }
+}
+
 #pragma mark - KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(id)object
                         change:(NSDictionary *)change
                        context:(void *)context {
     if (context == FF_CONTEXT) {
-        if (self.block != nil) {
-            __weak __typeof(self) welf = self;
-            [self.queue addOperationWithBlockAndWaitIfNotCurrentQueue:^{
-                __strong __typeof(welf) sself = welf;
-                if (sself.block != nil) {
-                    sself.block(sself, object, keyPath, change);
-                }
-            }];
-        }
+        __weak __typeof(self) welf = self;
+        [self.queue addOperationWithBlockAndWaitIfNotCurrentQueue:^{
+            __strong __typeof(welf) sself = welf;
+            if (sself.block != nil) {
+                sself.block(sself, object, keyPath, change);
+            }
+        }];
     } else {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }

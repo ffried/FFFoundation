@@ -23,7 +23,7 @@ public extension NSLayoutConstraint {
     typealias View = NSView
     #endif
     
-    public class func constraintsWithVisualFormats(formats: [String], metrics: [String: FloatType]?, views: [String: View]) -> [NSLayoutConstraint] {
+    public static func constraintsWithVisualFormats(formats: [String], metrics: [String: FloatType]?, views: [String: View]) -> [NSLayoutConstraint] {
         return formats.reduce([AnyObject]()) { constraints, format in
             return constraints + self.constraintsWithVisualFormat(format, options: nil, metrics: metrics, views: views)
         } as! [NSLayoutConstraint]

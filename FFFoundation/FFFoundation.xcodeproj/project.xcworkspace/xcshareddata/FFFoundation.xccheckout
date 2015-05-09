@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>FF7786FF-4BE1-4A74-B3FE-1FDC94B90A0A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>FFFoundation</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>5134F3F7A71ADD498CB13E4A9C7574DD5D40E192</key>
 		<string>https://github.com/ffried/FFFoundation.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FFFoundation/FFFoundation.xcodeproj</string>
+	<string>FFFoundation/FFFoundation.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5134F3F7A71ADD498CB13E4A9C7574DD5D40E192</key>

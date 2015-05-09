@@ -157,13 +157,19 @@ static NSDateFormatter *FFCacheDateFormatter = nil;
 
 #pragma mark - Cache handling
 #pragma mark Caching files
-- (void)cacheFileWithUniqueName:(NSString *)uniqueName data:(NSData *)data identifyingAttribute:(NSString *)identifyingAttribute {
+- (void)cacheFileWithUniqueName:(NSString *)uniqueName
+                           data:(NSData *)data
+           identifyingAttribute:(NSString *)identifyingAttribute {
     [self.cacheDict setObject:data forKey:uniqueName];
     
     NSString *fullCachePath = [self fullCachePathForFileWithUniqueName:uniqueName];
     
     __autoreleasing NSError *error = nil;
-    [data writeToFile:fullCachePath options:NSDataWritingAtomic error:&error];
+    if (data) {
+        [data writeToFile:fullCachePath options:NSDataWritingAtomic error:&error];
+    } else if ([self.fileManager fileExistsAtPath:fullCachePath]) {
+        [self.fileManager removeItemAtPath:fullCachePath error:&error];
+    }
     if (error) {
         NSLog(@"Error while writing file to cache: %@", error);
     }
@@ -225,7 +231,8 @@ static NSDateFormatter *FFCacheDateFormatter = nil;
 }
 
 #pragma mark check for expiration
-- (BOOL)isFileCurrentWithUniqueName:(NSString *)uniqueName identifyingAttribute:(NSString *)identifyingAttribute {
+- (BOOL)isFileCurrentWithUniqueName:(NSString *)uniqueName
+               identifyingAttribute:(NSString *)identifyingAttribute {
     BOOL isCurrent = YES;
     
     NSString *fullCachePath = [self fullCachePathForFileWithUniqueName:uniqueName];

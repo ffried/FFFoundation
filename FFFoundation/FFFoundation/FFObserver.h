@@ -27,7 +27,7 @@
  *  @param changeDictionary The change dictionary.
  *  @see NSObject#observeValueForKeyPath:ofObject:change:context:
  */
-typedef void (^FFObserverBlock)(FFObserver *observer, id object, NSString *keyPath, NSDictionary *changeDictionary);
+typedef void (^FFObserverBlock)(FFObserver  * __nonnull observer, id __nonnull object, NSString * __nonnull keyPath, NSDictionary * __nonnull changeDictionary);
 
 /**
  *  Handles KVO with ease.
@@ -39,35 +39,35 @@ typedef void (^FFObserverBlock)(FFObserver *observer, id object, NSString *keyPa
  *  The block which will be called whenever a change is observed.
  *  Notice: This block is always set, even with target/selector initialization.
  */
-@property (nonatomic, copy, readonly) FFObserverBlock block;
+@property (nonatomic, copy, readonly, nonnull) FFObserverBlock block;
 /**
  *  The target for the selector.
  *  Only set if the observer was created with the corresponding initializer / class method.
  */
-@property (nonatomic, weak, readonly) id target;
+@property (nonatomic, weak, readonly, nullable) id target;
 /**
  *  The selector which will be called on the target.
  *  Only set if the observer was created with the corresponding initializer / class method.
  */
-@property (nonatomic, assign, readonly) SEL selector;
+@property (nonatomic, assign, readonly, nullable) SEL selector;
 
 /**
  *  The observed object.
  */
-@property (nonatomic, weak, readonly) id observedObject;
+@property (nonatomic, weak, readonly, nonnull) id observedObject;
 /**
  *  The observed keypaths.
  */
-@property (nonatomic, copy, readonly) NSArray *keyPaths;
+@property (nonatomic, copy, readonly, nonnull) NSArray *keyPaths;
 /**
  *  The observed keypath. Nil if multiple keypaths are observed.
  */
-@property (nonatomic, copy, readonly) NSString *keyPath;
+@property (nonatomic, copy, readonly, nullable) NSString *keyPath;
 
 /**
- *  The queue on which the callback will happen.
+ *  The queue on which the callback will happen. If set to nil it will be reset to mainQueue.
  */
-@property (nonatomic, strong) NSOperationQueue *queue;
+@property (nonatomic, strong, null_resettable) NSOperationQueue *queue;
 
 #pragma mark - Class Methods
 #pragma mark Single KeyPath
@@ -79,10 +79,10 @@ typedef void (^FFObserverBlock)(FFObserver *observer, id object, NSString *keyPa
  *  @param block   The block to call on observed changes.
  *  @return A new FFObserver instance.
  */
-+ (instancetype)observerWithObject:(id)object
-                           keyPath:(NSString *)keyPath
-                             queue:(NSOperationQueue *)queue
-                             block:(FFObserverBlock)block;
++ (nonnull instancetype)observerWithObject:(nonnull id)object
+                                   keyPath:(nonnull NSString *)keyPath
+                                     queue:(nullable NSOperationQueue *)queue
+                                     block:(nonnull FFObserverBlock)block;
 
 /**
  *  Creates an observer and registers it.
@@ -93,11 +93,11 @@ typedef void (^FFObserverBlock)(FFObserver *observer, id object, NSString *keyPa
  *  @param queue    The queue on which the callback should happen. Will be mainQueue if nil is passed.
  *  @return A new FFObserver instance.
  */
-+ (instancetype)observerWithObject:(id)object
-                           keyPath:(NSString *)keyPath
-                            target:(id)target
-                          selector:(SEL)selector
-                             queue:(NSOperationQueue *)queue;
++ (nonnull instancetype)observerWithObject:(nonnull id)object
+                                   keyPath:(nonnull NSString *)keyPath
+                                    target:(nonnull id)target
+                                  selector:(nonnull SEL)selector
+                                     queue:(nullable NSOperationQueue *)queue;
 
 #pragma mark Multiple KeyPaths
 /**
@@ -108,10 +108,10 @@ typedef void (^FFObserverBlock)(FFObserver *observer, id object, NSString *keyPa
  *  @param block    The block to call on observed changes.
  *  @return A new FFObserver instance.
  */
-+ (instancetype)observerWithObject:(id)object
-                          keyPaths:(NSArray *)keyPaths
-                             queue:(NSOperationQueue *)queue
-                             block:(FFObserverBlock)block;
++ (nonnull instancetype)observerWithObject:(nonnull id)object
+                                  keyPaths:(nonnull NSArray *)keyPaths
+                                     queue:(nullable NSOperationQueue *)queue
+                                     block:(nonnull FFObserverBlock)block;
 
 /**
  *  Creates an observer and registers it.
@@ -122,11 +122,11 @@ typedef void (^FFObserverBlock)(FFObserver *observer, id object, NSString *keyPa
  *  @param queue    The queue on which the callback should happen. Will be mainQueue if nil is passed.
  *  @return A new FFObserver instance.
  */
-+ (instancetype)observerWithObject:(id)object
-                          keyPaths:(NSArray *)keyPaths
-                            target:(id)target
-                          selector:(SEL)selector
-                             queue:(NSOperationQueue *)queue;
++ (nonnull instancetype)observerWithObject:(nonnull id)object
+                                  keyPaths:(nonnull NSArray *)keyPaths
+                                    target:(nonnull id)target
+                                  selector:(nonnull SEL)selector
+                                     queue:(nullable NSOperationQueue *)queue;
 
 #pragma mark - Initializers
 #pragma mark Single KeyPath
@@ -138,10 +138,10 @@ typedef void (^FFObserverBlock)(FFObserver *observer, id object, NSString *keyPa
  *  @param block   The block to call on observed changes.
  *  @return A new FFObserver instance.
  */
-- (instancetype)initWithObject:(id)object
-                       keyPath:(NSString *)keyPath
-                         queue:(NSOperationQueue *)queue
-                         block:(FFObserverBlock)block;
+- (nonnull instancetype)initWithObject:(nonnull id)object
+                               keyPath:(nonnull NSString *)keyPath
+                                 queue:(nullable NSOperationQueue *)queue
+                                 block:(nonnull FFObserverBlock)block;
 
 /**
  *  Creates an observer and registers it.
@@ -152,11 +152,11 @@ typedef void (^FFObserverBlock)(FFObserver *observer, id object, NSString *keyPa
  *  @param queue    The queue on which the callback should happen. Will be mainQueue if nil is passed.
  *  @return A new FFObserver instance.
  */
-- (instancetype)initWithObject:(id)object
-                       keyPath:(NSString *)keyPath
-                        target:(id)target
-                      selector:(SEL)selector
-                         queue:(NSOperationQueue *)queue;
+- (nonnull instancetype)initWithObject:(nonnull id)object
+                               keyPath:(nonnull NSString *)keyPath
+                                target:(nonnull id)target
+                              selector:(nonnull SEL)selector
+                                 queue:(nullable NSOperationQueue *)queue;
 
 #pragma mark Multiple KeyPaths
 /**
@@ -167,10 +167,10 @@ typedef void (^FFObserverBlock)(FFObserver *observer, id object, NSString *keyPa
  *  @param block    The block to call on observed changes.
  *  @return A new FFObserver instance.
  */
-- (instancetype)initWithObject:(id)object
-                      keyPaths:(NSArray *)keyPaths
-                         queue:(NSOperationQueue *)queue
-                         block:(FFObserverBlock)block NS_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithObject:(nonnull id)object
+                              keyPaths:(nonnull NSArray *)keyPaths
+                                 queue:(nullable NSOperationQueue *)queue
+                                 block:(nonnull FFObserverBlock)block NS_DESIGNATED_INITIALIZER;
 
 /**
  *  Creates an observer and registers it.
@@ -181,11 +181,11 @@ typedef void (^FFObserverBlock)(FFObserver *observer, id object, NSString *keyPa
  *  @param queue    The queue on which the callback should happen. Will be mainQueue if nil is passed.
  *  @return A new FFObserver instance.
  */
-- (instancetype)initWithObject:(id)object
-                      keyPaths:(NSArray *)keyPaths
-                        target:(id)target
-                      selector:(SEL)selector
-                         queue:(NSOperationQueue *)queue;
+- (nonnull instancetype)initWithObject:(nonnull id)object
+                              keyPaths:(nonnull NSArray *)keyPaths
+                                target:(nonnull id)target
+                              selector:(nonnull SEL)selector
+                                 queue:(nullable NSOperationQueue *)queue;
 
 @end
 
@@ -200,10 +200,10 @@ typedef void (^FFObserverBlock)(FFObserver *observer, id object, NSString *keyPa
  *  @param queue   The queue on which the callback should happen. Will be mainQueue if nil is passed.
  *  @return A new FFObserver instance.
  */
-+ (instancetype)observerWithObject:(id)object
-                           keyPath:(NSString *)keyPath
-                             block:(FFObserverBlock)block
-                             queue:(NSOperationQueue *)queue
++ (nonnull instancetype)observerWithObject:(nonnull id)object
+                                   keyPath:(nonnull NSString *)keyPath
+                                     block:(nonnull FFObserverBlock)block
+                                     queue:(nullable NSOperationQueue *)queue
 __deprecated_msg("Use obesrverWithObject:keyPath:queue:block: instead");
 
 /**
@@ -214,10 +214,10 @@ __deprecated_msg("Use obesrverWithObject:keyPath:queue:block: instead");
  *  @param selector The selector to call on the target. Must not be nil.
  *  @return A new FFObserver instance.
  */
-+ (instancetype)observerWithObject:(id)object
-                           keyPath:(NSString *)keyPath
-                            target:(id)target
-                          selector:(SEL)selector
++ (nonnull instancetype)observerWithObject:(nonnull id)object
+                                   keyPath:(nonnull NSString *)keyPath
+                                    target:(nonnull id)target
+                                  selector:(nonnull SEL)selector
 __deprecated_msg("Use observerWithObject:keyPath:target:selector:queue: instead");
 
 /**
@@ -228,10 +228,10 @@ __deprecated_msg("Use observerWithObject:keyPath:target:selector:queue: instead"
  *  @param queue   The queue on which the callback should happen. Will be mainQueue if nil is passed.
  *  @return A new FFObserver instance.
  */
-- (instancetype)initWithObject:(id)object
-                       keyPath:(NSString *)keyPath
-                         block:(FFObserverBlock)block
-                         queue:(NSOperationQueue *)queue
+- (nonnull instancetype)initWithObject:(nonnull id)object
+                               keyPath:(nonnull NSString *)keyPath
+                                 block:(nonnull FFObserverBlock)block
+                                 queue:(nullable NSOperationQueue *)queue
 __deprecated_msg("Use initWithObject:keyPath:queue:block: instead");
 
 /**
@@ -242,10 +242,10 @@ __deprecated_msg("Use initWithObject:keyPath:queue:block: instead");
  *  @param selector The selector to call on the target. Must not be nil.
  *  @return A new FFObserver instance.
  */
-- (instancetype)initWithObject:(id)object
-                       keyPath:(NSString *)keyPath
-                        target:(id)target
-                      selector:(SEL)selector
+- (nonnull instancetype)initWithObject:(nonnull id)object
+                               keyPath:(nonnull NSString *)keyPath
+                                target:(nonnull id)target
+                              selector:(nonnull SEL)selector
 __deprecated_msg("Use initWithObject:keyPath:target:selector:queue: instead");
 
 /**

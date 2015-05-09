@@ -20,7 +20,7 @@ public extension NSOperationQueue {
         return false
     }
     
-    public class func isCurrentQueueMainQueue() -> Bool {
+    public static func isCurrentQueueMainQueue() -> Bool {
         return NSOperationQueue.currentQueue()?.isMainQueue ?? false
     }
     

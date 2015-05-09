@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073645E41AFE191900FEC869 /* Array+Each.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073645E31AFE191900FEC869 /* Array+Each.swift */; };
 		07B2F40D1A8BC68200F854FC /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */; };
 		07B37F411A38B91B00911042 /* NSOperationQueue+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */; };
 		07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		073645E31AFE191900FEC869 /* Array+Each.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Each.swift"; sourceTree = "<group>"; };
 		07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
 		07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSOperationQueue+FFAdditions.swift"; sourceTree = "<group>"; };
 		07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+FFAdditions.swift"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */,
 				07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */,
+				073645E31AFE191900FEC869 /* Array+Each.swift */,
 				07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */,
 				07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */,
 				07FF5E511A3768DD006928A9 /* FFObserver.h */,
@@ -253,6 +256,7 @@
 				07B37F411A38B91B00911042 /* NSOperationQueue+FFAdditions.swift in Sources */,
 				07FF5E4F1A3765E2006928A9 /* FFTimer.m in Sources */,
 				07FF5E541A3768DD006928A9 /* FFObserver.m in Sources */,
+				073645E41AFE191900FEC869 /* Array+Each.swift in Sources */,
 				07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

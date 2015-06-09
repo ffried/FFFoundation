@@ -23,9 +23,10 @@ public extension NSLayoutConstraint {
     typealias View = NSView
     #endif
     
+    private static let defaultOptions = NSLayoutFormatOptions.DirectionLeadingToTrailing
     public static func constraintsWithVisualFormats(formats: [String], metrics: [String: FloatType]?, views: [String: View]) -> [NSLayoutConstraint] {
-        return formats.reduce([AnyObject]()) { constraints, format in
-            return constraints + self.constraintsWithVisualFormat(format, options: nil, metrics: metrics, views: views)
-        } as! [NSLayoutConstraint]
+        return formats.reduce([NSLayoutConstraint]()) {
+            $0 + constraintsWithVisualFormat($1, options: defaultOptions, metrics: metrics, views: views)
+        }
     }
 }

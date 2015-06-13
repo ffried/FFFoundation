@@ -187,6 +187,11 @@ typedef void (^FFObserverBlock)(FFObserver  * __nonnull observer, id __nonnull o
                               selector:(nonnull SEL)selector
                                  queue:(nullable NSOperationQueue *)queue;
 
+/**
+ *  Not available. Use one of the other initializers instead!
+ */
+- (nullable instancetype)init UNAVAILABLE_ATTRIBUTE;
+
 @end
 
 #pragma mark - Deprecated

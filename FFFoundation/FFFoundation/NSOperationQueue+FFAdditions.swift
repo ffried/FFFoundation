@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Florian Friedrich. All rights reserved.
 //
 
-import FFFoundation
+import Foundation
 
 public extension NSOperationQueue {
     public var isMainQueue: Bool {

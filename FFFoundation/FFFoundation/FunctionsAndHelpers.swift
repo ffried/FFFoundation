@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Florian Friedrich. All rights reserved.
 //
 
-import FFFoundation
-
 public func delay(delay: Double, block: () -> ()) {
     dispatch_after(
         dispatch_time(

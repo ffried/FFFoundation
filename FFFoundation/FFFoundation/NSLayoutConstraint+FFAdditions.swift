@@ -25,3 +25,19 @@ public extension NSLayoutConstraint {
         }
     }
 }
+
+public extension SequenceType where Generator.Element == NSLayoutConstraint {
+    public func activate() {
+        NSLayoutConstraint.activateConstraints(Array(self))
+    }
+    
+    public func deactivate() {
+        NSLayoutConstraint.deactivateConstraints(Array(self))
+    }
+}
+
+public extension SequenceType where Generator.Element == String {
+    public func constraintsWithViews(views: [String: NSLayoutConstraint.View], metrics: [String: Double]? = nil) -> [NSLayoutConstraint] {
+        return NSLayoutConstraint.constraintsWithVisualFormats(Array(self), metrics: metrics, views: views)
+    }
+}

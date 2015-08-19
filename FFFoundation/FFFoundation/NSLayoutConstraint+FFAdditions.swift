@@ -11,6 +11,7 @@
 #elseif os(OSX)
     import AppKit
 #endif
+import CoreGraphics
 
 public extension NSLayoutConstraint {
 #if os(iOS)
@@ -18,10 +19,11 @@ public extension NSLayoutConstraint {
 #elseif os(OSX)
     typealias View = NSView
 #endif
+    typealias MetricValueType = CGFloat
     
-    public static func constraintsWithVisualFormats(formats: [String], metrics: [String: Double]? = nil, views: [String: View]) -> [NSLayoutConstraint] {
+    public static func constraintsWithVisualFormats(formats: [String], options: NSLayoutFormatOptions = [], metrics: [String: MetricValueType]? = nil, views: [String: View]) -> [NSLayoutConstraint] {
         return formats.reduce([NSLayoutConstraint]()) {
-            $0 + constraintsWithVisualFormat($1, options: [], metrics: metrics, views: views)
+            $0 + constraintsWithVisualFormat($1, options: options, metrics: metrics, views: views)
         }
     }
 }
@@ -37,7 +39,7 @@ public extension SequenceType where Generator.Element == NSLayoutConstraint {
 }
 
 public extension SequenceType where Generator.Element == String {
-    public func constraintsWithViews(views: [String: NSLayoutConstraint.View], metrics: [String: Double]? = nil) -> [NSLayoutConstraint] {
-        return NSLayoutConstraint.constraintsWithVisualFormats(Array(self), metrics: metrics, views: views)
+    public func constraintsWithViews(views: [String: NSLayoutConstraint.View], options: NSLayoutFormatOptions = [], metrics: [String: NSLayoutConstraint.MetricValueType]? = nil) -> [NSLayoutConstraint] {
+        return NSLayoutConstraint.constraintsWithVisualFormats(Array(self), options: options, metrics: metrics, views: views)
     }
 }

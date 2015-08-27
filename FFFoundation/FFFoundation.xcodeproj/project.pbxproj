@@ -21,9 +21,6 @@
 		07FF5E4E1A3765E2006928A9 /* FFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E4C1A3765E2006928A9 /* FFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07FF5E4F1A3765E2006928A9 /* FFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E4D1A3765E2006928A9 /* FFTimer.m */; };
 		07FF5E501A3765E2006928A9 /* FFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E4D1A3765E2006928A9 /* FFTimer.m */; };
-		07FF5E531A3768DD006928A9 /* FFObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E511A3768DD006928A9 /* FFObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07FF5E541A3768DD006928A9 /* FFObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E521A3768DD006928A9 /* FFObserver.m */; };
-		07FF5E551A3768DD006928A9 /* FFObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E521A3768DD006928A9 /* FFObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,7 +142,6 @@
 			files = (
 				07FF5E2D1A3761D0006928A9 /* FFFoundation.h in Headers */,
 				07FF5E491A376345006928A9 /* FFCacheManager.h in Headers */,
-				07FF5E531A3768DD006928A9 /* FFObserver.h in Headers */,
 				07FF5E4E1A3765E2006928A9 /* FFTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,7 +247,6 @@
 				07FF5E441A376219006928A9 /* FunctionsAndHelpers.swift in Sources */,
 				07B37F411A38B91B00911042 /* NSOperationQueue+FFAdditions.swift in Sources */,
 				07FF5E4F1A3765E2006928A9 /* FFTimer.m in Sources */,
-				07FF5E541A3768DD006928A9 /* FFObserver.m in Sources */,
 				07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +257,6 @@
 			files = (
 				07FF5E3A1A3761D1006928A9 /* FFFoundationTests.swift in Sources */,
 				07FF5E501A3765E2006928A9 /* FFTimer.m in Sources */,
-				07FF5E551A3768DD006928A9 /* FFObserver.m in Sources */,
 				07FF5E451A376219006928A9 /* FunctionsAndHelpers.swift in Sources */,
 				07FF5E4B1A376345006928A9 /* FFCacheManager.m in Sources */,
 			);

@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Florian Friedrich. All rights reserved.
 //
 
-public func delay(delay: Double, block: () -> ()) {
+public func delay(delay: Double, block: dispatch_block_t) {
     dispatch_after(
         dispatch_time(
             DISPATCH_TIME_NOW,
@@ -14,6 +14,14 @@ public func delay(delay: Double, block: () -> ()) {
         ),
         dispatch_get_main_queue(),
         block)
+}
+
+public func runOnMainQueue(sync: Bool = false, block: dispatch_block_t) {
+    if sync {
+        dispatch_sync(dispatch_get_main_queue(), block)
+    } else {
+        dispatch_async(dispatch_get_main_queue(), block)
+    }
 }
 
 public func localizedString(key: String, comment: String = "") -> String {

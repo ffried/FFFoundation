@@ -16,5 +16,5 @@ FOUNDATION_EXPORT const unsigned char FFFoundationVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <FFFoundation/PublicHeader.h>
 #import <FFFoundation/FFCacheManager.h>
-#import <FFFoundation/FFObserver.h>
+//#import <FFFoundation/FFObserver.h>
 #import <FFFoundation/FFTimer.h>

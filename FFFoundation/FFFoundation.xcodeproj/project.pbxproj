@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07710BB81B9773FB008E5F51 /* SequenceTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07710BB71B9773FB008E5F51 /* SequenceTypeExtensions.swift */; settings = {ASSET_TAGS = (); }; };
 		07B2F40D1A8BC68200F854FC /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */; };
 		07B37F411A38B91B00911042 /* NSOperationQueue+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */; };
 		07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */; };
@@ -21,9 +22,6 @@
 		07FF5E4E1A3765E2006928A9 /* FFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E4C1A3765E2006928A9 /* FFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07FF5E4F1A3765E2006928A9 /* FFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E4D1A3765E2006928A9 /* FFTimer.m */; };
 		07FF5E501A3765E2006928A9 /* FFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E4D1A3765E2006928A9 /* FFTimer.m */; };
-		07FF5E531A3768DD006928A9 /* FFObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E511A3768DD006928A9 /* FFObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07FF5E541A3768DD006928A9 /* FFObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E521A3768DD006928A9 /* FFObserver.m */; };
-		07FF5E551A3768DD006928A9 /* FFObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E521A3768DD006928A9 /* FFObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07710BB71B9773FB008E5F51 /* SequenceTypeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTypeExtensions.swift; sourceTree = "<group>"; };
 		07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
 		07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSOperationQueue+FFAdditions.swift"; sourceTree = "<group>"; };
 		07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+FFAdditions.swift"; sourceTree = "<group>"; };
@@ -98,6 +97,7 @@
 				07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */,
 				07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */,
 				07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */,
+				07710BB71B9773FB008E5F51 /* SequenceTypeExtensions.swift */,
 				07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */,
 				07FF5E511A3768DD006928A9 /* FFObserver.h */,
 				07FF5E521A3768DD006928A9 /* FFObserver.m */,
@@ -145,7 +145,6 @@
 			files = (
 				07FF5E2D1A3761D0006928A9 /* FFFoundation.h in Headers */,
 				07FF5E491A376345006928A9 /* FFCacheManager.h in Headers */,
-				07FF5E531A3768DD006928A9 /* FFObserver.h in Headers */,
 				07FF5E4E1A3765E2006928A9 /* FFTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,12 +194,11 @@
 		07FF5E1E1A3761D0006928A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Florian Friedrich";
 				TargetAttributes = {
 					07FF5E261A3761D0006928A9 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 8AVR59FNSV;
 					};
 					07FF5E311A3761D1006928A9 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -251,8 +249,8 @@
 				07B2F40D1A8BC68200F854FC /* NotificationObserver.swift in Sources */,
 				07FF5E441A376219006928A9 /* FunctionsAndHelpers.swift in Sources */,
 				07B37F411A38B91B00911042 /* NSOperationQueue+FFAdditions.swift in Sources */,
+				07710BB81B9773FB008E5F51 /* SequenceTypeExtensions.swift in Sources */,
 				07FF5E4F1A3765E2006928A9 /* FFTimer.m in Sources */,
-				07FF5E541A3768DD006928A9 /* FFObserver.m in Sources */,
 				07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +261,6 @@
 			files = (
 				07FF5E3A1A3761D1006928A9 /* FFFoundationTests.swift in Sources */,
 				07FF5E501A3765E2006928A9 /* FFTimer.m in Sources */,
-				07FF5E551A3768DD006928A9 /* FFObserver.m in Sources */,
 				07FF5E451A376219006928A9 /* FunctionsAndHelpers.swift in Sources */,
 				07FF5E4B1A376345006928A9 /* FFCacheManager.m in Sources */,
 			);
@@ -301,6 +298,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -377,6 +375,7 @@
 				INFOPLIST_FILE = FFFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -395,6 +394,7 @@
 				INFOPLIST_FILE = FFFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -414,6 +414,7 @@
 				);
 				INFOPLIST_FILE = FFFoundationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -429,6 +430,7 @@
 				);
 				INFOPLIST_FILE = FFFoundationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -139,6 +139,10 @@ static NSKeyValueObservingOptions const FFObserverOptions = (NSKeyValueObserving
     return self;
 }
 
+- (nullable instancetype)init {
+    return nil;
+}
+
 #pragma mark - Deallocation
 - (void)dealloc {
     if (self.observedObject != nil) {

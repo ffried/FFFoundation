@@ -6,22 +6,22 @@
 //  Copyright (c) 2014 Florian Friedrich. All rights reserved.
 //
 
-import FFFoundation
+import Foundation
 
 public extension NSOperationQueue {
     public var isMainQueue: Bool {
-        return self == NSOperationQueue.mainQueue()
+        return self === self.dynamicType.mainQueue()
     }
     
     public var isCurrentQueue: Bool {
-        if let queue = NSOperationQueue.currentQueue() {
-            return self == queue
+        if let queue = self.dynamicType.currentQueue() {
+            return self === queue
         }
         return false
     }
     
     public static func isCurrentQueueMainQueue() -> Bool {
-        return NSOperationQueue.currentQueue()?.isMainQueue ?? false
+        return self.mainQueue().isCurrentQueue
     }
     
     public func addOperationWithBlock(block: () -> (), completion: () -> ()) {

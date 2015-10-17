@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Florian Friedrich. All rights reserved.
 //
 
-import FFFoundation
+import Foundation
 
 public class NotificationObserver {
     public typealias ObserverBlock = (NSNotification!) -> Void

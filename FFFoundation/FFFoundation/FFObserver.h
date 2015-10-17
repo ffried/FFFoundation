@@ -54,7 +54,7 @@ typedef void (^FFObserverBlock)(FFObserver  * __nonnull observer, id __nonnull o
 /**
  *  The observed object.
  */
-@property (nonatomic, weak, readonly, nonnull) id observedObject;
+@property (nonatomic, weak, readonly) id observedObject;
 /**
  *  The observed keypaths.
  */
@@ -186,6 +186,11 @@ typedef void (^FFObserverBlock)(FFObserver  * __nonnull observer, id __nonnull o
                                 target:(nonnull id)target
                               selector:(nonnull SEL)selector
                                  queue:(nullable NSOperationQueue *)queue;
+
+/**
+ *  Not available. Use one of the other initializers instead!
+ */
+- (nullable instancetype)init UNAVAILABLE_ATTRIBUTE;
 
 @end
 

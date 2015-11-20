@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07710BB81B9773FB008E5F51 /* SequenceTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07710BB71B9773FB008E5F51 /* SequenceTypeExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		07710BB81B9773FB008E5F51 /* SequenceTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07710BB71B9773FB008E5F51 /* SequenceTypeExtensions.swift */; };
 		07B2F40D1A8BC68200F854FC /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */; };
 		07B37F411A38B91B00911042 /* NSOperationQueue+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */; };
 		07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */; };
+		07BDB0321BFF8E3700D089E6 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BDB0311BFF8E3700D089E6 /* StringExtensions.swift */; };
 		07FF5E2D1A3761D0006928A9 /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E2C1A3761D0006928A9 /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07FF5E331A3761D1006928A9 /* FFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FF5E271A3761D0006928A9 /* FFFoundation.framework */; };
 		07FF5E3A1A3761D1006928A9 /* FFFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E391A3761D1006928A9 /* FFFoundationTests.swift */; };
@@ -39,6 +40,7 @@
 		07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
 		07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSOperationQueue+FFAdditions.swift"; sourceTree = "<group>"; };
 		07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+FFAdditions.swift"; sourceTree = "<group>"; };
+		07BDB0311BFF8E3700D089E6 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		07FF5E271A3761D0006928A9 /* FFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FF5E2B1A3761D0006928A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FF5E2C1A3761D0006928A9 /* FFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFFoundation.h; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */,
 				07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */,
 				07710BB71B9773FB008E5F51 /* SequenceTypeExtensions.swift */,
+				07BDB0311BFF8E3700D089E6 /* StringExtensions.swift */,
 				07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */,
 				07FF5E511A3768DD006928A9 /* FFObserver.h */,
 				07FF5E521A3768DD006928A9 /* FFObserver.m */,
@@ -246,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07BDB0321BFF8E3700D089E6 /* StringExtensions.swift in Sources */,
 				07FF5E4A1A376345006928A9 /* FFCacheManager.m in Sources */,
 				07B2F40D1A8BC68200F854FC /* NotificationObserver.swift in Sources */,
 				07FF5E441A376219006928A9 /* FunctionsAndHelpers.swift in Sources */,

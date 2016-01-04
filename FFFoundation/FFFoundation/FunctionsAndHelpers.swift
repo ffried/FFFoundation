@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Florian Friedrich. All rights reserved.
 //
 
-public func delay(delay: Double, block: dispatch_block_t) {
+public func delay(delay: Double = 0.0, block: dispatch_block_t) {
     dispatch_after(
         dispatch_time(
             DISPATCH_TIME_NOW,

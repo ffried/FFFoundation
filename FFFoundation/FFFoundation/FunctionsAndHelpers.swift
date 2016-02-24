@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Florian Friedrich. All rights reserved.
 //
 
+import Foundation
+
 public func delay(delay: Double = 0.0, block: dispatch_block_t) {
     dispatch_after(
         dispatch_time(

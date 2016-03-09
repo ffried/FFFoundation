@@ -15,13 +15,17 @@ import CoreGraphics
 
 public extension NSLayoutConstraint {
 #if os(iOS)
-    typealias View = UIView
+    typealias ViewType = UIView
 #elseif os(OSX)
-    typealias View = NSView
+    typealias ViewType = NSView
 #endif
+    typealias VisualFormatType = String
     typealias MetricValueType = CGFloat
+    typealias MetricsDictionary = [String: MetricValueType]
+    typealias ViewsDictionary = [String: ViewType]
     
-    public static func constraintsWithVisualFormats(formats: [String], options: NSLayoutFormatOptions = [], metrics: [String: MetricValueType]? = nil, views: [String: View]) -> [NSLayoutConstraint] {
+    
+    public static func constraintsWithVisualFormats<S: SequenceType where S.Generator.Element == VisualFormatType>(formats: S, options: NSLayoutFormatOptions = [], metrics: MetricsDictionary? = nil, views: ViewsDictionary) -> [NSLayoutConstraint] {
         return formats.reduce([NSLayoutConstraint]()) {
             $0 + constraintsWithVisualFormat($1, options: options, metrics: metrics, views: views)
         }
@@ -39,7 +43,7 @@ public extension SequenceType where Generator.Element == NSLayoutConstraint {
 }
 
 public extension SequenceType where Generator.Element == String {
-    public func constraintsWithViews(views: [String: NSLayoutConstraint.View], options: NSLayoutFormatOptions = [], metrics: [String: NSLayoutConstraint.MetricValueType]? = nil) -> [NSLayoutConstraint] {
-        return NSLayoutConstraint.constraintsWithVisualFormats(Array(self), options: options, metrics: metrics, views: views)
+    public func constraintsWithViews(views: NSLayoutConstraint.ViewsDictionary, options: NSLayoutFormatOptions = [], metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {
+        return NSLayoutConstraint.constraintsWithVisualFormats(self, options: options, metrics: metrics, views: views)
     }
 }

@@ -46,7 +46,7 @@ public func +<K, V> (left: [K: V], right: [K: V]) -> [K: V] {
     return newDict
 }
 
-// Swift-aware NSStringFromClass
+/// Swift-aware NSStringFromClass
 public func StringFromClass(aClass: AnyClass) -> String {
     var className = NSStringFromClass(aClass)
     if let range = className.rangeOfString(".", options: .BackwardsSearch) {

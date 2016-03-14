@@ -19,6 +19,9 @@
 //
 
 #import <FFFoundation/FFFoundation.h>
+@import Foundation.NSObject;
+@import Founation.NSArray;
+@import Foundation.NSOperationQueue;
 
 @class FFObserver;
 /**
@@ -171,7 +174,7 @@ typedef void (^FFObserverBlock)(FFObserver  * __nonnull observer, id __nonnull o
  *  @return A new FFObserver instance.
  */
 - (nonnull instancetype)initWithObject:(nonnull id)object
-                              keyPaths:(nonnull NSArray *)keyPaths
+                              keyPaths:(nonnull NSArray<NSString *> *)keyPaths
                                  queue:(nullable NSOperationQueue *)queue
                                  block:(nonnull FFObserverBlock)block NS_DESIGNATED_INITIALIZER;
 
@@ -185,7 +188,7 @@ typedef void (^FFObserverBlock)(FFObserver  * __nonnull observer, id __nonnull o
  *  @return A new FFObserver instance.
  */
 - (nonnull instancetype)initWithObject:(nonnull id)object
-                              keyPaths:(nonnull NSArray *)keyPaths
+                              keyPaths:(nonnull NSArray<NSString *> *)keyPaths
                                 target:(nonnull id)target
                               selector:(nonnull SEL)selector
                                  queue:(nullable NSOperationQueue *)queue;

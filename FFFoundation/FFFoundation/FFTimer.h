@@ -19,33 +19,35 @@
 //
 
 #import <FFFoundation/FFFoundation.h>
+@import Foundation.NSObject;
+@import Foundation.NSDate;
+@import Foundation.NSInvocation;
+@import Foundation.NSRunLoop;
+@import Foundation.NSString;
 
-#define FFTIMER_AVAILABLE 1
+NS_ASSUME_NONNULL_BEGIN
 
-@interface FFTimer : NSObject
+@interface FFTimer: NSObject
 
-+ (instancetype)timerWithTimeInterval:(NSTimeInterval)ti invocation:(NSInvocation *)invocation repeats:(BOOL)yesOrNo;
-+ (instancetype)scheduledTimerWithTimeInterval:(NSTimeInterval)ti invocation:(NSInvocation *)invocation repeats:(BOOL)yesOrNo;
++ (FFTimer *)timerWithTimeInterval:(NSTimeInterval)ti invocation:(NSInvocation *)invocation repeats:(BOOL)yesOrNo;
++ (FFTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)ti invocation:(NSInvocation *)invocation repeats:(BOOL)yesOrNo;
 
-+ (instancetype)timerWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(id)userInfo repeats:(BOOL)yesOrNo;
-+ (instancetype)scheduledTimerWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(id)userInfo repeats:(BOOL)yesOrNo;
++ (FFTimer *)timerWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(nullable id)userInfo repeats:(BOOL)yesOrNo;
++ (FFTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(nullable id)userInfo repeats:(BOOL)yesOrNo;
 
-- (instancetype)initWithFireDate:(NSDate *)date interval:(NSTimeInterval)ti target:(id)t selector:(SEL)s userInfo:(id)ui repeats:(BOOL)rep;
+- (instancetype)initWithFireDate:(NSDate *)date interval:(NSTimeInterval)ti target:(id)t selector:(SEL)s userInfo:(nullable id)ui repeats:(BOOL)rep NS_DESIGNATED_INITIALIZER;
 
 - (void)fire;
 
-- (NSDate *)fireDate;
-- (void)setFireDate:(NSDate *)date;
+@property (copy) NSDate *fireDate;
+@property (readonly) NSTimeInterval timeInterval;
 
-- (NSTimeInterval)timeInterval;
-
-- (NSTimeInterval)tolerance NS_AVAILABLE(10_9, 7_0);
-- (void)setTolerance:(NSTimeInterval)tolerance NS_AVAILABLE(10_9, 7_0);
+@property NSTimeInterval tolerance NS_AVAILABLE(10_9, 7_0);
 
 - (void)invalidate;
-- (BOOL)isValid;
+@property (readonly, getter=isValid) BOOL valid;
 
-- (id)userInfo;
+@property (nullable, readonly, strong) id userInfo;
 
 @end
 
@@ -54,3 +56,5 @@
 - (void)addFFTimer:(FFTimer *)timer forMode:(NSString *)mode;
 
 @end
+
+NS_ASSUME_NONNULL_END

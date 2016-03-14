@@ -34,21 +34,21 @@
 @implementation FFTimer
 
 #pragma mark - NSTimer methods
-+ (instancetype)timerWithTimeInterval:(NSTimeInterval)ti invocation:(NSInvocation *)invocation repeats:(BOOL)yesOrNo {
++ (FFTimer *)timerWithTimeInterval:(NSTimeInterval)ti invocation:(NSInvocation *)invocation repeats:(BOOL)yesOrNo {
     return [[self alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:ti] interval:ti target:invocation.target selector:invocation.selector userInfo:nil repeats:yesOrNo];
 }
 
-+ (instancetype)scheduledTimerWithTimeInterval:(NSTimeInterval)ti invocation:(NSInvocation *)invocation repeats:(BOOL)yesOrNo {
++ (FFTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)ti invocation:(NSInvocation *)invocation repeats:(BOOL)yesOrNo {
     FFTimer *timer = [[self alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:ti] interval:ti target:invocation.target selector:invocation.selector userInfo:nil repeats:yesOrNo];
     [[NSRunLoop mainRunLoop] addFFTimer:timer forMode:NSDefaultRunLoopMode];
     return timer;
 }
 
-+ (instancetype)timerWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(id)userInfo repeats:(BOOL)yesOrNo {
++ (FFTimer *)timerWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(id)userInfo repeats:(BOOL)yesOrNo {
     return [[self alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:ti] interval:ti target:aTarget selector:aSelector userInfo:userInfo repeats:yesOrNo];
 }
 
-+ (instancetype)scheduledTimerWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(id)userInfo repeats:(BOOL)yesOrNo {
++ (FFTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(id)userInfo repeats:(BOOL)yesOrNo {
     FFTimer *timer = [[self alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:ti] interval:ti target:aTarget selector:aSelector userInfo:userInfo repeats:yesOrNo];
     [[NSRunLoop mainRunLoop] addFFTimer:timer forMode:NSDefaultRunLoopMode];
     return timer;
@@ -62,6 +62,15 @@
         self.timer = [[NSTimer alloc] initWithFireDate:date interval:ti target:self selector:@selector(timerFired:) userInfo:ui repeats:rep];
     }
     return self;
+}
+
+- (instancetype)init {
+    return [self initWithFireDate:[NSDate date]
+                         interval:0.0
+                           target:[[NSObject alloc] init]
+                         selector:@selector(description)
+                         userInfo:nil
+                          repeats:NO];
 }
 
 - (void)fire {

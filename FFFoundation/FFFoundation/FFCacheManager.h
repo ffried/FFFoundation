@@ -19,6 +19,11 @@
 //
 
 #import <FFFoundation/FFFoundation.h>
+@import Foundation.NSObject;
+@import Foundation.NSString;
+@import Foundation.NSData;
+@import Foundation.NSURL;
+@import Foundation.NSDate;
 
 extern NSString * __nonnull const FFDefaultCacheManagerName;
 

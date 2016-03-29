@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072F6B571CAAB88A00C2570F /* NSLocale+LanguageRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F6B561CAAB88A00C2570F /* NSLocale+LanguageRegion.swift */; };
 		076623301C04889200A245AA /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766232F1C04889200A245AA /* NSAttributedStringExtensions.swift */; };
 		07710BB81B9773FB008E5F51 /* SequenceTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07710BB71B9773FB008E5F51 /* SequenceTypeExtensions.swift */; };
 		079DA3561C96E2F4008B2612 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DA3551C96E2F4008B2612 /* Timer.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		072F6B561CAAB88A00C2570F /* NSLocale+LanguageRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLocale+LanguageRegion.swift"; sourceTree = "<group>"; };
 		0766232F1C04889200A245AA /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
 		07710BB71B9773FB008E5F51 /* SequenceTypeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTypeExtensions.swift; sourceTree = "<group>"; };
 		079DA3551C96E2F4008B2612 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				07710BB71B9773FB008E5F51 /* SequenceTypeExtensions.swift */,
 				07BDB0311BFF8E3700D089E6 /* StringExtensions.swift */,
 				0766232F1C04889200A245AA /* NSAttributedStringExtensions.swift */,
+				072F6B561CAAB88A00C2570F /* NSLocale+LanguageRegion.swift */,
 				07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */,
 				079DA3551C96E2F4008B2612 /* Timer.swift */,
 				07FF5E511A3768DD006928A9 /* FFObserver.h */,
@@ -263,6 +266,7 @@
 				07B2F40D1A8BC68200F854FC /* NotificationObserver.swift in Sources */,
 				07FF5E441A376219006928A9 /* FunctionsAndHelpers.swift in Sources */,
 				07B37F411A38B91B00911042 /* NSOperationQueue+FFAdditions.swift in Sources */,
+				072F6B571CAAB88A00C2570F /* NSLocale+LanguageRegion.swift in Sources */,
 				076623301C04889200A245AA /* NSAttributedStringExtensions.swift in Sources */,
 				07710BB81B9773FB008E5F51 /* SequenceTypeExtensions.swift in Sources */,
 				07FF5E4F1A3765E2006928A9 /* FFTimer.m in Sources */,

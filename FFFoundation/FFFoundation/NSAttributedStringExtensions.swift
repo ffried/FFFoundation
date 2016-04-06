@@ -19,16 +19,31 @@
 //
 
 import Foundation
-import CoreGraphics
+#if os(iOS)
+    import UIKit
+#elseif os(OSX)
+    import AppKit
+#endif
 
 public extension NSAttributedString {
-    public func sizeForWidth(width: CGFloat) -> CGSize {
+    public final func sizeForWidth(width: CGFloat) -> CGSize {
         let boundingSize = CGSize(width: width, height: CGFloat.max)
-        let rawSize = boundingRectWithSize(boundingSize, options: [.UsesLineFragmentOrigin], context: nil)
+        let options: NSStringDrawingOptions = [.UsesLineFragmentOrigin]
+        let rawSize: CGRect
+        #if os(iOS)
+            rawSize = boundingRectWithSize(boundingSize, options: options, context: nil)
+        #endif
+        #if os(OSX)
+            if #available(OSX 10.11, *) {
+                rawSize = boundingRectWithSize(boundingSize, options: options, context: nil)
+            } else {
+                rawSize = boundingRectWithSize(boundingSize, options: options)
+            }
+        #endif
         return CGSize(width: ceil(rawSize.width), height: ceil(rawSize.height))
     }
     
-    public func heightForWidth(width: CGFloat) -> CGFloat {
+    public final func heightForWidth(width: CGFloat) -> CGFloat {
         return sizeForWidth(width).height
     }
 }

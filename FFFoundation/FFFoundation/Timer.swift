@@ -21,25 +21,28 @@
 import Foundation
 import libkern
 
-public final class Timer {
+public final class Timer<T> {
     public typealias TimerBlock = Timer -> Void
     
     public let interval: NSTimeInterval
     public let repeats: Bool
     public let block: TimerBlock
     
-    public var userInfo: AnyObject?
+    public var userInfo: T?
     
     public var tolerance: NSTimeInterval = 0.0 {
         didSet { applyTimerProperties() }
     }
     
+    public private(set) var isValid: Bool = true
+    
     private let queue = dispatch_queue_create(nil, DISPATCH_QUEUE_SERIAL)
     private lazy var timer: dispatch_source_t = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, DISPATCH_TIMER_STRICT, self.queue)
     
-    public init(interval: NSTimeInterval, repeats: Bool = false, queue: dispatch_queue_t = dispatch_get_main_queue(), block: TimerBlock) {
+    public init(interval: NSTimeInterval, repeats: Bool = false, queue: dispatch_queue_t = dispatch_get_main_queue(), userInfo: T? = nil, block: TimerBlock) {
         self.interval = interval
         self.repeats = repeats
+        self.userInfo = userInfo
         self.block = block
         dispatch_set_target_queue(self.queue, queue)
     }
@@ -72,8 +75,6 @@ public final class Timer {
         isValid = false
     }
     
-    public private(set) var isValid: Bool = true
-    
     private final func performFire() {
         guard isValid else { return }
         block(self)
@@ -86,3 +87,5 @@ public final class Timer {
         performFire()
     }
 }
+
+public typealias AnyTimer = Timer<Any>

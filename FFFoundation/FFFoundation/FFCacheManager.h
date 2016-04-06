@@ -25,36 +25,40 @@
 @import Foundation.NSURL;
 @import Foundation.NSDate;
 
-extern NSString * __nonnull const FFDefaultCacheManagerName;
+NS_ASSUME_NONNULL_BEGIN
+
+extern NSString * const FFDefaultCacheManagerName;
 
 @interface FFCacheManager : NSObject
 
-@property (nonatomic, strong, readonly, nonnull) NSString *name;
+@property (nonatomic, strong, readonly) NSString *name;
 
 @property (nonatomic) BOOL clearsMemoryCachePeriodically;
 
-+ (nonnull instancetype)defaultManager;
-- (nonnull instancetype)initWithName:(nonnull NSString *)name;
++ (instancetype)defaultManager;
+- (instancetype)initWithName:(NSString *)name;
 
-- (nullable NSData *)cachedFileWithUniqueName:(nonnull NSString *)uniqueName;
+- (nullable NSData *)cachedFileWithUniqueName:(NSString *)uniqueName;
 
-- (void)cacheFileWithUniqueName:(nonnull NSString *)uniqueName data:(nullable NSData *)data;
-- (void)cacheFileWithUniqueName:(nonnull NSString *)uniqueName
+- (void)cacheFileWithUniqueName:(NSString *)uniqueName data:(nullable NSData *)data;
+- (void)cacheFileWithUniqueName:(NSString *)uniqueName
                            data:(nullable NSData *)data
                      expiryDate:(nullable NSDate *)expiryDate;
-- (void)cacheFileWithUniqueName:(nonnull NSString *)uniqueName
+- (void)cacheFileWithUniqueName:(NSString *)uniqueName
                            data:(nullable NSData *)data
            identifyingAttribute:(nullable NSString *)identifyingAttribute;
 
-- (BOOL)isFileCurrentWithUniqueName:(nonnull NSString *)uniqueName;
-- (BOOL)isFileCurrentWithUniqueName:(nonnull NSString *)uniqueName
+- (BOOL)isFileCurrentWithUniqueName:(NSString *)uniqueName;
+- (BOOL)isFileCurrentWithUniqueName:(NSString *)uniqueName
                identifyingAttribute:(nullable NSString *)identifyingAttribute;
 
-- (void)deleteFileFromCacheWithUniqueName:(nonnull NSString *)uniqueName;
+- (void)deleteFileFromCacheWithUniqueName:(NSString *)uniqueName;
 
-- (nullable NSURL *)urlOfCachedFileWithUniqueName:(nonnull NSString *)uniqueName;
+- (nullable NSURL *)urlOfCachedFileWithUniqueName:(NSString *)uniqueName;
 
 - (void)clearMemoryCache;
 - (void)clearCache;
 
 @end
+
+NS_ASSUME_NONNULL_END

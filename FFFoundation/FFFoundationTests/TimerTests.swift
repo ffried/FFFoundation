@@ -11,7 +11,7 @@ import FFFoundation
 
 class TimerTests: XCTestCase {
     
-    var timer: Timer? = nil
+    var timer: AnyTimer? = nil
 
     override func setUp() {
         super.setUp()
@@ -28,7 +28,7 @@ class TimerTests: XCTestCase {
         var date = NSDate()
         let timerInterval: NSTimeInterval = 2.0
         let isMainThread = NSThread.isMainThread()
-        timer = Timer(interval: timerInterval, block: { timer in
+        timer = AnyTimer(interval: timerInterval, block: { timer in
             let interval = NSDate().timeIntervalSinceDate(date)
             XCTAssertEqualWithAccuracy(interval, timerInterval, accuracy: 0.02)
             XCTAssertEqual(NSThread.isMainThread(), isMainThread)
@@ -44,7 +44,7 @@ class TimerTests: XCTestCase {
         var date = NSDate()
         let timerInterval: NSTimeInterval = 2.0
         let tolerance: NSTimeInterval = 0.5
-        timer = Timer(interval: timerInterval, block: { timer in
+        timer = AnyTimer(interval: timerInterval, block: { timer in
             let interval = NSDate().timeIntervalSinceDate(date)
             XCTAssertEqualWithAccuracy(interval, timerInterval, accuracy: tolerance)
             expectation.fulfill()
@@ -62,7 +62,7 @@ class TimerTests: XCTestCase {
         let tolerance: NSTimeInterval = 0.5
         let repeats = 5
         var counter = 0
-        timer = Timer(interval: timerInterval, repeats: true, block: { timer in
+        timer = AnyTimer(interval: timerInterval, repeats: true, block: { timer in
             let interval = NSDate().timeIntervalSinceDate(date)
             XCTAssertEqualWithAccuracy(interval, timerInterval, accuracy: tolerance)
             counter += 1

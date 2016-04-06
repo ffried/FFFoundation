@@ -33,7 +33,7 @@ public extension NSOperationQueue {
     }
     
     public static func isCurrentQueueMainQueue() -> Bool {
-        return self.mainQueue().isCurrentQueue
+        return mainQueue().isCurrentQueue
     }
     
     public func addOperationWithBlock(block: () -> (), completion: () -> ()) {
@@ -43,12 +43,15 @@ public extension NSOperationQueue {
     }
     
     public func addOperationWithBlockAndWait(block: () -> ()) {
-        let operation = NSBlockOperation(block: block)
-        addOperations([operation], waitUntilFinished: true)
+        addOperationWithBlock(block, andWait: true)
     }
     
     public func addOperationWithBlockAndWaitIfNotCurrentQueue(block: () -> ()) {
+        addOperationWithBlock(block, andWait: !isCurrentQueue)
+    }
+    
+    private final func addOperationWithBlock(block: () -> (), andWait wait: Bool) {
         let operation = NSBlockOperation(block: block)
-        addOperations([operation], waitUntilFinished: !isCurrentQueue)
+        addOperations([operation], waitUntilFinished: wait)
     }
 }

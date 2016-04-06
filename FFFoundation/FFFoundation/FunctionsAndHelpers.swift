@@ -51,10 +51,10 @@ public func +=<K, V> (inout left: [K: V], right: [K: V]) -> [K: V] {
 
 public func +<K, V> (left: [K: V], right: [K: V]) -> [K: V] {
     var newDict = left
-    for (k, v) in right {
-        newDict.updateValue(v, forKey: k)
-    }
-//    newDict += right
+//    for (k, v) in right {
+//        newDict.updateValue(v, forKey: k)
+//    }
+    newDict += right
     return newDict
 }
 

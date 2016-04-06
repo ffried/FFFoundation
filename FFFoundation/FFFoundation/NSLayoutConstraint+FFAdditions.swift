@@ -23,8 +23,8 @@
 #elseif os(OSX)
     import AppKit
 #endif
-import CoreGraphics
 
+@available(OSX 10.7, iOS 6.0, *)
 public extension NSLayoutConstraint {
 #if os(iOS)
     typealias ViewType = UIView
@@ -44,6 +44,7 @@ public extension NSLayoutConstraint {
     }
 }
 
+@available(OSX 10.7, iOS 6.0, *)
 public extension SequenceType where Generator.Element == NSLayoutConstraint {
     public final func activate() {
         NSLayoutConstraint.activateConstraints(Array(self))
@@ -54,6 +55,7 @@ public extension SequenceType where Generator.Element == NSLayoutConstraint {
     }
 }
 
+@available(OSX 10.7, iOS 6.0, *)
 public extension SequenceType where Generator.Element == String {
     public final func constraintsWithViews(views: NSLayoutConstraint.ViewsDictionary, options: NSLayoutFormatOptions = [], metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {
         return NSLayoutConstraint.constraintsWithVisualFormats(self, options: options, metrics: metrics, views: views)

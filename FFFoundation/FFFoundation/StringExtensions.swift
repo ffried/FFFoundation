@@ -21,7 +21,7 @@
 import Foundation
 import CoreGraphics
 
-extension String {
+public extension String {
     public mutating func appendPathComponent(comp: String) {
         self += hasSuffix("/") ? comp : ("/" + comp)
     }

@@ -586,6 +586,7 @@
 				07D72E881CB53DFC006FDB41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07FF5E211A3761D0006928A9 /* Build configuration list for PBXProject "FFFoundation" */ = {
 			isa = XCConfigurationList;

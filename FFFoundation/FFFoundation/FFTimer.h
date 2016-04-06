@@ -27,6 +27,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_UNAVAILABLE("Use Timer<T> or its typealias AnyTimer")
 @interface FFTimer: NSObject
 
 + (FFTimer *)timerWithTimeInterval:(NSTimeInterval)ti invocation:(NSInvocation *)invocation repeats:(BOOL)yesOrNo;
@@ -53,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSRunLoop (FFTimer)
 
-- (void)addFFTimer:(FFTimer *)timer forMode:(NSString *)mode;
+- (void)addFFTimer:(FFTimer *)timer forMode:(NSString *)mode NS_SWIFT_UNAVAILABLE("Use Timer<T> or its typealias AnyTimer");
 
 @end
 

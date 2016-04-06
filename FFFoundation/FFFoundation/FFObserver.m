@@ -275,21 +275,25 @@ static NSKeyValueObservingOptions const FFObserverOptions = (NSKeyValueObserving
     [self.ffobservers removeAllObjects];
 }
 
+- (void)ff_dealloc {
+    [self ff_tearDownObservers];
+    [self ff_dealloc];
+}
+
 + (void)load {
     static dispatch_once_t FF_KVOSwizzlingToken;
     dispatch_once(&FF_KVOSwizzlingToken, ^{
-        Class class = [self class];
         SEL originalSelector = NSSelectorFromString(@"dealloc");
         SEL swizzledSelector = @selector(ff_dealloc);
-        Method originalMethod = class_getInstanceMethod(class, originalSelector);
-        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+        Method originalMethod = class_getInstanceMethod(self, originalSelector);
+        Method swizzledMethod = class_getInstanceMethod(self, swizzledSelector);
         
-        BOOL didAddMethod = class_addMethod(class,
+        BOOL didAddMethod = class_addMethod(self,
                                             originalSelector,
                                             method_getImplementation(swizzledMethod),
                                             method_getTypeEncoding(swizzledMethod));
         if (didAddMethod) {
-            class_replaceMethod(class,
+            class_replaceMethod(self,
                                 swizzledSelector,
                                 method_getImplementation(originalMethod),
                                 method_getTypeEncoding(originalMethod));
@@ -297,11 +301,6 @@ static NSKeyValueObservingOptions const FFObserverOptions = (NSKeyValueObserving
             method_exchangeImplementations(originalMethod, swizzledMethod);
         }
     });
-}
-
-- (void)ff_dealloc {
-    [self ff_tearDownObservers];
-    [self ff_dealloc];
 }
 
 @end

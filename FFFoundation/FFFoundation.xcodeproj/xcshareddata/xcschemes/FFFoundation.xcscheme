@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "07FF5E261A3761D0006928A9"
                BuildableName = "FFFoundation.framework"
-               BlueprintName = "FFFoundation"
+               BlueprintName = "FFFoundation iOS"
                ReferencedContainer = "container:FFFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "07FF5E311A3761D1006928A9"
-               BuildableName = "FFFoundationTests.xctest"
-               BlueprintName = "FFFoundationTests"
+               BuildableName = "FFFoundation iOSTests.xctest"
+               BlueprintName = "FFFoundation iOSTests"
                ReferencedContainer = "container:FFFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "07FF5E311A3761D1006928A9"
-               BuildableName = "FFFoundationTests.xctest"
-               BlueprintName = "FFFoundationTests"
+               BuildableName = "FFFoundation iOSTests.xctest"
+               BlueprintName = "FFFoundation iOSTests"
                ReferencedContainer = "container:FFFoundation.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -58,7 +58,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07FF5E261A3761D0006928A9"
             BuildableName = "FFFoundation.framework"
-            BlueprintName = "FFFoundation"
+            BlueprintName = "FFFoundation iOS"
             ReferencedContainer = "container:FFFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,7 +80,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07FF5E261A3761D0006928A9"
             BuildableName = "FFFoundation.framework"
-            BlueprintName = "FFFoundation"
+            BlueprintName = "FFFoundation iOS"
             ReferencedContainer = "container:FFFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -98,7 +98,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07FF5E261A3761D0006928A9"
             BuildableName = "FFFoundation.framework"
-            BlueprintName = "FFFoundation"
+            BlueprintName = "FFFoundation iOS"
             ReferencedContainer = "container:FFFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

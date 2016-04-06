@@ -16,11 +16,22 @@
 		07B37F411A38B91B00911042 /* NSOperationQueue+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */; };
 		07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */; };
 		07BDB0321BFF8E3700D089E6 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BDB0311BFF8E3700D089E6 /* StringExtensions.swift */; };
+		07D72E8A1CB53F1C006FDB41 /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E2C1A3761D0006928A9 /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07D72E8B1CB53F38006FDB41 /* FFCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E471A376345006928A9 /* FFCacheManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07D72E8C1CB53F3C006FDB41 /* FFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E4C1A3765E2006928A9 /* FFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07D72E8D1CB53F49006FDB41 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DA3551C96E2F4008B2612 /* Timer.swift */; };
+		07D72E8E1CB53F4B006FDB41 /* FunctionsAndHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */; };
+		07D72E8F1CB53F4D006FDB41 /* NSLocale+LanguageRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F6B561CAAB88A00C2570F /* NSLocale+LanguageRegion.swift */; };
+		07D72E901CB53F51006FDB41 /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766232F1C04889200A245AA /* NSAttributedStringExtensions.swift */; };
+		07D72E911CB53F53006FDB41 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BDB0311BFF8E3700D089E6 /* StringExtensions.swift */; };
+		07D72E921CB53F56006FDB41 /* SequenceTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07710BB71B9773FB008E5F51 /* SequenceTypeExtensions.swift */; };
+		07D72E931CB53F59006FDB41 /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */; };
+		07D72E941CB53F5B006FDB41 /* NSLayoutConstraint+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */; };
+		07D72E951CB53F5E006FDB41 /* NSOperationQueue+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */; };
 		07FF5E2D1A3761D0006928A9 /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E2C1A3761D0006928A9 /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07FF5E331A3761D1006928A9 /* FFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FF5E271A3761D0006928A9 /* FFFoundation.framework */; };
 		07FF5E3A1A3761D1006928A9 /* FFFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E391A3761D1006928A9 /* FFFoundationTests.swift */; };
 		07FF5E441A376219006928A9 /* FunctionsAndHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */; };
-		07FF5E451A376219006928A9 /* FunctionsAndHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */; };
 		07FF5E491A376345006928A9 /* FFCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E471A376345006928A9 /* FFCacheManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07FF5E4A1A376345006928A9 /* FFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E481A376345006928A9 /* FFCacheManager.m */; };
 		07FF5E4B1A376345006928A9 /* FFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FF5E481A376345006928A9 /* FFCacheManager.m */; };
@@ -49,10 +60,12 @@
 		07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSOperationQueue+FFAdditions.swift"; sourceTree = "<group>"; };
 		07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+FFAdditions.swift"; sourceTree = "<group>"; };
 		07BDB0311BFF8E3700D089E6 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		07D72E821CB53DFC006FDB41 /* FFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07D72E861CB53DFC006FDB41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FF5E271A3761D0006928A9 /* FFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FF5E2B1A3761D0006928A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FF5E2C1A3761D0006928A9 /* FFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFFoundation.h; sourceTree = "<group>"; };
-		07FF5E321A3761D1006928A9 /* FFFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07FF5E321A3761D1006928A9 /* FFFoundation iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FFFoundation iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FF5E381A3761D1006928A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FF5E391A3761D1006928A9 /* FFFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFFoundationTests.swift; sourceTree = "<group>"; };
 		07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsAndHelpers.swift; sourceTree = "<group>"; };
@@ -65,6 +78,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		07D72E7E1CB53DFC006FDB41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07FF5E231A3761D0006928A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,11 +103,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07D72E831CB53DFC006FDB41 /* FFFoundation Mac */ = {
+			isa = PBXGroup;
+			children = (
+				07D72E861CB53DFC006FDB41 /* Info.plist */,
+			);
+			path = "FFFoundation Mac";
+			sourceTree = "<group>";
+		};
 		07FF5E1D1A3761D0006928A9 = {
 			isa = PBXGroup;
 			children = (
 				07FF5E291A3761D0006928A9 /* FFFoundation */,
 				07FF5E361A3761D1006928A9 /* FFFoundationTests */,
+				07D72E831CB53DFC006FDB41 /* FFFoundation Mac */,
 				07FF5E281A3761D0006928A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,7 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				07FF5E271A3761D0006928A9 /* FFFoundation.framework */,
-				07FF5E321A3761D1006928A9 /* FFFoundationTests.xctest */,
+				07FF5E321A3761D1006928A9 /* FFFoundation iOSTests.xctest */,
+				07D72E821CB53DFC006FDB41 /* FFFoundation.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +184,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		07D72E7F1CB53DFC006FDB41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D72E8A1CB53F1C006FDB41 /* FFFoundation.h in Headers */,
+				07D72E8B1CB53F38006FDB41 /* FFCacheManager.h in Headers */,
+				07D72E8C1CB53F3C006FDB41 /* FFTimer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07FF5E241A3761D0006928A9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,9 +207,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		07FF5E261A3761D0006928A9 /* FFFoundation */ = {
+		07D72E811CB53DFC006FDB41 /* FFFoundation Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07FF5E3D1A3761D1006928A9 /* Build configuration list for PBXNativeTarget "FFFoundation" */;
+			buildConfigurationList = 07D72E891CB53DFC006FDB41 /* Build configuration list for PBXNativeTarget "FFFoundation Mac" */;
+			buildPhases = (
+				07D72E7D1CB53DFC006FDB41 /* Sources */,
+				07D72E7E1CB53DFC006FDB41 /* Frameworks */,
+				07D72E7F1CB53DFC006FDB41 /* Headers */,
+				07D72E801CB53DFC006FDB41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FFFoundation Mac";
+			productName = "FFFoundation Mac";
+			productReference = 07D72E821CB53DFC006FDB41 /* FFFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		07FF5E261A3761D0006928A9 /* FFFoundation iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07FF5E3D1A3761D1006928A9 /* Build configuration list for PBXNativeTarget "FFFoundation iOS" */;
 			buildPhases = (
 				07FF5E221A3761D0006928A9 /* Sources */,
 				07FF5E231A3761D0006928A9 /* Frameworks */,
@@ -180,14 +238,14 @@
 			);
 			dependencies = (
 			);
-			name = FFFoundation;
+			name = "FFFoundation iOS";
 			productName = FFFoundation;
 			productReference = 07FF5E271A3761D0006928A9 /* FFFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		07FF5E311A3761D1006928A9 /* FFFoundationTests */ = {
+		07FF5E311A3761D1006928A9 /* FFFoundation iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07FF5E401A3761D1006928A9 /* Build configuration list for PBXNativeTarget "FFFoundationTests" */;
+			buildConfigurationList = 07FF5E401A3761D1006928A9 /* Build configuration list for PBXNativeTarget "FFFoundation iOSTests" */;
 			buildPhases = (
 				07FF5E2E1A3761D1006928A9 /* Sources */,
 				07FF5E2F1A3761D1006928A9 /* Frameworks */,
@@ -198,9 +256,9 @@
 			dependencies = (
 				07FF5E351A3761D1006928A9 /* PBXTargetDependency */,
 			);
-			name = FFFoundationTests;
+			name = "FFFoundation iOSTests";
 			productName = FFFoundationTests;
-			productReference = 07FF5E321A3761D1006928A9 /* FFFoundationTests.xctest */;
+			productReference = 07FF5E321A3761D1006928A9 /* FFFoundation iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -213,6 +271,9 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Florian Friedrich";
 				TargetAttributes = {
+					07D72E811CB53DFC006FDB41 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					07FF5E261A3761D0006928A9 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -233,13 +294,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07FF5E261A3761D0006928A9 /* FFFoundation */,
-				07FF5E311A3761D1006928A9 /* FFFoundationTests */,
+				07FF5E261A3761D0006928A9 /* FFFoundation iOS */,
+				07FF5E311A3761D1006928A9 /* FFFoundation iOSTests */,
+				07D72E811CB53DFC006FDB41 /* FFFoundation Mac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		07D72E801CB53DFC006FDB41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07FF5E251A3761D0006928A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,6 +326,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		07D72E7D1CB53DFC006FDB41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D72E8F1CB53F4D006FDB41 /* NSLocale+LanguageRegion.swift in Sources */,
+				07D72E941CB53F5B006FDB41 /* NSLayoutConstraint+FFAdditions.swift in Sources */,
+				07D72E951CB53F5E006FDB41 /* NSOperationQueue+FFAdditions.swift in Sources */,
+				07D72E931CB53F59006FDB41 /* NotificationObserver.swift in Sources */,
+				07D72E901CB53F51006FDB41 /* NSAttributedStringExtensions.swift in Sources */,
+				07D72E911CB53F53006FDB41 /* StringExtensions.swift in Sources */,
+				07D72E8D1CB53F49006FDB41 /* Timer.swift in Sources */,
+				07D72E921CB53F56006FDB41 /* SequenceTypeExtensions.swift in Sources */,
+				07D72E8E1CB53F4B006FDB41 /* FunctionsAndHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07FF5E221A3761D0006928A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,7 +367,6 @@
 				079DA3581C96EB32008B2612 /* TimerTests.swift in Sources */,
 				07FF5E3A1A3761D1006928A9 /* FFFoundationTests.swift in Sources */,
 				07FF5E501A3765E2006928A9 /* FFTimer.m in Sources */,
-				07FF5E451A376219006928A9 /* FunctionsAndHelpers.swift in Sources */,
 				07FF5E4B1A376345006928A9 /* FFCacheManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,12 +376,56 @@
 /* Begin PBXTargetDependency section */
 		07FF5E351A3761D1006928A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 07FF5E261A3761D0006928A9 /* FFFoundation */;
+			target = 07FF5E261A3761D0006928A9 /* FFFoundation iOS */;
 			targetProxy = 07FF5E341A3761D1006928A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		07D72E871CB53DFC006FDB41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "FFFoundation Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.FFFoundation-Mac";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		07D72E881CB53DFC006FDB41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "FFFoundation Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.FFFoundation-Mac";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		07FF5E3B1A3761D1006928A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -320,6 +448,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_NAME = FFFoundation;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -337,6 +466,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(FRAMEWORK_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -367,6 +497,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_NAME = FFFoundation;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -376,6 +507,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(FRAMEWORK_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -396,7 +528,6 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -414,7 +545,6 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -449,6 +579,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07D72E891CB53DFC006FDB41 /* Build configuration list for PBXNativeTarget "FFFoundation Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07D72E871CB53DFC006FDB41 /* Debug */,
+				07D72E881CB53DFC006FDB41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		07FF5E211A3761D0006928A9 /* Build configuration list for PBXProject "FFFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -458,7 +596,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07FF5E3D1A3761D1006928A9 /* Build configuration list for PBXNativeTarget "FFFoundation" */ = {
+		07FF5E3D1A3761D1006928A9 /* Build configuration list for PBXNativeTarget "FFFoundation iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07FF5E3E1A3761D1006928A9 /* Debug */,
@@ -467,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07FF5E401A3761D1006928A9 /* Build configuration list for PBXNativeTarget "FFFoundationTests" */ = {
+		07FF5E401A3761D1006928A9 /* Build configuration list for PBXNativeTarget "FFFoundation iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07FF5E411A3761D1006928A9 /* Debug */,

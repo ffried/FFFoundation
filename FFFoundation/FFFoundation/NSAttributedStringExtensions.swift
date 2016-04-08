@@ -26,6 +26,8 @@ import Foundation
 #endif
 
 public extension NSAttributedString {
+    public typealias AttributesDictionary = [String: AnyObject]
+    
     public final func sizeForWidth(width: CGFloat) -> CGSize {
         let boundingSize = CGSize(width: width, height: CGFloat.max)
         let options: NSStringDrawingOptions = [.UsesLineFragmentOrigin]

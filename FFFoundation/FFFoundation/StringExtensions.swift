@@ -32,11 +32,11 @@ public extension String {
         return newString
     }
     
-    public func sizeForWidth(width: CGFloat, attributes: Dictionary<String, AnyObject>? = nil) -> CGSize {
+    public func sizeForWidth(width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGSize {
         return NSAttributedString(string: self, attributes: attributes).sizeForWidth(width)
     }
     
-    public func heightForWidth(width: CGFloat, attributes: Dictionary<String, AnyObject>? = nil) -> CGFloat {
+    public func heightForWidth(width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGFloat {
         return sizeForWidth(width, attributes: attributes).height
     }
 }

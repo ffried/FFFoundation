@@ -21,6 +21,10 @@
     public extension Application {
         private var bundle: NSBundle { return NSBundle.mainBundle() }
         
+        public var identifier: String? {
+            return bundle.infoDictionary?["CFBundleIdentifier"] as? String
+        }
+        
         public var name: String? {
             return bundle.infoDictionary?["CFBundleName"] as? String
         }

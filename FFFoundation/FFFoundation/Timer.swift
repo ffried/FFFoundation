@@ -60,18 +60,16 @@ public final class Timer<T> {
     
     public func schedule() {
         applyTimerProperties()
-        dispatch_source_set_event_handler(timer) { [unowned self] in
-            self.performFire()
+        dispatch_source_set_event_handler(timer) { [weak self] in
+            self?.performFire()
         }
         dispatch_resume(timer)
     }
     
     public func invalidate() {
         guard isValid else { return }
-        let timer = self.timer
-        dispatch_async(queue) {
-            dispatch_source_cancel(timer)
-        }
+        let t = timer
+        dispatch_async(queue) { dispatch_source_cancel(t) }
         isValid = false
     }
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07202D8E1CF75A7D004119C9 /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07202D8D1CF75A7D004119C9 /* NSDate+Extensions.swift */; };
+		07202D8F1CF75AD6004119C9 /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07202D8D1CF75A7D004119C9 /* NSDate+Extensions.swift */; };
 		072F6B571CAAB88A00C2570F /* NSLocale+LanguageRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F6B561CAAB88A00C2570F /* NSLocale+LanguageRegion.swift */; };
 		076623301C04889200A245AA /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766232F1C04889200A245AA /* NSAttributedStringExtensions.swift */; };
 		07710BB81B9773FB008E5F51 /* SequenceTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07710BB71B9773FB008E5F51 /* SequenceTypeExtensions.swift */; };
@@ -53,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07202D8D1CF75A7D004119C9 /* NSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extensions.swift"; sourceTree = "<group>"; };
 		072F6B561CAAB88A00C2570F /* NSLocale+LanguageRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLocale+LanguageRegion.swift"; sourceTree = "<group>"; };
 		0766232F1C04889200A245AA /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
 		07710BB71B9773FB008E5F51 /* SequenceTypeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTypeExtensions.swift; sourceTree = "<group>"; };
@@ -146,6 +149,7 @@
 				0766232F1C04889200A245AA /* NSAttributedStringExtensions.swift */,
 				072F6B561CAAB88A00C2570F /* NSLocale+LanguageRegion.swift */,
 				07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */,
+				07202D8D1CF75A7D004119C9 /* NSDate+Extensions.swift */,
 				079DA3551C96E2F4008B2612 /* Timer.swift */,
 				07FF5E511A3768DD006928A9 /* FFObserver.h */,
 				07FF5E521A3768DD006928A9 /* FFObserver.m */,
@@ -334,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07202D8F1CF75AD6004119C9 /* NSDate+Extensions.swift in Sources */,
 				07D72E8F1CB53F4D006FDB41 /* NSLocale+LanguageRegion.swift in Sources */,
 				07D72E941CB53F5B006FDB41 /* NSLayoutConstraint+FFAdditions.swift in Sources */,
 				07D72E951CB53F5E006FDB41 /* NSOperationQueue+FFAdditions.swift in Sources */,
@@ -361,6 +366,7 @@
 				07710BB81B9773FB008E5F51 /* SequenceTypeExtensions.swift in Sources */,
 				07F96F051CB78C530012C546 /* Application+NameAndVersion.swift in Sources */,
 				07FF5E4F1A3765E2006928A9 /* FFTimer.m in Sources */,
+				07202D8E1CF75A7D004119C9 /* NSDate+Extensions.swift in Sources */,
 				079DA3561C96E2F4008B2612 /* Timer.swift in Sources */,
 				07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */,
 			);

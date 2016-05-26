@@ -11,5 +11,5 @@ import Foundation
 extension NSDate: Comparable {}
 
 public func <(lhs: NSDate, rhs: NSDate) -> Bool {
-    return lhs.laterDate(rhs).isEqualToDate(rhs)
+    return !lhs.isEqualToDate(rhs) && lhs.earlierDate(rhs).isEqualToDate(lhs)
 }

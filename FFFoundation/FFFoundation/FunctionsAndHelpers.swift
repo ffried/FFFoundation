@@ -20,48 +20,26 @@
 
 import Foundation
 
-public func delay(delay: Double = 0.0, block: dispatch_block_t) {
-    dispatch_after(
-        dispatch_time(
-            DISPATCH_TIME_NOW,
-            Int64(delay * Double(NSEC_PER_SEC))
-        ),
-        dispatch_get_main_queue(),
-        block)
-}
-
-public func runOnMainQueue(sync: Bool = false, block: dispatch_block_t) {
-    if sync {
-        dispatch_sync(dispatch_get_main_queue(), block)
-    } else {
-        dispatch_async(dispatch_get_main_queue(), block)
-    }
-}
-
+@available(*, deprecated, message="Use NSLocalizedString again. Its API is now fine to use in Swift.", renamed="NSLocalizedString")
+@warn_unused_result
 public func localizedString(key: String, comment: String = "") -> String {
     return NSLocalizedString(key, comment: comment)
 }
 
-public func +=<K, V> (inout left: [K: V], right: [K: V]) -> [K: V] {
-    for (k, v) in right {
-        left.updateValue(v, forKey: k)
-    }
-    return left
-}
-
-public func +<K, V> (left: [K: V], right: [K: V]) -> [K: V] {
-    var newDict = left
-//    for (k, v) in right {
-//        newDict.updateValue(v, forKey: k)
-//    }
-    newDict += right
-    return newDict
-}
-
-/// Swift-aware NSStringFromClass
-public func StringFromClass(aClass: AnyClass) -> String {
+/**
+ Swift-aware NSStringFromClass. Removes '.' in Swift class names if `removeNamespace` is `true`.
+ 
+ - parameter aClass:          The class to convert to a string.
+ - parameter removeNamespace: If `true`, Dots (and the preceding namespace) gets removed from the name. Defaults to `true`.
+ 
+ - returns: The name of the class as string. Dots are removed if `removeNamespace` was `true`.
+ 
+ - note: If `removeNamespace` is `false`, this function behaves just like `NSSStringFromClass`.
+ */
+@warn_unused_result
+public func StringFromClass(aClass: AnyClass, removeNamespace: Bool = true) -> String {
     var className = NSStringFromClass(aClass)
-    if let range = className.rangeOfString(".", options: .BackwardsSearch) {
+    if let range = className.rangeOfString(".", options: .BackwardsSearch) where removeNamespace {
         className = className.substringFromIndex(range.endIndex)
     }
     return className

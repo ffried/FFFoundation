@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "07FF5E311A3761D1006928A9"
-               BuildableName = "FFFoundation iOSTests.xctest"
-               BlueprintName = "FFFoundation iOSTests"
+               BuildableName = "FFFoundation iOS Tests.xctest"
+               BlueprintName = "FFFoundation iOS Tests"
                ReferencedContainer = "container:FFFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "07FF5E311A3761D1006928A9"
-               BuildableName = "FFFoundation iOSTests.xctest"
-               BlueprintName = "FFFoundation iOSTests"
+               BuildableName = "FFFoundation iOS Tests.xctest"
+               BlueprintName = "FFFoundation iOS Tests"
                ReferencedContainer = "container:FFFoundation.xcodeproj">
             </BuildableReference>
          </TestableReference>

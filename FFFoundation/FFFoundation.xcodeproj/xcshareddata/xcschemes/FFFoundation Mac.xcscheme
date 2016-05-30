@@ -20,6 +20,20 @@
                ReferencedContainer = "container:FFFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "073518991CFC2D1E001C05AA"
+               BuildableName = "FFFoundation OS X Tests.xctest"
+               BlueprintName = "FFFoundation OS X Tests"
+               ReferencedContainer = "container:FFFoundation.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -29,6 +43,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "07D72E811CB53DFC006FDB41"
+            BuildableName = "FFFoundation.framework"
+            BlueprintName = "FFFoundation Mac"
+            ReferencedContainer = "container:FFFoundation.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

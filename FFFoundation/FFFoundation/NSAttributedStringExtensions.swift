@@ -28,6 +28,7 @@ import Foundation
 public extension NSAttributedString {
     public typealias AttributesDictionary = [String: AnyObject]
     
+    @warn_unused_result
     public final func sizeForWidth(width: CGFloat) -> CGSize {
         let boundingSize = CGSize(width: width, height: CGFloat.max)
         let options: NSStringDrawingOptions = [.UsesLineFragmentOrigin]
@@ -45,6 +46,7 @@ public extension NSAttributedString {
         return CGSize(width: ceil(rawSize.width), height: ceil(rawSize.height))
     }
     
+    @warn_unused_result
     public final func heightForWidth(width: CGFloat) -> CGFloat {
         return sizeForWidth(width).height
     }

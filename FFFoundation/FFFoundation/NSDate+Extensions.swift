@@ -10,6 +10,7 @@ import Foundation
 
 extension NSDate: Comparable {}
 
+@warn_unused_result
 public func <(lhs: NSDate, rhs: NSDate) -> Bool {
     return !lhs.isEqualToDate(rhs) && lhs.earlierDate(rhs).isEqualToDate(lhs)
 }

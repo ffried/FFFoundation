@@ -26,16 +26,19 @@ public extension String {
         self += hasSuffix("/") ? comp : ("/" + comp)
     }
     
+    @warn_unused_result
     public func stringByAppendingPathComponent(comp: String) -> String {
         var newString = self
         newString.appendPathComponent(comp)
         return newString
     }
     
+    @warn_unused_result
     public func sizeForWidth(width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGSize {
         return NSAttributedString(string: self, attributes: attributes).sizeForWidth(width)
     }
     
+    @warn_unused_result
     public func heightForWidth(width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGFloat {
         return sizeForWidth(width, attributes: attributes).height
     }

@@ -22,6 +22,28 @@ import Foundation
 import CoreGraphics
 
 public extension String {
+    #if swift(>=3.0)
+    public mutating func append(pathComponent comp: String) {
+        self += hasSuffix("/") ? comp : ("/" + comp)
+    }
+    
+    @warn_unused_result
+    public func stringByAppending(pathComponent comp: String) -> String {
+        var newString = self
+        newString.append(pathComponent: comp)
+        return newString
+    }
+    
+    @warn_unused_result
+    public func size(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGSize {
+        return NSAttributedString(string: self, attributes: attributes).size(forWidth: width)
+    }
+    
+    @warn_unused_result
+    public func height(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGFloat {
+        return size(forWidth: width, attributes: attributes).height
+    }
+    #else
     public mutating func appendPathComponent(comp: String) {
         self += hasSuffix("/") ? comp : ("/" + comp)
     }
@@ -42,4 +64,5 @@ public extension String {
     public func heightForWidth(width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGFloat {
         return sizeForWidth(width, attributes: attributes).height
     }
+    #endif
 }

@@ -21,7 +21,7 @@
 import Foundation
 
 public class NotificationObserver {
-    public typealias ObserverBlock = NSNotification -> Void
+    public typealias ObserverBlock = (NSNotification) -> Void
     
     private let observer: NSObjectProtocol
     public let notificationCenter: NSNotificationCenter
@@ -32,7 +32,11 @@ public class NotificationObserver {
         self.notificationCenter = center
         self.notificationName = name
         self.object = object
-        self.observer = center.addObserverForName(name, object: object, queue: queue, usingBlock: block)
+        #if swift(>=3.0)
+            self.observer = center.addObserver(forName: name, object: object, queue: queue, using: block)
+        #else
+            self.observer = center.addObserverForName(name, object: object, queue: queue, usingBlock: block)
+        #endif
     }
     
     deinit {

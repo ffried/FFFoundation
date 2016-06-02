@@ -12,5 +12,9 @@ extension NSDate: Comparable {}
 
 @warn_unused_result
 public func <(lhs: NSDate, rhs: NSDate) -> Bool {
+#if swift(>=3.0)
+    return !lhs.isEqual(to: rhs) && lhs.earlierDate(rhs).isEqual(to: lhs)
+#else
     return !lhs.isEqualToDate(rhs) && lhs.earlierDate(rhs).isEqualToDate(lhs)
+#endif
 }

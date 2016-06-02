@@ -15,15 +15,27 @@ import Foundation
  - parameter block: The block to execute after `delay`.
  - seeAlso: dispatch_after
  */
-public func delay(delay: Double = 0.0, block: dispatch_block_t) {
-    dispatch_after(
-        dispatch_time(
-            DISPATCH_TIME_NOW,
-            Int64(delay * Double(NSEC_PER_SEC))
-        ),
-        dispatch_get_main_queue(),
-        block)
-}
+#if swift(>=3.0)
+    public func delay(by delay: Double = 0.0, block: dispatch_block_t) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(),
+            block)
+    }
+#else
+    public func delay(delay: Double = 0.0, block: dispatch_block_t) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(),
+            block)
+    }
+#endif
 
 /**
  Runs a block on the main queue.

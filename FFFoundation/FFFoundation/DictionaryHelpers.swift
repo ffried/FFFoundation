@@ -14,9 +14,15 @@ import Foundation
  - parameter left:  The dictionary in which to merge the `right` dictionary.
  - parameter right: The dictionary to merge into `left`.
  */
-public func +=<K, V> (inout lhs: [K: V], rhs: [K: V]) {
-    rhs.forEach { lhs.updateValue($1, forKey: $0) }
-}
+#if swift(>=3.0)
+    public func +=<K, V> (lhs: inout [K: V], rhs: [K: V]) {
+        rhs.forEach { lhs.updateValue($1, forKey: $0) }
+    }
+#else
+    public func +=<K, V> (inout lhs: [K: V], rhs: [K: V]) {
+        rhs.forEach { lhs.updateValue($1, forKey: $0) }
+    }
+#endif
 
 /**
  Merges two dictionary into a new one. Values in `left` will be replaced by values in `right` for equal keys.

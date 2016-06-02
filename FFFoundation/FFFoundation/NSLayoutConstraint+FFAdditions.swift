@@ -36,14 +36,43 @@
         typealias MetricsDictionary = [String: MetricValueType]
         typealias ViewsDictionary   = [String: ViewType]
         
+        #if swift(>=3.0)
+        @warn_unused_result
+        public static func constraints<S: Sequence where S.Iterator.Element == VisualFormatType>(withVisualFormats formats: S, options: NSLayoutFormatOptions = [], metrics: MetricsDictionary? = nil, views: ViewsDictionary) -> [NSLayoutConstraint] {
+            return formats.reduce([NSLayoutConstraint]()) {
+                $0 + constraints(withVisualFormat: $1, options: options, metrics: metrics, views: views)
+            }
+        }
+        #else
         @warn_unused_result
         public static func constraintsWithVisualFormats<S: SequenceType where S.Generator.Element == VisualFormatType>(formats: S, options: NSLayoutFormatOptions = [], metrics: MetricsDictionary? = nil, views: ViewsDictionary) -> [NSLayoutConstraint] {
             return formats.reduce([NSLayoutConstraint]()) {
                 $0 + constraintsWithVisualFormat($1, options: options, metrics: metrics, views: views)
             }
         }
+        #endif
     }
     
+#if swift(>=3.0)
+    @available(OSX 10.7, iOS 6.0, *)
+    public extension Sequence where Iterator.Element == NSLayoutConstraint {
+        public final func activate() {
+            NSLayoutConstraint.activate(Array(self))
+        }
+        
+        public final func deactivate() {
+            NSLayoutConstraint.deactivate(Array(self))
+        }
+    }
+    
+    @available(OSX 10.7, iOS 6.0, *)
+    public extension Sequence where Iterator.Element == String {
+        @warn_unused_result
+        public final func constraints(withViews views: NSLayoutConstraint.ViewsDictionary, options: NSLayoutFormatOptions = [], metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {
+            return NSLayoutConstraint.constraints(withVisualFormats: self, options: options, metrics: metrics, views: views)
+        }
+    }
+#else
     @available(OSX 10.7, iOS 6.0, *)
     public extension SequenceType where Generator.Element == NSLayoutConstraint {
         public final func activate() {
@@ -53,8 +82,8 @@
         public final func deactivate() {
             NSLayoutConstraint.deactivateConstraints(Array(self))
         }
-    }
-    
+        }
+        
     @available(OSX 10.7, iOS 6.0, *)
     public extension SequenceType where Generator.Element == String {
         @warn_unused_result
@@ -62,4 +91,5 @@
             return NSLayoutConstraint.constraintsWithVisualFormats(self, options: options, metrics: metrics, views: views)
         }
     }
+#endif
 #endif

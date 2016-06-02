@@ -20,11 +20,20 @@
 
 import Foundation
 
-@available(*, deprecated, message="Use NSLocalizedString again. Its API is now fine to use in Swift.", renamed="NSLocalizedString")
-@warn_unused_result
-public func localizedString(key: String, comment: String = "") -> String {
-    return NSLocalizedString(key, comment: comment)
-}
+#if swift(>=3.0)
+    @available(*, deprecated, message:"Use NSLocalizedString again. Its API is now fine to use in Swift.", renamed:"NSLocalizedString")
+    @warn_unused_result
+    public func localizedString(key: String, comment: String = "") -> String {
+        return NSLocalizedString(key, comment: comment)
+    }
+#else
+    @available(*, deprecated, message="Use NSLocalizedString again. Its API is now fine to use in Swift.", renamed="NSLocalizedString")
+    @warn_unused_result
+    public func localizedString(key: String, comment: String = "") -> String {
+        return NSLocalizedString(key, comment: comment)
+    }
+#endif
+
 
 /**
  Swift-aware NSStringFromClass. Removes '.' in Swift class names if `removeNamespace` is `true`.
@@ -39,8 +48,14 @@ public func localizedString(key: String, comment: String = "") -> String {
 @warn_unused_result
 public func StringFromClass(aClass: AnyClass, removeNamespace: Bool = true) -> String {
     var className = NSStringFromClass(aClass)
+#if swift(>=3.0)
+    if let range = className.range(of: ".", options: .backwardsSearch) where removeNamespace {
+        className = className.substring(from: range.upperBound)
+    }
+#else
     if let range = className.rangeOfString(".", options: .BackwardsSearch) where removeNamespace {
         className = className.substringFromIndex(range.endIndex)
     }
+#endif
     return className
 }

@@ -24,58 +24,97 @@ class TimerTests: XCTestCase {
     }
 
     func testTimerWithShortIntervalAndNoTolerance() {
-        let expectation = expectationWithDescription("Timer with short interval and no tolerance")
+        #if swift(>=3.0)
+            let exp = expectation(withDescription: "Timer with short interval and no tolerance")
+        #else
+            let exp = expectationWithDescription("Timer with short interval and no tolerance")
+        #endif
+            
         var date = NSDate()
         let timerInterval: NSTimeInterval = 2.0
         let isMainThread = NSThread.isMainThread()
         timer = AnyTimer(interval: timerInterval, block: { timer in
-            let interval = NSDate().timeIntervalSinceDate(date)
+            #if swift(>=3.0)
+                let interval = NSDate().timeIntervalSince(date)
+            #else
+                let interval = NSDate().timeIntervalSinceDate(date)
+            #endif
             XCTAssertEqualWithAccuracy(interval, timerInterval, accuracy: 0.02)
             XCTAssertEqual(NSThread.isMainThread(), isMainThread)
-            expectation.fulfill()
+            exp.fulfill()
         })
         date = NSDate()
         timer?.schedule()
-        waitForExpectationsWithTimeout(timerInterval * 2, handler: nil)
+        #if swift(>=3.0)
+            waitForExpectations(withTimeout: timerInterval * 2, handler: nil)
+        #else
+            waitForExpectationsWithTimeout(timerInterval * 2, handler: nil)
+        #endif
     }
     
     func testTimerWithShortIntervalAndTolerance() {
-        let expectation = expectationWithDescription("Timer with short interval and tolerance")
+        #if swift(>=3.0)
+            let exp = expectation(withDescription: "Timer with short interval and tolerance")
+        #else
+            let exp = expectationWithDescription("Timer with short interval and tolerance")
+        #endif
+        
         var date = NSDate()
         let timerInterval: NSTimeInterval = 2.0
         let tolerance: NSTimeInterval = 0.5
         timer = AnyTimer(interval: timerInterval, block: { timer in
-            let interval = NSDate().timeIntervalSinceDate(date)
+            #if swift(>=3.0)
+                let interval = NSDate().timeIntervalSince(date)
+            #else
+                let interval = NSDate().timeIntervalSinceDate(date)
+            #endif
             XCTAssertEqualWithAccuracy(interval, timerInterval, accuracy: tolerance)
-            expectation.fulfill()
+            exp.fulfill()
         })
         timer?.tolerance = tolerance
         date = NSDate()
         timer?.schedule()
-        waitForExpectationsWithTimeout(timerInterval * 2, handler: nil)
+        #if swift(>=3.0)
+            waitForExpectations(withTimeout: timerInterval * 2, handler: nil)
+        #else
+            waitForExpectationsWithTimeout(timerInterval * 2, handler: nil)
+        #endif
     }
     
     func testRepeatingTimerWithShortIntervalAndTolerance() {
-        let expectation = expectationWithDescription("Repeating Timer with short interval and tolerance")
+        #if swift(>=3.0)
+            let exp = expectation(withDescription: "Repeating Timer with short interval and tolerance")
+        #else
+            let exp = expectationWithDescription("Repeating Timer with short interval and tolerance")
+        #endif
+        
         var date = NSDate()
         let timerInterval: NSTimeInterval = 2.0
         let tolerance: NSTimeInterval = 0.5
         let repeats = 5
         var counter = 0
         timer = AnyTimer(interval: timerInterval, repeats: true, block: { timer in
-            let interval = NSDate().timeIntervalSinceDate(date)
+            #if swift(>=3.0)
+                let interval = NSDate().timeIntervalSince(date)
+            #else
+                let interval = NSDate().timeIntervalSinceDate(date)
+            #endif
             XCTAssertEqualWithAccuracy(interval, timerInterval, accuracy: tolerance)
             counter += 1
             date = NSDate()
             if counter == repeats {
                 timer.invalidate()
-                expectation.fulfill()
+                exp.fulfill()
             }
         })
         timer?.tolerance = tolerance
         date = NSDate()
         timer?.schedule()
-        waitForExpectationsWithTimeout(timerInterval * 2 * NSTimeInterval(repeats), handler: nil)
+        #if swift(>=3.0)
+            waitForExpectations(withTimeout: timerInterval * 2, handler: nil)
+        #else
+            waitForExpectationsWithTimeout(timerInterval * 2, handler: nil)
+        #endif
         XCTAssertEqual(counter, repeats)
     }
 }

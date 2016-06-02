@@ -16,10 +16,18 @@
         public typealias Application = NSApplication
     #endif
     
+#if swift(>=3.0)
+    public let App = Application.shared()
+#else
     public let App = Application.sharedApplication()
+#endif
 
     public extension Application {
+        #if swift(>=3.0)
+        private var bundle: NSBundle { return NSBundle.main() }
+        #else
         private var bundle: NSBundle { return NSBundle.mainBundle() }
+        #endif
         
         public var identifier: String? {
             return bundle.infoDictionary?["CFBundleIdentifier"] as? String

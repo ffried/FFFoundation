@@ -22,7 +22,7 @@ import Foundation
 import libkern
 
 public final class Timer<T> {
-    public typealias TimerBlock = Timer -> Void
+    public typealias TimerBlock = (Timer) -> Void
     
     public let interval: NSTimeInterval
     public let repeats: Bool
@@ -36,7 +36,11 @@ public final class Timer<T> {
     
     public private(set) var isValid: Bool = true
     
+    #if swift(>=3.0)
+    private let queue = dispatch_queue_create(nil, DISPATCH_QUEUE_SERIAL)!
+    #else
     private let queue = dispatch_queue_create(nil, DISPATCH_QUEUE_SERIAL)
+    #endif
     private lazy var timer: dispatch_source_t = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, DISPATCH_TIMER_STRICT, self.queue)
     
     public init(interval: NSTimeInterval, repeats: Bool = false, queue: dispatch_queue_t = dispatch_get_main_queue(), userInfo: T? = nil, block: TimerBlock) {

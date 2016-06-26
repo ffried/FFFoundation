@@ -27,20 +27,17 @@ public extension String {
         self += hasSuffix("/") ? comp : ("/" + comp)
     }
     
-    @warn_unused_result
     public func stringByAppending(pathComponent comp: String) -> String {
         var newString = self
         newString.append(pathComponent: comp)
         return newString
     }
     
-    @warn_unused_result
-    public func size(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGSize {
-        return NSAttributedString(string: self, attributes: attributes).size(forWidth: width)
+    public func size(forWidth width: CGFloat, attributes: AttributedString.AttributesDictionary? = nil) -> CGSize {
+        return AttributedString(string: self, attributes: attributes).size(forWidth: width)
     }
     
-    @warn_unused_result
-    public func height(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGFloat {
+    public func height(forWidth width: CGFloat, attributes: AttributedString.AttributesDictionary? = nil) -> CGFloat {
         return size(forWidth: width, attributes: attributes).height
     }
     #else

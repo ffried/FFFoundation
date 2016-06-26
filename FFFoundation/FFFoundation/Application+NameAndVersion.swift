@@ -24,7 +24,7 @@
 
     public extension Application {
         #if swift(>=3.0)
-        private var bundle: NSBundle { return NSBundle.main() }
+        private var bundle: Bundle { return .main() }
         #else
         private var bundle: NSBundle { return NSBundle.mainBundle() }
         #endif

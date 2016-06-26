@@ -20,72 +20,70 @@
 
 import Foundation
 
-public extension NSOperationQueue {
+#if swift(>=3.0)
+public extension OperationQueue {
     public var isMainQueue: Bool {
-        #if swift(>=3.0)
-            return self === self.dynamicType.main()
-        #else
-            return self === self.dynamicType.mainQueue()
-        #endif
+        return self === self.dynamicType.main()
     }
     
     public var isCurrentQueue: Bool {
-        #if swift(>=3.0)
-            return self.dynamicType.current().flatMap { $0 === self } ?? false
-        #else
-            return self.dynamicType.currentQueue().flatMap { $0 === self } ?? false
-        #endif
+        return self.dynamicType.current().flatMap { $0 === self } ?? false
     }
     
     public static var isCurrentQueueMainQueue: Bool {
-        #if swift(>=3.0)
-            return main().isCurrentQueue
-        #else
-            return mainQueue().isCurrentQueue
-        #endif
+        return main().isCurrentQueue
     }
     
-    #if swift(>=3.0)
     public func addOperation(withBlock block: () -> (), completion: () -> ()) {
-        let operation = NSBlockOperation(block: block)
+        let operation = BlockOperation(block: block)
         operation.completionBlock = completion
         addOperation(operation)
     }
-    #else
+    
+    public func addOperationWithBlockAndWait(block: () -> ()) {
+        addOperation(withBlock: block, andWait: true)
+    }
+    
+    public func addOperationWithBlockAndWaitIfNotCurrentQueue(block: () -> ()) {
+        addOperation(withBlock: block, andWait: !isCurrentQueue)
+    }
+    
+    private final func addOperation(withBlock block: () -> (), andWait wait: Bool) {
+        let operation = BlockOperation(block: block)
+        addOperations([operation], waitUntilFinished: wait)
+    }
+}
+#else
+public extension NSOperationQueue {
+    public var isMainQueue: Bool {
+        return self === self.dynamicType.mainQueue()
+    }
+    
+    public var isCurrentQueue: Bool {
+        return self.dynamicType.currentQueue().flatMap { $0 === self } ?? false
+    }
+    
+    public static var isCurrentQueueMainQueue: Bool {
+        return mainQueue().isCurrentQueue
+    }
+    
     public func addOperationWithBlock(block: () -> (), completion: () -> ()) {
         let operation = NSBlockOperation(block: block)
         operation.completionBlock = completion
         addOperation(operation)
     }
-    #endif
     
     public func addOperationWithBlockAndWait(block: () -> ()) {
-        #if swift(>=3.0)
-            addOperation(withBlock: block, andWait: true)
-        #else
-            addOperationWithBlock(block, andWait: true)
-        #endif
+        addOperationWithBlock(block, andWait: true)
     }
     
     public func addOperationWithBlockAndWaitIfNotCurrentQueue(block: () -> ()) {
-        #if swift(>=3.0)
-            addOperation(withBlock: block, andWait: !isCurrentQueue)
-        #else
-            addOperationWithBlock(block, andWait: true)
-        #endif
+        addOperationWithBlock(block, andWait: true)
     }
     
-    #if swift(>=3.0)
-    private final func addOperation(withBlock block: () -> (), andWait wait: Bool) {
-        let operation = NSBlockOperation(block: block)
-        addOperations([operation], waitUntilFinished: wait)
-    }
-    #else
     private final func addOperationWithBlock(block: () -> (), andWait wait: Bool) {
         let operation = NSBlockOperation(block: block)
         addOperations([operation], waitUntilFinished: wait)
     }
-    #endif
-    
-    
 }
+#endif

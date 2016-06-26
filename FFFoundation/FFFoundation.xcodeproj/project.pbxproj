@@ -23,7 +23,6 @@
 		076623301C04889200A245AA /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766232F1C04889200A245AA /* NSAttributedStringExtensions.swift */; };
 		07710BB81B9773FB008E5F51 /* SequenceTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07710BB71B9773FB008E5F51 /* SequenceTypeExtensions.swift */; };
 		079DA3561C96E2F4008B2612 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DA3551C96E2F4008B2612 /* Timer.swift */; };
-		079DA3581C96EB32008B2612 /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DA3571C96EB32008B2612 /* TimerTests.swift */; };
 		07B2F40D1A8BC68200F854FC /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */; };
 		07B37F411A38B91B00911042 /* NSOperationQueue+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */; };
 		07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */; };
@@ -347,7 +346,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Florian Friedrich";
 				TargetAttributes = {
 					073518991CFC2D1E001C05AA = {
@@ -355,12 +354,18 @@
 					};
 					07D72E811CB53DFC006FDB41 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8AVR59FNSV;
+						DevelopmentTeamName = "Florian Friedrich";
 					};
 					07FF5E261A3761D0006928A9 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 8AVR59FNSV;
+						DevelopmentTeamName = "Florian Friedrich";
 					};
 					07FF5E311A3761D1006928A9 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 8AVR59FNSV;
+						DevelopmentTeamName = "Florian Friedrich";
 					};
 				};
 			};
@@ -474,7 +479,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				079DA3581C96EB32008B2612 /* TimerTests.swift in Sources */,
 				07FF5E3A1A3761D1006928A9 /* FFFoundationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +530,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.FFFoundation-OS-X-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -570,6 +575,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.$(PRODUCT_NAME:rfc1034identifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -598,6 +604,7 @@
 				FRAMEWORK_NAME = FFFoundation;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -646,6 +653,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_NAME = FFFoundation;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -693,6 +701,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.$(PRODUCT_NAME:rfc1034identifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -720,6 +729,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -733,6 +743,7 @@
 				073518A41CFC2D1F001C05AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07D72E891CB53DFC006FDB41 /* Build configuration list for PBXNativeTarget "FFFoundation Mac" */ = {
 			isa = XCConfigurationList;

@@ -25,11 +25,10 @@ import Foundation
     import AppKit
 #endif
 
-public extension NSAttributedString {
+#if swift(>=3)
+public extension AttributedString {
     public typealias AttributesDictionary = [String: AnyObject]
     
-    #if swift(>=3.0)
-    @warn_unused_result
     public final func size(forWidth width: CGFloat) -> CGSize {
         let boundingSize = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
         let options: NSStringDrawingOptions = [.usesLineFragmentOrigin]
@@ -47,11 +46,14 @@ public extension NSAttributedString {
         return CGSize(width: ceil(rawSize.width), height: ceil(rawSize.height))
     }
     
-    @warn_unused_result
     public final func height(forWidth width: CGFloat) -> CGFloat {
         return size(forWidth: width).height
     }
-    #else
+}
+#else
+public extension NSAttributedString {
+    public typealias AttributesDictionary = [String: AnyObject]
+    
     @warn_unused_result
     public final func sizeForWidth(width: CGFloat) -> CGSize {
         let boundingSize = CGSize(width: width, height: CGFloat.max)
@@ -74,5 +76,5 @@ public extension NSAttributedString {
     public final func heightForWidth(width: CGFloat) -> CGFloat {
         return sizeForWidth(width).height
     }
-    #endif
 }
+#endif

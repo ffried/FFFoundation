@@ -20,6 +20,27 @@
 
 import Foundation
 
+#if swift(>=3)
+public class NotificationObserver {
+    public typealias ObserverBlock = (Notification) -> Void
+    
+    private let observer: NSObjectProtocol
+    public let notificationCenter: NotificationCenter
+    public let notificationName: Notification.Name?
+    public let object: AnyObject?
+    
+    public init(center: NotificationCenter, name: Notification.Name? = nil, queue: OperationQueue? = nil, object: AnyObject? = nil, block: ObserverBlock) {
+        self.notificationCenter = center
+        self.notificationName = name
+        self.object = object
+        self.observer = center.addObserver(forName: name, object: object, queue: queue, using: block)
+    }
+    
+    deinit {
+        notificationCenter.removeObserver(observer, name: notificationName, object: object)
+    }
+}
+#else
 public class NotificationObserver {
     public typealias ObserverBlock = (NSNotification) -> Void
     
@@ -43,3 +64,4 @@ public class NotificationObserver {
         notificationCenter.removeObserver(observer, name: notificationName, object: object)
     }
 }
+#endif

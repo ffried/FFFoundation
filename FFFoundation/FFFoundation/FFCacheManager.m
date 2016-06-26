@@ -27,7 +27,8 @@
 #endif
 
 #pragma mark - static vars
-NSString *const FFDefaultCacheManagerName =  @"FFDefaultCacheManager";
+const FFCacheManagerName FFCacheManagerNameDefault = @"FFDefaultCacheManager";
+const FFCacheManagerName FFDefaultCacheManagerName = @"FFDefaultCacheManager";
 
 static NSTimeInterval const FFCacheManagerDefaultTimeout = 30.0;
 static NSTimeInterval const FFCacheManagerDefaultTimeoutTolerance = 10.0;
@@ -89,10 +90,10 @@ static NSDateFormatter *FFCacheDateFormatter = nil;
 }
 
 #pragma mark - Initiation and Deallocation
-- (instancetype)initWithName:(NSString *)name {
+- (instancetype)initWithName:(FFCacheManagerName)name {
     self = [super init];
     if (self) {
-        _name = name;
+        _name = [name copy];
         self.fileManager = [NSFileManager defaultManager];
         
         [self checkForFolderCreation];
@@ -108,7 +109,7 @@ static NSDateFormatter *FFCacheDateFormatter = nil;
 }
 
 - (instancetype)init {
-    return [self initWithName:FFDefaultCacheManagerName];
+    return [self initWithName:FFCacheManagerNameDefault];
 }
 
 - (void)dealloc {

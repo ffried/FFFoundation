@@ -19,24 +19,23 @@
 //
 
 #import <FFFoundation/FFFoundation.h>
-@import Foundation.NSObject;
-@import Foundation.NSString;
-@import Foundation.NSData;
-@import Foundation.NSURL;
-@import Foundation.NSDate;
+@import Foundation;
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern NSString * const FFDefaultCacheManagerName;
+typedef NSString *FFCacheManagerName NS_EXTENSIBLE_STRING_ENUM NS_SWIFT_NAME(CacheManager.Name);
+extern const FFCacheManagerName FFDefaultCacheManagerName NS_SWIFT_NAME(default);
 
+NS_SWIFT_NAME(CacheManager)
 @interface FFCacheManager : NSObject
 
-@property (nonatomic, strong, readonly) NSString *name;
+@property (nonatomic, copy, readonly) FFCacheManagerName name;
 
 @property (nonatomic) BOOL clearsMemoryCachePeriodically;
 
 + (instancetype)defaultManager;
-- (instancetype)initWithName:(NSString *)name;
+- (instancetype)initWithName:(FFCacheManagerName)name;
+- (instancetype)init NS_UNAVAILABLE;
 
 - (nullable NSData *)cachedFileWithUniqueName:(NSString *)uniqueName;
 

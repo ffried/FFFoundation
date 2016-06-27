@@ -22,7 +22,6 @@ import Foundation
 
 #if swift(>=3.0)
     public extension Sequence {
-        @warn_unused_result
         public func group<Key: Hashable>(by keyGen: @noescape(Iterator.Element) throws -> Key) rethrows -> [Key: [Iterator.Element]] {
             var grouped = Dictionary<Key, Array<Iterator.Element>>()
             try forEach { elem in
@@ -34,18 +33,15 @@ import Foundation
             return grouped
         }
         
-        @warn_unused_result
         public func last(where: @noescape(Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
             return try reversed().first(where: `where`)
         }
         
-        @warn_unused_result
         @available(*, deprecated, message:"Was replaced by first(where:_) natively in Swift 3.0", renamed:"first")
         public func findFirst(predicate: @noescape(Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
             return try first(where: predicate)
         }
         
-        @warn_unused_result
         @available(*, deprecated, message:"Was replaced by last(where:_)", renamed:"last")
         public func findLast(predicate: @noescape(Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
             return try last(where: predicate)
@@ -67,20 +63,16 @@ import Foundation
         
         @warn_unused_result
         public func findFirst(@noescape predicate: Generator.Element throws -> Bool) rethrows -> Generator.Element? {
-            for obj in self {
-                if try predicate(obj) {
-                    return obj
-                }
+            for obj in self where try predicate(obj) {
+                return obj
             }
             return nil
         }
         
         @warn_unused_result
         public func findLast(@noescape predicate: Generator.Element throws -> Bool) rethrows -> Generator.Element? {
-            for obj in reverse() {
-                if try predicate(obj) {
-                    return obj
-                }
+            for obj in reverse() where try predicate(obj) {
+                return obj
             }
             return nil
         }

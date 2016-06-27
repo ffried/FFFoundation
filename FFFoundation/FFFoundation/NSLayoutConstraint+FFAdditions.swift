@@ -68,7 +68,7 @@
     @available(OSX 10.7, iOS 6.0, *)
     public extension Sequence where Iterator.Element == String {
         @warn_unused_result
-        public final func constraints(withViews views: NSLayoutConstraint.ViewsDictionary, options: NSLayoutFormatOptions = [], metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {
+        public final func constraints(with views: NSLayoutConstraint.ViewsDictionary, options: NSLayoutFormatOptions = [], metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {
             return NSLayoutConstraint.constraints(withVisualFormats: self, options: options, metrics: metrics, views: views)
         }
     }

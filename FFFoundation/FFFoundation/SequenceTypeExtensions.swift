@@ -35,20 +35,16 @@ public extension SequenceType {
     
     @warn_unused_result
     public func findFirst(@noescape predicate: Generator.Element throws -> Bool) rethrows -> Generator.Element? {
-        for obj in self {
-            if try predicate(obj) {
-                return obj
-            }
+        for obj in self where try predicate(obj) {
+            return obj
         }
         return nil
     }
     
     @warn_unused_result
     public func findLast(@noescape predicate: Generator.Element throws -> Bool) rethrows -> Generator.Element? {
-        for obj in reverse() {
-            if try predicate(obj) {
-                return obj
-            }
+        for obj in reverse() where try predicate(obj) {
+            return obj
         }
         return nil
     }

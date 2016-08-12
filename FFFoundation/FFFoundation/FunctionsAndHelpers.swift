@@ -22,7 +22,6 @@ import Foundation
 
 #if swift(>=3.0)
     @available(*, deprecated, message:"Use NSLocalizedString again. Its API is now fine to use in Swift.", renamed:"NSLocalizedString")
-    @warn_unused_result
     public func localizedString(key: String, comment: String = "") -> String {
         return NSLocalizedString(key, comment: comment)
     }
@@ -45,17 +44,22 @@ import Foundation
  
  - note: If `removeNamespace` is `false`, this function behaves just like `NSSStringFromClass`.
  */
-@warn_unused_result
-public func StringFromClass(aClass: AnyClass, removeNamespace: Bool = true) -> String {
-    var className = NSStringFromClass(aClass)
 #if swift(>=3.0)
-    if let range = className.range(of: ".", options: .backwardsSearch) where removeNamespace {
+public func StringFromClass(_ aClass: AnyClass, removeNamespace: Bool = true) -> String {
+    var className = NSStringFromClass(aClass)
+
+    if removeNamespace, let range = className.range(of: ".", options: .backwards) {
         className = className.substring(from: range.upperBound)
     }
+    return className
+}
 #else
+@warn_unused_result
+public func StringFromClass(_ aClass: AnyClass, removeNamespace: Bool = true) -> String {
+    var className = NSStringFromClass(aClass)
     if let range = className.rangeOfString(".", options: .BackwardsSearch) where removeNamespace {
         className = className.substringFromIndex(range.endIndex)
     }
-#endif
     return className
 }
+#endif

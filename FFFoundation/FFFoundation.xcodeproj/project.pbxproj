@@ -20,6 +20,8 @@
 		073518931CFC23E6001C05AA /* Togglable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073518911CFC23E6001C05AA /* Togglable.swift */; };
 		0735189D1CFC2D1F001C05AA /* FFFoundation_OS_X_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0735189C1CFC2D1F001C05AA /* FFFoundation_OS_X_Tests.swift */; };
 		0735189F1CFC2D1F001C05AA /* FFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D72E821CB53DFC006FDB41 /* FFFoundation.framework */; };
+		07639C0A1D5E042B00247037 /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DA3571C96EB32008B2612 /* TimerTests.swift */; };
+		07639C0B1D5E042C00247037 /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DA3571C96EB32008B2612 /* TimerTests.swift */; };
 		076623301C04889200A245AA /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766232F1C04889200A245AA /* NSAttributedStringExtensions.swift */; };
 		07710BB81B9773FB008E5F51 /* SequenceTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07710BB71B9773FB008E5F51 /* SequenceTypeExtensions.swift */; };
 		079DA3561C96E2F4008B2612 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DA3551C96E2F4008B2612 /* Timer.swift */; };
@@ -351,21 +353,25 @@
 				TargetAttributes = {
 					073518991CFC2D1E001C05AA = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					07D72E811CB53DFC006FDB41 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 8AVR59FNSV;
 						DevelopmentTeamName = "Florian Friedrich";
+						LastSwiftMigration = 0800;
 					};
 					07FF5E261A3761D0006928A9 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = 8AVR59FNSV;
 						DevelopmentTeamName = "Florian Friedrich";
+						LastSwiftMigration = 0800;
 					};
 					07FF5E311A3761D1006928A9 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = 8AVR59FNSV;
 						DevelopmentTeamName = "Florian Friedrich";
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -426,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0735189D1CFC2D1F001C05AA /* FFFoundation_OS_X_Tests.swift in Sources */,
+				07639C0B1D5E042C00247037 /* TimerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07FF5E3A1A3761D1006928A9 /* FFFoundationTests.swift in Sources */,
+				07639C0A1D5E042B00247037 /* TimerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +521,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.FFFoundation-OS-X-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -531,6 +540,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -553,6 +563,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.$(PRODUCT_NAME:rfc1034identifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -576,6 +587,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -685,6 +697,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.$(PRODUCT_NAME:rfc1034identifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -702,6 +715,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.$(PRODUCT_NAME:rfc1034identifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -718,6 +732,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -730,6 +745,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ffried.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -11,16 +11,16 @@ import Foundation
 #if swift(>=3.0)
 public extension Locale {
     public static var localizedDeviceLanguage: String? {
-        if let prefLanguageCode = preferredLanguages().first {
-            let locale = self.init(localeIdentifier: prefLanguageCode)
-            return locale.displayName(forKey: Locale.Key.identifier, value: prefLanguageCode)
+        if let prefLanguageCode = preferredLanguages.first {
+            let locale = self.init(identifier: prefLanguageCode)
+            return (locale as NSLocale).displayName(forKey: NSLocale.Key.identifier, value: prefLanguageCode)
         }
         return nil
     }
     
     public static var localizedDeviceRegion: String? {
-        let locale = current()
-        return locale.displayName(forKey: Locale.Key.identifier, value: locale.localeIdentifier)
+        let locale = current
+        return (locale as NSLocale).displayName(forKey: NSLocale.Key.identifier, value: locale.identifier)
     }
 }
 #else

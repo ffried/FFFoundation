@@ -25,8 +25,8 @@ import Foundation
     import AppKit
 #endif
 
-#if swift(>=3)
-public extension AttributedString {
+#if swift(>=3.0)
+public extension NSAttributedString {
     public typealias AttributesDictionary = [String: AnyObject]
     
     public final func size(forWidth width: CGFloat) -> CGSize {

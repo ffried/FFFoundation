@@ -17,14 +17,14 @@
     #endif
     
 #if swift(>=3.0)
-    public let App = Application.shared()
+    public let App = Application.shared
 #else
     public let App = Application.sharedApplication()
 #endif
 
     public extension Application {
         #if swift(>=3.0)
-        private var bundle: Bundle { return .main() }
+        private var bundle: Bundle { return .main }
         #else
         private var bundle: NSBundle { return NSBundle.mainBundle() }
         #endif
@@ -50,7 +50,7 @@
         }
         
         public var fullVersion: String? {
-            guard let version = version, build = build else { return nil }
+            guard let version = version, let build = build else { return nil }
             return "\(version) (\(build))"
         }
         

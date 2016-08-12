@@ -23,15 +23,15 @@ import Foundation
 #if swift(>=3.0)
 public extension OperationQueue {
     public var isMainQueue: Bool {
-        return self === self.dynamicType.main()
+        return self === self.dynamicType.main
     }
     
     public var isCurrentQueue: Bool {
-        return self.dynamicType.current().flatMap { $0 === self } ?? false
+        return self.dynamicType.current.flatMap { $0 === self } ?? false
     }
     
     public static var isCurrentQueueMainQueue: Bool {
-        return main().isCurrentQueue
+        return main.isCurrentQueue
     }
     
     public func addOperation(withBlock block: () -> (), completion: () -> ()) {

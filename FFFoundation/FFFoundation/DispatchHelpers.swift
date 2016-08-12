@@ -17,7 +17,7 @@ import Foundation
  */
 #if swift(>=3.0)
     public func delay(by delay: Double = 0.0, block: @convention(block) () -> Void) {
-        DispatchQueue.main.after(when:
+        DispatchQueue.main.asyncAfter(deadline:
             DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
             , execute: block)
     }

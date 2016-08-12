@@ -27,19 +27,12 @@ extension Togglable {
     }
 }
 
-#if swift(>=3.0)
-    extension Togglable where Self: Boolean, Self: BooleanLiteralConvertible, Self.BooleanLiteralType == Bool {
+#if !swift(>=3.0)
+    extension Togglable where Self: BooleanType, Self: BooleanLiteralConvertible, Self.BooleanLiteralType == Bool {
         /// Calls `init(booleanLiteral:_)` with `!self`.
         public var toggled: Self {
             return self.dynamicType.init(booleanLiteral: !self)
         }
-    }
-#else
-    extension Togglable where Self: BooleanType, Self: BooleanLiteralConvertible, Self.BooleanLiteralType == Bool {
-    /// Calls `init(booleanLiteral:_)` with `!self`.
-    public var toggled: Self {
-    return self.dynamicType.init(booleanLiteral: !self)
-    }
     }
 #endif
 
@@ -50,5 +43,18 @@ extension Bool: Togglable {
     }
 }
 
-extension ObjCBool: Togglable {}
-extension DarwinBoolean: Togglable {}
+extension ObjCBool: Togglable {
+    #if swift(>=3.0)
+    public var toggled: ObjCBool {
+        return self.dynamicType.init(booleanLiteral: boolValue.toggled)
+    }
+    #endif
+}
+
+extension DarwinBoolean: Togglable {
+    #if swift(>=3.0)
+    public var toggled: DarwinBoolean {
+        return self.dynamicType.init(booleanLiteral: boolValue.toggled)
+    }
+    #endif
+}

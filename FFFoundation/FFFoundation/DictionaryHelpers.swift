@@ -32,9 +32,17 @@ import Foundation
  
  - returns: A new dictionary containing all keys and values of `left` and `right`.
  */
-@warn_unused_result
-public func +<K, V> (left: [K: V], right: [K: V]) -> [K: V] {
-    var newDict = left
-    newDict += right
-    return newDict
-}
+#if swift(>=3.0)
+    public func +<K, V> (left: [K: V], right: [K: V]) -> [K: V] {
+        var newDict = left
+        newDict += right
+        return newDict
+    }
+#else
+    @warn_unused_result
+    public func +<K, V> (left: [K: V], right: [K: V]) -> [K: V] {
+        var newDict = left
+        newDict += right
+        return newDict
+    }
+#endif

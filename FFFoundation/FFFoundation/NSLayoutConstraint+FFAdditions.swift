@@ -37,7 +37,6 @@
         typealias ViewsDictionary   = [String: ViewType]
         
         #if swift(>=3.0)
-        @warn_unused_result
         public static func constraints<S: Sequence where S.Iterator.Element == VisualFormatType>(withVisualFormats formats: S, options: NSLayoutFormatOptions = [], metrics: MetricsDictionary? = nil, views: ViewsDictionary) -> [NSLayoutConstraint] {
             return formats.reduce([NSLayoutConstraint]()) {
                 $0 + constraints(withVisualFormat: $1, options: options, metrics: metrics, views: views)
@@ -67,7 +66,6 @@
     
     @available(OSX 10.7, iOS 6.0, *)
     public extension Sequence where Iterator.Element == String {
-        @warn_unused_result
         public final func constraints(with views: NSLayoutConstraint.ViewsDictionary, options: NSLayoutFormatOptions = [], metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {
             return NSLayoutConstraint.constraints(withVisualFormats: self, options: options, metrics: metrics, views: views)
         }

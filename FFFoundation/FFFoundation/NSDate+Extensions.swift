@@ -6,7 +6,7 @@
 //  Copyright © 2016 Florian Friedrich. All rights reserved.
 //
 
-#if !swift(>=3)
+#if !swift(>=3.0)
 import Foundation
 
 extension NSDate: Comparable {}

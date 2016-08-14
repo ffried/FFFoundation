@@ -55,7 +55,7 @@ public func StringFromClass(_ aClass: AnyClass, removeNamespace: Bool = true) ->
 }
 #else
 @warn_unused_result
-public func StringFromClass(_ aClass: AnyClass, removeNamespace: Bool = true) -> String {
+public func StringFromClass(aClass: AnyClass, removeNamespace: Bool = true) -> String {
     var className = NSStringFromClass(aClass)
     if let range = className.rangeOfString(".", options: .BackwardsSearch) where removeNamespace {
         className = className.substringFromIndex(range.endIndex)

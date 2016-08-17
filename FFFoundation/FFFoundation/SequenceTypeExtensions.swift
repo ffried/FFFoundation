@@ -22,7 +22,7 @@ import Foundation
 
 #if swift(>=3.0)
     public extension Sequence {
-        public func group<Key: Hashable>(by keyGen: @noescape(Iterator.Element) throws -> Key) rethrows -> [Key: [Iterator.Element]] {
+        public func group<Key: Hashable>(by keyGen: (Iterator.Element) throws -> Key) rethrows -> [Key: [Iterator.Element]] {
             var grouped = Dictionary<Key, Array<Iterator.Element>>()
             try forEach { elem in
                 let key = try keyGen(elem)
@@ -33,17 +33,17 @@ import Foundation
             return grouped
         }
         
-        public func last(where: @noescape(Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
+        public func last(where: (Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
             return try reversed().first(where: `where`)
         }
         
         @available(*, deprecated, message:"Was replaced by first(where:_) natively in Swift 3.0", renamed:"first")
-        public func findFirst(predicate: @noescape(Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
+        public func findFirst(predicate: (Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
             return try first(where: predicate)
         }
         
         @available(*, deprecated, message:"Was replaced by last(where:_)", renamed:"last")
-        public func findLast(predicate: @noescape(Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
+        public func findLast(predicate: (Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
             return try last(where: predicate)
         }
     }

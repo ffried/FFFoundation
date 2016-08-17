@@ -37,7 +37,11 @@
         typealias ViewsDictionary   = [String: ViewType]
         
         #if swift(>=3.0)
-        public static func constraints<S: Sequence where S.Iterator.Element == VisualFormatType>(withVisualFormats formats: S, options: NSLayoutFormatOptions = [], metrics: MetricsDictionary? = nil, views: ViewsDictionary) -> [NSLayoutConstraint] {
+        public static func constraints<S: Sequence>(withVisualFormats formats: S,
+                                       options: NSLayoutFormatOptions = [],
+                                       metrics: MetricsDictionary? = nil,
+                                       views: ViewsDictionary) -> [NSLayoutConstraint]
+            where S.Iterator.Element == VisualFormatType {
             return formats.reduce([NSLayoutConstraint]()) {
                 $0 + constraints(withVisualFormat: $1, options: options, metrics: metrics, views: views)
             }

@@ -16,7 +16,7 @@ import Foundation
  - seeAlso: dispatch_after
  */
 #if swift(>=3.0)
-    public func delay(by delay: Double = 0.0, block: @convention(block) () -> Void) {
+    public func delay(by delay: Double = 0.0, block: @escaping @convention(block) () -> Void) {
         DispatchQueue.main.asyncAfter(deadline:
             DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
             , execute: block)
@@ -44,7 +44,7 @@ import Foundation
  */
 #if swift(>=3.0)
 @available(*, deprecated, message: "Use GCD directly.")
-public func runOnMainQueue(sync: Bool = false, block: () -> Void) {
+public func runOnMainQueue(sync: Bool = false, block: @escaping () -> Void) {
     let queue = DispatchQueue.main
     if sync {
         queue.sync(execute: block)

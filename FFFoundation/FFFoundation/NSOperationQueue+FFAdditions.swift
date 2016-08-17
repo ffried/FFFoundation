@@ -23,32 +23,32 @@ import Foundation
 #if swift(>=3.0)
 public extension OperationQueue {
     public var isMainQueue: Bool {
-        return self === self.dynamicType.main
+        return self === type(of: self).main
     }
     
     public var isCurrentQueue: Bool {
-        return self.dynamicType.current.flatMap { $0 === self } ?? false
+        return type(of: self).current.flatMap { $0 === self } ?? false
     }
     
     public static var isCurrentQueueMainQueue: Bool {
         return main.isCurrentQueue
     }
     
-    public func addOperation(withBlock block: () -> (), completion: () -> ()) {
+    public func addOperation(with block: @escaping () -> (), completion: @escaping () -> ()) {
         let operation = BlockOperation(block: block)
         operation.completionBlock = completion
         addOperation(operation)
     }
     
-    public func addOperationWithBlockAndWait(block: () -> ()) {
-        addOperation(withBlock: block, andWait: true)
+    public func addOperationWithBlockAndWait(block: @escaping () -> ()) {
+        addOperation(with: block, andWait: true)
     }
     
-    public func addOperationWithBlockAndWaitIfNotCurrentQueue(block: () -> ()) {
-        addOperation(withBlock: block, andWait: !isCurrentQueue)
+    public func addOperationWithBlockAndWaitIfNotCurrentQueue(block: @escaping () -> ()) {
+        addOperation(with: block, andWait: !isCurrentQueue)
     }
     
-    private final func addOperation(withBlock block: () -> (), andWait wait: Bool) {
+    private final func addOperation(with block: @escaping () -> (), andWait wait: Bool) {
         let operation = BlockOperation(block: block)
         addOperations([operation], waitUntilFinished: wait)
     }

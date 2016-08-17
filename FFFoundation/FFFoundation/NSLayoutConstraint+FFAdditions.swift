@@ -28,11 +28,17 @@
     public extension NSLayoutConstraint {
         #if os(iOS)
         typealias ViewType          = UIView
+        typealias MetricValueType   = CGFloat
         #elseif os(OSX)
         typealias ViewType          = NSView
+        #if swift(>=3)
+        typealias MetricValueType   = NSNumber
+        #else
+        typealias MetricValueType   = CGFloat
+        #endif
         #endif
         typealias VisualFormatType  = String
-        typealias MetricValueType   = CGFloat
+        
         typealias MetricsDictionary = [String: MetricValueType]
         typealias ViewsDictionary   = [String: ViewType]
         

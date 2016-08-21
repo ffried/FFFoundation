@@ -29,6 +29,14 @@
 		07B37F411A38B91B00911042 /* NSOperationQueue+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */; };
 		07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */; };
 		07BDB0321BFF8E3700D089E6 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BDB0311BFF8E3700D089E6 /* StringExtensions.swift */; };
+		07C78C311D6860AA000F9D9E /* JSONExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C78C2E1D6860AA000F9D9E /* JSONExtensions.swift */; };
+		07C78C321D6860AA000F9D9E /* JSONExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C78C2E1D6860AA000F9D9E /* JSONExtensions.swift */; };
+		07C78C331D6860AA000F9D9E /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C78C2F1D6860AA000F9D9E /* JSONParsing.swift */; };
+		07C78C341D6860AA000F9D9E /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C78C2F1D6860AA000F9D9E /* JSONParsing.swift */; };
+		07C78C351D6860AA000F9D9E /* JSONTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C78C301D6860AA000F9D9E /* JSONTypes.swift */; };
+		07C78C361D6860AA000F9D9E /* JSONTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C78C301D6860AA000F9D9E /* JSONTypes.swift */; };
+		07C78C391D686105000F9D9E /* NSDateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C78C381D686105000F9D9E /* NSDateFormatters.swift */; };
+		07C78C3A1D686105000F9D9E /* NSDateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C78C381D686105000F9D9E /* NSDateFormatters.swift */; };
 		07D72E8A1CB53F1C006FDB41 /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E2C1A3761D0006928A9 /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07D72E8B1CB53F38006FDB41 /* FFCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E471A376345006928A9 /* FFCacheManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07D72E8C1CB53F3C006FDB41 /* FFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FF5E4C1A3765E2006928A9 /* FFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -88,6 +96,10 @@
 		07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSOperationQueue+FFAdditions.swift"; sourceTree = "<group>"; };
 		07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+FFAdditions.swift"; sourceTree = "<group>"; };
 		07BDB0311BFF8E3700D089E6 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		07C78C2E1D6860AA000F9D9E /* JSONExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONExtensions.swift; sourceTree = "<group>"; };
+		07C78C2F1D6860AA000F9D9E /* JSONParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParsing.swift; sourceTree = "<group>"; };
+		07C78C301D6860AA000F9D9E /* JSONTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONTypes.swift; sourceTree = "<group>"; };
+		07C78C381D686105000F9D9E /* NSDateFormatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateFormatters.swift; sourceTree = "<group>"; };
 		07D72E821CB53DFC006FDB41 /* FFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D72E861CB53DFC006FDB41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07F96F041CB78C530012C546 /* Application+NameAndVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Application+NameAndVersion.swift"; sourceTree = "<group>"; };
@@ -151,6 +163,7 @@
 		073518951CFC2B5E001C05AA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				07C78C381D686105000F9D9E /* NSDateFormatters.swift */,
 				07F96F041CB78C530012C546 /* Application+NameAndVersion.swift */,
 				07B37F401A38B91B00911042 /* NSOperationQueue+FFAdditions.swift */,
 				07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */,
@@ -170,6 +183,16 @@
 				0735189E1CFC2D1F001C05AA /* Info.plist */,
 			);
 			path = "FFFoundation OS X Tests";
+			sourceTree = "<group>";
+		};
+		07C78C371D6860B2000F9D9E /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				07C78C2E1D6860AA000F9D9E /* JSONExtensions.swift */,
+				07C78C2F1D6860AA000F9D9E /* JSONParsing.swift */,
+				07C78C301D6860AA000F9D9E /* JSONTypes.swift */,
+			);
+			name = JSON;
 			sourceTree = "<group>";
 		};
 		07D72E831CB53DFC006FDB41 /* FFFoundation Mac */ = {
@@ -206,6 +229,7 @@
 		07FF5E291A3761D0006928A9 /* FFFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				07C78C371D6860B2000F9D9E /* JSON */,
 				073518951CFC2B5E001C05AA /* Extensions */,
 				073518911CFC23E6001C05AA /* Togglable.swift */,
 				07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */,
@@ -449,11 +473,15 @@
 				07D72E951CB53F5E006FDB41 /* NSOperationQueue+FFAdditions.swift in Sources */,
 				07D72E931CB53F59006FDB41 /* NotificationObserver.swift in Sources */,
 				07F96F071CB791460012C546 /* Application+NameAndVersion.swift in Sources */,
+				07C78C361D6860AA000F9D9E /* JSONTypes.swift in Sources */,
+				07C78C321D6860AA000F9D9E /* JSONExtensions.swift in Sources */,
 				07D72E901CB53F51006FDB41 /* NSAttributedStringExtensions.swift in Sources */,
 				07D72E911CB53F53006FDB41 /* StringExtensions.swift in Sources */,
 				07D72E8D1CB53F49006FDB41 /* Timer.swift in Sources */,
+				07C78C341D6860AA000F9D9E /* JSONParsing.swift in Sources */,
 				07D72E921CB53F56006FDB41 /* SequenceTypeExtensions.swift in Sources */,
 				07D72E8E1CB53F4B006FDB41 /* FunctionsAndHelpers.swift in Sources */,
+				07C78C3A1D686105000F9D9E /* NSDateFormatters.swift in Sources */,
 				073518901CFC2149001C05AA /* DictionaryHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,16 +495,20 @@
 				07FF5E4A1A376345006928A9 /* FFCacheManager.m in Sources */,
 				07B2F40D1A8BC68200F854FC /* NotificationObserver.swift in Sources */,
 				07FF5E441A376219006928A9 /* FunctionsAndHelpers.swift in Sources */,
+				07C78C391D686105000F9D9E /* NSDateFormatters.swift in Sources */,
 				07B37F411A38B91B00911042 /* NSOperationQueue+FFAdditions.swift in Sources */,
 				072F6B571CAAB88A00C2570F /* NSLocale+LanguageRegion.swift in Sources */,
 				076623301C04889200A245AA /* NSAttributedStringExtensions.swift in Sources */,
 				07710BB81B9773FB008E5F51 /* SequenceTypeExtensions.swift in Sources */,
 				07F96F051CB78C530012C546 /* Application+NameAndVersion.swift in Sources */,
 				07202D971CF7950A004119C9 /* Lazy.swift in Sources */,
+				07C78C331D6860AA000F9D9E /* JSONParsing.swift in Sources */,
 				0735188C1CFC2042001C05AA /* DispatchHelpers.swift in Sources */,
 				0735188F1CFC2149001C05AA /* DictionaryHelpers.swift in Sources */,
+				07C78C311D6860AA000F9D9E /* JSONExtensions.swift in Sources */,
 				07FF5E4F1A3765E2006928A9 /* FFTimer.m in Sources */,
 				07202D8E1CF75A7D004119C9 /* NSDate+Extensions.swift in Sources */,
+				07C78C351D6860AA000F9D9E /* JSONTypes.swift in Sources */,
 				079DA3561C96E2F4008B2612 /* Timer.swift in Sources */,
 				07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */,
 			);

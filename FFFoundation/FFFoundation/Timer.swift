@@ -55,7 +55,7 @@ public final class Timer<T> {
     #endif
     
     #if swift(>=3.0)
-    public init(interval: TimeInterval, repeats: Bool = false, queue: DispatchQueue = .main, userInfo: T? = nil, block: TimerBlock) {
+    public init(interval: TimeInterval, repeats: Bool = false, queue: DispatchQueue = .main, userInfo: T? = nil, block: @escaping TimerBlock) {
         self.interval = interval
         self.repeats = repeats
         self.userInfo = userInfo

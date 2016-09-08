@@ -29,7 +29,7 @@ public class NotificationObserver {
     public let notificationName: Notification.Name?
     public let object: AnyObject?
     
-    public init(center: NotificationCenter, name: Notification.Name? = nil, queue: OperationQueue? = nil, object: AnyObject? = nil, block: ObserverBlock) {
+    public init(center: NotificationCenter, name: Notification.Name? = nil, queue: OperationQueue? = nil, object: AnyObject? = nil, block: @escaping ObserverBlock) {
         self.notificationCenter = center
         self.notificationName = name
         self.object = object
@@ -53,11 +53,7 @@ public class NotificationObserver {
         self.notificationCenter = center
         self.notificationName = name
         self.object = object
-        #if swift(>=3.0)
-            self.observer = center.addObserver(forName: name, object: object, queue: queue, using: block)
-        #else
-            self.observer = center.addObserverForName(name, object: object, queue: queue, usingBlock: block)
-        #endif
+        self.observer = center.addObserverForName(name, object: object, queue: queue, usingBlock: block)
     }
     
     deinit {

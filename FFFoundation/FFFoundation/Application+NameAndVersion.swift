@@ -17,7 +17,11 @@
     #endif
     
 #if swift(>=3.0)
-    public let App = Application.shared
+    #if os(iOS)
+        public let App = Application.shared
+    #elseif os(OSX)
+        public let App = Application.shared()
+    #endif
 #else
     public let App = Application.sharedApplication()
 #endif

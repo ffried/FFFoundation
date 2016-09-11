@@ -22,11 +22,15 @@ public protocol JSONCreatable: JSONType {
     init(json: JSONType)
 }
 
+public protocol JSONUpdatable: JSONType {
+    func update(fromJSON json: JSONType)
+}
+
 public protocol JSONRepresentable: JSONType {
     var json: JSONType { get }
 }
 
-public protocol JSONTransformable: JSONCreatable, JSONRepresentable {}
+public protocol JSONTransformable: JSONCreatable, JSONRepresentable, JSONUpdatable {}
 
 public protocol JSONStaticCreatable: JSONType {
     #if swift(>=3.0)

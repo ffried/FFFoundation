@@ -30,6 +30,8 @@
 		07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */; };
 		07B39A091D8EDA2D005F2B18 /* FileManager+Directories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B39A081D8EDA2D005F2B18 /* FileManager+Directories.swift */; };
 		07B39A0A1D8EDFC5005F2B18 /* FileManager+Directories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B39A081D8EDA2D005F2B18 /* FileManager+Directories.swift */; };
+		07B39A0C1D8EE23D005F2B18 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B39A0B1D8EE23D005F2B18 /* AppGroup.swift */; };
+		07B39A0D1D8EE23D005F2B18 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B39A0B1D8EE23D005F2B18 /* AppGroup.swift */; };
 		07BDB0321BFF8E3700D089E6 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BDB0311BFF8E3700D089E6 /* StringExtensions.swift */; };
 		07C78C311D6860AA000F9D9E /* JSONExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C78C2E1D6860AA000F9D9E /* JSONExtensions.swift */; };
 		07C78C321D6860AA000F9D9E /* JSONExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C78C2E1D6860AA000F9D9E /* JSONExtensions.swift */; };
@@ -98,6 +100,7 @@
 		07B37F401A38B91B00911042 /* OperationQueue+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OperationQueue+FFAdditions.swift"; sourceTree = "<group>"; };
 		07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+FFAdditions.swift"; sourceTree = "<group>"; };
 		07B39A081D8EDA2D005F2B18 /* FileManager+Directories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Directories.swift"; sourceTree = "<group>"; };
+		07B39A0B1D8EE23D005F2B18 /* AppGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
 		07BDB0311BFF8E3700D089E6 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		07C78C2E1D6860AA000F9D9E /* JSONExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONExtensions.swift; sourceTree = "<group>"; };
 		07C78C2F1D6860AA000F9D9E /* JSONParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParsing.swift; sourceTree = "<group>"; };
@@ -233,22 +236,23 @@
 		07FF5E291A3761D0006928A9 /* FFFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				07C78C371D6860B2000F9D9E /* JSON */,
 				073518951CFC2B5E001C05AA /* Extensions */,
-				073518911CFC23E6001C05AA /* Togglable.swift */,
-				07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */,
-				07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */,
+				07C78C371D6860B2000F9D9E /* JSON */,
+				07B39A0B1D8EE23D005F2B18 /* AppGroup.swift */,
 				0735188E1CFC2149001C05AA /* DictionaryHelpers.swift */,
 				0735188B1CFC2042001C05AA /* DispatchHelpers.swift */,
-				079DA3551C96E2F4008B2612 /* Timer.swift */,
+				07FF5E431A376219006928A9 /* FunctionsAndHelpers.swift */,
 				07202D961CF7950A004119C9 /* Lazy.swift */,
+				07B2F40C1A8BC68200F854FC /* NotificationObserver.swift */,
+				079DA3551C96E2F4008B2612 /* Timer.swift */,
+				073518911CFC23E6001C05AA /* Togglable.swift */,
+				07FF5E2C1A3761D0006928A9 /* FFFoundation.h */,
+				07FF5E471A376345006928A9 /* FFCacheManager.h */,
+				07FF5E481A376345006928A9 /* FFCacheManager.m */,
 				07FF5E511A3768DD006928A9 /* FFObserver.h */,
 				07FF5E521A3768DD006928A9 /* FFObserver.m */,
 				07FF5E4C1A3765E2006928A9 /* FFTimer.h */,
 				07FF5E4D1A3765E2006928A9 /* FFTimer.m */,
-				07FF5E471A376345006928A9 /* FFCacheManager.h */,
-				07FF5E481A376345006928A9 /* FFCacheManager.m */,
-				07FF5E2C1A3761D0006928A9 /* FFFoundation.h */,
 			);
 			path = FFFoundation;
 			sourceTree = "<group>";
@@ -478,6 +482,7 @@
 				07B39A0A1D8EDFC5005F2B18 /* FileManager+Directories.swift in Sources */,
 				07D72E931CB53F59006FDB41 /* NotificationObserver.swift in Sources */,
 				07F96F071CB791460012C546 /* Application+NameAndVersion.swift in Sources */,
+				07B39A0D1D8EE23D005F2B18 /* AppGroup.swift in Sources */,
 				07C78C361D6860AA000F9D9E /* JSONTypes.swift in Sources */,
 				07C78C321D6860AA000F9D9E /* JSONExtensions.swift in Sources */,
 				07D72E901CB53F51006FDB41 /* NSAttributedStringExtensions.swift in Sources */,
@@ -516,6 +521,7 @@
 				07202D8E1CF75A7D004119C9 /* NSDate+Extensions.swift in Sources */,
 				07C78C351D6860AA000F9D9E /* JSONTypes.swift in Sources */,
 				079DA3561C96E2F4008B2612 /* Timer.swift in Sources */,
+				07B39A0C1D8EE23D005F2B18 /* AppGroup.swift in Sources */,
 				07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

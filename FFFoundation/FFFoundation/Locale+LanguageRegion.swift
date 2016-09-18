@@ -1,5 +1,5 @@
 //
-//  NSLocale+LanguageRegion.swift
+//  Locale+LanguageRegion.swift
 //  FFFoundation
 //
 //  Created by Florian Friedrich on 29/03/16.

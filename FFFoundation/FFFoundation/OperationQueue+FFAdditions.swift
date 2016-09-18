@@ -1,5 +1,5 @@
 //
-//  NSOperationQueue+FFAdditions.swift
+//  OperationQueue+FFAdditions.swift
 //  FFFoundation
 //
 //  Created by Florian Friedrich on 10.12.14.

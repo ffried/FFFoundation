@@ -1,5 +1,5 @@
 //
-//  NSDateFormatters.swift
+//  DateFormatters.swift
 //  FFFoundation
 //
 //  Created by Florian Friedrich on 12/06/16.

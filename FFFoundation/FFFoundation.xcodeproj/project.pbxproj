@@ -29,6 +29,7 @@
 		07B37F411A38B91B00911042 /* OperationQueue+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F401A38B91B00911042 /* OperationQueue+FFAdditions.swift */; };
 		07B37F521A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B37F511A3B5BB500911042 /* NSLayoutConstraint+FFAdditions.swift */; };
 		07B39A091D8EDA2D005F2B18 /* FileManager+Directories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B39A081D8EDA2D005F2B18 /* FileManager+Directories.swift */; };
+		07B39A0A1D8EDFC5005F2B18 /* FileManager+Directories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B39A081D8EDA2D005F2B18 /* FileManager+Directories.swift */; };
 		07BDB0321BFF8E3700D089E6 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BDB0311BFF8E3700D089E6 /* StringExtensions.swift */; };
 		07C78C311D6860AA000F9D9E /* JSONExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C78C2E1D6860AA000F9D9E /* JSONExtensions.swift */; };
 		07C78C321D6860AA000F9D9E /* JSONExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C78C2E1D6860AA000F9D9E /* JSONExtensions.swift */; };
@@ -474,6 +475,7 @@
 				0735188D1CFC2045001C05AA /* DispatchHelpers.swift in Sources */,
 				07D72E941CB53F5B006FDB41 /* NSLayoutConstraint+FFAdditions.swift in Sources */,
 				07D72E951CB53F5E006FDB41 /* OperationQueue+FFAdditions.swift in Sources */,
+				07B39A0A1D8EDFC5005F2B18 /* FileManager+Directories.swift in Sources */,
 				07D72E931CB53F59006FDB41 /* NotificationObserver.swift in Sources */,
 				07F96F071CB791460012C546 /* Application+NameAndVersion.swift in Sources */,
 				07C78C361D6860AA000F9D9E /* JSONTypes.swift in Sources */,

@@ -15,16 +15,6 @@
         import AppKit
         public typealias Application = NSApplication
     #endif
-    
-#if swift(>=3.0)
-    #if os(iOS)
-        public let App = Application.shared
-    #elseif os(OSX)
-        public let App = Application.shared()
-    #endif
-#else
-    public let App = Application.sharedApplication()
-#endif
 
     public extension Application {
         #if swift(>=3.0)

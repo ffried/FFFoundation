@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "07D72E811CB53DFC006FDB41"
                BuildableName = "FFFoundation.framework"
-               BlueprintName = "FFFoundation Mac"
+               BlueprintName = "FFFoundation macOS"
                ReferencedContainer = "container:FFFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "073518991CFC2D1E001C05AA"
-               BuildableName = "FFFoundation OS X Tests.xctest"
-               BlueprintName = "FFFoundation OS X Tests"
+               BuildableName = "FFFoundation macOS Tests.xctest"
+               BlueprintName = "FFFoundation macOS Tests"
                ReferencedContainer = "container:FFFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,15 +40,26 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "073518991CFC2D1E001C05AA"
+               BuildableName = "FFFoundation macOS Tests.xctest"
+               BlueprintName = "FFFoundation macOS Tests"
+               ReferencedContainer = "container:FFFoundation.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07D72E811CB53DFC006FDB41"
             BuildableName = "FFFoundation.framework"
-            BlueprintName = "FFFoundation Mac"
+            BlueprintName = "FFFoundation macOS"
             ReferencedContainer = "container:FFFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -70,7 +81,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07D72E811CB53DFC006FDB41"
             BuildableName = "FFFoundation.framework"
-            BlueprintName = "FFFoundation Mac"
+            BlueprintName = "FFFoundation macOS"
             ReferencedContainer = "container:FFFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -88,7 +99,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07D72E811CB53DFC006FDB41"
             BuildableName = "FFFoundation.framework"
-            BlueprintName = "FFFoundation Mac"
+            BlueprintName = "FFFoundation macOS"
             ReferencedContainer = "container:FFFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -50,6 +50,18 @@ public prefix func <|<T: JSONStaticCreatable>(value: T.JSONType?) -> T? {
 }
 
 #if swift(>=3.0)
+public prefix func <|<T: JSONCreatable>(value: JSONArray<T.JSONType>) -> [T] {
+    return value.map(T.init)
+}
+
+public prefix func <|<T: JSONCreatable>(value: JSONArray<T.JSONType>?) -> [T]? {
+    return value.map { $0.map(T.init) }
+}
+
+public prefix func <|<T: JSONStaticCreatable>(value: JSONArray<T.JSONType>?) -> [T]? {
+    return value.map { $0.flatMap(T.from) }
+}
+    
 public func =<|<T>(lhs: inout T, value: JSONObject?) {
     if let v: T = <|value { lhs = v }
 }
@@ -69,6 +81,23 @@ public func =<|<T: JSONCreatable>(lhs: inout T?, value: JSONObject?) {
 public func =<|<T: JSONStaticCreatable>(lhs: inout T?, value: JSONObject?) {
     lhs = <|value
 }
+    
+public func =<|<T: JSONCreatable>(lhs: inout [T], value: JSONObject?) {
+    if let val: JSONArray<T.JSONType> = <|value { lhs = <|val }
+}
+
+public func =<|<T: JSONStaticCreatable>(lhs: inout [T], value: JSONObject?) {
+    if let val: JSONArray<T.JSONType> = <|value,
+        let arr: Array<T> = <|val { lhs = arr }
+}
+
+public func =<|<T: JSONCreatable>(lhs: inout [T]?, value: JSONObject?) {
+    if let val = value { lhs =<| val }
+}
+
+public func =<|<T: JSONStaticCreatable>(lhs: inout [T]?, value: JSONObject?) {
+    if let val = value { lhs =<| val }
+}
 
 public func =<|<T: JSONCreatable>(lhs: inout T, value: T.JSONType) {
     lhs = <|value
@@ -85,7 +114,35 @@ public func =<|<T: JSONCreatable>(lhs: inout T?, value: T.JSONType?) {
 public func =<|<T: JSONStaticCreatable>(lhs: inout T?, value: T.JSONType?) {
     lhs = <|value
 }
+    
+public func =<|<T: JSONCreatable>(lhs: inout [T], value: [T.JSONType]) {
+    lhs = <|value
+}
+
+public func =<|<T: JSONStaticCreatable>(lhs: inout [T], value: [T.JSONType]) {
+    if let val: [T] = <|value { lhs = val }
+}
+
+public func =<|<T: JSONCreatable>(lhs: inout [T]?, value: [T.JSONType]?) {
+    lhs = <|value
+}
+
+public func =<|<T: JSONStaticCreatable>(lhs: inout [T]?, value: [T.JSONType]?) {
+    lhs = <|value
+}
 #else
+public prefix func <|<T: JSONCreatable>(value: Array<T.JSONType>) -> [T] {
+    return value.map(T.init)
+}
+    
+public prefix func <|<T: JSONCreatable>(value: Array<T.JSONType>?) -> [T]? {
+    return value.map { $0.map(T.init) }
+}
+    
+public prefix func <|<T: JSONStaticCreatable>(value: Array<T.JSONType>?) -> [T]? {
+    return value.map { $0.flatMap(T.from) }
+}
+    
 public func =<|<T>(inout lhs: T, value: JSONDictionary.Value?) {
     if let v: T = <|value { lhs = v }
 }
@@ -105,6 +162,23 @@ public func =<|<T: JSONCreatable>(inout lhs: T?, value: JSONDictionary.Value?) {
 public func =<|<T: JSONStaticCreatable>(inout lhs: T?, value: JSONDictionary.Value?) {
     lhs = <|value
 }
+    
+public func =<|<T: JSONCreatable>(inout lhs: [T], value: JSONDictionary.Value?) {
+    if let val: Array<T.JSONType> = <|value { lhs = <|val }
+}
+
+public func =<|<T: JSONStaticCreatable>(inout lhs: [T], value: JSONDictionary.Value?) {
+    if let val: Array<T.JSONType> = <|value,
+        let arr: Array<T> = <|val { lhs = arr }
+}
+
+public func =<|<T: JSONCreatable>(inout lhs: [T]?, value: JSONDictionary.Value?) {
+    if let val = value { lhs =<| val }
+}
+
+public func =<|<T: JSONStaticCreatable>(inout lhs: [T]?, value: JSONDictionary.Value?) {
+    if let val = value { lhs =<| val }
+}
 
 public func =<|<T: JSONCreatable>(inout lhs: T, value: T.JSONType) {
     lhs = <|value
@@ -121,6 +195,22 @@ public func =<|<T: JSONCreatable>(inout lhs: T?, value: T.JSONType?) {
 public func =<|<T: JSONStaticCreatable>(inout lhs: T?, value: T.JSONType?) {
     lhs = <|value
 }
+    
+public func =<|<T: JSONCreatable>(inout lhs: [T], value: [T.JSONType]) {
+    lhs = <|value
+}
+
+public func =<|<T: JSONStaticCreatable>(inout lhs: [T], value: [T.JSONType]) {
+    if let val: [T] = <|value { lhs = val }
+}
+
+public func =<|<T: JSONCreatable>(inout lhs: [T]?, value: [T.JSONType]?) {
+    lhs = <|value
+}
+
+public func =<|<T: JSONStaticCreatable>(inout lhs: [T]?, value: [T.JSONType]?) {
+    lhs = <|value
+}
 #endif
 
 public struct JSON {
@@ -130,20 +220,32 @@ public struct JSON {
         return <|value
     }
     
+    public static func convert<T: JSONCreatable>(value: JSONObject?) -> T? {
+        return <|value
+    }
+    
+    public static func convert<T: JSONStaticCreatable>(value: JSONObject?) -> T? {
+        return <|value
+    }
+    
+    public static func convert<T: JSONCreatable>(value: T.JSONType) -> T {
+        return <|value
+    }
+    
+    public static func convert<T: JSONStaticCreatable>(value: T.JSONType) -> T? {
+        return <|value
+    }
+    
     #if swift(>=3.0)
-    public static func convert<T>(value: JSONObject?) -> T? where T: JSONCreatable {
+    public static func convert<T: JSONCreatable>(value: JSONArray<T.JSONType>) -> [T] {
         return <|value
     }
     
-    public static func convert<T>(value: JSONObject?) -> T? where T: JSONStaticCreatable {
+    public static func convert<T: JSONCreatable>(value: JSONArray<T.JSONType>?) -> [T]? {
         return <|value
     }
     
-    public static func convert<T>(value: T.JSONType) -> T where T: JSONCreatable {
-        return <|value
-    }
-    
-    public static func convert<T>(value: T.JSONType) -> T? where T: JSONStaticCreatable {
+    public static func convert<T: JSONStaticCreatable>(value: JSONArray<T.JSONType>?) -> [T]? {
         return <|value
     }
     
@@ -151,51 +253,79 @@ public struct JSON {
         output =<| value
     }
     
-    public static func map<T>(value: JSONObject?, to output: inout T) where T: JSONCreatable {
+    public static func map<T: JSONCreatable>(value: JSONObject?, to output: inout T) {
         output =<| value
     }
     
-    public static func map<T>(value: JSONObject?, to output: inout T) where T: JSONStaticCreatable {
+    public static func map<T: JSONStaticCreatable>(value: JSONObject?, to output: inout T) {
         output =<| value
     }
     
-    public static func map<T>(value: JSONObject?, to output: inout T?) where T: JSONCreatable {
+    public static func map<T: JSONCreatable>(value: JSONObject?, to output: inout T?) {
         output =<| value
     }
     
-    public static func map<T>(value: JSONObject?, to output: inout T?) where T: JSONStaticCreatable {
+    public static func map<T: JSONStaticCreatable>(value: JSONObject?, to output: inout T?) {
         output =<| value
     }
     
-    public static func map<T>(value: T.JSONType, to output: inout T) where T: JSONCreatable {
+    public static func map<T: JSONCreatable>(value: JSONObject?, to output: inout [T]) {
         output =<| value
     }
     
-    public static func map<T>(value: T.JSONType, to output: inout T) where T: JSONStaticCreatable {
+    public static func map<T: JSONStaticCreatable>(value: JSONObject?, to output: inout [T]) {
         output =<| value
     }
     
-    public static func map<T>(value: T.JSONType?, to output: inout T?) where T: JSONCreatable {
+    public static func map<T: JSONCreatable>(value: JSONObject?, to output: inout [T]?) {
         output =<| value
     }
     
-    public static func map<T>(value: T.JSONType?, to output: inout T?) where T: JSONStaticCreatable {
+    public static func map<T: JSONStaticCreatable>(value: JSONObject?, to output: inout [T]?) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONCreatable>(value: T.JSONType, to output: inout T) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONStaticCreatable>(value: T.JSONType, to output: inout T) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONCreatable>(value: T.JSONType?, to output: inout T?) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONStaticCreatable>(value: T.JSONType?, to output: inout T?) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONCreatable>(value: [T.JSONType], to output: inout [T]) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONStaticCreatable>(value: [T.JSONType], to output: inout [T]) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONCreatable>(value: [T.JSONType]?, to output: inout [T]?) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONStaticCreatable>(value: [T.JSONType]?, to output: inout [T]?) {
         output =<| value
     }
     #else
-    public static func convert<T where T: JSONCreatable>(value: JSONDictionary.Value?) -> T? {
+    public static func convert<T: JSONCreatable>(value: Array<T.JSONType>) -> [T] {
         return <|value
     }
     
-    public static func convert<T where T: JSONStaticCreatable>(value: JSONDictionary.Value?) -> T? {
+    public static func convert<T: JSONCreatable>(value: Array<T.JSONType>?) -> [T]? {
         return <|value
     }
     
-    public static func convert<T where T: JSONCreatable>(value: T.JSONType) -> T {
-        return <|value
-    }
-    
-    public static func convert<T where T: JSONStaticCreatable>(value: T.JSONType) -> T? {
+    public static func convert<T: JSONStaticCreatable>(value: Array<T.JSONType>?) -> [T]? {
         return <|value
     }
     
@@ -203,35 +333,67 @@ public struct JSON {
         output =<| value
     }
     
-    public static func map<T where T: JSONCreatable>(value: JSONDictionary.Value?, inout to output: T) {
+    public static func map<T: JSONCreatable>(value: JSONDictionary.Value?, inout to output: T) {
         output =<| value
     }
     
-    public static func map<T where T: JSONStaticCreatable>(value: JSONDictionary.Value?, inout to output: T) {
+    public static func map<T: JSONStaticCreatable>(value: JSONDictionary.Value?, inout to output: T) {
         output =<| value
     }
     
-    public static func map<T where T: JSONCreatable>(value: JSONDictionary.Value?, inout to output: T?) {
+    public static func map<T: JSONCreatable>(value: JSONDictionary.Value?, inout to output: T?) {
         output =<| value
     }
     
-    public static func map<T where T: JSONStaticCreatable>(value: JSONDictionary.Value?, inout to output: T?) {
+    public static func map<T: JSONStaticCreatable>(value: JSONDictionary.Value?, inout to output: T?) {
         output =<| value
     }
     
-    public static func map<T where T: JSONCreatable>(value: T.JSONType, inout to output: T) {
+    public static func map<T: JSONCreatable>(value: JSONObject?, inout to output: [T]) {
         output =<| value
     }
     
-    public static func map<T where T: JSONStaticCreatable>(value: T.JSONType, inout to output: T) {
+    public static func map<T: JSONStaticCreatable>(value: JSONObject?, inout to output: [T]) {
         output =<| value
     }
     
-    public static func map<T where T: JSONCreatable>(value: T.JSONType?, inout to output: T?) {
+    public static func map<T: JSONCreatable>(value: JSONObject?, inout to output: [T]?) {
         output =<| value
     }
     
-    public static func map<T where T: JSONStaticCreatable>(value: T.JSONType?, inout to output: T?) {
+    public static func map<T: JSONStaticCreatable>(value: JSONObject?, inout to output: [T]?) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONCreatable>(value: T.JSONType, inout to output: T) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONStaticCreatable>(value: T.JSONType, inout to output: T) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONCreatable>(value: T.JSONType?, inout to output: T?) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONStaticCreatable>(value: T.JSONType?, inout to output: T?) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONCreatable>(value: [T.JSONType], inout to output: [T]) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONStaticCreatable>(value: [T.JSONType], inout to output: [T]) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONCreatable>(value: [T.JSONType]?, inout to output: [T]?) {
+        output =<| value
+    }
+    
+    public static func map<T: JSONStaticCreatable>(value: [T.JSONType]?, inout to output: [T]?) {
         output =<| value
     }
     #endif

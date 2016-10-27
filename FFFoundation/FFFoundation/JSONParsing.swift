@@ -25,7 +25,7 @@ infix operator =<| {
 }
 #endif
 
-public prefix func <|<T>(value: JSONDictionary.Value?) -> T? {
+public prefix func <|<T>(value: JSONObject?) -> T? {
     return value as? T
 }
 //
@@ -50,23 +50,23 @@ public prefix func <|<T: JSONStaticCreatable>(value: T.JSONType?) -> T? {
 }
 
 #if swift(>=3.0)
-public func =<|<T>(lhs: inout T, value: JSONDictionary.Value?) {
+public func =<|<T>(lhs: inout T, value: JSONObject?) {
     if let v: T = <|value { lhs = v }
 }
 
-public func =<|<T: JSONCreatable>(lhs: inout T, value: JSONDictionary.Value?) {
+public func =<|<T: JSONCreatable>(lhs: inout T, value: JSONObject?) {
     if let val: T = <|value { lhs = val }
 }
 
-public func =<|<T: JSONStaticCreatable>(lhs: inout T, value: JSONDictionary.Value?) {
+public func =<|<T: JSONStaticCreatable>(lhs: inout T, value: JSONObject?) {
     if let val: T = <|value { lhs = val }
 }
 
-public func =<|<T: JSONCreatable>(lhs: inout T?, value: JSONDictionary.Value?) {
+public func =<|<T: JSONCreatable>(lhs: inout T?, value: JSONObject?) {
     lhs = <|value
 }
 
-public func =<|<T: JSONStaticCreatable>(lhs: inout T?, value: JSONDictionary.Value?) {
+public func =<|<T: JSONStaticCreatable>(lhs: inout T?, value: JSONObject?) {
     lhs = <|value
 }
 
@@ -126,16 +126,16 @@ public func =<|<T: JSONStaticCreatable>(inout lhs: T?, value: T.JSONType?) {
 public struct JSON {
     private init() { }
     
-    public static func convert<T>(value: JSONDictionary.Value?) -> T? {
+    public static func convert<T>(value: JSONObject?) -> T? {
         return <|value
     }
     
     #if swift(>=3.0)
-    public static func convert<T>(value: JSONDictionary.Value?) -> T? where T: JSONCreatable {
+    public static func convert<T>(value: JSONObject?) -> T? where T: JSONCreatable {
         return <|value
     }
     
-    public static func convert<T>(value: JSONDictionary.Value?) -> T? where T: JSONStaticCreatable {
+    public static func convert<T>(value: JSONObject?) -> T? where T: JSONStaticCreatable {
         return <|value
     }
     
@@ -147,23 +147,23 @@ public struct JSON {
         return <|value
     }
     
-    public static func map<T>(value: JSONDictionary.Value?, to output: inout T) {
+    public static func map<T>(value: JSONObject?, to output: inout T) {
         output =<| value
     }
     
-    public static func map<T>(value: JSONDictionary.Value?, to output: inout T) where T: JSONCreatable {
+    public static func map<T>(value: JSONObject?, to output: inout T) where T: JSONCreatable {
         output =<| value
     }
     
-    public static func map<T>(value: JSONDictionary.Value?, to output: inout T) where T: JSONStaticCreatable {
+    public static func map<T>(value: JSONObject?, to output: inout T) where T: JSONStaticCreatable {
         output =<| value
     }
     
-    public static func map<T>(value: JSONDictionary.Value?, to output: inout T?) where T: JSONCreatable {
+    public static func map<T>(value: JSONObject?, to output: inout T?) where T: JSONCreatable {
         output =<| value
     }
     
-    public static func map<T>(value: JSONDictionary.Value?, to output: inout T?) where T: JSONStaticCreatable {
+    public static func map<T>(value: JSONObject?, to output: inout T?) where T: JSONStaticCreatable {
         output =<| value
     }
     

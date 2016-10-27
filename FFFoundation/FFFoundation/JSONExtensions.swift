@@ -12,14 +12,16 @@ import Foundation
 extension Date: JSONStaticCreatable, JSONRepresentable {
     public typealias JSONType = String
     
+    public static var jsonDateFormatter: DateFormatter = ISO8601Formatter
+    
     public static func from(json: JSONType) -> Date? {
-        return ISO8601Formatter.date(from: json)
+        return jsonDateFormatter.date(from: json)
             .map { $0.timeIntervalSinceReferenceDate }
             .map { self.init(timeIntervalSinceReferenceDate: $0) }
     }
     
     public var json: JSONType {
-        return ISO8601Formatter.string(from: self)
+        return type(of: self).jsonDateFormatter.string(from: self)
     }
 }
 

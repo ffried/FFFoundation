@@ -8,11 +8,13 @@
 
 #if swift(>=3.0)
     public typealias JSONObject = Any
+    public typealias JSONDictionary<Value: JSONObject> = Dictionary<String, Value>
+    public typealias JSONArray<Value: JSONObject> = Array<Value>
 #else
     public typealias JSONObject = AnyObject
+    public typealias JSONDictionary = Dictionary<String, JSONObject>
+    public typealias JSONArray = Array<JSONObject>
 #endif
-public typealias JSONDictionary = Dictionary<String, JSONObject>
-public typealias JSONArray = Array<JSONObject>
 
 public protocol JSONType {
     associatedtype JSONType = JSONObject
@@ -23,7 +25,7 @@ public protocol JSONCreatable: JSONType {
 }
 
 public protocol JSONUpdatable: JSONType {
-    func update(fromJSON json: JSONType)
+    mutating func update(fromJSON json: JSONType)
 }
 
 public protocol JSONRepresentable: JSONType {

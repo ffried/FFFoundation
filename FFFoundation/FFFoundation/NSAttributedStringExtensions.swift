@@ -27,7 +27,7 @@ import Foundation
 
 #if swift(>=3.0)
 public extension NSAttributedString {
-    public typealias AttributesDictionary = [String: AnyObject]
+    public typealias AttributesDictionary = [String: Any]
     
     public final func size(forWidth width: CGFloat) -> CGSize {
         let boundingSize = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)

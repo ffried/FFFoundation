@@ -41,12 +41,12 @@ public prefix func <|<T: JSONCreatable>(value: T.JSONType) -> T {
     return T(json: value)
 }
 
-public prefix func <|<T: JSONCreatable>(value: T.JSONType?) -> T? {
-    return value.map(T.init)
+public prefix func <|<T: JSONCreatable>(value: JSONObject?) -> T? {
+    return (value as? T.JSONType).map(T.init)
 }
 
-public prefix func <|<T: JSONStaticCreatable>(value: T.JSONType?) -> T? {
-    return value.flatMap(T.from)
+public prefix func <|<T: JSONStaticCreatable>(value: JSONObject?) -> T? {
+    return (value as? T.JSONType).flatMap(T.from)
 }
 
 #if swift(>=3.0)

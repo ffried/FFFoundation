@@ -54,12 +54,12 @@ public prefix func <|<T: JSONCreatable>(value: JSONArray<T.JSONType>) -> [T] {
     return value.map(T.init)
 }
 
-public prefix func <|<T: JSONCreatable>(value: JSONArray<T.JSONType>?) -> [T]? {
-    return value.map { $0.map(T.init) }
-}
+//public prefix func <|<T: JSONCreatable>(value: JSONArray<T.JSONType>?) -> [T]? {
+//    return value.map { $0.map(T.init) }
+//}
 
-public prefix func <|<T: JSONStaticCreatable>(value: JSONArray<T.JSONType>?) -> [T]? {
-    return value.map { $0.flatMap(T.from) }
+public prefix func <|<T: JSONStaticCreatable>(value: JSONArray<T.JSONType>) -> [T] {
+    return value.flatMap(T.from)
 }
     
 public func =<|<T>(lhs: inout T, value: JSONObject?) {
@@ -82,22 +82,21 @@ public func =<|<T: JSONStaticCreatable>(lhs: inout T?, value: JSONObject?) {
     lhs = <|value
 }
     
-public func =<|<T: JSONCreatable>(lhs: inout [T], value: JSONObject?) {
+public func =<|<T: JSONCreatable>(lhs: inout [T]?, value: JSONObject?) {
     if let val: JSONArray<T.JSONType> = <|value { lhs = <|val }
 }
 
-public func =<|<T: JSONStaticCreatable>(lhs: inout [T], value: JSONObject?) {
-    if let val: JSONArray<T.JSONType> = <|value,
-        let arr: Array<T> = <|val { lhs = arr }
-}
-
-public func =<|<T: JSONCreatable>(lhs: inout [T]?, value: JSONObject?) {
-    if let val = value { lhs =<| val }
-}
-
 public func =<|<T: JSONStaticCreatable>(lhs: inout [T]?, value: JSONObject?) {
-    if let val = value { lhs =<| val }
+    if let val: JSONArray<T.JSONType> = <|value  { lhs = <|val }
 }
+
+//public func =<|<T: JSONCreatable>(lhs: inout [T]?, value: JSONObject?) {
+//    if let val = value { lhs =<| val }
+//}
+
+//public func =<|<T: JSONStaticCreatable>(lhs: inout [T]?, value: JSONObject?) {
+//    if let val = value { lhs =<| val }
+//}
 
 public func =<|<T: JSONCreatable>(lhs: inout T, value: T.JSONType) {
     lhs = <|value
@@ -120,7 +119,7 @@ public func =<|<T: JSONCreatable>(lhs: inout [T], value: [T.JSONType]) {
 }
 
 public func =<|<T: JSONStaticCreatable>(lhs: inout [T], value: [T.JSONType]) {
-    if let val: [T] = <|value { lhs = val }
+    lhs = <|value
 }
 
 public func =<|<T: JSONCreatable>(lhs: inout [T]?, value: [T.JSONType]?) {

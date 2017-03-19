@@ -79,8 +79,6 @@
 		07FF5E481A376345006928A9 /* FFCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFCacheManager.m; sourceTree = "<group>"; };
 		07FF5E4C1A3765E2006928A9 /* FFTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTimer.h; sourceTree = "<group>"; };
 		07FF5E4D1A3765E2006928A9 /* FFTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTimer.m; sourceTree = "<group>"; };
-		07FF5E511A3768DD006928A9 /* FFObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFObserver.h; sourceTree = "<group>"; };
-		07FF5E521A3768DD006928A9 /* FFObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,8 +179,6 @@
 				073518911CFC23E6001C05AA /* Togglable.swift */,
 				07FF5E471A376345006928A9 /* FFCacheManager.h */,
 				07FF5E481A376345006928A9 /* FFCacheManager.m */,
-				07FF5E511A3768DD006928A9 /* FFObserver.h */,
-				07FF5E521A3768DD006928A9 /* FFObserver.m */,
 				07FF5E4C1A3765E2006928A9 /* FFTimer.h */,
 				07FF5E4D1A3765E2006928A9 /* FFTimer.m */,
 			);

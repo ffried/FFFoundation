@@ -6,9 +6,9 @@
 //  Copyright © 2016 Florian Friedrich. All rights reserved.
 //
 
-import Foundation
+import class Foundation.FileManager
+import struct ObjectiveC.ObjCBool
 
-#if swift(>=3)
 public extension FileManager {
     public func createDirectoryIfNeeded(at url: URL, attributes: [String: Any]? = nil) throws {
         var isDir: ObjCBool = false
@@ -18,14 +18,3 @@ public extension FileManager {
         }
     }
 }
-#else
-public extension NSFileManager {
-    public func createDirectoryAtURLIfNeeded(url: URL, attributes: [String: Any]? = nil) throws {
-        var isDir: ObjCBool = false
-        let exists = fileExistsAtPath(url.path, isDirectory: &isDir)
-        if !exists || (exists && !isDir.boolValue) {
-            try createDirectoryAtURL(url, withIntermediateDirectories: true, attributes: attributes)
-        }
-    }
-}
-#endif

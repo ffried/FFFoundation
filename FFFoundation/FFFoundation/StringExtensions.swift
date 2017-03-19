@@ -18,48 +18,30 @@
 //  limitations under the License.
 //
 
-import Foundation
-import CoreGraphics
-
-public extension String {
-    #if swift(>=3.0)
-    public mutating func append(pathComponent comp: String) {
-        self += hasSuffix("/") ? comp : ("/" + comp)
-    }
+#if os(iOS) || os(macOS)
+    import class Foundation.NSAttributedString
+    import struct CoreGraphics.CGFloat
+    import struct CoreGraphics.CGSize
     
-    public func stringByAppending(pathComponent comp: String) -> String {
-        var newString = self
-        newString.append(pathComponent: comp)
-        return newString
+    public extension String {
+        @available(*, deprecated: 2.0, message: "You should really consider URL instead!")
+        public mutating func append(pathComponent comp: String) {
+            self += hasSuffix("/") ? comp : ("/" + comp)
+        }
+        
+        @available(*, deprecated: 2.0, message: "You should really consider URL instead!")
+        public func stringByAppending(pathComponent comp: String) -> String {
+            var newString = self
+            newString.append(pathComponent: comp)
+            return newString
+        }
+        
+        public func size(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGSize {
+            return NSAttributedString(string: self, attributes: attributes).size(forWidth: width)
+        }
+        
+        public func height(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGFloat {
+            return size(forWidth: width, attributes: attributes).height
+        }
     }
-    
-    public func size(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGSize {
-        return NSAttributedString(string: self, attributes: attributes).size(forWidth: width)
-    }
-    
-    public func height(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGFloat {
-        return size(forWidth: width, attributes: attributes).height
-    }
-    #else
-    public mutating func appendPathComponent(comp: String) {
-        self += hasSuffix("/") ? comp : ("/" + comp)
-    }
-    
-    @warn_unused_result
-    public func stringByAppendingPathComponent(comp: String) -> String {
-        var newString = self
-        newString.appendPathComponent(comp)
-        return newString
-    }
-    
-    @warn_unused_result
-    public func sizeForWidth(width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGSize {
-        return NSAttributedString(string: self, attributes: attributes).sizeForWidth(width)
-    }
-    
-    @warn_unused_result
-    public func heightForWidth(width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGFloat {
-        return sizeForWidth(width, attributes: attributes).height
-    }
-    #endif
-}
+#endif

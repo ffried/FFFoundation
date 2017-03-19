@@ -6,22 +6,18 @@
 //  Copyright © 2016 Florian Friedrich. All rights reserved.
 //
 
-#if os(iOS) || os(OSX)
-    import Foundation
+#if os(iOS) || os(macOS)
+    import class Foundation.Bundle
     #if os(iOS)
-        import UIKit
+        import class UIKit.UIApplication
         public typealias Application = UIApplication
-    #elseif os(OSX)
-        import AppKit
+    #elseif os(macOS)
+        import class AppKit.NSApplication
         public typealias Application = NSApplication
     #endif
 
     public extension Application {
-        #if swift(>=3.0)
         private var bundle: Bundle { return .main }
-        #else
-        private var bundle: NSBundle { return NSBundle.mainBundle() }
-        #endif
         
         public var identifier: String? {
             return bundle.infoDictionary?["CFBundleIdentifier"] as? String

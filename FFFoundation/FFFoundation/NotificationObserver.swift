@@ -18,18 +18,20 @@
 //  limitations under the License.
 //
 
-import Foundation
+import struct Foundation.Notification
+import class Foundation.NotificationCenter
+import class Foundation.OperationQueue
+import protocol Foundation.NSObjectProtocol
 
-#if swift(>=3)
 public class NotificationObserver {
     public typealias ObserverBlock = (Notification) -> Void
     
     private let observer: NSObjectProtocol
     public let notificationCenter: NotificationCenter
     public let notificationName: Notification.Name?
-    public let object: AnyObject?
+    public let object: Any?
     
-    public init(center: NotificationCenter, name: Notification.Name? = nil, queue: OperationQueue? = nil, object: AnyObject? = nil, block: @escaping ObserverBlock) {
+    public init(center: NotificationCenter, name: Notification.Name? = nil, queue: OperationQueue? = nil, object: Any? = nil, block: @escaping ObserverBlock) {
         self.notificationCenter = center
         self.notificationName = name
         self.object = object
@@ -40,24 +42,3 @@ public class NotificationObserver {
         notificationCenter.removeObserver(observer, name: notificationName, object: object)
     }
 }
-#else
-public class NotificationObserver {
-    public typealias ObserverBlock = (NSNotification) -> Void
-    
-    private let observer: NSObjectProtocol
-    public let notificationCenter: NSNotificationCenter
-    public let notificationName: String?
-    public let object: AnyObject?
-    
-    public init(center: NSNotificationCenter, name: String? = nil, queue: NSOperationQueue? = nil, object: AnyObject? = nil, block: ObserverBlock) {
-        self.notificationCenter = center
-        self.notificationName = name
-        self.object = object
-        self.observer = center.addObserverForName(name, object: object, queue: queue, usingBlock: block)
-    }
-    
-    deinit {
-        notificationCenter.removeObserver(observer, name: notificationName, object: object)
-    }
-}
-#endif

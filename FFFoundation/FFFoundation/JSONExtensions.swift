@@ -8,11 +8,10 @@
 
 import Foundation
 
-#if swift(>=3.0)
 extension Date: JSONStaticCreatable, JSONRepresentable {
     public typealias JSONType = String
     
-    public static var jsonDateFormatter: DateFormatter = ISO8601Formatter
+    public static var jsonDateFormatter: DateFormatter = .iso8601Formatter
     
     public static func from(json: JSONType) -> Date? {
         return jsonDateFormatter.date(from: json)
@@ -54,48 +53,3 @@ extension TimeZone: JSONStaticCreatable, JSONRepresentable {
     
     public var json: JSONType { return identifier }
 }
-#else
-extension NSDate: JSONStaticCreatable, JSONRepresentable {
-    public typealias JSONType = String
-
-    public static func from(json json: JSONType) -> Self? {
-        return ISO8601Formatter.dateFromString(json)
-        .map { $0.timeIntervalSinceReferenceDate }
-        .map { self.init(timeIntervalSinceReferenceDate: $0) }
-    }
-
-    public var json: JSONType {
-        return ISO8601Formatter.stringFromDate(self)
-    }
-}
-
-extension NSURL: JSONStaticCreatable, JSONRepresentable {
-    public typealias JSONType = String
-    
-    public static func from(json json: JSONType) -> Self? {
-        return self.init(string: json)
-    }
-    
-    public var json: JSONType { return absoluteString }
-}
-
-extension NSLocale: JSONStaticCreatable, JSONRepresentable {
-    public typealias JSONType = String
-    
-    public static func from(json json: JSONType) -> Self? {
-        return self.init(localeIdentifier: json)
-    }
-    
-    public var json: JSONType { return localeIdentifier }
-}
-
-extension NSTimeZone: JSONStaticCreatable, JSONRepresentable {
-    public typealias JSONType = String
-    
-    public static func from(json json: JSONType) -> Self? {
-        return self.init(abbreviation: json) ?? self.init(name: json)
-    }
-    
-    public var json: JSONType { return abbreviation ?? name }
-}
-#endif

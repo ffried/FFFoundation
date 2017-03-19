@@ -18,19 +18,13 @@
 //  limitations under the License.
 //
 
-import Foundation
-#if !swift(>=3.0)
-    import libkern
-#endif
+import typealias Foundation.TimeInterval
+import Dispatch
 
 public final class Timer<T> {
     public typealias TimerBlock = (Timer) -> Void
     
-    #if swift(>=3.0)
     public let interval: TimeInterval
-    #else
-    public let interval: NSTimeInterval
-    #endif
     public let repeats: Bool
     public let block: TimerBlock
     
@@ -38,23 +32,13 @@ public final class Timer<T> {
     
     public private(set) var isValid = true
     
-    #if swift(>=3.0)
     public var tolerance: TimeInterval = 0.0 {
         didSet { applyTimerProperties() }
     }
     
     private let queue: DispatchQueue
     private lazy var timer: DispatchSourceTimer = DispatchSource.makeTimerSource(flags: [.strict], queue: self.queue)
-    #else
-    public var tolerance: NSTimeInterval = 0.0 {
-        didSet { applyTimerProperties() }
-    }
     
-    private let queue = dispatch_queue_create(nil, DISPATCH_QUEUE_SERIAL)
-    private lazy var timer: dispatch_source_t = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, DISPATCH_TIMER_STRICT, self.queue)
-    #endif
-    
-    #if swift(>=3.0)
     public init(interval: TimeInterval, repeats: Bool = false, queue: DispatchQueue = .main, userInfo: T? = nil, block: @escaping TimerBlock) {
         self.interval = interval
         self.repeats = repeats
@@ -62,57 +46,29 @@ public final class Timer<T> {
         self.block = block
         self.queue = DispatchQueue(label: "FFFoundation.Timer.Queue", target: queue)
     }
-    #else
-    public init(interval: NSTimeInterval, repeats: Bool = false, queue: dispatch_queue_t = dispatch_get_main_queue(), userInfo: T? = nil, block: TimerBlock) {
-        self.interval = interval
-        self.repeats = repeats
-        self.userInfo = userInfo
-        self.block = block
-        dispatch_set_target_queue(self.queue, queue)
-    }
-    #endif
     
     deinit {
         invalidate()
     }
     
     private final func applyTimerProperties() {
-        #if swift(>=3.0)
-            let nsInterval = Int(interval * TimeInterval(NSEC_PER_SEC))
-            let nsTolerance = Int(tolerance * TimeInterval(NSEC_PER_SEC))
-            let time = DispatchTime.now() + Double(Int64(nsInterval)) / Double(NSEC_PER_SEC)
-            timer.scheduleRepeating(deadline: time, interval: .nanoseconds(nsInterval), leeway: .nanoseconds(nsTolerance))
-        #else
-            let nsInterval = UInt64(interval) * NSEC_PER_SEC
-            let nsTolerance = UInt64(tolerance) * NSEC_PER_SEC
-            let time = dispatch_time(DISPATCH_TIME_NOW, Int64(nsInterval))
-            dispatch_source_set_timer(timer, time, nsInterval, nsTolerance)
-        #endif
+        let nsInterval = Int(interval * TimeInterval(NSEC_PER_SEC))
+        let nsTolerance = Int(tolerance * TimeInterval(NSEC_PER_SEC))
+        timer.scheduleRepeating(deadline: .now() + interval, interval: .nanoseconds(nsInterval), leeway: .nanoseconds(nsTolerance))
     }
 
     public func schedule() {
         applyTimerProperties()
-        #if swift(>=3.0)
-            timer.setEventHandler { [weak self] in
-                self?.performFire()
-            }
-            timer.resume()
-        #else
-            dispatch_source_set_event_handler(timer) { [weak self] in
-                self?.performFire()
-            }
-            dispatch_resume(timer)
-        #endif
+        timer.setEventHandler { [weak self] in
+            self?.performFire()
+        }
+        timer.resume()
     }
     
     public func invalidate() {
         guard isValid else { return }
         let t = timer
-        #if swift(>=3.0)
-            queue.async { t.cancel() }
-        #else
-            dispatch_async(queue) { dispatch_source_cancel(t) }
-        #endif
+        queue.async { t.cancel() }
         isValid = false
     }
     

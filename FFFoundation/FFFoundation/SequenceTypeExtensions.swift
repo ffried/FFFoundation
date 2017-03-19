@@ -18,63 +18,29 @@
 //  limitations under the License.
 //
 
-import Foundation
-
-#if swift(>=3.0)
-    public extension Sequence {
-        public func group<Key: Hashable>(by keyGen: (Iterator.Element) throws -> Key) rethrows -> [Key: [Iterator.Element]] {
-            var grouped = Dictionary<Key, Array<Iterator.Element>>()
-            try forEach { elem in
-                let key = try keyGen(elem)
-                var group = grouped[key] ?? Array<Iterator.Element>()
-                group.append(elem)
-                grouped[key] = group
-            }
-            return grouped
+public extension Sequence {
+    public func group<Key: Hashable>(by keyGen: (Iterator.Element) throws -> Key) rethrows -> [Key: [Iterator.Element]] {
+        var grouped = Dictionary<Key, Array<Iterator.Element>>()
+        try forEach { elem in
+            let key = try keyGen(elem)
+            var group = grouped[key] ?? Array<Iterator.Element>()
+            group.append(elem)
+            grouped[key] = group
         }
-        
-        public func last(where: (Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
-            return try reversed().first(where: `where`)
-        }
-        
-        @available(*, deprecated, message:"Was replaced by first(where:_) natively in Swift 3.0", renamed:"first")
-        public func findFirst(predicate: (Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
-            return try first(where: predicate)
-        }
-        
-        @available(*, deprecated, message:"Was replaced by last(where:_)", renamed:"last")
-        public func findLast(predicate: (Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
-            return try last(where: predicate)
-        }
+        return grouped
     }
-#else
-    public extension SequenceType {
-        @warn_unused_result
-        public func groupBy<Key: Hashable>(@noescape keyGen: Generator.Element throws -> Key) rethrows -> [Key: [Generator.Element]] {
-            var grouped = Dictionary<Key, Array<Generator.Element>>()
-            try forEach { elem in
-                let key = try keyGen(elem)
-                var group = grouped[key] ?? Array<Generator.Element>()
-                group.append(elem)
-                grouped[key] = group
-            }
-            return grouped
-        }
-        
-        @warn_unused_result
-        public func findFirst(@noescape predicate: Generator.Element throws -> Bool) rethrows -> Generator.Element? {
-            for obj in self where try predicate(obj) {
-                return obj
-            }
-            return nil
-        }
-        
-        @warn_unused_result
-        public func findLast(@noescape predicate: Generator.Element throws -> Bool) rethrows -> Generator.Element? {
-            for obj in reverse() where try predicate(obj) {
-                return obj
-            }
-            return nil
-        }
+    
+    public func last(where: (Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
+        return try reversed().first(where: `where`)
     }
-#endif
+    
+    @available(*, deprecated, message:"Was replaced by first(where:_) natively in Swift 3.0", renamed:"first")
+    public func findFirst(predicate: (Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
+        return try first(where: predicate)
+    }
+    
+    @available(*, deprecated, message:"Was replaced by last(where:_)", renamed:"last")
+    public func findLast(predicate: (Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
+        return try last(where: predicate)
+    }
+}

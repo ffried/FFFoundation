@@ -18,48 +18,31 @@
 //  limitations under the License.
 //
 
-import Foundation
+import func Foundation.NSStringFromClass
 
-#if swift(>=3.0)
-    @available(*, deprecated, message:"Use NSLocalizedString again. Its API is now fine to use in Swift.", renamed:"NSLocalizedString")
-    public func localizedString(key: String, comment: String = "") -> String {
-        return NSLocalizedString(key, comment: comment)
-    }
-#else
-    @available(*, deprecated, message="Use NSLocalizedString again. Its API is now fine to use in Swift.", renamed="NSLocalizedString")
-    @warn_unused_result
-    public func localizedString(key: String, comment: String = "") -> String {
-        return NSLocalizedString(key, comment: comment)
-    }
-#endif
-
-
-/**
- Swift-aware NSStringFromClass. Removes '.' in Swift class names if `removeNamespace` is `true`.
- 
- - parameter aClass:          The class to convert to a string.
- - parameter removeNamespace: If `true`, Dots (and the preceding namespace) gets removed from the name. Defaults to `true`.
- 
- - returns: The name of the class as string. Dots are removed if `removeNamespace` was `true`.
- 
- - note: If `removeNamespace` is `false`, this function behaves just like `NSSStringFromClass`.
- */
-#if swift(>=3.0)
+@available(*, deprecated: 2.0, message: "Use String(class:,removeNamespace:")
 public func StringFromClass(_ aClass: AnyClass, removeNamespace: Bool = true) -> String {
-    var className = NSStringFromClass(aClass)
+    return String(class: aClass, removeNamespace: removeNamespace)
+}
 
-    if removeNamespace, let range = className.range(of: ".", options: .backwards) {
-        className = className.substring(from: range.upperBound)
+public extension String {
+    /**
+     Swift-aware NSStringFromClass. Removes '.' in Swift class names if `removeNamespace` is `true`.
+     
+     - parameter aClass:          The class to convert to a string.
+     - parameter removeNamespace: If `true`, Dots (and the preceding namespace) gets removed from the name. Defaults to `true`.
+     
+     - returns: The name of the class as string. Dots are removed if `removeNamespace` was `true`.
+     
+     - note: If `removeNamespace` is `false`, this behaves just like `NSSStringFromClass`.
+     */
+    public init(class aClass: AnyClass, removeNamespace: Bool = true) {
+        var className = NSStringFromClass(aClass)
+        
+        if removeNamespace, let range = className.range(of: ".", options: .backwards) {
+            className = className.substring(from: range.upperBound)
+        }
+        
+        self = className
     }
-    return className
 }
-#else
-@warn_unused_result
-public func StringFromClass(aClass: AnyClass, removeNamespace: Bool = true) -> String {
-    var className = NSStringFromClass(aClass)
-    if let range = className.rangeOfString(".", options: .BackwardsSearch) where removeNamespace {
-        className = className.substringFromIndex(range.endIndex)
-    }
-    return className
-}
-#endif

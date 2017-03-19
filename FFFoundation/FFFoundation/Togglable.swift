@@ -6,7 +6,8 @@
 //  Copyright © 2016 Florian Friedrich. All rights reserved.
 //
 
-import Foundation
+import struct ObjectiveC.ObjCBool
+import struct Darwin.DarwinBoolean
 
 public protocol Togglable {
     /// A inverted version of `self`.
@@ -27,15 +28,6 @@ extension Togglable {
     }
 }
 
-#if !swift(>=3.0)
-    extension Togglable where Self: BooleanType, Self: BooleanLiteralConvertible, Self.BooleanLiteralType == Bool {
-        /// Calls `init(booleanLiteral:_)` with `!self`.
-        public var toggled: Self {
-            return self.dynamicType.init(booleanLiteral: !self)
-        }
-    }
-#endif
-
 extension Bool: Togglable {
     /// Directly inverts `self` by returning `!self`.
     public var toggled: Bool {
@@ -44,17 +36,13 @@ extension Bool: Togglable {
 }
 
 extension ObjCBool: Togglable {
-    #if swift(>=3.0)
     public var toggled: ObjCBool {
         return type(of: self).init(booleanLiteral: boolValue.toggled)
     }
-    #endif
 }
 
 extension DarwinBoolean: Togglable {
-    #if swift(>=3.0)
     public var toggled: DarwinBoolean {
         return type(of: self).init(booleanLiteral: boolValue.toggled)
     }
-    #endif
 }

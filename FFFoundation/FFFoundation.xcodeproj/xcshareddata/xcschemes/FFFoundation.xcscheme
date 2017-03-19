@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "07D72E811CB53DFC006FDB41"
+               BlueprintIdentifier = "072406821E7EAE2F00A1AC3F"
                BuildableName = "FFFoundation.framework"
-               BlueprintName = "FFFoundation macOS"
-               ReferencedContainer = "container:FFFoundation.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "073518991CFC2D1E001C05AA"
-               BuildableName = "FFFoundation macOS Tests.xctest"
-               BlueprintName = "FFFoundation macOS Tests"
+               BlueprintName = "FFFoundation"
                ReferencedContainer = "container:FFFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "073518991CFC2D1E001C05AA"
-               BuildableName = "FFFoundation macOS Tests.xctest"
-               BlueprintName = "FFFoundation macOS Tests"
+               BlueprintIdentifier = "0724068A1E7EAE2F00A1AC3F"
+               BuildableName = "FFFoundationTests.xctest"
+               BlueprintName = "FFFoundationTests"
                ReferencedContainer = "container:FFFoundation.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -57,9 +43,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "07D72E811CB53DFC006FDB41"
+            BlueprintIdentifier = "072406821E7EAE2F00A1AC3F"
             BuildableName = "FFFoundation.framework"
-            BlueprintName = "FFFoundation macOS"
+            BlueprintName = "FFFoundation"
             ReferencedContainer = "container:FFFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "07D72E811CB53DFC006FDB41"
+            BlueprintIdentifier = "072406821E7EAE2F00A1AC3F"
             BuildableName = "FFFoundation.framework"
-            BlueprintName = "FFFoundation macOS"
+            BlueprintName = "FFFoundation"
             ReferencedContainer = "container:FFFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -97,9 +83,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "07D72E811CB53DFC006FDB41"
+            BlueprintIdentifier = "072406821E7EAE2F00A1AC3F"
             BuildableName = "FFFoundation.framework"
-            BlueprintName = "FFFoundation macOS"
+            BlueprintName = "FFFoundation"
             ReferencedContainer = "container:FFFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

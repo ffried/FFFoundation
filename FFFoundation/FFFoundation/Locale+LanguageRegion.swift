@@ -6,36 +6,19 @@
 //  Copyright © 2016 Florian Friedrich. All rights reserved.
 //
 
-import Foundation
+import struct Foundation.Locale
+import class Foundation.NSLocale
 
-#if swift(>=3.0)
 public extension Locale {
     public static var localizedDeviceLanguage: String? {
         if let prefLanguageCode = preferredLanguages.first {
             let locale = self.init(identifier: prefLanguageCode)
-            return (locale as NSLocale).displayName(forKey: NSLocale.Key.identifier, value: prefLanguageCode)
+            return (locale as NSLocale).displayName(forKey: .identifier, value: prefLanguageCode)
         }
         return nil
     }
     
     public static var localizedDeviceRegion: String? {
-        let locale = current
-        return (locale as NSLocale).displayName(forKey: NSLocale.Key.identifier, value: locale.identifier)
+        return (current as NSLocale).displayName(forKey: .identifier, value: current.identifier)
     }
 }
-#else
-public extension NSLocale {
-    public static var localizedDeviceLanguage: String? {
-        if let prefLanguageCode = preferredLanguages().first {
-            let locale = self.init(localeIdentifier: prefLanguageCode)
-            return locale.displayNameForKey(NSLocaleIdentifier, value: prefLanguageCode)
-        }
-        return nil
-    }
-    
-    public static var localizedDeviceRegion: String? {
-        let locale = currentLocale()
-        return locale.displayNameForKey(NSLocaleIdentifier, value: locale.localeIdentifier)
-    }
-}
-#endif

@@ -18,63 +18,40 @@
 //  limitations under the License.
 //
 
-import Foundation
+#if os(iOS) || os(macOS)
+    import class Foundation.NSAttributedString
+    import struct CoreGraphics.CGFloat
+    import struct CoreGraphics.CGSize
+    import struct CoreGraphics.CGRect
+    
 #if os(iOS)
-    import UIKit
-#elseif os(OSX)
-    import AppKit
+    import struct UIKit.NSStringDrawingOptions
+    #elseif os(macOS)
+    import struct AppKit.NSStringDrawingOptions
 #endif
-
-#if swift(>=3.0)
-public extension NSAttributedString {
-    public typealias AttributesDictionary = [String: AnyObject]
     
-    public final func size(forWidth width: CGFloat) -> CGSize {
-        let boundingSize = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
-        let options: NSStringDrawingOptions = [.usesLineFragmentOrigin]
-        let rawSize: CGRect
-        #if os(iOS)
-            rawSize = boundingRect(with: boundingSize, options: options, context: nil)
-        #endif
-        #if os(OSX)
-            if #available(OSX 10.11, *) {
+    public extension NSAttributedString {
+        public typealias AttributesDictionary = [String: Any]
+        
+        public final func size(forWidth width: CGFloat) -> CGSize {
+            let boundingSize = CGSize(width: width, height: .greatestFiniteMagnitude)
+            let options: NSStringDrawingOptions = [.usesLineFragmentOrigin]
+            let rawSize: CGRect
+            #if os(iOS)
                 rawSize = boundingRect(with: boundingSize, options: options, context: nil)
-            } else {
-                rawSize = boundingRect(with: boundingSize, options: options)
-            }
-        #endif
-        return CGSize(width: ceil(rawSize.width), height: ceil(rawSize.height))
+            #endif
+            #if os(macOS)
+                if #available(OSX 10.11, *) {
+                    rawSize = boundingRect(with: boundingSize, options: options, context: nil)
+                } else {
+                    rawSize = boundingRect(with: boundingSize, options: options)
+                }
+            #endif
+            return CGSize(width: ceil(rawSize.width), height: ceil(rawSize.height))
+        }
+        
+        public final func height(forWidth width: CGFloat) -> CGFloat {
+            return size(forWidth: width).height
+        }
     }
-    
-    public final func height(forWidth width: CGFloat) -> CGFloat {
-        return size(forWidth: width).height
-    }
-}
-#else
-public extension NSAttributedString {
-    public typealias AttributesDictionary = [String: AnyObject]
-    
-    @warn_unused_result
-    public final func sizeForWidth(width: CGFloat) -> CGSize {
-        let boundingSize = CGSize(width: width, height: CGFloat.max)
-        let options: NSStringDrawingOptions = [.UsesLineFragmentOrigin]
-        let rawSize: CGRect
-        #if os(iOS)
-            rawSize = boundingRectWithSize(boundingSize, options: options, context: nil)
-        #endif
-        #if os(OSX)
-            if #available(OSX 10.11, *) {
-                rawSize = boundingRectWithSize(boundingSize, options: options, context: nil)
-            } else {
-                rawSize = boundingRectWithSize(boundingSize, options: options)
-            }
-        #endif
-        return CGSize(width: ceil(rawSize.width), height: ceil(rawSize.height))
-    }
-    
-    @warn_unused_result
-    public final func heightForWidth(width: CGFloat) -> CGFloat {
-        return sizeForWidth(width).height
-    }
-}
 #endif

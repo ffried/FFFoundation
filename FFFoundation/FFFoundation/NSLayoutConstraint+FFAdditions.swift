@@ -18,31 +18,34 @@
 //  limitations under the License.
 //
 
-#if os(iOS) || os(OSX)
+#if os(iOS) || os(macOS)
+    import class Foundation.NSNumber
     #if os(iOS)
-    import UIKit
-    #elseif os(OSX)
-    import AppKit
+    import class UIKit.UIView
+    import class UIKit.NSLayoutConstraint
+    import struct UIKit.NSLayoutFormatOptions
+    import struct UIKit.CGFloat
+    #elseif os(macOS)
+    import class AppKit.NSView
+    import class AppKit.NSLayoutConstraint
+    import struct AppKit.NSLayoutFormatOptions
     #endif
+    
     @available(OSX 10.7, iOS 6.0, *)
     public extension NSLayoutConstraint {
+        
         #if os(iOS)
         typealias ViewType          = UIView
         typealias MetricValueType   = CGFloat
-        #elseif os(OSX)
+        #elseif os(macOS)
         typealias ViewType          = NSView
-        #if swift(>=3)
         typealias MetricValueType   = NSNumber
-        #else
-        typealias MetricValueType   = CGFloat
-        #endif
         #endif
         typealias VisualFormatType  = String
         
         typealias MetricsDictionary = [String: MetricValueType]
         typealias ViewsDictionary   = [String: ViewType]
         
-        #if swift(>=3.0)
         public static func constraints<S: Sequence>(withVisualFormats formats: S,
                                        options: NSLayoutFormatOptions = [],
                                        metrics: MetricsDictionary? = nil,
@@ -52,17 +55,8 @@
                 $0 + constraints(withVisualFormat: $1, options: options, metrics: metrics, views: views)
             }
         }
-        #else
-        @warn_unused_result
-        public static func constraintsWithVisualFormats<S: SequenceType where S.Generator.Element == VisualFormatType>(formats: S, options: NSLayoutFormatOptions = [], metrics: MetricsDictionary? = nil, views: ViewsDictionary) -> [NSLayoutConstraint] {
-            return formats.reduce([NSLayoutConstraint]()) {
-                $0 + constraintsWithVisualFormat($1, options: options, metrics: metrics, views: views)
-            }
-        }
-        #endif
     }
     
-#if swift(>=3.0)
     @available(OSX 10.7, iOS 6.0, *)
     public extension Sequence where Iterator.Element == NSLayoutConstraint {
         public final func activate() {
@@ -75,29 +69,9 @@
     }
     
     @available(OSX 10.7, iOS 6.0, *)
-    public extension Sequence where Iterator.Element == String {
+    public extension Sequence where Iterator.Element == NSLayoutConstraint.VisualFormatType {
         public final func constraints(with views: NSLayoutConstraint.ViewsDictionary, options: NSLayoutFormatOptions = [], metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {
             return NSLayoutConstraint.constraints(withVisualFormats: self, options: options, metrics: metrics, views: views)
         }
     }
-#else
-    @available(OSX 10.7, iOS 6.0, *)
-    public extension SequenceType where Generator.Element == NSLayoutConstraint {
-        public final func activate() {
-            NSLayoutConstraint.activateConstraints(Array(self))
-        }
-        
-        public final func deactivate() {
-            NSLayoutConstraint.deactivateConstraints(Array(self))
-        }
-        }
-        
-    @available(OSX 10.7, iOS 6.0, *)
-    public extension SequenceType where Generator.Element == String {
-        @warn_unused_result
-        public final func constraintsWithViews(views: NSLayoutConstraint.ViewsDictionary, options: NSLayoutFormatOptions = [], metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {
-            return NSLayoutConstraint.constraintsWithVisualFormats(self, options: options, metrics: metrics, views: views)
-        }
-    }
-#endif
 #endif

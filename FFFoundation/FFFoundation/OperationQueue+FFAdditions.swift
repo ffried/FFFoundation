@@ -18,9 +18,9 @@
 //  limitations under the License.
 //
 
-import Foundation
+import class Foundation.OperationQueue
+import class Foundation.BlockOperation
 
-#if swift(>=3.0)
 public extension OperationQueue {
     public var isMainQueue: Bool {
         return self === type(of: self).main
@@ -53,37 +53,3 @@ public extension OperationQueue {
         addOperations([operation], waitUntilFinished: wait)
     }
 }
-#else
-public extension NSOperationQueue {
-    public var isMainQueue: Bool {
-        return self === self.dynamicType.mainQueue()
-    }
-    
-    public var isCurrentQueue: Bool {
-        return self.dynamicType.currentQueue().flatMap { $0 === self } ?? false
-    }
-    
-    public static var isCurrentQueueMainQueue: Bool {
-        return mainQueue().isCurrentQueue
-    }
-    
-    public func addOperationWithBlock(block: () -> (), completion: () -> ()) {
-        let operation = NSBlockOperation(block: block)
-        operation.completionBlock = completion
-        addOperation(operation)
-    }
-    
-    public func addOperationWithBlockAndWait(block: () -> ()) {
-        addOperationWithBlock(block, andWait: true)
-    }
-    
-    public func addOperationWithBlockAndWaitIfNotCurrentQueue(block: () -> ()) {
-        addOperationWithBlock(block, andWait: true)
-    }
-    
-    private final func addOperationWithBlock(block: () -> (), andWait wait: Bool) {
-        let operation = NSBlockOperation(block: block)
-        addOperations([operation], waitUntilFinished: wait)
-    }
-}
-#endif

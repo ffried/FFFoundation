@@ -23,7 +23,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#ifdef NS_EXTENSIBLE_STRING
+#ifdef NS_EXTENSIBLE_STRING_ENUM
 typedef NSString *FFCacheManagerName NS_EXTENSIBLE_STRING_ENUM NS_SWIFT_NAME(CacheManager.Name);
 extern const FFCacheManagerName FFDefaultCacheManagerName NS_SWIFT_NAME(default);
 #else

@@ -1,15 +1,13 @@
-//
-//  TimerTests.swift
-//  FFFoundation
-//
-//  Created by Florian Friedrich on 14/03/16.
-//  Copyright © 2016 Florian Friedrich. All rights reserved.
-//
-
 import XCTest
-import FFFoundation
+@testable import FFFoundation
 
 class TimerTests: XCTestCase {
+    
+    static let allTests : [(String, (TimerTests) -> () throws -> Void)] = [
+        ("testTimerWithShortIntervalAndNoTolerance", testTimerWithShortIntervalAndNoTolerance),
+        ("testTimerWithShortIntervalAndTolerance", testTimerWithShortIntervalAndTolerance),
+        ("testRepeatingTimerWithShortIntervalAndTolerance", testRepeatingTimerWithShortIntervalAndTolerance)
+    ]
     
     var timer: AnyTimer? = nil
 

@@ -6,8 +6,10 @@
 //  Copyright © 2016 Florian Friedrich. All rights reserved.
 //
 
-import class Foundation.FileManager
-import struct ObjectiveC.ObjCBool
+//import class Foundation.FileManager
+//import struct Foundation.URL
+//import struct ObjectiveC.ObjCBool
+import Foundation
 
 public extension FileManager {
     public func createDirectoryIfNeeded(at url: URL, attributes: [String: Any]? = nil) throws {

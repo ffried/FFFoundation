@@ -6,7 +6,7 @@
 //  Copyright © 2016 Florian Friedrich. All rights reserved.
 //
 
-import class Dispatch.DispatchQueue
+import Dispatch
 
 /**
  Delay a block by a certain time by using `dispatch_after`.

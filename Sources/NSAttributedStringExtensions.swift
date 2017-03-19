@@ -19,6 +19,7 @@
 //
 
 #if os(iOS) || os(macOS)
+    import func Darwin.ceil
     import class Foundation.NSAttributedString
     import struct CoreGraphics.CGFloat
     import struct CoreGraphics.CGSize

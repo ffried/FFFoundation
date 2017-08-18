@@ -12,6 +12,9 @@
 		072406C11E7ECEED00A1AC3F /* FFCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 072406B91E7ECE6500A1AC3F /* FFCacheManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		072406C21E7ECEF000A1AC3F /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 072406BB1E7ECE6500A1AC3F /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		072406C31E7ECEF400A1AC3F /* FFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 072406BC1E7ECE6500A1AC3F /* FFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		073525D41F46D53A009CC477 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525D31F46D53A009CC477 /* Triangle.swift */; };
+		073525D61F46D58E009CC477 /* Triangulatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525D51F46D58E009CC477 /* Triangulatable.swift */; };
+		073525D81F46D5D7009CC477 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525D71F46D5D7009CC477 /* Angle.swift */; };
 		OBJ_43 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AppGroup.swift */; };
 		OBJ_44 /* Application+NameAndVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Application+NameAndVersion.swift */; };
 		OBJ_45 /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DateFormatters.swift */; };
@@ -53,6 +56,9 @@
 		072406BB1E7ECE6500A1AC3F /* FFFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFoundation.h; sourceTree = "<group>"; };
 		072406BC1E7ECE6500A1AC3F /* FFTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTimer.h; sourceTree = "<group>"; };
 		072406BD1E7ECE6500A1AC3F /* FFTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTimer.m; sourceTree = "<group>"; };
+		073525D31F46D53A009CC477 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		073525D51F46D58E009CC477 /* Triangulatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangulatable.swift; sourceTree = "<group>"; };
+		073525D71F46D5D7009CC477 /* Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Application+NameAndVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+NameAndVersion.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
 		OBJ_12 /* DictionaryHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryHelpers.swift; sourceTree = "<group>"; };
@@ -160,6 +166,7 @@
 		OBJ_8 /* FFFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				073525D71F46D5D7009CC477 /* Angle.swift */,
 				OBJ_9 /* AppGroup.swift */,
 				OBJ_10 /* Application+NameAndVersion.swift */,
 				OBJ_11 /* DateFormatters.swift */,
@@ -180,6 +187,8 @@
 				OBJ_26 /* StringExtensions.swift */,
 				OBJ_27 /* Timer.swift */,
 				OBJ_28 /* Togglable.swift */,
+				073525D31F46D53A009CC477 /* Triangle.swift */,
+				073525D51F46D58E009CC477 /* Triangulatable.swift */,
 			);
 			name = FFFoundation;
 			path = Sources;
@@ -299,8 +308,11 @@
 				072406BF1E7ECE6500A1AC3F /* FFTimer.m in Sources */,
 				OBJ_53 /* Lazy.swift in Sources */,
 				OBJ_54 /* Locale+LanguageRegion.swift in Sources */,
+				073525D61F46D58E009CC477 /* Triangulatable.swift in Sources */,
 				OBJ_55 /* NotificationObserver.swift in Sources */,
+				073525D81F46D5D7009CC477 /* Angle.swift in Sources */,
 				OBJ_56 /* NSAttributedStringExtensions.swift in Sources */,
+				073525D41F46D53A009CC477 /* Triangle.swift in Sources */,
 				OBJ_57 /* NSLayoutConstraint+FFAdditions.swift in Sources */,
 				OBJ_58 /* OperationQueue+FFAdditions.swift in Sources */,
 				OBJ_59 /* SequenceTypeExtensions.swift in Sources */,
@@ -372,15 +384,15 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,4";
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+				VERSIONING_SYSTEM = "apple-generic";
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
@@ -425,16 +437,16 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,4";
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+				VERSIONING_SYSTEM = "apple-generic";
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
@@ -444,6 +456,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 2.0;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Resources/Info.plist;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -459,6 +472,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 2.0;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Resources/Info.plist;
 				OTHER_SWIFT_FLAGS = "$(inherited)";

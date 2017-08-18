@@ -22,11 +22,11 @@ import typealias Foundation.TimeInterval
 import Dispatch
 
 public final class Timer<T> {
-    public typealias TimerBlock = (Timer) -> Void
+    public typealias Block = (Timer) -> Void
     
     public let interval: TimeInterval
     public let repeats: Bool
-    public let block: TimerBlock
+    public let block: Block
     
     public var userInfo: T?
     
@@ -39,12 +39,12 @@ public final class Timer<T> {
     private let queue: DispatchQueue
     private lazy var timer: DispatchSourceTimer = DispatchSource.makeTimerSource(flags: [.strict], queue: self.queue)
     
-    public init(interval: TimeInterval, repeats: Bool = false, queue: DispatchQueue = .main, userInfo: T? = nil, block: @escaping TimerBlock) {
+    public init(interval: TimeInterval, repeats: Bool = false, queue: DispatchQueue = .main, userInfo: T? = nil, block: @escaping Block) {
         self.interval = interval
         self.repeats = repeats
         self.userInfo = userInfo
         self.block = block
-        self.queue = DispatchQueue(label: "FFFoundation.Timer.Queue", target: queue)
+        self.queue = DispatchQueue(label: "net.ffried.fffoundation.timer.queue", target: queue)
     }
     
     deinit {

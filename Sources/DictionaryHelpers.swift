@@ -6,14 +6,14 @@
 //  Copyright © 2016 Florian Friedrich. All rights reserved.
 //
 
-//public extension Dictionary {
+public extension Dictionary {
     /**
      Merge a dictionary into an existing one. Values will be replaced in the left dictionary.
      
      - parameter lhs:  The dictionary in which to merge the `rhs` dictionary.
      - parameter rhs:  The dictionary to merge into `lhs`.
      */
-    public /*static*/ func +=<Key: Hashable, Value>(lhs: inout Dictionary<Key, Value>, rhs: Dictionary<Key, Value>) {
+    public static func +=(lhs: inout Dictionary<Key, Value>, rhs: Dictionary<Key, Value>) {
         rhs.forEach { lhs.updateValue($1, forKey: $0) }
     }
     
@@ -25,9 +25,9 @@
      
      - returns: A new dictionary containing all keys and values of `lhs` and `rhs`.
      */
-    public /*static*/ func +<Key: Hashable, Value>(lhs: Dictionary<Key, Value>, rhs: Dictionary<Key, Value>) -> Dictionary<Key, Value> {
+    public static func +(lhs: Dictionary<Key, Value>, rhs: Dictionary<Key, Value>) -> Dictionary<Key, Value> {
         var newDict = lhs
         rhs.forEach { newDict.updateValue($1, forKey: $0) }
         return newDict
     }
-//}
+}

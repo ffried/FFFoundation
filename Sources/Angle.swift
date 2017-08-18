@@ -18,6 +18,8 @@
 //  limitations under the License.
 //
 
+#if swift(>=3.2)
+#else
 public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable where Value.Stride == Value {
     public typealias Stride = Angle
     public typealias IntegerLiteralType = Value.IntegerLiteralType
@@ -388,3 +390,4 @@ fileprivate extension FloatingPoint {
     @inline(__always)
     func toDegrees() -> Self { return self * 180 / .pi }
 }
+#endif

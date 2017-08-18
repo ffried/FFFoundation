@@ -59,18 +59,18 @@
     
     @available(OSX 10.7, iOS 6.0, *)
     public extension Sequence where Iterator.Element == NSLayoutConstraint {
-        public final func activate() {
+        public func activate() {
             NSLayoutConstraint.activate(Array(self))
         }
         
-        public final func deactivate() {
+        public func deactivate() {
             NSLayoutConstraint.deactivate(Array(self))
         }
     }
     
     @available(OSX 10.7, iOS 6.0, *)
     public extension Sequence where Iterator.Element == NSLayoutConstraint.VisualFormatType {
-        public final func constraints(with views: NSLayoutConstraint.ViewsDictionary, options: NSLayoutFormatOptions = [], metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {
+        public func constraints(with views: NSLayoutConstraint.ViewsDictionary, options: NSLayoutFormatOptions = [], metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {
             return NSLayoutConstraint.constraints(withVisualFormats: self, options: options, metrics: metrics, views: views)
         }
     }

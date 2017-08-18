@@ -6,7 +6,9 @@
 //  Copyright © 2016 Florian Friedrich. All rights reserved.
 //
 
-import Foundation
+import class Foundation.DateFormatter
+import struct Foundation.Locale
+import struct Foundation.TimeZone
 
 extension DateFormatter {
     internal static let iso8601Formatter: DateFormatter = {

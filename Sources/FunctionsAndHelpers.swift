@@ -20,7 +20,7 @@
 
 import func Foundation.NSStringFromClass
 
-@available(*, deprecated: 2.0, message: "Use String(class:,removeNamespace:")
+@available(*, deprecated: 2.0, message: "Use String(class: removeNamespace:)", renamed: "String(class:removeNamespace:)")
 public func StringFromClass(_ aClass: AnyClass, removeNamespace: Bool = true) -> String {
     return String(class: aClass, removeNamespace: removeNamespace)
 }

@@ -22,7 +22,8 @@
 #import <FFFoundation/FFTimer.h>
 #import <sys/xattr.h>
 
-#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
+#define HAS_MEMORY_WARNINGS (TARGET_OS_IOS || TARGET_OS_TV || TARGET_OS_SIMULATOR)
+#if HAS_MEMORY_WARNINGS
 @import UIKit;
 #endif
 
@@ -98,7 +99,7 @@ static NSDateFormatter *FFCacheDateFormatter = nil;
         
         [self checkForFolderCreation];
         
-#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
+#if HAS_MEMORY_WARNINGS
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(resetCacheDict)
                                                      name:UIApplicationDidReceiveMemoryWarningNotification
@@ -323,3 +324,5 @@ static NSDateFormatter *FFCacheDateFormatter = nil;
 }
 
 @end
+
+#undef HAS_MEMORY_WARNINGS

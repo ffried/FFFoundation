@@ -34,12 +34,12 @@ public extension Sequence {
         return try reversed().first(where: `where`)
     }
     
-    @available(*, deprecated, message:"Was replaced by first(where:_) natively in Swift 3.0", renamed:"first")
+    @available(*, deprecated, message: "Was replaced by first(where:_) natively in Swift 3.0", renamed: "first")
     public func findFirst(predicate: (Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
         return try first(where: predicate)
     }
     
-    @available(*, deprecated, message:"Was replaced by last(where:_)", renamed:"last")
+    @available(*, deprecated, message: "Was replaced by last(where:_)", renamed: "last")
     public func findLast(predicate: (Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
         return try last(where: predicate)
     }

@@ -18,6 +18,8 @@
 //  limitations under the License.
 //
 
+#if swift(>=3.2)
+#else
 public struct Triangle<Point: Triangulatable>: Equatable where Point.Value.Stride == Point.Value {
     public typealias Angle = FFFoundation.Angle<Point.Value>
     public typealias Distance = Point.Value
@@ -57,3 +59,4 @@ public extension Triangle {
         angles = (α, .pi - γ - α, γ)
     }
 }
+#endif

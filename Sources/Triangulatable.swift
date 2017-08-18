@@ -18,6 +18,8 @@
 //  limitations under the License.
 //
 
+#if swift(>=3.2)
+#else
 import Foundation
 
 public protocol TriangulatableValue: FloatingPoint, Hashable {
@@ -78,4 +80,5 @@ public protocol Triangulatable {
 extension CGPoint: Triangulatable {
     public typealias Value = CGFloat
 }
+#endif
 #endif

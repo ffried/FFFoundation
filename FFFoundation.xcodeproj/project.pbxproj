@@ -15,6 +15,7 @@
 		073525D41F46D53A009CC477 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525D31F46D53A009CC477 /* Triangle.swift */; };
 		073525D61F46D58E009CC477 /* Triangulatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525D51F46D58E009CC477 /* Triangulatable.swift */; };
 		073525D81F46D5D7009CC477 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525D71F46D5D7009CC477 /* Angle.swift */; };
+		073525DD1F470E86009CC477 /* TriangleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525DB1F470E77009CC477 /* TriangleTests.swift */; };
 		OBJ_43 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AppGroup.swift */; };
 		OBJ_44 /* Application+NameAndVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Application+NameAndVersion.swift */; };
 		OBJ_45 /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DateFormatters.swift */; };
@@ -59,6 +60,7 @@
 		073525D31F46D53A009CC477 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		073525D51F46D58E009CC477 /* Triangulatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangulatable.swift; sourceTree = "<group>"; };
 		073525D71F46D5D7009CC477 /* Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
+		073525DB1F470E77009CC477 /* TriangleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleTests.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Application+NameAndVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+NameAndVersion.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
 		OBJ_12 /* DictionaryHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryHelpers.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				OBJ_31 /* FFFoundationTests.swift */,
 				OBJ_32 /* TimerTests.swift */,
+				073525DB1F470E77009CC477 /* TriangleTests.swift */,
 			);
 			name = FFFoundationTests;
 			path = Tests/FFFoundationTests;
@@ -328,6 +331,7 @@
 			files = (
 				OBJ_69 /* FFFoundationTests.swift in Sources */,
 				OBJ_70 /* TimerTests.swift in Sources */,
+				073525DD1F470E86009CC477 /* TriangleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +501,6 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/FFFoundationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				TARGET_NAME = FFFoundationTests;
@@ -518,7 +521,6 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/FFFoundationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				TARGET_NAME = FFFoundationTests;

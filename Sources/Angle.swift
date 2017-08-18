@@ -54,8 +54,8 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
     
     public var asDegrees: Angle<Value> {
         switch self {
-        case .radians(_): return self
-        case .degrees(_): return converted()
+        case .radians(_): return converted()
+        case .degrees(_): return self
         }
     }
     
@@ -167,8 +167,8 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
         case (.radians(_), .radians(_)),
              (.degrees(_), .degrees(_)):
             value.add(other.value)
-        case (.radians(_), _),
-             (.degrees(_), _):
+        case (.radians(_), .degrees(_)),
+             (.degrees(_), .radians(_)):
             add(other.converted())
         }
     }
@@ -178,8 +178,8 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
         case (.radians(_), .radians(_)),
              (.degrees(_), .degrees(_)):
             value.subtract(other.value)
-        case (.radians(_), _),
-             (.degrees(_), _):
+        case (.radians(_), .degrees(_)),
+             (.degrees(_), .radians(_)):
             subtract(other.converted())
         }
     }
@@ -189,8 +189,8 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
         case (.radians(_), .radians(_)),
              (.degrees(_), .degrees(_)):
             value.multiply(by: other.value)
-        case (.radians(_), _),
-             (.degrees(_), _):
+        case (.radians(_), .degrees(_)),
+             (.degrees(_), .radians(_)):
             multiply(by: other.converted())
         }
     }
@@ -200,8 +200,8 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
         case (.radians(_), .radians(_)),
              (.degrees(_), .degrees(_)):
             value.divide(by: other.value)
-        case (.radians(_), _),
-             (.degrees(_), _):
+        case (.radians(_), .degrees(_)),
+             (.degrees(_), .radians(_)):
             divide(by: other.converted())
         }
     }
@@ -211,8 +211,8 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
         case (.radians(_), .radians(_)),
              (.degrees(_), .degrees(_)):
             value.formRemainder(dividingBy: other.value)
-        case (.radians(_), _),
-             (.degrees(_), _):
+        case (.radians(_), .degrees(_)),
+             (.degrees(_), .radians(_)):
             formRemainder(dividingBy: other.converted())
         }
     }
@@ -222,8 +222,8 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
         case (.radians(_), .radians(_)),
              (.degrees(_), .degrees(_)):
             value.formTruncatingRemainder(dividingBy: other.value)
-        case (.radians(_), _),
-             (.degrees(_), _):
+        case (.radians(_), .degrees(_)),
+             (.degrees(_), .radians(_)):
             formTruncatingRemainder(dividingBy: other.converted())
         }
     }
@@ -277,8 +277,8 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
             return .radians(lhsValue.distance(to: rhsValue))
         case (.degrees(let lhsValue), .degrees(let rhsValue)):
             return .degrees(lhsValue.distance(to: rhsValue))
-        case (.radians(_), _),
-             (.degrees(_), _):
+        case (.radians(_), .degrees(_)),
+             (.degrees(_), .radians(_)):
             return distance(to: other.converted())
         }
     }
@@ -289,8 +289,8 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
             return .radians(lhsValue.advanced(by: rhsValue))
         case (.degrees(let lhsValue), .degrees(let rhsValue)):
             return .degrees(lhsValue.advanced(by: rhsValue))
-        case (.radians(_), _),
-             (.degrees(_), _):
+        case (.radians(_), .degrees(_)),
+             (.degrees(_), .radians(_)):
             return advanced(by: n.converted())
         }
     }
@@ -302,9 +302,9 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
             return lhsValue.isEqual(to: rhsValue)
         case (.degrees(let lhsValue), .degrees(let rhsValue)):
             return lhsValue.isEqual(to: rhsValue)
-        case (.radians(_), _):
+        case (.radians(_), .degrees(_)):
             return isEqual(to: other.converted())
-        case (.degrees(_), _):
+        case (.degrees(_), .radians(_)):
             return converted().isEqual(to: other)
         }
     }
@@ -315,9 +315,9 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
             return lhsValue.isLess(than: rhsValue)
         case (.degrees(let lhsValue), .degrees(let rhsValue)):
             return lhsValue.isLess(than: rhsValue)
-        case (.radians(_), _):
+        case (.radians(_), .degrees(_)):
             return isLess(than: other.converted())
-        case (.degrees(_), _):
+        case (.degrees(_), .radians(_)):
             return converted().isLess(than: other)
         }
     }
@@ -328,9 +328,9 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
             return lhsValue.isLessThanOrEqualTo(rhsValue)
         case (.degrees(let lhsValue), .degrees(let rhsValue)):
             return lhsValue.isLessThanOrEqualTo(rhsValue)
-        case (.radians(_), _):
+        case (.radians(_), .degrees(_)):
             return isLessThanOrEqualTo(other.converted())
-        case (.degrees(_), _):
+        case (.degrees(_), .radians(_)):
             return converted().isLessThanOrEqualTo(other)
         }
     }
@@ -341,18 +341,19 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
             return lhsValue.isTotallyOrdered(belowOrEqualTo: rhsValue)
         case (.degrees(let lhsValue), .degrees(let rhsValue)):
             return lhsValue.isTotallyOrdered(belowOrEqualTo: rhsValue)
-        case (.radians(_), _):
+        case (.radians(_), .degrees(_)):
             return isTotallyOrdered(belowOrEqualTo: other.converted())
-        case (.degrees(_), _):
+        case (.degrees(_), .radians(_)):
             return converted().isTotallyOrdered(belowOrEqualTo: other)
         }
     }
     
     // MARK: - AbsoluteValuable
     public static func abs(_ x: Angle<Value>) -> Angle<Value> {
-        var abs = x
-        abs.value = Value.abs(x.value)
-        return abs
+        switch x {
+        case .radians(let val): return .radians(Value.abs(val))
+        case .degrees(let val): return .degrees(Value.abs(val))
+        }
     }
     
     // MARK: - Operators
@@ -382,6 +383,8 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
 }
 
 fileprivate extension FloatingPoint {
+    @inline(__always)
     func toRadians() -> Self { return self * .pi / 180 }
+    @inline(__always)
     func toDegrees() -> Self { return self * 180 / .pi }
 }

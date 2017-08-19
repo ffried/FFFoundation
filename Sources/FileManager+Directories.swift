@@ -12,6 +12,15 @@
 import Foundation
 
 public extension FileManager {
+    #if swift(>=4)
+    public func createDirectoryIfNeeded(at url: URL, attributes: [FileAttributeKey: Any]? = nil) throws {
+        var isDir: ObjCBool = false
+        let exists = fileExists(atPath: url.path, isDirectory: &isDir)
+        if !exists || (exists && !isDir.boolValue) {
+            try createDirectory(at: url, withIntermediateDirectories: true, attributes: attributes)
+        }
+    }
+    #else
     public func createDirectoryIfNeeded(at url: URL, attributes: [String: Any]? = nil) throws {
         var isDir: ObjCBool = false
         let exists = fileExists(atPath: url.path, isDirectory: &isDir)
@@ -19,4 +28,5 @@ public extension FileManager {
             try createDirectory(at: url, withIntermediateDirectories: true, attributes: attributes)
         }
     }
+    #endif
 }

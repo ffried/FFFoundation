@@ -40,7 +40,11 @@ public extension String {
         var className = NSStringFromClass(aClass)
         
         if removeNamespace, let range = className.range(of: ".", options: .backwards) {
-            className = className.substring(from: range.upperBound)
+            #if swift(>=4.0)
+                className = String(className[range.upperBound...])
+            #else
+                className = className.substring(from: range.upperBound)
+            #endif
         }
         
         self = className

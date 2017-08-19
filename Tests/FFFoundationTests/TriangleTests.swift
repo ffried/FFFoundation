@@ -1,3 +1,4 @@
+#if !swift(>=3.2)
 import XCTest
 @testable import FFFoundation
 
@@ -27,12 +28,12 @@ class TriangleTests: XCTestCase {
         XCTAssertEqual(triangle.pointA, pointA)
         XCTAssertEqual(triangle.pointB, pointB)
         XCTAssertEqual(triangle.pointC, Point(x: 1, y: 4))
-        XCTAssertEqualWithAccuracy(triangle.a, 2, accuracy: .ulpOfOne)
-        XCTAssertEqualWithAccuracy(triangle.b, 3, accuracy: .ulpOfOne)
-        XCTAssertEqualWithAccuracy(triangle.c, 3.60555127546399, accuracy: .ulpOfOne * 4)
-        XCTAssertEqualWithAccuracy(triangle.α, .radians(0.588002603547568), accuracy: .ulpOfOne * 2)
-        XCTAssertEqualWithAccuracy(triangle.β, .radians(0.982793723247329), accuracy: .ulpOfOne)
-        XCTAssertEqualWithAccuracy(triangle.γ, .pi / 2, accuracy: .ulpOfOne)
+        XCTAssertEqual(triangle.a, 2, accuracy: .ulpOfOne)
+        XCTAssertEqual(triangle.b, 3, accuracy: .ulpOfOne)
+        XCTAssertEqual(triangle.c, 3.60555127546399, accuracy: .ulpOfOne * 4)
+        XCTAssertEqual(triangle.α, .radians(0.588002603547568), accuracy: .ulpOfOne * 2)
+        XCTAssertEqual(triangle.β, .radians(0.982793723247329), accuracy: .ulpOfOne)
+        XCTAssertEqual(triangle.γ, .pi / 2, accuracy: .ulpOfOne)
     }
 }
 
@@ -44,3 +45,4 @@ fileprivate struct Point: Equatable, Triangulatable {
         return lhs.x == rhs.x && lhs.y == rhs.y
     }
 }
+#endif

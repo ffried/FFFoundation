@@ -54,7 +54,11 @@ public final class Timer<T> {
     private final func applyTimerProperties() {
         let nsInterval = Int(interval * TimeInterval(NSEC_PER_SEC))
         let nsTolerance = Int(tolerance * TimeInterval(NSEC_PER_SEC))
-        timer.scheduleRepeating(deadline: .now() + interval, interval: .nanoseconds(nsInterval), leeway: .nanoseconds(nsTolerance))
+        #if swift(>=4.0)
+            timer.schedule(deadline: .now() + interval, repeating: .nanoseconds(nsInterval), leeway: .nanoseconds(nsTolerance))
+        #else
+            timer.scheduleRepeating(deadline: .now() + interval, interval: .nanoseconds(nsInterval), leeway: .nanoseconds(nsTolerance))
+        #endif
     }
 
     public func schedule() {

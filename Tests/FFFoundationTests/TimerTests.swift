@@ -1,6 +1,12 @@
 import XCTest
 @testable import FFFoundation
 
+#if !swift(>=4.0)
+    func XCTAssertEqual<T>(_ expression1: @autoclosure () throws -> T, _ expression2: @autoclosure () throws -> T, accuracy: T, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) where T: FloatingPoint {
+        XCTAssertEqualWithAccuracy(expression1, expression2, accuracy: accuracy, message: message, file: file, line: line)
+    }
+#endif
+
 class TimerTests: XCTestCase {
     
     static let allTests : [(String, (TimerTests) -> () throws -> Void)] = [
@@ -29,7 +35,7 @@ class TimerTests: XCTestCase {
         timer = AnyTimer(interval: timerInterval, block: { timer in
             let interval = Date().timeIntervalSince(date)
             XCTAssertEqual(Thread.isMainThread, isMainThread)
-            XCTAssertEqualWithAccuracy(interval, timerInterval, accuracy: 0.02)
+            XCTAssertEqual(interval, timerInterval, accuracy: 0.02)
             
             exp.fulfill()
         })
@@ -47,7 +53,7 @@ class TimerTests: XCTestCase {
         
         timer = AnyTimer(interval: timerInterval, block: { timer in
             let interval = Date().timeIntervalSince(date)
-            XCTAssertEqualWithAccuracy(interval, timerInterval, accuracy: tolerance)
+            XCTAssertEqual(interval, timerInterval, accuracy: tolerance)
             exp.fulfill()
         })
         timer?.tolerance = tolerance
@@ -82,7 +88,7 @@ class TimerTests: XCTestCase {
         XCTAssertEqual(counter, repeats)
         XCTAssertEqual(accuracies.count, repeats)
         accuracies.forEach {
-            XCTAssertEqualWithAccuracy($0, timerInterval, accuracy: tolerance + 0.09)
+            XCTAssertEqual($0, timerInterval, accuracy: tolerance + 0.09)
         }
     }
 }

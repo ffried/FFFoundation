@@ -24,25 +24,33 @@
     import struct CoreGraphics.CGFloat
     import struct CoreGraphics.CGSize
     import struct CoreGraphics.CGRect
-    
-#if os(iOS)
-    import struct UIKit.NSStringDrawingOptions
-    #elseif os(macOS)
-    import struct AppKit.NSStringDrawingOptions
-#endif
+
+    #if os(iOS)
+        import struct UIKit.NSStringDrawingOptions
+    #elseif os(macOS) && !swift(>=4)
+        import struct AppKit.NSStringDrawingOptions
+    #endif
     
     public extension NSAttributedString {
+        #if swift(>=4.0)
+        public typealias AttributesDictionary = [NSAttributedStringKey: Any]
+        #else
         public typealias AttributesDictionary = [String: Any]
+        #endif
         
         public final func size(forWidth width: CGFloat) -> CGSize {
             let boundingSize = CGSize(width: width, height: .greatestFiniteMagnitude)
-            let options: NSStringDrawingOptions = [.usesLineFragmentOrigin]
+            #if os(macOS) && swift(>=4.0)
+                let options: NSString.DrawingOptions = [.usesLineFragmentOrigin]
+            #else
+                let options: NSStringDrawingOptions = [.usesLineFragmentOrigin]
+            #endif
             let rawSize: CGRect
             #if os(iOS)
                 rawSize = boundingRect(with: boundingSize, options: options, context: nil)
             #endif
             #if os(macOS)
-                if #available(OSX 10.11, *) {
+                if #available(macOS 10.11, *) {
                     rawSize = boundingRect(with: boundingSize, options: options, context: nil)
                 } else {
                     rawSize = boundingRect(with: boundingSize, options: options)

@@ -1,7 +1,7 @@
 import XCTest
 @testable import FFFoundation
 
-#if !swift(>=4.0)
+#if !swift(>=3.2)
     func XCTAssertEqual<T>(_ expression1: @autoclosure () throws -> T, _ expression2: @autoclosure () throws -> T, accuracy: T, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) where T: FloatingPoint {
         XCTAssertEqualWithAccuracy(expression1, expression2, accuracy: accuracy, message: message, file: file, line: line)
     }

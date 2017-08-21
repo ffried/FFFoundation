@@ -18,11 +18,12 @@
 //  limitations under the License.
 //
 
-#if !swift(>=3.2)
-public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable where Value.Stride == Value {
+#if swift(>=3.2) && !swift(>=4.0)
+public enum Angle<Value: FloatingPoint>: FloatingPoint where Value.Stride == Value {
     public typealias Stride = Angle
     public typealias IntegerLiteralType = Value.IntegerLiteralType
     public typealias Exponent = Value.Exponent
+    public typealias Magnitude = Value.Magnitude
     
     case radians(Value)
     case degrees(Value)
@@ -72,6 +73,7 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
     public static var leastNormalMagnitude: Angle<Value> { return .init(radians: .leastNormalMagnitude) }
     
     public var exponent: Exponent { return value.exponent }
+    public var magnitude: Magnitude { return value.magnitude }
     public var sign: FloatingPointSign { return value.sign }
     public var isNormal: Bool { return value.isNormal }
     public var isFinite: Bool { return value.isFinite }
@@ -100,55 +102,35 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
         case .degrees(let val): return .degrees(val.nextUp)
         }
     }
+    public var nextDown: Angle<Value> {
+        switch self {
+        case .radians(let val): return .radians(val.nextDown)
+        case .degrees(let val): return .degrees(val.nextDown)
+        }
+    }
     
     // MARK: - Initializers
-    private init(radians value: Value) {
-        self = .radians(value)
-    }
+    private init(radians value: Value) { self = .radians(value) }
     
     public init(integerLiteral value: IntegerLiteralType) {
         self.init(radians: .init(integerLiteral: value))
     }
     
-    public init(_ value: Int) {
-        self.init(radians: .init(value))
+    public init?<T>(exactly source: T) where T : BinaryInteger {
+        guard let value = Value(exactly: source) else { return nil }
+        self.init(radians: value)
     }
     
-    public init(_ value: UInt) {
-        self.init(radians: .init(value))
-    }
-    
-    public init(_ value: Int8) {
-        self.init(radians: .init(value))
-    }
-    
-    public init(_ value: Int16) {
-        self.init(radians: .init(value))
-    }
-    
-    public init(_ value: Int32) {
-        self.init(radians: .init(value))
-    }
-    
-    public init(_ value: Int64) {
-        self.init(radians: .init(value))
-    }
-    
-    public init(_ value: UInt8) {
-        self.init(radians: .init(value))
-    }
-    
-    public init(_ value: UInt16) {
-        self.init(radians: .init(value))
-    }
-    
-    public init(_ value: UInt32) {
-        self.init(radians: .init(value))
-    }
-    
-    public init(_ value: UInt64) {
-        self.init(radians: .init(value))
-    }
+    public init(_ value: UInt8) { self.init(radians: .init(value)) }
+    public init(_ value: Int8) { self.init(radians: .init(value)) }
+    public init(_ value: UInt16) { self.init(radians: .init(value)) }
+    public init(_ value: Int16) { self.init(radians: .init(value)) }
+    public init(_ value: UInt32) { self.init(radians: .init(value)) }
+    public init(_ value: Int32) { self.init(radians: .init(value)) }
+    public init(_ value: UInt64) { self.init(radians: .init(value)) }
+    public init(_ value: Int64) { self.init(radians: .init(value)) }
+    public init(_ value: UInt) { self.init(radians: .init(value)) }
+    public init(_ value: Int) { self.init(radians: .init(value)) }
     
     public init(signOf: Angle, magnitudeOf: Angle) {
         self.init(radians: .init(signOf: signOf.value, magnitudeOf: magnitudeOf.value))
@@ -159,54 +141,6 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
     }
     
     // MARK: - Calculation
-    public mutating func negate() {
-        value.negate()
-    }
-    
-    public mutating func add(_ other: Angle<Value>) {
-        switch (self, other) {
-        case (.radians(_), .radians(_)),
-             (.degrees(_), .degrees(_)):
-            value.add(other.value)
-        case (.radians(_), .degrees(_)),
-             (.degrees(_), .radians(_)):
-            add(other.converted())
-        }
-    }
-    
-    public mutating func subtract(_ other: Angle<Value>) {
-        switch (self, other) {
-        case (.radians(_), .radians(_)),
-             (.degrees(_), .degrees(_)):
-            value.subtract(other.value)
-        case (.radians(_), .degrees(_)),
-             (.degrees(_), .radians(_)):
-            subtract(other.converted())
-        }
-    }
-    
-    public mutating func multiply(by other: Angle<Value>) {
-        switch (self, other) {
-        case (.radians(_), .radians(_)),
-             (.degrees(_), .degrees(_)):
-            value.multiply(by: other.value)
-        case (.radians(_), .degrees(_)),
-             (.degrees(_), .radians(_)):
-            multiply(by: other.converted())
-        }
-    }
-    
-    public mutating func divide(by other: Angle<Value>) {
-        switch (self, other) {
-        case (.radians(_), .radians(_)),
-             (.degrees(_), .degrees(_)):
-            value.divide(by: other.value)
-        case (.radians(_), .degrees(_)),
-             (.degrees(_), .radians(_)):
-            divide(by: other.converted())
-        }
-    }
-    
     public mutating func formRemainder(dividingBy other: Angle<Value>) {
         switch (self, other) {
         case (.radians(_), .radians(_)),
@@ -358,28 +292,72 @@ public enum Angle<Value: FloatingPoint & Hashable>: FloatingPoint, Hashable wher
     }
     
     // MARK: - Operators
-    public static func <(lhs: Angle<Value>, rhs: Angle<Value>) -> Bool {
-        return lhs.isLess(than: rhs)
+//    public static func <(lhs: Angle<Value>, rhs: Angle<Value>) -> Bool {
+//        return lhs.isLess(than: rhs)
+//    }
+    
+    public static prefix func -(lhs: inout Angle<Value>) {
+        lhs.value.negate()
     }
     
     public static func +(lhs: Angle<Value>, rhs: Angle<Value>) -> Angle<Value> {
-        return lhs.adding(rhs)
+        switch (lhs, rhs) {
+        case (.radians(let lhsValue), .radians(let rhsValue)):
+            return .radians(lhsValue + rhsValue)
+        case (.degrees(let lhsValue), .degrees(let rhsValue)):
+            return .degrees(lhsValue + rhsValue)
+        case (.radians(_), .degrees(_)),
+             (.degrees(_), .radians(_)):
+            return lhs + rhs.converted()
+        }
     }
     
     public static func -(lhs: Angle<Value>, rhs: Angle<Value>) -> Angle<Value> {
-        return lhs.subtracting(rhs)
+        switch (lhs, rhs) {
+        case (.radians(let lhsValue), .radians(let rhsValue)):
+            return .radians(lhsValue - rhsValue)
+        case (.degrees(let lhsValue), .degrees(let rhsValue)):
+            return .degrees(lhsValue - rhsValue)
+        case (.radians(_), .degrees(_)),
+             (.degrees(_), .radians(_)):
+            return lhs - rhs.converted()
+        }
     }
     
     public static func *(lhs: Angle<Value>, rhs: Angle<Value>) -> Angle<Value> {
-        return lhs.multiplied(by: rhs)
+        switch (lhs, rhs) {
+        case (.radians(let lhsValue), .radians(let rhsValue)):
+            return .radians(lhsValue * rhsValue)
+        case (.degrees(let lhsValue), .degrees(let rhsValue)):
+            return .degrees(lhsValue * rhsValue)
+        case (.radians(_), .degrees(_)),
+             (.degrees(_), .radians(_)):
+            return lhs * rhs.converted()
+        }
     }
     
     public static func /(lhs: Angle<Value>, rhs: Angle<Value>) -> Angle<Value> {
-        return lhs.divided(by: rhs)
+        switch (lhs, rhs) {
+        case (.radians(let lhsValue), .radians(let rhsValue)):
+            return .radians(lhsValue / rhsValue)
+        case (.degrees(let lhsValue), .degrees(let rhsValue)):
+            return .degrees(lhsValue / rhsValue)
+        case (.radians(_), .degrees(_)),
+             (.degrees(_), .radians(_)):
+            return lhs / rhs.converted()
+        }
     }
     
-    public static func %(lhs: Angle<Value>, rhs: Angle<Value>) -> Angle<Value> {
-        return lhs.remainder(dividingBy: rhs)
+//    public static func %(lhs: Angle<Value>, rhs: Angle<Value>) -> Angle<Value> {
+//        return lhs.remainder(dividingBy: rhs)
+//    }
+    
+    public static func *=(lhs: inout Angle<Value>, rhs: Angle<Value>) {
+        lhs = lhs * rhs
+    }
+    
+    public static func /=(lhs: inout Angle<Value>, rhs: Angle<Value>) {
+        lhs = lhs / rhs
     }
 }
 

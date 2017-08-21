@@ -48,8 +48,13 @@ public extension Triangle {
 public extension Triangle {
     public init(orthogonallyWithA a: Point, b: Point) {
         points = (a, b, .init(x: a.x, y: b.y))
-        let sideA = Point.Value.abs(b.x - a.x)
-        let sideB = Point.Value.abs(a.y - b.y)
+        #if swift(>=4.0)
+            let sideA = abs(b.x - a.x)
+            let sideB = abs(a.y - b.y)
+        #else
+            let sideA = Point.Value.abs(b.x - a.x)
+            let sideB = Point.Value.abs(a.y - b.y)
+        #endif
         let sideC = (sideA * sideA + sideB * sideB).squareRoot()
         sides = (sideA, sideB, sideC)
         let α = Angle.radians((sideA / sideC).asin())

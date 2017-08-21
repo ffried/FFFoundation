@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0710E6C01F4B08C0004DA14C /* Angle_Swift32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0710E6BF1F4B08BF004DA14C /* Angle_Swift32.swift */; };
+		0713D7261F4B2CCB00591999 /* Angle_Swift4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713D7251F4B2CCA00591999 /* Angle_Swift4.swift */; };
 		072406BE1E7ECE6500A1AC3F /* FFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 072406BA1E7ECE6500A1AC3F /* FFCacheManager.m */; };
 		072406BF1E7ECE6500A1AC3F /* FFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 072406BD1E7ECE6500A1AC3F /* FFTimer.m */; };
 		072406C11E7ECEED00A1AC3F /* FFCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 072406B91E7ECE6500A1AC3F /* FFCacheManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		0710E6BF1F4B08BF004DA14C /* Angle_Swift32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle_Swift32.swift; sourceTree = "<group>"; };
+		0713D7251F4B2CCA00591999 /* Angle_Swift4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle_Swift4.swift; sourceTree = "<group>"; };
 		072406B91E7ECE6500A1AC3F /* FFCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFCacheManager.h; sourceTree = "<group>"; };
 		072406BA1E7ECE6500A1AC3F /* FFCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFCacheManager.m; sourceTree = "<group>"; };
 		072406BB1E7ECE6500A1AC3F /* FFFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFoundation.h; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		OBJ_8 /* FFFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				0713D7251F4B2CCA00591999 /* Angle_Swift4.swift */,
 				0710E6BF1F4B08BF004DA14C /* Angle_Swift32.swift */,
 				073525D71F46D5D7009CC477 /* Angle.swift */,
 				OBJ_9 /* AppGroup.swift */,
@@ -318,6 +321,7 @@
 				OBJ_55 /* NotificationObserver.swift in Sources */,
 				073525D81F46D5D7009CC477 /* Angle.swift in Sources */,
 				OBJ_56 /* NSAttributedStringExtensions.swift in Sources */,
+				0713D7261F4B2CCB00591999 /* Angle_Swift4.swift in Sources */,
 				073525D41F46D53A009CC477 /* Triangle.swift in Sources */,
 				OBJ_57 /* NSLayoutConstraint+FFAdditions.swift in Sources */,
 				0710E6C01F4B08C0004DA14C /* Angle_Swift32.swift in Sources */,

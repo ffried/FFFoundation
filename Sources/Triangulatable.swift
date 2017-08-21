@@ -18,10 +18,18 @@
 //  limitations under the License.
 //
 
-#if swift(>=3.2)
-#else
 import Foundation
 
+#if swift(>=3.2)
+public protocol TriangulatableValue: FloatingPoint {
+    func sin() -> Self
+    func asin() -> Self
+    func cos() -> Self
+    func acos() -> Self
+    func tan() -> Self
+    func atan() -> Self
+}
+#else
 public protocol TriangulatableValue: FloatingPoint, Hashable {
     func sin() -> Self
     func asin() -> Self
@@ -36,6 +44,7 @@ public protocol TriangulatableValue: FloatingPoint, Hashable {
     static func /(lhs: Self, rhs: Self) -> Self
     static func %(lhs: Self, rhs: Self) -> Self
 }
+#endif
 
 extension Double: TriangulatableValue {
     public func sin() -> Double { return Foundation.sin(self) }
@@ -80,5 +89,4 @@ public protocol Triangulatable {
 extension CGPoint: Triangulatable {
     public typealias Value = CGFloat
 }
-#endif
 #endif

@@ -18,14 +18,14 @@
 //  limitations under the License.
 //
 
-#if os(iOS) || os(macOS)
+#if os(iOS) || os(macOS) || os(tvOS)
     import func Darwin.ceil
     import class Foundation.NSAttributedString
     import struct CoreGraphics.CGFloat
     import struct CoreGraphics.CGSize
     import struct CoreGraphics.CGRect
 
-    #if os(iOS)
+    #if os(iOS) || os(tvOS)
         import struct UIKit.NSStringDrawingOptions
     #elseif os(macOS) && !swift(>=4)
         import struct AppKit.NSStringDrawingOptions
@@ -46,7 +46,7 @@
                 let options: NSStringDrawingOptions = [.usesLineFragmentOrigin]
             #endif
             let rawSize: CGRect
-            #if os(iOS)
+            #if os(iOS) || os(tvOS)
                 rawSize = boundingRect(with: boundingSize, options: options, context: nil)
             #endif
             #if os(macOS)

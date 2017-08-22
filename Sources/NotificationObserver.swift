@@ -23,7 +23,7 @@ import class Foundation.NotificationCenter
 import class Foundation.OperationQueue
 import protocol Foundation.NSObjectProtocol
 
-public class NotificationObserver {
+public final class NotificationObserver {
     public typealias ObserverBlock = (Notification) -> Void
     
     private let observer: NSObjectProtocol

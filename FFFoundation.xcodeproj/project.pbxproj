@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0710E6C01F4B08C0004DA14C /* Angle_Swift32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0710E6BF1F4B08BF004DA14C /* Angle_Swift32.swift */; };
 		0713D7261F4B2CCB00591999 /* Angle_Swift4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713D7251F4B2CCA00591999 /* Angle_Swift4.swift */; };
+		0713D7281F4BF4E900591999 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713D7271F4BF4E800591999 /* Weak.swift */; };
 		072406BE1E7ECE6500A1AC3F /* FFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 072406BA1E7ECE6500A1AC3F /* FFCacheManager.m */; };
 		072406BF1E7ECE6500A1AC3F /* FFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 072406BD1E7ECE6500A1AC3F /* FFTimer.m */; };
 		072406C11E7ECEED00A1AC3F /* FFCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 072406B91E7ECE6500A1AC3F /* FFCacheManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,6 +57,7 @@
 /* Begin PBXFileReference section */
 		0710E6BF1F4B08BF004DA14C /* Angle_Swift32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle_Swift32.swift; sourceTree = "<group>"; };
 		0713D7251F4B2CCA00591999 /* Angle_Swift4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle_Swift4.swift; sourceTree = "<group>"; };
+		0713D7271F4BF4E800591999 /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 		072406B91E7ECE6500A1AC3F /* FFCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFCacheManager.h; sourceTree = "<group>"; };
 		072406BA1E7ECE6500A1AC3F /* FFCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFCacheManager.m; sourceTree = "<group>"; };
 		072406BB1E7ECE6500A1AC3F /* FFFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFoundation.h; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				OBJ_28 /* Togglable.swift */,
 				073525D31F46D53A009CC477 /* Triangle.swift */,
 				073525D51F46D58E009CC477 /* Triangulatable.swift */,
+				0713D7271F4BF4E800591999 /* Weak.swift */,
 			);
 			name = FFFoundation;
 			path = Sources;
@@ -316,6 +319,7 @@
 				OBJ_52 /* JSONTypes.swift in Sources */,
 				072406BF1E7ECE6500A1AC3F /* FFTimer.m in Sources */,
 				OBJ_53 /* Lazy.swift in Sources */,
+				0713D7281F4BF4E900591999 /* Weak.swift in Sources */,
 				OBJ_54 /* Locale+LanguageRegion.swift in Sources */,
 				073525D61F46D58E009CC477 /* Triangulatable.swift in Sources */,
 				OBJ_55 /* NotificationObserver.swift in Sources */,

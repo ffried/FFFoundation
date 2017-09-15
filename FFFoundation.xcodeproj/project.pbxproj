@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0710E6C01F4B08C0004DA14C /* Angle_Swift32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0710E6BF1F4B08BF004DA14C /* Angle_Swift32.swift */; };
-		0713D7261F4B2CCB00591999 /* Angle_Swift4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713D7251F4B2CCA00591999 /* Angle_Swift4.swift */; };
+		0713D7261F4B2CCB00591999 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713D7251F4B2CCA00591999 /* Angle.swift */; };
 		0713D7281F4BF4E900591999 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713D7271F4BF4E800591999 /* Weak.swift */; };
 		072406BE1E7ECE6500A1AC3F /* FFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 072406BA1E7ECE6500A1AC3F /* FFCacheManager.m */; };
 		072406BF1E7ECE6500A1AC3F /* FFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 072406BD1E7ECE6500A1AC3F /* FFTimer.m */; };
@@ -17,7 +17,7 @@
 		072406C31E7ECEF400A1AC3F /* FFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 072406BC1E7ECE6500A1AC3F /* FFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		073525D41F46D53A009CC477 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525D31F46D53A009CC477 /* Triangle.swift */; };
 		073525D61F46D58E009CC477 /* Triangulatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525D51F46D58E009CC477 /* Triangulatable.swift */; };
-		073525D81F46D5D7009CC477 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525D71F46D5D7009CC477 /* Angle.swift */; };
+		073525D81F46D5D7009CC477 /* Angle_Swift31.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525D71F46D5D7009CC477 /* Angle_Swift31.swift */; };
 		073525DD1F470E86009CC477 /* TriangleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525DB1F470E77009CC477 /* TriangleTests.swift */; };
 		OBJ_43 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AppGroup.swift */; };
 		OBJ_44 /* Application+NameAndVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Application+NameAndVersion.swift */; };
@@ -35,7 +35,7 @@
 		OBJ_56 /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* NSAttributedStringExtensions.swift */; };
 		OBJ_57 /* NSLayoutConstraint+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* NSLayoutConstraint+FFAdditions.swift */; };
 		OBJ_58 /* OperationQueue+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* OperationQueue+FFAdditions.swift */; };
-		OBJ_59 /* SequenceTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* SequenceTypeExtensions.swift */; };
+		OBJ_59 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* SequenceExtensions.swift */; };
 		OBJ_60 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* StringExtensions.swift */; };
 		OBJ_61 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Timer.swift */; };
 		OBJ_62 /* Togglable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Togglable.swift */; };
@@ -56,7 +56,7 @@
 
 /* Begin PBXFileReference section */
 		0710E6BF1F4B08BF004DA14C /* Angle_Swift32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle_Swift32.swift; sourceTree = "<group>"; };
-		0713D7251F4B2CCA00591999 /* Angle_Swift4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle_Swift4.swift; sourceTree = "<group>"; };
+		0713D7251F4B2CCA00591999 /* Angle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
 		0713D7271F4BF4E800591999 /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 		072406B91E7ECE6500A1AC3F /* FFCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFCacheManager.h; sourceTree = "<group>"; };
 		072406BA1E7ECE6500A1AC3F /* FFCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFCacheManager.m; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		072406BD1E7ECE6500A1AC3F /* FFTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTimer.m; sourceTree = "<group>"; };
 		073525D31F46D53A009CC477 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		073525D51F46D58E009CC477 /* Triangulatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangulatable.swift; sourceTree = "<group>"; };
-		073525D71F46D5D7009CC477 /* Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
+		073525D71F46D5D7009CC477 /* Angle_Swift31.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angle_Swift31.swift; sourceTree = "<group>"; };
 		073525DB1F470E77009CC477 /* TriangleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleTests.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Application+NameAndVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+NameAndVersion.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		OBJ_22 /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
 		OBJ_23 /* NSLayoutConstraint+FFAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+FFAdditions.swift"; sourceTree = "<group>"; };
 		OBJ_24 /* OperationQueue+FFAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OperationQueue+FFAdditions.swift"; sourceTree = "<group>"; };
-		OBJ_25 /* SequenceTypeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceTypeExtensions.swift; sourceTree = "<group>"; };
+		OBJ_25 /* SequenceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
 		OBJ_26 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		OBJ_27 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		OBJ_28 /* Togglable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Togglable.swift; sourceTree = "<group>"; };
@@ -175,9 +175,9 @@
 		OBJ_8 /* FFFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				0713D7251F4B2CCA00591999 /* Angle_Swift4.swift */,
+				0713D7251F4B2CCA00591999 /* Angle.swift */,
 				0710E6BF1F4B08BF004DA14C /* Angle_Swift32.swift */,
-				073525D71F46D5D7009CC477 /* Angle.swift */,
+				073525D71F46D5D7009CC477 /* Angle_Swift31.swift */,
 				OBJ_9 /* AppGroup.swift */,
 				OBJ_10 /* Application+NameAndVersion.swift */,
 				OBJ_11 /* DateFormatters.swift */,
@@ -194,7 +194,7 @@
 				OBJ_22 /* NSAttributedStringExtensions.swift */,
 				OBJ_23 /* NSLayoutConstraint+FFAdditions.swift */,
 				OBJ_24 /* OperationQueue+FFAdditions.swift */,
-				OBJ_25 /* SequenceTypeExtensions.swift */,
+				OBJ_25 /* SequenceExtensions.swift */,
 				OBJ_26 /* StringExtensions.swift */,
 				OBJ_27 /* Timer.swift */,
 				OBJ_28 /* Togglable.swift */,
@@ -325,14 +325,14 @@
 				OBJ_54 /* Locale+LanguageRegion.swift in Sources */,
 				073525D61F46D58E009CC477 /* Triangulatable.swift in Sources */,
 				OBJ_55 /* NotificationObserver.swift in Sources */,
-				073525D81F46D5D7009CC477 /* Angle.swift in Sources */,
+				073525D81F46D5D7009CC477 /* Angle_Swift31.swift in Sources */,
 				OBJ_56 /* NSAttributedStringExtensions.swift in Sources */,
-				0713D7261F4B2CCB00591999 /* Angle_Swift4.swift in Sources */,
+				0713D7261F4B2CCB00591999 /* Angle.swift in Sources */,
 				073525D41F46D53A009CC477 /* Triangle.swift in Sources */,
 				OBJ_57 /* NSLayoutConstraint+FFAdditions.swift in Sources */,
 				0710E6C01F4B08C0004DA14C /* Angle_Swift32.swift in Sources */,
 				OBJ_58 /* OperationQueue+FFAdditions.swift in Sources */,
-				OBJ_59 /* SequenceTypeExtensions.swift in Sources */,
+				OBJ_59 /* SequenceExtensions.swift in Sources */,
 				OBJ_60 /* StringExtensions.swift in Sources */,
 				OBJ_61 /* Timer.swift in Sources */,
 				OBJ_62 /* Togglable.swift in Sources */,

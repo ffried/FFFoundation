@@ -22,7 +22,7 @@ import typealias Foundation.TimeInterval
 import Dispatch
 
 public final class Timer<T> {
-    public typealias Block = (Timer) -> Void
+    public typealias Block = (Timer) -> ()
     
     public let interval: TimeInterval
     public let repeats: Bool
@@ -54,11 +54,7 @@ public final class Timer<T> {
     private final func applyTimerProperties() {
         let nsInterval = Int(interval * TimeInterval(NSEC_PER_SEC))
         let nsTolerance = Int(tolerance * TimeInterval(NSEC_PER_SEC))
-        #if swift(>=4.0)
-            timer.schedule(deadline: .now() + interval, repeating: .nanoseconds(nsInterval), leeway: .nanoseconds(nsTolerance))
-        #else
-            timer.scheduleRepeating(deadline: .now() + interval, interval: .nanoseconds(nsInterval), leeway: .nanoseconds(nsTolerance))
-        #endif
+        timer.schedule(deadline: .now() + interval, repeating: .nanoseconds(nsInterval), leeway: .nanoseconds(nsTolerance))
     }
 
     public func schedule() {
@@ -71,8 +67,7 @@ public final class Timer<T> {
     
     public func invalidate() {
         guard isValid else { return }
-        let t = timer
-        queue.async { t.cancel() }
+        queue.async { [timer] in timer.cancel() }
         isValid = false
     }
     

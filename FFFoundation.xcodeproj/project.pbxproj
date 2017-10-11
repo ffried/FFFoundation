@@ -7,28 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0710E6C01F4B08C0004DA14C /* Angle_Swift32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0710E6BF1F4B08BF004DA14C /* Angle_Swift32.swift */; };
 		0713D7261F4B2CCB00591999 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713D7251F4B2CCA00591999 /* Angle.swift */; };
 		0713D7281F4BF4E900591999 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713D7271F4BF4E800591999 /* Weak.swift */; };
-		072406BE1E7ECE6500A1AC3F /* FFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 072406BA1E7ECE6500A1AC3F /* FFCacheManager.m */; };
-		072406BF1E7ECE6500A1AC3F /* FFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 072406BD1E7ECE6500A1AC3F /* FFTimer.m */; };
-		072406C11E7ECEED00A1AC3F /* FFCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 072406B91E7ECE6500A1AC3F /* FFCacheManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		072343C01F8DEA6400E600DB /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072343BF1F8DEA6400E600DB /* CacheManager.swift */; };
+		072343C31F8DECA400E600DB /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072343C21F8DECA400E600DB /* Point.swift */; };
 		072406C21E7ECEF000A1AC3F /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 072406BB1E7ECE6500A1AC3F /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		072406C31E7ECEF400A1AC3F /* FFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 072406BC1E7ECE6500A1AC3F /* FFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		073525D41F46D53A009CC477 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525D31F46D53A009CC477 /* Triangle.swift */; };
 		073525D61F46D58E009CC477 /* Triangulatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525D51F46D58E009CC477 /* Triangulatable.swift */; };
-		073525D81F46D5D7009CC477 /* Angle_Swift31.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525D71F46D5D7009CC477 /* Angle_Swift31.swift */; };
 		073525DD1F470E86009CC477 /* TriangleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525DB1F470E77009CC477 /* TriangleTests.swift */; };
+		07520EF51F8B530800D5FBF7 /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07520EF41F8B530800D5FBF7 /* Ref.swift */; };
+		07810DDB1F8513C900F21AE0 /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07810DDA1F8513C900F21AE0 /* Diff.swift */; };
+		07820C8C1F85FB2200897C00 /* DiffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07820C8A1F85FA4200897C00 /* DiffTests.swift */; };
+		07B151F71F8B489E00D1C089 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B151F61F8B489E00D1C089 /* Atomic.swift */; };
 		OBJ_43 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AppGroup.swift */; };
 		OBJ_44 /* Application+NameAndVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Application+NameAndVersion.swift */; };
-		OBJ_45 /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DateFormatters.swift */; };
-		OBJ_46 /* DictionaryHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DictionaryHelpers.swift */; };
+		OBJ_46 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DictionaryExtensions.swift */; };
 		OBJ_47 /* DispatchHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DispatchHelpers.swift */; };
 		OBJ_48 /* FileManager+Directories.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* FileManager+Directories.swift */; };
-		OBJ_49 /* FunctionsAndHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* FunctionsAndHelpers.swift */; };
-		OBJ_50 /* JSONExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* JSONExtensions.swift */; };
-		OBJ_51 /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* JSONParsing.swift */; };
-		OBJ_52 /* JSONTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* JSONTypes.swift */; };
+		OBJ_49 /* String+Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* String+Classes.swift */; };
 		OBJ_53 /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Lazy.swift */; };
 		OBJ_54 /* Locale+LanguageRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Locale+LanguageRegion.swift */; };
 		OBJ_55 /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* NotificationObserver.swift */; };
@@ -55,27 +51,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0710E6BF1F4B08BF004DA14C /* Angle_Swift32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle_Swift32.swift; sourceTree = "<group>"; };
 		0713D7251F4B2CCA00591999 /* Angle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
 		0713D7271F4BF4E800591999 /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
-		072406B91E7ECE6500A1AC3F /* FFCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFCacheManager.h; sourceTree = "<group>"; };
-		072406BA1E7ECE6500A1AC3F /* FFCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFCacheManager.m; sourceTree = "<group>"; };
+		072343BF1F8DEA6400E600DB /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		072343C21F8DECA400E600DB /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		072406BB1E7ECE6500A1AC3F /* FFFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFoundation.h; sourceTree = "<group>"; };
-		072406BC1E7ECE6500A1AC3F /* FFTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTimer.h; sourceTree = "<group>"; };
-		072406BD1E7ECE6500A1AC3F /* FFTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTimer.m; sourceTree = "<group>"; };
 		073525D31F46D53A009CC477 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		073525D51F46D58E009CC477 /* Triangulatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangulatable.swift; sourceTree = "<group>"; };
-		073525D71F46D5D7009CC477 /* Angle_Swift31.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angle_Swift31.swift; sourceTree = "<group>"; };
 		073525DB1F470E77009CC477 /* TriangleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleTests.swift; sourceTree = "<group>"; };
+		07520EF41F8B530800D5FBF7 /* Ref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
+		07810DDA1F8513C900F21AE0 /* Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diff.swift; sourceTree = "<group>"; };
+		07820C8A1F85FA4200897C00 /* DiffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffTests.swift; sourceTree = "<group>"; };
+		07B151F41F8B467E00D1C089 /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
+		07B151F61F8B489E00D1C089 /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Application+NameAndVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+NameAndVersion.swift"; sourceTree = "<group>"; };
-		OBJ_11 /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
-		OBJ_12 /* DictionaryHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryHelpers.swift; sourceTree = "<group>"; };
+		OBJ_12 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		OBJ_13 /* DispatchHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchHelpers.swift; sourceTree = "<group>"; };
 		OBJ_14 /* FileManager+Directories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Directories.swift"; sourceTree = "<group>"; };
-		OBJ_15 /* FunctionsAndHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsAndHelpers.swift; sourceTree = "<group>"; };
-		OBJ_16 /* JSONExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONExtensions.swift; sourceTree = "<group>"; };
-		OBJ_17 /* JSONParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsing.swift; sourceTree = "<group>"; };
-		OBJ_18 /* JSONTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTypes.swift; sourceTree = "<group>"; };
+		OBJ_15 /* String+Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Classes.swift"; sourceTree = "<group>"; };
 		OBJ_19 /* Lazy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazy.swift; sourceTree = "<group>"; };
 		OBJ_20 /* Locale+LanguageRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+LanguageRegion.swift"; sourceTree = "<group>"; };
 		OBJ_21 /* NotificationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
@@ -113,14 +106,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		072343C11F8DEAA500E600DB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* Application+NameAndVersion.swift */,
+				OBJ_12 /* DictionaryExtensions.swift */,
+				OBJ_14 /* FileManager+Directories.swift */,
+				OBJ_20 /* Locale+LanguageRegion.swift */,
+				OBJ_22 /* NSAttributedStringExtensions.swift */,
+				OBJ_23 /* NSLayoutConstraint+FFAdditions.swift */,
+				OBJ_24 /* OperationQueue+FFAdditions.swift */,
+				OBJ_25 /* SequenceExtensions.swift */,
+				OBJ_15 /* String+Classes.swift */,
+				OBJ_26 /* StringExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		072406B81E7ECE6500A1AC3F /* ObjectiveCSources */ = {
 			isa = PBXGroup;
 			children = (
-				072406B91E7ECE6500A1AC3F /* FFCacheManager.h */,
-				072406BA1E7ECE6500A1AC3F /* FFCacheManager.m */,
 				072406BB1E7ECE6500A1AC3F /* FFFoundation.h */,
-				072406BC1E7ECE6500A1AC3F /* FFTimer.h */,
-				072406BD1E7ECE6500A1AC3F /* FFTimer.m */,
 			);
 			path = ObjectiveCSources;
 			sourceTree = "<group>";
@@ -139,6 +145,7 @@
 				OBJ_31 /* FFFoundationTests.swift */,
 				OBJ_32 /* TimerTests.swift */,
 				073525DB1F470E77009CC477 /* TriangleTests.swift */,
+				07820C8A1F85FA4200897C00 /* DiffTests.swift */,
 			);
 			name = FFFoundationTests;
 			path = Tests/FFFoundationTests;
@@ -167,44 +174,26 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* FFFoundation */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		OBJ_8 /* FFFoundation */ = {
-			isa = PBXGroup;
-			children = (
+				072343C11F8DEAA500E600DB /* Extensions */,
 				0713D7251F4B2CCA00591999 /* Angle.swift */,
-				0710E6BF1F4B08BF004DA14C /* Angle_Swift32.swift */,
-				073525D71F46D5D7009CC477 /* Angle_Swift31.swift */,
 				OBJ_9 /* AppGroup.swift */,
-				OBJ_10 /* Application+NameAndVersion.swift */,
-				OBJ_11 /* DateFormatters.swift */,
-				OBJ_12 /* DictionaryHelpers.swift */,
+				07B151F61F8B489E00D1C089 /* Atomic.swift */,
+				07B151F41F8B467E00D1C089 /* AttributedString.swift */,
+				072343BF1F8DEA6400E600DB /* CacheManager.swift */,
+				07810DDA1F8513C900F21AE0 /* Diff.swift */,
 				OBJ_13 /* DispatchHelpers.swift */,
-				OBJ_14 /* FileManager+Directories.swift */,
-				OBJ_15 /* FunctionsAndHelpers.swift */,
-				OBJ_16 /* JSONExtensions.swift */,
-				OBJ_17 /* JSONParsing.swift */,
-				OBJ_18 /* JSONTypes.swift */,
 				OBJ_19 /* Lazy.swift */,
-				OBJ_20 /* Locale+LanguageRegion.swift */,
 				OBJ_21 /* NotificationObserver.swift */,
-				OBJ_22 /* NSAttributedStringExtensions.swift */,
-				OBJ_23 /* NSLayoutConstraint+FFAdditions.swift */,
-				OBJ_24 /* OperationQueue+FFAdditions.swift */,
-				OBJ_25 /* SequenceExtensions.swift */,
-				OBJ_26 /* StringExtensions.swift */,
+				072343C21F8DECA400E600DB /* Point.swift */,
+				07520EF41F8B530800D5FBF7 /* Ref.swift */,
 				OBJ_27 /* Timer.swift */,
 				OBJ_28 /* Togglable.swift */,
 				073525D31F46D53A009CC477 /* Triangle.swift */,
 				073525D51F46D58E009CC477 /* Triangulatable.swift */,
 				0713D7271F4BF4E800591999 /* Weak.swift */,
 			);
-			name = FFFoundation;
 			path = Sources;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -213,9 +202,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				072406C11E7ECEED00A1AC3F /* FFCacheManager.h in Headers */,
 				072406C21E7ECEF000A1AC3F /* FFFoundation.h in Headers */,
-				072406C31E7ECEF400A1AC3F /* FFTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,31 +295,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				072343C01F8DEA6400E600DB /* CacheManager.swift in Sources */,
 				OBJ_43 /* AppGroup.swift in Sources */,
 				OBJ_44 /* Application+NameAndVersion.swift in Sources */,
-				OBJ_45 /* DateFormatters.swift in Sources */,
-				OBJ_46 /* DictionaryHelpers.swift in Sources */,
+				07810DDB1F8513C900F21AE0 /* Diff.swift in Sources */,
+				07B151F71F8B489E00D1C089 /* Atomic.swift in Sources */,
+				OBJ_46 /* DictionaryExtensions.swift in Sources */,
 				OBJ_47 /* DispatchHelpers.swift in Sources */,
 				OBJ_48 /* FileManager+Directories.swift in Sources */,
-				OBJ_49 /* FunctionsAndHelpers.swift in Sources */,
-				OBJ_50 /* JSONExtensions.swift in Sources */,
-				072406BE1E7ECE6500A1AC3F /* FFCacheManager.m in Sources */,
-				OBJ_51 /* JSONParsing.swift in Sources */,
-				OBJ_52 /* JSONTypes.swift in Sources */,
-				072406BF1E7ECE6500A1AC3F /* FFTimer.m in Sources */,
+				OBJ_49 /* String+Classes.swift in Sources */,
 				OBJ_53 /* Lazy.swift in Sources */,
 				0713D7281F4BF4E900591999 /* Weak.swift in Sources */,
 				OBJ_54 /* Locale+LanguageRegion.swift in Sources */,
 				073525D61F46D58E009CC477 /* Triangulatable.swift in Sources */,
 				OBJ_55 /* NotificationObserver.swift in Sources */,
-				073525D81F46D5D7009CC477 /* Angle_Swift31.swift in Sources */,
 				OBJ_56 /* NSAttributedStringExtensions.swift in Sources */,
 				0713D7261F4B2CCB00591999 /* Angle.swift in Sources */,
 				073525D41F46D53A009CC477 /* Triangle.swift in Sources */,
+				07520EF51F8B530800D5FBF7 /* Ref.swift in Sources */,
 				OBJ_57 /* NSLayoutConstraint+FFAdditions.swift in Sources */,
-				0710E6C01F4B08C0004DA14C /* Angle_Swift32.swift in Sources */,
 				OBJ_58 /* OperationQueue+FFAdditions.swift in Sources */,
 				OBJ_59 /* SequenceExtensions.swift in Sources */,
+				072343C31F8DECA400E600DB /* Point.swift in Sources */,
 				OBJ_60 /* StringExtensions.swift in Sources */,
 				OBJ_61 /* Timer.swift in Sources */,
 				OBJ_62 /* Togglable.swift in Sources */,
@@ -345,6 +329,7 @@
 			files = (
 				OBJ_69 /* FFFoundationTests.swift in Sources */,
 				OBJ_70 /* TimerTests.swift in Sources */,
+				07820C8C1F85FB2200897C00 /* DiffTests.swift in Sources */,
 				073525DD1F470E86009CC477 /* TriangleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

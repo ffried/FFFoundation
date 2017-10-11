@@ -19,23 +19,7 @@
 //
 
 public extension Sequence {
-    @available(*, deprecated: 2.0, message: "Use new Dictionary initializer: Dictionary(grouping:by:)")
-    public func group<Key: Hashable>(by keyGen: (Iterator.Element) throws -> Key) rethrows -> [Key: [Element]] {
-        return try Dictionary(grouping: self, by: keyGen)
-    }
-    
     public func last(where: (Iterator.Element) throws -> Bool) rethrows -> Element? {
         return try reversed().first(where: `where`)
     }
-    
-    @available(*, deprecated, message: "Was replaced by first(where:_) natively in Swift 3.0", renamed: "first")
-    public func findFirst(predicate: (Iterator.Element) throws -> Bool) rethrows -> Element? {
-        return try first(where: predicate)
-    }
-    
-    @available(*, deprecated, message: "Was replaced by last(where:_)", renamed: "last")
-    public func findLast(predicate: (Iterator.Element) throws -> Bool) rethrows -> Element? {
-        return try last(where: predicate)
-    }
 }
-

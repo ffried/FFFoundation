@@ -20,7 +20,6 @@
 
 import Foundation
 
-#if swift(>=3.2)
 public protocol TriangulatableValue: FloatingPoint {
     func sin() -> Self
     func asin() -> Self
@@ -29,22 +28,15 @@ public protocol TriangulatableValue: FloatingPoint {
     func tan() -> Self
     func atan() -> Self
 }
-#else
-public protocol TriangulatableValue: FloatingPoint, Hashable {
-    func sin() -> Self
-    func asin() -> Self
-    func cos() -> Self
-    func acos() -> Self
-    func tan() -> Self
-    func atan() -> Self
-    
-    static func +(lhs: Self, rhs: Self) -> Self
-    static func -(lhs: Self, rhs: Self) -> Self
-    static func *(lhs: Self, rhs: Self) -> Self
-    static func /(lhs: Self, rhs: Self) -> Self
-    static func %(lhs: Self, rhs: Self) -> Self
+
+public protocol Triangulatable {
+    associatedtype Value: TriangulatableValue
+
+    var x: Value { get }
+    var y: Value { get }
+
+    init(x: Value, y: Value)
 }
-#endif
 
 extension Double: TriangulatableValue {
     public func sin() -> Double { return Foundation.sin(self) }
@@ -74,18 +66,7 @@ extension CGFloat: TriangulatableValue {
     public func tan() -> CGFloat { return CoreGraphics.tan(self) }
     public func atan() -> CGFloat { return CoreGraphics.atan(self) }
 }
-#endif
 
-public protocol Triangulatable {
-    associatedtype Value: TriangulatableValue
-    
-    var x: Value { get }
-    var y: Value { get }
-    
-    init(x: Value, y: Value)
-}
-
-#if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
 extension CGPoint: Triangulatable {
     public typealias Value = CGFloat
 }

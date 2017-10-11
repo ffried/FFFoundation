@@ -18,7 +18,6 @@
 //  limitations under the License.
 //
 
-#if swift(>=3.2)
 public protocol WeakProtocol {
     associatedtype StoredObject: AnyObject
     
@@ -27,6 +26,9 @@ public protocol WeakProtocol {
     var wasReleased: Bool { get }
     
     init(object: StoredObject)
+
+    subscript<T>(keyPath: KeyPath<StoredObject, T>) -> T? { get }
+    subscript<T>(keyPath: ReferenceWritableKeyPath<StoredObject, T>) -> T? { get set }
 }
 
 public extension WeakProtocol {
@@ -40,6 +42,15 @@ public struct Weak<T: AnyObject>: WeakProtocol {
     
     public init(object: StoredObject) {
         self.object = object
+    }
+
+    public subscript<T>(keyPath: KeyPath<StoredObject, T>) -> T? {
+        return object?[keyPath: keyPath]
+    }
+    
+    public subscript<T>(keyPath: ReferenceWritableKeyPath<StoredObject, T>) -> T? {
+        get { return object?[keyPath: keyPath] }
+        set { if let val = newValue { object?[keyPath: keyPath] = val } }
     }
 }
 
@@ -60,5 +71,31 @@ public extension RangeReplaceableCollection where Element: WeakProtocol {
         append(.init(object: object))
     }
 }
-#endif
 
+public extension WeakProtocol where StoredObject: RefProtocol {
+    public var refObject: StoredObject.Value? {
+        get { return object?.value }
+        set { if let val = newValue { object?.value = val } }
+    }
+}
+
+public extension WeakProtocol where StoredObject: AtomicProtocol {
+    public var atomicObject: StoredObject.Value? {
+        get { return object?.value }
+        set { if let val = newValue { object?.value = val } }
+    }
+}
+
+public extension WeakProtocol where StoredObject: RefProtocol, StoredObject.Value: AtomicProtocol {
+    public var refAtomicObject: StoredObject.Value.Value? {
+        get { return object?.value.value }
+        set { if let val = newValue { object?.value.value = val } }
+    }
+}
+
+public extension WeakProtocol where StoredObject: AtomicProtocol, StoredObject.Value: RefProtocol {
+    public var atomicRefObject: StoredObject.Value.Value? {
+        get { return object?.value.value }
+        set { if let val = newValue { object?.value.value = val } }
+    }
+}

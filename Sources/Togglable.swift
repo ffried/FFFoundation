@@ -25,9 +25,7 @@ public protocol Togglable {
     /// A inverted version of `self`.
     var toggled: Self { get }
 
-    /**
-     Toggles `self`.
-     */
+    /// Toggles `self`.
     mutating func toggle()
 }
 

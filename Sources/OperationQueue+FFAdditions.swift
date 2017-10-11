@@ -22,22 +22,9 @@ import class Foundation.OperationQueue
 import class Foundation.BlockOperation
 
 public extension OperationQueue {
-    public var isMain: Bool {
-        return self === type(of: self).main
-    }
+    public var isMain: Bool { return self === type(of: self).main }
     
-    @available(*, deprecated: 2.1, message: "Use isMain", renamed: "isMain")
-    public var isMainQueue: Bool { return isMain }
-    
-    public var isCurrent: Bool {
-        return type(of: self).current.flatMap { $0 === self } ?? false
-    }
-    
-    @available(*, deprecated: 2.1, message: "Use isCurrent", renamed: "isCurrent")
-    public var isCurrentQueue: Bool { return isCurrent }
-    
-    @available(*, deprecated: 2.1, message: "Use main.isCurrent directly", renamed: "main.isCurrent")
-    public static var isCurrentQueueMainQueue: Bool { return main.isCurrent }
+    public var isCurrent: Bool { return type(of: self).current.flatMap { $0 === self } ?? false }
     
     public func addOperation(with block: @escaping () -> (), completion: @escaping () -> ()) {
         let operation = BlockOperation(block: block)

@@ -28,9 +28,6 @@
     #elseif os(macOS)
     import class AppKit.NSView
     import class AppKit.NSLayoutConstraint
-    #if !swift(>=4.0)
-    import struct AppKit.NSLayoutFormatOptions
-    #endif
     #endif
     
     @available(macOS 10.7, iOS 6.0, tvOS 6.0, *)
@@ -44,7 +41,7 @@
         typealias MetricValueType   = NSNumber
         #endif
         typealias VisualFormatType  = String
-        #if !os(macOS) || !swift(>=4.0)
+        #if !os(macOS)
         typealias FormatOptions = NSLayoutFormatOptions
         #endif
         typealias MetricsDictionary = [String: MetricValueType]

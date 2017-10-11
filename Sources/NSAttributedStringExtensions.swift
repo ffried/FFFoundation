@@ -27,20 +27,14 @@
 
     #if os(iOS) || os(tvOS)
         import struct UIKit.NSStringDrawingOptions
-    #elseif os(macOS) && !swift(>=4)
-        import struct AppKit.NSStringDrawingOptions
     #endif
     
     public extension NSAttributedString {
-        #if swift(>=4.0)
         public typealias AttributesDictionary = [NSAttributedStringKey: Any]
-        #else
-        public typealias AttributesDictionary = [String: Any]
-        #endif
         
         public final func size(forWidth width: CGFloat) -> CGSize {
             let boundingSize = CGSize(width: width, height: .greatestFiniteMagnitude)
-            #if os(macOS) && swift(>=4.0)
+            #if os(macOS)
                 let options: NSString.DrawingOptions = [.usesLineFragmentOrigin]
             #else
                 let options: NSStringDrawingOptions = [.usesLineFragmentOrigin]

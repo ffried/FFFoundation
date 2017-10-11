@@ -1,5 +1,5 @@
 //
-//  FunctionsAndHelpers.swift
+//  String+Classes.swift
 //  FFFoundation
 //
 //  Created by Florian Friedrich on 9.12.14.
@@ -20,11 +20,6 @@
 
 import func Foundation.NSStringFromClass
 
-@available(*, deprecated: 2.0, message: "Use String(class: removeNamespace:)", renamed: "String(class:removeNamespace:)")
-public func StringFromClass(_ aClass: AnyClass, removeNamespace: Bool = true) -> String {
-    return String(class: aClass, removeNamespace: removeNamespace)
-}
-
 public extension String {
     /**
      Swift-aware NSStringFromClass. Removes '.' in Swift class names if `removeNamespace` is `true`.
@@ -40,11 +35,7 @@ public extension String {
         var className = NSStringFromClass(aClass)
         
         if removeNamespace, let range = className.range(of: ".", options: .backwards) {
-            #if swift(>=4.0)
-                className = String(className[range.upperBound...])
-            #else
-                className = className.substring(from: range.upperBound)
-            #endif
+            className = String(className[range.upperBound...])
         }
         
         self = className

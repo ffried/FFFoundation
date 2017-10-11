@@ -24,18 +24,6 @@
     import struct CoreGraphics.CGSize
     
     public extension String {
-        @available(*, deprecated: 2.0, message: "You should really consider URL instead!")
-        public mutating func append(pathComponent comp: String) {
-            self += hasSuffix("/") ? comp : ("/" + comp)
-        }
-        
-        @available(*, deprecated: 2.0, message: "You should really consider URL instead!")
-        public func stringByAppending(pathComponent comp: String) -> String {
-            var newString = self
-            newString.append(pathComponent: comp)
-            return newString
-        }
-        
         public func size(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGSize {
             return NSAttributedString(string: self, attributes: attributes).size(forWidth: width)
         }

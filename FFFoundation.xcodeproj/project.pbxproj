@@ -550,7 +550,7 @@
 				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		OBJ_39 /* Build configuration list for PBXNativeTarget "FFFoundation" */ = {
 			isa = XCConfigurationList;
@@ -559,7 +559,7 @@
 				OBJ_41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		OBJ_65 /* Build configuration list for PBXNativeTarget "FFFoundationTests" */ = {
 			isa = XCConfigurationList;
@@ -568,7 +568,7 @@
 				OBJ_67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

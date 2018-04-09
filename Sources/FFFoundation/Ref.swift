@@ -1,8 +1,8 @@
 //
-//  Point.swift
+//  Ref.swift
 //  FFFoundation
 //
-//  Created by Florian Friedrich on 11.10.17.
+//  Created by Florian Friedrich on 09.10.17.
 //  Copyright 2017 Florian Friedrich
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,24 +18,21 @@
 //  limitations under the License.
 //
 
-public struct Point<Value: FloatingPoint & TriangulatableValue>: Hashable {
-    public var x: Value
-    public var y: Value
+public protocol RefProtocol: class, Container {}
 
-    public var hashValue: Int { return x.hashValue ^ y.hashValue }
+public final class Ref<Referenced>: RefProtocol {
+    public typealias Value = Referenced
 
-    public init(x: Value, y: Value) {
-        (self.x, self.y) = (x, y)
-    }
+    public var value: Value
 
-    public static func ==(lhs: Point, rhs: Point) -> Bool {
-        return (lhs.x, lhs.y) == (rhs.x, rhs.y)
+    public init(value: Value) {
+        self.value = value
     }
 }
 
-public extension Point {
-    public static var zero: Point { return .init(x: 0, y: 0) }
-}
+extension Ref: Equatable where Referenced: Equatable {}
+extension Ref: Hashable where Referenced: Hashable {}
 
-// TODO: extension Point: Triangulatable where Value: TriangulatableValue
-extension Point: Triangulatable {}
+extension Ref: NestedContainer where Referenced: Container {
+    public typealias NestedValue = Referenced.Value
+}

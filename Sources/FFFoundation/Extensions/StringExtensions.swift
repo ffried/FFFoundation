@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-#if os(iOS) || os(tvOS) || os(macOS)
+#if canImport(CoreGraphics)
     import class Foundation.NSAttributedString
     import struct CoreGraphics.CGFloat
     import struct CoreGraphics.CGSize

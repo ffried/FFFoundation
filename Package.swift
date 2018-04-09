@@ -10,7 +10,7 @@ let package = Package(
       .library(name: "FFFoundation", targets: ["FFFoundation"]),
    ],
    targets: [
-      .target(name: "FFFoundation", dependencies: []),
+      .target(name: "FFFoundation", dependencies: [], exclude: ["AttributedString.swift"]),
       .testTarget(name: "FFFoundationTests", dependencies: ["FFFoundation"])
    ]
 )

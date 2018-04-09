@@ -139,6 +139,16 @@
 			path = ../Sources/FFFoundation;
 			sourceTree = "<group>";
 		};
+		0714F2DD207B720E009900AD = {
+			isa = PBXGroup;
+			children = (
+				0714F2DD207B720E009900AC /* FFFoundation */,
+				0714F318207B7229009900AC /* FFFoundationTests */,
+				0767345A207B751F004B708E /* Frameworks */,
+				07673457207B74B6004B708E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
 		0714F2E7207B720E009900AC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,13 +190,6 @@
 			path = ../../Resources;
 			sourceTree = "<group>";
 		};
-		0767345A207B751F004B708E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		07673457207B74B6004B708E /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,14 +199,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0714F2DD207B720E009900AD = {
+		0767345A207B751F004B708E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0714F2DD207B720E009900AC /* FFFoundation */,
-				0714F318207B7229009900AC /* FFFoundationTests */,
-				0767345A207B751F004B708E /* Frameworks */,
-				07673457207B74B6004B708E /* Products */,
 			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

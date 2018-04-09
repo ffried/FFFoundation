@@ -18,84 +18,54 @@
 //  limitations under the License.
 //
 
-public protocol WeakProtocol {
-    associatedtype StoredObject: AnyObject
-    
-    weak var object: StoredObject? { get set }
-    
-    var wasReleased: Bool { get }
-    
-    init(object: StoredObject)
+public protocol WeakProtocol: Container where Value == Object? {
+    associatedtype Object: AnyObject
 
-    subscript<T>(keyPath: KeyPath<StoredObject, T>) -> T? { get }
-    subscript<T>(keyPath: ReferenceWritableKeyPath<StoredObject, T>) -> T? { get set }
+    var wasReleased: Bool { get }
+
+    init(object: Object)
 }
 
 public extension WeakProtocol {
-    public var wasReleased: Bool { return object == nil }
+    public var wasReleased: Bool { return value == nil }
+
+    public var object: Object? { return value }
+
+    public init(object: Object) {
+        self.init(value: object)
+    }
 }
 
-public struct Weak<T: AnyObject>: WeakProtocol {
-    public typealias StoredObject = T
-    
-    public weak var object: StoredObject?
-    
-    public init(object: StoredObject) {
-        self.object = object
-    }
+public struct Weak<Object: AnyObject>: WeakProtocol {
+    public weak var value: Object?
 
-    public subscript<T>(keyPath: KeyPath<StoredObject, T>) -> T? {
-        return object?[keyPath: keyPath]
-    }
-    
-    public subscript<T>(keyPath: ReferenceWritableKeyPath<StoredObject, T>) -> T? {
-        get { return object?[keyPath: keyPath] }
-        set { if let val = newValue { object?[keyPath: keyPath] = val } }
+    public init(value: Value) {
+        self.value = value
     }
 }
 
 public extension Sequence where Element: WeakProtocol {
-    public var objects: [Element.StoredObject] {
-        return flatMap { $0.object }
+    public var objects: [Element.Object] {
+        return compactMap { $0.object }
     }
 }
 
 public extension RangeReplaceableCollection where Element: WeakProtocol {
     public mutating func removeReleasedObjects() {
+        // TODO: Replace with removeAll(where:) as soon as https://github.com/apple/swift-evolution/blob/master/proposals/0197-remove-where.md is implemented (Swift 4.2?)
         while let index = index(where: { $0.wasReleased }) {
             remove(at: index)
         }
     }
     
-    public mutating func appendWeakly(_ object: Element.StoredObject) {
+    public mutating func appendWeakly(_ object: Element.Object) {
         append(.init(object: object))
     }
 }
 
-public extension WeakProtocol where StoredObject: RefProtocol {
-    public var refObject: StoredObject.Value? {
-        get { return object?.value }
-        set { if let val = newValue { object?.value = val } }
-    }
-}
+extension Weak: Equatable where Object: Equatable {}
+extension Weak: Hashable where Object: Hashable {}
 
-public extension WeakProtocol where StoredObject: AtomicProtocol {
-    public var atomicObject: StoredObject.Value? {
-        get { return object?.value }
-        set { if let val = newValue { object?.value = val } }
-    }
-}
-
-public extension WeakProtocol where StoredObject: RefProtocol, StoredObject.Value: AtomicProtocol {
-    public var refAtomicObject: StoredObject.Value.Value? {
-        get { return object?.value.value }
-        set { if let val = newValue { object?.value.value = val } }
-    }
-}
-
-public extension WeakProtocol where StoredObject: AtomicProtocol, StoredObject.Value: RefProtocol {
-    public var atomicRefObject: StoredObject.Value.Value? {
-        get { return object?.value.value }
-        set { if let val = newValue { object?.value.value = val } }
-    }
+extension Weak: NestedContainer where Object: Container {
+    public typealias NestedValue = Value.Value
 }

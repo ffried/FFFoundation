@@ -18,18 +18,12 @@
 //  limitations under the License.
 //
 
-public struct Point<Value: FloatingPoint & TriangulatableValue>: Hashable {
+public struct Point<Value: FloatingPoint>: Hashable {
     public var x: Value
     public var y: Value
 
-    public var hashValue: Int { return x.hashValue ^ y.hashValue }
-
     public init(x: Value, y: Value) {
         (self.x, self.y) = (x, y)
-    }
-
-    public static func ==(lhs: Point, rhs: Point) -> Bool {
-        return (lhs.x, lhs.y) == (rhs.x, rhs.y)
     }
 }
 
@@ -37,5 +31,4 @@ public extension Point {
     public static var zero: Point { return .init(x: 0, y: 0) }
 }
 
-// TODO: extension Point: Triangulatable where Value: TriangulatableValue
-extension Point: Triangulatable {}
+extension Point: TriangulatablePoint where Value: TriangulatableValue {}

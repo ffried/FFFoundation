@@ -48,7 +48,7 @@ public extension Diff where Subject.Element: Equatable, Element == Subject.SubSe
     }
 }
 
-public extension Diff where Subject.Element: Equatable, Element == Subject, Subject: RangeReplaceableCollection {
+public extension Diff where Subject: RangeReplaceableCollection, Subject.Element: Equatable, Element == Subject {
     public init(base: Subject, comparedTo head: Subject, splitBy separator: Subject.Element) {
         let baseSplit = base.split(separator: separator, omittingEmptySubsequences: false).map(Subject.init)
         let headSplit = head.split(separator: separator, omittingEmptySubsequences: false).map(Subject.init)
@@ -56,7 +56,7 @@ public extension Diff where Subject.Element: Equatable, Element == Subject, Subj
     }
 }
 
-public extension Diff where Subject == String, Element == Subject.SubSequence {
+public extension Diff where Subject == String, Element == String.SubSequence {
     public init(base: String, comparedTo head: String) {
         self.init(base: base, comparedTo: head, splitBy: "\n")
     }

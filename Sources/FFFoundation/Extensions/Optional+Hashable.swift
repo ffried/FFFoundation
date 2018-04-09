@@ -1,9 +1,9 @@
 //
-//  Ref.swift
+//  Optional+Hashable.swift
 //  FFFoundation
 //
-//  Created by Florian Friedrich on 09.10.17.
-//  Copyright 2017 Florian Friedrich
+//  Created by Florian Friedrich on 09.04.18.
+//  Copyright 2018 Florian Friedrich
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -18,21 +18,11 @@
 //  limitations under the License.
 //
 
-public protocol RefProtocol: class, Container {}
-
-public final class Ref<Referenced>: RefProtocol {
-    public typealias Value = Referenced
-
-    public var value: Value
-
-    public init(value: Value) {
-        self.value = value
+extension Optional: Hashable where Wrapped: Hashable {
+    public var hashValue: Int {
+        switch self {
+        case .none: return 0
+        case .some(let wrapped): return wrapped.hashValue
+        }
     }
-}
-
-extension Ref: Equatable where Referenced: Equatable {}
-extension Ref: Hashable where Referenced: Hashable {}
-
-extension Ref: NestedContainer where Referenced: Container {
-    public typealias NestedValue = Referenced.Value
 }

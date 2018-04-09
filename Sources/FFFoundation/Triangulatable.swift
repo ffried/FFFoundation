@@ -29,7 +29,7 @@ public protocol TriangulatableValue: FloatingPoint {
     func atan() -> Self
 }
 
-public protocol Triangulatable {
+public protocol TriangulatablePoint {
     associatedtype Value: TriangulatableValue
 
     var x: Value { get }
@@ -56,8 +56,9 @@ extension Float: TriangulatableValue {
     public func atan() -> Float { return Foundation.atan(self) }
 }
 
-#if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
+#if canImport(CoreGraphics)
 import CoreGraphics
+
 extension CGFloat: TriangulatableValue {
     public func sin() -> CGFloat { return CoreGraphics.sin(self) }
     public func asin() -> CGFloat { return CoreGraphics.asin(self) }
@@ -67,7 +68,7 @@ extension CGFloat: TriangulatableValue {
     public func atan() -> CGFloat { return CoreGraphics.atan(self) }
 }
 
-extension CGPoint: Triangulatable {
+extension CGPoint: TriangulatablePoint {
     public typealias Value = CGFloat
 }
 #endif

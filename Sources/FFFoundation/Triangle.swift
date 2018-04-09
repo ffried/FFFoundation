@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-public struct Triangle<Point: Triangulatable>: Equatable where Point.Value.Stride == Point.Value {
+public struct Triangle<Point: TriangulatablePoint>: Equatable where Point.Value.Stride == Point.Value {
     public typealias Angle = FFFoundation.Angle<Point.Value>
     public typealias Distance = Point.Value
     
@@ -36,9 +36,9 @@ public extension Triangle {
     public var pointB: Point { return points.b }
     public var pointC: Point { return points.c }
     
-    public var α: Triangle<Point>.Angle { return angles.α }
-    public var β: Triangle<Point>.Angle { return angles.β }
-    public var γ: Triangle<Point>.Angle { return angles.γ }
+    public var α: Angle { return angles.α }
+    public var β: Angle { return angles.β }
+    public var γ: Angle { return angles.γ }
     
     public var a: Distance { return sides.a }
     public var b: Distance { return sides.b }

@@ -20,16 +20,8 @@
 
 import Dispatch
 
-public protocol AtomicProtocol {
-    associatedtype Value
-
-    var value: Value { get set }
-
+public protocol AtomicProtocol: Container {
     init(value: Value, qos: DispatchQoS)
-    init(value: Value)
-
-    subscript<T>(keyPath: KeyPath<Value, T>) -> T { get }
-    subscript<T>(keyPath: WritableKeyPath<Value, T>) -> T { get set }
 
     func coordinated(with other: Self) -> (Value, Value)
     func coordinated<Other: AtomicProtocol>(with other: Other) -> (Value, Other.Value)
@@ -42,7 +34,9 @@ public extension AtomicProtocol {
     public init(value: Value) { self.init(value: value, qos: .default) }
 }
 
-public struct Atomic<Value>: AtomicProtocol {
+public struct Atomic<Guarded>: AtomicProtocol {
+    public typealias Value = Guarded
+
     private var _value: Value
     private let queue: DispatchQueue
 
@@ -57,19 +51,19 @@ public struct Atomic<Value>: AtomicProtocol {
         }
     }
 
-    public init(value: Value, qos: DispatchQoS = .default) {
+    public init(value: Value, qos: DispatchQoS) {
         _value = value
         queue = DispatchQueue(label: "net.ffried.fffoundation.atomic.queue", qos: qos)
     }
 
-    public subscript<T>(keyPath: KeyPath<Value, T>) -> T {
+    public subscript<T>(keyPath: KeyPath<Guarded, T>) -> T {
         get {
             precondition(notOn: queue)
             return queue.sync { _value[keyPath: keyPath] }
         }
     }
 
-    public subscript<T>(keyPath: WritableKeyPath<Value, T>) -> T {
+    public subscript<T>(keyPath: WritableKeyPath<Guarded, T>) -> T {
         get {
             precondition(notOn: queue)
             return queue.sync { _value[keyPath: keyPath] }
@@ -80,72 +74,39 @@ public struct Atomic<Value>: AtomicProtocol {
         }
     }
 
-    public func coordinated(with other: Atomic<Value>) -> (Value, Value) {
+    public func coordinated(with other: Atomic) -> (Guarded, Guarded) {
         precondition(notOn: queue)
         return queue.sync { (value, queue === other.queue ? other._value : other.value) }
     }
 
-    public func coordinated<OtherValue>(with other: Atomic<OtherValue>) -> (Value, OtherValue) {
+    public func coordinated<OtherGuarded>(with other: Atomic<OtherGuarded>) -> (Guarded, OtherGuarded) {
         precondition(notOn: queue)
-        return queue.sync { (value, other.value) }
+        return queue.sync { (_value, other.value) }
     }
 
-    public func coordinated<Other: AtomicProtocol>(with other: Other) -> (Value, Other.Value) {
+    public func coordinated<Other: AtomicProtocol>(with other: Other) -> (Guarded, Other.Value) {
         precondition(notOn: queue)
-        return queue.sync { (value, other.value) }
+        return queue.sync { (_value, other.value) }
     }
 
-    public func combined(with other: Atomic<Value>) -> Atomic<(Value, Value)> {
-        return Atomic<(Value, Value)>(value: coordinated(with: other), qos: max(queue.qos, other.queue.qos))
+    public func combined(with other: Atomic) -> Atomic<(Guarded, Guarded)> {
+        return Atomic<(Guarded, Guarded)>(value: coordinated(with: other), qos: max(queue.qos, other.queue.qos))
     }
 
-    public func combined<OtherValue>(with other: Atomic<OtherValue>) -> Atomic<(Value, OtherValue)> {
-        return Atomic<(Value, OtherValue)>(value: coordinated(with: other), qos: max(queue.qos, other.queue.qos))
+    public func combined<OtherGuarded>(with other: Atomic<OtherGuarded>) -> Atomic<(Guarded, OtherGuarded)> {
+        return Atomic<(Guarded, OtherGuarded)>(value: coordinated(with: other), qos: max(queue.qos, other.queue.qos))
     }
 
-    public func combined<Other: AtomicProtocol>(with other: Other) -> Atomic<(Value, Other.Value)> {
-        return Atomic<(Value, Other.Value)>(value: coordinated(with: other), qos: queue.qos)
+    public func combined<Other: AtomicProtocol>(with other: Other) -> Atomic<(Guarded, Other.Value)> {
+        return Atomic<(Guarded, Other.Value)>(value: coordinated(with: other), qos: queue.qos)
     }
 }
 
-extension Atomic: Equatable {
-    public static func ==(lhs: Atomic<Value>, rhs: Atomic<Value>) -> Bool {
-        return lhs.queue === rhs.queue
-    }
-}
+extension Atomic: Equatable where Guarded: Equatable {}
+extension Atomic: Hashable where Guarded: Hashable {}
 
-extension Atomic where Value: Equatable {
-    public static func ==(lhs: Atomic<Value>, rhs: Atomic<Value>) -> Bool {
-        return lhs.value == rhs.value
-    }
-}
-
-public extension AtomicProtocol where Value: RefProtocol {
-    public var refValue: Value.Value {
-        get { return value.value }
-        set { value.value = newValue }
-    }
-}
-
-public extension AtomicProtocol where Value: WeakProtocol {
-    public var weakValue: Value.StoredObject? {
-        get { return value.object }
-        set { value.object = newValue }
-    }
-}
-
-public extension AtomicProtocol where Value: RefProtocol, Value.Value: WeakProtocol {
-    public var refWeakValue: Value.Value.StoredObject? {
-        get { return value.value.object }
-        set { value.value.object = newValue }
-    }
-}
-
-public extension AtomicProtocol where Value: WeakProtocol, Value.StoredObject: RefProtocol {
-    public var weakValue: Value.StoredObject.Value? {
-        get { return value.object?.value }
-        set { if let val = newValue { value.object?.value = val } }
-    }
+extension Atomic: NestedContainer where Guarded: Container {
+    public typealias NestedValue = Guarded.Value
 }
 
 private func precondition(notOn queue: DispatchQueue) {

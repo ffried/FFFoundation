@@ -35,11 +35,15 @@ public struct AttributedString: ReferenceConvertible {
     }
 
     public var description: String {
-        return _attrString.description
+        var range = CFRange(location: 0, length: CFAttributedStringGetLength(_attrString))
+        let attrs = CFAttributedStringGetAttributes(_attrString, 0, &range)
+        return "AttributedString: " + String(describing: attrs)
     }
 
     public var debugDescription: String {
-        return _attrString.debugDescription
+        var range = CFRange(location: 0, length: CFAttributedStringGetLength(_attrString))
+        let attrs = CFAttributedStringGetAttributes(_attrString, 0, &range)
+        return "AttributedString: " + String(describing: attrs)
     }
 
     public static func ==(lhs: AttributedString, rhs: AttributedString) -> Bool {

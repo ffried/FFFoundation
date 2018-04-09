@@ -23,11 +23,9 @@ import class Foundation.NSLocale
 
 public extension Locale {
     public static var localizedDeviceLanguage: String? {
-        if let prefLanguageCode = preferredLanguages.first {
-            let locale = self.init(identifier: prefLanguageCode)
-            return (locale as NSLocale).displayName(forKey: .identifier, value: prefLanguageCode)
+        return preferredLanguages.first.flatMap {
+            (self.init(identifier: $0) as NSLocale).displayName(forKey: .identifier, value: $0)
         }
-        return nil
     }
     
     public static var localizedDeviceRegion: String? {

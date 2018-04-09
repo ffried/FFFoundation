@@ -18,14 +18,13 @@
 //  limitations under the License.
 //
 
-#if os(iOS) || os(macOS) || os(tvOS)
-    import func Darwin.ceil
+#if canImport(CoreGraphics)
     import class Foundation.NSAttributedString
     import struct CoreGraphics.CGFloat
     import struct CoreGraphics.CGSize
     import struct CoreGraphics.CGRect
 
-    #if os(iOS) || os(tvOS)
+    #if canImport(UIKit)
         import struct UIKit.NSStringDrawingOptions
     #endif
     
@@ -34,16 +33,16 @@
         
         public final func size(forWidth width: CGFloat) -> CGSize {
             let boundingSize = CGSize(width: width, height: .greatestFiniteMagnitude)
-            #if os(macOS)
-                let options: NSString.DrawingOptions = [.usesLineFragmentOrigin]
+            #if canImport(AppKit)
+                let options: NSString.DrawingOptions
             #else
-                let options: NSStringDrawingOptions = [.usesLineFragmentOrigin]
+                let options: NSStringDrawingOptions
             #endif
+            options = .usesLineFragmentOrigin
             let rawSize: CGRect
-            #if os(iOS) || os(tvOS)
+            #if canImport(UIKit)
                 rawSize = boundingRect(with: boundingSize, options: options, context: nil)
-            #endif
-            #if os(macOS)
+            #elseif canImport(AppKit)
                 if #available(macOS 10.11, *) {
                     rawSize = boundingRect(with: boundingSize, options: options, context: nil)
                 } else {

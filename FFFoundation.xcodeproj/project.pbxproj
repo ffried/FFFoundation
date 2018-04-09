@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07072B4E20739DB400B53CA3 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07072B4D20739DB400B53CA3 /* Container.swift */; };
+		0714F2DC207B630A009900AC /* Optional+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2DB207B630A009900AC /* Optional+Hashable.swift */; };
 		072406C21E7ECEF000A1AC3F /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 072406BB1E7ECE6500A1AC3F /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		073525DD1F470E86009CC477 /* TriangleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073525DB1F470E77009CC477 /* TriangleTests.swift */; };
 		07820C8C1F85FB2200897C00 /* DiffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07820C8A1F85FA4200897C00 /* DiffTests.swift */; };
@@ -29,7 +31,6 @@
 		07A2B4121FFFCCB600079258 /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2B3F81FFFCCB600079258 /* NSAttributedStringExtensions.swift */; };
 		07A2B4131FFFCCB600079258 /* String+Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2B3F91FFFCCB600079258 /* String+Classes.swift */; };
 		07A2B4141FFFCCB600079258 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2B3FA1FFFCCB600079258 /* Point.swift */; };
-		07A2B4151FFFCCB600079258 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2B3FB1FFFCCB600079258 /* AttributedString.swift */; };
 		07A2B4161FFFCCB600079258 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2B3FC1FFFCCB600079258 /* Atomic.swift */; };
 		07A2B4171FFFCCB600079258 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2B3FD1FFFCCB600079258 /* AppGroup.swift */; };
 		07A2B4181FFFCCB600079258 /* Togglable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2B3FE1FFFCCB600079258 /* Togglable.swift */; };
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07072B4D20739DB400B53CA3 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		0714F2DB207B630A009900AC /* Optional+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Hashable.swift"; sourceTree = "<group>"; };
 		072406BB1E7ECE6500A1AC3F /* FFFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFoundation.h; sourceTree = "<group>"; };
 		073525DB1F470E77009CC477 /* TriangleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleTests.swift; sourceTree = "<group>"; };
 		07820C8A1F85FA4200897C00 /* DiffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffTests.swift; sourceTree = "<group>"; };
@@ -126,22 +129,23 @@
 		07A2B3E61FFFCCB600079258 /* FFFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				07A2B3E71FFFCCB600079258 /* NotificationObserver.swift */,
-				07A2B3E81FFFCCB600079258 /* DispatchHelpers.swift */,
-				07A2B3E91FFFCCB600079258 /* CacheManager.swift */,
-				07A2B3EA1FFFCCB600079258 /* Diff.swift */,
+				07A2B3EF1FFFCCB600079258 /* Extensions */,
 				07A2B3EB1FFFCCB600079258 /* Angle.swift */,
-				07A2B3EC1FFFCCB600079258 /* Triangulatable.swift */,
+				07A2B3FD1FFFCCB600079258 /* AppGroup.swift */,
+				07A2B3FC1FFFCCB600079258 /* Atomic.swift */,
+				07A2B3FB1FFFCCB600079258 /* AttributedString.swift */,
+				07A2B3E91FFFCCB600079258 /* CacheManager.swift */,
+				07072B4D20739DB400B53CA3 /* Container.swift */,
+				07A2B3EA1FFFCCB600079258 /* Diff.swift */,
+				07A2B3E81FFFCCB600079258 /* DispatchHelpers.swift */,
+				07A2B3FF1FFFCCB600079258 /* Lazy.swift */,
+				07A2B3E71FFFCCB600079258 /* NotificationObserver.swift */,
+				07A2B3FA1FFFCCB600079258 /* Point.swift */,
 				07A2B3ED1FFFCCB600079258 /* Ref.swift */,
 				07A2B3EE1FFFCCB600079258 /* Timer.swift */,
-				07A2B3EF1FFFCCB600079258 /* Extensions */,
-				07A2B3FA1FFFCCB600079258 /* Point.swift */,
-				07A2B3FB1FFFCCB600079258 /* AttributedString.swift */,
-				07A2B3FC1FFFCCB600079258 /* Atomic.swift */,
-				07A2B3FD1FFFCCB600079258 /* AppGroup.swift */,
 				07A2B3FE1FFFCCB600079258 /* Togglable.swift */,
-				07A2B3FF1FFFCCB600079258 /* Lazy.swift */,
 				07A2B4001FFFCCB600079258 /* Triangle.swift */,
+				07A2B3EC1FFFCCB600079258 /* Triangulatable.swift */,
 				07A2B4011FFFCCB600079258 /* Weak.swift */,
 			);
 			path = FFFoundation;
@@ -150,16 +154,17 @@
 		07A2B3EF1FFFCCB600079258 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				07A2B3F01FFFCCB600079258 /* NSLayoutConstraint+FFAdditions.swift */,
-				07A2B3F11FFFCCB600079258 /* SequenceExtensions.swift */,
 				07A2B3F21FFFCCB600079258 /* Application+NameAndVersion.swift */,
 				07A2B3F31FFFCCB600079258 /* DictionaryExtensions.swift */,
-				07A2B3F41FFFCCB600079258 /* OperationQueue+FFAdditions.swift */,
-				07A2B3F51FFFCCB600079258 /* StringExtensions.swift */,
-				07A2B3F61FFFCCB600079258 /* Locale+LanguageRegion.swift */,
 				07A2B3F71FFFCCB600079258 /* FileManager+Directories.swift */,
+				07A2B3F61FFFCCB600079258 /* Locale+LanguageRegion.swift */,
 				07A2B3F81FFFCCB600079258 /* NSAttributedStringExtensions.swift */,
+				07A2B3F01FFFCCB600079258 /* NSLayoutConstraint+FFAdditions.swift */,
+				07A2B3F41FFFCCB600079258 /* OperationQueue+FFAdditions.swift */,
+				0714F2DB207B630A009900AC /* Optional+Hashable.swift */,
+				07A2B3F11FFFCCB600079258 /* SequenceExtensions.swift */,
 				07A2B3F91FFFCCB600079258 /* String+Classes.swift */,
+				07A2B3F51FFFCCB600079258 /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -259,7 +264,7 @@
 		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				TargetAttributes = {
 					OBJ_38 = {
 						LastSwiftMigration = 0900;
@@ -319,15 +324,16 @@
 				07A2B4171FFFCCB600079258 /* AppGroup.swift in Sources */,
 				07A2B4031FFFCCB600079258 /* DispatchHelpers.swift in Sources */,
 				07A2B4191FFFCCB600079258 /* Lazy.swift in Sources */,
-				07A2B4151FFFCCB600079258 /* AttributedString.swift in Sources */,
 				07A2B4091FFFCCB600079258 /* Timer.swift in Sources */,
 				07A2B4111FFFCCB600079258 /* FileManager+Directories.swift in Sources */,
 				07A2B41A1FFFCCB600079258 /* Triangle.swift in Sources */,
 				07A2B4121FFFCCB600079258 /* NSAttributedStringExtensions.swift in Sources */,
+				0714F2DC207B630A009900AC /* Optional+Hashable.swift in Sources */,
 				07A2B40F1FFFCCB600079258 /* StringExtensions.swift in Sources */,
 				07A2B40B1FFFCCB600079258 /* SequenceExtensions.swift in Sources */,
 				07A2B4181FFFCCB600079258 /* Togglable.swift in Sources */,
 				07A2B40A1FFFCCB600079258 /* NSLayoutConstraint+FFAdditions.swift in Sources */,
+				07072B4E20739DB400B53CA3 /* Container.swift in Sources */,
 				07A2B4161FFFCCB600079258 /* Atomic.swift in Sources */,
 				07A2B40D1FFFCCB600079258 /* DictionaryExtensions.swift in Sources */,
 			);
@@ -366,6 +372,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -373,6 +380,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -427,6 +435,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -434,6 +443,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

@@ -18,22 +18,54 @@
 //  limitations under the License.
 //
 
-public struct Lazy<T> {
-    public typealias Constructor = () -> T
+public protocol LazyProtocol: Container {
+    typealias Constructor = () -> Value
 
+    var value: Value { mutating get set }
+}
+
+public struct Lazy<Deferred>: LazyProtocol {
+    public typealias Value = Deferred
     private let constructor: Constructor
-    
-    public private(set) lazy var value: T = self.constructor()
+
+    private var _value: Ref<Value?>
+    public var value: Value {
+        get {
+            if let val = _value.value { return val }
+            _value.value = constructor()
+            return self.value
+        }
+        set {
+            if !isKnownUniquelyReferenced(&_value) {
+                _value = .init(value: newValue)
+            } else {
+                _value.value = newValue
+            }
+        }
+    }
     
     public init(_ constructor: @escaping Constructor) {
         self.constructor = constructor
+        _value = .init(value: nil)
+    }
+
+    public init(value: Value) {
+        constructor = { value }
+        _value = .init(value: value)
     }
     
-    public init(other: Lazy<T>) {
+    public init(other: Lazy) {
         self.init(other.constructor)
     }
     
     public mutating func reset() {
         self = .init(other: self)
     }
+}
+
+extension Lazy: Equatable where Deferred: Equatable {}
+extension Lazy: Hashable where Deferred: Hashable {}
+
+extension Lazy: NestedContainer where Deferred: Container {
+    public typealias NestedValue = Deferred.Value
 }

@@ -20,12 +20,16 @@
 
 #if canImport(CoreGraphics)
     import class Foundation.NSAttributedString
+    import struct Foundation.NSAttributedStringKey
     import struct CoreGraphics.CGFloat
     import struct CoreGraphics.CGSize
     import struct CoreGraphics.CGRect
+    import func CoreGraphics.ceil
 
     #if canImport(UIKit)
         import struct UIKit.NSStringDrawingOptions
+    #else
+        import class Foundation.NSString
     #endif
     
     public extension NSAttributedString {
@@ -33,10 +37,10 @@
         
         public final func size(forWidth width: CGFloat) -> CGSize {
             let boundingSize = CGSize(width: width, height: .greatestFiniteMagnitude)
-            #if canImport(AppKit)
-                let options: NSString.DrawingOptions
-            #else
+            #if canImport(UIKit)
                 let options: NSStringDrawingOptions
+            #else
+                let options: NSString.DrawingOptions
             #endif
             options = .usesLineFragmentOrigin
             let rawSize: CGRect

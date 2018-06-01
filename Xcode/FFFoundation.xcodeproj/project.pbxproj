@@ -39,7 +39,6 @@
 		0714F320207B7229009900AC /* TriangleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F31B207B7229009900AC /* TriangleTests.swift */; };
 		0714F321207B7229009900AC /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F31C207B7229009900AC /* TimerTests.swift */; };
 		0714F329207B7270009900AC /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0714F327207B7270009900AC /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0714F32A207B7270009900AC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0714F328207B7270009900AC /* Info.plist */; };
 		0767345B207B751F004B708E /* FFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07673458207B7513004B708E /* FFFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -261,7 +260,7 @@
 		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 				TargetAttributes = {
 					OBJ_38 = {
 						LastSwiftMigration = 0900;
@@ -296,7 +295,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0714F32A207B7270009900AC /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

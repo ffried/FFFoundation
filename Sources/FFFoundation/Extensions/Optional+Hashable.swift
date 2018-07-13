@@ -18,6 +18,7 @@
 //  limitations under the License.
 //
 
+#if !swift(>=4.1.50)
 extension Optional: Hashable where Wrapped: Hashable {
     public var hashValue: Int {
         switch self {
@@ -26,3 +27,4 @@ extension Optional: Hashable where Wrapped: Hashable {
         }
     }
 }
+#endif

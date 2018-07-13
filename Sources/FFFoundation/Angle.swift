@@ -119,7 +119,12 @@ public enum Angle<Value: FloatingPoint>: FloatingPoint where Value.Stride == Val
         guard let value = Value(exactly: source) else { return nil }
         self.init(radians: value)
     }
-    
+
+    #if swift(>=4.1.50)
+    public init<Source>(_ value: Source) where Source : BinaryInteger {
+        self.init(radians: .init(value))
+    }
+    #else
     public init(_ value: UInt8) { self.init(radians: .init(value)) }
     public init(_ value: Int8) { self.init(radians: .init(value)) }
     public init(_ value: UInt16) { self.init(radians: .init(value)) }
@@ -130,6 +135,7 @@ public enum Angle<Value: FloatingPoint>: FloatingPoint where Value.Stride == Val
     public init(_ value: Int64) { self.init(radians: .init(value)) }
     public init(_ value: UInt) { self.init(radians: .init(value)) }
     public init(_ value: Int) { self.init(radians: .init(value)) }
+    #endif
     
     public init(signOf: Angle, magnitudeOf: Angle) {
         self.init(radians: .init(signOf: signOf.value, magnitudeOf: magnitudeOf.value))

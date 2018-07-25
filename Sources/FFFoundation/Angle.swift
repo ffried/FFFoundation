@@ -358,6 +358,41 @@ public enum Angle<Value: FloatingPoint>: FloatingPoint where Value.Stride == Val
     }
 }
 
+fileprivate extension Angle {
+    fileprivate enum CodingKeys: String, CodingKey {
+        case kind, value
+    }
+}
+
+extension Angle: Encodable where Value: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        switch self {
+        case .degrees(let value):
+            try container.encode("degrees", forKey: .kind)
+            try container.encode(value, forKey: .value)
+        case .radians(let value):
+            try container.encode("radians", forKey: .kind)
+            try container.encode(value, forKey: .value)
+        }
+    }
+}
+
+extension Angle: Decodable where Value: Decodable {
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        switch try container.decode(String.self, forKey: .kind) {
+        case "degrees":
+            self = try .degrees(container.decode(Value.self, forKey: .value))
+        case "radians":
+            self = try .radians(container.decode(Value.self, forKey: .value))
+        case let invalidValue:
+            throw DecodingError.dataCorruptedError(forKey: .kind, in: container,
+                                                   debugDescription: "Could not convert '\(invalidValue)' to \(Angle.self)")
+        }
+    }
+}
+
 fileprivate extension FloatingPoint {
     @inline(__always)
     func toRadians() -> Self { return self * .pi / 180 }

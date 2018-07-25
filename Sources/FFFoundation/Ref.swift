@@ -33,6 +33,18 @@ public final class Ref<Referenced>: RefProtocol {
 extension Ref: Equatable where Referenced: Equatable {}
 extension Ref: Hashable where Referenced: Hashable {}
 
+extension Ref: Encodable where Referenced: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        try value.encode(to: encoder)
+    }
+}
+
+extension Ref: Decodable where Referenced: Decodable {
+    public convenience init(from decoder: Decoder) throws {
+        try self.init(value: .init(from: decoder))
+    }
+}
+
 extension Ref: NestedContainer where Referenced: Container {
     public typealias NestedValue = Referenced.Value
 }

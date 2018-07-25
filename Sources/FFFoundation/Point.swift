@@ -32,3 +32,25 @@ public extension Point {
 }
 
 extension Point: TriangulatablePoint where Value: TriangulatableValue {}
+
+fileprivate extension Point {
+    fileprivate enum CodingKeys: String, CodingKey {
+        case x, y
+    }
+}
+
+extension Point: Encodable where Value: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(x, forKey: .x)
+        try container.encode(y, forKey: .y)
+    }
+}
+
+extension Point: Decodable where Value: Decodable {
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        x = try container.decode(Value.self, forKey: .x)
+        y = try container.decode(Value.self, forKey: .y)
+    }
+}

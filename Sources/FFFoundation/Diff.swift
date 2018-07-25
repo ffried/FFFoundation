@@ -68,8 +68,50 @@ public extension Diff where Subject == String, Element == Subject {
     }
 }
 
+fileprivate extension Diff {
+    fileprivate enum CodingKeys: String, CodingKey {
+        case base, head, changes
+    }
+    fileprivate enum ChangeCodingKeys: String, CodingKey {
+        case change, element
+    }
+}
+
+extension Diff: Encodable where Subject: Encodable, Element: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(base, forKey: .base)
+        try container.encode(head, forKey: .head)
+        var changesContainer = container.nestedUnkeyedContainer(forKey: .changes)
+        for (elem, change) in changes {
+            var changeContainer = changesContainer.nestedContainer(keyedBy: ChangeCodingKeys.self)
+            try changeContainer.encode(change, forKey: .change)
+            try changeContainer.encode(elem, forKey: .element)
+        }
+    }
+}
+
+extension Diff: Decodable where Subject: Decodable, Element: Decodable {
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        base = try container.decode(Subject.self, forKey: .base)
+        head = try container.decode(Subject.self, forKey: .head)
+        var changesContainer = try container.nestedUnkeyedContainer(forKey: .changes)
+        var decodedChanges: Changes = []
+        changesContainer.count.map { decodedChanges.reserveCapacity($0) }
+        while !changesContainer.isAtEnd {
+            let changeContainer = try changesContainer.nestedContainer(keyedBy: ChangeCodingKeys.self)
+            decodedChanges.append((
+                try changeContainer.decode(Element.self, forKey: .element),
+                try changeContainer.decode(Change.self, forKey: .change)
+            ))
+        }
+        changes = decodedChanges
+    }
+}
+
 public extension Diff {
-    public enum Change: Equatable, CustomStringConvertible {
+    public enum Change: Hashable, CustomStringConvertible, Codable {
         case unchanged, added, removed
 
         public var description: String {
@@ -91,6 +133,27 @@ public extension Diff {
         public func annotatedLine(for element: Element) -> String {
             return "\(lineSign)\(element)\n"
         }
+
+        public init(from decoder: Decoder) throws {
+            let container = try decoder.singleValueContainer()
+            switch try container.decode(String.self) {
+            case "unchanged": self = .unchanged
+            case "added": self = .added
+            case "removed": self = .removed
+            case let invalidValue:
+                throw DecodingError.dataCorruptedError(in: container,
+                                                       debugDescription: "Could not convert '\(invalidValue)' to \(Change.self)")
+            }
+        }
+
+        public func encode(to encoder: Encoder) throws {
+            var container = encoder.singleValueContainer()
+            switch self {
+            case .unchanged: try container.encode("unchanged")
+            case .added: try container.encode("added")
+            case .removed: try container.encode("removed")
+            }
+        }
     }
 }
 
@@ -108,7 +171,7 @@ fileprivate extension RangeReplaceableCollection where Self: MutableCollection, 
                 lines = arr1[..<idx]
                 arr1.removeSubrange(..<idx)
             }
-            result.append(contentsOf: zip(lines, repeatElement(isAdded ? .added : .removed, count: Int(lines.count))))
+            result.append(contentsOf: zip(lines, repeatElement(isAdded ? .added : .removed, count: lines.count)))
             result.append((unchangedElement, .unchanged))
         }
         while let a = arr1.first, let b = arr2.first {
@@ -132,8 +195,8 @@ fileprivate extension RangeReplaceableCollection where Self: MutableCollection, 
             }
         }
         if !arr1.isEmpty || !arr2.isEmpty {
-            result.append(contentsOf: zip(arr1, repeatElement(.removed, count: Int(arr1.count))))
-            result.append(contentsOf: zip(arr2, repeatElement(.added, count: Int(arr2.count))))
+            result.append(contentsOf: zip(arr1, repeatElement(.removed, count: arr1.count)))
+            result.append(contentsOf: zip(arr2, repeatElement(.added, count: arr2.count)))
         }
         return result
     }

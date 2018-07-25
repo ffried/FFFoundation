@@ -22,7 +22,7 @@ import class Foundation.FileManager
 import class Foundation.UserDefaults
 import struct Foundation.URL
 
-public struct AppGroup: Hashable {
+public struct AppGroup: Hashable, Codable {
     public let identifier: String
     
     public init(identifier: String) {

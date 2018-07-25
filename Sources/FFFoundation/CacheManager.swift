@@ -19,6 +19,9 @@
 //
 
 import Foundation
+#if canImport(UIKit)
+import UIKit
+#endif
 
 public protocol Cachable {
     static func fromCache(data: Data) throws -> Self
@@ -68,7 +71,7 @@ public final class CacheManager<Object: Cachable> {
     // MARK: - Memory warnings
     private var memoryWarningsObserver: NSObjectProtocol?
     private func registerForMemoryWarnings() {
-        #if os(iOS) || os(tvOS) || os(watchOS)
+        #if canImport(UIKit)
             let opQueue = OperationQueue()
             opQueue.underlyingQueue = queue
             memoryWarningsObserver = NotificationCenter.default.addObserver(forName: .UIApplicationDidReceiveMemoryWarning,
@@ -175,19 +178,11 @@ extension Data: Cachable {
 }
 
 extension String: Cachable {
-    public func cacheData() throws -> Data {
-        guard let d = data(using: .utf16) else { throw CachingError.couldNotSerialize(underlyingError: nil) }
-        return d
-    }
-
-    public static func fromCache(data: Data) throws -> String {
-        guard let str = String(data: data, encoding: .utf16) else { throw CachingError.couldNotDeserialize(underlyingError: nil) }
-        return str
-    }
+    public func cacheData() throws -> Data { return Data(utf8) }
+    public static func fromCache(data: Data) throws -> String { return String(decoding: data, as: UTF8.self) }
 }
 
-#if os(iOS) || os(watchOS) || os(tvOS)
-    import UIKit
+#if canImport(UIKit)
     extension UIImage: Cachable {
         public func cacheData() throws -> Data {
             guard let data = UIImageJPEGRepresentation(self, 0.95) else { throw CachingError.couldNotSerialize(underlyingError: nil) }
@@ -201,7 +196,7 @@ extension String: Cachable {
     }
 #endif
 
-#if os(macOS)
+#if canImport(AppKit)
     import AppKit
     extension NSImage: Cachable {
         public func cacheData() throws -> Data {

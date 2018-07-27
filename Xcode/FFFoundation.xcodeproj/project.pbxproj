@@ -39,6 +39,8 @@
 		0714F320207B7229009900AC /* TriangleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F31B207B7229009900AC /* TriangleTests.swift */; };
 		0714F321207B7229009900AC /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F31C207B7229009900AC /* TimerTests.swift */; };
 		0714F329207B7270009900AC /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0714F327207B7270009900AC /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0747F0D1210AEF62009BFDAD /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747F0D0210AEF62009BFDAD /* Logging.swift */; };
+		0747F0D3210B047A009BFDAD /* OSLogLinux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747F0D2210B047A009BFDAD /* OSLogLinux.swift */; };
 		0767345B207B751F004B708E /* FFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07673458207B7513004B708E /* FFFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +90,8 @@
 		0714F31D207B7229009900AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0714F327207B7270009900AC /* FFFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFoundation.h; sourceTree = "<group>"; };
 		0714F328207B7270009900AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0747F0D0210AEF62009BFDAD /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		0747F0D2210B047A009BFDAD /* OSLogLinux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLogLinux.swift; sourceTree = "<group>"; };
 		07673458207B7513004B708E /* FFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07673459207B7513004B708E /* FFFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,6 +137,8 @@
 				0714F2F9207B720E009900AC /* Triangle.swift */,
 				0714F2E3207B720E009900AC /* Triangulatable.swift */,
 				0714F2FA207B720E009900AC /* Weak.swift */,
+				0747F0D0210AEF62009BFDAD /* Logging.swift */,
+				0747F0D2210B047A009BFDAD /* OSLogLinux.swift */,
 			);
 			name = FFFoundation;
 			path = ../Sources/FFFoundation;
@@ -308,11 +314,13 @@
 				0714F2FB207B720E009900AC /* NotificationObserver.swift in Sources */,
 				0714F302207B720E009900AC /* Ref.swift in Sources */,
 				0714F314207B720E009900AC /* Togglable.swift in Sources */,
+				0747F0D1210AEF62009BFDAD /* Logging.swift in Sources */,
 				0714F316207B720E009900AC /* Triangle.swift in Sources */,
 				0714F308207B720E009900AC /* DictionaryExtensions.swift in Sources */,
 				0714F30D207B720E009900AC /* FileManager+Directories.swift in Sources */,
 				0714F30E207B720E009900AC /* NSAttributedStringExtensions.swift in Sources */,
 				0714F300207B720E009900AC /* Angle.swift in Sources */,
+				0747F0D3210B047A009BFDAD /* OSLogLinux.swift in Sources */,
 				0714F301207B720E009900AC /* Triangulatable.swift in Sources */,
 				0714F313207B720E009900AC /* AppGroup.swift in Sources */,
 				0714F2FE207B720E009900AC /* CacheManager.swift in Sources */,
@@ -399,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

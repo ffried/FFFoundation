@@ -22,7 +22,11 @@ public enum Angle<Value: FloatingPoint>: FloatingPoint where Value.Stride == Val
     public typealias Stride = Angle
     public typealias IntegerLiteralType = Value.IntegerLiteralType
     public typealias Exponent = Value.Exponent
+    #if swift(>=4.1.50)
+    public typealias Magnitude = Angle
+    #else
     public typealias Magnitude = Value.Magnitude
+    #endif
     
     case radians(Value)
     case degrees(Value)
@@ -60,7 +64,13 @@ public enum Angle<Value: FloatingPoint>: FloatingPoint where Value.Stride == Val
         }
     }
     
+    #if swift(>=4.2)
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(asRadians.value)
+    }
+    #else
     public var hashValue: Int { return asRadians.value.hashValue }
+    #endif
     
     public static var radix: Int { return Value.radix }
     public static var nan: Angle<Value> { return .init(radians: .nan) }
@@ -72,7 +82,6 @@ public enum Angle<Value: FloatingPoint>: FloatingPoint where Value.Stride == Val
     public static var leastNormalMagnitude: Angle<Value> { return .init(radians: .leastNormalMagnitude) }
     
     public var exponent: Exponent { return value.exponent }
-    public var magnitude: Magnitude { return value.magnitude }
     public var sign: FloatingPointSign { return value.sign }
     public var isNormal: Bool { return value.isNormal }
     public var isFinite: Bool { return value.isFinite }
@@ -82,6 +91,17 @@ public enum Angle<Value: FloatingPoint>: FloatingPoint where Value.Stride == Val
     public var isNaN: Bool { return value.isNaN }
     public var isSignalingNaN: Bool { return value.isSignalingNaN }
     public var isCanonical: Bool { return value.isCanonical }
+
+    #if swift(>=4.1.50)
+    public var magnitude: Magnitude {
+        switch self {
+        case .radians(let val): return .radians(val.magnitude)
+        case .degrees(let val): return .degrees(val.magnitude)
+        }
+    }
+    #else
+    public var magnitude: Magnitude { return value.magnitude }
+    #endif
     
     public var ulp: Angle<Value> {
         switch self {

@@ -20,11 +20,14 @@
 
 #if canImport(CoreGraphics)
     import class Foundation.NSAttributedString
-    import struct Foundation.NSAttributedStringKey
     import struct CoreGraphics.CGFloat
     import struct CoreGraphics.CGSize
     import struct CoreGraphics.CGRect
     import func CoreGraphics.ceil
+
+    #if !swift(>=4.2)
+    import struct Foundation.NSAttributedStringKey
+    #endif
 
     #if canImport(UIKit)
         import struct UIKit.NSStringDrawingOptions
@@ -33,7 +36,10 @@
     #endif
     
     public extension NSAttributedString {
-        public typealias AttributesDictionary = [NSAttributedStringKey: Any]
+        #if !swift(>=4.2)
+        public typealias Key = NSAttributedStringKey
+        #endif
+        public typealias AttributesDictionary = [Key: Any]
         
         public final func size(forWidth width: CGFloat) -> CGSize {
             let boundingSize = CGSize(width: width, height: .greatestFiniteMagnitude)

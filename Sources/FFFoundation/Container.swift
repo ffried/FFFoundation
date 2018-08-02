@@ -99,7 +99,13 @@ extension Container where Value: Equatable {
 }
 
 extension Container where Value: Hashable {
+    #if swift(>=4.2)
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(value)
+    }
+    #else
     public var hashValue: Int { return value.hashValue }
+    #endif
 }
 
 extension Optional: Container {

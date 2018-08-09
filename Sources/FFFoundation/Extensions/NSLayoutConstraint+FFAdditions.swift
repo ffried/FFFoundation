@@ -41,7 +41,7 @@
         typealias MetricValueType   = NSNumber
         #endif
         typealias VisualFormatType  = String
-        #if !canImport(AppKit)
+        #if !canImport(AppKit) && !swift(>=4.2)
         typealias FormatOptions = NSLayoutFormatOptions
         #endif
         typealias MetricsDictionary = [String: MetricValueType]

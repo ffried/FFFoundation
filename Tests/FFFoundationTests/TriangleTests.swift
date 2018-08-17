@@ -56,6 +56,32 @@ class TriangleTests: XCTestCase {
         XCTAssertEqual(triangle.β, .radians(0.982793723247329), accuracy: .ulpOfOne)
         XCTAssertEqual(triangle.γ, .pi / 2, accuracy: .ulpOfOne)
     }
+    
+    func testTriangleWithAllLengthsGiven() {
+        let pointA = Point(x: 1, y: 1)
+        let pointB = Point(x: 7, y: 3)
+        let pointC = Point(x: 9, y: 7)
+        
+        // expectations
+        let a = (4*4+2*2).squareRoot() as Point.Value
+        let b = (6*6+8*8).squareRoot() as Point.Value
+        let c = (2*2+6*6).squareRoot() as Point.Value
+        let cosα = (b*b+c*c-a*a)/(2*b*c)
+        let cosβ = (a*a+c*c-b*b)/(2*a*c)
+        let cosγ = (a*a+b*b-c*c)/(2*a*b)
+        
+        let sut = Triangle(a: pointA, b: pointB, c: pointC)
+        
+        XCTAssertEqual(sut.pointA, pointA)
+        XCTAssertEqual(sut.pointB, pointB)
+        XCTAssertEqual(sut.pointC, pointC)
+        XCTAssertEqual(sut.a, a)
+        XCTAssertEqual(sut.b, b)
+        XCTAssertEqual(sut.c, c)
+        XCTAssertEqual(sut.α, Angle.radians(cosα.acos()))
+        XCTAssertEqual(sut.β, Angle.radians(cosβ.acos()))
+        XCTAssertEqual(sut.γ, Angle.radians(cosγ.acos()))
+    }
 }
 
 fileprivate struct Point: Equatable, TriangulatablePoint {

@@ -46,6 +46,7 @@ public extension Triangle {
 }
 
 public extension Triangle {
+    // IMHO only for special case (1) orthogonal and (2) isosceles and (3) b.y == c.y && a.x == c.x
     public init(orthogonallyWithA a: Point, b: Point) {
         points = (a, b, .init(x: a.x, y: b.y))
         let sideA = abs(b.x - a.x)

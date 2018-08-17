@@ -46,6 +46,7 @@ public extension Triangle {
 }
 
 public extension Triangle {
+    // IMHO only for special case (1) orthogonal and (2) isosceles and (3) b.y == c.y && a.x == c.x
     public init(orthogonallyWithA a: Point, b: Point) {
         points = (a, b, .init(x: a.x, y: b.y))
         let sideA = abs(b.x - a.x)
@@ -55,5 +56,33 @@ public extension Triangle {
         let α = Angle.radians((sideA / sideC).asin())
         let γ = Angle.radians(.pi / 2)
         angles = (α, .pi - γ - α, γ)
+    }
+    
+    public init(a: Point, b: Point, c: Point) {
+        points = (a, b, c)
+        let sideACathetusA = abs(b.x - c.x)
+        let sideACathetusB = abs(b.y - c.y)
+        let sideA = (sideACathetusA * sideACathetusA + sideACathetusB * sideACathetusB).squareRoot()
+        let sideBCathetusA = abs(a.x - c.x)
+        let sideBCathetusB = abs(a.y - c.y)
+        let sideB = (sideBCathetusA * sideBCathetusA + sideBCathetusB * sideBCathetusB).squareRoot()
+        let sideCCathetusA = abs(a.x - b.x)
+        let sideCCathetusB = abs(a.y - b.y)
+        let sideC = (sideCCathetusA * sideCCathetusA + sideCCathetusB * sideCCathetusB).squareRoot()
+        sides = (sideA, sideB, sideC)
+        
+        let sideASquare = sideA * sideA
+        let sideBSquare = sideB * sideB
+        let sideCSquare = sideC * sideC
+        
+        // calculate angles with cosinus formular (all sites' lengths are given)
+        let cosα = ((sideBSquare + sideCSquare - sideASquare) / (2 * sideB * sideC))
+        let cosβ = (sideASquare + sideCSquare - sideBSquare) / (2 * sideA * sideC)
+        let cosγ = (sideASquare + sideBSquare - sideCSquare) / (2 * sideA * sideB)
+        
+        let α = Angle.radians(cosα.acos())
+        let β = Angle.radians(cosβ.acos())
+        let γ = Angle.radians(cosγ.acos())
+        angles = (α, β, γ)
     }
 }

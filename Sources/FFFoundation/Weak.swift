@@ -53,7 +53,11 @@ public extension Sequence where Element: WeakProtocol {
 public extension MutableCollection where Self: RangeReplaceableCollection, Element: WeakProtocol {
     public mutating func removeReleasedObjects() {
         // TODO: Replace with removeAll(where:) as soon as https://github.com/apple/swift-evolution/blob/master/proposals/0197-remove-where.md is implemented (Swift 4.2?)
+        #if swift(>=4.2)
+        removeAll(where: { $0.wasReleased })
+        #else
         removeSubrange(partition(by: { $0.wasReleased })...)
+        #endif
     }
     
     public mutating func appendWeakly(_ object: Element.Object) {

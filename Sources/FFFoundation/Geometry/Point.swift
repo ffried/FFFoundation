@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-public struct Point<Value: FloatingPoint>: Hashable {
+public struct Point<Value: Numeric & Hashable>: Hashable {
     public var x: Value
     public var y: Value
 
@@ -30,8 +30,6 @@ public struct Point<Value: FloatingPoint>: Hashable {
 public extension Point {
     public static var zero: Point { return .init(x: 0, y: 0) }
 }
-
-extension Point: TriangulatablePoint where Value: TriangulatableValue {}
 
 fileprivate extension Point {
     fileprivate enum CodingKeys: String, CodingKey {
@@ -54,3 +52,5 @@ extension Point: Decodable where Value: Decodable {
         y = try container.decode(Value.self, forKey: .y)
     }
 }
+
+extension Point: TriangulatablePoint where Value: GeometricValue {}

@@ -18,13 +18,42 @@
 //  limitations under the License.
 //
 
-public struct Triangle<Point: TriangulatablePoint>: Equatable where Point.Value.Stride == Point.Value {
+public protocol TriangulatablePoint {
+    associatedtype Value: GeometricValue
+
+    var x: Value { get }
+    var y: Value { get }
+
+    init(x: Value, y: Value)
+}
+
+#if canImport(CoreGraphics)
+import CoreGraphics
+
+extension CGPoint: TriangulatablePoint {
+    public typealias Value = CGFloat
+}
+#endif
+
+public struct Triangle<Point: TriangulatablePoint>: Hashable where Point.Value.Stride == Point.Value {
     public typealias Angle = FFFoundation.Angle<Point.Value>
     public typealias Distance = Point.Value
     
     public let points: (a: Point,    b: Point,    c: Point)
     public let angles: (α: Angle,    β: Angle,    γ: Angle)
     public let sides:  (a: Distance, b: Distance, c: Distance)
+
+    #if swift(>=4.2)
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(sides.a)
+        hasher.combine(sides.b)
+        hasher.combine(sides.c)
+    }
+    #else
+    public var hashValue: Int {
+        return sides.a.hashValue ^ sides.b.hashValue ^ sides.c.hashValue
+    }
+    #endif
     
     public static func ==(lhs: Triangle<Point>, rhs: Triangle<Point>) -> Bool {
         return lhs.sides == rhs.sides
@@ -46,8 +75,13 @@ public extension Triangle {
 }
 
 public extension Triangle {
-    // IMHO only for special case (1) orthogonal and (2) isosceles and (3) b.y == c.y && a.x == c.x
-    public init(orthogonallyWithA a: Point, b: Point) {
+    /// Calculates a new orthogonal triangle with a given point A and B.
+    /// - Note: The triangle is based on C meaning that C == (A.x, B.y).
+    ///
+    /// - Parameters:
+    ///   - a: The point A.
+    ///   - b: The point B.
+    public init(orthogonallyOnCWithA a: Point, b: Point) {
         points = (a, b, .init(x: a.x, y: b.y))
         let sideA = abs(b.x - a.x)
         let sideB = abs(a.y - b.y)
@@ -58,8 +92,15 @@ public extension Triangle {
         angles = (α, .pi - γ - α, γ)
     }
     
+    /// Calculates a new triangle from three given points.
+    ///
+    /// - Parameters:
+    ///   - a: The point A.
+    ///   - b: The point B.
+    ///   - c: The point C.
     public init(a: Point, b: Point, c: Point) {
         points = (a, b, c)
+
         let sideACathetusA = abs(b.x - c.x)
         let sideACathetusB = abs(b.y - c.y)
         let sideA = (sideACathetusA * sideACathetusA + sideACathetusB * sideACathetusB).squareRoot()
@@ -76,7 +117,7 @@ public extension Triangle {
         let sideCSquare = sideC * sideC
         
         // calculate angles with cosinus formular (all sites' lengths are given)
-        let cosα = ((sideBSquare + sideCSquare - sideASquare) / (2 * sideB * sideC))
+        let cosα = (sideBSquare + sideCSquare - sideASquare) / (2 * sideB * sideC)
         let cosβ = (sideASquare + sideCSquare - sideBSquare) / (2 * sideA * sideC)
         let cosγ = (sideASquare + sideBSquare - sideCSquare) / (2 * sideA * sideB)
         

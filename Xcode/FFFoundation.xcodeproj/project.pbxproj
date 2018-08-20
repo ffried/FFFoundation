@@ -12,7 +12,7 @@
 		0714F2FE207B720E009900AC /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E0207B720E009900AC /* CacheManager.swift */; };
 		0714F2FF207B720E009900AC /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E1207B720E009900AC /* Diff.swift */; };
 		0714F300207B720E009900AC /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E2207B720E009900AC /* Angle.swift */; };
-		0714F301207B720E009900AC /* Triangulatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E3207B720E009900AC /* Triangulatable.swift */; };
+		0714F301207B720E009900AC /* GeometricValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E3207B720E009900AC /* GeometricValue.swift */; };
 		0714F302207B720E009900AC /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E4207B720E009900AC /* Ref.swift */; };
 		0714F303207B720E009900AC /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E5207B720E009900AC /* Timer.swift */; };
 		0714F304207B720E009900AC /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E6207B720E009900AC /* Container.swift */; };
@@ -34,13 +34,13 @@
 		0714F315207B720E009900AC /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2F8207B720E009900AC /* Lazy.swift */; };
 		0714F316207B720E009900AC /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2F9207B720E009900AC /* Triangle.swift */; };
 		0714F317207B720E009900AC /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2FA207B720E009900AC /* Weak.swift */; };
-		0714F31E207B7229009900AC /* FFFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F319207B7229009900AC /* FFFoundationTests.swift */; };
 		0714F31F207B7229009900AC /* DiffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F31A207B7229009900AC /* DiffTests.swift */; };
 		0714F320207B7229009900AC /* TriangleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F31B207B7229009900AC /* TriangleTests.swift */; };
 		0714F321207B7229009900AC /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F31C207B7229009900AC /* TimerTests.swift */; };
 		0714F329207B7270009900AC /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0714F327207B7270009900AC /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0747F0D1210AEF62009BFDAD /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747F0D0210AEF62009BFDAD /* Logging.swift */; };
 		0747F0D3210B047A009BFDAD /* OSLogLinux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747F0D2210B047A009BFDAD /* OSLogLinux.swift */; };
+		0766A090212B0C2E00D579CF /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766A08F212B0C2E00D579CF /* Size.swift */; };
 		0767345B207B751F004B708E /* FFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07673458207B7513004B708E /* FFFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +60,7 @@
 		0714F2E0207B720E009900AC /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		0714F2E1207B720E009900AC /* Diff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diff.swift; sourceTree = "<group>"; };
 		0714F2E2207B720E009900AC /* Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
-		0714F2E3207B720E009900AC /* Triangulatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangulatable.swift; sourceTree = "<group>"; };
+		0714F2E3207B720E009900AC /* GeometricValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometricValue.swift; sourceTree = "<group>"; };
 		0714F2E4207B720E009900AC /* Ref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
 		0714F2E5207B720E009900AC /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		0714F2E6207B720E009900AC /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
@@ -83,7 +83,6 @@
 		0714F2F8207B720E009900AC /* Lazy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lazy.swift; sourceTree = "<group>"; };
 		0714F2F9207B720E009900AC /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		0714F2FA207B720E009900AC /* Weak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
-		0714F319207B7229009900AC /* FFFoundationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFFoundationTests.swift; sourceTree = "<group>"; };
 		0714F31A207B7229009900AC /* DiffTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiffTests.swift; sourceTree = "<group>"; };
 		0714F31B207B7229009900AC /* TriangleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleTests.swift; sourceTree = "<group>"; };
 		0714F31C207B7229009900AC /* TimerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTests.swift; sourceTree = "<group>"; };
@@ -92,6 +91,7 @@
 		0714F328207B7270009900AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0747F0D0210AEF62009BFDAD /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		0747F0D2210B047A009BFDAD /* OSLogLinux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLogLinux.swift; sourceTree = "<group>"; };
+		0766A08F212B0C2E00D579CF /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		07673458207B7513004B708E /* FFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07673459207B7513004B708E /* FFFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,9 +118,9 @@
 		0714F2DD207B720E009900AC /* FFFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				0766A08E212B0C1C00D579CF /* Geometry */,
 				0714F2E7207B720E009900AC /* Extensions */,
 				0714F326207B7270009900AC /* Resources */,
-				0714F2E2207B720E009900AC /* Angle.swift */,
 				0714F2F6207B720E009900AC /* AppGroup.swift */,
 				0714F2F5207B720E009900AC /* Atomic.swift */,
 				0714F2F4207B720E009900AC /* AttributedString.swift */,
@@ -130,12 +130,9 @@
 				0714F2DF207B720E009900AC /* DispatchHelpers.swift */,
 				0714F2F8207B720E009900AC /* Lazy.swift */,
 				0714F2DE207B720E009900AC /* NotificationObserver.swift */,
-				0714F2F3207B720E009900AC /* Point.swift */,
 				0714F2E4207B720E009900AC /* Ref.swift */,
 				0714F2E5207B720E009900AC /* Timer.swift */,
 				0714F2F7207B720E009900AC /* Togglable.swift */,
-				0714F2F9207B720E009900AC /* Triangle.swift */,
-				0714F2E3207B720E009900AC /* Triangulatable.swift */,
 				0714F2FA207B720E009900AC /* Weak.swift */,
 				0747F0D0210AEF62009BFDAD /* Logging.swift */,
 				0747F0D2210B047A009BFDAD /* OSLogLinux.swift */,
@@ -175,7 +172,6 @@
 		0714F318207B7229009900AC /* FFFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
-				0714F319207B7229009900AC /* FFFoundationTests.swift */,
 				0714F31A207B7229009900AC /* DiffTests.swift */,
 				0714F31B207B7229009900AC /* TriangleTests.swift */,
 				0714F31C207B7229009900AC /* TimerTests.swift */,
@@ -193,6 +189,18 @@
 			);
 			name = Resources;
 			path = ../../Resources;
+			sourceTree = "<group>";
+		};
+		0766A08E212B0C1C00D579CF /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				0714F2E2207B720E009900AC /* Angle.swift */,
+				0714F2F3207B720E009900AC /* Point.swift */,
+				0766A08F212B0C2E00D579CF /* Size.swift */,
+				0714F2F9207B720E009900AC /* Triangle.swift */,
+				0714F2E3207B720E009900AC /* GeometricValue.swift */,
+			);
+			path = Geometry;
 			sourceTree = "<group>";
 		};
 		07673457207B74B6004B708E /* Products */ = {
@@ -321,12 +329,13 @@
 				0714F30E207B720E009900AC /* NSAttributedStringExtensions.swift in Sources */,
 				0714F300207B720E009900AC /* Angle.swift in Sources */,
 				0747F0D3210B047A009BFDAD /* OSLogLinux.swift in Sources */,
-				0714F301207B720E009900AC /* Triangulatable.swift in Sources */,
+				0714F301207B720E009900AC /* GeometricValue.swift in Sources */,
 				0714F313207B720E009900AC /* AppGroup.swift in Sources */,
 				0714F2FE207B720E009900AC /* CacheManager.swift in Sources */,
 				0714F2FF207B720E009900AC /* Diff.swift in Sources */,
 				0714F306207B720E009900AC /* SequenceExtensions.swift in Sources */,
 				0714F317207B720E009900AC /* Weak.swift in Sources */,
+				0766A090212B0C2E00D579CF /* Size.swift in Sources */,
 				0714F2FD207B720E009900AC /* DispatchHelpers.swift in Sources */,
 				0714F310207B720E009900AC /* Point.swift in Sources */,
 				0714F30F207B720E009900AC /* String+Classes.swift in Sources */,
@@ -348,7 +357,6 @@
 			buildActionMask = 0;
 			files = (
 				0714F31F207B7229009900AC /* DiffTests.swift in Sources */,
-				0714F31E207B7229009900AC /* FFFoundationTests.swift in Sources */,
 				0714F320207B7229009900AC /* TriangleTests.swift in Sources */,
 				0714F321207B7229009900AC /* TimerTests.swift in Sources */,
 			);

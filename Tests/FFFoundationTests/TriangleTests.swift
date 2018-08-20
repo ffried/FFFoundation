@@ -3,7 +3,7 @@ import XCTest
 
 // Unfortunately, Darwin XCTest does not really support *all* FloatingPoint types.
 // https://github.com/apple/swift/blob/master/stdlib/public/SDK/XCTest/XCTest.swift#L379
-#if os(iOS) || os(watchOS) || os(tvOS) || os(macOS)
+#if !os(Linux)
 internal func XCTAssertEqual<T: FloatingPoint>(_ expression1: @autoclosure () throws -> T, _ expression2: @autoclosure () throws -> T, accuracy: T, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {
     XCTAssertNoThrow(try {
         let (value1, value2) = (try expression1(), try expression2())
@@ -24,10 +24,13 @@ internal func XCTAssertNotEqual<T: FloatingPoint>(_ expression1: @autoclosure ()
 }
 #endif
 
-class TriangleTests: XCTestCase {
+final class TriangleTests: XCTestCase {
     
     static let allTests : [(String, (TriangleTests) -> () throws -> Void)] = [
-        ("testSimpleTriangleCalculation", testSimpleTriangleCalculation)
+        ("testOrthogonalTriangleCalculation", testOrthogonalTriangleCalculation),
+        ("testOrthogonalTriangleWithSinglePoint", testOrthogonalTriangleWithSinglePoint),
+        ("testTriangleWithAllPointsGiven", testTriangleWithAllPointsGiven),
+        ("testTriangleWithAllPointsBeingTheSame", testTriangleWithAllPointsBeingTheSame),
     ]
     
     override func setUp() {
@@ -40,11 +43,11 @@ class TriangleTests: XCTestCase {
         super.tearDown()
     }
     
-    func testSimpleTriangleCalculation() {
+    func testOrthogonalTriangleCalculation() {
         let pointA = Point(x: 1, y: 1)
         let pointB = Point(x: 3, y: 4)
 
-        let triangle = Triangle(orthogonallyWithA: pointA, b: pointB)
+        let triangle = Triangle(orthogonallyOnCWithA: pointA, b: pointB)
         
         XCTAssertEqual(triangle.pointA, pointA)
         XCTAssertEqual(triangle.pointB, pointB)
@@ -56,19 +59,31 @@ class TriangleTests: XCTestCase {
         XCTAssertEqual(triangle.β, .radians(0.982793723247329), accuracy: .ulpOfOne)
         XCTAssertEqual(triangle.γ, .pi / 2, accuracy: .ulpOfOne)
     }
+
+    func testOrthogonalTriangleWithSinglePoint() {
+        let point = Point(x: 0, y: 0)
+        let triangle = Triangle(orthogonallyOnCWithA: point, b: point)
+        XCTAssertEqual(triangle.points.a, point)
+        XCTAssertEqual(triangle.points.b, point)
+        XCTAssertEqual(triangle.points.c, point)
+        XCTAssertEqual(triangle.sides.a, 0)
+        XCTAssertEqual(triangle.sides.b, 0)
+        XCTAssertEqual(triangle.sides.c, 0)
+        XCTAssertTrue(triangle.angles.α.isNaN)
+        XCTAssertTrue(triangle.angles.β.isNaN)
+        XCTAssertEqual(triangle.angles.γ, .pi / 2, accuracy: .ulpOfOne)
+    }
     
-    func testTriangleWithAllLengthsGiven() {
+    func testTriangleWithAllPointsGiven() {
         let pointA = Point(x: 1, y: 1)
         let pointB = Point(x: 7, y: 3)
         let pointC = Point(x: 9, y: 7)
-        
-        // expectations
-        let a = (4*4+2*2).squareRoot() as Point.Value
-        let b = (6*6+8*8).squareRoot() as Point.Value
-        let c = (2*2+6*6).squareRoot() as Point.Value
-        let cosα = (b*b+c*c-a*a)/(2*b*c)
-        let cosβ = (a*a+c*c-b*b)/(2*a*c)
-        let cosγ = (a*a+b*b-c*c)/(2*a*b)
+        let a: Point.Value = (4 * 4 + 2 * 2).squareRoot()
+        let b: Point.Value = (6 * 6 + 8 * 8).squareRoot()
+        let c: Point.Value = (2 * 2 + 6 * 6).squareRoot()
+        let cosα = (b * b + c * c - a * a) / (2 * b * c)
+        let cosβ = (a * a + c * c - b * b) / (2 * a * c)
+        let cosγ = (a * a + b * b - c * c) / (2 * a * b)
         
         let sut = Triangle(a: pointA, b: pointB, c: pointC)
         
@@ -82,13 +97,23 @@ class TriangleTests: XCTestCase {
         XCTAssertEqual(sut.β, Angle.radians(cosβ.acos()))
         XCTAssertEqual(sut.γ, Angle.radians(cosγ.acos()))
     }
+
+    func testTriangleWithAllPointsBeingTheSame() {
+        let point = Point(x: 0, y: 0)
+        let triangle = Triangle(a: point, b: point, c: point)
+        XCTAssertEqual(triangle.points.a, point)
+        XCTAssertEqual(triangle.points.b, point)
+        XCTAssertEqual(triangle.points.c, point)
+        XCTAssertEqual(triangle.sides.a, 0)
+        XCTAssertEqual(triangle.sides.b, 0)
+        XCTAssertEqual(triangle.sides.c, 0)
+        XCTAssertTrue(triangle.angles.α.isNaN)
+        XCTAssertTrue(triangle.angles.β.isNaN)
+        XCTAssertTrue(triangle.angles.γ.isNaN)
+    }
 }
 
 fileprivate struct Point: Equatable, TriangulatablePoint {
     let x: Double
     let y: Double
-    
-    static func ==(lhs: Point, rhs: Point) -> Bool {
-        return lhs.x == rhs.x && lhs.y == rhs.y
-    }
 }

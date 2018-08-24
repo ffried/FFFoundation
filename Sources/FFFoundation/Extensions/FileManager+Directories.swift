@@ -24,19 +24,23 @@ import struct Foundation.URL
 import struct ObjectiveC.ObjCBool
 
 public extension FileManager {
+    @inlinable
     public func fileExists(at url: URL) -> Bool { return fileExists(atPath: url.path) }
 
+    @inlinable
     public func fileExists(at url: URL, isDirectory: UnsafeMutablePointer<ObjCBool>?) -> Bool {
         return fileExists(atPath: url.path, isDirectory: isDirectory)
     }
 
+    @inlinable
     public func directoryExists(at url: URL) -> Bool {
         var isDir: ObjCBool = false
         return fileExists(at: url, isDirectory: &isDir) && isDir.boolValue
     }
 
-    public func createDirectoryIfNeeded(at url: URL, attributes: [FileAttributeKey: Any]? = nil) throws {
+    @inlinable
+    public func createDirectoryIfNeeded(at url: URL, withIntermediateDirectories: Bool = true, attributes: [FileAttributeKey: Any]? = nil) throws {
         guard !directoryExists(at: url) else { return }
-        try createDirectory(at: url, withIntermediateDirectories: true, attributes: attributes)
+        try createDirectory(at: url, withIntermediateDirectories: withIntermediateDirectories, attributes: attributes)
     }
 }

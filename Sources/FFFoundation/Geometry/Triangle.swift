@@ -43,17 +43,11 @@ public struct Triangle<Point: TriangulatablePoint>: Hashable where Point.Value.S
     public let angles: (α: Angle,    β: Angle,    γ: Angle)
     public let sides:  (a: Distance, b: Distance, c: Distance)
 
-    #if swift(>=4.2)
     public func hash(into hasher: inout Hasher) {
         hasher.combine(sides.a)
         hasher.combine(sides.b)
         hasher.combine(sides.c)
     }
-    #else
-    public var hashValue: Int {
-        return sides.a.hashValue ^ sides.b.hashValue ^ sides.c.hashValue
-    }
-    #endif
     
     public static func ==(lhs: Triangle<Point>, rhs: Triangle<Point>) -> Bool {
         return lhs.sides == rhs.sides

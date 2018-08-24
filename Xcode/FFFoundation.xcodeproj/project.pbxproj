@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070F27DD213036AD00A485E7 /* Optional+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F27DC213036AD00A485E7 /* Optional+Container.swift */; };
+		070F27DF2130371900A485E7 /* Container+ConditionalConformances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F27DE2130371900A485E7 /* Container+ConditionalConformances.swift */; };
 		0714F2FB207B720E009900AC /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2DE207B720E009900AC /* NotificationObserver.swift */; };
 		0714F2FD207B720E009900AC /* DispatchHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2DF207B720E009900AC /* DispatchHelpers.swift */; };
 		0714F2FE207B720E009900AC /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E0207B720E009900AC /* CacheManager.swift */; };
@@ -23,7 +25,6 @@
 		0714F309207B720E009900AC /* OperationQueue+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2EC207B720E009900AC /* OperationQueue+FFAdditions.swift */; };
 		0714F30A207B720E009900AC /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2ED207B720E009900AC /* StringExtensions.swift */; };
 		0714F30B207B720E009900AC /* Locale+LanguageRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2EE207B720E009900AC /* Locale+LanguageRegion.swift */; };
-		0714F30C207B720E009900AC /* Optional+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2EF207B720E009900AC /* Optional+Hashable.swift */; };
 		0714F30D207B720E009900AC /* FileManager+Directories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2F0207B720E009900AC /* FileManager+Directories.swift */; };
 		0714F30E207B720E009900AC /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2F1207B720E009900AC /* NSAttributedStringExtensions.swift */; };
 		0714F30F207B720E009900AC /* String+Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2F2207B720E009900AC /* String+Classes.swift */; };
@@ -55,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		070F27DC213036AD00A485E7 /* Optional+Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Container.swift"; sourceTree = "<group>"; };
+		070F27DE2130371900A485E7 /* Container+ConditionalConformances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+ConditionalConformances.swift"; sourceTree = "<group>"; };
 		0714F2DE207B720E009900AC /* NotificationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
 		0714F2DF207B720E009900AC /* DispatchHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchHelpers.swift; sourceTree = "<group>"; };
 		0714F2E0207B720E009900AC /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
@@ -71,7 +74,6 @@
 		0714F2EC207B720E009900AC /* OperationQueue+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OperationQueue+FFAdditions.swift"; sourceTree = "<group>"; };
 		0714F2ED207B720E009900AC /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		0714F2EE207B720E009900AC /* Locale+LanguageRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+LanguageRegion.swift"; sourceTree = "<group>"; };
-		0714F2EF207B720E009900AC /* Optional+Hashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Hashable.swift"; sourceTree = "<group>"; };
 		0714F2F0207B720E009900AC /* FileManager+Directories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Directories.swift"; sourceTree = "<group>"; };
 		0714F2F1207B720E009900AC /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
 		0714F2F2207B720E009900AC /* String+Classes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Classes.swift"; sourceTree = "<group>"; };
@@ -115,25 +117,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		070F27DB2130369000A485E7 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				0714F2F5207B720E009900AC /* Atomic.swift */,
+				0714F2E6207B720E009900AC /* Container.swift */,
+				070F27DE2130371900A485E7 /* Container+ConditionalConformances.swift */,
+				0714F2F8207B720E009900AC /* Lazy.swift */,
+				070F27DC213036AD00A485E7 /* Optional+Container.swift */,
+				0714F2E4207B720E009900AC /* Ref.swift */,
+				0714F2FA207B720E009900AC /* Weak.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
 		0714F2DD207B720E009900AC /* FFFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				0766A08E212B0C1C00D579CF /* Geometry */,
+				070F27DB2130369000A485E7 /* Containers */,
 				0714F2E7207B720E009900AC /* Extensions */,
+				0766A08E212B0C1C00D579CF /* Geometry */,
 				0714F326207B7270009900AC /* Resources */,
 				0714F2F6207B720E009900AC /* AppGroup.swift */,
-				0714F2F5207B720E009900AC /* Atomic.swift */,
 				0714F2F4207B720E009900AC /* AttributedString.swift */,
 				0714F2E0207B720E009900AC /* CacheManager.swift */,
-				0714F2E6207B720E009900AC /* Container.swift */,
 				0714F2E1207B720E009900AC /* Diff.swift */,
 				0714F2DF207B720E009900AC /* DispatchHelpers.swift */,
-				0714F2F8207B720E009900AC /* Lazy.swift */,
 				0714F2DE207B720E009900AC /* NotificationObserver.swift */,
-				0714F2E4207B720E009900AC /* Ref.swift */,
 				0714F2E5207B720E009900AC /* Timer.swift */,
 				0714F2F7207B720E009900AC /* Togglable.swift */,
-				0714F2FA207B720E009900AC /* Weak.swift */,
 				0747F0D0210AEF62009BFDAD /* Logging.swift */,
 				0747F0D2210B047A009BFDAD /* OSLogLinux.swift */,
 			);
@@ -161,7 +173,6 @@
 				0714F2F1207B720E009900AC /* NSAttributedStringExtensions.swift */,
 				0714F2E8207B720E009900AC /* NSLayoutConstraint+FFAdditions.swift */,
 				0714F2EC207B720E009900AC /* OperationQueue+FFAdditions.swift */,
-				0714F2EF207B720E009900AC /* Optional+Hashable.swift */,
 				0714F2E9207B720E009900AC /* SequenceExtensions.swift */,
 				0714F2F2207B720E009900AC /* String+Classes.swift */,
 				0714F2ED207B720E009900AC /* StringExtensions.swift */,
@@ -321,6 +332,7 @@
 			files = (
 				0714F2FB207B720E009900AC /* NotificationObserver.swift in Sources */,
 				0714F302207B720E009900AC /* Ref.swift in Sources */,
+				070F27DF2130371900A485E7 /* Container+ConditionalConformances.swift in Sources */,
 				0714F314207B720E009900AC /* Togglable.swift in Sources */,
 				0747F0D1210AEF62009BFDAD /* Logging.swift in Sources */,
 				0714F316207B720E009900AC /* Triangle.swift in Sources */,
@@ -335,6 +347,7 @@
 				0714F2FF207B720E009900AC /* Diff.swift in Sources */,
 				0714F306207B720E009900AC /* SequenceExtensions.swift in Sources */,
 				0714F317207B720E009900AC /* Weak.swift in Sources */,
+				070F27DD213036AD00A485E7 /* Optional+Container.swift in Sources */,
 				0766A090212B0C2E00D579CF /* Size.swift in Sources */,
 				0714F2FD207B720E009900AC /* DispatchHelpers.swift in Sources */,
 				0714F310207B720E009900AC /* Point.swift in Sources */,
@@ -346,7 +359,6 @@
 				0714F305207B720E009900AC /* NSLayoutConstraint+FFAdditions.swift in Sources */,
 				0714F30A207B720E009900AC /* StringExtensions.swift in Sources */,
 				0714F304207B720E009900AC /* Container.swift in Sources */,
-				0714F30C207B720E009900AC /* Optional+Hashable.swift in Sources */,
 				0714F303207B720E009900AC /* Timer.swift in Sources */,
 				0714F312207B720E009900AC /* Atomic.swift in Sources */,
 			);
@@ -435,7 +447,7 @@
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2,4";
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -503,7 +515,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2,4";
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				VALIDATE_PRODUCT = YES;

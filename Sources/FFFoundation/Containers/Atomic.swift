@@ -37,56 +37,62 @@ public extension AtomicProtocol {
 public struct Atomic<Guarded>: AtomicProtocol {
     public typealias Value = Guarded
 
-    private var _value: Value
+    private var _value: Ref<Value>
     private let queue: DispatchQueue
 
     public var value: Value {
         get {
             precondition(notOn: queue)
-            return queue.sync { _value }
+            return queue.sync { _value.value }
         }
         set {
             precondition(notOn: queue)
-            queue.sync { _value = newValue }
+            queue.sync { withMutableValue { $0 = newValue } }
         }
     }
 
     public init(value: Value, qos: DispatchQoS) {
-        _value = value
-        queue = DispatchQueue(label: "net.ffried.fffoundation.atomic.queue", qos: qos)
+        _value = Ref(value: value)
+        queue = DispatchQueue(label: "net.ffried.fffoundation.atomic<\(String(describing: Guarded.self).lowercased())>.queue", qos: qos)
     }
 
     public subscript<T>(keyPath: KeyPath<Guarded, T>) -> T {
-        get {
-            precondition(notOn: queue)
-            return queue.sync { _value[keyPath: keyPath] }
-        }
+        precondition(notOn: queue)
+        return queue.sync { _value.value[keyPath: keyPath] }
     }
 
     public subscript<T>(keyPath: WritableKeyPath<Guarded, T>) -> T {
         get {
             precondition(notOn: queue)
-            return queue.sync { _value[keyPath: keyPath] }
+            return queue.sync { _value.value[keyPath: keyPath] }
         }
         set {
             precondition(notOn: queue)
-            queue.sync { _value[keyPath: keyPath] = newValue }
+            queue.sync { withMutableValue { $0[keyPath: keyPath] = newValue } }
         }
+    }
+
+    private mutating func withMutableValue<T>(do work: (inout Guarded) throws -> T) rethrows -> T {
+        precondition(on: queue)
+        if !isKnownUniquelyReferenced(&_value) {
+            _value = Ref(value: _value.value)
+        }
+        return try work(&_value.value)
     }
 
     public func coordinated(with other: Atomic) -> (Guarded, Guarded) {
         precondition(notOn: queue)
-        return queue.sync { (value, queue === other.queue ? other._value : other.value) }
+        return queue.sync { (value, queue === other.queue ? other._value.value : other.value) }
     }
 
     public func coordinated<OtherGuarded>(with other: Atomic<OtherGuarded>) -> (Guarded, OtherGuarded) {
         precondition(notOn: queue)
-        return queue.sync { (_value, other.value) }
+        return queue.sync { (_value.value, other.value) }
     }
 
     public func coordinated<Other: AtomicProtocol>(with other: Other) -> (Guarded, Other.Value) {
         precondition(notOn: queue)
-        return queue.sync { (_value, other.value) }
+        return queue.sync { (_value.value, other.value) }
     }
 
     public func combined(with other: Atomic) -> Atomic<(Guarded, Guarded)> {
@@ -104,11 +110,21 @@ public struct Atomic<Guarded>: AtomicProtocol {
 
 extension Atomic: Equatable where Guarded: Equatable {}
 extension Atomic: Hashable where Guarded: Hashable {}
+extension Atomic: Comparable where Guarded: Comparable {}
+extension Atomic: Encodable where Guarded: Encodable {}
+extension Atomic: ExpressibleByNilLiteral where Guarded: ExpressibleByNilLiteral {}
+extension Atomic: ExpressibleByBooleanLiteral where Guarded: ExpressibleByBooleanLiteral {}
+extension Atomic: ExpressibleByIntegerLiteral where Guarded: ExpressibleByIntegerLiteral {}
+extension Atomic: ExpressibleByFloatLiteral where Guarded: ExpressibleByFloatLiteral {}
+extension Atomic: ExpressibleByUnicodeScalarLiteral where Guarded: ExpressibleByExtendedGraphemeClusterLiteral {}
+extension Atomic: ExpressibleByExtendedGraphemeClusterLiteral where Guarded: ExpressibleByExtendedGraphemeClusterLiteral {}
+extension Atomic: ExpressibleByStringLiteral where Guarded: ExpressibleByStringLiteral {}
 
 extension Atomic: NestedContainer where Guarded: Container {
     public typealias NestedValue = Guarded.Value
 }
 
+@inline(__always)
 private func precondition(notOn queue: DispatchQueue) {
     if #available(
         iOS 10.0, iOSApplicationExtension 10.0,
@@ -117,5 +133,17 @@ private func precondition(notOn queue: DispatchQueue) {
         watchOS 3.0, watchOSApplicationExtension 3.0,
         *) {
         dispatchPrecondition(condition: .notOnQueue(queue))
+    }
+}
+
+@inline(__always)
+private func precondition(on queue: DispatchQueue) {
+    if #available(
+        iOS 10.0, iOSApplicationExtension 10.0,
+        macOS 10.12, macOSApplicationExtension 10.12,
+        tvOS 10.0, tvOSApplicationExtension 10.0,
+        watchOS 3.0, watchOSApplicationExtension 3.0,
+        *) {
+        dispatchPrecondition(condition: .onQueue(queue))
     }
 }

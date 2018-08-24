@@ -19,16 +19,15 @@
 //
 
 import struct Foundation.Locale
-import class Foundation.NSLocale
 
 public extension Locale {
     public static var localizedDeviceLanguage: String? {
-        return preferredLanguages.first.flatMap {
-            (self.init(identifier: $0) as NSLocale).displayName(forKey: .identifier, value: $0)
+        return preferredLanguages.first.map(self.init).flatMap {
+            $0.languageCode.flatMap($0.localizedString(forLanguageCode:))
         }
     }
     
     public static var localizedDeviceRegion: String? {
-        return (current as NSLocale).displayName(forKey: .identifier, value: current.identifier)
+        return current.regionCode.flatMap(current.localizedString(forRegionCode:))
     }
 }

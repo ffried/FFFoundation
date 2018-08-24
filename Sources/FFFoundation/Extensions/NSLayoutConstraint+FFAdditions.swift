@@ -23,7 +23,6 @@
     #if canImport(UIKit)
     import class UIKit.UIView
     import class UIKit.NSLayoutConstraint
-    import struct UIKit.NSLayoutFormatOptions
     import struct UIKit.CGFloat
     #elseif canImport(AppKit)
     import class AppKit.NSView
@@ -41,23 +40,20 @@
         typealias MetricValueType   = NSNumber
         #endif
         typealias VisualFormatType  = String
-        #if !canImport(AppKit) && !swift(>=4.2)
-        typealias FormatOptions = NSLayoutFormatOptions
-        #endif
         typealias MetricsDictionary = [String: MetricValueType]
         typealias ViewsDictionary   = [String: ViewType]
         
-        public static func constraints<S: Sequence>(withVisualFormats formats: S,
-                                                    options: FormatOptions = [],
-                                                    metrics: MetricsDictionary? = nil,
-                                                    views: ViewsDictionary) -> [NSLayoutConstraint]
-            where S.Element == VisualFormatType {
+        public static func constraints<Formats: Sequence>(withVisualFormats formats: Formats,
+                                                          options: FormatOptions = [],
+                                                          metrics: MetricsDictionary? = nil,
+                                                          views: ViewsDictionary) -> [NSLayoutConstraint]
+            where Formats.Element == VisualFormatType {
                 return formats.flatMap { constraints(withVisualFormat: $0, options: options, metrics: metrics, views: views) }
         }
-    }
+}
     
     @available(macOS 10.7, iOS 6.0, tvOS 6.0, *)
-    public extension Sequence where Iterator.Element == NSLayoutConstraint {
+    public extension Sequence where Element == NSLayoutConstraint {
         public func activate() {
             NSLayoutConstraint.activate(Array(self))
         }
@@ -68,7 +64,7 @@
     }
     
     @available(macOS 10.7, iOS 6.0, tvOS 6.0, *)
-    public extension Sequence where Iterator.Element == NSLayoutConstraint.VisualFormatType {
+    public extension Sequence where Element == NSLayoutConstraint.VisualFormatType {
         public func constraints(with views: NSLayoutConstraint.ViewsDictionary,
                                 options: NSLayoutConstraint.FormatOptions = [],
                                 metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {

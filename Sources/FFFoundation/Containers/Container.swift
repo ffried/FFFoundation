@@ -18,6 +18,8 @@
 //  limitations under the License.
 //
 
+infix operator <-: AssignmentPrecedence
+
 public protocol Container {
     associatedtype Value
 
@@ -27,6 +29,8 @@ public protocol Container {
 
     subscript<T>(keyPath: KeyPath<Value, T>) -> T { get }
     subscript<T>(keyPath: WritableKeyPath<Value, T>) -> T { get set }
+
+    static func <- (lhs: inout Self, rhs: Value)
 }
 
 public protocol NestedContainer: Container where Value: Container {
@@ -41,6 +45,8 @@ public protocol NestedContainer: Container where Value: Container {
 
     subscript<T>(keyPath: KeyPath<NestedValue, T>) -> T { get }
     subscript<T>(keyPath: WritableKeyPath<NestedValue, T>) -> T { get set }
+
+    static func <- (lhs: inout Self, rhs: NestedValue)
 }
 
 extension Container {
@@ -51,6 +57,16 @@ extension Container {
     public subscript<T>(keyPath: WritableKeyPath<Value, T>) -> T {
         get { return value[keyPath: keyPath] }
         set { value[keyPath: keyPath] = newValue }
+    }
+
+    public static func <- (lhs: inout Self, rhs: Value) {
+        lhs.value = rhs
+    }
+}
+
+extension NestedContainer {
+    public static func <- (lhs: inout Self, rhs: NestedValue) {
+        lhs.nestedValue = rhs
     }
 }
 
@@ -91,34 +107,3 @@ extension NestedContainer where Nested: NestedContainer {
         set { nested.nestedValue = newValue }
     }
 }
-
-extension Container where Value: Equatable {
-    public static func ==(lhs: Self, rhs: Self) -> Bool {
-        return lhs.value == rhs.value
-    }
-}
-
-extension Container where Value: Hashable {
-    #if swift(>=4.2)
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(value)
-    }
-    #else
-    public var hashValue: Int { return value.hashValue }
-    #endif
-}
-
-extension Optional: Container {
-    public typealias Value = Wrapped?
-
-    public var value: Value {
-        get { return self }
-        set { self = newValue }
-    }
-
-    public init(value: Value) {
-        self = value
-    }
-}
-
-extension Optional: NestedContainer where Wrapped: Container {}

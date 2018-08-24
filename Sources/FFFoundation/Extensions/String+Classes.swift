@@ -32,12 +32,10 @@ public extension String {
      - note: If `removeNamespace` is `false`, this behaves just like `NSSStringFromClass`.
      */
     public init(class aClass: AnyClass, removeNamespace: Bool = true) {
-        var className = NSStringFromClass(aClass)
+        self = NSStringFromClass(aClass)
         
-        if removeNamespace, let range = className.range(of: ".", options: .backwards) {
-            className = String(className[range.upperBound...])
+        if removeNamespace, let range = range(of: ".", options: .backwards) {
+            removeSubrange(...range.upperBound)
         }
-        
-        self = className
     }
 }

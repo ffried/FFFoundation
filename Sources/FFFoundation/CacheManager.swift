@@ -57,12 +57,17 @@ public final class CacheManager<Object: Cachable> {
 
     private var memoryCache: Atomic<[ObjectIdentification: Object]> = .init(value: [:])
 
-    public init(name: Name = .default) throws {
+    public init(name: Name = .default, shouldMigrateFromOldNamingBehavior: Bool = true) throws {
         self.name = name
         let fileManager = FileManager()
         self.fileManager = fileManager
-        let cacheSubfolder = name.rawValue + "\(Object.self)"
-        let folder = try CacheManager.cacheFolder(in: fileManager).appendingPathComponent(cacheSubfolder)
+        let baseFolder = try CacheManager.cacheFolder(in: fileManager)
+        let folder = baseFolder.appendingPathComponent(name.rawValue).appendingPathComponent("\(Object.self)")
+        if shouldMigrateFromOldNamingBehavior,
+            case let oldPath = baseFolder.appendingPathComponent(name.rawValue + "\(Object.self)"),
+            fileManager.directoryExists(at: oldPath) {
+            try fileManager.moveItem(at: oldPath, to: folder)
+        }
         try fileManager.createDirectoryIfNeeded(at: folder)
         self.folder = folder
         registerForMemoryWarnings()

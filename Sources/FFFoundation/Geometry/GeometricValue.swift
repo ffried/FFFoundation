@@ -20,7 +20,7 @@
 
 import Foundation
 
-public protocol TriangulatableValue: FloatingPoint {
+public protocol GeometricValue: FloatingPoint {
     func sin() -> Self
     func asin() -> Self
     func cos() -> Self
@@ -29,16 +29,7 @@ public protocol TriangulatableValue: FloatingPoint {
     func atan() -> Self
 }
 
-public protocol TriangulatablePoint {
-    associatedtype Value: TriangulatableValue
-
-    var x: Value { get }
-    var y: Value { get }
-
-    init(x: Value, y: Value)
-}
-
-extension Double: TriangulatableValue {
+extension Double: GeometricValue {
     public func sin() -> Double { return Foundation.sin(self) }
     public func asin() -> Double { return Foundation.asin(self) }
     public func cos() -> Double { return Foundation.cos(self) }
@@ -47,7 +38,7 @@ extension Double: TriangulatableValue {
     public func atan() -> Double { return Foundation.atan(self) }
 }
 
-extension Float: TriangulatableValue {
+extension Float: GeometricValue {
     public func sin() -> Float { return Foundation.sin(self) }
     public func asin() -> Float { return Foundation.asin(self) }
     public func cos() -> Float { return Foundation.cos(self) }
@@ -59,16 +50,12 @@ extension Float: TriangulatableValue {
 #if canImport(CoreGraphics)
 import CoreGraphics
 
-extension CGFloat: TriangulatableValue {
+extension CGFloat: GeometricValue {
     public func sin() -> CGFloat { return CoreGraphics.sin(self) }
     public func asin() -> CGFloat { return CoreGraphics.asin(self) }
     public func cos() -> CGFloat { return CoreGraphics.cos(self) }
     public func acos() -> CGFloat { return CoreGraphics.acos(self) }
     public func tan() -> CGFloat { return CoreGraphics.tan(self) }
     public func atan() -> CGFloat { return CoreGraphics.atan(self) }
-}
-
-extension CGPoint: TriangulatablePoint {
-    public typealias Value = CGFloat
 }
 #endif

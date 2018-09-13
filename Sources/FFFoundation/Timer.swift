@@ -37,7 +37,7 @@ public final class Timer<T> {
     }
     
     private let queue: DispatchQueue
-    private lazy var timer = DispatchSource.makeTimerSource(flags: [.strict], queue: self.queue)
+    private lazy var timer = DispatchSource.makeTimerSource(flags: [.strict], queue: queue)
     
     public init(interval: TimeInterval, repeats: Bool = false, queue: DispatchQueue = .main, userInfo: T? = nil, block: @escaping Block) {
         self.interval = interval

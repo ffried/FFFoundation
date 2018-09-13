@@ -57,12 +57,17 @@ public final class CacheManager<Object: Cachable> {
 
     private var memoryCache: Atomic<[ObjectIdentification: Object]> = .init(value: [:])
 
-    public init(name: Name = .default) throws {
+    public init(name: Name = .default, shouldMigrateFromOldNamingBehavior: Bool = true) throws {
         self.name = name
         let fileManager = FileManager()
         self.fileManager = fileManager
-        let cacheSubfolder = name.rawValue + "\(Object.self)"
-        let folder = try CacheManager.cacheFolder(in: fileManager).appendingPathComponent(cacheSubfolder)
+        let baseFolder = try CacheManager.cacheFolder(in: fileManager)
+        let folder = baseFolder.appendingPathComponent(name.rawValue).appendingPathComponent("\(Object.self)")
+        if shouldMigrateFromOldNamingBehavior,
+            case let oldPath = baseFolder.appendingPathComponent(name.rawValue + "\(Object.self)"),
+            fileManager.directoryExists(at: oldPath) {
+            try fileManager.moveItem(at: oldPath, to: folder)
+        }
         try fileManager.createDirectoryIfNeeded(at: folder)
         self.folder = folder
         registerForMemoryWarnings()
@@ -74,12 +79,7 @@ public final class CacheManager<Object: Cachable> {
         #if canImport(UIKit)
             let opQueue = OperationQueue()
             opQueue.underlyingQueue = queue
-            let name: Notification.Name
-            #if swift(>=4.2)
-                name = UIApplication.didReceiveMemoryWarningNotification
-            #else
-                name = .UIApplicationDidReceiveMemoryWarning
-            #endif
+            let name = UIApplication.didReceiveMemoryWarningNotification
             memoryWarningsObserver = NotificationCenter.default.addObserver(forName: name, object: nil, queue: opQueue) { [weak self] _ in
                 self?.clearMemoryCache()
             }
@@ -190,11 +190,7 @@ extension String: Cachable {
 #if canImport(UIKit)
     extension UIImage: Cachable {
         public func cacheData() throws -> Data {
-            #if swift(>=4.2)
             guard let data = jpegData(compressionQuality: 0.95) else { throw CachingError.couldNotSerialize(underlyingError: nil) }
-            #else
-            guard let data = UIImageJPEGRepresentation(self, 0.95) else { throw CachingError.couldNotSerialize(underlyingError: nil) }
-            #endif
             return data
         }
 

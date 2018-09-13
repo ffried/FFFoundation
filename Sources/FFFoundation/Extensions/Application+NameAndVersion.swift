@@ -61,5 +61,11 @@
             let version = fullVersion ?? ""
             return "\(name) \(version)"
         }
+
+        public var localizedNameAndFullVersion: String? {
+            guard let name = localizedName else { return nil }
+            let version = fullVersion ?? ""
+            return "\(name) \(version)"
+        }
     }
 #endif

@@ -65,18 +65,16 @@ public struct Lazy<Deferred>: LazyProtocol {
 
 extension Lazy: Equatable where Deferred: Equatable {}
 extension Lazy: Hashable where Deferred: Hashable {}
-
-extension Lazy: Encodable where Deferred: Encodable {
-    public func encode(to encoder: Encoder) throws {
-        try value.encode(to: encoder)
-    }
-}
-
-extension Lazy: Decodable where Deferred: Decodable {
-    public init(from decoder: Decoder) throws {
-        try self.init(value: .init(from: decoder))
-    }
-}
+extension Lazy: Comparable where Deferred: Comparable {}
+extension Lazy: Encodable where Deferred: Encodable {}
+extension Lazy: Decodable where Deferred: Decodable {}
+extension Lazy: ExpressibleByNilLiteral where Deferred: ExpressibleByNilLiteral {}
+extension Lazy: ExpressibleByBooleanLiteral where Deferred: ExpressibleByBooleanLiteral {}
+extension Lazy: ExpressibleByIntegerLiteral where Deferred: ExpressibleByIntegerLiteral {}
+extension Lazy: ExpressibleByFloatLiteral where Deferred: ExpressibleByFloatLiteral {}
+extension Lazy: ExpressibleByUnicodeScalarLiteral where Deferred: ExpressibleByUnicodeScalarLiteral {}
+extension Lazy: ExpressibleByExtendedGraphemeClusterLiteral where Deferred: ExpressibleByExtendedGraphemeClusterLiteral {}
+extension Lazy: ExpressibleByStringLiteral where Deferred: ExpressibleByStringLiteral {}
 
 extension Lazy: NestedContainer where Deferred: Container {
     public typealias NestedValue = Deferred.Value

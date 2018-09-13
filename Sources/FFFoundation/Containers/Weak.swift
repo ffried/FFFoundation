@@ -52,8 +52,7 @@ public extension Sequence where Element: WeakProtocol {
 
 public extension MutableCollection where Self: RangeReplaceableCollection, Element: WeakProtocol {
     public mutating func removeReleasedObjects() {
-        // TODO: Replace with removeAll(where:) as soon as https://github.com/apple/swift-evolution/blob/master/proposals/0197-remove-where.md is implemented (Swift 4.2?)
-        removeSubrange(partition(by: { $0.wasReleased })...)
+        removeAll(where: { $0.wasReleased })
     }
     
     public mutating func appendWeakly(_ object: Element.Object) {
@@ -63,6 +62,15 @@ public extension MutableCollection where Self: RangeReplaceableCollection, Eleme
 
 extension Weak: Equatable where Object: Equatable {}
 extension Weak: Hashable where Object: Hashable {}
+extension Weak: Encodable where Object: Encodable {}
+extension Weak: Decodable where Object: Decodable {}
+extension Weak: ExpressibleByNilLiteral where Object: ExpressibleByNilLiteral {}
+//extension Weak: ExpressibleByBooleanLiteral where Object: ExpressibleByBooleanLiteral {}
+//extension Weak: ExpressibleByIntegerLiteral where Object: ExpressibleByIntegerLiteral {}
+//extension Weak: ExpressibleByFloatLiteral where Object: ExpressibleByFloatLiteral {}
+//extension Weak: ExpressibleByUnicodeScalarLiteral where Object: ExpressibleByUnicodeScalarLiteral {}
+//extension Weak: ExpressibleByExtendedGraphemeClusterLiteral where Object: ExpressibleByExtendedGraphemeClusterLiteral {}
+//extension Weak: ExpressibleByStringLiteral where Object: ExpressibleByStringLiteral {}
 
 extension Weak: NestedContainer where Object: Container {
     public typealias NestedValue = Value.Value

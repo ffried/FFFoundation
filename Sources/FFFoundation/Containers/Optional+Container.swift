@@ -1,9 +1,8 @@
 //
-//  Optional+Hashable.swift
+//  Optional+Container.swift
 //  FFFoundation
 //
-//  Created by Florian Friedrich on 09.04.18.
-//  Copyright 2018 Florian Friedrich
+//  Created by Florian Friedrich on 24.08.18.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -18,13 +17,17 @@
 //  limitations under the License.
 //
 
-#if !swift(>=4.1.50)
-extension Optional: Hashable where Wrapped: Hashable {
-    public var hashValue: Int {
-        switch self {
-        case .none: return 0
-        case .some(let wrapped): return wrapped.hashValue
-        }
+extension Optional: Container {
+    public typealias Value = Wrapped?
+
+    public var value: Value {
+        get { return self }
+        set { self = newValue }
+    }
+
+    public init(value: Value) {
+        self = value
     }
 }
-#endif
+
+extension Optional: NestedContainer where Wrapped: Container {}

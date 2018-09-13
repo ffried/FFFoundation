@@ -22,12 +22,16 @@ import class Foundation.FileManager
 import class Foundation.UserDefaults
 import struct Foundation.URL
 
-public struct AppGroup: Hashable, Codable {
+public struct AppGroup: RawRepresentable, Hashable, Codable {
+
     public let identifier: String
+    public var rawValue: String { return identifier }
     
     public init(identifier: String) {
         self.identifier = identifier
     }
+
+    public init(rawValue: String) { self.init(identifier: rawValue) }
 }
 
 public extension AppGroup {

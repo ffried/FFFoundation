@@ -158,7 +158,6 @@ public extension Diff {
 }
 
 fileprivate extension RangeReplaceableCollection where Self: MutableCollection, Element: Diffable, SubSequence: RangeReplaceableCollection & ExpressibleByArrayLiteral, SubSequence.ArrayLiteralElement == Element {
-
     func changes<C: Collection>(comparedTo head: Self) -> Diff<C, Element>.Changes {
         var (arr1, arr2) = (self, head)
         var result: Diff<C, Element>.Changes = []

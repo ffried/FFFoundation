@@ -19,7 +19,7 @@
 //
 
 public extension Sequence {
-    public func last(where: (Iterator.Element) throws -> Bool) rethrows -> Element? {
+    public func last(where: (Element) throws -> Bool) rethrows -> Element? {
         return try reversed().first(where: `where`)
     }
 }

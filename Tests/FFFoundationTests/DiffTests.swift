@@ -8,12 +8,13 @@
 import XCTest
 @testable import FFFoundation
 
-class DiffTests: XCTestCase {
+final class DiffTests: XCTestCase {
 
     static let allTests : [(String, (DiffTests) -> () throws -> Void)] = [
         ("testChangeLignSign", testChangeLignSign),
         ("testChangeAnnotation", testChangeAnnotation),
-        ("testSimpleDiff", testSimpleDiff)
+        ("testSimpleDiff", testSimpleDiff),
+        ("testMoreAdvancedDiff", testMoreAdvancedDiff),
     ]
 
     override func setUp() {

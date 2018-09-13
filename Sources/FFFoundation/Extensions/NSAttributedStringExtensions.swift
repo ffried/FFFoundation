@@ -25,10 +25,6 @@
     import struct CoreGraphics.CGRect
     import func CoreGraphics.ceil
 
-    #if !swift(>=4.2)
-    import struct Foundation.NSAttributedStringKey
-    #endif
-
     #if canImport(UIKit)
         import struct UIKit.NSStringDrawingOptions
     #else
@@ -36,9 +32,6 @@
     #endif
     
     public extension NSAttributedString {
-        #if !swift(>=4.2)
-        public typealias Key = NSAttributedStringKey
-        #endif
         public typealias AttributesDictionary = [Key: Any]
         
         public final func size(forWidth width: CGFloat) -> CGSize {

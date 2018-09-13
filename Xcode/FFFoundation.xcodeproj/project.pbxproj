@@ -43,6 +43,7 @@
 		0747F0D3210B047A009BFDAD /* OSLogLinux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747F0D2210B047A009BFDAD /* OSLogLinux.swift */; };
 		0766A090212B0C2E00D579CF /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766A08F212B0C2E00D579CF /* Size.swift */; };
 		0767345B207B751F004B708E /* FFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07673458207B7513004B708E /* FFFoundation.framework */; };
+		07842FE5214A855800A65D82 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2F4207B720E009900AC /* AttributedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -330,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				07842FE5214A855800A65D82 /* AttributedString.swift in Sources */,
 				0714F2FB207B720E009900AC /* NotificationObserver.swift in Sources */,
 				0714F302207B720E009900AC /* Ref.swift in Sources */,
 				070F27DF2130371900A485E7 /* Container+ConditionalConformances.swift in Sources */,

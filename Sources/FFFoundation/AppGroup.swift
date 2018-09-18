@@ -18,6 +18,7 @@
 //  limitations under the License.
 //
 
+#if !os(Linux)
 import class Foundation.FileManager
 import class Foundation.UserDefaults
 import struct Foundation.URL
@@ -43,3 +44,4 @@ public extension AppGroup {
         return UserDefaults(suiteName: identifier)
     }
 }
+#endif

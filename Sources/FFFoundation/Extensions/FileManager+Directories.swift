@@ -21,7 +21,11 @@
 import class Foundation.FileManager
 import struct Foundation.FileAttributeKey
 import struct Foundation.URL
+#if os(Linux)
+import struct Foundation.ObjCBool
+#else
 import struct ObjectiveC.ObjCBool
+#endif
 
 public extension FileManager {
     @inlinable

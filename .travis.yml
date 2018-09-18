@@ -7,18 +7,24 @@ sudo: required
 services:
   - docker
 
-language: swift
-os: osx
+language: generic
+os:
+  - osx
+  - linux
 osx_image: xcode10
 
 jobs:
   include:
-    - stage: "Tests"
+    - stage: test
       name: "iOS Xcode"
+      if: os = osx
       script: ./scripts/build_xcode.sh 'platform=iOS Simulator,OS=12.0,name=iPad Pro (9.7-inch)'
     - name: "macOS Xcode"
+      if: os = osx
       script: ./scripts/build_xcode.sh 'platform=macOS'
     - name: "macOS SwiftPM"
+      if: os = osx
       script: swift test
     - name: "Linux SwiftPM"
+      if: os = linux
       script: ./scripts/build_linux.sh '4.2'

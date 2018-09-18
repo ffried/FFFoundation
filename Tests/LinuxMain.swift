@@ -1,7 +1,8 @@
 import XCTest
-@testable import FFFoundationTests
 
-XCTMain([
-     testCase(FFFoundationTests.allTests),
-     testCase(TimerTests.allTests)
-])
+import FFFoundationTests
+
+var tests = [XCTestCaseEntry]()
+tests += FFFoundationTests.__allTests()
+
+XCTMain(tests)

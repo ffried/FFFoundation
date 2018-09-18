@@ -9,14 +9,7 @@ import XCTest
 @testable import FFFoundation
 
 final class DiffTests: XCTestCase {
-
-    static let allTests : [(String, (DiffTests) -> () throws -> Void)] = [
-        ("testChangeLignSign", testChangeLignSign),
-        ("testChangeAnnotation", testChangeAnnotation),
-        ("testSimpleDiff", testSimpleDiff),
-        ("testMoreAdvancedDiff", testMoreAdvancedDiff),
-    ]
-
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.

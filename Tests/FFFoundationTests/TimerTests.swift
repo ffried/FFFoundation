@@ -3,12 +3,6 @@ import XCTest
 
 final class TimerTests: XCTestCase {
     
-    static let allTests : [(String, (TimerTests) -> () throws -> Void)] = [
-        ("testTimerWithShortIntervalAndNoTolerance", testTimerWithShortIntervalAndNoTolerance),
-        ("testTimerWithShortIntervalAndTolerance", testTimerWithShortIntervalAndTolerance),
-        ("testRepeatingTimerWithShortIntervalAndTolerance", testRepeatingTimerWithShortIntervalAndTolerance)
-    ]
-    
     var timer: AnyTimer? = nil
 
     override func setUp() {

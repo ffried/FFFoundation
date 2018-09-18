@@ -44,6 +44,7 @@
 		0766A090212B0C2E00D579CF /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766A08F212B0C2E00D579CF /* Size.swift */; };
 		0767345B207B751F004B708E /* FFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07673458207B7513004B708E /* FFFoundation.framework */; };
 		07842FE5214A855800A65D82 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2F4207B720E009900AC /* AttributedString.swift */; };
+		07F657F72150F9BA004BCAD7 /* StringClassesExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F657F52150F980004BCAD7 /* StringClassesExtensionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		0766A08F212B0C2E00D579CF /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		07673458207B7513004B708E /* FFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07673459207B7513004B708E /* FFFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F657F52150F980004BCAD7 /* StringClassesExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringClassesExtensionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,8 +187,9 @@
 			isa = PBXGroup;
 			children = (
 				0714F31A207B7229009900AC /* DiffTests.swift */,
-				0714F31B207B7229009900AC /* TriangleTests.swift */,
+				07F657F52150F980004BCAD7 /* StringClassesExtensionTests.swift */,
 				0714F31C207B7229009900AC /* TimerTests.swift */,
+				0714F31B207B7229009900AC /* TriangleTests.swift */,
 				0714F31D207B7229009900AC /* Info.plist */,
 			);
 			name = FFFoundationTests;
@@ -373,6 +376,7 @@
 				0714F31F207B7229009900AC /* DiffTests.swift in Sources */,
 				0714F320207B7229009900AC /* TriangleTests.swift in Sources */,
 				0714F321207B7229009900AC /* TimerTests.swift in Sources */,
+				07F657F72150F9BA004BCAD7 /* StringClassesExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

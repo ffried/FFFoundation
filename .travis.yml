@@ -22,4 +22,5 @@ jobs:
       sudo: required
       services:
         - docker
+      install: docker pull swift:4.2
       script: ./scripts/build_linux.sh '4.2'

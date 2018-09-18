@@ -2,9 +2,23 @@ branches:
   only:
     - master
     - develop
+
+sudo: required
+services:
+  - docker
+
 language: swift
 os: osx
 osx_image: xcode10
-xcode_project: Xcode/FFFoundation.xcodeproj
-xcode_scheme: FFFoundation
-xcode_destination: platform=iOS Simulator,OS=12.0,name=iPad Pro (9.7-inch)
+
+jobs:
+  include:
+    - stage: "Tests"
+      name: "iOS Xcode"
+      script: ./scripts/build_xcode.sh 'platform=iOS Simulator,OS=12.0,name=iPad Pro (9.7-inch)'
+    - name: "macOS Xcode"
+      script: ./scripts/build_xcode.sh 'platform=macOS'
+    - name: "macOS SwiftPM"
+      script: swift test
+    - name: "Linux SwiftPM"
+      script: ./scripts/build_linux.sh '4.2'

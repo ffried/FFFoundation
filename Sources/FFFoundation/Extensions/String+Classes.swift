@@ -35,7 +35,7 @@ public extension String {
         self = NSStringFromClass(aClass)
         
         if removeNamespace, let range = range(of: ".", options: .backwards) {
-            removeSubrange(...range.upperBound)
+            removeSubrange(..<range.upperBound)
         }
     }
 }

@@ -26,13 +26,6 @@ internal func XCTAssertNotEqual<T: FloatingPoint>(_ expression1: @autoclosure ()
 
 final class TriangleTests: XCTestCase {
     
-    static let allTests : [(String, (TriangleTests) -> () throws -> Void)] = [
-        ("testOrthogonalTriangleCalculation", testOrthogonalTriangleCalculation),
-        ("testOrthogonalTriangleWithSinglePoint", testOrthogonalTriangleWithSinglePoint),
-        ("testTriangleWithAllPointsGiven", testTriangleWithAllPointsGiven),
-        ("testTriangleWithAllPointsBeingTheSame", testTriangleWithAllPointsBeingTheSame),
-    ]
-    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.

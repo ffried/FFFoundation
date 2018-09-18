@@ -4,28 +4,26 @@ branches:
     - develop
 
 language: swift
-matrix:
+
+jobs:
   include:
-    - os: osx
+    - name: "iOS Xcode"
+      os: osx
       osx_image: xcode10
-    - os: linux
+      script: ./scripts/build_xcode.sh 'platform=iOS Simulator,OS=12.0,name=iPad Pro (9.7-inch)'
+    - name: "macOS Xcode"
+      os: osx
+      osx_image: xcode10
+      script: ./scripts/build_xcode.sh 'platform=macOS'
+    - name: "macOS SwiftPM"
+      os: osx
+      osx_image: xcode10
+      script: swift test
+    - name: "Linux SwiftPM"
+      os: linux
       distro: trusty
       language: generic
       sudo: required
       services:
         - docker
-
-jobs:
-  include:
-    - name: "iOS Xcode"
-      if: os = osx
-      script: ./scripts/build_xcode.sh 'platform=iOS Simulator,OS=12.0,name=iPad Pro (9.7-inch)'
-    - name: "macOS Xcode"
-      if: os = osx
-      script: ./scripts/build_xcode.sh 'platform=macOS'
-    - name: "macOS SwiftPM"
-      if: os = osx
-      script: swift test
-    - name: "Linux SwiftPM"
-      if: os = linux
       script: ./scripts/build_linux.sh '4.2'

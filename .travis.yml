@@ -7,7 +7,10 @@ os: osx
 osx_image: xcode10
 language: swift
 
-env: XCODE_PROJECT="Xcode/FFFoundation.xcodeproj" XCODE_SCHEME=FFFoundation
+env:
+  global:
+    - XCODE_PROJECT="Xcode/FFFoundation.xcodeproj"
+    - XCODE_SCHEME=FFFoundation
 script: ./scripts/build_xcode.sh
 
 jobs:

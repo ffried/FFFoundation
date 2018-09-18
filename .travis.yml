@@ -3,15 +3,17 @@ branches:
     - master
     - develop
 
-sudo: required
-services:
-  - docker
-
-language: generic
-os:
-  - osx
-  - linux
-osx_image: xcode10
+language: swift
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode10
+    - os: linux
+      distro: trusty
+      language: generic
+      sudo: required
+      services:
+        - docker
 
 jobs:
   include:

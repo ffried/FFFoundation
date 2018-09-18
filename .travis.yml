@@ -7,12 +7,15 @@ os: osx
 osx_image: xcode10
 language: swift
 
+env: XCODE_PROJECT="Xcode/FFFoundation.xcodeproj" XCODE_SCHEME=FFFoundation
+script: ./scripts/build_xcode.sh
+
 jobs:
   include:
     - name: "iOS Xcode"
-      script: ./scripts/build_xcode.sh 'platform=iOS Simulator,OS=12.0,name=iPad Pro (9.7-inch)'
+      env: XCODE_DESTINATION="platform=iOS Simulator,OS=12.0,name=iPad Pro (9.7-inch)"
     - name: "macOS Xcode"
-      script: ./scripts/build_xcode.sh 'platform=macOS'
+      env: XCODE_DESTINATION="platform=macOS"
     - name: "macOS SwiftPM"
       script: swift test
     - name: "Linux SwiftPM"
@@ -23,4 +26,4 @@ jobs:
       services:
         - docker
       install: docker pull swift:4.2
-      script: ./scripts/build_linux.sh '4.2'
+      script: ./scripts/build_linux.sh '4.2' 'swift test'

@@ -1,19 +1,18 @@
 #!/bin/sh
 
-if [ "$#" -ne "1" ]; then
-	echo "Missing argument [swift_version]"
+if [ "$#" -ne "2" ]; then
+	echo "Missing arguments [swift_version] and [script_command]"
 	exit 1
 fi
 
 SWIFT_VERSION="$1"
+SCRIPT_COMMAND="$2"
 CONTAINER_TAG="swift:$SWIFT_VERSION"
-CONTAINER_NAME="FFFoundationTests_Linux"
 VOLUME_SRC="$(pwd)"
-VOLUME_TARGET="/FFFoundation"
+VOLUME_TARGET="/CI"
 
 docker run \
 	--mount src="$VOLUME_SRC",target="$VOLUME_TARGET",type=bind \
-	--name "$CONTAINER_NAME" \
 	--rm \
 	"$CONTAINER_TAG" \
-	bash -c "cd $VOLUME_TARGET && swift test"
+	bash -c "cd $VOLUME_TARGET && $SCRIPT_COMMAND"

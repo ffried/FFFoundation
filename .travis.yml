@@ -3,21 +3,17 @@ branches:
     - master
     - develop
 
+os: osx
+osx_image: xcode10
 language: swift
 
 jobs:
   include:
     - name: "iOS Xcode"
-      os: osx
-      osx_image: xcode10
       script: ./scripts/build_xcode.sh 'platform=iOS Simulator,OS=12.0,name=iPad Pro (9.7-inch)'
     - name: "macOS Xcode"
-      os: osx
-      osx_image: xcode10
       script: ./scripts/build_xcode.sh 'platform=macOS'
     - name: "macOS SwiftPM"
-      os: osx
-      osx_image: xcode10
       script: swift test
     - name: "Linux SwiftPM"
       os: linux

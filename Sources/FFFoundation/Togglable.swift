@@ -18,8 +18,12 @@
 //  limitations under the License.
 //
 
+#if os(Linux)
+import struct Foundation.ObjCBool
+#else
 import struct ObjectiveC.ObjCBool
 import struct Darwin.DarwinBoolean
+#endif
 
 public protocol Togglable {
     /// A inverted version of `self`.
@@ -51,8 +55,10 @@ extension ObjCBool: Togglable {
     }
 }
 
+#if !os(Linux)
 extension DarwinBoolean: Togglable {
     public var toggled: DarwinBoolean {
         return type(of: self).init(booleanLiteral: boolValue.toggled)
     }
 }
+#endif

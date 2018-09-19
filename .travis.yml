@@ -19,6 +19,7 @@ jobs:
     - name: "macOS Xcode"
       env: XCODE_DESTINATION="platform=macOS"
     - name: "macOS SwiftPM"
+      before_script: swift package clean
       script: swift test
     - name: "Linux SwiftPM"
       os: linux
@@ -28,4 +29,5 @@ jobs:
       services:
         - docker
       install: docker pull swift:4.2
-      script: ./scripts/build_linux.sh '4.2' 'swift test'
+      before_script: ./scripts/run_on_linux.sh '4.2' 'swift package clean'
+      script: ./scripts/run_on_linux.sh '4.2' 'swift test'

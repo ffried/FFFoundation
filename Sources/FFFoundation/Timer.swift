@@ -20,6 +20,9 @@
 
 import typealias Foundation.TimeInterval
 import Dispatch
+#if os(Linux)
+import CDispatch
+#endif
 
 public final class Timer<T> {
     public typealias Block = (Timer) -> ()

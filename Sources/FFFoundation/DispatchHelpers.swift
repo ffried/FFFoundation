@@ -21,11 +21,11 @@
 import Dispatch
 
 /**
- Delay a block by a certain time by using `dispatch_after`.
+ Delay a block by a certain time by using `DispatchQueue.main.asyncAfter`.
  
  - parameter delay: The time to delay the execution of `block`. Defaults to `0.0`.
  - parameter block: The block to execute after `delay` (in seconds).
- - seeAlso: dispatch_after
+ - seeAlso: DispatchQueue.main.asyncAfter
  */
 public func delay(by delay: Double = 0.0, block: @escaping @convention(block) () -> Void) {
     DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: block)
@@ -38,7 +38,23 @@ extension DispatchQoS: Comparable {
 }
 
 extension DispatchQoS.QoSClass: Comparable {
+    private var sortValue: UInt32 {
+        #if !os(Linux)
+        return rawValue.rawValue
+        #else
+        switch self {
+        case .background: return 0x09
+//        case .maintenance: return 0x05
+        case .utility: return 0x11
+        case .default: return 0x15
+        case .userInitiated: return 0x19
+        case .userInteractive: return 0x21
+        case .unspecified: return 0x00
+        }
+        #endif
+    }
+
     public static func <(lhs: DispatchQoS.QoSClass, rhs: DispatchQoS.QoSClass) -> Bool {
-        return lhs.rawValue.rawValue < rhs.rawValue.rawValue
+        return lhs.sortValue < rhs.sortValue
     }
 }

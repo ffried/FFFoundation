@@ -9,8 +9,12 @@ import XCTest
 import Foundation
 @testable import FFFoundation
 
+#if os(Linux)
+final class StringClassesExtensionTestClass: NSObject {}
+#else
 @objc
 final class StringClassesExtensionTestClass: NSObject {}
+#endif
 
 final class StringClassesExtensionTests: XCTestCase {
 

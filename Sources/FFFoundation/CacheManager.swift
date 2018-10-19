@@ -106,6 +106,11 @@ public final class CacheManager<Object: Cachable> {
         try data.write(to: url, options: .atomic)
     }
 
+    private func cacheObject(at url: URL, to destination: URL) throws {
+        guard url != destination else { return }
+        try fileManager.copyItem(at: url, to: destination)
+    }
+
     private func removeObject(at url: URL) throws {
         guard fileManager.fileExists(at: url) else { return }
         try fileManager.removeItem(at: url)
@@ -123,6 +128,10 @@ public final class CacheManager<Object: Cachable> {
     public func cache(object: Object, for identification: ObjectIdentification) throws {
         try cache(object: object, at: cacheURL(for: identification))
         memoryCache.value[identification] = object
+    }
+
+    public func cacheObject(for identification: ObjectIdentification, at url: URL) throws {
+        try cacheObject(at: url, to: cacheURL(for: identification))
     }
 
     public func removeObject(for identification: ObjectIdentification) throws {

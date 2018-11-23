@@ -39,6 +39,7 @@
 		0714F320207B7229009900AC /* TriangleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F31B207B7229009900AC /* TriangleTests.swift */; };
 		0714F321207B7229009900AC /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F31C207B7229009900AC /* TimerTests.swift */; };
 		0714F329207B7270009900AC /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0714F327207B7270009900AC /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07353D8621A837C40095E649 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07353D8521A837C40095E649 /* Observer.swift */; };
 		0747F0D1210AEF62009BFDAD /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747F0D0210AEF62009BFDAD /* Logging.swift */; };
 		0747F0D3210B047A009BFDAD /* OSLogLinux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747F0D2210B047A009BFDAD /* OSLogLinux.swift */; };
 		0766A090212B0C2E00D579CF /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766A08F212B0C2E00D579CF /* Size.swift */; };
@@ -93,6 +94,7 @@
 		0714F31D207B7229009900AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0714F327207B7270009900AC /* FFFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFoundation.h; sourceTree = "<group>"; };
 		0714F328207B7270009900AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07353D8521A837C40095E649 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		0747F0D0210AEF62009BFDAD /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		0747F0D2210B047A009BFDAD /* OSLogLinux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLogLinux.swift; sourceTree = "<group>"; };
 		0766A08F212B0C2E00D579CF /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				0714F2E6207B720E009900AC /* Container.swift */,
 				070F27DE2130371900A485E7 /* Container+ConditionalConformances.swift */,
 				0714F2F8207B720E009900AC /* Lazy.swift */,
+				07353D8521A837C40095E649 /* Observer.swift */,
 				070F27DC213036AD00A485E7 /* Optional+Container.swift */,
 				0714F2E4207B720E009900AC /* Ref.swift */,
 				0714F2FA207B720E009900AC /* Weak.swift */,
@@ -344,6 +347,7 @@
 				0714F308207B720E009900AC /* DictionaryExtensions.swift in Sources */,
 				0714F30D207B720E009900AC /* FileManager+Directories.swift in Sources */,
 				0714F30E207B720E009900AC /* NSAttributedStringExtensions.swift in Sources */,
+				07353D8621A837C40095E649 /* Observer.swift in Sources */,
 				0714F300207B720E009900AC /* Angle.swift in Sources */,
 				0747F0D3210B047A009BFDAD /* OSLogLinux.swift in Sources */,
 				0714F301207B720E009900AC /* GeometricValue.swift in Sources */,

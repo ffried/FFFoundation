@@ -20,8 +20,8 @@
 import struct Foundation.UUID
 
 public struct Observation<Observed> {
-    let oldValue: Observed
-    let newValue: Observed
+    public let oldValue: Observed
+    public let newValue: Observed
 }
 
 public struct ObserverRegistration: Hashable {

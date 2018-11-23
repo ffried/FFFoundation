@@ -34,16 +34,17 @@ public extension AtomicProtocol {
     public init(value: Value) { self.init(value: value, qos: .default) }
 }
 
-public struct Atomic<Guarded>: AtomicProtocol {
+public final class Atomic<Guarded>: AtomicProtocol {
     public typealias Value = Guarded
 
-    private var _value: Ref<Value>
+//    private var _value: Ref<Value>
+    private var _value: Value
     private let queue: DispatchQueue
 
     public var value: Value {
         get {
             precondition(notOn: queue)
-            return queue.sync { _value.value }
+            return queue.sync { _value/*.value*/ }
         }
         set {
             precondition(notOn: queue)
@@ -52,19 +53,19 @@ public struct Atomic<Guarded>: AtomicProtocol {
     }
 
     public init(value: Value, qos: DispatchQoS) {
-        _value = Ref(value: value)
+        _value = /*Ref(value: */value/*)*/
         queue = DispatchQueue(label: "net.ffried.fffoundation.atomic<\(String(describing: Guarded.self).lowercased())>.queue", qos: qos)
     }
 
     public subscript<T>(keyPath: KeyPath<Guarded, T>) -> T {
         precondition(notOn: queue)
-        return queue.sync { _value.value[keyPath: keyPath] }
+        return queue.sync { _value/*.value*/[keyPath: keyPath] }
     }
 
     public subscript<T>(keyPath: WritableKeyPath<Guarded, T>) -> T {
         get {
             precondition(notOn: queue)
-            return queue.sync { _value.value[keyPath: keyPath] }
+            return queue.sync { _value/*.value*/[keyPath: keyPath] }
         }
         set {
             precondition(notOn: queue)
@@ -72,27 +73,27 @@ public struct Atomic<Guarded>: AtomicProtocol {
         }
     }
 
-    private mutating func withMutableValue<T>(do work: (inout Guarded) throws -> T) rethrows -> T {
+    private /*mutating*/ func withMutableValue<T>(do work: (inout Guarded) throws -> T) rethrows -> T {
         precondition(on: queue)
-        if !isKnownUniquelyReferenced(&_value) {
-            _value = Ref(value: _value.value)
-        }
-        return try work(&_value.value)
+//        if !isKnownUniquelyReferenced(&_value) {
+//            _value = Ref(value: _value.value)
+//        }
+        return try work(&_value/*.value*/)
     }
 
     public func coordinated(with other: Atomic) -> (Guarded, Guarded) {
         precondition(notOn: queue)
-        return queue.sync { (value, queue === other.queue ? other._value.value : other.value) }
+        return queue.sync { (value, queue === other.queue ? other._value/*.value*/ : other.value) }
     }
 
     public func coordinated<OtherGuarded>(with other: Atomic<OtherGuarded>) -> (Guarded, OtherGuarded) {
         precondition(notOn: queue)
-        return queue.sync { (_value.value, other.value) }
+        return queue.sync { (_value/*.value*/, other.value) }
     }
 
     public func coordinated<Other: AtomicProtocol>(with other: Other) -> (Guarded, Other.Value) {
         precondition(notOn: queue)
-        return queue.sync { (_value.value, other.value) }
+        return queue.sync { (_value/*.value*/, other.value) }
     }
 
     public func combined(with other: Atomic) -> Atomic<(Guarded, Guarded)> {

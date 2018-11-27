@@ -22,6 +22,7 @@ import struct Foundation.UUID
 public struct Observation<Observed> {
     public let oldValue: Observed
     public let newValue: Observed
+    public let isInitial: Bool
 }
 
 public struct ObserverRegistration: Hashable {
@@ -32,7 +33,9 @@ public protocol ObserverProtocol: Container {
     typealias ChangeHandler = (Observation<Value>) -> ()
 
     mutating func register(handler: @escaping ChangeHandler) -> ObserverRegistration
+    mutating func registerHandler(withInitialCall: Bool, handler: @escaping ChangeHandler) -> ObserverRegistration
     mutating func registerHandler(on queue: DispatchQueue?, handler: @escaping ChangeHandler) -> ObserverRegistration
+    mutating func registerHandler(on queue: DispatchQueue?, withInitialCall: Bool, handler: @escaping ChangeHandler) -> ObserverRegistration
     mutating func remove(registration: ObserverRegistration)
 }
 
@@ -40,6 +43,16 @@ public extension ObserverProtocol {
     @inlinable
     public mutating func register(handler: @escaping ChangeHandler) -> ObserverRegistration {
         return registerHandler(on: nil, handler: handler)
+    }
+
+    @inlinable
+    public mutating func registerHandler(withInitialCall: Bool, handler: @escaping ChangeHandler) -> ObserverRegistration {
+        return registerHandler(on: nil, withInitialCall: withInitialCall, handler: handler)
+    }
+
+    @inlinable
+    public mutating func registerHandler(on queue: DispatchQueue?, handler: @escaping ChangeHandler) -> ObserverRegistration {
+        return registerHandler(on: queue, withInitialCall: false, handler: handler)
     }
 }
 
@@ -51,8 +64,8 @@ public struct Observer<Observed>: ObserverProtocol {
 
     public var value: Observed {
         didSet {
-            changeHandlers.values.forEach { [observation = Observation(oldValue: oldValue, newValue: value)] registration in
-                registration.queue?.async { registration.handler(observation) } ?? registration.handler(observation)
+            changeHandlers.values.forEach { [observation = Observation(oldValue: oldValue, newValue: value, isInitial: false)]  in
+                call(registration: $0, with: observation)
             }
         }
     }
@@ -61,14 +74,21 @@ public struct Observer<Observed>: ObserverProtocol {
         self.value = value
     }
 
-    public mutating func registerHandler(on queue: DispatchQueue?, handler: @escaping ChangeHandler) -> ObserverRegistration {
+    public mutating func registerHandler(on queue: DispatchQueue?, withInitialCall: Bool, handler: @escaping ChangeHandler) -> ObserverRegistration {
         let registration = ObserverRegistration()
         changeHandlers[registration] = (queue, handler)
+        if withInitialCall {
+            call(registration: (queue, handler), with: Observation(oldValue: value, newValue: value, isInitial: true))
+        }
         return registration
     }
 
     public mutating func remove(registration: ObserverRegistration) {
         changeHandlers[registration] = nil
+    }
+
+    private func call(registration: Registration, with observation: Observation<Observed>) {
+        registration.queue?.async { registration.handler(observation) } ?? registration.handler(observation)
     }
 }
 

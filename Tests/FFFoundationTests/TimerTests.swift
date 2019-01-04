@@ -24,6 +24,7 @@ final class TimerTests: XCTestCase {
         XCTAssertTrue(timerInClosure === timer)
     }
 
+    #if !os(Linux) || swift(>=5.0) // XCTestExpectation.isInverted is not implemented pre Swift 5 on Linux
     func testTimerInvildatesOnDeinit() {
         let exp = expectation(description: "Timer must not fire")
         exp.isInverted = true
@@ -33,6 +34,7 @@ final class TimerTests: XCTestCase {
         timer = nil // deinit
         waitForExpectations(timeout: timerInterval * 2, handler: nil)
     }
+    #endif
 
     func testTimerWithShortIntervalAndNoTolerance() {
         let exp = expectation(description: "Timer with short interval and no tolerance")

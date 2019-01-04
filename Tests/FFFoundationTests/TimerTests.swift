@@ -12,7 +12,26 @@ final class TimerTests: XCTestCase {
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        timer = nil
         super.tearDown()
+    }
+
+    func testTimerFiringManually() {
+        var timerInClosure: AnyTimer?
+        timer = AnyTimer(interval: 2, block: { timerInClosure = $0 })
+        timer?.fire()
+        XCTAssertNotNil(timerInClosure)
+        XCTAssertTrue(timerInClosure === timer)
+    }
+
+    func testTimerInvildatesOnDeinit() {
+        let exp = expectation(description: "Timer must not fire")
+        exp.isInverted = true
+        let timerInterval: TimeInterval = 2.0
+        timer = AnyTimer(interval: timerInterval, block: { _ in exp.fulfill() })
+        timer?.schedule()
+        timer = nil // deinit
+        waitForExpectations(timeout: timerInterval * 2, handler: nil)
     }
 
     func testTimerWithShortIntervalAndNoTolerance() {

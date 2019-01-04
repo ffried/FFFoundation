@@ -40,6 +40,8 @@
 		0714F321207B7229009900AC /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F31C207B7229009900AC /* TimerTests.swift */; };
 		0714F329207B7270009900AC /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0714F327207B7270009900AC /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07353D8621A837C40095E649 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07353D8521A837C40095E649 /* Observer.swift */; };
+		0742791421DF9EC600393E78 /* TypeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0742791321DF9EC600393E78 /* TypeDescription.swift */; };
+		0742791721DFA11F00393E78 /* TypeDescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0742791521DFA10000393E78 /* TypeDescriptionTests.swift */; };
 		0747F0D1210AEF62009BFDAD /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747F0D0210AEF62009BFDAD /* Logging.swift */; };
 		0747F0D3210B047A009BFDAD /* OSLogLinux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747F0D2210B047A009BFDAD /* OSLogLinux.swift */; };
 		0766A090212B0C2E00D579CF /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766A08F212B0C2E00D579CF /* Size.swift */; };
@@ -95,6 +97,8 @@
 		0714F327207B7270009900AC /* FFFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFoundation.h; sourceTree = "<group>"; };
 		0714F328207B7270009900AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07353D8521A837C40095E649 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		0742791321DF9EC600393E78 /* TypeDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeDescription.swift; sourceTree = "<group>"; };
+		0742791521DFA10000393E78 /* TypeDescriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDescriptionTests.swift; sourceTree = "<group>"; };
 		0747F0D0210AEF62009BFDAD /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		0747F0D2210B047A009BFDAD /* OSLogLinux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLogLinux.swift; sourceTree = "<group>"; };
 		0766A08F212B0C2E00D579CF /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				0714F2DE207B720E009900AC /* NotificationObserver.swift */,
 				0714F2E5207B720E009900AC /* Timer.swift */,
 				0714F2F7207B720E009900AC /* Togglable.swift */,
+				0742791321DF9EC600393E78 /* TypeDescription.swift */,
 				0747F0D0210AEF62009BFDAD /* Logging.swift */,
 				0747F0D2210B047A009BFDAD /* OSLogLinux.swift */,
 			);
@@ -193,6 +198,7 @@
 				07F657F52150F980004BCAD7 /* StringClassesExtensionTests.swift */,
 				0714F31C207B7229009900AC /* TimerTests.swift */,
 				0714F31B207B7229009900AC /* TriangleTests.swift */,
+				0742791521DFA10000393E78 /* TypeDescriptionTests.swift */,
 				0714F31D207B7229009900AC /* Info.plist */,
 			);
 			name = FFFoundationTests;
@@ -363,6 +369,7 @@
 				0714F30F207B720E009900AC /* String+Classes.swift in Sources */,
 				0714F30B207B720E009900AC /* Locale+LanguageRegion.swift in Sources */,
 				0714F307207B720E009900AC /* Application+NameAndVersion.swift in Sources */,
+				0742791421DF9EC600393E78 /* TypeDescription.swift in Sources */,
 				0714F309207B720E009900AC /* OperationQueue+FFAdditions.swift in Sources */,
 				0714F315207B720E009900AC /* Lazy.swift in Sources */,
 				0714F305207B720E009900AC /* NSLayoutConstraint+FFAdditions.swift in Sources */,
@@ -377,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				0742791721DFA11F00393E78 /* TypeDescriptionTests.swift in Sources */,
 				0714F31F207B7229009900AC /* DiffTests.swift in Sources */,
 				0714F320207B7229009900AC /* TriangleTests.swift in Sources */,
 				0714F321207B7229009900AC /* TimerTests.swift in Sources */,

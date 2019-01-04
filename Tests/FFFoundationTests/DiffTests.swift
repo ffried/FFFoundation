@@ -1,10 +1,3 @@
-//
-//  DiffTests.swift
-//  FFFoundation
-//
-//  Created by Florian Friedrich on 05.10.17.
-//
-
 import XCTest
 @testable import FFFoundation
 

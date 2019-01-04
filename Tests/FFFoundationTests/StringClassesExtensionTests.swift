@@ -1,10 +1,3 @@
-//
-//  StringClassesExtensionTests.swift
-//  FFFoundation
-//
-//  Created by Florian Friedrich on 18.09.18.
-//
-
 import XCTest
 import Foundation
 @testable import FFFoundation

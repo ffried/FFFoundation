@@ -110,7 +110,7 @@ public extension Triangle {
         let sideBSquare = sideB * sideB
         let sideCSquare = sideC * sideC
         
-        // calculate angles with cosinus formular (all sites' lengths are given)
+        // calculate angles with cosinus formula (all sites' lengths are given)
         let cosα = (sideBSquare + sideCSquare - sideASquare) / (2 * sideB * sideC)
         let cosβ = (sideASquare + sideCSquare - sideBSquare) / (2 * sideA * sideC)
         let cosγ = (sideASquare + sideBSquare - sideCSquare) / (2 * sideA * sideB)

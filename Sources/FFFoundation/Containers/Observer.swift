@@ -17,6 +17,7 @@
 //  limitations under the License.
 //
 
+import class Dispatch.DispatchQueue
 import struct Foundation.UUID
 
 public struct Observation<Observed> {

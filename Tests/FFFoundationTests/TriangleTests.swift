@@ -35,6 +35,26 @@ final class TriangleTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+
+    func testTriangleBeingEquatable() {
+        let triangle1 = Triangle(orthogonallyOnCWithA: Point(x: 1, y: 1),
+                                b: Point(x: 3, y: 4))
+        let triangle2 = Triangle(orthogonallyOnCWithA: Point(x: 2, y: 2),
+                                 b: Point(x: 4, y: 5))
+        XCTAssertEqual(triangle1, triangle2)
+    }
+
+    func testTriangleBeingHashable() {
+        var hasher1 = Hasher()
+        let triangle1 = Triangle(orthogonallyOnCWithA: Point(x: 1, y: 1),
+                                 b: Point(x: 3, y: 4))
+        triangle1.hash(into: &hasher1)
+        var hasher2 = Hasher()
+        let triangle2 = Triangle(orthogonallyOnCWithA: Point(x: 2, y: 2),
+                                 b: Point(x: 4, y: 5))
+        triangle2.hash(into: &hasher2)
+        XCTAssertEqual(hasher1.finalize(), hasher2.finalize())
+    }
     
     func testOrthogonalTriangleCalculation() {
         let pointA = Point(x: 1, y: 1)

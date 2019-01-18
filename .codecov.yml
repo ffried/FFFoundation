@@ -2,3 +2,6 @@ coverage:
   range: 60..95
   round: nearest
   precision: 2
+
+ignore:
+  - "Tests"

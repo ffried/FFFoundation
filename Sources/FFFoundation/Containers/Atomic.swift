@@ -85,7 +85,7 @@ public final class Atomic<Guarded>: AtomicProtocol {
 
     public func withValue<T>(do work: (inout Guarded) throws -> T) rethrows -> T {
         precondition(notOn: queue)
-        return try withMutableValue(do: work)
+        return try queue.sync { try withMutableValue(do: work) }
     }
 
     public func coordinated(with other: Atomic) -> (Guarded, Guarded) {

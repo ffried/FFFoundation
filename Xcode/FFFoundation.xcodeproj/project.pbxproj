@@ -46,6 +46,8 @@
 		0747F0D3210B047A009BFDAD /* OSLogLinux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747F0D2210B047A009BFDAD /* OSLogLinux.swift */; };
 		0766A090212B0C2E00D579CF /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766A08F212B0C2E00D579CF /* Size.swift */; };
 		0767345B207B751F004B708E /* FFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07673458207B7513004B708E /* FFFoundation.framework */; };
+		0774CFD921F77F5B00C3D5CB /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CFD821F77F5B00C3D5CB /* Future.swift */; };
+		0774CFDB21F8466100C3D5CB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CFDA21F8466100C3D5CB /* Result.swift */; };
 		07842FE5214A855800A65D82 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2F4207B720E009900AC /* AttributedString.swift */; };
 		07F657F72150F9BA004BCAD7 /* StringClassesExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F657F52150F980004BCAD7 /* StringClassesExtensionTests.swift */; };
 /* End PBXBuildFile section */
@@ -104,6 +106,8 @@
 		0766A08F212B0C2E00D579CF /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		07673458207B7513004B708E /* FFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07673459207B7513004B708E /* FFFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0774CFD821F77F5B00C3D5CB /* Future.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		0774CFDA21F8466100C3D5CB /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		07F657F52150F980004BCAD7 /* StringClassesExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringClassesExtensionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +163,8 @@
 				0742791321DF9EC600393E78 /* TypeDescription.swift */,
 				0747F0D0210AEF62009BFDAD /* Logging.swift */,
 				0747F0D2210B047A009BFDAD /* OSLogLinux.swift */,
+				0774CFD821F77F5B00C3D5CB /* Future.swift */,
+				0774CFDA21F8466100C3D5CB /* Result.swift */,
 			);
 			name = FFFoundation;
 			path = ../Sources/FFFoundation;
@@ -351,6 +357,7 @@
 				0747F0D1210AEF62009BFDAD /* Logging.swift in Sources */,
 				0714F316207B720E009900AC /* Triangle.swift in Sources */,
 				0714F308207B720E009900AC /* DictionaryExtensions.swift in Sources */,
+				0774CFD921F77F5B00C3D5CB /* Future.swift in Sources */,
 				0714F30D207B720E009900AC /* FileManager+Directories.swift in Sources */,
 				0714F30E207B720E009900AC /* NSAttributedStringExtensions.swift in Sources */,
 				07353D8621A837C40095E649 /* Observer.swift in Sources */,
@@ -360,6 +367,7 @@
 				0714F313207B720E009900AC /* AppGroup.swift in Sources */,
 				0714F2FE207B720E009900AC /* CacheManager.swift in Sources */,
 				0714F2FF207B720E009900AC /* Diff.swift in Sources */,
+				0774CFDB21F8466100C3D5CB /* Result.swift in Sources */,
 				0714F306207B720E009900AC /* SequenceExtensions.swift in Sources */,
 				0714F317207B720E009900AC /* Weak.swift in Sources */,
 				070F27DD213036AD00A485E7 /* Optional+Container.swift in Sources */,

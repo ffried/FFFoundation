@@ -28,6 +28,8 @@ public protocol AtomicProtocol: Container {
 
     func combined(with other: Self) -> Atomic<(Value, Value)>
     func combined<Other: AtomicProtocol>(with other: Other) -> Atomic<(Value, Other.Value)>
+
+    func withValue<T>(do work: (inout Value) throws -> T) rethrows -> T
 }
 
 public extension AtomicProtocol {
@@ -79,6 +81,11 @@ public final class Atomic<Guarded>: AtomicProtocol {
 //            _value = Ref(value: _value.value)
 //        }
         return try work(&_value/*.value*/)
+    }
+
+    public func withValue<T>(do work: (inout Guarded) throws -> T) rethrows -> T {
+        precondition(notOn: queue)
+        return try withMutableValue(do: work)
     }
 
     public func coordinated(with other: Atomic) -> (Guarded, Guarded) {

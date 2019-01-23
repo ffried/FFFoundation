@@ -44,7 +44,7 @@ public final class Future<Value> {
         self.init(state: .finished(value))
     }
 
-    func complete(with value: Value) {
+    public func complete(with value: Value) {
         let handlers: Array<Handler> = state.withValue {
             guard case .unfinished(let handlers) = $0 else {
                 preconditionFailure("\(type(of: self)) is being completed more than once!")
@@ -67,7 +67,7 @@ public final class Future<Value> {
         value.map { val in workerQueue.async { work(val) } }
     }
 
-    func cascade(other: Future<Value>) {
+    public func cascade(other: Future<Value>) {
         whenDone(do: other.complete)
     }
 
@@ -118,6 +118,18 @@ public extension FutureResult {
     @inlinable
     public convenience init<Val>(error: Error) where Value == Result<Val> {
         self.init(value: .error(error))
+    }
+
+    public func succeed<Val>(with value: Val) where Value == Result<Val> {
+        complete(with: .value(value))
+    }
+
+    public func fail<Val>(with error: Error) where Value == Result<Val> {
+        complete(with: .error(error))
+    }
+
+    public func cascade(other: FutureResult<Value>) {
+        whenDone(do: other.succeed)
     }
 
     public func onSuccess<Val>(do work: @escaping (Val) -> ()) where Value == Result<Val> {

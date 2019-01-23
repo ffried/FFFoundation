@@ -27,21 +27,21 @@ public final class Future<Value> {
     private let state: Atomic<State>
     private let workerQueue: DispatchQueue
 
-    private init(workerQueue: DispatchQueue? = nil, state: State = .unfinished([])) {
+    private init(workerQueue: DispatchQueue?, state: State) {
         self.state = Atomic(value: state)
         self.workerQueue = workerQueue ?? DispatchQueue(label: "net.ffried.Future<\(Value.self)>.workerQueue", qos: .default, attributes: .concurrent)
     }
 
-    convenience init(queue: DispatchQueue? = nil) {
-        self.init(workerQueue: queue)
-    }
-
-    convenience init(queue: DispatchQueue? = nil, value: Value) {
-        self.init(workerQueue: queue, state: .finished(value))
+    convenience init(queue: DispatchQueue?, value: Value? = nil) {
+        self.init(workerQueue: queue, state: value.map { .finished($0) } ?? .unfinished([]))
     }
 
     public convenience init(value: Value) {
-        self.init(state: .finished(value))
+        self.init(queue: nil, value: value)
+    }
+
+    public convenience init() {
+        self.init(queue: nil)
     }
 
     public func complete(with value: Value) {

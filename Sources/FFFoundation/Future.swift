@@ -18,6 +18,7 @@
 //
 
 import class Dispatch.DispatchQueue
+import class Dispatch.DispatchSemaphore
 
 public final class Future<Value> {
     public typealias Handler = (Value) -> ()

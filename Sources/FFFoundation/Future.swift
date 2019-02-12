@@ -17,6 +17,8 @@
 //  limitations under the License.
 //
 
+import class Dispatch.DispatchQueue
+
 public final class Future<Value> {
     public typealias Handler = (Value) -> ()
     private enum State {

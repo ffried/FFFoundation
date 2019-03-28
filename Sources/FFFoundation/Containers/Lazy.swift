@@ -19,13 +19,13 @@
 //
 
 public protocol LazyProtocol: Container {
-    typealias Constructor = () -> Value
-
     var value: Value { mutating get set }
 }
 
 public struct Lazy<Deferred>: LazyProtocol {
     public typealias Value = Deferred
+    public typealias Constructor = () -> Value
+    
     private let constructor: Constructor
 
     private var _value: Ref<Value?>

@@ -59,12 +59,14 @@ extension Container {
         set { value[keyPath: keyPath] = newValue }
     }
 
+    @inlinable
     public static func <- (lhs: inout Self, rhs: Value) {
         lhs.value = rhs
     }
 }
 
 extension NestedContainer {
+    @inlinable
     public static func <- (lhs: inout Self, rhs: NestedValue) {
         lhs.nestedValue = rhs
     }

@@ -172,13 +172,13 @@ extension FutureResult {
 }
 
 extension DispatchQueue {
-    public final func async<T>(do work: @escaping () -> T) -> Future<T> {
+    public final func asFuture<T>(do work: @escaping () -> T) -> Future<T> {
         let future = Future<T>(queue: self)
         async { future.complete(with: work()) }
         return future
     }
 
-    public final func async<T>(do work: @escaping () throws -> T) -> FutureResult<T, Error> {
+    public final func asFuture<T>(do work: @escaping () throws -> T) -> FutureResult<T, Error> {
         let future = FutureResult<T, Error>(queue: self)
         async { future.complete(with: Result { try work() }) }
         return future

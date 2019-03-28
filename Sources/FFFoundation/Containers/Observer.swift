@@ -40,7 +40,7 @@ public protocol ObserverProtocol: Container {
     mutating func remove(registration: ObserverRegistration)
 }
 
-public extension ObserverProtocol {
+extension ObserverProtocol {
     @inlinable
     public mutating func register(handler: @escaping ChangeHandler) -> ObserverRegistration {
         return registerHandler(on: nil, handler: handler)

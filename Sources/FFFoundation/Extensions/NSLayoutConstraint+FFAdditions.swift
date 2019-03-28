@@ -30,18 +30,18 @@
     #endif
     
     @available(macOS 10.7, iOS 6.0, tvOS 6.0, *)
-    public extension NSLayoutConstraint {
+    extension NSLayoutConstraint {
         
         #if canImport(UIKit)
-        typealias ViewType          = UIView
-        typealias MetricValueType   = CGFloat
+        public typealias ViewType          = UIView
+        public typealias MetricValueType   = CGFloat
         #elseif canImport(AppKit)
-        typealias ViewType          = NSView
-        typealias MetricValueType   = NSNumber
+        public typealias ViewType          = NSView
+        public typealias MetricValueType   = NSNumber
         #endif
-        typealias VisualFormatType  = String
-        typealias MetricsDictionary = [String: MetricValueType]
-        typealias ViewsDictionary   = [String: ViewType]
+        public typealias VisualFormatType  = String
+        public typealias MetricsDictionary = [String: MetricValueType]
+        public typealias ViewsDictionary   = [String: ViewType]
         
         public static func constraints<Formats: Sequence>(withVisualFormats formats: Formats,
                                                           options: FormatOptions = [],
@@ -53,7 +53,7 @@
 }
     
     @available(macOS 10.7, iOS 6.0, tvOS 6.0, *)
-    public extension Sequence where Element == NSLayoutConstraint {
+    extension Sequence where Element == NSLayoutConstraint {
         public func activate() {
             NSLayoutConstraint.activate(Array(self))
         }
@@ -64,7 +64,7 @@
     }
     
     @available(macOS 10.7, iOS 6.0, tvOS 6.0, *)
-    public extension Sequence where Element == NSLayoutConstraint.VisualFormatType {
+    extension Sequence where Element == NSLayoutConstraint.VisualFormatType {
         public func constraints(with views: NSLayoutConstraint.ViewsDictionary,
                                 options: NSLayoutConstraint.FormatOptions = [],
                                 metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {

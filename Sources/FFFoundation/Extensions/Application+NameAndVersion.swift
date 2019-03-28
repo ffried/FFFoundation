@@ -28,7 +28,7 @@
         public typealias Application = NSApplication
     #endif
 
-    public extension Application {
+    extension Application {
         private var bundle: Bundle { return .main }
         
         public var identifier: String? {

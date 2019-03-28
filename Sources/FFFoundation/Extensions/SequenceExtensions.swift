@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-public extension Sequence {
+extension Sequence {
     public func last(where: (Element) throws -> Bool) rethrows -> Element? {
         return try reversed().first(where: `where`)
     }

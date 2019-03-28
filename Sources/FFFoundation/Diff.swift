@@ -40,7 +40,7 @@ public struct Diff<Subject: Collection, Element: Diffable> {
 public typealias SimpleDiff<Subject: Collection & Diffable> = Diff<Subject, Subject>
 public typealias ElementDiff<Subject: Collection> = Diff<Subject, Subject.SubSequence> where Subject.SubSequence: Diffable
 
-public extension Diff where Subject.Element: Equatable, Element == Subject.SubSequence {
+extension Diff where Subject.Element: Equatable, Element == Subject.SubSequence {
     public init(base: Subject, comparedTo head: Subject, splitBy separator: Subject.Element) {
         let baseSplit = base.split(separator: separator, omittingEmptySubsequences: false)
         let headSplit = head.split(separator: separator, omittingEmptySubsequences: false)
@@ -48,7 +48,7 @@ public extension Diff where Subject.Element: Equatable, Element == Subject.SubSe
     }
 }
 
-public extension Diff where Subject: RangeReplaceableCollection, Subject.Element: Equatable, Element == Subject {
+extension Diff where Subject: RangeReplaceableCollection, Subject.Element: Equatable, Element == Subject {
     public init(base: Subject, comparedTo head: Subject, splitBy separator: Subject.Element) {
         let baseSplit = base.split(separator: separator, omittingEmptySubsequences: false).map(Subject.init)
         let headSplit = head.split(separator: separator, omittingEmptySubsequences: false).map(Subject.init)
@@ -56,23 +56,23 @@ public extension Diff where Subject: RangeReplaceableCollection, Subject.Element
     }
 }
 
-public extension Diff where Subject == String, Element == String.SubSequence {
+extension Diff where Subject == String, Element == String.SubSequence {
     public init(base: String, comparedTo head: String) {
         self.init(base: base, comparedTo: head, splitBy: "\n")
     }
 }
 
-public extension Diff where Subject == String, Element == Subject {
+extension Diff where Subject == String, Element == Subject {
     public init(base: String, comparedTo head: String) {
         self.init(base: base, comparedTo: head, splitBy: "\n")
     }
 }
 
 fileprivate extension Diff {
-    fileprivate enum CodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case base, head, changes
     }
-    fileprivate enum ChangeCodingKeys: String, CodingKey {
+    enum ChangeCodingKeys: String, CodingKey {
         case change, element
     }
 }
@@ -110,7 +110,7 @@ extension Diff: Decodable where Subject: Decodable, Element: Decodable {
     }
 }
 
-public extension Diff {
+extension Diff {
     public enum Change: Hashable, CustomStringConvertible, Codable {
         case unchanged, added, removed
 
@@ -182,12 +182,12 @@ fileprivate extension RangeReplaceableCollection where Self: MutableCollection, 
                 result.append((a, .unchanged))
             } else if a.contains(b) || b.contains(a) {
                 result.append(contentsOf: [(a, .removed), (b, .added)])
-            } else if let idxA = arr2.dropFirst().index(of: a), let idxB = arr1.dropFirst().index(of: b) {
+            } else if let idxA = arr2.dropFirst().firstIndex(of: a), let idxB = arr1.dropFirst().firstIndex(of: b) {
                 let isAdded = idxA < idxB
                 apply(isAdded: isAdded, at: Swift.min(idxA, idxB), unchangedElement: isAdded ? a : b)
-            } else if let idx = arr2.dropFirst().index(of: a) {
+            } else if let idx = arr2.dropFirst().firstIndex(of: a) {
                 apply(isAdded: true, at: idx, unchangedElement: a)
-            } else if let idx = arr1.dropFirst().index(of: b) {
+            } else if let idx = arr1.dropFirst().firstIndex(of: b) {
                 apply(isAdded: false, at: idx, unchangedElement: b)
             } else {
                 result.append(contentsOf: [(a, .removed), (b, .added)])

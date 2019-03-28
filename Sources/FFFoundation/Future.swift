@@ -81,7 +81,7 @@ public final class Future<Value> {
     }
 
     @inlinable
-    public func map<T>(_ transformer: @escaping (Value) throws -> T) -> FutureResult<T> {
+    public func map<T>(_ transformer: @escaping (Value) throws -> T) -> FutureResult<T, Error> {
         return map { val in Result { try transformer(val) } }
     }
 
@@ -91,10 +91,10 @@ public final class Future<Value> {
         return future
     }
 
-    public func flatMap<T>(_ transformer: @escaping (Value) throws -> Future<T>) -> FutureResult<T> {
+    public func flatMap<T>(_ transformer: @escaping (Value) throws -> Future<T>) -> FutureResult<T, Error> {
         return flatMap { [workerQueue] in
-            do { return try transformer($0).map { .value($0) } }
-            catch { return FutureResult<T>(queue: workerQueue, value: .error(error)) }
+            do { return try transformer($0).map { .success($0) } }
+            catch { return FutureResult<T, Error>(queue: workerQueue, value: .failure(error)) }
         }
     }
 
@@ -110,74 +110,76 @@ public final class Future<Value> {
     }
 }
 
-public typealias FutureResult<Value> = Future<Result<Value>>
+public typealias FutureResult<Value, Error: Error> = Future<Result<Value, Error>>
 
-public extension FutureResult {
+extension FutureResult {
     @inlinable
-    public convenience init<Val>(value: Val) where Value == Result<Val> {
-        self.init(value: .value(value))
+    public convenience init<Success, Failure: Error>(value: Success) where Value == Result<Success, Failure> {
+        self.init(value: .success(value))
     }
 
     @inlinable
-    public convenience init<Val>(error: Error) where Value == Result<Val> {
-        self.init(value: .error(error))
+    public convenience init<Success, Failure: Error>(error: Failure) where Value == Result<Success, Failure> {
+        self.init(value: .failure(error))
     }
 
-    public func succeed<Val>(with value: Val) where Value == Result<Val> {
-        complete(with: .value(value))
+    public func succeed<Success, Failure: Error>(with value: Success) where Value == Result<Success, Failure> {
+        complete(with: .success(value))
     }
 
-    public func fail<Val>(with error: Error) where Value == Result<Val> {
-        complete(with: .error(error))
+    public func fail<Success, Failure: Error>(with error: Failure) where Value == Result<Success, Failure> {
+        complete(with: .failure(error))
     }
 
-    public func cascade(other: FutureResult<Value>) {
-        whenDone(do: other.succeed)
+    public func cascade<Success, Failure: Error>(other: FutureResult<Success, Failure>) where Value == Result<Success, Failure> {
+        whenDone(do: other.complete)
     }
 
-    public func onSuccess<Val>(do work: @escaping (Val) -> ()) where Value == Result<Val> {
+    public func onSuccess<Success, Failure: Error>(do work: @escaping (Success) -> ()) where Value == Result<Success, Failure> {
         whenDone { _ = $0.map(work) }
     }
 
-    public func onError<Val>(do work: @escaping(Error) -> ()) where Value == Result<Val> {
+    public func onError<Success, Failure: Error>(do work: @escaping (Failure) -> ()) where Value == Result<Success, Failure> {
         whenDone {
-            do { _ = try $0.unwrap() }
-            catch { work(error) }
+            switch $0 {
+            case .success(_): break
+            case .failure(let error): work(error)
+            }
         }
     }
 
     @inlinable
-    public func map<Val, T>(_ transformer: @escaping (Val) throws -> T) -> FutureResult<T> where Value == Result<Val> {
-        return map { val in try transformer(val.unwrap()) }
+    public func map<Success, Failure: Error, T>(_ transformer: @escaping (Success) throws -> T) -> FutureResult<T, Error> where Value == Result<Success, Failure> {
+        return map { val in try transformer(val.get()) }
     }
 
-    public func flatMap<Val, T>(_ transformer: @escaping (Val) throws -> FutureResult<T>) -> FutureResult<T> where Value == Result<Val> {
-        let future = FutureResult<T>(queue: workerQueue)
+    public func flatMap<Success, T>(_ transformer: @escaping (Success) throws -> FutureResult<T, Error>) -> FutureResult<T, Error> where Value == Result<Success, Error> {
+        let future = FutureResult<T, Error>(queue: workerQueue)
         whenDone {
             do {
-                try transformer($0.unwrap()).cascade(other: future)
+                try transformer($0.get()).cascade(other: future)
             } catch {
-                future.complete(with: .error(error))
+                future.complete(with: .failure(error))
             }
         }
         return future
     }
 
     @inlinable
-    public func await<Val>() throws -> Val where Value == Result<Val> {
-        return try await().unwrap()
+    public func await<Success, Failure: Error>() throws -> Success where Value == Result<Success, Failure> {
+        return try await().get()
     }
 }
 
-public extension DispatchQueue {
+extension DispatchQueue {
     public final func async<T>(do work: @escaping () -> T) -> Future<T> {
         let future = Future<T>(queue: self)
         async { future.complete(with: work()) }
         return future
     }
 
-    public final func async<T>(do work: @escaping () throws -> T) -> FutureResult<T> {
-        let future = FutureResult<T>(queue: self)
+    public final func async<T>(do work: @escaping () throws -> T) -> FutureResult<T, Error> {
+        let future = FutureResult<T, Error>(queue: self)
         async { future.complete(with: Result { try work() }) }
         return future
     }

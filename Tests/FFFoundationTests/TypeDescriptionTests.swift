@@ -23,15 +23,15 @@ func XCTAssertEqual<TestType: GenericTestType>(_ desc: TypeDescription, _ testTy
                 ? message()
                 : "Paramaters not equal at \(recursionIndexPath.lazy.map { String($0) }.joined(separator: ".")) \({ [msg = message()] in msg.isEmpty ? "" : ": \(msg)" }())"
         }
-        XCTAssertEqual(desc.name, testType.typeName, extendedMessage(for: message), file: file, line: line)
-        XCTAssertEqual(desc.genericParameters.count, testType.genericParams.count, extendedMessage(for: message), file: file, line: line)
+        XCTAssertEqual(desc.name, testType.typeName, extendedMessage(for: message()), file: file, line: line)
+        XCTAssertEqual(desc.genericParameters.count, testType.genericParams.count, extendedMessage(for: message()), file: file, line: line)
         if desc.genericParameters.count == testType.genericParams.count {
             for (idx, types) in zip(desc.genericParameters, testType.genericParams).enumerated() {
-                assertEqual(types.0, types.1, message, recursionIndexPath: recursionIndexPath.appending(idx))
+                assertEqual(types.0, types.1, message(), recursionIndexPath: recursionIndexPath.appending(idx))
             }
         }
     }
-    assertEqual(desc, testType, message, recursionIndexPath: [])
+    assertEqual(desc, testType, message(), recursionIndexPath: [])
 }
 
 extension String: GenericTestType {

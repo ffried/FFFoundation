@@ -35,7 +35,7 @@ public struct AppGroup: RawRepresentable, Hashable, Codable {
     public init(rawValue: String) { self.init(identifier: rawValue) }
 }
 
-public extension AppGroup {
+extension AppGroup {
     public var dataURL: URL? {
         return FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: identifier)
     }

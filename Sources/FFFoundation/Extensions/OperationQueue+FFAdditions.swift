@@ -21,7 +21,7 @@
 import class Foundation.OperationQueue
 import class Foundation.BlockOperation
 
-public extension OperationQueue {
+extension OperationQueue {
     public var isMain: Bool { return self === type(of: self).main }
     
     public var isCurrent: Bool { return type(of: self).current.flatMap { $0 === self } ?? false }

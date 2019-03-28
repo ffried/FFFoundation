@@ -54,7 +54,7 @@ public struct Triangle<Point: TriangulatablePoint>: Hashable where Point.Value.S
     }
 }
 
-public extension Triangle {
+extension Triangle {
     public var pointA: Point { return points.a }
     public var pointB: Point { return points.b }
     public var pointC: Point { return points.c }
@@ -68,7 +68,7 @@ public extension Triangle {
     public var c: Distance { return sides.c }
 }
 
-public extension Triangle {
+extension Triangle {
     /// Calculates a new orthogonal triangle with a given point A and B.
     /// - Note: The triangle is based on C meaning that C == (A.x, B.y).
     ///

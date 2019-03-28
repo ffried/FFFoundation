@@ -28,28 +28,9 @@ public struct Size<Value: Numeric & Hashable>: Hashable {
     }
 }
 
-public extension Size {
+extension Size {
     public static var zero: Size { return .init(width: 0, height: 0) }
 }
 
-fileprivate extension Size {
-    fileprivate enum CodingKeys: String, CodingKey {
-        case width, height
-    }
-}
-
-extension Size: Encodable where Value: Encodable {
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(width, forKey: .width)
-        try container.encode(height, forKey: .height)
-    }
-}
-
-extension Size: Decodable where Value: Decodable {
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        width = try container.decode(Value.self, forKey: .width)
-        height = try container.decode(Value.self, forKey: .height)
-    }
-}
+extension Size: Encodable where Value: Encodable {}
+extension Size: Decodable where Value: Decodable {}

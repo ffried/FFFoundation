@@ -26,7 +26,7 @@ public protocol WeakProtocol: Container where Value == Object? {
     init(object: Object)
 }
 
-public extension WeakProtocol {
+extension WeakProtocol {
     public var wasReleased: Bool { return value == nil }
 
     public var object: Object? { return value }
@@ -44,15 +44,15 @@ public struct Weak<Object: AnyObject>: WeakProtocol {
     }
 }
 
-public extension Sequence where Element: WeakProtocol {
+extension Sequence where Element: WeakProtocol {
     public var objects: [Element.Object] {
         return compactMap { $0.object }
     }
 }
 
-public extension MutableCollection where Self: RangeReplaceableCollection, Element: WeakProtocol {
+extension MutableCollection where Self: RangeReplaceableCollection, Element: WeakProtocol {
     public mutating func removeReleasedObjects() {
-        removeAll(where: { $0.wasReleased })
+        removeAll { $0.wasReleased }
     }
     
     public mutating func appendWeakly(_ object: Element.Object) {

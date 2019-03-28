@@ -20,7 +20,7 @@
 
 import struct Foundation.Locale
 
-public extension Locale {
+extension Locale {
     public static var localizedDeviceLanguage: String? {
         return preferredLanguages.first.map(self.init).flatMap {
             $0.languageCode.flatMap($0.localizedString(forLanguageCode:))

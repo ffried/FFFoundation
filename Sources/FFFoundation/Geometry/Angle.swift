@@ -354,7 +354,7 @@ public enum Angle<Value: FloatingPoint>: FloatingPoint where Value.Stride == Val
 }
 
 fileprivate extension Angle {
-    fileprivate enum CodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case kind, value
     }
 }

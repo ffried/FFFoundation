@@ -20,7 +20,7 @@
 
 import func Foundation.NSStringFromClass
 
-public extension String {
+extension String {
     /**
      Swift-aware NSStringFromClass. Removes '.' in Swift class names if `removeNamespace` is `true`.
      

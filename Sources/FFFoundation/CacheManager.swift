@@ -153,13 +153,13 @@ public final class CacheManager<Object: Cachable> {
     }
 }
 
-public extension CacheManager {
+extension CacheManager {
     public static func cacheFolder(in fileManager: FileManager = .default) throws -> URL {
         return try fileManager.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
     }
 }
 
-public extension CacheManager {
+extension CacheManager {
     public struct Name: RawRepresentable {
         public typealias RawValue = String
 
@@ -182,7 +182,7 @@ public enum CachingError: Error, CustomStringConvertible {
     }
 }
 
-public extension CacheManager.Name {
+extension CacheManager.Name {
     public static var `default`: CacheManager.Name { return .init(rawValue: "Default") }
 }
 

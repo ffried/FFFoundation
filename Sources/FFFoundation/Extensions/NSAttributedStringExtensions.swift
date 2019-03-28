@@ -31,7 +31,7 @@
         import class Foundation.NSString
     #endif
     
-    public extension NSAttributedString {
+    extension NSAttributedString {
         public typealias AttributesDictionary = [Key: Any]
         
         public final func size(forWidth width: CGFloat) -> CGSize {

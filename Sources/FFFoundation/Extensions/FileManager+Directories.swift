@@ -27,7 +27,7 @@ import struct Foundation.ObjCBool
 import struct ObjectiveC.ObjCBool
 #endif
 
-public extension FileManager {
+extension FileManager {
     @inlinable
     public func fileExists(at url: URL) -> Bool { return fileExists(atPath: url.path) }
 

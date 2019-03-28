@@ -66,7 +66,7 @@ public struct AttributedString: ReferenceConvertible {
     }
 }
 
-public extension AttributedString {
+extension AttributedString {
     fileprivate struct EnumerationRange {
         let string: String
         let indices: Range<Index>
@@ -181,7 +181,7 @@ public extension AttributedString {
     }
 }
 
-public extension AttributedString {
+extension AttributedString {
     public var description: String {
         var attributes = AttributesDictionary()
         enumerateAttributes(in: startIndex..<endIndex) { attr, _, _ in
@@ -200,7 +200,7 @@ public extension AttributedString {
     }
 }
 
-public extension AttributedString {
+extension AttributedString {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(CFHash(attrString))
     }
@@ -210,7 +210,7 @@ public extension AttributedString {
     }
 }
 
-public extension AttributedString {
+extension AttributedString {
     public typealias _ObjectiveCType = NSAttributedString
 
     public func _bridgeToObjectiveC() -> NSAttributedString {

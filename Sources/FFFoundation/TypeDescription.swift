@@ -10,6 +10,7 @@ public struct TypeDescription: Equatable, Hashable, Codable, CustomStringConvert
     @inlinable
     public var isGeneric: Bool { return !genericParameters.isEmpty }
 
+    @inlinable
     public var description: String { return typeName(includingModule: true) }
 
     fileprivate init(name: String, genericParameters: [TypeDescription] = []) {
@@ -36,9 +37,9 @@ public struct TypeDescription: Equatable, Hashable, Codable, CustomStringConvert
     }
 }
 
-fileprivate extension StringProtocol {
+extension StringProtocol {
     private func parseNextTypes(currentIndex: inout Index) -> [TypeDescription] {
-        let separatorIndex = index(where: "<,>".contains) ?? endIndex
+        let separatorIndex = firstIndex(where: "<,>".contains) ?? endIndex
         var result = separatorIndex > startIndex ? [TypeDescription(name: String(self[..<separatorIndex]))] : []
         guard separatorIndex != endIndex else { return result }
         currentIndex = index(after: separatorIndex)
@@ -51,12 +52,12 @@ fileprivate extension StringProtocol {
         return result + self[currentIndex...].parseNextTypes(currentIndex: &currentIndex)
     }
 
-    func parseType() -> TypeDescription {
+    fileprivate func parseType() -> TypeDescription {
         var currentIndex = startIndex
         return parseNextTypes(currentIndex: &currentIndex)[0]
     }
 
-    func cleanedModuleName() -> String {
-        return lazy.split(separator: ".").dropFirst().joined(separator: ".")
+    fileprivate func cleanedModuleName() -> String {
+        return split(separator: ".").dropFirst().joined(separator: ".")
     }
 }

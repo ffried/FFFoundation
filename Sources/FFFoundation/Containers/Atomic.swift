@@ -32,7 +32,7 @@ public protocol AtomicProtocol: Container {
     func withValue<T>(do work: (inout Value) throws -> T) rethrows -> T
 }
 
-public extension AtomicProtocol {
+extension AtomicProtocol {
     public init(value: Value) { self.init(value: value, qos: .default) }
 }
 

@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-public extension Dictionary {
+extension Dictionary {
     /**
      Merge a dictionary into an existing one. Values will be replaced in the left dictionary.
      

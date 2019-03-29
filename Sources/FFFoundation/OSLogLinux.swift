@@ -90,12 +90,12 @@ public final class OSLog: NSObject {
     }
 }
 
-public extension OSLog {
+extension OSLog {
     public static let `default` = OSLog(kind: .default)
     public static let disabled = OSLog(kind: .disabled)
 }
 
-public extension OSLog {
+extension OSLog {
     public struct Category: RawRepresentable, Hashable {
         public typealias RawValue = String
 

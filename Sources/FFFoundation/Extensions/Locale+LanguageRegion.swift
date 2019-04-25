@@ -26,8 +26,14 @@ extension Locale {
             $0.languageCode.flatMap($0.localizedString(forLanguageCode:))
         }
     }
-    
+
+    @inlinable
+    public var localizedDeviceRegion: String? {
+        return regionCode.flatMap(localizedString(forRegionCode:))
+    }
+
+    @available(*, deprecated, message: "Use `localizedDeviceRegion` on the locale instance directly", renamed: "current.localizedDeviceRegion")
     public static var localizedDeviceRegion: String? {
-        return current.regionCode.flatMap(current.localizedString(forRegionCode:))
+        return current.localizedDeviceRegion
     }
 }

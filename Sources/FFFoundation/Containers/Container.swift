@@ -23,37 +23,38 @@ infix operator <-: AssignmentPrecedence
 public protocol Container {
     associatedtype Value
 
-    var value: Value { get set }
+    var value: Value { get }
 
     init(value: Value)
 
     subscript<T>(keyPath: KeyPath<Value, T>) -> T { get }
+}
+
+public protocol MutableContainer: Container {
+    var value: Value { get set }
+
     subscript<T>(keyPath: WritableKeyPath<Value, T>) -> T { get set }
 
     static func <- (lhs: inout Self, rhs: Value)
 }
 
-public protocol NestedContainer: Container where Value: Container {
-    associatedtype Nested: Container = Value
-    associatedtype NestedValue = Nested.Value
+public protocol ReferenceMutableContainer: AnyObject, Container {
+    var value: Value { get set }
 
-    var nested: Nested { get set }
-    var nestedValue: NestedValue { get set }
+    subscript<T>(keyPath: WritableKeyPath<Value, T>) -> T { get set }
 
-    init(nested: Nested)
-    init(nestedValue: NestedValue)
-
-    subscript<T>(keyPath: KeyPath<NestedValue, T>) -> T { get }
-    subscript<T>(keyPath: WritableKeyPath<NestedValue, T>) -> T { get set }
-
-    static func <- (lhs: inout Self, rhs: NestedValue)
+    static func <- (lhs: Self, rhs: Value)
 }
 
 extension Container {
+    @inlinable
     public subscript<T>(keyPath: KeyPath<Value, T>) -> T {
         return value[keyPath: keyPath]
     }
+}
 
+extension MutableContainer {
+    @inlinable
     public subscript<T>(keyPath: WritableKeyPath<Value, T>) -> T {
         get { return value[keyPath: keyPath] }
         set { value[keyPath: keyPath] = newValue }
@@ -63,49 +64,55 @@ extension Container {
     public static func <- (lhs: inout Self, rhs: Value) {
         lhs.value = rhs
     }
-}
 
-extension NestedContainer {
     @inlinable
-    public static func <- (lhs: inout Self, rhs: NestedValue) {
-        lhs.nestedValue = rhs
+    public static func <- <Val>(lhs: inout Self, rhs: Val) where Value == Optional<Val> {
+        lhs.value = rhs
     }
 }
 
-extension NestedContainer where Nested == Value {
-    public var nested: Nested {
-        get { return value }
-        set { value = newValue }
+extension ReferenceMutableContainer {
+    @inlinable
+    public subscript<T>(keyPath: WritableKeyPath<Value, T>) -> T {
+        get { return value[keyPath: keyPath] }
+        set { value[keyPath: keyPath] = newValue }
     }
 
-    public init(nested: Nested) {
-        self.init(value: nested)
-    }
-}
-
-extension NestedContainer where NestedValue == Nested.Value {
-    public var nestedValue: NestedValue {
-        get { return nested.value }
-        set { nested.value = newValue }
+    @inlinable
+    public static func <- (lhs: Self, rhs: Value) {
+        lhs.value = rhs
     }
 
-    public init(nestedValue: NestedValue) {
-        self.init(nested: .init(value: nestedValue))
-    }
-
-    public subscript<T>(keyPath: KeyPath<NestedValue, T>) -> T {
-        return nestedValue[keyPath: keyPath]
-    }
-
-    public subscript<T>(keyPath: WritableKeyPath<NestedValue, T>) -> T {
-        get { return nestedValue[keyPath: keyPath] }
-        set { nestedValue[keyPath: keyPath] = newValue }
+    @inlinable
+    public static func <- <Val>(lhs: Self, rhs: Val) where Value == Optional<Val> {
+        lhs.value = rhs
     }
 }
 
-extension NestedContainer where Nested: NestedContainer {
-    public var deeplyNestedValue: Nested.NestedValue {
-        get { return nested.nestedValue }
-        set { nested.nestedValue = newValue }
+extension MutableContainer where Value: MutableContainer {
+    @inlinable
+    public static func <- (lhs: inout Self, rhs: Value.Value) {
+        lhs.value <- rhs
+    }
+}
+
+extension MutableContainer where Value: ReferenceMutableContainer {
+    @inlinable
+    public static func <- (lhs: inout Self, rhs: Value.Value) {
+        lhs.value <- rhs
+    }
+}
+
+extension ReferenceMutableContainer where Value: MutableContainer {
+    @inlinable
+    public static func <- (lhs: Self, rhs: Value.Value) {
+        lhs.value <- rhs
+    }
+}
+
+extension ReferenceMutableContainer where Value: ReferenceMutableContainer {
+    @inlinable
+    public static func <- (lhs: Self, rhs: Value.Value) {
+        lhs.value <- rhs
     }
 }

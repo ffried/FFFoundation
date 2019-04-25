@@ -20,6 +20,7 @@
 
 import Dispatch
 
+// Atomic cannot conform to MutableContainer, because value cannot be set directly.
 public protocol AtomicProtocol: Container {
     init(value: Value, qos: DispatchQoS)
 
@@ -33,7 +34,13 @@ public protocol AtomicProtocol: Container {
 }
 
 extension AtomicProtocol {
+    @inlinable
     public init(value: Value) { self.init(value: value, qos: .default) }
+
+    @inlinable
+    public func withValueVoid(do work: (inout Value) throws -> Void) rethrows {
+        return try withValue(do: work)
+    }
 }
 
 public final class Atomic<Guarded>: AtomicProtocol {
@@ -44,19 +51,13 @@ public final class Atomic<Guarded>: AtomicProtocol {
     private let queue: DispatchQueue
 
     public var value: Value {
-        get {
-            precondition(notOn: queue)
-            return queue.sync { _value/*.value*/ }
-        }
-        set {
-            precondition(notOn: queue)
-            queue.sync { withMutableValue { $0 = newValue } }
-        }
+        precondition(notOn: queue)
+        return queue.sync { _value/*.value*/ }
     }
 
     public init(value: Value, qos: DispatchQoS) {
         _value = /*Ref(value: */value/*)*/
-        queue = DispatchQueue(label: "net.ffried.fffoundation.atomic<\(String(describing: Guarded.self).lowercased())>.queue", qos: qos)
+        queue = DispatchQueue(label: "net.ffried.containers.atomic<\(String(describing: Guarded.self).lowercased())>.queue", qos: qos)
     }
 
     public subscript<T>(keyPath: KeyPath<Guarded, T>) -> T {
@@ -75,6 +76,7 @@ public final class Atomic<Guarded>: AtomicProtocol {
         }
     }
 
+    @inline(__always)
     private /*mutating*/ func withMutableValue<T>(do work: (inout Guarded) throws -> T) rethrows -> T {
         precondition(on: queue)
 //        if !isKnownUniquelyReferenced(&_value) {
@@ -90,7 +92,7 @@ public final class Atomic<Guarded>: AtomicProtocol {
 
     public func coordinated(with other: Atomic) -> (Guarded, Guarded) {
         precondition(notOn: queue)
-        return queue.sync { (value, queue === other.queue ? other._value/*.value*/ : other.value) }
+        return queue.sync { (_value, queue === other.queue ? other._value/*.value*/ : other.value) }
     }
 
     public func coordinated<OtherGuarded>(with other: Atomic<OtherGuarded>) -> (Guarded, OtherGuarded) {
@@ -120,6 +122,7 @@ extension Atomic: Equatable where Guarded: Equatable {}
 extension Atomic: Hashable where Guarded: Hashable {}
 extension Atomic: Comparable where Guarded: Comparable {}
 extension Atomic: Encodable where Guarded: Encodable {}
+//extension Atomic: Decodable where Guarded: Decodable {}
 extension Atomic: ExpressibleByNilLiteral where Guarded: ExpressibleByNilLiteral {}
 extension Atomic: ExpressibleByBooleanLiteral where Guarded: ExpressibleByBooleanLiteral {}
 extension Atomic: ExpressibleByIntegerLiteral where Guarded: ExpressibleByIntegerLiteral {}
@@ -127,10 +130,6 @@ extension Atomic: ExpressibleByFloatLiteral where Guarded: ExpressibleByFloatLit
 extension Atomic: ExpressibleByUnicodeScalarLiteral where Guarded: ExpressibleByExtendedGraphemeClusterLiteral {}
 extension Atomic: ExpressibleByExtendedGraphemeClusterLiteral where Guarded: ExpressibleByExtendedGraphemeClusterLiteral {}
 extension Atomic: ExpressibleByStringLiteral where Guarded: ExpressibleByStringLiteral {}
-
-extension Atomic: NestedContainer where Guarded: Container {
-    public typealias NestedValue = Guarded.Value
-}
 
 @inline(__always)
 private func precondition(notOn queue: DispatchQueue) {

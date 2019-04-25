@@ -17,7 +17,7 @@
 //  limitations under the License.
 //
 
-extension Optional: Container {
+extension Optional: MutableContainer {
     public typealias Value = Wrapped?
 
     public var value: Value {
@@ -29,5 +29,3 @@ extension Optional: Container {
         self = value
     }
 }
-
-extension Optional: NestedContainer where Wrapped: Container {}

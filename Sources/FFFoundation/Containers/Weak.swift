@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-public protocol WeakProtocol: Container where Value == Object? {
+public protocol WeakProtocol: MutableContainer where Value == Object? {
     associatedtype Object: AnyObject
 
     var wasReleased: Bool { get }
@@ -29,8 +29,10 @@ public protocol WeakProtocol: Container where Value == Object? {
 extension WeakProtocol {
     public var wasReleased: Bool { return value == nil }
 
+    @inlinable
     public var object: Object? { return value }
 
+    @inlinable
     public init(object: Object) {
         self.init(value: object)
     }
@@ -45,6 +47,7 @@ public struct Weak<Object: AnyObject>: WeakProtocol {
 }
 
 extension Sequence where Element: WeakProtocol {
+    @inlinable
     public var objects: [Element.Object] {
         return compactMap { $0.object }
     }
@@ -71,7 +74,3 @@ extension Weak: ExpressibleByNilLiteral where Object: ExpressibleByNilLiteral {}
 //extension Weak: ExpressibleByUnicodeScalarLiteral where Object: ExpressibleByUnicodeScalarLiteral {}
 //extension Weak: ExpressibleByExtendedGraphemeClusterLiteral where Object: ExpressibleByExtendedGraphemeClusterLiteral {}
 //extension Weak: ExpressibleByStringLiteral where Object: ExpressibleByStringLiteral {}
-
-extension Weak: NestedContainer where Object: Container {
-    public typealias NestedValue = Value.Value
-}

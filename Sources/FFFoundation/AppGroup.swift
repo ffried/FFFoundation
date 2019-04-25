@@ -24,24 +24,24 @@ import class Foundation.UserDefaults
 import struct Foundation.URL
 
 public struct AppGroup: RawRepresentable, Hashable, Codable {
+    public typealias RawValue = String
 
-    public let identifier: String
-    public var rawValue: String { return identifier }
+    public let rawValue: RawValue
+
+    @inlinable
+    public var identifier: String { return rawValue }
     
-    public init(identifier: String) {
-        self.identifier = identifier
-    }
-
-    public init(rawValue: String) { self.init(identifier: rawValue) }
+    public init(rawValue: RawValue) { self.rawValue = rawValue }
+    public init(identifier: String) { self.init(rawValue: identifier) }
 }
 
 extension AppGroup {
     public var dataURL: URL? {
-        return FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: identifier)
+        return FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: rawValue)
     }
     
     public var userDefaults: UserDefaults? {
-        return UserDefaults(suiteName: identifier)
+        return UserDefaults(suiteName: rawValue)
     }
 }
 #endif

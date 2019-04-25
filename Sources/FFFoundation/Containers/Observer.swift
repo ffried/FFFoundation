@@ -30,7 +30,7 @@ public struct ObserverRegistration: Hashable {
     private let uuid = UUID().uuidString
 }
 
-public protocol ObserverProtocol: Container {
+public protocol ObserverProtocol: MutableContainer {
     typealias ChangeHandler = (Observation<Value>) -> ()
 
     mutating func register(handler: @escaping ChangeHandler) -> ObserverRegistration
@@ -105,7 +105,3 @@ extension Observer: ExpressibleByFloatLiteral where Observed: ExpressibleByFloat
 extension Observer: ExpressibleByUnicodeScalarLiteral where Observed: ExpressibleByUnicodeScalarLiteral {}
 extension Observer: ExpressibleByExtendedGraphemeClusterLiteral where Observed: ExpressibleByExtendedGraphemeClusterLiteral {}
 extension Observer: ExpressibleByStringLiteral where Observed: ExpressibleByStringLiteral {}
-
-extension Observer: NestedContainer where Observed: Container {
-    public typealias NestedValue = Observed.Value
-}

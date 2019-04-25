@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-public protocol RefProtocol: class, Container {}
+public protocol RefProtocol: ReferenceMutableContainer {}
 
 public final class Ref<Referenced>: RefProtocol {
     public typealias Value = Referenced
@@ -42,7 +42,3 @@ extension Ref: ExpressibleByFloatLiteral where Referenced: ExpressibleByFloatLit
 extension Ref: ExpressibleByUnicodeScalarLiteral where Referenced: ExpressibleByUnicodeScalarLiteral {}
 extension Ref: ExpressibleByExtendedGraphemeClusterLiteral where Referenced: ExpressibleByExtendedGraphemeClusterLiteral {}
 extension Ref: ExpressibleByStringLiteral where Referenced: ExpressibleByStringLiteral {}
-
-extension Ref: NestedContainer where Referenced: Container {
-    public typealias NestedValue = Referenced.Value
-}

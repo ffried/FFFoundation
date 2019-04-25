@@ -21,6 +21,7 @@ public struct Size<Value: Numeric & Hashable>: Hashable {
     public var width: Value
     public var height: Value
 
+    @inlinable
     public var isSquare: Bool { return width == height }
 
     public init(width: Value, height: Value) {

@@ -39,13 +39,13 @@ public final class CacheManager<Object: Cachable> {
     private let folder: URL
     public let name: Name
 
-    private var timer: AnyTimer?
+    private var timer: Timer<Void>?
 
     public var clearsMemoryCachePeriodically: Bool = false {
         didSet {
             guard clearsMemoryCachePeriodically != oldValue else { return }
             if clearsMemoryCachePeriodically {
-                timer = AnyTimer(interval: 30, repeats: true, queue: queue) { [weak self] _ in self?.clearMemoryCache() }
+                timer = Timer(interval: 30, repeats: true, queue: queue) { [weak self] _ in self?.clearMemoryCache() }
                 timer?.tolerance = 10
                 timer?.schedule()
             } else {
@@ -127,7 +127,7 @@ public final class CacheManager<Object: Cachable> {
 
     public func cache(object: Object, for identification: ObjectIdentification) throws {
         try cache(object: object, at: cacheURL(for: identification))
-        memoryCache.value[identification] = object
+        memoryCache.withValue { $0[identification] = object }
     }
 
     public func cacheObject(for identification: ObjectIdentification, at url: URL) throws {
@@ -144,7 +144,7 @@ public final class CacheManager<Object: Cachable> {
         return url
     }
 
-    public func clearMemoryCache() { memoryCache.value.removeAll() }
+    public func clearMemoryCache() { memoryCache.withValue { $0.removeAll() } }
     public func clearCache() throws {
         clearMemoryCache()
         guard fileManager.fileExists(at: folder) else { return }

@@ -55,16 +55,25 @@ public struct Triangle<Point: TriangulatablePoint>: Hashable where Point.Value.S
 }
 
 extension Triangle {
+    @inlinable
     public var pointA: Point { return points.a }
+    @inlinable
     public var pointB: Point { return points.b }
+    @inlinable
     public var pointC: Point { return points.c }
-    
+
+    @inlinable
     public var α: Angle { return angles.α }
+    @inlinable
     public var β: Angle { return angles.β }
+    @inlinable
     public var γ: Angle { return angles.γ }
-    
+
+    @inlinable
     public var a: Distance { return sides.a }
+    @inlinable
     public var b: Distance { return sides.b }
+    @inlinable
     public var c: Distance { return sides.c }
 }
 
@@ -81,8 +90,8 @@ extension Triangle {
         let sideB = abs(a.y - b.y)
         let sideC = (sideA * sideA + sideB * sideB).squareRoot()
         sides = (sideA, sideB, sideC)
-        let α = Angle.radians((sideA / sideC).asin())
-        let γ = Angle.radians(.pi / 2)
+        let α = Angle(radians: (sideA / sideC).asin())
+        let γ = Angle(radians: .pi / 2)
         angles = (α, .pi - γ - α, γ)
     }
     
@@ -115,9 +124,9 @@ extension Triangle {
         let cosβ = (sideASquare + sideCSquare - sideBSquare) / (2 * sideA * sideC)
         let cosγ = (sideASquare + sideBSquare - sideCSquare) / (2 * sideA * sideB)
         
-        let α = Angle.radians(cosα.acos())
-        let β = Angle.radians(cosβ.acos())
-        let γ = Angle.radians(cosγ.acos())
+        let α = Angle(radians: cosα.acos())
+        let β = Angle(radians: cosβ.acos())
+        let γ = Angle(radians: cosγ.acos())
         angles = (α, β, γ)
     }
 }

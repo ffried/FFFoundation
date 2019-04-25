@@ -18,40 +18,49 @@
 //  limitations under the License.
 //
 
-public protocol LazyProtocol: Container {
+public protocol LazyProtocol: MutableContainer {
+    typealias Constructor = () -> Value
+
     var value: Value { mutating get set }
+
+    init(_ constructor: @escaping Constructor)
+
+    mutating func reset()
 }
 
 public struct Lazy<Deferred>: LazyProtocol {
     public typealias Value = Deferred
-    public typealias Constructor = () -> Value
     
     private let constructor: Constructor
 
-    private var _value: Ref<Value?>
-    public var value: Value {
-        get {
-            if let val = _value.value { return val }
-            _value.value = constructor()
-            return self.value
-        }
+    private var _valueStorage: Ref<Deferred?>
+    private var _value: Deferred? {
+        get { return _valueStorage.value }
         set {
-            if !isKnownUniquelyReferenced(&_value) {
-                _value = .init(value: newValue)
+            if !isKnownUniquelyReferenced(&_valueStorage) {
+                _valueStorage = .init(value: newValue)
             } else {
-                _value.value = newValue
+                _valueStorage <- newValue
             }
         }
+    }
+    public var value: Deferred {
+        get {
+            if let val = _value { return val }
+            _valueStorage <- constructor()
+            return self.value
+        }
+        set { _value = newValue }
     }
     
     public init(_ constructor: @escaping Constructor) {
         self.constructor = constructor
-        _value = .init(value: nil)
+        _valueStorage = nil
     }
 
     public init(value: Value) {
         constructor = { value }
-        _value = .init(value: value)
+        _valueStorage = .init(value: value)
     }
     
     public init(other: Lazy) {
@@ -59,7 +68,7 @@ public struct Lazy<Deferred>: LazyProtocol {
     }
     
     public mutating func reset() {
-        self = .init(other: self)
+        _value = nil
     }
 }
 
@@ -75,7 +84,3 @@ extension Lazy: ExpressibleByFloatLiteral where Deferred: ExpressibleByFloatLite
 extension Lazy: ExpressibleByUnicodeScalarLiteral where Deferred: ExpressibleByUnicodeScalarLiteral {}
 extension Lazy: ExpressibleByExtendedGraphemeClusterLiteral where Deferred: ExpressibleByExtendedGraphemeClusterLiteral {}
 extension Lazy: ExpressibleByStringLiteral where Deferred: ExpressibleByStringLiteral {}
-
-extension Lazy: NestedContainer where Deferred: Container {
-    public typealias NestedValue = Deferred.Value
-}

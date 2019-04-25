@@ -47,7 +47,7 @@ extension TimerTests {
     static let __allTests__TimerTests = [
         ("testRepeatingTimerWithShortIntervalAndTolerance", testRepeatingTimerWithShortIntervalAndTolerance),
         ("testTimerFiringManually", testTimerFiringManually),
-        ("testTimerInvildatesOnDeinit", testTimerInvildatesOnDeinit),
+        ("testTimerInvalidatesOnDeinit", testTimerInvalidatesOnDeinit),
         ("testTimerWithShortIntervalAndNoTolerance", testTimerWithShortIntervalAndNoTolerance),
         ("testTimerWithShortIntervalAndTolerance", testTimerWithShortIntervalAndTolerance),
     ]

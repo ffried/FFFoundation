@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-public struct Angle<Value: FloatingPoint>: FloatingPoint where Value.Stride == Value {
+public struct Angle<Value: FloatingPoint>: FloatingPoint, CustomStringConvertible where Value.Stride == Value {
     public typealias Stride = Angle
     public typealias IntegerLiteralType = Value.IntegerLiteralType
     public typealias Exponent = Value.Exponent
@@ -30,6 +30,13 @@ public struct Angle<Value: FloatingPoint>: FloatingPoint where Value.Stride == V
 
     private var kind: Kind
     public private(set) var value: Value
+
+    public var description: String {
+        switch kind {
+        case .radians: return "\(value) radians"
+        case .degrees: return "\(value) degrees"
+        }
+    }
 
     private init(kind: Kind, value: Value) {
         (self.kind, self.value) = (kind, value)
@@ -71,10 +78,10 @@ public struct Angle<Value: FloatingPoint>: FloatingPoint where Value.Stride == V
         switch kind {
         case .radians:
             kind = .degrees
-            value *= .pi / 180
+            value *= 180 / .pi
         case .degrees:
             kind = .radians
-            value *= 180 / .pi
+            value *= .pi / 180
         }
     }
 

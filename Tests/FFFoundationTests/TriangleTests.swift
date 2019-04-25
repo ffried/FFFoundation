@@ -1,29 +1,6 @@
 import XCTest
 @testable import FFFoundation
 
-// Unfortunately, Darwin XCTest does not really support *all* FloatingPoint types.
-// https://github.com/apple/swift/blob/master/stdlib/public/SDK/XCTest/XCTest.swift#L379
-#if !os(Linux)
-internal func XCTAssertEqual<T: FloatingPoint>(_ expression1: @autoclosure () throws -> T, _ expression2: @autoclosure () throws -> T, accuracy: T, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {
-    XCTAssertNoThrow(try {
-        let (value1, value2) = (try expression1(), try expression2())
-        XCTAssert(!value1.isNaN && !value2.isNaN && abs(value1 - value2) <= accuracy,
-                  message().isEmpty ? "(\"\(value1)\") is not equal to (\"\(value2)\") +/- (\"\(accuracy)\")" : message(),
-                  file: file, line: line
-        )
-        }(), file: file, line: line)
-}
-internal func XCTAssertNotEqual<T: FloatingPoint>(_ expression1: @autoclosure () throws -> T, _ expression2: @autoclosure () throws -> T, accuracy: T, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {
-    XCTAssertNoThrow(try {
-        let (value1, value2) = (try expression1(), try expression2())
-        XCTAssert(value1.isNaN || value2.isNaN || abs(value1 - value2) > accuracy,
-                  message().isEmpty ? "(\"\(value1)\") is equal to (\"\(value2)\") +/- (\"\(accuracy)\")" : message(),
-                  file: file, line: line
-        )
-        }(), file: file, line: line)
-}
-#endif
-
 final class TriangleTests: XCTestCase {
     
     override func setUp() {
@@ -38,7 +15,7 @@ final class TriangleTests: XCTestCase {
 
     func testTriangleBeingEquatable() {
         let triangle1 = Triangle(orthogonallyOnCWithA: Point(x: 1, y: 1),
-                                b: Point(x: 3, y: 4))
+                                 b: Point(x: 3, y: 4))
         let triangle2 = Triangle(orthogonallyOnCWithA: Point(x: 2, y: 2),
                                  b: Point(x: 4, y: 5))
         XCTAssertEqual(triangle1, triangle2)
@@ -106,9 +83,9 @@ final class TriangleTests: XCTestCase {
         XCTAssertEqual(sut.a, a)
         XCTAssertEqual(sut.b, b)
         XCTAssertEqual(sut.c, c)
-        XCTAssertEqual(sut.α, Angle.radians(cosα.acos()))
-        XCTAssertEqual(sut.β, Angle.radians(cosβ.acos()))
-        XCTAssertEqual(sut.γ, Angle.radians(cosγ.acos()))
+        XCTAssertEqual(sut.α, .radians(cosα.acos()))
+        XCTAssertEqual(sut.β, .radians(cosβ.acos()))
+        XCTAssertEqual(sut.γ, .radians(cosγ.acos()))
     }
 
     func testTriangleWithAllPointsBeingTheSame() {

@@ -40,6 +40,8 @@
 		0714F321207B7229009900AC /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F31C207B7229009900AC /* TimerTests.swift */; };
 		0714F329207B7270009900AC /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0714F327207B7270009900AC /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07353D8621A837C40095E649 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07353D8521A837C40095E649 /* Observer.swift */; };
+		0737AFAC2271C3EF00E17208 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737AFAA2271C3D900E17208 /* TestHelpers.swift */; };
+		0737AFAE2271D81C00E17208 /* AngleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737AFA82271C3C800E17208 /* AngleTests.swift */; };
 		0742791421DF9EC600393E78 /* TypeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0742791321DF9EC600393E78 /* TypeDescription.swift */; };
 		0742791721DFA11F00393E78 /* TypeDescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0742791521DFA10000393E78 /* TypeDescriptionTests.swift */; };
 		0747F0D1210AEF62009BFDAD /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747F0D0210AEF62009BFDAD /* Logging.swift */; };
@@ -98,6 +100,8 @@
 		0714F327207B7270009900AC /* FFFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFoundation.h; sourceTree = "<group>"; };
 		0714F328207B7270009900AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07353D8521A837C40095E649 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		0737AFA82271C3C800E17208 /* AngleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleTests.swift; sourceTree = "<group>"; };
+		0737AFAA2271C3D900E17208 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		0742791321DF9EC600393E78 /* TypeDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeDescription.swift; sourceTree = "<group>"; };
 		0742791521DFA10000393E78 /* TypeDescriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDescriptionTests.swift; sourceTree = "<group>"; };
 		0747F0D0210AEF62009BFDAD /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
@@ -197,12 +201,14 @@
 		0714F318207B7229009900AC /* FFFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
+				0737AFA82271C3C800E17208 /* AngleTests.swift */,
 				0714F31A207B7229009900AC /* DiffTests.swift */,
 				07F657F52150F980004BCAD7 /* StringClassesExtensionTests.swift */,
 				0714F31C207B7229009900AC /* TimerTests.swift */,
 				0714F31B207B7229009900AC /* TriangleTests.swift */,
 				0742791521DFA10000393E78 /* TypeDescriptionTests.swift */,
 				0714F31D207B7229009900AC /* Info.plist */,
+				0737AFAA2271C3D900E17208 /* TestHelpers.swift */,
 			);
 			name = FFFoundationTests;
 			path = ../Tests/FFFoundationTests;
@@ -394,6 +400,8 @@
 				0714F320207B7229009900AC /* TriangleTests.swift in Sources */,
 				0714F321207B7229009900AC /* TimerTests.swift in Sources */,
 				07F657F72150F9BA004BCAD7 /* StringClassesExtensionTests.swift in Sources */,
+				0737AFAE2271D81C00E17208 /* AngleTests.swift in Sources */,
+				0737AFAC2271C3EF00E17208 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

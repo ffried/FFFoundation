@@ -10,7 +10,7 @@ env:
   global:
     - XCODE_PROJECT="Xcode/FFFoundation.xcodeproj"
     - XCODE_SCHEME=FFFoundation
-    - SWIFT_VERSION=5.0
+    - SWIFT_VERSION=5.0.1
 
 jobs:
   include:

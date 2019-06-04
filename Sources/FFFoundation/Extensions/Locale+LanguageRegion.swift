@@ -21,8 +21,12 @@
 import struct Foundation.Locale
 
 extension Locale {
+    #if compiler(<5.1)
+    private typealias Self = Locale
+    #endif
+
     public static var localizedDeviceLanguage: String? {
-        return preferredLanguages.first.map(self.init).flatMap {
+        return preferredLanguages.first.map(Self.init).flatMap {
             $0.languageCode.flatMap($0.localizedString(forLanguageCode:))
         }
     }

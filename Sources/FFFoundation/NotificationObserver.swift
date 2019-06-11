@@ -23,6 +23,7 @@ import class Foundation.NotificationCenter
 import class Foundation.OperationQueue
 import protocol Foundation.NSObjectProtocol
 
+@available(*, deprecated, message: "Use auto-removing observers of notification center directly")
 public final class NotificationObserver {
     public typealias ObserverBlock = (Notification) -> Void
     

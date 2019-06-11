@@ -50,7 +50,7 @@
             where Formats.Element == VisualFormatType {
                 return formats.flatMap { constraints(withVisualFormat: $0, options: options, metrics: metrics, views: views) }
         }
-}
+    }
     
     @available(macOS 10.7, iOS 6.0, tvOS 6.0, *)
     extension Sequence where Element == NSLayoutConstraint {

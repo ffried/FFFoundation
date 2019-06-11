@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		070F27DD213036AD00A485E7 /* Optional+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F27DC213036AD00A485E7 /* Optional+Container.swift */; };
-		070F27DF2130371900A485E7 /* Container+ConditionalConformances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F27DE2130371900A485E7 /* Container+ConditionalConformances.swift */; };
 		0714F2FB207B720E009900AC /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2DE207B720E009900AC /* NotificationObserver.swift */; };
 		0714F2FD207B720E009900AC /* DispatchHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2DF207B720E009900AC /* DispatchHelpers.swift */; };
 		0714F2FE207B720E009900AC /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E0207B720E009900AC /* CacheManager.swift */; };
@@ -17,9 +15,7 @@
 		0714F301207B720E009900AC /* GeometricValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E3207B720E009900AC /* GeometricValue.swift */; };
 		0714F302207B720E009900AC /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E4207B720E009900AC /* Ref.swift */; };
 		0714F303207B720E009900AC /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E5207B720E009900AC /* Timer.swift */; };
-		0714F304207B720E009900AC /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E6207B720E009900AC /* Container.swift */; };
 		0714F305207B720E009900AC /* NSLayoutConstraint+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E8207B720E009900AC /* NSLayoutConstraint+FFAdditions.swift */; };
-		0714F306207B720E009900AC /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E9207B720E009900AC /* SequenceExtensions.swift */; };
 		0714F307207B720E009900AC /* Application+NameAndVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2EA207B720E009900AC /* Application+NameAndVersion.swift */; };
 		0714F308207B720E009900AC /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2EB207B720E009900AC /* DictionaryExtensions.swift */; };
 		0714F309207B720E009900AC /* OperationQueue+FFAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2EC207B720E009900AC /* OperationQueue+FFAdditions.swift */; };
@@ -39,7 +35,6 @@
 		0714F320207B7229009900AC /* TriangleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F31B207B7229009900AC /* TriangleTests.swift */; };
 		0714F321207B7229009900AC /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F31C207B7229009900AC /* TimerTests.swift */; };
 		0714F329207B7270009900AC /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0714F327207B7270009900AC /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07353D8621A837C40095E649 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07353D8521A837C40095E649 /* Observer.swift */; };
 		0737AFAC2271C3EF00E17208 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737AFAA2271C3D900E17208 /* TestHelpers.swift */; };
 		0737AFAE2271D81C00E17208 /* AngleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737AFA82271C3C800E17208 /* AngleTests.swift */; };
 		0742791421DF9EC600393E78 /* TypeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0742791321DF9EC600393E78 /* TypeDescription.swift */; };
@@ -50,6 +45,7 @@
 		0767345B207B751F004B708E /* FFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07673458207B7513004B708E /* FFFoundation.framework */; };
 		0774CFD921F77F5B00C3D5CB /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CFD821F77F5B00C3D5CB /* Future.swift */; };
 		07842FE5214A855800A65D82 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2F4207B720E009900AC /* AttributedString.swift */; };
+		078FFD5422AD5215006BDA82 /* CoW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078FFD5322AD5215006BDA82 /* CoW.swift */; };
 		07F657F72150F9BA004BCAD7 /* StringClassesExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F657F52150F980004BCAD7 /* StringClassesExtensionTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,8 +60,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		070F27DC213036AD00A485E7 /* Optional+Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Container.swift"; sourceTree = "<group>"; };
-		070F27DE2130371900A485E7 /* Container+ConditionalConformances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+ConditionalConformances.swift"; sourceTree = "<group>"; };
 		0714F2DE207B720E009900AC /* NotificationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
 		0714F2DF207B720E009900AC /* DispatchHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchHelpers.swift; sourceTree = "<group>"; };
 		0714F2E0207B720E009900AC /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
@@ -74,9 +68,7 @@
 		0714F2E3207B720E009900AC /* GeometricValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometricValue.swift; sourceTree = "<group>"; };
 		0714F2E4207B720E009900AC /* Ref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
 		0714F2E5207B720E009900AC /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
-		0714F2E6207B720E009900AC /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		0714F2E8207B720E009900AC /* NSLayoutConstraint+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+FFAdditions.swift"; sourceTree = "<group>"; };
-		0714F2E9207B720E009900AC /* SequenceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
 		0714F2EA207B720E009900AC /* Application+NameAndVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Application+NameAndVersion.swift"; sourceTree = "<group>"; };
 		0714F2EB207B720E009900AC /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		0714F2EC207B720E009900AC /* OperationQueue+FFAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OperationQueue+FFAdditions.swift"; sourceTree = "<group>"; };
@@ -99,7 +91,6 @@
 		0714F31D207B7229009900AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0714F327207B7270009900AC /* FFFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFoundation.h; sourceTree = "<group>"; };
 		0714F328207B7270009900AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07353D8521A837C40095E649 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		0737AFA82271C3C800E17208 /* AngleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleTests.swift; sourceTree = "<group>"; };
 		0737AFAA2271C3D900E17208 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		0742791321DF9EC600393E78 /* TypeDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeDescription.swift; sourceTree = "<group>"; };
@@ -110,6 +101,7 @@
 		07673458207B7513004B708E /* FFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07673459207B7513004B708E /* FFFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0774CFD821F77F5B00C3D5CB /* Future.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		078FFD5322AD5215006BDA82 /* CoW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoW.swift; sourceTree = "<group>"; };
 		07F657F52150F980004BCAD7 /* StringClassesExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringClassesExtensionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,13 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				0714F2F5207B720E009900AC /* Atomic.swift */,
-				0714F2E6207B720E009900AC /* Container.swift */,
-				070F27DE2130371900A485E7 /* Container+ConditionalConformances.swift */,
 				0714F2F8207B720E009900AC /* Lazy.swift */,
-				07353D8521A837C40095E649 /* Observer.swift */,
-				070F27DC213036AD00A485E7 /* Optional+Container.swift */,
 				0714F2E4207B720E009900AC /* Ref.swift */,
 				0714F2FA207B720E009900AC /* Weak.swift */,
+				078FFD5322AD5215006BDA82 /* CoW.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -191,7 +180,6 @@
 				0714F2F1207B720E009900AC /* NSAttributedStringExtensions.swift */,
 				0714F2E8207B720E009900AC /* NSLayoutConstraint+FFAdditions.swift */,
 				0714F2EC207B720E009900AC /* OperationQueue+FFAdditions.swift */,
-				0714F2E9207B720E009900AC /* SequenceExtensions.swift */,
 				0714F2F2207B720E009900AC /* String+Classes.swift */,
 				0714F2ED207B720E009900AC /* StringExtensions.swift */,
 			);
@@ -356,7 +344,6 @@
 				07842FE5214A855800A65D82 /* AttributedString.swift in Sources */,
 				0714F2FB207B720E009900AC /* NotificationObserver.swift in Sources */,
 				0714F302207B720E009900AC /* Ref.swift in Sources */,
-				070F27DF2130371900A485E7 /* Container+ConditionalConformances.swift in Sources */,
 				0714F314207B720E009900AC /* Togglable.swift in Sources */,
 				0747F0D1210AEF62009BFDAD /* Logging.swift in Sources */,
 				0714F316207B720E009900AC /* Triangle.swift in Sources */,
@@ -364,20 +351,18 @@
 				0774CFD921F77F5B00C3D5CB /* Future.swift in Sources */,
 				0714F30D207B720E009900AC /* FileManager+Directories.swift in Sources */,
 				0714F30E207B720E009900AC /* NSAttributedStringExtensions.swift in Sources */,
-				07353D8621A837C40095E649 /* Observer.swift in Sources */,
 				0714F300207B720E009900AC /* Angle.swift in Sources */,
 				0747F0D3210B047A009BFDAD /* OSLogLinux.swift in Sources */,
 				0714F301207B720E009900AC /* GeometricValue.swift in Sources */,
 				0714F313207B720E009900AC /* AppGroup.swift in Sources */,
 				0714F2FE207B720E009900AC /* CacheManager.swift in Sources */,
 				0714F2FF207B720E009900AC /* Diff.swift in Sources */,
-				0714F306207B720E009900AC /* SequenceExtensions.swift in Sources */,
 				0714F317207B720E009900AC /* Weak.swift in Sources */,
-				070F27DD213036AD00A485E7 /* Optional+Container.swift in Sources */,
 				0766A090212B0C2E00D579CF /* Size.swift in Sources */,
 				0714F2FD207B720E009900AC /* DispatchHelpers.swift in Sources */,
 				0714F310207B720E009900AC /* Point.swift in Sources */,
 				0714F30F207B720E009900AC /* String+Classes.swift in Sources */,
+				078FFD5422AD5215006BDA82 /* CoW.swift in Sources */,
 				0714F30B207B720E009900AC /* Locale+LanguageRegion.swift in Sources */,
 				0714F307207B720E009900AC /* Application+NameAndVersion.swift in Sources */,
 				0742791421DF9EC600393E78 /* TypeDescription.swift in Sources */,
@@ -385,7 +370,6 @@
 				0714F315207B720E009900AC /* Lazy.swift in Sources */,
 				0714F305207B720E009900AC /* NSLayoutConstraint+FFAdditions.swift in Sources */,
 				0714F30A207B720E009900AC /* StringExtensions.swift in Sources */,
-				0714F304207B720E009900AC /* Container.swift in Sources */,
 				0714F303207B720E009900AC /* Timer.swift in Sources */,
 				0714F312207B720E009900AC /* Atomic.swift in Sources */,
 			);

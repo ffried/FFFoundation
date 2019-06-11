@@ -30,6 +30,7 @@ public struct Size<Value: Numeric & Hashable>: Hashable {
 }
 
 extension Size {
+    @inlinable
     public static var zero: Size { return .init(width: 0, height: 0) }
 }
 

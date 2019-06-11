@@ -55,7 +55,7 @@ public final class CacheManager<Object: Cachable> {
         }
     }
 
-    private var memoryCache: Atomic<[ObjectIdentification: Object]> = .init(value: [:])
+    @Atomic private var memoryCache: [ObjectIdentification: Object] = [:]
 
     public init(name: Name = .default, shouldMigrateFromOldNamingBehavior: Bool = true) throws {
         self.name = name
@@ -122,12 +122,12 @@ public final class CacheManager<Object: Cachable> {
     }
 
     public func object(for identification: ObjectIdentification) throws -> Object? {
-        return try memoryCache.value[identification] ?? object(at: cacheURL(for: identification))
+        return try memoryCache[identification] ?? object(at: cacheURL(for: identification))
     }
 
     public func cache(object: Object, for identification: ObjectIdentification) throws {
         try cache(object: object, at: cacheURL(for: identification))
-        memoryCache.withValueVoid { $0[identification] = object }
+        $memoryCache.withValueVoid { $0[identification] = object }
     }
 
     public func cacheObject(for identification: ObjectIdentification, at url: URL) throws {
@@ -144,7 +144,7 @@ public final class CacheManager<Object: Cachable> {
         return url
     }
 
-    public func clearMemoryCache() { memoryCache.withValueVoid { $0.removeAll() } }
+    public func clearMemoryCache() { $memoryCache.withValueVoid { $0.removeAll() } }
     public func clearCache() throws {
         clearMemoryCache()
         guard fileManager.fileExists(at: folder) else { return }

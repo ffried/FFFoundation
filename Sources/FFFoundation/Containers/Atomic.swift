@@ -22,16 +22,16 @@ import Dispatch
 
 @propertyWrapper
 public final class Atomic<Guarded> {
-    private var _value: Guarded
+    private var _wrappedValue: Guarded
     private let queue: DispatchQueue
 
-    public var value: Guarded {
+    public var wrappedValue: Guarded {
         precondition(notOn: queue)
-        return queue.sync { _value }
+        return queue.sync { _wrappedValue }
     }
 
     public init(value: Guarded, qos: DispatchQoS) {
-        _value = value
+        _wrappedValue = value
         queue = DispatchQueue(label: "net.ffried.containers.atomic<\(String(describing: Guarded.self).lowercased())>.queue", qos: qos)
     }
 
@@ -41,13 +41,13 @@ public final class Atomic<Guarded> {
 
     public subscript<T>(keyPath: KeyPath<Guarded, T>) -> T {
         precondition(notOn: queue)
-        return queue.sync { _value[keyPath: keyPath] }
+        return queue.sync { _wrappedValue[keyPath: keyPath] }
     }
 
     public subscript<T>(keyPath: WritableKeyPath<Guarded, T>) -> T {
         get {
             precondition(notOn: queue)
-            return queue.sync { _value[keyPath: keyPath] }
+            return queue.sync { _wrappedValue[keyPath: keyPath] }
         }
         set {
             precondition(notOn: queue)
@@ -58,7 +58,7 @@ public final class Atomic<Guarded> {
     @inline(__always)
     private func withMutableValue<T>(do work: (inout Guarded) throws -> T) rethrows -> T {
         precondition(on: queue)
-        return try work(&_value)
+        return try work(&_wrappedValue)
     }
 
     public func withValue<T>(do work: (inout Guarded) throws -> T) rethrows -> T {
@@ -73,12 +73,12 @@ public final class Atomic<Guarded> {
 
     public func coordinated(with other: Atomic) -> (Guarded, Guarded) {
         precondition(notOn: queue)
-        return queue.sync { (_value, queue === other.queue ? other._value : other.value) }
+        return queue.sync { (_wrappedValue, queue === other.queue ? other._wrappedValue : other.wrappedValue) }
     }
 
     public func coordinated<OtherGuarded>(with other: Atomic<OtherGuarded>) -> (Guarded, OtherGuarded) {
         precondition(notOn: queue)
-        return queue.sync { (_value, other.value) }
+        return queue.sync { (_wrappedValue, other.wrappedValue) }
     }
 
     public func combined(with other: Atomic) -> Atomic<(Guarded, Guarded)> {
@@ -106,7 +106,7 @@ extension Atomic: Equatable where Guarded: Equatable {
 
 extension Atomic: Hashable where Guarded: Hashable {
     public func hash(into hasher: inout Hasher) {
-        hasher.combine(value)
+        hasher.combine(wrappedValue)
     }
 }
 
@@ -119,7 +119,7 @@ extension Atomic: Comparable where Guarded: Comparable {
 
 extension Atomic: Encodable where Guarded: Encodable {
     public func encode(to encoder: Encoder) throws {
-        try value.encode(to: encoder)
+        try wrappedValue.encode(to: encoder)
     }
 }
 

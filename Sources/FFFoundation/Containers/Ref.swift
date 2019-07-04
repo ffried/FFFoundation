@@ -19,11 +19,15 @@
 //
 
 @propertyWrapper
-public final class Ref<Referenced> {
-    public var value: Referenced
+public final class Ref<Referenced>: Copyable {
+    public var wrappedValue: Referenced
 
     public init(initialValue: Referenced) {
-        value = initialValue
+        wrappedValue = initialValue
+    }
+
+    public func copy() -> Self {
+        return .init(initialValue: wrappedValue)
     }
 }
 
@@ -35,25 +39,25 @@ extension Ref where Referenced: ExpressibleByNilLiteral {
 // MARK: - Conditional Conformances
 extension Ref: Equatable where Referenced: Equatable {
     public static func ==(lhs: Ref, rhs: Ref) -> Bool {
-        return lhs.value == rhs.value
+        return lhs.wrappedValue == rhs.wrappedValue
     }
 }
 
 extension Ref: Hashable where Referenced: Hashable {
     public func hash(into hasher: inout Hasher) {
-        hasher.combine(value)
+        hasher.combine(wrappedValue)
     }
 }
 
 extension Ref: Comparable where Referenced: Comparable {
     public static func <(lhs: Ref, rhs: Ref) -> Bool {
-        return lhs.value < rhs.value
+        return lhs.wrappedValue < rhs.wrappedValue
     }
 }
 
 extension Ref: Encodable where Referenced: Encodable {
     public func encode(to encoder: Encoder) throws {
-        try value.encode(to: encoder)
+        try wrappedValue.encode(to: encoder)
     }
 }
 

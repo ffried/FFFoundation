@@ -22,16 +22,17 @@
 public struct Lazy<Deferred> {
     private let constructor: () -> Deferred
 
-    @CoW private var _value: Deferred? = nil
+    @CoW @Ref private var _wrappedValue: Deferred? = nil
 
-    public var value: Deferred {
+    public var wrappedValue: Deferred {
         get {
-            if let val = _value { return val }
-            $_value.updateIgnoringCoW(with: constructor())
-            return self.value
+            if let val = _wrappedValue { return val }
+            // FIXME: Shouldn't $_wrappedValue now look through CoW and directly assign Ref?
+            $_wrappedValue.wrappedValue.wrappedValue = constructor()
+            return self.wrappedValue
         }
         set {
-            _value = newValue
+            _wrappedValue = newValue
         }
     }
 
@@ -48,7 +49,7 @@ public struct Lazy<Deferred> {
     }
     
     public mutating func reset() {
-        _value = nil
+        _wrappedValue = nil
     }
 }
 
@@ -61,25 +62,25 @@ extension Lazy where Deferred: ExpressibleByNilLiteral {
 // MARK: - Conditional Conformance
 extension Lazy: Equatable where Deferred: Equatable {
     public static func ==(lhs: Lazy, rhs: Lazy) -> Bool {
-        return lhs.value == rhs.value
+        return lhs.wrappedValue == rhs.wrappedValue
     }
 }
 
 extension Lazy: Hashable where Deferred: Hashable {
     public func hash(into hasher: inout Hasher) {
-        hasher.combine(value)
+        hasher.combine(wrappedValue)
     }
 }
 
 extension Lazy: Comparable where Deferred: Comparable {
     public static func <(lhs: Lazy, rhs: Lazy) -> Bool {
-        return lhs.value < rhs.value
+        return lhs.wrappedValue < rhs.wrappedValue
     }
 }
 
 extension Lazy: Encodable where Deferred: Encodable {
     public func encode(to encoder: Encoder) throws {
-        try value.encode(to: encoder)
+        try wrappedValue.encode(to: encoder)
     }
 }
 

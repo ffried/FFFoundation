@@ -17,27 +17,31 @@
 //  limitations under the License.
 //
 
-@propertyWrapper
-public struct CoW<Value> {
-    @Ref private var _value: Value
+public protocol Copyable: AnyObject {
+    func copy() -> Self
+}
 
-    public var value: Value {
-        get { return _value }
+@propertyWrapper
+public struct CoW<Value: Copyable> {
+    private var _wrappedValue: Value
+
+    public var wrappedValue: Value {
+        get { return _wrappedValue }
         set {
-            if !isKnownUniquelyReferenced(&$_value) {
-                $_value = .init(initialValue: newValue)
-            } else {
-                _value = newValue
+            _wrappedValue = newValue
+            if !isKnownUniquelyReferenced(&_wrappedValue) {
+                _wrappedValue = _wrappedValue.copy()
             }
         }
     }
 
-    public init(initialValue: Value) {
-        $_value = .init(initialValue: initialValue)
+    public var projectedValue: Value {
+        get { return wrappedValue }
+        set { wrappedValue = newValue }
     }
 
-    internal func updateIgnoringCoW(with newValue: Value) {
-        _value = newValue
+    public init(initialValue: Value) {
+        _wrappedValue = initialValue
     }
 }
 
@@ -49,25 +53,25 @@ extension CoW where Value: ExpressibleByNilLiteral {
 // MARK: - Conditional Conformances
 extension CoW: Equatable where Value: Equatable {
     public static func ==(lhs: CoW, rhs: CoW) -> Bool {
-        return lhs.value == rhs.value
+        return lhs.wrappedValue == rhs.wrappedValue
     }
 }
 
 extension CoW: Hashable where Value: Hashable {
     public func hash(into hasher: inout Hasher) {
-        hasher.combine(value)
+        hasher.combine(wrappedValue)
     }
 }
 
 extension CoW: Comparable where Value: Comparable {
     public static func <(lhs: CoW, rhs: CoW) -> Bool {
-        return lhs.value < rhs.value
+        return lhs.wrappedValue < rhs.wrappedValue
     }
 }
 
 extension CoW: Encodable where Value: Encodable {
     public func encode(to encoder: Encoder) throws {
-        try value.encode(to: encoder)
+        try wrappedValue.encode(to: encoder)
     }
 }
 

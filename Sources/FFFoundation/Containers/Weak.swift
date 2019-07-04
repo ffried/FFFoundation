@@ -20,24 +20,24 @@
 
 @propertyWrapper
 public struct Weak<Object: AnyObject> {
-    public weak var value: Object?
+    public weak var wrappedValue: Object?
 
     @inlinable
-    public var wasReleased: Bool { return value == nil }
+    public var wasReleased: Bool { return wrappedValue == nil }
 
     public init(object: Object) {
-        value = object
+        wrappedValue = object
     }
 
     public init(initialValue: Object?) {
-        value = initialValue
+        wrappedValue = initialValue
     }
 }
 
 extension Sequence {
     @inlinable
     public func nonReleasedObjects<Object>() -> [Object] where Element == Weak<Object> {
-        return compactMap { $0.value }
+        return compactMap { $0.wrappedValue }
     }
 }
 
@@ -60,13 +60,13 @@ extension Weak where Object: ExpressibleByNilLiteral {
 // MARK: - Conditional Conformances
 extension Weak: Equatable where Object: Equatable {
     public static func ==(lhs: Weak, rhs: Weak) -> Bool {
-        return lhs.value == rhs.value
+        return lhs.wrappedValue == rhs.wrappedValue
     }
 }
 
 extension Weak: Hashable where Object: Hashable {
     public func hash(into hasher: inout Hasher) {
-        hasher.combine(value)
+        hasher.combine(wrappedValue)
     }
 }
 
@@ -78,7 +78,7 @@ extension Weak: Hashable where Object: Hashable {
 
 extension Weak: Encodable where Object: Encodable {
     public func encode(to encoder: Encoder) throws {
-        try value.encode(to: encoder)
+        try wrappedValue.encode(to: encoder)
     }
 }
 

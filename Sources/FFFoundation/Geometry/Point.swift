@@ -18,6 +18,7 @@
 //  limitations under the License.
 //
 
+@frozen
 public struct Point<Value: Numeric & Hashable>: Hashable {
     public var x: Value
     public var y: Value

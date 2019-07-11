@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0700918622D5E20D00666C08 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0700918522D5E20D00666C08 /* UserDefault.swift */; };
+		0700918822D741DF00666C08 /* UserDefaultsStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0700918722D741DF00666C08 /* UserDefaultsStorable.swift */; };
+		0700918B22D75D5600666C08 /* UserDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0700918922D75D3C00666C08 /* UserDefaultTests.swift */; };
 		0714F2FB207B720E009900AC /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2DE207B720E009900AC /* NotificationObserver.swift */; };
 		0714F2FD207B720E009900AC /* DispatchHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2DF207B720E009900AC /* DispatchHelpers.swift */; };
 		0714F2FE207B720E009900AC /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2E0207B720E009900AC /* CacheManager.swift */; };
@@ -60,6 +63,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0700918522D5E20D00666C08 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		0700918722D741DF00666C08 /* UserDefaultsStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorable.swift; sourceTree = "<group>"; };
+		0700918922D75D3C00666C08 /* UserDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultTests.swift; sourceTree = "<group>"; };
 		0714F2DE207B720E009900AC /* NotificationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
 		0714F2DF207B720E009900AC /* DispatchHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchHelpers.swift; sourceTree = "<group>"; };
 		0714F2E0207B720E009900AC /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
@@ -132,6 +138,8 @@
 				0714F2E4207B720E009900AC /* Ref.swift */,
 				0714F2FA207B720E009900AC /* Weak.swift */,
 				078FFD5322AD5215006BDA82 /* CoW.swift */,
+				0700918522D5E20D00666C08 /* UserDefault.swift */,
+				0700918722D741DF00666C08 /* UserDefaultsStorable.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -195,8 +203,9 @@
 				0714F31C207B7229009900AC /* TimerTests.swift */,
 				0714F31B207B7229009900AC /* TriangleTests.swift */,
 				0742791521DFA10000393E78 /* TypeDescriptionTests.swift */,
-				0714F31D207B7229009900AC /* Info.plist */,
 				0737AFAA2271C3D900E17208 /* TestHelpers.swift */,
+				0700918922D75D3C00666C08 /* UserDefaultTests.swift */,
+				0714F31D207B7229009900AC /* Info.plist */,
 			);
 			name = FFFoundationTests;
 			path = ../Tests/FFFoundationTests;
@@ -354,9 +363,11 @@
 				0714F300207B720E009900AC /* Angle.swift in Sources */,
 				0747F0D3210B047A009BFDAD /* OSLogLinux.swift in Sources */,
 				0714F301207B720E009900AC /* GeometricValue.swift in Sources */,
+				0700918822D741DF00666C08 /* UserDefaultsStorable.swift in Sources */,
 				0714F313207B720E009900AC /* AppGroup.swift in Sources */,
 				0714F2FE207B720E009900AC /* CacheManager.swift in Sources */,
 				0714F2FF207B720E009900AC /* Diff.swift in Sources */,
+				0700918622D5E20D00666C08 /* UserDefault.swift in Sources */,
 				0714F317207B720E009900AC /* Weak.swift in Sources */,
 				0766A090212B0C2E00D579CF /* Size.swift in Sources */,
 				0714F2FD207B720E009900AC /* DispatchHelpers.swift in Sources */,
@@ -379,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				0700918B22D75D5600666C08 /* UserDefaultTests.swift in Sources */,
 				0742791721DFA11F00393E78 /* TypeDescriptionTests.swift in Sources */,
 				0714F31F207B7229009900AC /* DiffTests.swift in Sources */,
 				0714F320207B7229009900AC /* TriangleTests.swift in Sources */,
@@ -453,7 +465,7 @@
 					"$(inherited)",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-DXcode";
@@ -523,7 +535,7 @@
 					"$(inherited)",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";

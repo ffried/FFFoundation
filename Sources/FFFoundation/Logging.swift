@@ -21,7 +21,7 @@
 import os
 #endif
 
-@available(macOS 10.12, macOSApplicationExtension 10.12, *)
 extension OSLog {
+    @usableFromInline
     internal static let ffFoundation = OSLog(subsystem: "net.ffried.fffoundation", category: "Default")
 }

@@ -25,8 +25,9 @@ extension Dictionary {
      - parameter lhs:  The dictionary in which to merge the `rhs` dictionary.
      - parameter rhs:  The dictionary to merge into `lhs`.
      */
+    @inlinable
     public static func +=(lhs: inout Dictionary<Key, Value>, rhs: Dictionary<Key, Value>) {
-        rhs.forEach { lhs.updateValue($1, forKey: $0) }
+        lhs.merge(rhs, uniquingKeysWith: { $1 })
     }
     
     /**
@@ -37,9 +38,8 @@ extension Dictionary {
      
      - returns: A new dictionary containing all keys and values of `lhs` and `rhs`.
      */
+    @inlinable
     public static func +(lhs: Dictionary<Key, Value>, rhs: Dictionary<Key, Value>) -> Dictionary<Key, Value> {
-        var newDict = lhs
-        rhs.forEach { newDict.updateValue($1, forKey: $0) }
-        return newDict
+        return lhs.merging(rhs, uniquingKeysWith: { $1 })
     }
 }

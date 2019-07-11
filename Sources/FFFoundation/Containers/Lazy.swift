@@ -28,6 +28,7 @@ public struct Lazy<Deferred> {
         get {
             if let val = _wrappedValue { return val }
             // FIXME: Shouldn't $_wrappedValue now look through CoW and directly assign Ref?
+//            $_wrappedValue.wrappedValue = constructor()
             $_wrappedValue.wrappedValue.wrappedValue = constructor()
             return self.wrappedValue
         }

@@ -19,7 +19,6 @@ fileprivate extension UserDefaultKey {
 
     static let inexisting = UserDefaultKey(rawValue: "text_inexisting")
 
-
     static let allTestKeys: Set = [
         boolKey,
         intKey,

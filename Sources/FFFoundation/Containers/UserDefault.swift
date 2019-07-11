@@ -20,8 +20,9 @@
 import Foundation
 
 @frozen
-public struct UserDefaultKey: RawRepresentable, Hashable, Codable, CustomStringConvertible {
+public struct UserDefaultKey: RawRepresentable, Hashable, Codable, CustomStringConvertible, ExpressibleByStringLiteral {
     public typealias RawValue = String
+    public typealias StringLiteralType = RawValue
 
     public let rawValue: RawValue
 
@@ -30,6 +31,11 @@ public struct UserDefaultKey: RawRepresentable, Hashable, Codable, CustomStringC
 
     public init(rawValue: RawValue) {
         self.rawValue = rawValue
+    }
+
+    @inlinable
+    public init(stringLiteral value: StringLiteralType) {
+        self.init(rawValue: value)
     }
 }
 
@@ -43,6 +49,12 @@ public struct UserDefault<Value: PrimitiveUserDefaultStorable> {
         get { return Value.get(from: userDefaults, forKey: key.rawValue) ?? defaultValue }
         nonmutating set { newValue.set(to: userDefaults, forKey: key.rawValue) }
     }
+
+    #if canImport(SwiftUI)
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    @inlinable
+    public var wrapperValue: Binding<Value> { return binding }
+    #endif
 
     public init(userDefaults: UserDefaults = .standard, key: UserDefaultKey, defaultValue: Value) {
         self.userDefaults = userDefaults
@@ -136,9 +148,7 @@ extension UserDefault {
         }
     }
 
-    public var wrapperValue: Publisher {
-        return Publisher(userDefault: self)
-    }
+    public var publisher: Publisher { return Publisher(userDefault: self) }
 }
 #endif
 

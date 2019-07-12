@@ -50,11 +50,12 @@ public struct UserDefault<Value: PrimitiveUserDefaultStorable> {
         nonmutating set { newValue.set(to: userDefaults, forKey: key.rawValue) }
     }
 
-    #if canImport(SwiftUI)
-    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
-    @inlinable
-    public var wrapperValue: Binding<Value> { return binding }
-    #endif
+    // FIXME: This currently doesn't work in projects with a deployment target < iOS 13, macOS 10.15, ...
+//    #if canImport(SwiftUI)
+//    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+//    @inlinable
+//    public var wrapperValue: Binding<Value> { return binding }
+//    #endif
 
     public init(userDefaults: UserDefaults = .standard, key: UserDefaultKey, defaultValue: Value) {
         self.userDefaults = userDefaults

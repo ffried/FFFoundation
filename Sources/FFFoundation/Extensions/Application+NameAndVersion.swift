@@ -29,6 +29,7 @@
     #endif
 
     extension Application {
+        @inline(__always)
         private var bundle: Bundle { return .main }
         
         public var identifier: String? {
@@ -41,6 +42,7 @@
         
         public var localizedName: String? {
             return bundle.localizedInfoDictionary?["CFBundleDisplayName"] as? String
+                ?? bundle.infoDictionary?["CFBundleDisplayName"] as? String
         }
         
         public var version: String? {

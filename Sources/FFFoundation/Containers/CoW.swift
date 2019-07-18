@@ -35,19 +35,19 @@ public struct CoW<Value: Copyable> {
         }
     }
 
-    public var projectedValue: Value {
-        get { return wrappedValue }
-        set { wrappedValue = newValue }
+    public init(wrappedValue: Value) {
+        _wrappedValue = wrappedValue
     }
 
+    @inlinable
     public init(initialValue: Value) {
-        _wrappedValue = initialValue
+        self.init(wrappedValue: initialValue)
     }
 }
 
 extension CoW where Value: ExpressibleByNilLiteral {
     @inlinable
-    public init() { self.init(initialValue: nil) }
+    public init() { self.init(wrappedValue: nil) }
 }
 
 // MARK: - Conditional Conformances
@@ -77,55 +77,55 @@ extension CoW: Encodable where Value: Encodable {
 
 extension CoW: Decodable where Value: Decodable {
     public init(from decoder: Decoder) throws {
-        try self.init(initialValue: Value(from: decoder))
+        try self.init(wrappedValue: Value(from: decoder))
     }
 }
 
 extension CoW: ExpressibleByNilLiteral where Value: ExpressibleByNilLiteral {
     public init(nilLiteral: ()) {
-        self.init(initialValue: Value(nilLiteral: nilLiteral))
+        self.init(wrappedValue: Value(nilLiteral: nilLiteral))
     }
 }
 
 extension CoW: ExpressibleByBooleanLiteral where Value: ExpressibleByBooleanLiteral {
     public init(booleanLiteral value: Value.BooleanLiteralType) {
-        self.init(initialValue: Value(booleanLiteral: value))
+        self.init(wrappedValue: Value(booleanLiteral: value))
     }
 }
 
 extension CoW: ExpressibleByIntegerLiteral where Value: ExpressibleByIntegerLiteral {
     public init(integerLiteral value: Value.IntegerLiteralType) {
-        self.init(initialValue: Value(integerLiteral: value))
+        self.init(wrappedValue: Value(integerLiteral: value))
     }
 }
 
 extension CoW: ExpressibleByFloatLiteral where Value: ExpressibleByFloatLiteral {
     public init(floatLiteral value: Value.FloatLiteralType) {
-        self.init(initialValue: Value(floatLiteral: value))
+        self.init(wrappedValue: Value(floatLiteral: value))
     }
 }
 
 extension CoW: ExpressibleByUnicodeScalarLiteral where Value: ExpressibleByUnicodeScalarLiteral {
     public init(unicodeScalarLiteral value: Value.UnicodeScalarLiteralType) {
-        self.init(initialValue: Value(unicodeScalarLiteral: value))
+        self.init(wrappedValue: Value(unicodeScalarLiteral: value))
     }
 }
 
 extension CoW: ExpressibleByExtendedGraphemeClusterLiteral where Value: ExpressibleByExtendedGraphemeClusterLiteral {
     public init(extendedGraphemeClusterLiteral value: Value.ExtendedGraphemeClusterLiteralType) {
-        self.init(initialValue: Value(extendedGraphemeClusterLiteral: value))
+        self.init(wrappedValue: Value(extendedGraphemeClusterLiteral: value))
     }
 }
 
 extension CoW: ExpressibleByStringLiteral where Value: ExpressibleByStringLiteral {
     public init(stringLiteral value: Value.StringLiteralType) {
-        self.init(initialValue: Value(stringLiteral: value))
+        self.init(wrappedValue: Value(stringLiteral: value))
     }
 }
 
 extension CoW: ExpressibleByStringInterpolation where Value: ExpressibleByStringInterpolation {
     public init(stringInterpolation: Value.StringInterpolation) {
-        self.init(initialValue: Value(stringInterpolation: stringInterpolation))
+        self.init(wrappedValue: Value(stringInterpolation: stringInterpolation))
     }
 }
 

@@ -22,18 +22,24 @@
 public final class Ref<Referenced>: Copyable {
     public var wrappedValue: Referenced
 
-    public init(initialValue: Referenced) {
-        wrappedValue = initialValue
+    public init(wrappedValue: Referenced) {
+        self.wrappedValue = wrappedValue
     }
 
+    @inlinable
+    public convenience init(initialValue: Referenced) {
+        self.init(wrappedValue: initialValue)
+    }
+
+    @inlinable
     public func copy() -> Self {
-        return .init(initialValue: wrappedValue)
+        return .init(wrappedValue: wrappedValue)
     }
 }
 
 extension Ref where Referenced: ExpressibleByNilLiteral {
     @inlinable
-    public convenience init() { self.init(initialValue: nil) }
+    public convenience init() { self.init(wrappedValue: nil) }
 }
 
 // MARK: - Conditional Conformances
@@ -64,54 +70,54 @@ extension Ref: Encodable where Referenced: Encodable {
 extension Ref: Decodable where Referenced: Decodable {
     public convenience init(from decoder: Decoder) throws {
         let value = try Referenced(from: decoder)
-        self.init(initialValue: value)
+        self.init(wrappedValue: value)
     }
 }
 
 extension Ref: ExpressibleByNilLiteral where Referenced: ExpressibleByNilLiteral {
     public convenience init(nilLiteral: ()) {
-        self.init(initialValue: Referenced(nilLiteral: nilLiteral))
+        self.init(wrappedValue: Referenced(nilLiteral: nilLiteral))
     }
 }
 
 extension Ref: ExpressibleByBooleanLiteral where Referenced: ExpressibleByBooleanLiteral {
     public convenience init(booleanLiteral value: Referenced.BooleanLiteralType) {
-        self.init(initialValue: Referenced(booleanLiteral: value))
+        self.init(wrappedValue: Referenced(booleanLiteral: value))
     }
 }
 
 extension Ref: ExpressibleByIntegerLiteral where Referenced: ExpressibleByIntegerLiteral {
     public convenience init(integerLiteral value: Referenced.IntegerLiteralType) {
-        self.init(initialValue: Referenced(integerLiteral: value))
+        self.init(wrappedValue: Referenced(integerLiteral: value))
     }
 }
 
 extension Ref: ExpressibleByFloatLiteral where Referenced: ExpressibleByFloatLiteral {
     public convenience init(floatLiteral value: Referenced.FloatLiteralType) {
-        self.init(initialValue: Referenced(floatLiteral: value))
+        self.init(wrappedValue: Referenced(floatLiteral: value))
     }
 }
 
 extension Ref: ExpressibleByUnicodeScalarLiteral where Referenced: ExpressibleByUnicodeScalarLiteral {
     public convenience init(unicodeScalarLiteral value: Referenced.UnicodeScalarLiteralType) {
-        self.init(initialValue: Referenced(unicodeScalarLiteral: value))
+        self.init(wrappedValue: Referenced(unicodeScalarLiteral: value))
     }
 }
 
 extension Ref: ExpressibleByExtendedGraphemeClusterLiteral where Referenced: ExpressibleByExtendedGraphemeClusterLiteral {
     public convenience init(extendedGraphemeClusterLiteral value: Referenced.ExtendedGraphemeClusterLiteralType) {
-        self.init(initialValue: Referenced(extendedGraphemeClusterLiteral: value))
+        self.init(wrappedValue: Referenced(extendedGraphemeClusterLiteral: value))
     }
 }
 
 extension Ref: ExpressibleByStringLiteral where Referenced: ExpressibleByStringLiteral {
     public convenience init(stringLiteral value: Referenced.StringLiteralType) {
-        self.init(initialValue: Referenced(stringLiteral: value))
+        self.init(wrappedValue: Referenced(stringLiteral: value))
     }
 }
 
 extension Ref: ExpressibleByStringInterpolation where Referenced: ExpressibleByStringInterpolation {
     public convenience init(stringInterpolation: Referenced.StringInterpolation) {
-        self.init(initialValue: Referenced(stringInterpolation: stringInterpolation))
+        self.init(wrappedValue: Referenced(stringInterpolation: stringInterpolation))
     }
 }

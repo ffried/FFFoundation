@@ -32,6 +32,8 @@ public struct AppGroup: RawRepresentable, Hashable, Codable {
     public var identifier: String { return rawValue }
     
     public init(rawValue: RawValue) { self.rawValue = rawValue }
+
+    @inlinable
     public init(identifier: String) { self.init(rawValue: identifier) }
 }
 

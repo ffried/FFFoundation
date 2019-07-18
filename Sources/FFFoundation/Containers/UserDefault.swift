@@ -51,16 +51,26 @@ public struct UserDefault<Value: PrimitiveUserDefaultStorable> {
     }
 
     // FIXME: This currently doesn't work in projects with a deployment target < iOS 13, macOS 10.15, ...
-//    #if canImport(SwiftUI)
-//    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
-//    @inlinable
-//    public var wrapperValue: Binding<Value> { return binding }
-//    #endif
+    #if canImport(SwiftUI)
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    @inlinable
+    public var projectedValue: Binding<Value> { return binding }
+    #endif
 
     public init(userDefaults: UserDefaults = .standard, key: UserDefaultKey, defaultValue: Value) {
         self.userDefaults = userDefaults
         self.key = key
         self.defaultValue = defaultValue
+    }
+
+    @inlinable
+    public init(userDefaults: UserDefaults = .standard, key: UserDefaultKey, wrappedValue: Value) {
+        self.init(userDefaults: userDefaults, key: key, defaultValue: wrappedValue)
+    }
+
+    @inlinable
+    public init(userDefaults: UserDefaults = .standard, key: UserDefaultKey, initialValue: Value) {
+        self.init(userDefaults: userDefaults, key: key, defaultValue: initialValue)
     }
 }
 
@@ -140,7 +150,9 @@ extension UserDefault {
         private let observation: KVObserver
 
         init(userDefault: UserDefault) {
-            observation = KVObserver(object: userDefault.userDefaults, keyPath: userDefault.key.rawValue, options: [], handler: {})
+            observation = KVObserver(object: userDefault.userDefaults,
+                                     keyPath: userDefault.key.rawValue,
+                                     options: [], handler: {})
             observation.handler = { [weak self] in self?.upstream.send(userDefault.wrappedValue) }
         }
 

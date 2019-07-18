@@ -31,7 +31,7 @@ public final class Future<Value> {
     private let workerQueue: DispatchQueue
 
     private init(workerQueue: DispatchQueue?, state: State) {
-        $state = .init(initialValue: state)
+        _state = .init(wrappedValue: state)
         self.workerQueue = workerQueue ?? DispatchQueue(label: "net.ffried.Future<\(Value.self)>.workerQueue", qos: .default, attributes: .concurrent)
     }
 
@@ -48,7 +48,7 @@ public final class Future<Value> {
     }
 
     public func complete(with value: Value) {
-        let handlers: Array<Handler> = $state.withValue {
+        let handlers: Array<Handler> = _state.withValue {
             guard case .unfinished(let handlers) = $0 else {
                 preconditionFailure("\(type(of: self)) is being completed more than once!")
             }
@@ -59,7 +59,7 @@ public final class Future<Value> {
     }
 
     public func whenDone(do work: @escaping Handler) {
-        let value: Value? = $state.withValue {
+        let value: Value? = _state.withValue {
             switch $0 {
             case .unfinished(let handlers):
                 $0 = .unfinished(handlers + CollectionOfOne(work))

@@ -22,14 +22,12 @@
 public struct Lazy<Deferred> {
     private let constructor: () -> Deferred
 
-    @CoW @Ref private var _wrappedValue: Deferred? = nil
+    @CoW @Ref private var _wrappedValue: Deferred? = nil // TODO: Why is `= nil` necessary?
 
     public var wrappedValue: Deferred {
         get {
             if let val = _wrappedValue { return val }
-            // FIXME: Shouldn't $_wrappedValue now look through CoW and directly assign Ref?
-//            $_wrappedValue.wrappedValue = constructor()
-            $_wrappedValue.wrappedValue.wrappedValue = constructor()
+            __wrappedValue.wrappedValue.wrappedValue = constructor()
             return self.wrappedValue
         }
         set {
@@ -37,16 +35,22 @@ public struct Lazy<Deferred> {
         }
     }
 
-    private init(_constructor: @escaping () -> Deferred) {
-        constructor = _constructor
+    public init(constructor: @escaping () -> Deferred) {
+        self.constructor = constructor
     }
 
-    public init(initialValue constructor: @escaping @autoclosure () -> Deferred) {
-        self.init(_constructor: constructor)
+    @inlinable
+    public init(wrappedValue constructor: @escaping @autoclosure () -> Deferred) {
+        self.init(constructor: constructor)
     }
-    
+
+    @inlinable
+    public init(initialValue constructor: @escaping @autoclosure () -> Deferred) {
+        self.init(constructor: constructor)
+    }
+
     public init(other: Lazy) {
-        self.init(_constructor: other.constructor)
+        self.init(constructor: other.constructor)
     }
     
     public mutating func reset() {
@@ -57,7 +61,7 @@ public struct Lazy<Deferred> {
 // MARK: - Property Wrappers
 extension Lazy where Deferred: ExpressibleByNilLiteral {
     @inlinable
-    public init() { self.init(initialValue: nil) }
+    public init() { self.init(wrappedValue: nil) }
 }
 
 // MARK: - Conditional Conformance
@@ -88,54 +92,54 @@ extension Lazy: Encodable where Deferred: Encodable {
 extension Lazy: Decodable where Deferred: Decodable {
     public init(from decoder: Decoder) throws {
         let value = try Deferred(from: decoder)
-        self.init(initialValue: value)
+        self.init(wrappedValue: value)
     }
 }
 
 extension Lazy: ExpressibleByNilLiteral where Deferred: ExpressibleByNilLiteral {
     public init(nilLiteral: ()) {
-        self.init(initialValue: Deferred(nilLiteral: nilLiteral))
+        self.init(wrappedValue: Deferred(nilLiteral: nilLiteral))
     }
 }
 
 extension Lazy: ExpressibleByBooleanLiteral where Deferred: ExpressibleByBooleanLiteral {
     public init(booleanLiteral value: Deferred.BooleanLiteralType) {
-        self.init(initialValue: Deferred(booleanLiteral: value))
+        self.init(wrappedValue: Deferred(booleanLiteral: value))
     }
 }
 
 extension Lazy: ExpressibleByIntegerLiteral where Deferred: ExpressibleByIntegerLiteral {
     public init(integerLiteral value: Deferred.IntegerLiteralType) {
-        self.init(initialValue: Deferred(integerLiteral: value))
+        self.init(wrappedValue: Deferred(integerLiteral: value))
     }
 }
 
 extension Lazy: ExpressibleByFloatLiteral where Deferred: ExpressibleByFloatLiteral {
     public init(floatLiteral value: Deferred.FloatLiteralType) {
-        self.init(initialValue: Deferred(floatLiteral: value))
+        self.init(wrappedValue: Deferred(floatLiteral: value))
     }
 }
 
 extension Lazy: ExpressibleByUnicodeScalarLiteral where Deferred: ExpressibleByUnicodeScalarLiteral {
     public init(unicodeScalarLiteral value: Deferred.UnicodeScalarLiteralType) {
-        self.init(initialValue: Deferred(unicodeScalarLiteral: value))
+        self.init(wrappedValue: Deferred(unicodeScalarLiteral: value))
     }
 }
 
 extension Lazy: ExpressibleByExtendedGraphemeClusterLiteral where Deferred: ExpressibleByExtendedGraphemeClusterLiteral {
     public init(extendedGraphemeClusterLiteral value: Deferred.ExtendedGraphemeClusterLiteralType) {
-        self.init(initialValue: Deferred(extendedGraphemeClusterLiteral: value))
+        self.init(wrappedValue: Deferred(extendedGraphemeClusterLiteral: value))
     }
 }
 
 extension Lazy: ExpressibleByStringLiteral where Deferred: ExpressibleByStringLiteral {
     public init(stringLiteral value: Deferred.StringLiteralType) {
-        self.init(initialValue: Deferred(stringLiteral: value))
+        self.init(wrappedValue: Deferred(stringLiteral: value))
     }
 }
 
 extension Lazy: ExpressibleByStringInterpolation where Deferred: ExpressibleByStringInterpolation {
     public init(stringInterpolation: Deferred.StringInterpolation) {
-        self.init(initialValue: Deferred(stringInterpolation: stringInterpolation))
+        self.init(wrappedValue: Deferred(stringInterpolation: stringInterpolation))
     }
 }

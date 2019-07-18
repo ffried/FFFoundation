@@ -35,8 +35,13 @@ public final class Atomic<Guarded> {
         queue = DispatchQueue(label: "net.ffried.containers.atomic<\(String(describing: Guarded.self).lowercased())>.queue", qos: qos)
     }
 
+    public convenience init(wrappedValue: Guarded) {
+        self.init(value: wrappedValue, qos: .default)
+    }
+
+    @inlinable
     public convenience init(initialValue: Guarded) {
-        self.init(value: initialValue, qos: .default)
+        self.init(wrappedValue: initialValue)
     }
 
     public subscript<T>(keyPath: KeyPath<Guarded, T>) -> T {
@@ -93,7 +98,7 @@ public final class Atomic<Guarded> {
 // MARK: - Property Wrapper
 extension Atomic where Guarded: ExpressibleByNilLiteral {
     @inlinable
-    public convenience init() { self.init(initialValue: nil) }
+    public convenience init() { self.init(wrappedValue: nil) }
 }
 
 // MARK: - Conditional Conformances
@@ -125,55 +130,55 @@ extension Atomic: Encodable where Guarded: Encodable {
 
 extension Atomic: Decodable where Guarded: Decodable {
     public convenience init(from decoder: Decoder) throws {
-        try self.init(initialValue: Guarded(from: decoder))
+        try self.init(wrappedValue: Guarded(from: decoder))
     }
 }
 
 extension Atomic: ExpressibleByNilLiteral where Guarded: ExpressibleByNilLiteral {
     public convenience init(nilLiteral: ()) {
-        self.init(initialValue: Guarded(nilLiteral: nilLiteral))
+        self.init(wrappedValue: Guarded(nilLiteral: nilLiteral))
     }
 }
 
 extension Atomic: ExpressibleByBooleanLiteral where Guarded: ExpressibleByBooleanLiteral {
     public convenience init(booleanLiteral value: Guarded.BooleanLiteralType) {
-        self.init(initialValue: Guarded(booleanLiteral: value))
+        self.init(wrappedValue: Guarded(booleanLiteral: value))
     }
 }
 
 extension Atomic: ExpressibleByIntegerLiteral where Guarded: ExpressibleByIntegerLiteral {
     public convenience init(integerLiteral value: Guarded.IntegerLiteralType) {
-        self.init(initialValue: Guarded(integerLiteral: value))
+        self.init(wrappedValue: Guarded(integerLiteral: value))
     }
 }
 
 extension Atomic: ExpressibleByFloatLiteral where Guarded: ExpressibleByFloatLiteral {
     public convenience init(floatLiteral value: Guarded.FloatLiteralType) {
-        self.init(initialValue: Guarded(floatLiteral: value))
+        self.init(wrappedValue: Guarded(floatLiteral: value))
     }
 }
 
 extension Atomic: ExpressibleByUnicodeScalarLiteral where Guarded: ExpressibleByUnicodeScalarLiteral {
     public convenience init(unicodeScalarLiteral value: Guarded.UnicodeScalarLiteralType) {
-        self.init(initialValue: Guarded(unicodeScalarLiteral: value))
+        self.init(wrappedValue: Guarded(unicodeScalarLiteral: value))
     }
 }
 
 extension Atomic: ExpressibleByExtendedGraphemeClusterLiteral where Guarded: ExpressibleByExtendedGraphemeClusterLiteral {
     public convenience init(extendedGraphemeClusterLiteral value: Guarded.ExtendedGraphemeClusterLiteralType) {
-        self.init(initialValue: Guarded(extendedGraphemeClusterLiteral: value))
+        self.init(wrappedValue: Guarded(extendedGraphemeClusterLiteral: value))
     }
 }
 
 extension Atomic: ExpressibleByStringLiteral where Guarded: ExpressibleByStringLiteral {
     public convenience init(stringLiteral value: Guarded.StringLiteralType) {
-        self.init(initialValue: Guarded(stringLiteral: value))
+        self.init(wrappedValue: Guarded(stringLiteral: value))
     }
 }
 
 extension Atomic: ExpressibleByStringInterpolation where Guarded: ExpressibleByStringInterpolation {
     public convenience init(stringInterpolation: Guarded.StringInterpolation) {
-        self.init(initialValue: Guarded(stringInterpolation: stringInterpolation))
+        self.init(wrappedValue: Guarded(stringInterpolation: stringInterpolation))
     }
 }
 

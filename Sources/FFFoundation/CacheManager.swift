@@ -127,7 +127,7 @@ public final class CacheManager<Object: Cachable> {
 
     public func cache(object: Object, for identification: ObjectIdentification) throws {
         try cache(object: object, at: cacheURL(for: identification))
-        $memoryCache.withValueVoid { $0[identification] = object }
+        _memoryCache.withValueVoid { $0[identification] = object }
     }
 
     public func cacheObject(for identification: ObjectIdentification, at url: URL) throws {
@@ -144,7 +144,7 @@ public final class CacheManager<Object: Cachable> {
         return url
     }
 
-    public func clearMemoryCache() { $memoryCache.withValueVoid { $0.removeAll() } }
+    public func clearMemoryCache() { _memoryCache.withValueVoid { $0.removeAll() } }
     public func clearCache() throws {
         clearMemoryCache()
         guard fileManager.fileExists(at: folder) else { return }

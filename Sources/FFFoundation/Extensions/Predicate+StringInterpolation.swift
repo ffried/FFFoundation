@@ -66,7 +66,7 @@ extension NSPredicate.Format {
         public init(literalCapacity: Int, interpolationCount: Int) {
             format = ""
             args = []
-            format.reserveCapacity(literalCapacity)
+            format.reserveCapacity(literalCapacity + interpolationCount * 2)
             args.reserveCapacity(interpolationCount)
         }
 

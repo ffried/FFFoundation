@@ -26,7 +26,7 @@ public struct CoW<Value: Copyable> {
     private var _wrappedValue: Value
 
     public var wrappedValue: Value {
-        get { return _wrappedValue }
+        get { _wrappedValue }
         set {
             _wrappedValue = newValue
             if !isKnownUniquelyReferenced(&_wrappedValue) {
@@ -53,7 +53,7 @@ extension CoW where Value: ExpressibleByNilLiteral {
 // MARK: - Conditional Conformances
 extension CoW: Equatable where Value: Equatable {
     public static func ==(lhs: CoW, rhs: CoW) -> Bool {
-        return lhs.wrappedValue == rhs.wrappedValue
+        lhs.wrappedValue == rhs.wrappedValue
     }
 }
 
@@ -65,7 +65,7 @@ extension CoW: Hashable where Value: Hashable {
 
 extension CoW: Comparable where Value: Comparable {
     public static func <(lhs: CoW, rhs: CoW) -> Bool {
-        return lhs.wrappedValue < rhs.wrappedValue
+        lhs.wrappedValue < rhs.wrappedValue
     }
 }
 
@@ -128,4 +128,3 @@ extension CoW: ExpressibleByStringInterpolation where Value: ExpressibleByString
         self.init(wrappedValue: Value(stringInterpolation: stringInterpolation))
     }
 }
-

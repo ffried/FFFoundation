@@ -67,7 +67,7 @@ extension Lazy where Deferred: ExpressibleByNilLiteral {
 // MARK: - Conditional Conformance
 extension Lazy: Equatable where Deferred: Equatable {
     public static func ==(lhs: Lazy, rhs: Lazy) -> Bool {
-        return lhs.wrappedValue == rhs.wrappedValue
+        lhs.wrappedValue == rhs.wrappedValue
     }
 }
 
@@ -79,7 +79,7 @@ extension Lazy: Hashable where Deferred: Hashable {
 
 extension Lazy: Comparable where Deferred: Comparable {
     public static func <(lhs: Lazy, rhs: Lazy) -> Bool {
-        return lhs.wrappedValue < rhs.wrappedValue
+        lhs.wrappedValue < rhs.wrappedValue
     }
 }
 

@@ -56,7 +56,7 @@ extension CodableUserDefaultsStorable {
 extension Bool: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        return userDefaults.bool(forKey: key)
+        userDefaults.bool(forKey: key)
     }
 
     @inlinable
@@ -68,7 +68,7 @@ extension Bool: PrimitiveUserDefaultStorable {
 extension Int: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        return userDefaults.integer(forKey: key)
+        userDefaults.integer(forKey: key)
     }
 
     @inlinable
@@ -80,7 +80,7 @@ extension Int: PrimitiveUserDefaultStorable {
 extension Float: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        return userDefaults.float(forKey: key)
+        userDefaults.float(forKey: key)
     }
 
     @inlinable
@@ -92,7 +92,7 @@ extension Float: PrimitiveUserDefaultStorable {
 extension Double: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        return userDefaults.double(forKey: key)
+        userDefaults.double(forKey: key)
     }
 
     @inlinable
@@ -104,7 +104,7 @@ extension Double: PrimitiveUserDefaultStorable {
 extension String: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        return userDefaults.string(forKey: key)
+        userDefaults.string(forKey: key)
     }
 
     @inlinable
@@ -116,7 +116,7 @@ extension String: PrimitiveUserDefaultStorable {
 extension Data: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        return userDefaults.data(forKey: key)
+        userDefaults.data(forKey: key)
     }
 
     @inlinable
@@ -128,7 +128,7 @@ extension Data: PrimitiveUserDefaultStorable {
 extension URL: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        return userDefaults.url(forKey: key)
+        userDefaults.url(forKey: key)
     }
 
     @inlinable
@@ -140,7 +140,7 @@ extension URL: PrimitiveUserDefaultStorable {
 extension Optional: PrimitiveUserDefaultStorable where Wrapped: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        return Wrapped.get(from: userDefaults, forKey: key)
+        Wrapped.get(from: userDefaults, forKey: key)
     }
 
     @inlinable
@@ -155,7 +155,7 @@ extension Optional: PrimitiveUserDefaultStorable where Wrapped: PrimitiveUserDef
 extension Array: PrimitiveUserDefaultStorable where Element: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        return userDefaults.array(forKey: key) as? Self
+        userDefaults.array(forKey: key) as? Self
     }
 
     @inlinable
@@ -167,7 +167,7 @@ extension Array: PrimitiveUserDefaultStorable where Element: PrimitiveUserDefaul
 extension ContiguousArray: PrimitiveUserDefaultStorable where Element: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        return (userDefaults.array(forKey: key) as? Array<Element>).map(Self.init)
+        (userDefaults.array(forKey: key) as? Array<Element>).map(Self.init)
     }
 
     @inlinable
@@ -179,7 +179,7 @@ extension ContiguousArray: PrimitiveUserDefaultStorable where Element: Primitive
 extension Set: PrimitiveUserDefaultStorable where Element: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        return (userDefaults.array(forKey: key) as? Array<Element>).map(Self.init)
+        (userDefaults.array(forKey: key) as? Array<Element>).map(Self.init)
     }
 
     @inlinable
@@ -191,7 +191,7 @@ extension Set: PrimitiveUserDefaultStorable where Element: PrimitiveUserDefaultS
 extension Dictionary: PrimitiveUserDefaultStorable where Key == String, Value: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        return userDefaults.dictionary(forKey: key) as? Self
+        userDefaults.dictionary(forKey: key) as? Self
     }
 
     @inlinable

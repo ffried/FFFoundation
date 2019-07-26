@@ -49,6 +49,10 @@
 		0774CFD921F77F5B00C3D5CB /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CFD821F77F5B00C3D5CB /* Future.swift */; };
 		07842FE5214A855800A65D82 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2F4207B720E009900AC /* AttributedString.swift */; };
 		078FFD5422AD5215006BDA82 /* CoW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078FFD5322AD5215006BDA82 /* CoW.swift */; };
+		07F26D6C22E7035A002C7246 /* AnyBindableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F26D6B22E7035A002C7246 /* AnyBindableObject.swift */; };
+		07F26D7622E9E358002C7246 /* Lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F26D7522E9E358002C7246 /* Lens.swift */; };
+		07F26D7822E9EE7C002C7246 /* Predicate+StringInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F26D7722E9EE7C002C7246 /* Predicate+StringInterpolation.swift */; };
+		07F26D7D22E9F8B1002C7246 /* NSPredicate_InterpolationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F26D7C22E9F8B1002C7246 /* NSPredicate_InterpolationTests.swift */; };
 		07F657F72150F9BA004BCAD7 /* StringClassesExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F657F52150F980004BCAD7 /* StringClassesExtensionTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +112,10 @@
 		07673459207B7513004B708E /* FFFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0774CFD821F77F5B00C3D5CB /* Future.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
 		078FFD5322AD5215006BDA82 /* CoW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoW.swift; sourceTree = "<group>"; };
+		07F26D6B22E7035A002C7246 /* AnyBindableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnyBindableObject.swift; path = ../../../../../../../../System/Volumes/Data/Users/florianfriedrich/Documents/Projects/FFFoundation/Sources/FFFoundation/Containers/AnyBindableObject.swift; sourceTree = "<group>"; };
+		07F26D7522E9E358002C7246 /* Lens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Lens.swift; path = ../../../../../../../../System/Volumes/Data/Users/florianfriedrich/Documents/Projects/FFFoundation/Sources/FFFoundation/Containers/Lens.swift; sourceTree = "<group>"; };
+		07F26D7722E9EE7C002C7246 /* Predicate+StringInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Predicate+StringInterpolation.swift"; path = "../../../../../../../../System/Volumes/Data/Users/florianfriedrich/Documents/Projects/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift"; sourceTree = "<group>"; };
+		07F26D7C22E9F8B1002C7246 /* NSPredicate_InterpolationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSPredicate_InterpolationTests.swift; sourceTree = "<group>"; };
 		07F657F52150F980004BCAD7 /* StringClassesExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringClassesExtensionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,13 +141,15 @@
 		070F27DB2130369000A485E7 /* Containers */ = {
 			isa = PBXGroup;
 			children = (
+				07F26D6B22E7035A002C7246 /* AnyBindableObject.swift */,
 				0714F2F5207B720E009900AC /* Atomic.swift */,
-				0714F2F8207B720E009900AC /* Lazy.swift */,
-				0714F2E4207B720E009900AC /* Ref.swift */,
-				0714F2FA207B720E009900AC /* Weak.swift */,
 				078FFD5322AD5215006BDA82 /* CoW.swift */,
+				0714F2F8207B720E009900AC /* Lazy.swift */,
+				07F26D7522E9E358002C7246 /* Lens.swift */,
+				0714F2E4207B720E009900AC /* Ref.swift */,
 				0700918522D5E20D00666C08 /* UserDefault.swift */,
 				0700918722D741DF00666C08 /* UserDefaultsStorable.swift */,
+				0714F2FA207B720E009900AC /* Weak.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -190,6 +200,7 @@
 				0714F2EC207B720E009900AC /* OperationQueue+FFAdditions.swift */,
 				0714F2F2207B720E009900AC /* String+Classes.swift */,
 				0714F2ED207B720E009900AC /* StringExtensions.swift */,
+				07F26D7722E9EE7C002C7246 /* Predicate+StringInterpolation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,11 +210,12 @@
 			children = (
 				0737AFA82271C3C800E17208 /* AngleTests.swift */,
 				0714F31A207B7229009900AC /* DiffTests.swift */,
+				07F26D7C22E9F8B1002C7246 /* NSPredicate_InterpolationTests.swift */,
 				07F657F52150F980004BCAD7 /* StringClassesExtensionTests.swift */,
+				0737AFAA2271C3D900E17208 /* TestHelpers.swift */,
 				0714F31C207B7229009900AC /* TimerTests.swift */,
 				0714F31B207B7229009900AC /* TriangleTests.swift */,
 				0742791521DFA10000393E78 /* TypeDescriptionTests.swift */,
-				0737AFAA2271C3D900E17208 /* TestHelpers.swift */,
 				0700918922D75D3C00666C08 /* UserDefaultTests.swift */,
 				0714F31D207B7229009900AC /* Info.plist */,
 			);
@@ -351,6 +363,7 @@
 			buildActionMask = 0;
 			files = (
 				07842FE5214A855800A65D82 /* AttributedString.swift in Sources */,
+				07F26D7822E9EE7C002C7246 /* Predicate+StringInterpolation.swift in Sources */,
 				0714F2FB207B720E009900AC /* NotificationObserver.swift in Sources */,
 				0714F302207B720E009900AC /* Ref.swift in Sources */,
 				0714F314207B720E009900AC /* Togglable.swift in Sources */,
@@ -374,10 +387,12 @@
 				0714F310207B720E009900AC /* Point.swift in Sources */,
 				0714F30F207B720E009900AC /* String+Classes.swift in Sources */,
 				078FFD5422AD5215006BDA82 /* CoW.swift in Sources */,
+				07F26D6C22E7035A002C7246 /* AnyBindableObject.swift in Sources */,
 				0714F30B207B720E009900AC /* Locale+LanguageRegion.swift in Sources */,
 				0714F307207B720E009900AC /* Application+NameAndVersion.swift in Sources */,
 				0742791421DF9EC600393E78 /* TypeDescription.swift in Sources */,
 				0714F309207B720E009900AC /* OperationQueue+FFAdditions.swift in Sources */,
+				07F26D7622E9E358002C7246 /* Lens.swift in Sources */,
 				0714F315207B720E009900AC /* Lazy.swift in Sources */,
 				0714F305207B720E009900AC /* NSLayoutConstraint+FFAdditions.swift in Sources */,
 				0714F30A207B720E009900AC /* StringExtensions.swift in Sources */,
@@ -395,6 +410,7 @@
 				0714F31F207B7229009900AC /* DiffTests.swift in Sources */,
 				0714F320207B7229009900AC /* TriangleTests.swift in Sources */,
 				0714F321207B7229009900AC /* TimerTests.swift in Sources */,
+				07F26D7D22E9F8B1002C7246 /* NSPredicate_InterpolationTests.swift in Sources */,
 				07F657F72150F9BA004BCAD7 /* StringClassesExtensionTests.swift in Sources */,
 				0737AFAE2271D81C00E17208 /* AngleTests.swift in Sources */,
 				0737AFAC2271C3EF00E17208 /* TestHelpers.swift in Sources */,

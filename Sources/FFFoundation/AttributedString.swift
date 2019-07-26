@@ -31,7 +31,7 @@ public struct AttributedString: ReferenceConvertible {
 
     private var _attrString: CFMutableAttributedString
     private var attrString: CFMutableAttributedString {
-        get { return _attrString }
+        get { _attrString }
         set {
             if !isKnownUniquelyReferenced(&_attrString) {
                 _attrString = CFAttributedStringCreateMutableCopy(kCFAllocatorDefault, 0, newValue)
@@ -41,11 +41,11 @@ public struct AttributedString: ReferenceConvertible {
         }
     }
 
-    public var string: String { return CFAttributedStringGetString(attrString) as String }
-    public var length: Int { return CFAttributedStringGetLength(attrString) }
+    public var string: String { CFAttributedStringGetString(attrString) as String }
+    public var length: Int { CFAttributedStringGetLength(attrString) }
 
-    public var startIndex: Index { return string.startIndex }
-    public var endIndex: Index { return string.endIndex }
+    public var startIndex: Index { string.startIndex }
+    public var endIndex: Index { string.endIndex }
 
     fileprivate init(attrString: CFMutableAttributedString) {
         _attrString = attrString

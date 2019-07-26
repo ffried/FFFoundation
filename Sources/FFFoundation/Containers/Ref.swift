@@ -22,6 +22,11 @@
 public final class Ref<Referenced>: Copyable {
     public var wrappedValue: Referenced
 
+    public var projectedValue: Lens<Referenced> {
+        Lens(getter: { self.wrappedValue },
+             setter: { self.wrappedValue = $0 })
+    }
+
     public init(wrappedValue: Referenced) {
         self.wrappedValue = wrappedValue
     }
@@ -45,7 +50,7 @@ extension Ref where Referenced: ExpressibleByNilLiteral {
 // MARK: - Conditional Conformances
 extension Ref: Equatable where Referenced: Equatable {
     public static func ==(lhs: Ref, rhs: Ref) -> Bool {
-        return lhs.wrappedValue == rhs.wrappedValue
+        lhs.wrappedValue == rhs.wrappedValue
     }
 }
 
@@ -57,7 +62,7 @@ extension Ref: Hashable where Referenced: Hashable {
 
 extension Ref: Comparable where Referenced: Comparable {
     public static func <(lhs: Ref, rhs: Ref) -> Bool {
-        return lhs.wrappedValue < rhs.wrappedValue
+        lhs.wrappedValue < rhs.wrappedValue
     }
 }
 

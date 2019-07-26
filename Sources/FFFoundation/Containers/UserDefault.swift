@@ -27,7 +27,7 @@ public struct UserDefaultKey: RawRepresentable, Hashable, Codable, CustomStringC
     public let rawValue: RawValue
 
     @inlinable
-    public var description: String { return rawValue }
+    public var description: String { rawValue }
 
     public init(rawValue: RawValue) {
         self.rawValue = rawValue
@@ -46,16 +46,15 @@ public struct UserDefault<Value: PrimitiveUserDefaultStorable> {
     public let defaultValue: Value
 
     public var wrappedValue: Value {
-        get { return Value.get(from: userDefaults, forKey: key.rawValue) ?? defaultValue }
+        get { Value.get(from: userDefaults, forKey: key.rawValue) ?? defaultValue }
         nonmutating set { newValue.set(to: userDefaults, forKey: key.rawValue) }
     }
 
-    // FIXME: This currently doesn't work in projects with a deployment target < iOS 13, macOS 10.15, ...
-//    #if canImport(SwiftUI)
-//    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
-//    @inlinable
-//    public var projectedValue: Binding<Value> { return binding }
-//    #endif
+    @inlinable
+    public var projectedValue: Lens<Value> {
+        Lens(getter: { self.wrappedValue },
+             setter: { self.wrappedValue = $0 })
+    }
 
     public init(userDefaults: UserDefaults = .standard, key: UserDefaultKey, defaultValue: Value) {
         self.userDefaults = userDefaults
@@ -64,12 +63,12 @@ public struct UserDefault<Value: PrimitiveUserDefaultStorable> {
     }
 
     @inlinable
-    public init(userDefaults: UserDefaults = .standard, key: UserDefaultKey, wrappedValue: Value) {
+    public init(wrappedValue: Value, userDefaults: UserDefaults = .standard, key: UserDefaultKey) {
         self.init(userDefaults: userDefaults, key: key, defaultValue: wrappedValue)
     }
 
     @inlinable
-    public init(userDefaults: UserDefaults = .standard, key: UserDefaultKey, initialValue: Value) {
+    public init(initialValue: Value, userDefaults: UserDefaults = .standard, key: UserDefaultKey) {
         self.init(userDefaults: userDefaults, key: key, defaultValue: initialValue)
     }
 }
@@ -161,7 +160,7 @@ extension UserDefault {
         }
     }
 
-    public var publisher: Publisher { return Publisher(userDefault: self) }
+    public var publisher: Publisher { Publisher(userDefault: self) }
 }
 #endif
 
@@ -172,8 +171,8 @@ import SwiftUI
 extension UserDefault: BindingConvertible {
     @inlinable
     public var binding: Binding<Value> {
-        return Binding(getValue: { self.wrappedValue },
-                       setValue: { self.wrappedValue = $0 })
+        Binding(getValue: { self.wrappedValue },
+                setValue: { self.wrappedValue = $0 })
     }
 }
 #endif

@@ -23,7 +23,7 @@ public struct Weak<Object: AnyObject> {
     public weak var wrappedValue: Object?
 
     @inlinable
-    public var wasReleased: Bool { return wrappedValue == nil }
+    public var wasReleased: Bool { wrappedValue == nil }
 
     public init(object: Object) {
         wrappedValue = object
@@ -60,7 +60,7 @@ extension Weak where Object: ExpressibleByNilLiteral {
 // MARK: - Conditional Conformances
 extension Weak: Equatable where Object: Equatable {
     public static func ==(lhs: Weak, rhs: Weak) -> Bool {
-        return lhs.wrappedValue == rhs.wrappedValue
+        lhs.wrappedValue == rhs.wrappedValue
     }
 }
 
@@ -72,7 +72,7 @@ extension Weak: Hashable where Object: Hashable {
 
 //extension Weak: Comparable where Object: Comparable {
 //    public static func <(lhs: Weak, rhs: Weak) -> Bool {
-//        return lhs.value < rhs.value
+//        lhs.value < rhs.value
 //    }
 //}
 

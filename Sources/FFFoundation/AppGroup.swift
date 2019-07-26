@@ -29,7 +29,7 @@ public struct AppGroup: RawRepresentable, Hashable, Codable {
     public let rawValue: RawValue
 
     @inlinable
-    public var identifier: String { return rawValue }
+    public var identifier: String { rawValue }
     
     public init(rawValue: RawValue) { self.rawValue = rawValue }
 
@@ -39,11 +39,9 @@ public struct AppGroup: RawRepresentable, Hashable, Codable {
 
 extension AppGroup {
     public var dataURL: URL? {
-        return FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: rawValue)
+        FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: rawValue)
     }
     
-    public var userDefaults: UserDefaults? {
-        return UserDefaults(suiteName: rawValue)
-    }
+    public var userDefaults: UserDefaults? { UserDefaults(suiteName: rawValue) }
 }
 #endif

@@ -73,7 +73,7 @@ public final class Atomic<Guarded> {
 
     @inlinable
     public func withValueVoid(do work: (inout Guarded) throws -> Void) rethrows {
-        return try withValue(do: work)
+        try withValue(do: work)
     }
 
     public func coordinated(with other: Atomic) -> (Guarded, Guarded) {
@@ -87,11 +87,11 @@ public final class Atomic<Guarded> {
     }
 
     public func combined(with other: Atomic) -> Atomic<(Guarded, Guarded)> {
-        return Atomic<(Guarded, Guarded)>(value: coordinated(with: other), qos: max(queue.qos, other.queue.qos))
+        Atomic<(Guarded, Guarded)>(value: coordinated(with: other), qos: max(queue.qos, other.queue.qos))
     }
 
     public func combined<OtherGuarded>(with other: Atomic<OtherGuarded>) -> Atomic<(Guarded, OtherGuarded)> {
-        return Atomic<(Guarded, OtherGuarded)>(value: coordinated(with: other), qos: max(queue.qos, other.queue.qos))
+        Atomic<(Guarded, OtherGuarded)>(value: coordinated(with: other), qos: max(queue.qos, other.queue.qos))
     }
 }
 

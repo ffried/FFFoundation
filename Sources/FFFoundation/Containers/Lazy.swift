@@ -44,11 +44,6 @@ public struct Lazy<Deferred> {
         self.init(constructor: constructor)
     }
 
-    @inlinable
-    public init(initialValue constructor: @escaping @autoclosure () -> Deferred) {
-        self.init(constructor: constructor)
-    }
-
     public init(other: Lazy) {
         self.init(constructor: other.constructor)
     }

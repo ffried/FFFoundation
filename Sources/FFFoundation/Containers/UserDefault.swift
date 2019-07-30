@@ -168,11 +168,8 @@ extension UserDefault {
 import SwiftUI
 
 @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
-extension UserDefault: BindingConvertible {
+extension UserDefault {
     @inlinable
-    public var binding: Binding<Value> {
-        Binding(getValue: { self.wrappedValue },
-                setValue: { self.wrappedValue = $0 })
-    }
+    public var binding: Binding<Value> { projectedValue.binding }
 }
 #endif

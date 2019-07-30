@@ -17,6 +17,7 @@
 //  limitations under the License.
 //
 
+/*
 #if canImport(SwiftUI) && canImport(Combine)
 import Foundation
 import Combine
@@ -24,20 +25,10 @@ import SwiftUI
 
 @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
 @propertyWrapper
-public final class AnyBindableObject<Value>: BindableObject {
-    private let subject = PassthroughSubject<Value, Never>()
-
+public final class AnyBindableObject<Value>: ObservableObject {
     private var assigner: AnyCancellable?
 
-    public var willChange: AnyPublisher<Value, Never> {
-        subject.eraseToAnyPublisher()
-    }
-
-    public var wrappedValue: Value {
-        willSet {
-            subject.send(newValue)
-        }
-    }
+    @Published public var wrappedValue: Value
 
     public init(wrappedValue: Value) {
         self.wrappedValue = wrappedValue
@@ -71,3 +62,4 @@ extension AnyBindableObject where Value: ExpressibleByArrayLiteral  {
     }
 }
 #endif
+*/

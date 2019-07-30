@@ -39,11 +39,6 @@ public final class Atomic<Guarded> {
         self.init(value: wrappedValue, qos: .default)
     }
 
-    @inlinable
-    public convenience init(initialValue: Guarded) {
-        self.init(wrappedValue: initialValue)
-    }
-
     public subscript<T>(keyPath: KeyPath<Guarded, T>) -> T {
         precondition(notOn: queue)
         return queue.sync { _wrappedValue[keyPath: keyPath] }

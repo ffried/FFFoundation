@@ -19,6 +19,7 @@
 
 @propertyWrapper
 @dynamicMemberLookup
+@frozen
 public struct Lens<Value> {
     private let getter: () -> Value
     private let setter: (Value) -> ()
@@ -56,7 +57,7 @@ public struct Lens<Value> {
 import SwiftUI
 
 @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-extension Lens: BindingConvertible {
-    public var binding: Binding<Value> { Binding(getValue: getter, setValue: setter) }
+extension Lens {
+    public var binding: Binding<Value> { Binding(get: getter, set: setter) }
 }
 #endif

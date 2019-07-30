@@ -29,8 +29,8 @@ public struct Weak<Object: AnyObject> {
         wrappedValue = object
     }
 
-    public init(initialValue: Object?) {
-        wrappedValue = initialValue
+    public init(wrappedValue: Object?) {
+        self.wrappedValue = wrappedValue
     }
 }
 

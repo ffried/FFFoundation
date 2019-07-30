@@ -38,11 +38,6 @@ public struct CoW<Value: Copyable> {
     public init(wrappedValue: Value) {
         _wrappedValue = wrappedValue
     }
-
-    @inlinable
-    public init(initialValue: Value) {
-        self.init(wrappedValue: initialValue)
-    }
 }
 
 extension CoW where Value: ExpressibleByNilLiteral {

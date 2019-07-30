@@ -50,8 +50,8 @@
 		07842FE5214A855800A65D82 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2F4207B720E009900AC /* AttributedString.swift */; };
 		078FFD5422AD5215006BDA82 /* CoW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078FFD5322AD5215006BDA82 /* CoW.swift */; };
 		079111B622EAE62500FCF280 /* Predicate+StringInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079111B522EAE62500FCF280 /* Predicate+StringInterpolation.swift */; };
-		079111B822EAE80A00FCF280 /* AnyBindableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079111B722EAE80900FCF280 /* AnyBindableObject.swift */; };
 		079111BA22EAE83800FCF280 /* Lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079111B922EAE83700FCF280 /* Lens.swift */; };
+		07DC7A6522F07380000069D9 /* AnyBindableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079111B722EAE80900FCF280 /* AnyBindableObject.swift */; };
 		07F26D7D22E9F8B1002C7246 /* NSPredicate_InterpolationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F26D7C22E9F8B1002C7246 /* NSPredicate_InterpolationTests.swift */; };
 		07F657F72150F9BA004BCAD7 /* StringClassesExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F657F52150F980004BCAD7 /* StringClassesExtensionTests.swift */; };
 /* End PBXBuildFile section */
@@ -372,7 +372,7 @@
 				0714F308207B720E009900AC /* DictionaryExtensions.swift in Sources */,
 				0774CFD921F77F5B00C3D5CB /* Future.swift in Sources */,
 				0714F30D207B720E009900AC /* FileManager+Directories.swift in Sources */,
-				079111B822EAE80A00FCF280 /* AnyBindableObject.swift in Sources */,
+				07DC7A6522F07380000069D9 /* AnyBindableObject.swift in Sources */,
 				079111BA22EAE83800FCF280 /* Lens.swift in Sources */,
 				0714F30E207B720E009900AC /* NSAttributedStringExtensions.swift in Sources */,
 				0714F300207B720E009900AC /* Angle.swift in Sources */,

@@ -32,11 +32,6 @@ public final class Ref<Referenced>: Copyable {
     }
 
     @inlinable
-    public convenience init(initialValue: Referenced) {
-        self.init(wrappedValue: initialValue)
-    }
-
-    @inlinable
     public func copy() -> Self {
         return .init(wrappedValue: wrappedValue)
     }

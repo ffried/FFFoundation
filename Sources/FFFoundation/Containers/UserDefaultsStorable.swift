@@ -36,8 +36,19 @@ extension CodableUserDefaultsStorable {
             let data = try PropertyListSerialization.data(fromPropertyList: value, format: .binary, options: 0)
             return try PropertyListDecoder().decode(Self.self, from: data)
         } catch {
+            #if !os(Linux)
             os_log("[UserDefault] Could not decode %@ for key %@ from user defaults %@",
                    log: .ffFoundation, type: .error, String(describing: Self.self), key, userDefaults)
+            #else
+            String(describing: Self.self).withCString { type in
+                key.withCString { keyStr in
+                    String(describing: userDefaults).withCString { ud in
+                        os_log("[UserDefault] Could not decode %@ for key %@ from user defaults %@",
+                               log: .ffFoundation, type: .error, type, keyStr, ud)
+                    }
+                }
+            }
+            #endif
             return nil
         }
     }
@@ -47,8 +58,19 @@ extension CodableUserDefaultsStorable {
             let object = try PropertyListSerialization.propertyList(from: PropertyListEncoder().encode(self), options: [], format: nil)
             userDefaults.set(object, forKey: key)
         } catch {
+            #if !os(Linux)
             os_log("[UserDefault] Could not encode %@ for key %@ for user defaults %@",
                    log: .ffFoundation, type: .error, String(describing: Self.self), key, userDefaults)
+            #else
+            String(describing: Self.self).withCString { type in
+                key.withCString { keyStr in
+                    String(describing: userDefaults).withCString { ud in
+                        os_log("[UserDefault] Could not encode %@ for key %@ for user defaults %@",
+                               log: .ffFoundation, type: .error, type, keyStr, ud)
+                    }
+                }
+            }
+            #endif
         }
     }
 }

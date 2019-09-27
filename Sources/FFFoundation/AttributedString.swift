@@ -29,17 +29,8 @@ public struct AttributedString: ReferenceConvertible {
     public typealias Key = ReferenceType.Key
     public typealias Index = String.Index
 
-    private var _attrString: CFMutableAttributedString
-    private var attrString: CFMutableAttributedString {
-        get { _attrString }
-        set {
-            if !isKnownUniquelyReferenced(&_attrString) {
-                _attrString = CFAttributedStringCreateMutableCopy(kCFAllocatorDefault, 0, newValue)
-            } else {
-                _attrString = newValue
-            }
-        }
-    }
+    @CoW
+    private var attrString: CFMutableAttributedString
 
     public var string: String { CFAttributedStringGetString(attrString) as String }
     public var length: Int { CFAttributedStringGetLength(attrString) }
@@ -48,7 +39,7 @@ public struct AttributedString: ReferenceConvertible {
     public var endIndex: Index { string.endIndex }
 
     fileprivate init(attrString: CFMutableAttributedString) {
-        _attrString = attrString
+        _attrString = CoW(wrappedValue: attrString, copyingWith: { CFAttributedStringCreateMutableCopy(kCFAllocatorDefault, 0, $0) })
     }
 
     public init() {
@@ -245,6 +236,12 @@ fileprivate extension CFRange {
 
 fileprivate extension CFDictionary {
     func toAttributesDictionary() -> AttributedString.AttributesDictionary {
+//        var result = AttributedString.AttributesDictionary()
+//        result.reserveCapacity(CFDictionaryGetCount(self))
+//        CFDictionaryApplyFunction(self, { (key, value, ctx) in
+//
+//        }, nil)
+//        return result
         return (self as NSDictionary).reduce(into: [:]) {
             guard let key = $1.key as? String else { return }
             $0[AttributedString.Key(key)] = $1.value

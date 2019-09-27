@@ -37,7 +37,7 @@ public struct Weak<Object: AnyObject> {
 extension Sequence {
     @inlinable
     public func nonReleasedObjects<Object>() -> [Object] where Element == Weak<Object> {
-        return compactMap { $0.wrappedValue }
+        compactMap { $0.wrappedValue }
     }
 }
 

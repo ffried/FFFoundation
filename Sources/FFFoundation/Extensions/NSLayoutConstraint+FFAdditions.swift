@@ -47,8 +47,9 @@
                                                           options: FormatOptions = [],
                                                           metrics: MetricsDictionary? = nil,
                                                           views: ViewsDictionary) -> [NSLayoutConstraint]
-            where Formats.Element == VisualFormatType {
-                return formats.flatMap { constraints(withVisualFormat: $0, options: options, metrics: metrics, views: views) }
+            where Formats.Element == VisualFormatType
+        {
+            return formats.flatMap { constraints(withVisualFormat: $0, options: options, metrics: metrics, views: views) }
         }
     }
     

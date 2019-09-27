@@ -22,16 +22,17 @@
 public struct Lazy<Deferred> {
     private let constructor: () -> Deferred
 
-    @CoW @Ref private var _wrappedValue: Deferred? = nil // TODO: Why is `= nil` necessary?
+    @CoW private var _wrappedValue: Ref<Deferred?> = .init()
 
     public var wrappedValue: Deferred {
         get {
-            if let val = _wrappedValue { return val }
-            __wrappedValue.wrappedValue.wrappedValue = constructor()
+            if let val = _wrappedValue.wrappedValue { return val }
+            _wrappedValue.wrappedValue = constructor()
             return self.wrappedValue
         }
         set {
-            _wrappedValue = newValue
+            __wrappedValue.copyIfNeeded()
+            _wrappedValue.wrappedValue = newValue
         }
     }
 

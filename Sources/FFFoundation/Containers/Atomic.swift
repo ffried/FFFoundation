@@ -44,17 +44,6 @@ public final class Atomic<Guarded> {
         return queue.sync { _wrappedValue[keyPath: keyPath] }
     }
 
-    public subscript<T>(keyPath: WritableKeyPath<Guarded, T>) -> T {
-        get {
-            precondition(notOn: queue)
-            return queue.sync { _wrappedValue[keyPath: keyPath] }
-        }
-        set {
-            precondition(notOn: queue)
-            queue.sync { withMutableValue { $0[keyPath: keyPath] = newValue } }
-        }
-    }
-
     @inline(__always)
     private func withMutableValue<T>(do work: (inout Guarded) throws -> T) rethrows -> T {
         precondition(on: queue)

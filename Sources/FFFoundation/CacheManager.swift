@@ -35,7 +35,7 @@ public final class CacheManager<Object: Cachable> {
 
     private let fileManager: FileManager
     // TODO: Use queue also for user operations
-    private let queue: DispatchQueue = .init(label: "net.ffried.fffoundation.cachemanager", attributes: .concurrent)
+    private let queue = DispatchQueue(label: "net.ffried.fffoundation.cachemanager", attributes: .concurrent)
     private let folder: URL
     public let name: Name
 

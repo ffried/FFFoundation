@@ -1,3 +1,4 @@
+#if canImport(ObjectiveC)
 import XCTest
 import Foundation
 @testable import FFFoundation
@@ -82,3 +83,5 @@ final class PredicateInterpolationTests: XCTestCase {
     }
     #endif
 }
+#endif
+

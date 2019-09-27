@@ -17,6 +17,8 @@
 //  limitations under the License.
 //
 
+// KVC is only available on Darwin platforms
+#if canImport(ObjectiveC)
 import Foundation
 
 extension NSPredicate {
@@ -129,3 +131,5 @@ extension NSPredicate.Format {
         }
     }
 }
+#endif
+

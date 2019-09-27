@@ -51,15 +51,22 @@ final class UserDefaultTests: XCTestCase {
         return userDefaults.object(forKey: key.rawValue) as? T
     }
 
+    private func resetDefaults() {
+        UserDefaultKey.allTestKeys.forEach {
+            userDefaults.set(nil, forKey: $0.rawValue)
+            userDefaults.removeObject(forKey: $0.rawValue)
+        }
+    }
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        UserDefaultKey.allTestKeys.forEach { userDefaults.removeObject(forKey: $0.rawValue) }
+        resetDefaults()
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-        UserDefaultKey.allTestKeys.forEach { userDefaults.removeObject(forKey: $0.rawValue) }
+        resetDefaults()
         super.tearDown()
     }
 

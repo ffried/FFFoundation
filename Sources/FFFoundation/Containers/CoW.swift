@@ -39,6 +39,7 @@ public struct CoW<Value: AnyObject> {
     public init(wrappedValue: Value, copyingWith copier: @escaping Copier) {
         _wrappedValue = wrappedValue
         self.copier = copier
+        copyIfNeeded()
     }
 
     public mutating func copyIfNeeded() {

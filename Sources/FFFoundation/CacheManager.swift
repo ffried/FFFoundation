@@ -210,7 +210,7 @@ extension String: Cachable {
     }
 #endif
 
-#if canImport(AppKit)
+#if canImport(AppKit) && !os(iOS) // macCatalyst has os(iOS)
     import AppKit
     extension NSImage: Cachable {
         public func cacheData() throws -> Data {

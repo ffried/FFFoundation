@@ -91,7 +91,7 @@ final class UserDefaultTests: XCTestCase {
         let double = UserDefault<Double>(userDefaults: userDefaults, key: .random)
         let string = UserDefault<String>(userDefaults: userDefaults, key: .random, defaultValue: "")
         let data = UserDefault<Data>(userDefaults: userDefaults, key: .random, defaultValue: Data())
-        let url = UserDefault<URL>(userDefaults: userDefaults, key: .random, defaultValue: URL(string: "https://apple.com")!)
+        let url = UserDefault<URL>(userDefaults: userDefaults, key: .random, defaultValue: URL(fileURLWithPath: "/path/to/nowhere"))
         #if !os(Linux)
         let optionalInt = UserDefault<Int?>(userDefaults: userDefaults, key: .random)
         #endif
@@ -123,7 +123,7 @@ final class UserDefaultTests: XCTestCase {
         let double = UserDefault<Double>(userDefaults: userDefaults, key: .doubleKey)
         let string = UserDefault<String>(userDefaults: userDefaults, key: .stringKey, defaultValue: "")
         let data = UserDefault<Data>(userDefaults: userDefaults, key: .dataKey, defaultValue: Data())
-        let url = UserDefault<URL>(userDefaults: userDefaults, key: .urlKey, defaultValue: URL(string: "https://apple.com")!)
+        let url = UserDefault<URL>(userDefaults: userDefaults, key: .urlKey, defaultValue: URL(fileURLWithPath: "/path/to/nowhere"))
         #if !os(Linux)
         let optionalInt = UserDefault<Int?>(userDefaults: userDefaults, key: .optionalIntKey)
         #endif
@@ -138,7 +138,7 @@ final class UserDefaultTests: XCTestCase {
         double.wrappedValue = 42.4242
         string.wrappedValue = "Testing"
         data.wrappedValue = Data(1...8)
-        url.wrappedValue = URL(string: "https://ffried.net")!
+        url.wrappedValue = URL(fileURLWithPath: "/path/to/somewhere")
         #if !os(Linux)
         optionalInt.wrappedValue = 42
         #endif
@@ -159,8 +159,8 @@ final class UserDefaultTests: XCTestCase {
         XCTAssertEqual(castedPrimitive(for: string.key), "Testing")
         XCTAssertEqual(data.wrappedValue, Data(1...8))
         XCTAssertEqual(castedPrimitive(for: data.key), Data(1...8))
-        XCTAssertEqual(url.wrappedValue, URL(string: "https://ffried.net"))
-        XCTAssertEqual(userDefaults.url(forKey: url.key.rawValue), URL(string: "https://ffried.net"))
+        XCTAssertEqual(url.wrappedValue, URL(fileURLWithPath: "/path/to/somewhere"))
+        XCTAssertEqual(userDefaults.url(forKey: url.key.rawValue), URL(fileURLWithPath: "/path/to/somewhere"))
         #if !os(Linux)
         XCTAssertEqual(optionalInt.wrappedValue, 42)
         XCTAssertEqual(castedPrimitive(for: optionalInt.key), 42)

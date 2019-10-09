@@ -181,7 +181,7 @@ final class UserDefaultTests: XCTestCase {
         let object = UserDefault<TestObject?>(userDefaults: userDefaults, key: .codableObject)
         XCTAssertNil(object.wrappedValue)
         #else
-        let object = UserDefault<TestObject>(objValue, userDefaults: userDefaults, key: .codableObject,
+        let object = UserDefault<TestObject>(userDefaults: userDefaults, key: .codableObject,
                                              defaultValue: TestObject(string: "DEFAULT", dict: [:], range: 1..<2))
         #endif
         let objValue = TestObject(string: "Test", dict: ["key1": "value1", "key2": "value2"], range: 2..<42)

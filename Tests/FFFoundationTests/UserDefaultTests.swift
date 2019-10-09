@@ -177,14 +177,15 @@ final class UserDefaultTests: XCTestCase {
     }
 
     func testCodableUserDefaultReading() {
-        let objValue = TestObject(string: "Test", dict: ["key1": "value1", "key2": "value2"], range: 2..<42)
         #if !os(Linux)
         let object = UserDefault<TestObject?>(userDefaults: userDefaults, key: .codableObject)
         XCTAssertNil(object.wrappedValue)
-        object.wrappedValue = objValue
         #else
-        let object = UserDefault<TestObject>(wrappedValue: objValue, userDefaults: userDefaults, key: .codableObject)
+        let object = UserDefault<TestObject>(objValue, userDefaults: userDefaults, key: .codableObject,
+                                             defaultValue: TestObject(string: "DEFAULT", dict: [:], range: 1..<2))
         #endif
+        let objValue = TestObject(string: "Test", dict: ["key1": "value1", "key2": "value2"], range: 2..<42)
+        object.wrappedValue = objValue
         XCTAssertEqual(object.wrappedValue, objValue)
         let dict = userDefaults.object(forKey: object.key.rawValue) as? [String: Any]
         XCTAssertNotNil(dict)

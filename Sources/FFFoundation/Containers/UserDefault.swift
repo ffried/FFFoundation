@@ -108,68 +108,68 @@ extension UserDefault where Value: ExpressibleByDictionaryLiteral {
     }
 }
 
-//#if canImport(Combine)
-//import Combine
-//
-//@available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
-//extension UserDefault {
-//    public final class Publisher: Combine.Publisher {
-//        public typealias Output = Value
-//        public typealias Failure = Never
-//
-//        private final class KVObserver: NSObject {
-//            private lazy var context = withUnsafePointer(to: self, { Int(bitPattern: $0) })
-//
-//            private(set) weak var object: NSObject?
-//            let keyPath: String
-//            var handler: () -> ()
-//
-//            init(object: NSObject, keyPath: String, options: NSKeyValueObservingOptions, handler: @escaping () -> ()) {
-//                self.object = object
-//                self.keyPath = keyPath
-//                self.handler = handler
-//                super.init()
-//                object.addObserver(self, forKeyPath: keyPath, options: options, context: &context)
-//            }
-//
-//            deinit {
-//                object?.removeObserver(self, forKeyPath: keyPath)
-//            }
-//
-//            override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-//                guard object as AnyObject? === self.object, keyPath == self.keyPath, context == &self.context else {
-//                    super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
-//                    return
-//                }
-//                handler()
-//            }
-//        }
-//
-//        private let upstream: PassthroughSubject<Output, Failure> = .init()
-//        private let observation: KVObserver
-//
-//        init(userDefault: UserDefault) {
-//            observation = KVObserver(object: userDefault.userDefaults,
-//                                     keyPath: userDefault.key.rawValue,
-//                                     options: [], handler: {})
-//            observation.handler = { [weak self] in self?.upstream.send(userDefault.wrappedValue) }
-//        }
-//
-//        public func receive<S>(subscriber: S) where S : Subscriber, Failure == S.Failure, Output == S.Input {
-//            upstream.receive(subscriber: subscriber)
-//        }
-//    }
-//
-//    public var publisher: Publisher { Publisher(userDefault: self) }
-//}
-//#endif
-//
-//#if canImport(SwiftUI)
-//import SwiftUI
-//
-//@available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
-//extension UserDefault {
-//    @inlinable
-//    public var binding: Binding<Value> { projectedValue.binding }
-//}
-//#endif
+#if canImport(Combine)
+import Combine
+
+@available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+extension UserDefault {
+    public final class Publisher: Combine.Publisher {
+        public typealias Output = Value
+        public typealias Failure = Never
+
+        private final class KVObserver: NSObject {
+            private lazy var context = withUnsafePointer(to: self, { Int(bitPattern: $0) })
+
+            private(set) weak var object: NSObject?
+            let keyPath: String
+            var handler: () -> ()
+
+            init(object: NSObject, keyPath: String, options: NSKeyValueObservingOptions, handler: @escaping () -> ()) {
+                self.object = object
+                self.keyPath = keyPath
+                self.handler = handler
+                super.init()
+                object.addObserver(self, forKeyPath: keyPath, options: options, context: &context)
+            }
+
+            deinit {
+                object?.removeObserver(self, forKeyPath: keyPath)
+            }
+
+            override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+                guard object as AnyObject? === self.object, keyPath == self.keyPath, context == &self.context else {
+                    super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
+                    return
+                }
+                handler()
+            }
+        }
+
+        private let upstream = PassthroughSubject<Output, Failure>()
+        private let observation: KVObserver
+
+        init(userDefault: UserDefault) {
+            observation = KVObserver(object: userDefault.userDefaults,
+                                     keyPath: userDefault.key.rawValue,
+                                     options: [], handler: {})
+            observation.handler = { [weak self] in self?.upstream.send(userDefault.wrappedValue) }
+        }
+
+        public func receive<S>(subscriber: S) where S : Subscriber, Failure == S.Failure, Output == S.Input {
+            upstream.receive(subscriber: subscriber)
+        }
+    }
+
+    public var publisher: Publisher { Publisher(userDefault: self) }
+}
+
+#if canImport(SwiftUI)
+import SwiftUI
+
+@available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+extension UserDefault {
+    @inlinable
+    public var binding: Binding<Value> { projectedValue.binding }
+}
+#endif
+#endif

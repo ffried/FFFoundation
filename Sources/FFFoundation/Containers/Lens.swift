@@ -53,11 +53,12 @@ public struct Lens<Value> {
     }
 }
 
-//#if canImport(SwiftUI)
-//import SwiftUI
-//
-//@available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-//extension Lens {
-//    public var binding: Binding<Value> { Binding(get: getter, set: setter) }
-//}
-//#endif
+#if canImport(SwiftUI) && canImport(Combine)
+import Combine
+import SwiftUI
+
+@available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+extension Lens {
+    public var binding: Binding<Value> { Binding(get: getter, set: setter) }
+}
+#endif

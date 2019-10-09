@@ -19,6 +19,8 @@ fileprivate extension UserDefaultKey {
 
     static let inexisting = UserDefaultKey(rawValue: "text_inexisting")
 
+    static var random: UserDefaultKey { .init(rawValue: UUID().uuidString) }
+
     static let allTestKeys: Set = [
         boolKey,
         intKey,
@@ -84,20 +86,20 @@ final class UserDefaultTests: XCTestCase {
     }
 
     func testPrimitiveUserDefaultReadingUsingDefaults() {
-        let bool = UserDefault<Bool>(userDefaults: userDefaults, key: .boolKey)
-        let int = UserDefault<Int>(userDefaults: userDefaults, key: .intKey)
-        let float = UserDefault<Float>(userDefaults: userDefaults, key: .floatKey)
-        let double = UserDefault<Double>(userDefaults: userDefaults, key: .doubleKey)
-        let string = UserDefault<String>(userDefaults: userDefaults, key: .stringKey, defaultValue: "")
-        let data = UserDefault<Data>(userDefaults: userDefaults, key: .dataKey, defaultValue: Data())
-        let url = UserDefault<URL>(userDefaults: userDefaults, key: .urlKey, defaultValue: URL(string: "https://apple.com")!)
+        let bool = UserDefault<Bool>(userDefaults: userDefaults, key: .random)
+        let int = UserDefault<Int>(userDefaults: userDefaults, key: .random)
+        let float = UserDefault<Float>(userDefaults: userDefaults, key: .random)
+        let double = UserDefault<Double>(userDefaults: userDefaults, key: .random)
+        let string = UserDefault<String>(userDefaults: userDefaults, key: .random, defaultValue: "")
+        let data = UserDefault<Data>(userDefaults: userDefaults, key: .random, defaultValue: Data())
+        let url = UserDefault<URL>(userDefaults: userDefaults, key: .random, defaultValue: URL(string: "https://apple.com")!)
         #if !os(Linux)
-        let optionalInt = UserDefault<Int?>(userDefaults: userDefaults, key: .optionalIntKey)
+        let optionalInt = UserDefault<Int?>(userDefaults: userDefaults, key: .random)
         #endif
-        let doubleArray = UserDefault<Array<Double>>(userDefaults: userDefaults, key: .doubleArrayKey)
-        let doubleContArray = UserDefault<ContiguousArray<Double>>(userDefaults: userDefaults, key: .doubleContArrayKey)
-        let intSet = UserDefault<Set<Int>>(userDefaults: userDefaults, key: .intSetKey)
-        let boolDict = UserDefault<Dictionary<String, Bool>>(userDefaults: userDefaults, key: .boolDictKey)
+        let doubleArray = UserDefault<Array<Double>>(userDefaults: userDefaults, key: .random)
+        let doubleContArray = UserDefault<ContiguousArray<Double>>(userDefaults: userDefaults, key: .random)
+        let intSet = UserDefault<Set<Int>>(userDefaults: userDefaults, key: .random)
+        let boolDict = UserDefault<Dictionary<String, Bool>>(userDefaults: userDefaults, key: .random)
 
         XCTAssertEqual(bool.wrappedValue, bool.defaultValue)
         XCTAssertEqual(int.wrappedValue, int.defaultValue)

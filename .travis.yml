@@ -9,7 +9,7 @@ stages:
 
 os: osx
 language: swift
-xcode_workspace: Xcode/FFFoundation.xcworkspace
+xcode_workspace: Xcode/FFFoundation.xcodeproj
 xcode_scheme: FFFoundation
 
 jobs:

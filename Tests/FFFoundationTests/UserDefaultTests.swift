@@ -55,6 +55,9 @@ final class UserDefaultTests: XCTestCase {
 
     private func resetDefaults() {
         UserDefaultKey.allTestKeys.forEach {
+            #if !os(Linux)
+            userDefaults.set(nil, forKey: $0.rawValue)
+            #endif
             userDefaults.removeObject(forKey: $0.rawValue)
         }
     }

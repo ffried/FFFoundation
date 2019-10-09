@@ -61,9 +61,9 @@ final class PredicateInterpolationTests: XCTestCase {
     }
 
     func testPredicateCreationFromStringInterpolationWithStringKeyAndBridgeableValue() {
-        let value = Date()
+        let value = Date(timeIntervalSinceReferenceDate: 592299475.57712)
         let predicate = NSPredicate("\(key: "bridgeable_key") = \(value)")
-        XCTAssertEqual(predicate.predicateFormat, #"bridgeable_key == CAST(\#(value.timeIntervalSinceReferenceDate), "NSDate")"#)
+        XCTAssertEqual(predicate.predicateFormat, #"bridgeable_key == CAST(592299475.577120, "NSDate")"#)
     }
 
     func testPredicateCreationFromStringInterpolationWithStringKeyAndNilBridgeableValue() {

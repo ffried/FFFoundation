@@ -86,7 +86,9 @@ final class UserDefaultTests: XCTestCase {
         let string = UserDefault<String>(userDefaults: userDefaults, key: .stringKey, defaultValue: "")
         let data = UserDefault<Data>(userDefaults: userDefaults, key: .dataKey, defaultValue: Data())
         let url = UserDefault<URL>(userDefaults: userDefaults, key: .urlKey, defaultValue: URL(string: "https://apple.com")!)
+        #if !os(Linux)
         let optionalInt = UserDefault<Int?>(userDefaults: userDefaults, key: .optionalIntKey)
+        #endif
         let doubleArray = UserDefault<Array<Double>>(userDefaults: userDefaults, key: .doubleArrayKey)
         let doubleContArray = UserDefault<ContiguousArray<Double>>(userDefaults: userDefaults, key: .doubleContArrayKey)
         let intSet = UserDefault<Set<Int>>(userDefaults: userDefaults, key: .intSetKey)
@@ -99,7 +101,9 @@ final class UserDefaultTests: XCTestCase {
         XCTAssertEqual(string.wrappedValue, string.defaultValue)
         XCTAssertEqual(data.wrappedValue, data.defaultValue)
         XCTAssertEqual(url.wrappedValue, url.defaultValue)
+        #if !os(Linux)
         XCTAssertEqual(optionalInt.wrappedValue, 0)
+        #endif
         XCTAssertEqual(doubleArray.wrappedValue, doubleArray.defaultValue)
         XCTAssertEqual(doubleContArray.wrappedValue, doubleContArray.defaultValue)
         XCTAssertEqual(intSet.wrappedValue, intSet.defaultValue)
@@ -114,7 +118,9 @@ final class UserDefaultTests: XCTestCase {
         let string = UserDefault<String>(userDefaults: userDefaults, key: .stringKey, defaultValue: "")
         let data = UserDefault<Data>(userDefaults: userDefaults, key: .dataKey, defaultValue: Data())
         let url = UserDefault<URL>(userDefaults: userDefaults, key: .urlKey, defaultValue: URL(string: "https://apple.com")!)
+        #if !os(Linux)
         let optionalInt = UserDefault<Int?>(userDefaults: userDefaults, key: .optionalIntKey)
+        #endif
         let doubleArray = UserDefault<Array<Double>>(userDefaults: userDefaults, key: .doubleArrayKey)
         let doubleContArray = UserDefault<ContiguousArray<Double>>(userDefaults: userDefaults, key: .doubleContArrayKey)
         let intSet = UserDefault<Set<Int>>(userDefaults: userDefaults, key: .intSetKey)
@@ -127,7 +133,9 @@ final class UserDefaultTests: XCTestCase {
         string.wrappedValue = "Testing"
         data.wrappedValue = Data(1...8)
         url.wrappedValue = URL(string: "https://ffried.net")!
+        #if !os(Linux)
         optionalInt.wrappedValue = 42
+        #endif
         doubleArray.wrappedValue = [42.42, 42.4242]
         doubleContArray.wrappedValue = [42.42, 42.4242]
         intSet.wrappedValue = [42, 43, 44]
@@ -147,8 +155,10 @@ final class UserDefaultTests: XCTestCase {
         XCTAssertEqual(castedPrimitive(for: data.key), Data(1...8))
         XCTAssertEqual(url.wrappedValue, URL(string: "https://ffried.net"))
         XCTAssertEqual(userDefaults.url(forKey: url.key.rawValue), URL(string: "https://ffried.net"))
+        #if !os(Linux)
         XCTAssertEqual(optionalInt.wrappedValue, 42)
         XCTAssertEqual(castedPrimitive(for: optionalInt.key), 42)
+        #endif
         XCTAssertEqual(doubleArray.wrappedValue, [42.42, 42.4242])
         XCTAssertEqual(castedPrimitive(for: doubleArray.key), [42.42, 42.4242])
         XCTAssertEqual(doubleContArray.wrappedValue, [42.42, 42.4242])

@@ -1,4 +1,3 @@
-#if canImport(ObjectiveC)
 import XCTest
 import Foundation
 @testable import FFFoundation
@@ -14,6 +13,7 @@ final class PredicateInterpolationTests: XCTestCase {
         super.tearDown()
     }
 
+    #if canImport(ObjectiveC)
     func testPredicateCreationFromString() {
         let predicate = NSPredicate("this = that")
         XCTAssertEqual(predicate.predicateFormat, "this == that")
@@ -82,6 +82,6 @@ final class PredicateInterpolationTests: XCTestCase {
         XCTAssertEqual(predicate.predicateFormat, #"string == "string_value""#)
     }
     #endif
+    #endif
 }
-#endif
 

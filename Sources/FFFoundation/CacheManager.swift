@@ -76,7 +76,7 @@ public final class CacheManager<Object: Cachable> {
     // MARK: - Memory warnings
     private var memoryWarningsObserver: NSObjectProtocol?
     private func registerForMemoryWarnings() {
-        #if canImport(UIKit)
+        #if canImport(UIKit) && !os(watchOS)
             let opQueue = OperationQueue()
             opQueue.underlyingQueue = queue
             let name = UIApplication.didReceiveMemoryWarningNotification

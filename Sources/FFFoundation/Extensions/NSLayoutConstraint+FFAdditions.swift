@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-#if canImport(UIKit) || canImport(AppKit)
+#if (canImport(UIKit) && !os(watchOS)) || canImport(AppKit) 
     import class Foundation.NSNumber
     #if canImport(UIKit)
     import class UIKit.UIView

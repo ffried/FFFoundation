@@ -18,11 +18,14 @@
 //  limitations under the License.
 //
 
-#if os(iOS) || os(macOS)
+#if os(iOS) || os(tvOS) || os(watchOS) || os(macOS)
     import class Foundation.Bundle
-    #if os(iOS)
+    #if os(iOS) || os(tvOS)
         import class UIKit.UIApplication
         public typealias Application = UIApplication
+    #elseif os(watchOS)
+        import class WatchKit.WKExtension
+        public typealias Application = WKExtension
     #elseif os(macOS)
         import class AppKit.NSApplication
         public typealias Application = NSApplication

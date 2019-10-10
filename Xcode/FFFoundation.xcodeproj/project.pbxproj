@@ -567,9 +567,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CURRENT_PROJECT_VERSION = 2.0;
+				CURRENT_PROJECT_VERSION = 7.0.0;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/../Resources/Info.plist";
+				MARKETING_VERSION = 7.0.0;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ffried.FFFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -582,9 +583,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CURRENT_PROJECT_VERSION = 2.0;
+				CURRENT_PROJECT_VERSION = 7.0.0;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/../Resources/Info.plist";
+				MARKETING_VERSION = 7.0.0;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ffried.FFFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

@@ -2,6 +2,5 @@
 /.build
 /.swiftpm
 /Packages
-/FFFoundation.xcodeproj
+/*.xcodeproj
 *.xcuserdatad
-

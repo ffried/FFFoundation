@@ -18,27 +18,106 @@
 //  limitations under the License.
 //
 
-public protocol RefProtocol: ReferenceMutableContainer {}
+@propertyWrapper
+public final class Ref<Referenced>: Copyable {
+    public var wrappedValue: Referenced
 
-public final class Ref<Referenced>: RefProtocol {
-    public typealias Value = Referenced
+    public var projectedValue: Lens<Referenced> {
+        Lens(getter: { self.wrappedValue },
+             setter: { self.wrappedValue = $0 })
+    }
 
-    public var value: Value
+    public init(wrappedValue: Referenced) {
+        self.wrappedValue = wrappedValue
+    }
 
-    public init(value: Value) {
-        self.value = value
+    @inlinable
+    public func copy() -> Self {
+        return .init(wrappedValue: wrappedValue)
     }
 }
 
-extension Ref: Equatable where Referenced: Equatable {}
-extension Ref: Hashable where Referenced: Hashable {}
-extension Ref: Comparable where Referenced: Comparable {}
-extension Ref: Encodable where Referenced: Encodable {}
-extension Ref: Decodable where Referenced: Decodable {}
-extension Ref: ExpressibleByNilLiteral where Referenced: ExpressibleByNilLiteral {}
-extension Ref: ExpressibleByBooleanLiteral where Referenced: ExpressibleByBooleanLiteral {}
-extension Ref: ExpressibleByIntegerLiteral where Referenced: ExpressibleByIntegerLiteral {}
-extension Ref: ExpressibleByFloatLiteral where Referenced: ExpressibleByFloatLiteral {}
-extension Ref: ExpressibleByUnicodeScalarLiteral where Referenced: ExpressibleByUnicodeScalarLiteral {}
-extension Ref: ExpressibleByExtendedGraphemeClusterLiteral where Referenced: ExpressibleByExtendedGraphemeClusterLiteral {}
-extension Ref: ExpressibleByStringLiteral where Referenced: ExpressibleByStringLiteral {}
+extension Ref where Referenced: ExpressibleByNilLiteral {
+    @inlinable
+    public convenience init() { self.init(wrappedValue: nil) }
+}
+
+// MARK: - Conditional Conformances
+extension Ref: Equatable where Referenced: Equatable {
+    public static func ==(lhs: Ref, rhs: Ref) -> Bool {
+        lhs.wrappedValue == rhs.wrappedValue
+    }
+}
+
+extension Ref: Hashable where Referenced: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(wrappedValue)
+    }
+}
+
+extension Ref: Comparable where Referenced: Comparable {
+    public static func <(lhs: Ref, rhs: Ref) -> Bool {
+        lhs.wrappedValue < rhs.wrappedValue
+    }
+}
+
+extension Ref: Encodable where Referenced: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        try wrappedValue.encode(to: encoder)
+    }
+}
+
+extension Ref: Decodable where Referenced: Decodable {
+    public convenience init(from decoder: Decoder) throws {
+        let value = try Referenced(from: decoder)
+        self.init(wrappedValue: value)
+    }
+}
+
+extension Ref: ExpressibleByNilLiteral where Referenced: ExpressibleByNilLiteral {
+    public convenience init(nilLiteral: ()) {
+        self.init(wrappedValue: Referenced(nilLiteral: nilLiteral))
+    }
+}
+
+extension Ref: ExpressibleByBooleanLiteral where Referenced: ExpressibleByBooleanLiteral {
+    public convenience init(booleanLiteral value: Referenced.BooleanLiteralType) {
+        self.init(wrappedValue: Referenced(booleanLiteral: value))
+    }
+}
+
+extension Ref: ExpressibleByIntegerLiteral where Referenced: ExpressibleByIntegerLiteral {
+    public convenience init(integerLiteral value: Referenced.IntegerLiteralType) {
+        self.init(wrappedValue: Referenced(integerLiteral: value))
+    }
+}
+
+extension Ref: ExpressibleByFloatLiteral where Referenced: ExpressibleByFloatLiteral {
+    public convenience init(floatLiteral value: Referenced.FloatLiteralType) {
+        self.init(wrappedValue: Referenced(floatLiteral: value))
+    }
+}
+
+extension Ref: ExpressibleByUnicodeScalarLiteral where Referenced: ExpressibleByUnicodeScalarLiteral {
+    public convenience init(unicodeScalarLiteral value: Referenced.UnicodeScalarLiteralType) {
+        self.init(wrappedValue: Referenced(unicodeScalarLiteral: value))
+    }
+}
+
+extension Ref: ExpressibleByExtendedGraphemeClusterLiteral where Referenced: ExpressibleByExtendedGraphemeClusterLiteral {
+    public convenience init(extendedGraphemeClusterLiteral value: Referenced.ExtendedGraphemeClusterLiteralType) {
+        self.init(wrappedValue: Referenced(extendedGraphemeClusterLiteral: value))
+    }
+}
+
+extension Ref: ExpressibleByStringLiteral where Referenced: ExpressibleByStringLiteral {
+    public convenience init(stringLiteral value: Referenced.StringLiteralType) {
+        self.init(wrappedValue: Referenced(stringLiteral: value))
+    }
+}
+
+extension Ref: ExpressibleByStringInterpolation where Referenced: ExpressibleByStringInterpolation {
+    public convenience init(stringInterpolation: Referenced.StringInterpolation) {
+        self.init(wrappedValue: Referenced(stringInterpolation: stringInterpolation))
+    }
+}

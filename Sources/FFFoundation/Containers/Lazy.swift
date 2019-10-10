@@ -18,69 +18,124 @@
 //  limitations under the License.
 //
 
-public protocol LazyProtocol: MutableContainer {
-    typealias Constructor = () -> Value
+@propertyWrapper
+public struct Lazy<Deferred> {
+    private let constructor: () -> Deferred
 
-    var value: Value { mutating get set }
+    @CoW private var _wrappedValue: Ref<Deferred?> = .init()
 
-    init(_ constructor: @escaping Constructor)
-
-    mutating func reset()
-}
-
-public struct Lazy<Deferred>: LazyProtocol {
-    public typealias Value = Deferred
-    
-    private let constructor: Constructor
-
-    private var _valueStorage: Ref<Deferred?>
-    private var _value: Deferred? {
-        get { return _valueStorage.value }
-        set {
-            if !isKnownUniquelyReferenced(&_valueStorage) {
-                _valueStorage = .init(value: newValue)
-            } else {
-                _valueStorage <- newValue
-            }
-        }
-    }
-    public var value: Deferred {
+    public var wrappedValue: Deferred {
         get {
-            if let val = _value { return val }
-            _valueStorage <- constructor()
-            return self.value
+            if let val = _wrappedValue.wrappedValue { return val }
+            _wrappedValue.wrappedValue = constructor()
+            return self.wrappedValue
         }
-        set { _value = newValue }
-    }
-    
-    public init(_ constructor: @escaping Constructor) {
-        self.constructor = constructor
-        _valueStorage = nil
+        set {
+            __wrappedValue.copyIfNeeded()
+            _wrappedValue.wrappedValue = newValue
+        }
     }
 
-    public init(value: Value) {
-        constructor = { value }
-        _valueStorage = .init(value: value)
+    public init(constructor: @escaping () -> Deferred) {
+        self.constructor = constructor
     }
-    
+
+    @inlinable
+    public init(wrappedValue constructor: @escaping @autoclosure () -> Deferred) {
+        self.init(constructor: constructor)
+    }
+
     public init(other: Lazy) {
-        self.init(other.constructor)
+        self.init(constructor: other.constructor)
     }
     
     public mutating func reset() {
-        _value = nil
+        _wrappedValue = nil
     }
 }
 
-extension Lazy: Equatable where Deferred: Equatable {}
-extension Lazy: Hashable where Deferred: Hashable {}
-extension Lazy: Comparable where Deferred: Comparable {}
-extension Lazy: Encodable where Deferred: Encodable {}
-extension Lazy: Decodable where Deferred: Decodable {}
-extension Lazy: ExpressibleByNilLiteral where Deferred: ExpressibleByNilLiteral {}
-extension Lazy: ExpressibleByBooleanLiteral where Deferred: ExpressibleByBooleanLiteral {}
-extension Lazy: ExpressibleByIntegerLiteral where Deferred: ExpressibleByIntegerLiteral {}
-extension Lazy: ExpressibleByFloatLiteral where Deferred: ExpressibleByFloatLiteral {}
-extension Lazy: ExpressibleByUnicodeScalarLiteral where Deferred: ExpressibleByUnicodeScalarLiteral {}
-extension Lazy: ExpressibleByExtendedGraphemeClusterLiteral where Deferred: ExpressibleByExtendedGraphemeClusterLiteral {}
-extension Lazy: ExpressibleByStringLiteral where Deferred: ExpressibleByStringLiteral {}
+// MARK: - Property Wrappers
+extension Lazy where Deferred: ExpressibleByNilLiteral {
+    @inlinable
+    public init() { self.init(wrappedValue: nil) }
+}
+
+// MARK: - Conditional Conformance
+extension Lazy: Equatable where Deferred: Equatable {
+    public static func ==(lhs: Lazy, rhs: Lazy) -> Bool {
+        lhs.wrappedValue == rhs.wrappedValue
+    }
+}
+
+extension Lazy: Hashable where Deferred: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(wrappedValue)
+    }
+}
+
+extension Lazy: Comparable where Deferred: Comparable {
+    public static func <(lhs: Lazy, rhs: Lazy) -> Bool {
+        lhs.wrappedValue < rhs.wrappedValue
+    }
+}
+
+extension Lazy: Encodable where Deferred: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        try wrappedValue.encode(to: encoder)
+    }
+}
+
+extension Lazy: Decodable where Deferred: Decodable {
+    public init(from decoder: Decoder) throws {
+        let value = try Deferred(from: decoder)
+        self.init(wrappedValue: value)
+    }
+}
+
+extension Lazy: ExpressibleByNilLiteral where Deferred: ExpressibleByNilLiteral {
+    public init(nilLiteral: ()) {
+        self.init(wrappedValue: Deferred(nilLiteral: nilLiteral))
+    }
+}
+
+extension Lazy: ExpressibleByBooleanLiteral where Deferred: ExpressibleByBooleanLiteral {
+    public init(booleanLiteral value: Deferred.BooleanLiteralType) {
+        self.init(wrappedValue: Deferred(booleanLiteral: value))
+    }
+}
+
+extension Lazy: ExpressibleByIntegerLiteral where Deferred: ExpressibleByIntegerLiteral {
+    public init(integerLiteral value: Deferred.IntegerLiteralType) {
+        self.init(wrappedValue: Deferred(integerLiteral: value))
+    }
+}
+
+extension Lazy: ExpressibleByFloatLiteral where Deferred: ExpressibleByFloatLiteral {
+    public init(floatLiteral value: Deferred.FloatLiteralType) {
+        self.init(wrappedValue: Deferred(floatLiteral: value))
+    }
+}
+
+extension Lazy: ExpressibleByUnicodeScalarLiteral where Deferred: ExpressibleByUnicodeScalarLiteral {
+    public init(unicodeScalarLiteral value: Deferred.UnicodeScalarLiteralType) {
+        self.init(wrappedValue: Deferred(unicodeScalarLiteral: value))
+    }
+}
+
+extension Lazy: ExpressibleByExtendedGraphemeClusterLiteral where Deferred: ExpressibleByExtendedGraphemeClusterLiteral {
+    public init(extendedGraphemeClusterLiteral value: Deferred.ExtendedGraphemeClusterLiteralType) {
+        self.init(wrappedValue: Deferred(extendedGraphemeClusterLiteral: value))
+    }
+}
+
+extension Lazy: ExpressibleByStringLiteral where Deferred: ExpressibleByStringLiteral {
+    public init(stringLiteral value: Deferred.StringLiteralType) {
+        self.init(wrappedValue: Deferred(stringLiteral: value))
+    }
+}
+
+extension Lazy: ExpressibleByStringInterpolation where Deferred: ExpressibleByStringInterpolation {
+    public init(stringInterpolation: Deferred.StringInterpolation) {
+        self.init(wrappedValue: Deferred(stringInterpolation: stringInterpolation))
+    }
+}

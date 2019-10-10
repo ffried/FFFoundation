@@ -83,7 +83,7 @@ final class TimerTests: XCTestCase {
             date = Date()
             accuracies.append(interval)
             counter += 1
-            if counter == repeats {
+            if counter >= repeats {
                 timer.invalidate()
                 exp.fulfill()
             }

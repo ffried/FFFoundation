@@ -1,0 +1,19 @@
+clean: true
+
+theme: fullwidth
+
+output: docs
+source_directory: Sources
+readme: README.md
+
+xcodebuild_arguments:
+  -  -workspace
+  -  ../Xcode/FFoundation.xcodeproj
+  - -scheme
+  - FFFoundation
+module: FFFoundation
+undocumented_text: ""
+github_url: https://github.com/ffried/FFFoundation
+
+author: Florian Friedrich
+author_url: https://ffried.codes

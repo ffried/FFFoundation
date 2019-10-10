@@ -18,59 +18,120 @@
 //  limitations under the License.
 //
 
-public protocol WeakProtocol: MutableContainer where Value == Object? {
-    associatedtype Object: AnyObject
-
-    var wasReleased: Bool { get }
-
-    init(object: Object)
-}
-
-extension WeakProtocol {
-    public var wasReleased: Bool { return value == nil }
+@propertyWrapper
+public struct Weak<Object: AnyObject> {
+    public weak var wrappedValue: Object?
 
     @inlinable
-    public var object: Object? { return value }
+    public var wasReleased: Bool { wrappedValue == nil }
 
-    @inlinable
     public init(object: Object) {
-        self.init(value: object)
+        wrappedValue = object
+    }
+
+    public init(wrappedValue: Object?) {
+        self.wrappedValue = wrappedValue
     }
 }
 
-public struct Weak<Object: AnyObject>: WeakProtocol {
-    public weak var value: Object?
-
-    public init(value: Value) {
-        self.value = value
-    }
-}
-
-extension Sequence where Element: WeakProtocol {
+extension Sequence {
     @inlinable
-    public var objects: [Element.Object] {
-        return compactMap { $0.object }
+    public func nonReleasedObjects<Object>() -> [Object] where Element == Weak<Object> {
+        compactMap { $0.wrappedValue }
     }
 }
 
-extension MutableCollection where Self: RangeReplaceableCollection, Element: WeakProtocol {
-    public mutating func removeReleasedObjects() {
+extension MutableCollection where Self: RangeReplaceableCollection {
+    public mutating func removeReleasedObjects<Object>() where Element == Weak<Object> {
         removeAll { $0.wasReleased }
     }
     
-    public mutating func appendWeakly(_ object: Element.Object) {
+    public mutating func appendWeakly<Object>(_ object: Object) where Element == Weak<Object> {
         append(.init(object: object))
     }
 }
 
-extension Weak: Equatable where Object: Equatable {}
-extension Weak: Hashable where Object: Hashable {}
-extension Weak: Encodable where Object: Encodable {}
-extension Weak: Decodable where Object: Decodable {}
-extension Weak: ExpressibleByNilLiteral where Object: ExpressibleByNilLiteral {}
-//extension Weak: ExpressibleByBooleanLiteral where Object: ExpressibleByBooleanLiteral {}
-//extension Weak: ExpressibleByIntegerLiteral where Object: ExpressibleByIntegerLiteral {}
-//extension Weak: ExpressibleByFloatLiteral where Object: ExpressibleByFloatLiteral {}
-//extension Weak: ExpressibleByUnicodeScalarLiteral where Object: ExpressibleByUnicodeScalarLiteral {}
-//extension Weak: ExpressibleByExtendedGraphemeClusterLiteral where Object: ExpressibleByExtendedGraphemeClusterLiteral {}
-//extension Weak: ExpressibleByStringLiteral where Object: ExpressibleByStringLiteral {}
+// MARK: - Property Wrappers
+extension Weak where Object: ExpressibleByNilLiteral {
+    @inlinable
+    public init() { self.init(object: nil) }
+}
+
+// MARK: - Conditional Conformances
+extension Weak: Equatable where Object: Equatable {
+    public static func ==(lhs: Weak, rhs: Weak) -> Bool {
+        lhs.wrappedValue == rhs.wrappedValue
+    }
+}
+
+extension Weak: Hashable where Object: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(wrappedValue)
+    }
+}
+
+//extension Weak: Comparable where Object: Comparable {
+//    public static func <(lhs: Weak, rhs: Weak) -> Bool {
+//        lhs.value < rhs.value
+//    }
+//}
+
+extension Weak: Encodable where Object: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        try wrappedValue.encode(to: encoder)
+    }
+}
+
+extension Weak: Decodable where Object: Decodable {
+    public init(from decoder: Decoder) throws {
+        try self.init(object: Object(from: decoder))
+    }
+}
+
+extension Weak: ExpressibleByNilLiteral where Object: ExpressibleByNilLiteral {
+    public init(nilLiteral: ()) {
+        self.init(object: Object(nilLiteral: nilLiteral))
+    }
+}
+
+extension Weak: ExpressibleByBooleanLiteral where Object: ExpressibleByBooleanLiteral {
+    public init(booleanLiteral value: Object.BooleanLiteralType) {
+        self.init(object: Object(booleanLiteral: value))
+    }
+}
+
+extension Weak: ExpressibleByIntegerLiteral where Object: ExpressibleByIntegerLiteral {
+    public init(integerLiteral value: Object.IntegerLiteralType) {
+        self.init(object: Object(integerLiteral: value))
+    }
+}
+
+extension Weak: ExpressibleByFloatLiteral where Object: ExpressibleByFloatLiteral {
+    public init(floatLiteral value: Object.FloatLiteralType) {
+        self.init(object: Object(floatLiteral: value))
+    }
+}
+
+extension Weak: ExpressibleByUnicodeScalarLiteral where Object: ExpressibleByUnicodeScalarLiteral {
+    public init(unicodeScalarLiteral value: Object.UnicodeScalarLiteralType) {
+        self.init(object: Object(unicodeScalarLiteral: value))
+    }
+}
+
+extension Weak: ExpressibleByExtendedGraphemeClusterLiteral where Object: ExpressibleByExtendedGraphemeClusterLiteral {
+    public init(extendedGraphemeClusterLiteral value: Object.ExtendedGraphemeClusterLiteralType) {
+        self.init(object: Object(extendedGraphemeClusterLiteral: value))
+    }
+}
+
+extension Weak: ExpressibleByStringLiteral where Object: ExpressibleByStringLiteral {
+    public init(stringLiteral value: Object.StringLiteralType) {
+        self.init(object: Object(stringLiteral: value))
+    }
+}
+
+extension Weak: ExpressibleByStringInterpolation where Object: ExpressibleByStringInterpolation {
+    public init(stringInterpolation: Object.StringInterpolation) {
+        self.init(object: Object(stringInterpolation: stringInterpolation))
+    }
+}

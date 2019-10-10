@@ -29,19 +29,19 @@ public struct AppGroup: RawRepresentable, Hashable, Codable {
     public let rawValue: RawValue
 
     @inlinable
-    public var identifier: String { return rawValue }
+    public var identifier: String { rawValue }
     
     public init(rawValue: RawValue) { self.rawValue = rawValue }
+
+    @inlinable
     public init(identifier: String) { self.init(rawValue: identifier) }
 }
 
 extension AppGroup {
     public var dataURL: URL? {
-        return FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: rawValue)
+        FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: rawValue)
     }
     
-    public var userDefaults: UserDefaults? {
-        return UserDefaults(suiteName: rawValue)
-    }
+    public var userDefaults: UserDefaults? { UserDefaults(suiteName: rawValue) }
 }
 #endif

@@ -35,7 +35,7 @@ public final class CacheManager<Object: Cachable> {
 
     private let fileManager: FileManager
     // TODO: Use queue also for user operations
-    private let queue: DispatchQueue = .init(label: "net.ffried.fffoundation.cachemanager", attributes: .concurrent)
+    private let queue = DispatchQueue(label: "net.ffried.fffoundation.cachemanager", attributes: .concurrent)
     private let folder: URL
     public let name: Name
 
@@ -55,7 +55,7 @@ public final class CacheManager<Object: Cachable> {
         }
     }
 
-    private var memoryCache: Atomic<[ObjectIdentification: Object]> = .init(value: [:])
+    @Atomic private var memoryCache: [ObjectIdentification: Object] = [:]
 
     public init(name: Name = .default, shouldMigrateFromOldNamingBehavior: Bool = true) throws {
         self.name = name
@@ -76,7 +76,7 @@ public final class CacheManager<Object: Cachable> {
     // MARK: - Memory warnings
     private var memoryWarningsObserver: NSObjectProtocol?
     private func registerForMemoryWarnings() {
-        #if canImport(UIKit)
+        #if canImport(UIKit) && !os(watchOS)
             let opQueue = OperationQueue()
             opQueue.underlyingQueue = queue
             let name = UIApplication.didReceiveMemoryWarningNotification
@@ -122,12 +122,12 @@ public final class CacheManager<Object: Cachable> {
     }
 
     public func object(for identification: ObjectIdentification) throws -> Object? {
-        return try memoryCache.value[identification] ?? object(at: cacheURL(for: identification))
+        return try memoryCache[identification] ?? object(at: cacheURL(for: identification))
     }
 
     public func cache(object: Object, for identification: ObjectIdentification) throws {
         try cache(object: object, at: cacheURL(for: identification))
-        memoryCache.withValueVoid { $0[identification] = object }
+        _memoryCache.withValueVoid { $0[identification] = object }
     }
 
     public func cacheObject(for identification: ObjectIdentification, at url: URL) throws {
@@ -144,7 +144,7 @@ public final class CacheManager<Object: Cachable> {
         return url
     }
 
-    public func clearMemoryCache() { memoryCache.withValueVoid { $0.removeAll() } }
+    public func clearMemoryCache() { _memoryCache.withValueVoid { $0.removeAll() } }
     public func clearCache() throws {
         clearMemoryCache()
         guard fileManager.fileExists(at: folder) else { return }
@@ -210,7 +210,7 @@ extension String: Cachable {
     }
 #endif
 
-#if canImport(AppKit)
+#if canImport(AppKit) && !os(iOS) // macCatalyst has os(iOS)
     import AppKit
     extension NSImage: Cachable {
         public func cacheData() throws -> Data {

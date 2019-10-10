@@ -17,6 +17,7 @@
 //  limitations under the License.
 //
 
+@frozen
 public struct Size<Value: Numeric & Hashable>: Hashable {
     public var width: Value
     public var height: Value
@@ -30,7 +31,18 @@ public struct Size<Value: Numeric & Hashable>: Hashable {
 }
 
 extension Size {
+    @inlinable
     public static var zero: Size { return .init(width: 0, height: 0) }
+}
+
+extension Size where Value: BinaryFloatingPoint {
+    @inlinable
+    public var center: Point<Value> { return .init(x: width / 2, y: height / 2) }
+}
+
+extension Size where Value: BinaryInteger {
+    @inlinable
+    public var center: Point<Value> { return .init(x: width / 2, y: height / 2) }
 }
 
 extension Size: Encodable where Value: Encodable {}

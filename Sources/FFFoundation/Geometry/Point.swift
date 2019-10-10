@@ -18,6 +18,7 @@
 //  limitations under the License.
 //
 
+@frozen
 public struct Point<Value: Numeric & Hashable>: Hashable {
     public var x: Value
     public var y: Value
@@ -28,6 +29,7 @@ public struct Point<Value: Numeric & Hashable>: Hashable {
 }
 
 extension Point {
+    @inlinable
     public static var zero: Point { return .init(x: 0, y: 0) }
 }
 

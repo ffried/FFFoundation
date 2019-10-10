@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-#if canImport(UIKit) || canImport(AppKit)
+#if (canImport(UIKit) && !os(watchOS)) || canImport(AppKit) 
     import class Foundation.NSNumber
     #if canImport(UIKit)
     import class UIKit.UIView
@@ -47,10 +47,11 @@
                                                           options: FormatOptions = [],
                                                           metrics: MetricsDictionary? = nil,
                                                           views: ViewsDictionary) -> [NSLayoutConstraint]
-            where Formats.Element == VisualFormatType {
-                return formats.flatMap { constraints(withVisualFormat: $0, options: options, metrics: metrics, views: views) }
+            where Formats.Element == VisualFormatType
+        {
+            return formats.flatMap { constraints(withVisualFormat: $0, options: options, metrics: metrics, views: views) }
         }
-}
+    }
     
     @available(macOS 10.7, iOS 6.0, tvOS 6.0, *)
     extension Sequence where Element == NSLayoutConstraint {

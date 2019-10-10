@@ -77,7 +77,7 @@ jobs:
       name: macOS Swift Release
       osx_image: xcode11
       xcode_destination: platform=macOS
-      after_success: bash <(curl -fsL https://codecov.io/bash) -J "XMLWrangler"
+      after_success: bash <(curl -fsL https://codecov.io/bash) -J "FFFoundation"
 
     # - <<: *xcode
     #   name: macOS Swift Beta

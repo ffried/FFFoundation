@@ -110,7 +110,7 @@ public final class Future<Value> {
     }
 }
 
-public typealias FutureResult<Value, Error: Error> = Future<Result<Value, Error>>
+public typealias FutureResult<Value, Failure: Error> = Future<Result<Value, Failure>>
 
 extension FutureResult {
     @inlinable

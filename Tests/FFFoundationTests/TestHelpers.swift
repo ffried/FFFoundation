@@ -1,6 +1,7 @@
-// Unfortunately, Darwin XCTest does not really support *all* FloatingPoint types.
+#if !os(Linux) && !swift(>=5.2)
+// Unfortunately, Darwin XCTest does not really support *all* FloatingPoint types before Swift 5.2.
 // https://github.com/apple/swift/blob/master/stdlib/public/Darwin/XCTest/XCTest.swift#L379
-#if !os(Linux)
+
 import XCTest
 
 internal func XCTAssertEqual<T: FloatingPoint>(_ expression1: @autoclosure () throws -> T, _ expression2: @autoclosure () throws -> T, accuracy: T, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {

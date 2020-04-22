@@ -64,8 +64,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: sersoft-gmbh/xcodebuild-action@v1
         with:
-          project: Xcode/SemVer.xcodeproj
-          scheme: SemVer
+          project: Xcode/FFFoundation.xcodeproj
+          scheme: FFFoundation
           destination: ${{matrix.destination}}
           action: ${{matrix.action}}
       - uses: codecov/codecov-action@v1

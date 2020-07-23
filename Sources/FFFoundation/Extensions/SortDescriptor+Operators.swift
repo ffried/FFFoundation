@@ -36,7 +36,7 @@ public prefix func ^ <Root, Value: Comparable>(lhs: KeyPath<Root, Value>) -> NSS
     .init(keyPath: lhs, ascending: true)
 }
 
-public prefix func ^ <Root, Value: Comparable>(lhs: KeyPath<Root, Value>) -> NSSortDescriptor {
+public prefix func !^ <Root, Value: Comparable>(lhs: KeyPath<Root, Value>) -> NSSortDescriptor {
     .init(keyPath: lhs, ascending: false)
 }
 #endif

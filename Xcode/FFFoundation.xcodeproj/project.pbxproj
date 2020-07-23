@@ -40,6 +40,7 @@
 		0714F329207B7270009900AC /* FFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0714F327207B7270009900AC /* FFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0722163B24C9C15500CCFE8D /* Predicate+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722163924C9C15500CCFE8D /* Predicate+Operators.swift */; };
 		0722163C24C9C15500CCFE8D /* Predicate+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722163A24C9C15500CCFE8D /* Predicate+Key.swift */; };
+		0722163D24C9C18400CCFE8D /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714F2F4207B720E009900AC /* AttributedString.swift */; };
 		0737AFAC2271C3EF00E17208 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737AFAA2271C3D900E17208 /* TestHelpers.swift */; };
 		0737AFAE2271D81C00E17208 /* AngleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737AFA82271C3C800E17208 /* AngleTests.swift */; };
 		0742791421DF9EC600393E78 /* TypeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0742791321DF9EC600393E78 /* TypeDescription.swift */; };
@@ -383,6 +384,7 @@
 				0714F313207B720E009900AC /* AppGroup.swift in Sources */,
 				0714F2FE207B720E009900AC /* CacheManager.swift in Sources */,
 				0714F2FF207B720E009900AC /* Diff.swift in Sources */,
+				0722163D24C9C18400CCFE8D /* AttributedString.swift in Sources */,
 				0700918622D5E20D00666C08 /* UserDefault.swift in Sources */,
 				0714F317207B720E009900AC /* Weak.swift in Sources */,
 				0766A090212B0C2E00D579CF /* Size.swift in Sources */,

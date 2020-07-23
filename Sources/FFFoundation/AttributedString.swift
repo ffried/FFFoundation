@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-//#if os(macOS) || os(iOS) || os(tvOS) || os(watchOS)
+#if os(macOS) || os(iOS) || os(tvOS) || os(watchOS)
 import Foundation
 import CoreFoundation
 
@@ -335,8 +335,7 @@ fileprivate extension String {
         return distance(from: startIndex, to: index)
     }
 }
-
-//#endif
+#endif
 
 //#if canImport(UIKit)
 //import UIKit

@@ -22,6 +22,8 @@ import Foundation
 prefix operator ^
 prefix operator !^
 
+// KVC is only available on Darwin platforms
+#if canImport(ObjectiveC)
 public prefix func ^ (lhs: NSSortDescriptor.Key) -> NSSortDescriptor {
     .init(key: lhs.rawValue, ascending: true)
 }
@@ -29,9 +31,8 @@ public prefix func ^ (lhs: NSSortDescriptor.Key) -> NSSortDescriptor {
 public prefix func !^ (lhs: NSSortDescriptor.Key) -> NSSortDescriptor {
     .init(key: lhs.rawValue, ascending: false)
 }
+#endif
 
-// KVC is only available on Darwin platforms
-#if canImport(ObjectiveC)
 public prefix func ^ <Root, Value: Comparable>(lhs: KeyPath<Root, Value>) -> NSSortDescriptor {
     .init(keyPath: lhs, ascending: true)
 }
@@ -39,4 +40,3 @@ public prefix func ^ <Root, Value: Comparable>(lhs: KeyPath<Root, Value>) -> NSS
 public prefix func !^ <Root, Value: Comparable>(lhs: KeyPath<Root, Value>) -> NSSortDescriptor {
     .init(keyPath: lhs, ascending: false)
 }
-#endif

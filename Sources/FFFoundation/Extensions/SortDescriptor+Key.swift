@@ -1,5 +1,5 @@
 //
-//  Predicate+Key.swift
+//  SortDescriptor+Key.swift
 //  FFFoundation
 //
 //  Created by Florian Friedrich on 23.07.20.
@@ -19,6 +19,6 @@
 
 import Foundation
 
-extension NSPredicate {
+extension NSSortDescriptor {
     public typealias Key = PropertyKey
 }

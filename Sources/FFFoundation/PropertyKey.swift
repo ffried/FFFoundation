@@ -1,5 +1,5 @@
 //
-//  Predicate+Key.swift
+//  PropertyKey.swift
 //  FFFoundation
 //
 //  Created by Florian Friedrich on 23.07.20.
@@ -17,8 +17,26 @@
 //  limitations under the License.
 //
 
-import Foundation
+@frozen
+public struct PropertyKey: RawRepresentable, Hashable, Codable, ExpressibleByStringLiteral, CustomStringConvertible {
+    public typealias RawValue = String
+    public typealias StringLiteralType = RawValue
 
-extension NSPredicate {
-    public typealias Key = PropertyKey
+    public let rawValue: RawValue
+
+    public var description: String { rawValue }
+
+    public init(rawValue: RawValue) {
+        self.rawValue = rawValue
+    }
+
+    @inlinable
+    public init(_ rawValue: RawValue) {
+        self.init(rawValue: rawValue)
+    }
+
+    @inlinable
+    public init(stringLiteral value: StringLiteralType) {
+        self.init(rawValue: value)
+    }
 }

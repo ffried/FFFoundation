@@ -16,7 +16,11 @@ let package = Package(
       .library(name: "FFFoundation", targets: ["FFFoundation"]),
    ],
    targets: [
-      .target(name: "FFFoundation", exclude: ["AttributedString.swift"]),
-      .testTarget(name: "FFFoundationTests", dependencies: ["FFFoundation"]),
+      .target(name: "FFFoundation"),
+      .testTarget(
+        name: "FFFoundationTests",
+        dependencies: ["FFFoundation"],
+        exclude: ["Info.plist"]
+    ),
    ]
 )

@@ -51,14 +51,14 @@ extension Bool: Togglable {
 
 extension ObjCBool: Togglable {
     public var toggled: ObjCBool {
-        return type(of: self).init(booleanLiteral: boolValue.toggled)
+        return .init(boolValue.toggled)
     }
 }
 
 #if !os(Linux)
 extension DarwinBoolean: Togglable {
     public var toggled: DarwinBoolean {
-        return type(of: self).init(booleanLiteral: boolValue.toggled)
+        return .init(boolValue.toggled)
     }
 }
 #endif

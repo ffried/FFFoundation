@@ -16,7 +16,7 @@ fileprivate extension GenericTestType {
     }
 }
 
-func XCTAssertEqual<TestType: GenericTestType>(_ desc: TypeDescription, _ testType: TestType.Type, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {
+private func _XCTAssertEqual<TestType: GenericTestType>(_ desc: TypeDescription, _ testType: TestType.Type, _ message: @autoclosure () -> String, file: StaticString, line: UInt) {
     func assertEqual(_ desc: TypeDescription, _ testType: GenericTestType.Type, _ message: @autoclosure () -> String, recursionIndexPath: IndexPath) {
         func extendedMessage(for message: @autoclosure () -> String) -> String {
             return recursionIndexPath.isEmpty
@@ -33,6 +33,16 @@ func XCTAssertEqual<TestType: GenericTestType>(_ desc: TypeDescription, _ testTy
     }
     assertEqual(desc, testType, message(), recursionIndexPath: [])
 }
+
+#if swift(>=5.3)
+func XCTAssertEqual<TestType: GenericTestType>(_ desc: TypeDescription, _ testType: TestType.Type, _ message: @autoclosure () -> String = "", file: StaticString = #filePath, line: UInt = #line) {
+    _XCTAssertEqual(desc, testType, message(), file: file, line: line)
+}
+#else
+func XCTAssertEqual<TestType: GenericTestType>(_ desc: TypeDescription, _ testType: TestType.Type, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {
+    _XCTAssertEqual(desc, testType, message(), file: file, line: line)
+}
+#endif
 
 extension String: GenericTestType {
     static let typeName = "Swift.String"

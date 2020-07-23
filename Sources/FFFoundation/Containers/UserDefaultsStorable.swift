@@ -159,7 +159,7 @@ extension URL: PrimitiveUserDefaultStorable {
     }
 }
 
-#if !os(Linux) // TODO: Remove this once https://bugs.swift.org/browse/SR-11592 is fixed (on Linux)
+#if !os(Linux) || swift(>=5.2) // TODO: Remove this once https://bugs.swift.org/browse/SR-11592 is fixed (on Linux)
 extension Optional: PrimitiveUserDefaultStorable where Wrapped: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {

@@ -25,7 +25,7 @@ jobs:
     runs-on: ${{matrix.os}}
     steps:
       # - run: sudo xcode-select -s /Applications/Xcode_11.4.app/Contents/Developer
-        if: runner.os == 'macOS'
+      #   if: runner.os == 'macOS'
       - name: Install Swift
         if: runner.os == 'Linux'
         uses: sersoft-gmbh/SwiftyActions@v1

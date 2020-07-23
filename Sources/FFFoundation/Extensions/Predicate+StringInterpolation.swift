@@ -25,7 +25,9 @@ extension NSPredicate {
     public struct Format: ExpressibleByStringInterpolation {
         public typealias StringLiteralType = String
 
+        @usableFromInline
         let format: String
+        @usableFromInline
         let args: [Any]?
 
         public init(stringLiteral value: StringLiteralType) {
@@ -39,6 +41,7 @@ extension NSPredicate {
         }
     }
 
+    @inlinable
     public convenience init(_ format: Format) {
         self.init(format: format.format, argumentArray: format.args)
     }
@@ -90,7 +93,15 @@ extension NSPredicate.Format {
         }
 
         // MARK: Keys
-        public mutating func appendInterpolation(key: String) {
+        public mutating func appendInterpolation(_ key: NSPredicate.Key) {
+            add(arg: key.rawValue, as: .key)
+        }
+
+        public mutating func appendInterpolation(key: NSPredicate.Key) {
+            add(arg: key, as: .key)
+        }
+
+        public mutating func appendInterpolation(key: NSPredicate.Key.RawValue) {
             add(arg: key, as: .key)
         }
 

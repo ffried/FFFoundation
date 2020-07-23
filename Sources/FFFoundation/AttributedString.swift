@@ -39,7 +39,8 @@ public struct AttributedString: ReferenceConvertible {
     public var endIndex: Index { string.endIndex }
 
     fileprivate init(attrString: CFMutableAttributedString) {
-        _attrString = CoW(wrappedValue: attrString, copyingWith: { CFAttributedStringCreateMutableCopy(kCFAllocatorDefault, 0, $0) })
+        _attrString = CoW(wrappedValue: attrString,
+                          copyingWith: { CFAttributedStringCreateMutableCopy(kCFAllocatorDefault, 0, $0) })
     }
 
     public init() {
@@ -53,7 +54,7 @@ public struct AttributedString: ReferenceConvertible {
 
     public init(string: String, attributes: AttributesDictionary) {
         self.init(string: string)
-        CFAttributedStringSetAttributes(attrString, CFRange(location: 0, length: length), attributes as CFDictionary, true)
+        CFAttributedStringSetAttributes(attrString, CFRange(location: 0, length: length), .fromAttributes(attributes), true)
     }
 }
 
@@ -88,10 +89,12 @@ extension AttributedString {
         static func withInfo<T>(to range: inout Range<Index>?, in string: String, longestEffectiveRangeSearchRange: Range<Index>? = nil, do work: (RangeInfo) throws -> T) rethrows -> T {
             var _nsRange = NSRange(location: NSNotFound, length: 0)
             defer { range = Range(_nsRange, in: string) }
-            let rangeInfo = RangeInfo(
-                rangePointer: &_nsRange,
-                longestEffectiveRangeSearchRange: longestEffectiveRangeSearchRange.map { NSRange($0, in: string) })
-            return try work(rangeInfo)
+            return try withUnsafeMutablePointer(to: &_nsRange) {
+                let rangeInfo = RangeInfo(
+                    rangePointer: $0,
+                    longestEffectiveRangeSearchRange: longestEffectiveRangeSearchRange.map { NSRange($0, in: string) })
+                return try work(rangeInfo)
+            }
         }
     }
 
@@ -147,12 +150,16 @@ extension AttributedString {
 
     public func attributes(at location: Index, longestEffectiveRange range: inout Range<Index>?, in rangeLimit: Range<Index>) -> AttributesDictionary {
         let str = string
-        return RangeInfo.withInfo(to: &range, in: str, longestEffectiveRangeSearchRange: rangeLimit) { _attributes(at: str.cfIndex(for: location), rangeInfo: $0) }
+        return RangeInfo.withInfo(to: &range, in: str, longestEffectiveRangeSearchRange: rangeLimit) {
+            _attributes(at: str.cfIndex(for: location), rangeInfo: $0)
+        }
     }
 
     public func attribute(_ attrName: Key, at location: Index, longestEffectiveRange range: inout Range<Index>?, in rangeLimit: Range<Index>) -> Any? {
         let str = string
-        return RangeInfo.withInfo(to: &range, in: str, longestEffectiveRangeSearchRange: rangeLimit) { _attribute(attrName, atIndex: str.cfIndex(for: location), rangeInfo: $0) }
+        return RangeInfo.withInfo(to: &range, in: str, longestEffectiveRangeSearchRange: rangeLimit) {
+            _attribute(attrName, atIndex: str.cfIndex(for: location), rangeInfo: $0)
+        }
     }
 
     public func enumerateAttributes(in range: Range<Index>, options: EnumerationOptions = [], using block: (AttributesDictionary, Range<Index>, inout Bool) -> ()) {
@@ -169,6 +176,71 @@ extension AttributedString {
             }
             return effectiveRange
         }
+    }
+}
+
+// NSMutableAttributedString
+extension AttributedString {
+    private func cfRange(for range: Range<Index>) -> CFRange {
+        return CFRange(NSRange(range, in: string))
+    }
+
+    public mutating func replaceCharacters(in range: Range<Index>, with str: String) {
+        _attrString.copyIfNeeded()
+        CFAttributedStringReplaceString(attrString, cfRange(for: range), str as CFString)
+    }
+
+    public mutating func setAttributes(_ attrs: AttributesDictionary?, range: Range<Index>) {
+        _attrString.copyIfNeeded()
+        // TODO: Will this work with nil? Or do we have to remove attributes here?
+        CFAttributedStringSetAttributes(attrString, cfRange(for: range), attrs.map { .fromAttributes($0) }, false)
+    }
+
+    public mutating func addAttribute(_ name: Key, value: AttributesDictionary.Value, range: Range<Index>) {
+        _attrString.copyIfNeeded()
+        CFAttributedStringSetAttribute(attrString, cfRange(for: range), name.rawValue as CFString, value as CFTypeRef)
+    }
+
+    public mutating func addAttributes(_ attrs: AttributesDictionary = [:], range: Range<Index>) {
+        _attrString.copyIfNeeded()
+        CFAttributedStringSetAttributes(attrString, cfRange(for: range), .fromAttributes(attrs), false)
+    }
+
+    public mutating func removeAttribute(_ name: Key, range: Range<Index>) {
+        _attrString.copyIfNeeded()
+        CFAttributedStringRemoveAttribute(attrString, cfRange(for: range), name.rawValue as CFString)
+    }
+
+    public mutating func replaceCharacters(in range: Range<Index>, with attrString: AttributedString) {
+        _attrString.copyIfNeeded()
+        CFAttributedStringReplaceAttributedString(self.attrString, cfRange(for: range), attrString.attrString)
+    }
+
+    public mutating func insert(_ attrString: AttributedString, at loc: Index) {
+        replaceCharacters(in: loc..<loc, with: attrString)
+    }
+
+    public mutating func append(_ attrString: AttributedString) {
+        insert(attrString, at: endIndex)
+    }
+
+    public mutating func deleteCharacters(in range: Range<Index>) {
+        replaceCharacters(in: range, with: "")
+    }
+
+    public mutating func setAttributedString(_ attrString: AttributedString) {
+        // We copy the wrapper since it would otherwise trigger a copy instantly.
+        _attrString = attrString._attrString
+    }
+
+    public mutating func beginEditing() {
+        _attrString.copyIfNeeded()
+        CFAttributedStringBeginEditing(attrString)
+    }
+
+    public mutating func endEditing() {
+        _attrString.copyIfNeeded()
+        CFAttributedStringEndEditing(attrString)
     }
 }
 
@@ -204,6 +276,7 @@ extension AttributedString {
 extension AttributedString {
     public typealias _ObjectiveCType = NSAttributedString
 
+    @_semantics("convertToObjectiveC")
     public func _bridgeToObjectiveC() -> NSAttributedString {
         return CFAttributedStringCreateCopy(kCFAllocatorDefault, attrString) as NSAttributedString
     }
@@ -212,11 +285,13 @@ extension AttributedString {
         result = AttributedString(attrString: CFAttributedStringCreateMutableCopy(kCFAllocatorDefault, 0, source as CFAttributedString))
     }
 
+    @discardableResult
     public static func _conditionallyBridgeFromObjectiveC(_ source: NSAttributedString, result: inout AttributedString?) -> Bool {
         _forceBridgeFromObjectiveC(source, result: &result)
         return result != nil
     }
 
+    @_effects(readonly)
     public static func _unconditionallyBridgeFromObjectiveC(_ source: NSAttributedString?) -> AttributedString {
         var result: AttributedString? = nil
         _forceBridgeFromObjectiveC(source!, result: &result)
@@ -225,34 +300,51 @@ extension AttributedString {
 }
 
 fileprivate extension CFRange {
+    @inline(__always)
     var nsRange: NSRange {
         return NSRange(location: location, length: length)
     }
 
+    @inline(__always)
     init(_ nsRange: NSRange) {
         self.init(location: nsRange.location, length: nsRange.length)
     }
 }
 
 fileprivate extension CFDictionary {
+    static func fromAttributes(_ attrs: AttributedString.AttributesDictionary) -> CFDictionary {
+        return NSDictionary(objects: Array(attrs.values),
+                            forKeys: attrs.keys.map { $0.rawValue as NSString }) as CFDictionary
+    }
+
     func toAttributesDictionary() -> AttributedString.AttributesDictionary {
-//        var result = AttributedString.AttributesDictionary()
-//        result.reserveCapacity(CFDictionaryGetCount(self))
-//        CFDictionaryApplyFunction(self, { (key, value, ctx) in
-//
-//        }, nil)
-//        return result
-        return (self as NSDictionary).reduce(into: [:]) {
-            guard let key = $1.key as? String else { return }
-            $0[AttributedString.Key(key)] = $1.value
+        // Casting to NSDictionary is fine since it's basically an `unsafeBitCast`.
+        let nsDict = self as NSDictionary
+        var result = AttributedString.AttributesDictionary(minimumCapacity: nsDict.count)
+        // We could use `reduce` here, but it would likely (unnecessarily) bridge the NSDictionary into Swift.Dictionary
+        nsDict.enumerateKeysAndObjects { (key, object, _) in
+            guard let strKey = key as? String else { return }
+            result[AttributedString.Key(strKey)] = object
         }
+        return result
     }
 }
 
 fileprivate extension String {
-    func cfIndex(for index: Index) -> Int {
+    func cfIndex(for index: Index) -> CFIndex {
         return distance(from: startIndex, to: index)
     }
 }
 
+//#endif
+
+//#if canImport(UIKit)
+//import UIKit
+
+//extension UILabel {
+//    var attributedString: AttributedString? {
+//        get { attributedText as AttributedString? }
+//        set { attributedText = newValue as NSAttributedString? }
+//    }
+//}
 //#endif

@@ -168,7 +168,7 @@ extension UserDefault {
 import SwiftUI
 
 @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
-extension UserDefault {
+extension UserDefault: DynamicProperty {
     @inlinable
     public var binding: Binding<Value> { projectedValue.binding }
 }

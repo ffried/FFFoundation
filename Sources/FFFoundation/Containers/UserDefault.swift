@@ -118,7 +118,7 @@ extension UserDefault {
         public typealias Failure = Never
 
         private final class KVObserver: NSObject {
-            private lazy var context = withUnsafePointer(to: self, { Int(bitPattern: $0) })
+            private var context = 0
 
             private(set) weak var object: NSObject?
             let keyPath: String
@@ -129,6 +129,7 @@ extension UserDefault {
                 self.keyPath = keyPath
                 self.handler = handler
                 super.init()
+                context = unsafeBitCast(self, to: Int.self)
                 object.addObserver(self, forKeyPath: keyPath, options: options, context: &context)
             }
 

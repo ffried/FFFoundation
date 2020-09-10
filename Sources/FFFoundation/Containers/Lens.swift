@@ -21,9 +21,12 @@
 @dynamicMemberLookup
 @frozen
 public struct Lens<Value> {
-    private let getter: () -> Value
-    private let setter: (Value) -> ()
+    @usableFromInline
+    let getter: () -> Value
+    @usableFromInline
+    let setter: (Value) -> ()
 
+    @inlinable
     public var wrappedValue: Value {
         get { getter() }
         nonmutating set { setter(newValue) }
@@ -41,6 +44,7 @@ public struct Lens<Value> {
 
     /// Returns a readonly lens. The setter may be called, but has no effect.
     /// - Parameter getter: The getter to use to extract the value.
+    @inlinable
     public static func readOnly(getter: @escaping () -> Value) -> Lens {
         return Lens(getter: getter, setter: { _ in })
     }
@@ -59,6 +63,7 @@ import SwiftUI
 
 @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
 extension Lens {
+    @inlinable
     public var binding: Binding<Value> { Binding(get: getter, set: setter) }
 }
 #endif

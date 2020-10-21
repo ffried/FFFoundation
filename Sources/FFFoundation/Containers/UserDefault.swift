@@ -71,6 +71,10 @@ public struct UserDefault<Value: PrimitiveUserDefaultStorable> {
     public init(initialValue: Value, userDefaults: UserDefaults = .standard, key: UserDefaultKey) {
         self.init(userDefaults: userDefaults, key: key, defaultValue: initialValue)
     }
+
+    public func delete() {
+        userDefaults.removeObject(forKey: key.rawValue)
+    }
 }
 
 extension UserDefault where Value: ExpressibleByNilLiteral {
@@ -137,7 +141,7 @@ extension UserDefault {
                 object?.removeObserver(self, forKeyPath: keyPath)
             }
 
-            override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+            override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
                 guard object as AnyObject? === self.object, keyPath == self.keyPath, context == &self.context else {
                     super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
                     return

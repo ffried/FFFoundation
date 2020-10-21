@@ -23,7 +23,7 @@ public struct Size<Value: Numeric & Hashable>: Hashable {
     public var height: Value
 
     @inlinable
-    public var isSquare: Bool { return width == height }
+    public var isSquare: Bool { width == height }
 
     public init(width: Value, height: Value) {
         (self.width, self.height) = (width, height)
@@ -32,17 +32,17 @@ public struct Size<Value: Numeric & Hashable>: Hashable {
 
 extension Size {
     @inlinable
-    public static var zero: Size { return .init(width: 0, height: 0) }
+    public static var zero: Size { .init(width: 0, height: 0) }
 }
 
 extension Size where Value: BinaryFloatingPoint {
     @inlinable
-    public var center: Point<Value> { return .init(x: width / 2, y: height / 2) }
+    public var center: Point<Value> { .init(x: width / 2, y: height / 2) }
 }
 
 extension Size where Value: BinaryInteger {
     @inlinable
-    public var center: Point<Value> { return .init(x: width / 2, y: height / 2) }
+    public var center: Point<Value> { .init(x: width / 2, y: height / 2) }
 }
 
 extension Size: Encodable where Value: Encodable {}

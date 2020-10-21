@@ -33,27 +33,27 @@
 
     extension Application {
         @inline(__always)
-        private var bundle: Bundle { return .main }
+        private var bundle: Bundle { .main }
         
         public var identifier: String? {
-            return bundle.infoDictionary?["CFBundleIdentifier"] as? String
+            bundle.infoDictionary?["CFBundleIdentifier"] as? String
         }
         
         public var name: String? {
-            return bundle.infoDictionary?["CFBundleName"] as? String
+            bundle.infoDictionary?["CFBundleName"] as? String
         }
         
         public var localizedName: String? {
-            return bundle.localizedInfoDictionary?["CFBundleDisplayName"] as? String
+            bundle.localizedInfoDictionary?["CFBundleDisplayName"] as? String
                 ?? bundle.infoDictionary?["CFBundleDisplayName"] as? String
         }
         
         public var version: String? {
-            return bundle.infoDictionary?["CFBundleShortVersionString"] as? String
+            bundle.infoDictionary?["CFBundleShortVersionString"] as? String
         }
         
         public var build: String? {
-            return bundle.infoDictionary?["CFBundleVersion"] as? String
+            bundle.infoDictionary?["CFBundleVersion"] as? String
         }
         
         public var fullVersion: String? {

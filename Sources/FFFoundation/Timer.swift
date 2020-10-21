@@ -35,7 +35,7 @@ public final class Timer<T> {
     
     public private(set) var isValid = true
     
-    public var tolerance: TimeInterval = 0.0 {
+    public var tolerance: TimeInterval = 0 {
         didSet { applyTimerProperties() }
     }
     

@@ -50,37 +50,36 @@ public struct Triangle<Point: TriangulatablePoint>: Hashable where Point.Value.S
     }
     
     public static func ==(lhs: Triangle<Point>, rhs: Triangle<Point>) -> Bool {
-        return lhs.sides == rhs.sides
+        lhs.sides == rhs.sides
     }
 }
 
 extension Triangle {
     @inlinable
-    public var pointA: Point { return points.a }
+    public var pointA: Point { points.a }
     @inlinable
-    public var pointB: Point { return points.b }
+    public var pointB: Point { points.b }
     @inlinable
-    public var pointC: Point { return points.c }
+    public var pointC: Point { points.c }
 
     @inlinable
-    public var α: Angle { return angles.α }
+    public var α: Angle { angles.α }
     @inlinable
-    public var β: Angle { return angles.β }
+    public var β: Angle { angles.β }
     @inlinable
-    public var γ: Angle { return angles.γ }
+    public var γ: Angle { angles.γ }
 
     @inlinable
-    public var a: Distance { return sides.a }
+    public var a: Distance { sides.a }
     @inlinable
-    public var b: Distance { return sides.b }
+    public var b: Distance { sides.b }
     @inlinable
-    public var c: Distance { return sides.c }
+    public var c: Distance { sides.c }
 }
 
 extension Triangle {
     /// Calculates a new orthogonal triangle with a given point A and B.
     /// - Note: The triangle is based on C meaning that C == (A.x, B.y).
-    ///
     /// - Parameters:
     ///   - a: The point A.
     ///   - b: The point B.
@@ -96,7 +95,6 @@ extension Triangle {
     }
     
     /// Calculates a new triangle from three given points.
-    ///
     /// - Parameters:
     ///   - a: The point A.
     ///   - b: The point B.

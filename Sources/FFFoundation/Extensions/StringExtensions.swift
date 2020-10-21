@@ -25,11 +25,11 @@
     
     extension String {
         public func size(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGSize {
-            return NSAttributedString(string: self, attributes: attributes).size(forWidth: width)
+            NSAttributedString(string: self, attributes: attributes).size(forWidth: width)
         }
         
         public func height(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGFloat {
-            return size(forWidth: width, attributes: attributes).height
+            size(forWidth: width, attributes: attributes).height
         }
     }
 #endif

@@ -65,7 +65,7 @@ public struct Angle<Value: FloatingPoint>: FloatingPoint, CustomStringConvertibl
     }
 
     private func value(as newKind: Kind) -> Value {
-        return kind == newKind ? value : converted().value
+        kind == newKind ? value : converted().value
     }
 
     // MARK: - Hashable
@@ -92,31 +92,31 @@ public struct Angle<Value: FloatingPoint>: FloatingPoint, CustomStringConvertibl
     }
 
     // MARK: - FloatingPoint
-    public static var radix: Int { return Value.radix }
-    public static var nan: Angle<Value> { return .init(kind: .radians, value: .nan) }
-    public static var signalingNaN: Angle<Value> { return .init(kind: .radians, value: .signalingNaN) }
-    public static var infinity: Angle<Value> { return .init(kind: .radians, value: .infinity) }
-    public static var pi: Angle<Value> { return .init(kind: .radians, value: .pi) }
-    public static var greatestFiniteMagnitude: Angle<Value> { return .init(kind: .radians, value: .greatestFiniteMagnitude) }
-    public static var leastNonzeroMagnitude: Angle<Value> { return .init(kind: .radians, value: .leastNonzeroMagnitude) }
-    public static var leastNormalMagnitude: Angle<Value> { return .init(kind: .radians, value: .leastNormalMagnitude) }
+    public static var radix: Int { Value.radix }
+    public static var nan: Angle<Value> { .init(kind: .radians, value: .nan) }
+    public static var signalingNaN: Angle<Value> { .init(kind: .radians, value: .signalingNaN) }
+    public static var infinity: Angle<Value> { .init(kind: .radians, value: .infinity) }
+    public static var pi: Angle<Value> { .init(kind: .radians, value: .pi) }
+    public static var greatestFiniteMagnitude: Angle<Value> { .init(kind: .radians, value: .greatestFiniteMagnitude) }
+    public static var leastNonzeroMagnitude: Angle<Value> { .init(kind: .radians, value: .leastNonzeroMagnitude) }
+    public static var leastNormalMagnitude: Angle<Value> { .init(kind: .radians, value: .leastNormalMagnitude) }
     
-    public var exponent: Exponent { return value.exponent }
-    public var sign: FloatingPointSign { return value.sign }
-    public var isNormal: Bool { return value.isNormal }
-    public var isFinite: Bool { return value.isFinite }
-    public var isZero: Bool { return value.isZero }
-    public var isSubnormal: Bool { return value.isSubnormal }
-    public var isInfinite: Bool { return value.isInfinite }
-    public var isNaN: Bool { return value.isNaN }
-    public var isSignalingNaN: Bool { return value.isSignalingNaN }
-    public var isCanonical: Bool { return value.isCanonical }
+    public var exponent: Exponent { value.exponent }
+    public var sign: FloatingPointSign { value.sign }
+    public var isNormal: Bool { value.isNormal }
+    public var isFinite: Bool { value.isFinite }
+    public var isZero: Bool { value.isZero }
+    public var isSubnormal: Bool { value.isSubnormal }
+    public var isInfinite: Bool { value.isInfinite }
+    public var isNaN: Bool { value.isNaN }
+    public var isSignalingNaN: Bool { value.isSignalingNaN }
+    public var isCanonical: Bool { value.isCanonical }
 
-    public var magnitude: Magnitude { return .init(kind: kind, value: value.magnitude) }
-    public var ulp: Angle<Value> { return .init(kind: kind, value: value.ulp) }
-    public var significand: Angle<Value> { return .init(kind: kind, value: value.significand) }
-    public var nextUp: Angle<Value> { return .init(kind: kind, value: value.nextUp) }
-    public var nextDown: Angle<Value> { return .init(kind: kind, value: value.nextDown) }
+    public var magnitude: Magnitude { .init(kind: kind, value: value.magnitude) }
+    public var ulp: Angle<Value> { .init(kind: kind, value: value.ulp) }
+    public var significand: Angle<Value> { .init(kind: kind, value: value.significand) }
+    public var nextUp: Angle<Value> { .init(kind: kind, value: value.nextUp) }
+    public var nextDown: Angle<Value> { .init(kind: kind, value: value.nextDown) }
     
     // MARK: Initializers
     public init(integerLiteral value: IntegerLiteralType) {
@@ -159,45 +159,45 @@ public struct Angle<Value: FloatingPoint>: FloatingPoint, CustomStringConvertibl
     
     // MARK: Comparison
     public func isEqual(to other: Angle<Value>) -> Bool {
-        return value.isEqual(to: other.value(as: kind))
+        value.isEqual(to: other.value(as: kind))
     }
     
     public func isLess(than other: Angle<Value>) -> Bool {
-        return value.isLess(than: other.value(as: kind))
+        value.isLess(than: other.value(as: kind))
     }
     
     public func isLessThanOrEqualTo(_ other: Angle<Value>) -> Bool {
-        return value.isLessThanOrEqualTo(other.value(as: kind))
+        value.isLessThanOrEqualTo(other.value(as: kind))
     }
     
     public func isTotallyOrdered(belowOrEqualTo other: Angle<Value>) -> Bool {
-        return value.isTotallyOrdered(belowOrEqualTo: other.value(as: kind))
+        value.isTotallyOrdered(belowOrEqualTo: other.value(as: kind))
     }
 
     // MARK: - Strideable
     public func distance(to other: Angle<Value>) -> Stride {
-        return .init(kind: kind, value: value.distance(to: other.value(as: kind)))
+        .init(kind: kind, value: value.distance(to: other.value(as: kind)))
     }
 
     public func advanced(by n: Stride) -> Angle<Value> {
-        return .init(kind: kind, value: value.advanced(by: n.value(as: kind)))
+        .init(kind: kind, value: value.advanced(by: n.value(as: kind)))
     }
     
     // MARK: - Operators
     public static func +(lhs: Angle<Value>, rhs: Angle<Value>) -> Angle<Value> {
-        return .init(kind: lhs.kind, value: lhs.value + rhs.value(as: lhs.kind))
+        .init(kind: lhs.kind, value: lhs.value + rhs.value(as: lhs.kind))
     }
     
     public static func -(lhs: Angle<Value>, rhs: Angle<Value>) -> Angle<Value> {
-        return .init(kind: lhs.kind, value: lhs.value - rhs.value(as: lhs.kind))
+        .init(kind: lhs.kind, value: lhs.value - rhs.value(as: lhs.kind))
     }
     
     public static func *(lhs: Angle<Value>, rhs: Angle<Value>) -> Angle<Value> {
-        return .init(kind: lhs.kind, value: lhs.value * rhs.value(as: lhs.kind))
+        .init(kind: lhs.kind, value: lhs.value * rhs.value(as: lhs.kind))
     }
     
     public static func /(lhs: Angle<Value>, rhs: Angle<Value>) -> Angle<Value> {
-        return .init(kind: lhs.kind, value: lhs.value / rhs.value(as: lhs.kind))
+        .init(kind: lhs.kind, value: lhs.value / rhs.value(as: lhs.kind))
     }
     
     public static func +=(lhs: inout Angle<Value>, rhs: Angle<Value>) {
@@ -220,11 +220,11 @@ public struct Angle<Value: FloatingPoint>: FloatingPoint, CustomStringConvertibl
 // MARK: - Convenience
 extension Angle {
     public static func radians(_ value: Value) -> Angle {
-        return .init(kind: .radians, value: value)
+        .init(kind: .radians, value: value)
     }
 
     public static func degrees(_ value: Value) -> Angle {
-        return .init(kind: .degrees, value: value)
+        .init(kind: .degrees, value: value)
     }
 }
 
@@ -273,13 +273,13 @@ extension Angle: BinaryFloatingPoint where Value: BinaryFloatingPoint {
     public typealias RawSignificand = Value.RawSignificand
     public typealias RawExponent = Value.RawExponent
 
-    public static var exponentBitCount: Int { return Value.exponentBitCount }
-    public static var significandBitCount: Int { return Value.significandBitCount }
+    public static var exponentBitCount: Int { Value.exponentBitCount }
+    public static var significandBitCount: Int { Value.significandBitCount }
 
-    public var exponentBitPattern: RawExponent { return value.exponentBitPattern }
-    public var significandBitPattern: RawSignificand { return value.significandBitPattern }
-    public var binade: Angle<Value> { return .init(kind: kind, value: value.binade) }
-    public var significandWidth: Int { return value.significandWidth }
+    public var exponentBitPattern: RawExponent { value.exponentBitPattern }
+    public var significandBitPattern: RawSignificand { value.significandBitPattern }
+    public var binade: Angle<Value> { .init(kind: kind, value: value.binade) }
+    public var significandWidth: Int { value.significandWidth }
 
     public init(sign: FloatingPointSign, exponentBitPattern: RawExponent, significandBitPattern: RawSignificand) {
         self.init(kind: .radians,

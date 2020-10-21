@@ -34,9 +34,8 @@ public protocol Togglable {
 }
 
 extension Togglable {
-    /**
-     By default, `toggle` just assigns `toggled` to `self`.
-     */
+    /// By default, `toggle` just assigns `toggled` to `self`.
+    @inlinable
     public mutating func toggle() {
         self = toggled
     }
@@ -44,21 +43,18 @@ extension Togglable {
 
 extension Bool: Togglable {
     /// Directly inverts `self` by returning `!self`.
-    public var toggled: Bool {
-        return !self
-    }
+    @inlinable
+    public var toggled: Bool { !self }
 }
 
 extension ObjCBool: Togglable {
-    public var toggled: ObjCBool {
-        return .init(boolValue.toggled)
-    }
+    @inlinable
+    public var toggled: ObjCBool { .init(boolValue.toggled) }
 }
 
 #if !os(Linux)
 extension DarwinBoolean: Togglable {
-    public var toggled: DarwinBoolean {
-        return .init(boolValue.toggled)
-    }
+    @inlinable
+    public var toggled: DarwinBoolean { .init(boolValue.toggled) }
 }
 #endif

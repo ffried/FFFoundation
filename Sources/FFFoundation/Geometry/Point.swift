@@ -30,7 +30,7 @@ public struct Point<Value: Numeric & Hashable>: Hashable {
 
 extension Point {
     @inlinable
-    public static var zero: Point { return .init(x: 0, y: 0) }
+    public static var zero: Point { .init(x: 0, y: 0) }
 }
 
 extension Point: Encodable where Value: Encodable {}

@@ -29,11 +29,11 @@ import struct ObjectiveC.ObjCBool
 
 extension FileManager {
     @inlinable
-    public func fileExists(at url: URL) -> Bool { return fileExists(atPath: url.path) }
+    public func fileExists(at url: URL) -> Bool { fileExists(atPath: url.path) }
 
     @inlinable
     public func fileExists(at url: URL, isDirectory: UnsafeMutablePointer<ObjCBool>?) -> Bool {
-        return fileExists(atPath: url.path, isDirectory: isDirectory)
+        fileExists(atPath: url.path, isDirectory: isDirectory)
     }
 
     @inlinable

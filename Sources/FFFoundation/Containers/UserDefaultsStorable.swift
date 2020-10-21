@@ -147,6 +147,18 @@ extension Data: PrimitiveUserDefaultStorable {
     }
 }
 
+extension Date: PrimitiveUserDefaultStorable {
+    @inlinable
+    public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
+        userDefaults.object(forKey: key) as? Self
+    }
+
+    @inlinable
+    public func set(to userDefaults: UserDefaults, forKey key: String) {
+        userDefaults.set(self, forKey: key)
+    }
+}
+
 extension URL: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
@@ -159,7 +171,6 @@ extension URL: PrimitiveUserDefaultStorable {
     }
 }
 
-#if !os(Linux) || swift(>=5.2) // TODO: Remove this once https://bugs.swift.org/browse/SR-11592 is fixed (on Linux)
 extension Optional: PrimitiveUserDefaultStorable where Wrapped: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
@@ -174,7 +185,6 @@ extension Optional: PrimitiveUserDefaultStorable where Wrapped: PrimitiveUserDef
         }
     }
 }
-#endif
 
 extension Array: PrimitiveUserDefaultStorable where Element: PrimitiveUserDefaultStorable {
     @inlinable

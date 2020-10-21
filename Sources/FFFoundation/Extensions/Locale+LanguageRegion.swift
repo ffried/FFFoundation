@@ -21,23 +21,14 @@
 import struct Foundation.Locale
 
 extension Locale {
-    #if compiler(<5.1)
-    private typealias `Self` = Locale
-    #endif
-
     public static var localizedDeviceLanguage: String? {
-        return preferredLanguages.first.map(Self.init).flatMap {
+        preferredLanguages.first.map(Self.init).flatMap {
             $0.languageCode.flatMap($0.localizedString(forLanguageCode:))
         }
     }
 
     @inlinable
     public var localizedDeviceRegion: String? {
-        return regionCode.flatMap(localizedString(forRegionCode:))
-    }
-
-    @available(*, deprecated, message: "Use `localizedDeviceRegion` on the locale instance directly", renamed: "current.localizedDeviceRegion")
-    public static var localizedDeviceRegion: String? {
-        return current.localizedDeviceRegion
+        regionCode.flatMap(localizedString(forRegionCode:))
     }
 }

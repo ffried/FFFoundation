@@ -8,10 +8,10 @@ public struct TypeDescription: Equatable, Hashable, Codable, CustomStringConvert
     public fileprivate(set) var genericParameters: [TypeDescription]
 
     @inlinable
-    public var isGeneric: Bool { return !genericParameters.isEmpty }
+    public var isGeneric: Bool { !genericParameters.isEmpty }
 
     @inlinable
-    public var description: String { return typeName(includingModule: true) }
+    public var description: String { typeName(includingModule: true) }
 
     fileprivate init(name: String, genericParameters: [TypeDescription] = []) {
         self.name = name
@@ -27,7 +27,7 @@ public struct TypeDescription: Equatable, Hashable, Codable, CustomStringConvert
     }
 
     public func typeName(includingModule: Bool = true) -> String {
-        return (
+        (
             includingModule ? name : name.cleanedModuleName()
         ) + (
             genericParameters.isEmpty
@@ -58,6 +58,6 @@ extension StringProtocol {
     }
 
     fileprivate func cleanedModuleName() -> String {
-        return split(separator: ".").dropFirst().joined(separator: ".")
+        split(separator: ".").dropFirst().joined(separator: ".")
     }
 }

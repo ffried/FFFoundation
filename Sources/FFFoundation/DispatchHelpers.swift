@@ -20,20 +20,9 @@
 
 import Dispatch
 
-/**
- Delay a block by a certain time by using `DispatchQueue.main.asyncAfter`.
- 
- - parameter delay: The time to delay the execution of `block`. Defaults to `0.0`.
- - parameter block: The block to execute after `delay` (in seconds).
- - seeAlso: DispatchQueue.main.asyncAfter
- */
-public func delay(by delay: Double = 0.0, block: @escaping @convention(block) () -> Void) {
-    DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: block)
-}
-
 extension DispatchQoS: Comparable {
-    public static func <(lhs: DispatchQoS, rhs: DispatchQoS) -> Bool {
-        return lhs.qosClass < rhs.qosClass
+    public static func <(lhs: Self, rhs: Self) -> Bool {
+        lhs.qosClass < rhs.qosClass
     }
 }
 
@@ -54,7 +43,7 @@ extension DispatchQoS.QoSClass: Comparable {
         #endif
     }
 
-    public static func <(lhs: DispatchQoS.QoSClass, rhs: DispatchQoS.QoSClass) -> Bool {
-        return lhs.sortValue < rhs.sortValue
+    public static func <(lhs: Self, rhs: Self) -> Bool {
+        lhs.sortValue < rhs.sortValue
     }
 }

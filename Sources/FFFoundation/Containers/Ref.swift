@@ -33,7 +33,7 @@ public final class Ref<Referenced>: Copyable {
 
     @inlinable
     public func copy() -> Self {
-        return .init(wrappedValue: wrappedValue)
+        .init(wrappedValue: wrappedValue)
     }
 }
 

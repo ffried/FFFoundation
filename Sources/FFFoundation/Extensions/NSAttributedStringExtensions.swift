@@ -56,7 +56,7 @@
         }
         
         public final func height(forWidth width: CGFloat) -> CGFloat {
-            return size(forWidth: width).height
+            size(forWidth: width).height
         }
     }
 #endif

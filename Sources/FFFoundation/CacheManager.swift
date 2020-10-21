@@ -55,7 +55,8 @@ public final class CacheManager<Object: Cachable> {
         }
     }
 
-    @Atomic private var memoryCache: [ObjectIdentification: Object] = [:]
+    @Synchronized
+    private var memoryCache: [ObjectIdentification: Object] = [:]
 
     public init(name: Name = .default, shouldMigrateFromOldNamingBehavior: Bool = true) throws {
         self.name = name
@@ -88,11 +89,11 @@ public final class CacheManager<Object: Cachable> {
 
     // MARK: - Private helpers
     private func cacheURL(for identification: ObjectIdentification) -> URL {
-        return folder.appendingPathComponent(identification)
+        folder.appendingPathComponent(identification)
     }
 
     private func objectExists(at url: URL) -> Bool {
-        return fileManager.fileExists(at: url)
+        fileManager.fileExists(at: url)
     }
 
     private func object(at url: URL) throws -> Object? {
@@ -118,11 +119,11 @@ public final class CacheManager<Object: Cachable> {
 
     // MARK: - Public interface
     public func objectExists(for identification: ObjectIdentification) -> Bool {
-        return objectExists(at: cacheURL(for: identification))
+        objectExists(at: cacheURL(for: identification))
     }
 
     public func object(for identification: ObjectIdentification) throws -> Object? {
-        return try memoryCache[identification] ?? object(at: cacheURL(for: identification))
+        try memoryCache[identification] ?? object(at: cacheURL(for: identification))
     }
 
     public func cache(object: Object, for identification: ObjectIdentification) throws {
@@ -155,7 +156,7 @@ public final class CacheManager<Object: Cachable> {
 
 extension CacheManager {
     public static func cacheFolder(in fileManager: FileManager = .default) throws -> URL {
-        return try fileManager.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        try fileManager.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
     }
 }
 
@@ -183,17 +184,17 @@ public enum CachingError: Error, CustomStringConvertible {
 }
 
 extension CacheManager.Name {
-    public static var `default`: CacheManager.Name { return .init(rawValue: "Default") }
+    public static var `default`: CacheManager.Name { .init(rawValue: "Default") }
 }
 
 extension Data: Cachable {
-    public func cacheData() throws -> Data { return self }
-    public static func fromCache(data: Data) throws -> Data { return data }
+    public func cacheData() throws -> Data { self }
+    public static func fromCache(data: Data) throws -> Data { data }
 }
 
 extension String: Cachable {
-    public func cacheData() throws -> Data { return Data(utf8) }
-    public static func fromCache(data: Data) throws -> String { return String(decoding: data, as: UTF8.self) }
+    public func cacheData() throws -> Data { Data(utf8) }
+    public static func fromCache(data: Data) throws -> String { String(decoding: data, as: UTF8.self) }
 }
 
 #if canImport(UIKit)

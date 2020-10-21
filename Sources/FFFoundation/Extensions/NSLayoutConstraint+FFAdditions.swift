@@ -49,7 +49,7 @@
                                                           views: ViewsDictionary) -> [NSLayoutConstraint]
             where Formats.Element == VisualFormatType
         {
-            return formats.flatMap { constraints(withVisualFormat: $0, options: options, metrics: metrics, views: views) }
+            formats.flatMap { constraints(withVisualFormat: $0, options: options, metrics: metrics, views: views) }
         }
     }
     
@@ -69,7 +69,7 @@
         public func constraints(with views: NSLayoutConstraint.ViewsDictionary,
                                 options: NSLayoutConstraint.FormatOptions = [],
                                 metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {
-            return NSLayoutConstraint.constraints(withVisualFormats: self, options: options, metrics: metrics, views: views)
+            NSLayoutConstraint.constraints(withVisualFormats: self, options: options, metrics: metrics, views: views)
         }
     }
 #endif

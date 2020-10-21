@@ -57,12 +57,14 @@ extension Diff where Subject: RangeReplaceableCollection, Subject.Element: Equat
 }
 
 extension Diff where Subject == String, Element == String.SubSequence {
+    @inlinable
     public init(base: String, comparedTo head: String) {
         self.init(base: base, comparedTo: head, splitBy: "\n")
     }
 }
 
 extension Diff where Subject == String, Element == Subject {
+    @inlinable
     public init(base: String, comparedTo head: String) {
         self.init(base: base, comparedTo: head, splitBy: "\n")
     }
@@ -131,7 +133,7 @@ extension Diff {
         }
 
         public func annotatedLine(for element: Element) -> String {
-            return "\(lineSign)\(element)\n"
+            "\(lineSign)\(element)\n"
         }
 
         public init(from decoder: Decoder) throws {

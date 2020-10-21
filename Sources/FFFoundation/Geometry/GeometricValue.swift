@@ -30,32 +30,32 @@ public protocol GeometricValue: FloatingPoint {
 }
 
 extension Double: GeometricValue {
-    public func sin() -> Double { return Foundation.sin(self) }
-    public func asin() -> Double { return Foundation.asin(self) }
-    public func cos() -> Double { return Foundation.cos(self) }
-    public func acos() -> Double { return Foundation.acos(self) }
-    public func tan() -> Double { return Foundation.tan(self) }
-    public func atan() -> Double { return Foundation.atan(self) }
+    public func sin() -> Double { Foundation.sin(self) }
+    public func asin() -> Double { Foundation.asin(self) }
+    public func cos() -> Double { Foundation.cos(self) }
+    public func acos() -> Double { Foundation.acos(self) }
+    public func tan() -> Double { Foundation.tan(self) }
+    public func atan() -> Double { Foundation.atan(self) }
 }
 
 extension Float: GeometricValue {
-    public func sin() -> Float { return Foundation.sin(self) }
-    public func asin() -> Float { return Foundation.asin(self) }
-    public func cos() -> Float { return Foundation.cos(self) }
-    public func acos() -> Float { return Foundation.acos(self) }
-    public func tan() -> Float { return Foundation.tan(self) }
-    public func atan() -> Float { return Foundation.atan(self) }
+    public func sin() -> Float { Foundation.sin(self) }
+    public func asin() -> Float { Foundation.asin(self) }
+    public func cos() -> Float { Foundation.cos(self) }
+    public func acos() -> Float { Foundation.acos(self) }
+    public func tan() -> Float { Foundation.tan(self) }
+    public func atan() -> Float { Foundation.atan(self) }
 }
 
 #if canImport(CoreGraphics)
 import CoreGraphics
 
 extension CGFloat: GeometricValue {
-    public func sin() -> CGFloat { return CoreGraphics.sin(self) }
-    public func asin() -> CGFloat { return CoreGraphics.asin(self) }
-    public func cos() -> CGFloat { return CoreGraphics.cos(self) }
-    public func acos() -> CGFloat { return CoreGraphics.acos(self) }
-    public func tan() -> CGFloat { return CoreGraphics.tan(self) }
-    public func atan() -> CGFloat { return CoreGraphics.atan(self) }
+    public func sin() -> CGFloat { CoreGraphics.sin(self) }
+    public func asin() -> CGFloat { CoreGraphics.asin(self) }
+    public func cos() -> CGFloat { CoreGraphics.cos(self) }
+    public func acos() -> CGFloat { CoreGraphics.acos(self) }
+    public func tan() -> CGFloat { CoreGraphics.tan(self) }
+    public func atan() -> CGFloat { CoreGraphics.atan(self) }
 }
 #endif

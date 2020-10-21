@@ -38,22 +38,22 @@ public struct Lens<Value> {
     }
 
     public subscript<T>(dynamicMember keyPath: WritableKeyPath<Value, T>) -> Lens<T> {
-        return Lens<T>(getter: { self.wrappedValue[keyPath: keyPath] },
-                       setter: { self.wrappedValue[keyPath: keyPath] = $0 })
+        Lens<T>(getter: { self.wrappedValue[keyPath: keyPath] },
+                setter: { self.wrappedValue[keyPath: keyPath] = $0 })
     }
 
     /// Returns a readonly lens. The setter may be called, but has no effect.
     /// - Parameter getter: The getter to use to extract the value.
     @inlinable
     public static func readOnly(getter: @escaping () -> Value) -> Lens {
-        return Lens(getter: getter, setter: { _ in })
+        Lens(getter: getter, setter: { _ in })
     }
 
     /// Returns a constant value. The setter of the resulting Lens must not be called!
     /// - Parameter value: The constant value to wrap in a Lens.
     public static func constant(_ value: Value) -> Lens {
-        return Lens(getter: { value },
-                    setter: { _ in assertionFailure("Setter called on constant \(Lens<Value>.self)") })
+        Lens(getter: { value },
+             setter: { _ in assertionFailure("Setter called on constant \(Lens<Value>.self)") })
     }
 }
 

@@ -22,9 +22,9 @@ import class Foundation.OperationQueue
 import class Foundation.BlockOperation
 
 extension OperationQueue {
-    public var isMain: Bool { return self === type(of: self).main }
+    public var isMain: Bool { self === type(of: self).main }
     
-    public var isCurrent: Bool { return type(of: self).current.flatMap { $0 === self } ?? false }
+    public var isCurrent: Bool { type(of: self).current.flatMap { $0 === self } ?? false }
     
     public func addOperation(with block: @escaping () -> (), completion: @escaping () -> ()) {
         let operation = BlockOperation(block: block)

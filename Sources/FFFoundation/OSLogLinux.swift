@@ -25,7 +25,8 @@ public struct OSLogType: RawRepresentable, Hashable {
 
     public let rawValue: RawValue
     public init(rawValue: RawValue) { self.rawValue = rawValue }
-    public init(_ rawValue: RawValue) { self.rawValue = rawValue }
+    @inlinable
+    public init(_ rawValue: RawValue) { self.init(rawValue: rawValue) }
 
     public static let `default` = OSLogType(rawValue: 0)
     public static let info = OSLogType(rawValue: 1)
@@ -62,7 +63,7 @@ public final class OSLog: NSObject {
     }
     private let kind: Kind
 
-    public var signpostsEnabled: Bool { return kind != .disabled } // TODO: check with real os implementation
+    public var signpostsEnabled: Bool { kind != .disabled } // TODO: check with real os implementation
 
     private init(kind: Kind) {
         self.kind = kind

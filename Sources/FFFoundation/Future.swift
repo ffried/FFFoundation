@@ -27,7 +27,7 @@ public final class Future<Value> {
         case finished(Value)
     }
 
-    @Atomic private var state: State
+    @Synchronized private var state: State
     private let workerQueue: DispatchQueue
 
     private init(workerQueue: DispatchQueue?, state: State) {
@@ -82,7 +82,7 @@ public final class Future<Value> {
 
     @inlinable
     public func map<T>(_ transformer: @escaping (Value) throws -> T) -> FutureResult<T, Error> {
-        return map { val in Result { try transformer(val) } }
+        map { val in Result { try transformer(val) } }
     }
 
     public func flatMap<T>(_ transformer: @escaping (Value) -> Future<T>) -> Future<T> {
@@ -92,7 +92,7 @@ public final class Future<Value> {
     }
 
     public func flatMap<T>(_ transformer: @escaping (Value) throws -> Future<T>) -> FutureResult<T, Error> {
-        return flatMap { [workerQueue] in
+        flatMap { [workerQueue] in
             do { return try transformer($0).map { .success($0) } }
             catch { return FutureResult<T, Error>(queue: workerQueue, value: .failure(error)) }
         }
@@ -150,7 +150,7 @@ extension FutureResult {
 
     @inlinable
     public func map<Success, Failure: Error, T>(_ transformer: @escaping (Success) throws -> T) -> FutureResult<T, Error> where Value == Result<Success, Failure> {
-        return map { val in try transformer(val.get()) }
+        map { val in try transformer(val.get()) }
     }
 
     public func flatMap<Success, T>(_ transformer: @escaping (Success) throws -> FutureResult<T, Error>) -> FutureResult<T, Error> where Value == Result<Success, Error> {
@@ -167,7 +167,7 @@ extension FutureResult {
 
     @inlinable
     public func await<Success, Failure: Error>() throws -> Success where Value == Result<Success, Failure> {
-        return try await().get()
+        try await().get()
     }
 }
 

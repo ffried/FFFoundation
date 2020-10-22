@@ -21,7 +21,7 @@
 import Dispatch
 
 @available(*, deprecated, message: "Atomic was renamed to Synchronized", renamed: "Synchronized")
-typealias Atomic<Guarded> = Synchronized<Guarded>
+public typealias Atomic<Guarded> = Synchronized<Guarded>
 
 @propertyWrapper
 public final class Synchronized<Guarded> {

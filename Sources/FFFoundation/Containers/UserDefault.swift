@@ -43,7 +43,9 @@ public struct UserDefaultKey: RawRepresentable, Hashable, Codable, CustomStringC
 public struct UserDefault<Value: PrimitiveUserDefaultStorable> {
     public let userDefaults: UserDefaults
     public let key: UserDefaultKey
-    public let defaultValue: Value
+
+    @Lazy
+    public private(set) var defaultValue: Value
 
     public var wrappedValue: Value {
         get { Value.get(from: userDefaults, forKey: key.rawValue) ?? defaultValue }
@@ -56,20 +58,20 @@ public struct UserDefault<Value: PrimitiveUserDefaultStorable> {
              setter: { self.wrappedValue = $0 })
     }
 
-    public init(userDefaults: UserDefaults = .standard, key: UserDefaultKey, defaultValue: Value) {
+    public init(userDefaults: UserDefaults = .standard, key: UserDefaultKey, defaultValue: @escaping @autoclosure () -> Value) {
         self.userDefaults = userDefaults
         self.key = key
-        self.defaultValue = defaultValue
+        self._defaultValue = .init(constructor: defaultValue)
     }
 
     @inlinable
-    public init(wrappedValue: Value, userDefaults: UserDefaults = .standard, key: UserDefaultKey) {
-        self.init(userDefaults: userDefaults, key: key, defaultValue: wrappedValue)
+    public init(wrappedValue: @escaping @autoclosure () -> Value, userDefaults: UserDefaults = .standard, key: UserDefaultKey) {
+        self.init(userDefaults: userDefaults, key: key, defaultValue: wrappedValue())
     }
 
     @inlinable
-    public init(initialValue: Value, userDefaults: UserDefaults = .standard, key: UserDefaultKey) {
-        self.init(userDefaults: userDefaults, key: key, defaultValue: initialValue)
+    public init(initialValue: @escaping @autoclosure () -> Value, userDefaults: UserDefaults = .standard, key: UserDefaultKey) {
+        self.init(userDefaults: userDefaults, key: key, defaultValue: initialValue())
     }
 
     public func delete() {

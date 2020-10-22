@@ -47,10 +47,10 @@ final class UserDefaultTests: XCTestCase {
         let range: Range<Int>
     }
 
-    var userDefaults: UserDefaults { return .standard }
+    var userDefaults: UserDefaults { .standard }
 
     private func castedPrimitive<T: PrimitiveUserDefaultStorable>(for key: UserDefaultKey) -> T? {
-        return userDefaults.object(forKey: key.rawValue) as? T
+        userDefaults.object(forKey: key.rawValue) as? T
     }
 
     private func resetDefaults() {
@@ -79,12 +79,8 @@ final class UserDefaultTests: XCTestCase {
     }
 
     func testPrimitiveUserDefaultReadingUsingInexistingKey() {
-        #if !os(Linux)
         XCTAssertNil(UserDefault<Data?>(userDefaults: userDefaults, key: .inexisting).wrappedValue)
-        #else
-        XCTAssertEqual(UserDefault(userDefaults: userDefaults, key: .inexisting, defaultValue: "test_default").wrappedValue,
-                       "test_default")
-        #endif
+        XCTAssertNil(UserDefault<Bool?>(userDefaults: userDefaults, key: .inexisting).wrappedValue)
     }
 
     func testPrimitiveUserDefaultReadingUsingDefaults() {
@@ -95,9 +91,7 @@ final class UserDefaultTests: XCTestCase {
         let string = UserDefault<String>(userDefaults: userDefaults, key: .random, defaultValue: "")
         let data = UserDefault<Data>(userDefaults: userDefaults, key: .random, defaultValue: Data())
         let url = UserDefault<URL>(userDefaults: userDefaults, key: .random, defaultValue: URL(fileURLWithPath: "/path/to/nowhere"))
-        #if !os(Linux)
         let optionalInt = UserDefault<Int?>(userDefaults: userDefaults, key: .random)
-        #endif
         let doubleArray = UserDefault<Array<Double>>(userDefaults: userDefaults, key: .random)
         let doubleContArray = UserDefault<ContiguousArray<Double>>(userDefaults: userDefaults, key: .random)
         let intSet = UserDefault<Set<Int>>(userDefaults: userDefaults, key: .random)
@@ -110,9 +104,7 @@ final class UserDefaultTests: XCTestCase {
         XCTAssertEqual(string.wrappedValue, string.defaultValue)
         XCTAssertEqual(data.wrappedValue, data.defaultValue)
         XCTAssertEqual(url.wrappedValue, url.defaultValue)
-        #if !os(Linux)
-        XCTAssertEqual(optionalInt.wrappedValue, 0)
-        #endif
+        XCTAssertEqual(optionalInt.wrappedValue, optionalInt.defaultValue)
         XCTAssertEqual(doubleArray.wrappedValue, doubleArray.defaultValue)
         XCTAssertEqual(doubleContArray.wrappedValue, doubleContArray.defaultValue)
         XCTAssertEqual(intSet.wrappedValue, intSet.defaultValue)
@@ -127,9 +119,7 @@ final class UserDefaultTests: XCTestCase {
         let string = UserDefault<String>(userDefaults: userDefaults, key: .stringKey, defaultValue: "")
         let data = UserDefault<Data>(userDefaults: userDefaults, key: .dataKey, defaultValue: Data())
         let url = UserDefault<URL>(userDefaults: userDefaults, key: .urlKey, defaultValue: URL(fileURLWithPath: "/path/to/nowhere"))
-        #if !os(Linux)
         let optionalInt = UserDefault<Int?>(userDefaults: userDefaults, key: .optionalIntKey)
-        #endif
         let doubleArray = UserDefault<Array<Double>>(userDefaults: userDefaults, key: .doubleArrayKey)
         let doubleContArray = UserDefault<ContiguousArray<Double>>(userDefaults: userDefaults, key: .doubleContArrayKey)
         let intSet = UserDefault<Set<Int>>(userDefaults: userDefaults, key: .intSetKey)
@@ -142,9 +132,7 @@ final class UserDefaultTests: XCTestCase {
         string.wrappedValue = "Testing"
         data.wrappedValue = Data(1...8)
         url.wrappedValue = URL(fileURLWithPath: "/path/to/somewhere")
-        #if !os(Linux)
         optionalInt.wrappedValue = 42
-        #endif
         doubleArray.wrappedValue = [42.42, 42.4242]
         doubleContArray.wrappedValue = [42.42, 42.4242]
         intSet.wrappedValue = [42, 43, 44]
@@ -164,10 +152,8 @@ final class UserDefaultTests: XCTestCase {
         XCTAssertEqual(castedPrimitive(for: data.key), Data(1...8))
         XCTAssertEqual(url.wrappedValue, URL(fileURLWithPath: "/path/to/somewhere"))
         XCTAssertEqual(userDefaults.url(forKey: url.key.rawValue), URL(fileURLWithPath: "/path/to/somewhere"))
-        #if !os(Linux)
         XCTAssertEqual(optionalInt.wrappedValue, 42)
         XCTAssertEqual(castedPrimitive(for: optionalInt.key), 42)
-        #endif
         XCTAssertEqual(doubleArray.wrappedValue, [42.42, 42.4242])
         XCTAssertEqual(castedPrimitive(for: doubleArray.key), [42.42, 42.4242])
         XCTAssertEqual(doubleContArray.wrappedValue, [42.42, 42.4242])
@@ -179,13 +165,8 @@ final class UserDefaultTests: XCTestCase {
     }
 
     func testCodableUserDefaultReading() {
-        #if !os(Linux)
         let object = UserDefault<TestObject?>(userDefaults: userDefaults, key: .codableObject)
         XCTAssertNil(object.wrappedValue)
-        #else
-        let object = UserDefault<TestObject>(userDefaults: userDefaults, key: .codableObject,
-                                             defaultValue: TestObject(string: "DEFAULT", dict: [:], range: 1..<2))
-        #endif
         let objValue = TestObject(string: "Test", dict: ["key1": "value1", "key2": "value2"], range: 2..<42)
         object.wrappedValue = objValue
         XCTAssertEqual(object.wrappedValue, objValue)

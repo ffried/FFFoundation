@@ -22,6 +22,13 @@ import Foundation
 import os
 #endif
 
+extension UserDefaults {
+    @usableFromInline
+    func hasValue(forKey key: String) -> Bool {
+        object(forKey: key) != nil
+    }
+}
+
 public protocol PrimitiveUserDefaultStorable {
     static func get(from userDefaults: UserDefaults, forKey key: String) -> Self?
     func set(to userDefaults: UserDefaults, forKey key: String)
@@ -78,7 +85,7 @@ extension CodableUserDefaultsStorable {
 extension Bool: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        userDefaults.bool(forKey: key)
+        userDefaults.hasValue(forKey: key) ? userDefaults.bool(forKey: key) : nil
     }
 
     @inlinable
@@ -90,7 +97,7 @@ extension Bool: PrimitiveUserDefaultStorable {
 extension Int: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        userDefaults.integer(forKey: key)
+        userDefaults.hasValue(forKey: key) ? userDefaults.integer(forKey: key) : nil
     }
 
     @inlinable
@@ -102,7 +109,7 @@ extension Int: PrimitiveUserDefaultStorable {
 extension Float: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        userDefaults.float(forKey: key)
+        userDefaults.hasValue(forKey: key) ? userDefaults.float(forKey: key) : nil
     }
 
     @inlinable
@@ -114,7 +121,7 @@ extension Float: PrimitiveUserDefaultStorable {
 extension Double: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        userDefaults.double(forKey: key)
+        userDefaults.hasValue(forKey: key) ? userDefaults.double(forKey: key) : nil
     }
 
     @inlinable

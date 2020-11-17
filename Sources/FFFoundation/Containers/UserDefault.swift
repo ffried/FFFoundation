@@ -58,22 +58,31 @@ public struct UserDefault<Value: PrimitiveUserDefaultStorable> {
              setter: { self.wrappedValue = $0 })
     }
 
-    public init(userDefaults: UserDefaults = .standard, key: UserDefaultKey, defaultValue: @escaping @autoclosure () -> Value) {
+    public init(userDefaults: UserDefaults = .standard,
+                key: UserDefaultKey,
+                defaultValue: @escaping @autoclosure () -> Value) {
         self.userDefaults = userDefaults
         self.key = key
         self._defaultValue = .init(constructor: defaultValue)
     }
 
+    #if swift(>=5.4)
     @inlinable
-    public init(wrappedValue: @escaping @autoclosure () -> Value, userDefaults: UserDefaults = .standard, key: UserDefaultKey) {
+    public init(wrappedValue: @escaping @autoclosure () -> Value,
+                userDefaults: UserDefaults = .standard,
+                key: UserDefaultKey) {
         self.init(userDefaults: userDefaults, key: key, defaultValue: wrappedValue())
     }
+    #else
+    @inlinable
+    public init(wrappedValue: @escaping @autoclosure () -> Value,
+                userDefaults: UserDefaults = .standard,
+                key: UserDefaultKey = { fatalError("Key is required, but SR-13069...") }()) {
+        self.init(userDefaults: userDefaults, key: key, defaultValue: wrappedValue())
+    }
+    #endif
 
     @inlinable
-    public init(initialValue: @escaping @autoclosure () -> Value, userDefaults: UserDefaults = .standard, key: UserDefaultKey) {
-        self.init(userDefaults: userDefaults, key: key, defaultValue: initialValue())
-    }
-
     public func delete() {
         userDefaults.removeObject(forKey: key.rawValue)
     }

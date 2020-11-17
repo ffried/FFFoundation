@@ -10,7 +10,7 @@ jobs:
   validate-linux-tests:
     runs-on: macos-latest
     steps:
-      - run: sudo xcode-select -s /Applications/Xcode_12.1.app/Contents/Developer
+      - run: sudo xcode-select -s /Applications/Xcode_12.2.app/Contents/Developer
       - uses: actions/checkout@v2
       - uses: actions/cache@v2
         with:
@@ -30,7 +30,7 @@ jobs:
 
     runs-on: ${{matrix.os}}
     steps:
-      - run: sudo xcode-select -s /Applications/Xcode_12.1.app/Contents/Developer
+      - run: sudo xcode-select -s /Applications/Xcode_12.2.app/Contents/Developer
         if: runner.os == 'macOS'
       - name: Install Swift
         if: runner.os == 'Linux'
@@ -73,7 +73,7 @@ jobs:
         #   - action: build
         #     destination: platform=watchOS Simulator,OS=latest,name=Apple Watch Series 5 - 44mm
     steps:
-      - run: sudo xcode-select -s /Applications/Xcode_12.1.app/Contents/Developer
+      - run: sudo xcode-select -s /Applications/Xcode_12.2.app/Contents/Developer
       - uses: actions/checkout@v2
       - uses: sersoft-gmbh/xcodebuild-action@v1
         with:
@@ -81,7 +81,8 @@ jobs:
           scheme: FFFoundation
           destination: ${{matrix.destination}}
           action: ${{matrix.action}}
-          build-settings: -parallel-testing-enabled YES -enableCodeCoverage YES
+          parallel-testing-enabled: true
+          enable-code-coverage: true
       - uses: codecov/codecov-action@v1
         with:
           token: ${{secrets.CODECOV_TOKEN}}

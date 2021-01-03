@@ -20,9 +20,6 @@
 
 import Dispatch
 
-@available(*, deprecated, message: "Atomic was renamed to Synchronized", renamed: "Synchronized")
-public typealias Atomic<Guarded> = Synchronized<Guarded>
-
 @propertyWrapper
 public final class Synchronized<Guarded> {
     private var _wrappedValue: Guarded

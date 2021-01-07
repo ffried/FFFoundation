@@ -51,7 +51,7 @@ public final class Synchronized<Guarded> {
     }
 
     public func withValue<T>(do work: (inout Guarded) throws -> T) rethrows -> T {
-        dispatchPrecondition(condition: .onQueue(queue))
+        dispatchPrecondition(condition: .notOnQueue(queue))
         return try queue.sync { try withMutableValue(do: work) }
     }
 
@@ -61,12 +61,12 @@ public final class Synchronized<Guarded> {
     }
 
     public func coordinated(with other: Synchronized) -> (Guarded, Guarded) {
-        dispatchPrecondition(condition: .onQueue(queue))
+        dispatchPrecondition(condition: .notOnQueue(queue))
         return queue.sync { (_wrappedValue, queue === other.queue ? other._wrappedValue : other.wrappedValue) }
     }
 
     public func coordinated<OtherGuarded>(with other: Synchronized<OtherGuarded>) -> (Guarded, OtherGuarded) {
-        dispatchPrecondition(condition: .onQueue(queue))
+        dispatchPrecondition(condition: .notOnQueue(queue))
         return queue.sync { (_wrappedValue, other.wrappedValue) }
     }
 

@@ -18,10 +18,8 @@
 //  limitations under the License.
 //
 
-#if os(Linux)
 import struct Foundation.ObjCBool
-#else
-import struct ObjectiveC.ObjCBool
+#if canImport(Darwin)
 import struct Darwin.DarwinBoolean
 #endif
 
@@ -52,7 +50,7 @@ extension ObjCBool: Togglable {
     public var toggled: ObjCBool { .init(boolValue.toggled) }
 }
 
-#if !os(Linux)
+#if canImport(Darwin)
 extension DarwinBoolean: Togglable {
     @inlinable
     public var toggled: DarwinBoolean { .init(boolValue.toggled) }

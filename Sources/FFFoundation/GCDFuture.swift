@@ -100,7 +100,7 @@ public final class GCDFuture<Value> {
         }
     }
 
-    public func await() -> Value {
+    public func wait() -> Value {
         let semaphore = DispatchSemaphore(value: 0)
         var value: Value!
         whenDone {
@@ -109,6 +109,11 @@ public final class GCDFuture<Value> {
         }
         semaphore.wait()
         return value
+    }
+
+    @available(*, deprecated, message: "Use 'wait'", renamed: "wait")
+    public func await() -> Value {
+        wait()
     }
 }
 
@@ -186,10 +191,18 @@ extension GCDFutureResult {
     }
 
     @inlinable
+    public func wait<Success, Failure: Error>() throws -> Success
+    where Value == Result<Success, Failure>
+    {
+        try wait().get()
+    }
+
+    @inlinable
+    @available(*, deprecated, message: "Use 'wait'", renamed: "wait")
     public func await<Success, Failure: Error>() throws -> Success
     where Value == Result<Success, Failure>
     {
-        try await().get()
+        try wait()
     }
 }
 

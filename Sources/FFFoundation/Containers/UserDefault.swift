@@ -176,16 +176,16 @@ extension UserDefault {
         }
     }
 
-    public var publisher: Publisher { Publisher(userDefault: self) }
+    public var publisher: Publisher { .init(userDefault: self) }
 }
 
 #if canImport(SwiftUI)
 import SwiftUI
 
 @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
-extension UserDefault: DynamicProperty {
+extension UserDefault: SwiftUI.DynamicProperty {
     @inlinable
-    public var binding: Binding<Value> { projectedValue.binding }
+    public var binding: SwiftUI.Binding<Value> { projectedValue.binding }
 }
 #endif
 #endif

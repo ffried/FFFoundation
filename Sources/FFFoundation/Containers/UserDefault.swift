@@ -123,6 +123,7 @@ extension UserDefault where Value: ExpressibleByDictionaryLiteral {
     }
 }
 
+#if arch(arm64) || arch(x86_64)
 #if canImport(Combine)
 import Combine
 
@@ -187,5 +188,6 @@ extension UserDefault: DynamicProperty {
     @inlinable
     public var binding: Binding<Value> { projectedValue.binding }
 }
+#endif
 #endif
 #endif

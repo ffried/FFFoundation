@@ -57,6 +57,7 @@ public struct Lens<Value> {
     }
 }
 
+#if arch(arm64) || arch(x86_64)
 #if canImport(Combine) && canImport(SwiftUI)
 import Combine
 import SwiftUI
@@ -66,4 +67,5 @@ extension Lens {
     @inlinable
     public var binding: Binding<Value> { .init(get: getter, set: setter) }
 }
+#endif
 #endif

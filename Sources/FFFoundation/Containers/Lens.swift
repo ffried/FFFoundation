@@ -65,7 +65,7 @@ import SwiftUI
 @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
 extension Lens {
     @inlinable
-    public var binding: SwiftUI.Binding<Value> { .init(get: getter, set: setter) }
+    public var binding: Binding<Value> { .init(get: getter, set: setter) }
 }
 #endif
 #endif

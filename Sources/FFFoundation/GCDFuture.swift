@@ -30,6 +30,17 @@ public final class GCDFuture<Value> {
     @Synchronized private var state: State
     private let workerQueue: DispatchQueue
 
+#if compiler(>=5.5) && canImport(_Concurrency)
+    @available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+    var value: Value {
+        get async {
+            await withUnsafeContinuation { cont in
+                whenDone { cont.resume(returning: $0) }
+            }
+        }
+    }
+#endif
+
     private init(workerQueue: DispatchQueue?, state: State) {
         _state = .init(wrappedValue: state)
         self.workerQueue = workerQueue ?? DispatchQueue(label: "net.ffried.GCDFuture<\(Value.self)>.workerQueue",
@@ -209,13 +220,13 @@ extension GCDFutureResult {
 extension DispatchQueue {
     public final func asFuture<T>(do work: @escaping () -> T) -> GCDFuture<T> {
         let future = GCDFuture<T>(queue: self)
-        async { future.complete(with: work()) }
+        self.async { future.complete(with: work()) }
         return future
     }
 
     public final func asFuture<T>(do work: @escaping () throws -> T) -> GCDFutureResult<T, Error> {
         let future = GCDFutureResult<T, Error>(queue: self)
-        async { future.complete(with: Result { try work() }) }
+        self.async { future.complete(with: Result { try work() }) }
         return future
     }
 }

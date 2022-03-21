@@ -142,3 +142,7 @@ extension CoW: ExpressibleByStringInterpolation where Value: ExpressibleByString
         self.init(wrappedValue: Value(stringInterpolation: stringInterpolation))
     }
 }
+
+//#if compiler(>=5.5.2) && canImport(_Concurrency)
+//extension CoW: Sendable where Value: Sendable {}
+//#endif

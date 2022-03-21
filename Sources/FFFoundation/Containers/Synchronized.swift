@@ -174,3 +174,8 @@ extension Synchronized: ExpressibleByStringInterpolation where Guarded: Expressi
         self.init(wrappedValue: Guarded(stringInterpolation: stringInterpolation))
     }
 }
+
+#if compiler(>=5.5.2) && canImport(_Concurrency)
+extension Synchronized: @unchecked Sendable {}
+#endif
+

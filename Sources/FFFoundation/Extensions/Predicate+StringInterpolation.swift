@@ -24,23 +24,23 @@ import Foundation
 extension NSPredicate {
     public struct Format: ExpressibleByStringInterpolation {
         public typealias StringLiteralType = String
-
+        
         @usableFromInline
         let format: String
         @usableFromInline
         let args: [Any]?
-
+        
         public init(stringLiteral value: StringLiteralType) {
             format = value
             args = nil
         }
-
+        
         public init(stringInterpolation: StringInterpolation) {
             format = stringInterpolation.format
             args = stringInterpolation.args
         }
     }
-
+    
     @inlinable
     public convenience init(_ format: Format) {
         self.init(format: format.format, argumentArray: format.args)
@@ -50,7 +50,7 @@ extension NSPredicate {
 extension NSPredicate.Format {
     public struct StringInterpolation: StringInterpolationProtocol {
         public typealias StringLiteralType = NSPredicate.Format.StringLiteralType
-
+        
         private enum ValueKind: String {
             case key = "K"
             case object = "@"
@@ -59,30 +59,30 @@ extension NSPredicate.Format {
             case signedInteger = "ld"
             case unsingedInteger = "lu"
             case float = "f"
-
+            
             var formatSpecifier: String {
                 return "%" + rawValue
             }
         }
-
+        
         fileprivate private(set) var format: String
         fileprivate private(set) var args: [Any]
-
+        
         public init(literalCapacity: Int, interpolationCount: Int) {
             format = ""
             args = []
             format.reserveCapacity(literalCapacity + interpolationCount * 2)
             args.reserveCapacity(interpolationCount)
         }
-
+        
         public mutating func appendLiteral(_ literal: StringLiteralType) {
             format.append(literal)
         }
-
+        
         private mutating func addNull() {
             format.append("NULL")
         }
-
+        
         private mutating func add(arg: Any?, as valueKind: ValueKind) {
             if let arg = arg {
                 format.append(valueKind.formatSpecifier)
@@ -91,52 +91,52 @@ extension NSPredicate.Format {
                 addNull()
             }
         }
-
+        
         // MARK: Keys
         public mutating func appendInterpolation(_ key: NSPredicate.Key) {
             add(arg: key.rawValue, as: .key)
         }
-
+        
         public mutating func appendInterpolation(key: NSPredicate.Key) {
             add(arg: key, as: .key)
         }
-
+        
         public mutating func appendInterpolation(key: NSPredicate.Key.RawValue) {
             add(arg: key, as: .key)
         }
-
-        #if canImport(ObjectiveC)
+        
+#if canImport(ObjectiveC)
         public mutating func appendInterpolation(_ key: AnyKeyPath) {
             guard let kvcString = key._kvcKeyPathString else { fatalError("Cannot get key value coding string from \(key)!") }
             add(arg: kvcString, as: .key)
         }
-        #endif
-
+#endif
+        
         // MARK: Values
         public mutating func appendInterpolation(_ any: Any?) {
             add(arg: any, as: .object)
         }
-
+        
         public mutating func appendInterpolation(_ bool: Bool?) {
             add(arg: bool, as: .bool)
         }
-
+        
         public mutating func appendInterpolation<Bridged: ReferenceConvertible>(_ bridgeable: Bridged?) {
             add(arg: bridgeable.map { $0 as! Bridged.ReferenceType }, as: .object)
         }
-
+        
         public mutating func appendInterpolation<Integer: SignedInteger>(_ integer: Integer?) {
             add(arg: integer, as: .signedInteger)
         }
-
+        
         public mutating func appendInterpolation<Integer: UnsignedInteger>(_ integer: Integer?) {
             add(arg: integer, as: .unsingedInteger)
         }
-
+        
         public mutating func appendInterpolation<Float: FloatingPoint>(_ float: Float?) {
             add(arg: float, as: .float)
         }
-
+        
         public mutating func appendInterpolation(_ number: NSNumber?) {
             add(arg: number, as: .object)
         }

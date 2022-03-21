@@ -19,44 +19,45 @@
 //
 
 #if canImport(CoreGraphics)
-    import class Foundation.NSAttributedString
-    import struct CoreGraphics.CGFloat
-    import struct CoreGraphics.CGSize
-    import struct CoreGraphics.CGRect
-    import func CoreGraphics.ceil
+import class Foundation.NSAttributedString
+import struct CoreGraphics.CGFloat
+import struct CoreGraphics.CGSize
+import struct CoreGraphics.CGRect
+import func CoreGraphics.ceil
 
-    #if canImport(UIKit)
-        import struct UIKit.NSStringDrawingOptions
-    #else
-        import class Foundation.NSString
-    #endif
-    
-    extension NSAttributedString {
-        public typealias AttributesDictionary = [Key: Any]
-        
-        public final func size(forWidth width: CGFloat) -> CGSize {
-            let boundingSize = CGSize(width: width, height: .greatestFiniteMagnitude)
-            #if canImport(UIKit)
-                let options: NSStringDrawingOptions
-            #else
-                let options: NSString.DrawingOptions
-            #endif
-            options = .usesLineFragmentOrigin
-            let rawSize: CGRect
-            #if canImport(UIKit)
-                rawSize = boundingRect(with: boundingSize, options: options, context: nil)
-            #elseif canImport(AppKit)
-                if #available(macOS 10.11, *) {
-                    rawSize = boundingRect(with: boundingSize, options: options, context: nil)
-                } else {
-                    rawSize = boundingRect(with: boundingSize, options: options)
-                }
-            #endif
-            return CGSize(width: ceil(rawSize.width), height: ceil(rawSize.height))
+#if canImport(UIKit)
+import struct UIKit.NSStringDrawingOptions
+#else
+import class Foundation.NSString
+#endif
+
+extension NSAttributedString {
+    public typealias AttributesDictionary = [Key: Any]
+
+    public final func size(forWidth width: CGFloat) -> CGSize {
+        let boundingSize = CGSize(width: width, height: .greatestFiniteMagnitude)
+#if canImport(UIKit)
+        let options: NSStringDrawingOptions
+#else
+        let options: NSString.DrawingOptions
+#endif
+        options = .usesLineFragmentOrigin
+        let rawSize: CGRect
+#if canImport(UIKit)
+        rawSize = boundingRect(with: boundingSize, options: options, context: nil)
+#elseif canImport(AppKit)
+        if #available(macOS 10.11, *) {
+            rawSize = boundingRect(with: boundingSize, options: options, context: nil)
+        } else {
+            rawSize = boundingRect(with: boundingSize, options: options)
         }
-        
-        public final func height(forWidth width: CGFloat) -> CGFloat {
-            size(forWidth: width).height
-        }
+#endif
+        return CGSize(width: ceil(rawSize.width), height: ceil(rawSize.height))
     }
+
+    @inlinable
+    public final func height(forWidth width: CGFloat) -> CGFloat {
+        size(forWidth: width).height
+    }
+}
 #endif

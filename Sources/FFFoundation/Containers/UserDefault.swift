@@ -66,21 +66,12 @@ public struct UserDefault<Value: PrimitiveUserDefaultStorable> {
         self._defaultValue = .init(constructor: defaultValue)
     }
 
-    #if swift(>=5.4)
     @inlinable
     public init(wrappedValue: @escaping @autoclosure () -> Value,
                 userDefaults: UserDefaults = .standard,
                 key: UserDefaultKey) {
         self.init(userDefaults: userDefaults, key: key, defaultValue: wrappedValue())
     }
-    #else
-    @inlinable
-    public init(wrappedValue: @escaping @autoclosure () -> Value,
-                userDefaults: UserDefaults = .standard,
-                key: UserDefaultKey = { fatalError("Key is required, but SR-13069...") }()) {
-        self.init(userDefaults: userDefaults, key: key, defaultValue: wrappedValue())
-    }
-    #endif
 
     @inlinable
     public func delete() {

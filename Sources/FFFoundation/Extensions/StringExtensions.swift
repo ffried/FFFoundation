@@ -19,17 +19,18 @@
 //
 
 #if canImport(CoreGraphics)
-    import class Foundation.NSAttributedString
-    import struct CoreGraphics.CGFloat
-    import struct CoreGraphics.CGSize
-    
-    extension String {
-        public func size(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGSize {
-            NSAttributedString(string: self, attributes: attributes).size(forWidth: width)
-        }
-        
-        public func height(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGFloat {
-            size(forWidth: width, attributes: attributes).height
-        }
+import class Foundation.NSAttributedString
+import struct CoreGraphics.CGFloat
+import struct CoreGraphics.CGSize
+
+extension String {
+    public func size(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGSize {
+        NSAttributedString(string: self, attributes: attributes).size(forWidth: width)
     }
+
+    @inlinable
+    public func height(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGFloat {
+        size(forWidth: width, attributes: attributes).height
+    }
+}
 #endif

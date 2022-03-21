@@ -286,3 +286,7 @@ extension Angle: BinaryFloatingPoint where Value: BinaryFloatingPoint {
                   value: .init(sign: sign, exponentBitPattern: exponentBitPattern, significandBitPattern: significandBitPattern))
     }
 }
+
+#if compiler(>=5.5.2) && canImport(_Concurrency)
+extension Angle: Sendable where Value: Sendable {}
+#endif

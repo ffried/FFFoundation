@@ -43,7 +43,7 @@ extension Sequence {
 
 extension MutableCollection where Self: RangeReplaceableCollection {
     public mutating func removeReleasedObjects<Object>() where Element == Weak<Object> {
-        removeAll { $0.wasReleased }
+        removeAll(where: \.wasReleased)
     }
     
     public mutating func appendWeakly<Object>(_ object: Object) where Element == Weak<Object> {
@@ -72,7 +72,7 @@ extension Weak: Hashable where Object: Hashable {
 
 //extension Weak: Comparable where Object: Comparable {
 //    public static func <(lhs: Weak, rhs: Weak) -> Bool {
-//        lhs.value < rhs.value
+//        lhs.wrappedValue < rhs.wrappedValue
 //    }
 //}
 
@@ -135,3 +135,7 @@ extension Weak: ExpressibleByStringInterpolation where Object: ExpressibleByStri
         self.init(object: Object(stringInterpolation: stringInterpolation))
     }
 }
+
+#if compiler(>=5.5.2) && canImport(_Concurrency)
+extension Weak: Sendable where Object: Sendable {}
+#endif

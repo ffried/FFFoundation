@@ -27,10 +27,20 @@ public final class GCDFuture<Value> {
         case finished(Value)
     }
 
-    @Synchronized private var state: State
+    @Synchronized
+    private var state: State
     private let workerQueue: DispatchQueue
 
-#if compiler(>=5.5) && canImport(_Concurrency)
+#if compiler(>=5.5.2) && canImport(_Concurrency)
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    var value: Value {
+        get async {
+            await withUnsafeContinuation { cont in
+                whenDone { cont.resume(returning: $0) }
+            }
+        }
+    }
+#elseif compiler(>=5.5) && canImport(_Concurrency)
     @available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
     var value: Value {
         get async {
@@ -70,6 +80,24 @@ public final class GCDFuture<Value> {
         }
         workerQueue.async { handlers.forEach { $0(value) } }
     }
+
+#if compiler(>=5.5.2) && canImport(_Concurrency)
+    @discardableResult
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    public func complete(with task: @escaping @Sendable () async -> Value) -> Task<Void, Never> {
+        Task {
+            await self.complete(with: task())
+        }
+    }
+#elseif compiler(>=5.5) && canImport(_Concurrency)
+    @discardableResult
+    @available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+    public func complete(with task: @escaping @Sendable () async -> Value) -> Task<Void, Never> {
+        Task {
+            await self.complete(with: task())
+        }
+    }
+#endif
 
     public func whenDone(do work: @escaping Handler) {
         let value: Value? = _state.withValue {
@@ -157,6 +185,36 @@ extension GCDFutureResult {
         complete(with: .failure(error))
     }
 
+#if compiler(>=5.5.2) && canImport(_Concurrency)
+    @discardableResult
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    public func complete<Success>(with task: @escaping @Sendable () async throws -> Success) -> Task<Void, Never>
+    where Value == Result<Success, Error>
+    {
+        Task {
+            do {
+                try await self.succeed(with: task())
+            } catch {
+                self.fail(with: error)
+            }
+        }
+    }
+#elseif compiler(>=5.5) && canImport(_Concurrency)
+    @discardableResult
+    @available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+    public func complete<Success>(with task: @escaping @Sendable () async throws -> Success) -> Task<Void, Never>
+    where Value == Result<Success, Error>
+    {
+        Task {
+            do {
+                try await self.succeed(with: task())
+            } catch {
+                self.fail(with: error)
+            }
+        }
+    }
+#endif
+
     public func cascade<Success, Failure: Error>(other: GCDFutureResult<Success, Failure>)
     where Value == Result<Success, Failure>
     {
@@ -230,3 +288,7 @@ extension DispatchQueue {
         return future
     }
 }
+
+#if compiler(>=5.5) && canImport(_Concurrency)
+extension GCDFuture: @unchecked Sendable {}
+#endif

@@ -47,3 +47,7 @@ extension Size where Value: BinaryInteger {
 
 extension Size: Encodable where Value: Encodable {}
 extension Size: Decodable where Value: Decodable {}
+
+#if compiler(>=5.5.2) && canImport(_Concurrency)
+extension Size: Sendable where Value: Sendable {}
+#endif

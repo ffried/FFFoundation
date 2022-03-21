@@ -1,0 +1,4114 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 26,
+      "symbol": "Cachable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 27,
+      "symbol": "Cachable.fromCache(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 29,
+      "symbol": "Cachable.cacheData()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 33,
+      "symbol": "CacheManager",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 34,
+      "symbol": "CacheManager.ObjectIdentification",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 40,
+      "symbol": "CacheManager.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 44,
+      "symbol": "CacheManager.clearsMemoryCachePeriodically",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 61,
+      "symbol": "CacheManager.init(name:shouldMigrateFromOldNamingBehavior:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 121,
+      "symbol": "CacheManager.objectExists(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 125,
+      "symbol": "CacheManager.object(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 129,
+      "symbol": "CacheManager.cache(object:for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 134,
+      "symbol": "CacheManager.cacheObject(for:at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 138,
+      "symbol": "CacheManager.removeObject(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 142,
+      "symbol": "CacheManager.urlOfObject(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 148,
+      "symbol": "CacheManager.clearMemoryCache()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 149,
+      "symbol": "CacheManager.clearCache()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 157,
+      "symbol": "CacheManager",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 158,
+      "symbol": "CacheManager.cacheFolder(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 163,
+      "symbol": "CacheManager",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 164,
+      "symbol": "CacheManager.Name",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 172,
+      "symbol": "CachingError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 173,
+      "symbol": "CachingError.couldNotSerialize(underlyingError:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 174,
+      "symbol": "CachingError.couldNotDeserialize(underlyingError:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 186,
+      "symbol": "CacheManager.Name",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 187,
+      "symbol": "CacheManager.Name.default",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 191,
+      "symbol": "Data.cacheData()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 192,
+      "symbol": "Data.fromCache(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 196,
+      "symbol": "String.cacheData()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 197,
+      "symbol": "String.fromCache(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 217,
+      "symbol": "NSImage.cacheData()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/CacheManager.swift",
+      "line": 222,
+      "symbol": "NSImage.fromCache(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 20,
+      "symbol": "Copyable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 21,
+      "symbol": "Copyable.copy()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 25,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 26,
+      "symbol": "CoW.Copier",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 31,
+      "symbol": "CoW.wrappedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 39,
+      "symbol": "CoW.init(wrappedValue:copyingWith:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 45,
+      "symbol": "CoW.copyIfNeeded()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 52,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 54,
+      "symbol": "CoW.init(wrappedValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 57,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 59,
+      "symbol": "CoW.init(copyingWith:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 62,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 64,
+      "symbol": "CoW.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 68,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 74,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 80,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 86,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 92,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 98,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 104,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 110,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 116,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 122,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 128,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 134,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/CoW.swift",
+      "line": 140,
+      "symbol": "CoW",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 22,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 27,
+      "symbol": "Lazy.wrappedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 39,
+      "symbol": "Lazy.init(constructor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 44,
+      "symbol": "Lazy.init(wrappedValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 48,
+      "symbol": "Lazy.init(other:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 52,
+      "symbol": "Lazy.reset()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 58,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 60,
+      "symbol": "Lazy.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 64,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 70,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 76,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 82,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 88,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 95,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 101,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 107,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 113,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 119,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 125,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 131,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lazy.swift",
+      "line": 137,
+      "symbol": "Lazy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lens.swift",
+      "line": 23,
+      "symbol": "Lens",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lens.swift",
+      "line": 30,
+      "symbol": "Lens.wrappedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lens.swift",
+      "line": 35,
+      "symbol": "Lens.init(getter:setter:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lens.swift",
+      "line": 40,
+      "symbol": "Lens.subscript(dynamicMember:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lens.swift",
+      "line": 66,
+      "symbol": "Lens",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Lens.swift",
+      "line": 68,
+      "symbol": "Lens.binding",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 22,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 23,
+      "symbol": "Ref.wrappedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 25,
+      "symbol": "Ref.projectedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 30,
+      "symbol": "Ref.init(wrappedValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 35,
+      "symbol": "Ref.copy()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 40,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 42,
+      "symbol": "Ref.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 46,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 52,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 58,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 64,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 70,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 77,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 83,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 89,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 95,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 101,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 107,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 113,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Ref.swift",
+      "line": 119,
+      "symbol": "Ref",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 24,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 28,
+      "symbol": "Synchronized.wrappedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 33,
+      "symbol": "Synchronized.init(value:qos:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 38,
+      "symbol": "Synchronized.init(wrappedValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 42,
+      "symbol": "Synchronized.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 53,
+      "symbol": "Synchronized.withValue(do:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 59,
+      "symbol": "Synchronized.withValueVoid(do:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 63,
+      "symbol": "Synchronized.coordinated(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 68,
+      "symbol": "Synchronized.coordinated(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 73,
+      "symbol": "Synchronized.combined(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 77,
+      "symbol": "Synchronized.combined(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 83,
+      "symbol": "Synchronized.exchange(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 92,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 94,
+      "symbol": "Synchronized.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 98,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 105,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 111,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 118,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 124,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 130,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 136,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 142,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 148,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 154,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 160,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 166,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 172,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Synchronized.swift",
+      "line": 179,
+      "symbol": "Synchronized",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 23,
+      "symbol": "UserDefaultKey",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 43,
+      "symbol": "UserDefault",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 44,
+      "symbol": "UserDefault.userDefaults",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 45,
+      "symbol": "UserDefault.key",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 48,
+      "symbol": "UserDefault.defaultValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 50,
+      "symbol": "UserDefault.wrappedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 56,
+      "symbol": "UserDefault.projectedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 61,
+      "symbol": "UserDefault.init(userDefaults:key:defaultValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 70,
+      "symbol": "UserDefault.init(wrappedValue:userDefaults:key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 77,
+      "symbol": "UserDefault.delete()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 82,
+      "symbol": "UserDefault",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 84,
+      "symbol": "UserDefault.init(userDefaults:key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 89,
+      "symbol": "UserDefault",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 91,
+      "symbol": "UserDefault.init(userDefaults:key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 96,
+      "symbol": "UserDefault",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 98,
+      "symbol": "UserDefault.init(userDefaults:key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 103,
+      "symbol": "UserDefault",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 105,
+      "symbol": "UserDefault.init(userDefaults:key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 110,
+      "symbol": "UserDefault",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 112,
+      "symbol": "UserDefault.init(userDefaults:key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 122,
+      "symbol": "UserDefault",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 123,
+      "symbol": "UserDefault.Publisher",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 171,
+      "symbol": "UserDefault.publisher",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 178,
+      "symbol": "UserDefault",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefault.swift",
+      "line": 180,
+      "symbol": "UserDefault.binding",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 32,
+      "symbol": "PrimitiveUserDefaultStorable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 33,
+      "symbol": "PrimitiveUserDefaultStorable.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 34,
+      "symbol": "PrimitiveUserDefaultStorable.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 37,
+      "symbol": "CodableUserDefaultsStorable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 39,
+      "symbol": "CodableUserDefaultsStorable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 40,
+      "symbol": "CodableUserDefaultsStorable.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 63,
+      "symbol": "CodableUserDefaultsStorable.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 87,
+      "symbol": "Bool.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 92,
+      "symbol": "Bool.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 99,
+      "symbol": "Int.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 104,
+      "symbol": "Int.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 111,
+      "symbol": "Float.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 116,
+      "symbol": "Float.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 123,
+      "symbol": "Double.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 128,
+      "symbol": "Double.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 135,
+      "symbol": "String.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 140,
+      "symbol": "String.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 147,
+      "symbol": "Data.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 152,
+      "symbol": "Data.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 159,
+      "symbol": "Date.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 164,
+      "symbol": "Date.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 171,
+      "symbol": "URL.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 176,
+      "symbol": "URL.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 183,
+      "symbol": "Optional.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 188,
+      "symbol": "Optional.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 198,
+      "symbol": "Array.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 203,
+      "symbol": "Array.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 210,
+      "symbol": "ContiguousArray.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 215,
+      "symbol": "ContiguousArray.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 222,
+      "symbol": "Set.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 227,
+      "symbol": "Set.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 234,
+      "symbol": "Dictionary.get(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/UserDefaultsStorable.swift",
+      "line": 239,
+      "symbol": "Dictionary.set(to:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 22,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 23,
+      "symbol": "Weak.wrappedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 26,
+      "symbol": "Weak.wasReleased",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 28,
+      "symbol": "Weak.init(object:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 32,
+      "symbol": "Weak.init(wrappedValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 39,
+      "symbol": "Sequence.nonReleasedObjects()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 45,
+      "symbol": "MutableCollection.removeReleasedObjects()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 49,
+      "symbol": "MutableCollection.appendWeakly(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 55,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 57,
+      "symbol": "Weak.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 61,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 67,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 79,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 85,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 91,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 97,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 103,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 109,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 115,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 121,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 127,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 133,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Containers/Weak.swift",
+      "line": 140,
+      "symbol": "Weak",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 21,
+      "symbol": "Diffable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 22,
+      "symbol": "Diffable.contains(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 27,
+      "symbol": "Diff",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 28,
+      "symbol": "Diff.Changes",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 30,
+      "symbol": "Diff.base",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 31,
+      "symbol": "Diff.head",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 32,
+      "symbol": "Diff.changes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 40,
+      "symbol": "SimpleDiff",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 41,
+      "symbol": "ElementDiff",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 44,
+      "symbol": "Diff.Change",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 45,
+      "symbol": "Diff",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 48,
+      "symbol": "Diff",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 49,
+      "symbol": "Diff.init(base:comparedTo:splitBy:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 56,
+      "symbol": "Diff",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 57,
+      "symbol": "Diff.init(base:comparedTo:splitBy:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 64,
+      "symbol": "Diff",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 66,
+      "symbol": "Diff.init(base:comparedTo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 71,
+      "symbol": "Diff",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 73,
+      "symbol": "Diff.init(base:comparedTo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 87,
+      "symbol": "Diff",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 101,
+      "symbol": "Diff",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 120,
+      "symbol": "Diff",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 121,
+      "symbol": "Diff.Change",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 122,
+      "symbol": "Diff.Change.added",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 122,
+      "symbol": "Diff.Change.removed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 122,
+      "symbol": "Diff.Change.unchanged",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 132,
+      "symbol": "Diff.Change.lineSign",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Diff.swift",
+      "line": 140,
+      "symbol": "Diff.Change.annotatedLine(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/FileManager+Directories.swift",
+      "line": 32,
+      "symbol": "FileManager.fileExists(at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/FileManager+Directories.swift",
+      "line": 35,
+      "symbol": "FileManager.fileExists(at:isDirectory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/FileManager+Directories.swift",
+      "line": 40,
+      "symbol": "FileManager.directoryExists(at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/FileManager+Directories.swift",
+      "line": 46,
+      "symbol": "FileManager.createDirectoryIfNeeded(at:withIntermediateDirectories:attributes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Locale+LanguageRegion.swift",
+      "line": 24,
+      "symbol": "Locale.localizedDeviceLanguage",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Locale+LanguageRegion.swift",
+      "line": 31,
+      "symbol": "Locale.localizedDeviceRegion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/NSAttributedStringExtensions.swift",
+      "line": 35,
+      "symbol": "NSAttributedString.AttributesDictionary",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/NSAttributedStringExtensions.swift",
+      "line": 37,
+      "symbol": "NSAttributedString.size(forWidth:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/NSAttributedStringExtensions.swift",
+      "line": 59,
+      "symbol": "NSAttributedString.height(forWidth:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/NSLayoutConstraint+FFAdditions.swift",
+      "line": 39,
+      "symbol": "NSLayoutConstraint.ViewType",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/NSLayoutConstraint+FFAdditions.swift",
+      "line": 40,
+      "symbol": "NSLayoutConstraint.MetricValueType",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/NSLayoutConstraint+FFAdditions.swift",
+      "line": 42,
+      "symbol": "NSLayoutConstraint.VisualFormatType",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/NSLayoutConstraint+FFAdditions.swift",
+      "line": 43,
+      "symbol": "NSLayoutConstraint.MetricsDictionary",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/NSLayoutConstraint+FFAdditions.swift",
+      "line": 44,
+      "symbol": "NSLayoutConstraint.ViewsDictionary",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/NSLayoutConstraint+FFAdditions.swift",
+      "line": 46,
+      "symbol": "NSLayoutConstraint.constraints(withVisualFormats:options:metrics:views:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/NSLayoutConstraint+FFAdditions.swift",
+      "line": 58,
+      "symbol": "Sequence.activate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/NSLayoutConstraint+FFAdditions.swift",
+      "line": 62,
+      "symbol": "Sequence.deactivate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/NSLayoutConstraint+FFAdditions.swift",
+      "line": 69,
+      "symbol": "Sequence.constraints(with:options:metrics:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/OperationQueue+FFAdditions.swift",
+      "line": 25,
+      "symbol": "OperationQueue.isMain",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/OperationQueue+FFAdditions.swift",
+      "line": 27,
+      "symbol": "OperationQueue.isCurrent",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/OperationQueue+FFAdditions.swift",
+      "line": 29,
+      "symbol": "OperationQueue.addOperation(with:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/OperationQueue+FFAdditions.swift",
+      "line": 35,
+      "symbol": "OperationQueue.addOperationWithBlockAndWait(block:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/OperationQueue+FFAdditions.swift",
+      "line": 39,
+      "symbol": "OperationQueue.addOperationWithBlockAndWaitIfNotCurrentQueue(block:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Key.swift",
+      "line": 23,
+      "symbol": "NSPredicate.Key",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 26,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 30,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 34,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 38,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 42,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 46,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 50,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 54,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 58,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 62,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 66,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 70,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 74,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 78,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 83,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 87,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 91,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 95,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 99,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 103,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 107,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 111,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 115,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 119,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 123,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 127,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 131,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 135,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 140,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 144,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 148,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 152,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 156,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 160,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 164,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 168,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 172,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 176,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 180,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 184,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 188,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 192,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 197,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 201,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 205,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 209,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 213,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 217,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 221,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 225,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 229,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 233,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 237,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 241,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 245,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 249,
+      "symbol": "!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 256,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 260,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 264,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 268,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 272,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 276,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 280,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 284,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 288,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 292,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 296,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 300,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 304,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 308,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 312,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 316,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 320,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 324,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 328,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 332,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 336,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 340,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 344,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 348,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 353,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 357,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 361,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 365,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 369,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 373,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 377,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 381,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 385,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 389,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 393,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 397,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 401,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 405,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 409,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 413,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 417,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 421,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 425,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 429,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 433,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 437,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 441,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 445,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 450,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 454,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 458,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 462,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 466,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 470,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 474,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 478,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 482,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 486,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 490,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 494,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 498,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 502,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 506,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 510,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 514,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 518,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 522,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 526,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 530,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 534,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 538,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 542,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 547,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 551,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 555,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 559,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 563,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 567,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 571,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 575,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 579,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 583,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 587,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 591,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 595,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 599,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 603,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 607,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 611,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 615,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 619,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 623,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 627,
+      "symbol": "<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 631,
+      "symbol": ">(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 635,
+      "symbol": "<=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 639,
+      "symbol": ">=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 645,
+      "symbol": "!(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 648,
+      "symbol": "!(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 650,
+      "symbol": "!(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 655,
+      "symbol": "&&(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+Operators.swift",
+      "line": 659,
+      "symbol": "||(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift",
+      "line": 25,
+      "symbol": "NSPredicate.Format",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift",
+      "line": 45,
+      "symbol": "NSPredicate.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift",
+      "line": 50,
+      "symbol": "NSPredicate.Format",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift",
+      "line": 96,
+      "symbol": "NSPredicate.Format.StringInterpolation.appendInterpolation(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift",
+      "line": 100,
+      "symbol": "NSPredicate.Format.StringInterpolation.appendInterpolation(key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift",
+      "line": 104,
+      "symbol": "NSPredicate.Format.StringInterpolation.appendInterpolation(key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift",
+      "line": 109,
+      "symbol": "NSPredicate.Format.StringInterpolation.appendInterpolation(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift",
+      "line": 116,
+      "symbol": "NSPredicate.Format.StringInterpolation.appendInterpolation(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift",
+      "line": 120,
+      "symbol": "NSPredicate.Format.StringInterpolation.appendInterpolation(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift",
+      "line": 124,
+      "symbol": "NSPredicate.Format.StringInterpolation.appendInterpolation(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift",
+      "line": 128,
+      "symbol": "NSPredicate.Format.StringInterpolation.appendInterpolation(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift",
+      "line": 132,
+      "symbol": "NSPredicate.Format.StringInterpolation.appendInterpolation(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift",
+      "line": 136,
+      "symbol": "NSPredicate.Format.StringInterpolation.appendInterpolation(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/Predicate+StringInterpolation.swift",
+      "line": 140,
+      "symbol": "NSPredicate.Format.StringInterpolation.appendInterpolation(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/SortDescriptor+Key.swift",
+      "line": 23,
+      "symbol": "NSSortDescriptor.Key",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/SortDescriptor+Operators.swift",
+      "line": 27,
+      "symbol": "^(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/SortDescriptor+Operators.swift",
+      "line": 31,
+      "symbol": "!^(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/SortDescriptor+Operators.swift",
+      "line": 36,
+      "symbol": "^(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/SortDescriptor+Operators.swift",
+      "line": 40,
+      "symbol": "!^(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/StringExtensions.swift",
+      "line": 27,
+      "symbol": "String.size(forWidth:attributes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Extensions/StringExtensions.swift",
+      "line": 32,
+      "symbol": "String.height(forWidth:attributes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 23,
+      "symbol": "GCDFuture",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 24,
+      "symbol": "GCDFuture.Handler",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 65,
+      "symbol": "GCDFuture.init(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 69,
+      "symbol": "GCDFuture.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 73,
+      "symbol": "GCDFuture.complete(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 87,
+      "symbol": "GCDFuture.complete(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 102,
+      "symbol": "GCDFuture.whenDone(do:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 114,
+      "symbol": "GCDFuture.cascade(other:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 118,
+      "symbol": "GCDFuture.map(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 125,
+      "symbol": "GCDFuture.map(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 129,
+      "symbol": "GCDFuture.flatMap(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 135,
+      "symbol": "GCDFuture.flatMap(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 142,
+      "symbol": "GCDFuture.wait()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 154,
+      "symbol": "GCDFuture.await()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 159,
+      "symbol": "GCDFutureResult",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 161,
+      "symbol": "GCDFutureResult",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 163,
+      "symbol": "GCDFutureResult.init(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 170,
+      "symbol": "GCDFutureResult.init(error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 176,
+      "symbol": "GCDFutureResult.succeed(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 182,
+      "symbol": "GCDFutureResult.fail(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 191,
+      "symbol": "GCDFutureResult.complete(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 218,
+      "symbol": "GCDFutureResult.cascade(other:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 224,
+      "symbol": "GCDFutureResult.onSuccess(do:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 230,
+      "symbol": "GCDFutureResult.onError(do:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 242,
+      "symbol": "GCDFutureResult.map(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 248,
+      "symbol": "GCDFutureResult.flatMap(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 263,
+      "symbol": "GCDFutureResult.wait()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 271,
+      "symbol": "GCDFutureResult.await()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 279,
+      "symbol": "DispatchQueue.asFuture(do:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 285,
+      "symbol": "DispatchQueue.asFuture(do:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/GCDFuture.swift",
+      "line": 293,
+      "symbol": "GCDFuture",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 21,
+      "symbol": "Angle",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 32,
+      "symbol": "Angle.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 45,
+      "symbol": "Angle.init(radians:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 49,
+      "symbol": "Angle.init(degrees:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 53,
+      "symbol": "Angle.asRadians",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 60,
+      "symbol": "Angle.asDegrees",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 77,
+      "symbol": "Angle.convert()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 88,
+      "symbol": "Angle.converted()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 221,
+      "symbol": "Angle",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 222,
+      "symbol": "Angle.radians(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 226,
+      "symbol": "Angle.degrees(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 238,
+      "symbol": "Angle",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 249,
+      "symbol": "Angle",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 264,
+      "symbol": "Angle",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 272,
+      "symbol": "Angle",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Angle.swift",
+      "line": 291,
+      "symbol": "Angle",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 23,
+      "symbol": "GeometricValue",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 24,
+      "symbol": "GeometricValue.sin()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 25,
+      "symbol": "GeometricValue.asin()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 26,
+      "symbol": "GeometricValue.cos()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 27,
+      "symbol": "GeometricValue.acos()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 28,
+      "symbol": "GeometricValue.tan()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 29,
+      "symbol": "GeometricValue.atan()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 33,
+      "symbol": "Double.sin()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 34,
+      "symbol": "Double.asin()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 35,
+      "symbol": "Double.cos()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 36,
+      "symbol": "Double.acos()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 37,
+      "symbol": "Double.tan()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 38,
+      "symbol": "Double.atan()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 42,
+      "symbol": "Float.sin()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 43,
+      "symbol": "Float.asin()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 44,
+      "symbol": "Float.cos()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 45,
+      "symbol": "Float.acos()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 46,
+      "symbol": "Float.tan()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 47,
+      "symbol": "Float.atan()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 54,
+      "symbol": "CGFloat.sin()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 55,
+      "symbol": "CGFloat.asin()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 56,
+      "symbol": "CGFloat.cos()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 57,
+      "symbol": "CGFloat.acos()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 58,
+      "symbol": "CGFloat.tan()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/GeometricValue.swift",
+      "line": 59,
+      "symbol": "CGFloat.atan()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Point.swift",
+      "line": 22,
+      "symbol": "Point",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Point.swift",
+      "line": 23,
+      "symbol": "Point.x",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Point.swift",
+      "line": 24,
+      "symbol": "Point.y",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Point.swift",
+      "line": 26,
+      "symbol": "Point.init(x:y:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Point.swift",
+      "line": 31,
+      "symbol": "Point",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Point.swift",
+      "line": 33,
+      "symbol": "Point.zero",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Point.swift",
+      "line": 36,
+      "symbol": "Point",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Point.swift",
+      "line": 37,
+      "symbol": "Point",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Point.swift",
+      "line": 38,
+      "symbol": "Point",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Point.swift",
+      "line": 41,
+      "symbol": "Point",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Size.swift",
+      "line": 21,
+      "symbol": "Size",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Size.swift",
+      "line": 22,
+      "symbol": "Size.width",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Size.swift",
+      "line": 23,
+      "symbol": "Size.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Size.swift",
+      "line": 26,
+      "symbol": "Size.isSquare",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Size.swift",
+      "line": 28,
+      "symbol": "Size.init(width:height:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Size.swift",
+      "line": 33,
+      "symbol": "Size",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Size.swift",
+      "line": 35,
+      "symbol": "Size.zero",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Size.swift",
+      "line": 38,
+      "symbol": "Size",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Size.swift",
+      "line": 40,
+      "symbol": "Size.center",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Size.swift",
+      "line": 43,
+      "symbol": "Size",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Size.swift",
+      "line": 45,
+      "symbol": "Size.center",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Size.swift",
+      "line": 48,
+      "symbol": "Size",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Size.swift",
+      "line": 49,
+      "symbol": "Size",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Size.swift",
+      "line": 52,
+      "symbol": "Size",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 21,
+      "symbol": "TriangulatablePoint",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 22,
+      "symbol": "TriangulatablePoint.Value",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 24,
+      "symbol": "TriangulatablePoint.x",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 25,
+      "symbol": "TriangulatablePoint.y",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 27,
+      "symbol": "TriangulatablePoint.init(x:y:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 34,
+      "symbol": "CGPoint.Value",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 38,
+      "symbol": "Triangle",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 39,
+      "symbol": "Triangle.Angle",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 40,
+      "symbol": "Triangle.Distance",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 42,
+      "symbol": "Triangle.points",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 43,
+      "symbol": "Triangle.angles",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 44,
+      "symbol": "Triangle.sides",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 57,
+      "symbol": "Triangle",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 59,
+      "symbol": "Triangle.pointA",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 61,
+      "symbol": "Triangle.pointB",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 63,
+      "symbol": "Triangle.pointC",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 66,
+      "symbol": "Triangle.α",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 68,
+      "symbol": "Triangle.β",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 70,
+      "symbol": "Triangle.γ",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 73,
+      "symbol": "Triangle.a",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 75,
+      "symbol": "Triangle.b",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 77,
+      "symbol": "Triangle.c",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 80,
+      "symbol": "Triangle",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Geometry/Triangle.swift",
+      "line": 133,
+      "symbol": "Triangle",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/PropertyKey.swift",
+      "line": 21,
+      "symbol": "PropertyKey",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/PropertyKey.swift",
+      "line": 34,
+      "symbol": "PropertyKey.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Timer.swift",
+      "line": 27,
+      "symbol": "Timer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Timer.swift",
+      "line": 28,
+      "symbol": "Timer.Block",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Timer.swift",
+      "line": 30,
+      "symbol": "Timer.interval",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Timer.swift",
+      "line": 31,
+      "symbol": "Timer.repeats",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Timer.swift",
+      "line": 32,
+      "symbol": "Timer.block",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Timer.swift",
+      "line": 34,
+      "symbol": "Timer.userInfo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Timer.swift",
+      "line": 36,
+      "symbol": "Timer.isValid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Timer.swift",
+      "line": 38,
+      "symbol": "Timer.tolerance",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Timer.swift",
+      "line": 45,
+      "symbol": "Timer.init(interval:repeats:queue:userInfo:block:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Timer.swift",
+      "line": 63,
+      "symbol": "Timer.schedule()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Timer.swift",
+      "line": 71,
+      "symbol": "Timer.invalidate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Timer.swift",
+      "line": 85,
+      "symbol": "Timer.fire()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Timer.swift",
+      "line": 90,
+      "symbol": "AnyTimer",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Togglable.swift",
+      "line": 26,
+      "symbol": "Togglable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/Togglable.swift",
+      "line": 34,
+      "symbol": "Togglable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/TypeDescription.swift",
+      "line": 1,
+      "symbol": "TypeDescription",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/TypeDescription.swift",
+      "line": 7,
+      "symbol": "TypeDescription.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/TypeDescription.swift",
+      "line": 8,
+      "symbol": "TypeDescription.genericParameters",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/TypeDescription.swift",
+      "line": 11,
+      "symbol": "TypeDescription.isGeneric",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/TypeDescription.swift",
+      "line": 21,
+      "symbol": "TypeDescription.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/TypeDescription.swift",
+      "line": 25,
+      "symbol": "TypeDescription.init(any:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FFFoundation/FFFoundation/Sources/FFFoundation/TypeDescription.swift",
+      "line": 29,
+      "symbol": "TypeDescription.typeName(includingModule:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/FFFoundation/FFFoundation/Sources"
+}

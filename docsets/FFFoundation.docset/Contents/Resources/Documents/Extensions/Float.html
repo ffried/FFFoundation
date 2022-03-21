@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Float Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Extension/Float" class="dashAnchor"></a>
+
+    <a title="Float Extension Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          FFFoundation 9.4.0 Docs
+        </a>
+         (26% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/ffried/FFFoundation">
+            <img class="header-icon" src="../img/gh.png" alt="GitHub"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">FFFoundation Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      Float Extension Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CacheManager.html">CacheManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CacheManager/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GCDFuture.html">GCDFuture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OSLog.html">OSLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OSLog/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Ref.html">Ref</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Synchronized.html">Synchronized</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Timer.html">Timer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CachingError.html">CachingError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CGFloat.html">CGFloat</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CGPoint.html">CGPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/ContiguousArray.html">ContiguousArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/DarwinBoolean.html">DarwinBoolean</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/DispatchQoS.html">DispatchQoS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/DispatchQoS/QoSClass.html">– QoSClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/FileManager.html">FileManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Float.html">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/GCDFutureResult.html">GCDFutureResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Locale.html">Locale</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/MutableCollection.html">MutableCollection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/NSAttributedString.html">NSAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/NSImage.html">NSImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/NSLayoutConstraint.html">NSLayoutConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/NSPredicate.html">NSPredicate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/NSPredicate/Format.html">– Format</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/NSSortDescriptor.html">NSSortDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/ObjCBool.html">ObjCBool</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/OperationQueue.html">OperationQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Sequence.html">Sequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Set.html">Set</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions.html#/s:Ss">Substring</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/URL.html">URL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1nopySo11NSPredicateCAA11PropertyKeyVF">!(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1nopySo11NSPredicateCADF">!(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1nopySo11NSPredicateCs7KeyPathCyxSbGlF">!(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCAA11PropertyKeyV_SbSgtF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCAA11PropertyKeyV_So8NSNumberCSgtF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCAA11PropertyKeyV_xSgt10Foundation20ReferenceConvertibleRzlF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCAA11PropertyKeyV_xSgtSFRzlF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCAA11PropertyKeyV_xSgtSQRzlF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCAA11PropertyKeyV_xSgtSURzlF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCAA11PropertyKeyV_xSgtSZRzlF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCSbSg_AA11PropertyKeyVtF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCSbSg_s7KeyPathCyxSbGtlF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCSo8NSNumberCSg_AA11PropertyKeyVtF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCSo8NSNumberCSg_s7KeyPathCyxAFGtlF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_r0_lF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSFR_r0_lF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSQR_r0_lF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSUR_r0_lF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSZR_r0_lF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxSbG_SbSgtlF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxSo8NSNumberCG_AHSgtlF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_Sgt10Foundation20ReferenceConvertibleR_r0_lF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSFR_r0_lF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSQR_r0_lF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSUR_r0_lF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSZR_r0_lF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCxSg_AA11PropertyKeyVt10Foundation20ReferenceConvertibleRzlF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCxSg_AA11PropertyKeyVtSFRzlF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCxSg_AA11PropertyKeyVtSQRzlF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCxSg_AA11PropertyKeyVtSURzlF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2neoiySo11NSPredicateCxSg_AA11PropertyKeyVtSZRzlF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2nxopySo16NSSortDescriptorCAA11PropertyKeyVF">!^(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2nxopySo16NSSortDescriptorCs7KeyPathCyxq_GSLR_r0_lF">!^(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2aaoiySo11NSPredicateCAD_ADtF">&amp;&amp;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCAA11PropertyKeyV_So8NSNumberCtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCAA11PropertyKeyV_xt10Foundation20ReferenceConvertibleRzSLRzlF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCAA11PropertyKeyV_xtSFRzlF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCAA11PropertyKeyV_xtSLRzlF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCAA11PropertyKeyV_xtSURzlF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCAA11PropertyKeyV_xtSZRzlF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCSo8NSNumberC_AA11PropertyKeyVtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCSo8NSNumberC_s7KeyPathCyxAFGtlF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxSo8NSNumberCG_AHtlF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCx_AA11PropertyKeyVt10Foundation20ReferenceConvertibleRzSLRzlF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCx_AA11PropertyKeyVtSFRzlF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCx_AA11PropertyKeyVtSLRzlF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCx_AA11PropertyKeyVtSURzlF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1loiySo11NSPredicateCx_AA11PropertyKeyVtSZRzlF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCAA11PropertyKeyV_So8NSNumberCtF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCAA11PropertyKeyV_xt10Foundation20ReferenceConvertibleRzSLRzlF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCAA11PropertyKeyV_xtSFRzlF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCAA11PropertyKeyV_xtSLRzlF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCAA11PropertyKeyV_xtSURzlF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCAA11PropertyKeyV_xtSZRzlF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCSo8NSNumberC_AA11PropertyKeyVtF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCSo8NSNumberC_s7KeyPathCyxAFGtlF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxSo8NSNumberCG_AHtlF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCx_AA11PropertyKeyVt10Foundation20ReferenceConvertibleRzSLRzlF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCx_AA11PropertyKeyVtSFRzlF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCx_AA11PropertyKeyVtSLRzlF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCx_AA11PropertyKeyVtSURzlF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2leoiySo11NSPredicateCx_AA11PropertyKeyVtSZRzlF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCAA11PropertyKeyV_SbSgtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCAA11PropertyKeyV_So8NSNumberCSgtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCAA11PropertyKeyV_xSgt10Foundation20ReferenceConvertibleRzlF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCAA11PropertyKeyV_xSgtSFRzlF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCAA11PropertyKeyV_xSgtSQRzlF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCAA11PropertyKeyV_xSgtSURzlF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCAA11PropertyKeyV_xSgtSZRzlF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCSbSg_AA11PropertyKeyVtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCSbSg_s7KeyPathCyxSbGtlF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCSo8NSNumberCSg_AA11PropertyKeyVtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCSo8NSNumberCSg_s7KeyPathCyxAFGtlF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_r0_lF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSFR_r0_lF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSQR_r0_lF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSUR_r0_lF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSZR_r0_lF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxSbG_SbSgtlF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxSo8NSNumberCG_AHSgtlF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_Sgt10Foundation20ReferenceConvertibleR_r0_lF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSFR_r0_lF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSQR_r0_lF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSUR_r0_lF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSZR_r0_lF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCxSg_AA11PropertyKeyVt10Foundation20ReferenceConvertibleRzlF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCxSg_AA11PropertyKeyVtSFRzlF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCxSg_AA11PropertyKeyVtSQRzlF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCxSg_AA11PropertyKeyVtSURzlF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2eeoiySo11NSPredicateCxSg_AA11PropertyKeyVtSZRzlF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCAA11PropertyKeyV_So8NSNumberCtF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCAA11PropertyKeyV_xt10Foundation20ReferenceConvertibleRzSLRzlF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCAA11PropertyKeyV_xtSFRzlF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCAA11PropertyKeyV_xtSLRzlF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCAA11PropertyKeyV_xtSURzlF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCAA11PropertyKeyV_xtSZRzlF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCSo8NSNumberC_AA11PropertyKeyVtF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCSo8NSNumberC_s7KeyPathCyxAFGtlF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxSo8NSNumberCG_AHtlF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCx_AA11PropertyKeyVt10Foundation20ReferenceConvertibleRzSLRzlF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCx_AA11PropertyKeyVtSFRzlF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCx_AA11PropertyKeyVtSLRzlF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCx_AA11PropertyKeyVtSURzlF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1goiySo11NSPredicateCx_AA11PropertyKeyVtSZRzlF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCAA11PropertyKeyV_So8NSNumberCtF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCAA11PropertyKeyV_xt10Foundation20ReferenceConvertibleRzSLRzlF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCAA11PropertyKeyV_xtSFRzlF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCAA11PropertyKeyV_xtSLRzlF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCAA11PropertyKeyV_xtSURzlF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCAA11PropertyKeyV_xtSZRzlF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCSo8NSNumberC_AA11PropertyKeyVtF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCSo8NSNumberC_s7KeyPathCyxAFGtlF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxSo8NSNumberCG_AHtlF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCx_AA11PropertyKeyVt10Foundation20ReferenceConvertibleRzSLRzlF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCx_AA11PropertyKeyVtSFRzlF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCx_AA11PropertyKeyVtSLRzlF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCx_AA11PropertyKeyVtSURzlF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2geoiySo11NSPredicateCx_AA11PropertyKeyVtSZRzlF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1xopySo16NSSortDescriptorCAA11PropertyKeyVF">^(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation1xopySo16NSSortDescriptorCs7KeyPathCyxq_GSLR_r0_lF">^(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/os_log(_:dso:log:type:_:)">os_log(_:dso:log:type:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:12FFFoundation2oooiySo11NSPredicateCAD_ADtF">||(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Cachable.html">Cachable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CodableUserDefaultsStorable.html">CodableUserDefaultsStorable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Copyable.html">Copyable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Diffable.html">Diffable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/GeometricValue.html">GeometricValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PrimitiveUserDefaultStorable.html">PrimitiveUserDefaultStorable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Togglable.html">Togglable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/TriangulatablePoint.html">TriangulatablePoint</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Angle.html">Angle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CoW.html">CoW</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Diff.html">Diff</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Diff/Change.html">– Change</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Lazy.html">Lazy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Lens.html">Lens</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/OSLogType.html">OSLogType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Point.html">Point</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PropertyKey.html">PropertyKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Size.html">Size</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Triangle.html">Triangle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/TypeDescription.html">TypeDescription</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UserDefault.html">UserDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UserDefault/Publisher.html">– Publisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UserDefaultKey.html">UserDefaultKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Weak.html">Weak</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:12FFFoundation8AnyTimera">AnyTimer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:12FFFoundation11ElementDiffa">ElementDiff</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:12FFFoundation15GCDFutureResulta">GCDFutureResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:12FFFoundation10SimpleDiffa">SimpleDiff</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>Float</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Float</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PrimitiveUserDefaultStorable.html">PrimitiveUserDefaultStorable</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Float</span><span class="p">:</span> <span class="kt"><a href="../Protocols/GeometricValue.html">GeometricValue</a></span></code></pre>
+
+                </div>
+              </div>
+            
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sf12FFFoundationE3get4from6forKeySfSgSo14NSUserDefaultsC_SStFZ"></a>
+                    <a name="//apple_ref/swift/Method/get(from:forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sf12FFFoundationE3get4from6forKeySfSgSo14NSUserDefaultsC_SStFZ">get(from:<wbr>forKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">get</span><span class="p">(</span><span class="n">from</span> <span class="nv">userDefaults</span><span class="p">:</span> <span class="kt">UserDefaults</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="err">`</span><span class="k">Self</span><span class="err">`</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sf12FFFoundationE3set2to6forKeyySo14NSUserDefaultsC_SStF"></a>
+                    <a name="//apple_ref/swift/Method/set(to:forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sf12FFFoundationE3set2to6forKeyySo14NSUserDefaultsC_SStF">set(to:<wbr>forKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="n">to</span> <span class="nv">userDefaults</span><span class="p">:</span> <span class="kt">UserDefaults</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sf12FFFoundationE3sinSfyF"></a>
+                    <a name="//apple_ref/swift/Method/sin()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sf12FFFoundationE3sinSfyF">sin()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sin</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sf12FFFoundationE4asinSfyF"></a>
+                    <a name="//apple_ref/swift/Method/asin()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sf12FFFoundationE4asinSfyF">asin()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">asin</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sf12FFFoundationE3cosSfyF"></a>
+                    <a name="//apple_ref/swift/Method/cos()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sf12FFFoundationE3cosSfyF">cos()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cos</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sf12FFFoundationE4acosSfyF"></a>
+                    <a name="//apple_ref/swift/Method/acos()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sf12FFFoundationE4acosSfyF">acos()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">acos</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sf12FFFoundationE3tanSfyF"></a>
+                    <a name="//apple_ref/swift/Method/tan()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sf12FFFoundationE3tanSfyF">tan()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tan</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sf12FFFoundationE4atanSfyF"></a>
+                    <a name="//apple_ref/swift/Method/atan()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sf12FFFoundationE4atanSfyF">atan()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">atan</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2022 <a class="link" href="https://ffried.codes" target="_blank" rel="external noopener">Florian Friedrich</a>. All rights reserved. (Last updated: 2022-03-21)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

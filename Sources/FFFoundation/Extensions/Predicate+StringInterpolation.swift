@@ -28,7 +28,7 @@ extension NSPredicate {
         @usableFromInline
         let format: String
         @usableFromInline
-        let args: [Any]?
+        let args: Array<Any>?
         
         public init(stringLiteral value: StringLiteralType) {
             format = value
@@ -60,17 +60,15 @@ extension NSPredicate.Format {
             case unsingedInteger = "lu"
             case float = "f"
             
-            var formatSpecifier: String {
-                return "%" + rawValue
-            }
+            var formatSpecifier: String { "%" + rawValue }
         }
         
         fileprivate private(set) var format: String
-        fileprivate private(set) var args: [Any]
+        fileprivate private(set) var args: Array<Any>
         
         public init(literalCapacity: Int, interpolationCount: Int) {
-            format = ""
-            args = []
+            format = .init()
+            args = .init()
             format.reserveCapacity(literalCapacity + interpolationCount * 2)
             args.reserveCapacity(interpolationCount)
         }
@@ -143,4 +141,3 @@ extension NSPredicate.Format {
     }
 }
 #endif
-

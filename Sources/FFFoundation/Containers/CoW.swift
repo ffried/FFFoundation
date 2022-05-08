@@ -143,6 +143,7 @@ extension CoW: ExpressibleByStringInterpolation where Value: ExpressibleByString
     }
 }
 
+// `Copier` is not (yet) @Sendable.
 //#if compiler(>=5.5.2) && canImport(_Concurrency)
 //extension CoW: Sendable where Value: Sendable {}
 //#endif

@@ -31,7 +31,6 @@ import class AppKit.NSLayoutConstraint
 
 @available(macOS 10.7, iOS 6.0, tvOS 6.0, *)
 extension NSLayoutConstraint {
-
 #if canImport(UIKit)
     public typealias ViewType          = UIView
     public typealias MetricValueType   = CGFloat
@@ -40,8 +39,8 @@ extension NSLayoutConstraint {
     public typealias MetricValueType   = NSNumber
 #endif
     public typealias VisualFormatType  = String
-    public typealias MetricsDictionary = [String: MetricValueType]
-    public typealias ViewsDictionary   = [String: ViewType]
+    public typealias MetricsDictionary = Dictionary<String, MetricValueType>
+    public typealias ViewsDictionary   = Dictionary<String, ViewType>
 
     public static func constraints<Formats: Sequence>(withVisualFormats formats: Formats,
                                                       options: FormatOptions = [],

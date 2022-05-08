@@ -40,3 +40,7 @@ public struct PropertyKey: RawRepresentable, Hashable, Codable, ExpressibleByStr
         self.init(rawValue: value)
     }
 }
+
+#if compiler(>=5.5.2) && canImport(_Concurrency)
+extension PropertyKey: Sendable {}
+#endif

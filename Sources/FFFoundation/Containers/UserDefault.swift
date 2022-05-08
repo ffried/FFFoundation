@@ -39,6 +39,10 @@ public struct UserDefaultKey: RawRepresentable, Hashable, Codable, CustomStringC
     }
 }
 
+#if compiler(>=5.5.2) && canImport(_Concurrency)
+extension UserDefaultKey: Sendable {}
+#endif
+
 @propertyWrapper
 public struct UserDefault<Value: PrimitiveUserDefaultStorable> {
     public let userDefaults: UserDefaults

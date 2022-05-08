@@ -5,7 +5,7 @@ public struct TypeDescription: Equatable, Hashable, Codable, CustomStringConvert
     }
 
     public let name: String
-    public fileprivate(set) var genericParameters: [TypeDescription]
+    public fileprivate(set) var genericParameters: Array<TypeDescription>
 
     @inlinable
     public var isGeneric: Bool { !genericParameters.isEmpty }
@@ -13,7 +13,7 @@ public struct TypeDescription: Equatable, Hashable, Codable, CustomStringConvert
     @inlinable
     public var description: String { typeName(includingModule: true) }
 
-    fileprivate init(name: String, genericParameters: [TypeDescription] = []) {
+    fileprivate init(name: String, genericParameters: Array<TypeDescription> = []) {
         self.name = name
         self.genericParameters = genericParameters
     }
@@ -38,7 +38,7 @@ public struct TypeDescription: Equatable, Hashable, Codable, CustomStringConvert
 }
 
 extension StringProtocol {
-    private func parseNextTypes(currentIndex: inout Index) -> [TypeDescription] {
+    private func parseNextTypes(currentIndex: inout Index) -> Array<TypeDescription> {
         let separatorIndex = firstIndex(where: "<,>".contains) ?? endIndex
         var result = separatorIndex > startIndex ? [TypeDescription(name: String(self[..<separatorIndex]))] : []
         guard separatorIndex != endIndex else { return result }

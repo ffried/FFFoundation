@@ -178,4 +178,3 @@ extension Synchronized: ExpressibleByStringInterpolation where Guarded: Expressi
 #if compiler(>=5.5.2) && canImport(_Concurrency)
 extension Synchronized: @unchecked Sendable {}
 #endif
-

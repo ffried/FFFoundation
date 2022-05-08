@@ -32,7 +32,7 @@ import class Foundation.NSString
 #endif
 
 extension NSAttributedString {
-    public typealias AttributesDictionary = [Key: Any]
+    public typealias AttributesDictionary = Dictionary<Key, Any>
 
     public final func size(forWidth width: CGFloat) -> CGSize {
         let boundingSize = CGSize(width: width, height: .greatestFiniteMagnitude)

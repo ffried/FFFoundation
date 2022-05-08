@@ -40,38 +40,30 @@ fileprivate extension UserDefaultKey {
 }
 
 final class UserDefaultTests: XCTestCase {
-
     struct TestObject: CodableUserDefaultsStorable, Equatable {
         let string: String
-        let dict: [String: String]
+        let dict: Dictionary<String, String>
         let range: Range<Int>
     }
 
-    var userDefaults: UserDefaults { .standard }
+    private(set) var userDefaults: UserDefaults = .standard
 
     private func castedPrimitive<T: PrimitiveUserDefaultStorable>(for key: UserDefaultKey) -> T? {
         userDefaults.object(forKey: key.rawValue) as? T
     }
 
-    private func resetDefaults() {
+    override func setUpWithError() throws {
+        try super.setUpWithError()
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+        userDefaults = try XCTUnwrap(.init(suiteName: UUID().uuidString))
+    }
+
+    override func tearDownWithError() throws {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
         UserDefaultKey.allTestKeys.forEach {
-            #if !os(Linux)
-            userDefaults.set(nil, forKey: $0.rawValue)
-            #endif
             userDefaults.removeObject(forKey: $0.rawValue)
         }
-    }
-
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        resetDefaults()
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        resetDefaults()
-        super.tearDown()
+        try super.tearDownWithError()
     }
 
     func testPrimitiveUserDefaultKeyDescription() {

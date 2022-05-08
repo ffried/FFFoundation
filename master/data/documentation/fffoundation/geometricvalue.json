@@ -1,0 +1,435 @@
+{
+  "abstract" : [
+    {
+      "text" : "No overview available.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:12FFFoundation14GeometricValueP",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "protocol"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "GeometricValue"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "FFFoundation"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "GeometricValue"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Protocol",
+    "symbolKind" : "protocol",
+    "title" : "GeometricValue"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "protocol"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "GeometricValue"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:SF",
+              "text" : "FloatingPoint"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/s18AdditiveArithmeticP",
+        "doc:\/\/FFFoundation\/SL",
+        "doc:\/\/FFFoundation\/SQ",
+        "doc:\/\/FFFoundation\/s27ExpressibleByIntegerLiteralP",
+        "doc:\/\/FFFoundation\/SF",
+        "doc:\/\/FFFoundation\/SH",
+        "doc:\/\/FFFoundation\/Sj",
+        "doc:\/\/FFFoundation\/s13SignedNumericP",
+        "doc:\/\/FFFoundation\/Sx"
+      ],
+      "kind" : "relationships",
+      "title" : "Inherits From",
+      "type" : "inheritsFrom"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue\/acos()",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue\/asin()",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue\/atan()",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue\/cos()",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue\/sin()",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue\/tan()"
+      ],
+      "title" : "Instance Methods"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fffoundation\/geometricvalue"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FFFoundation/SF": {
+  "identifier" : "doc:\/\/FFFoundation\/SF",
+  "title" : "Swift.FloatingPoint",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SH": {
+  "identifier" : "doc:\/\/FFFoundation\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SL": {
+  "identifier" : "doc:\/\/FFFoundation\/SL",
+  "title" : "Swift.Comparable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SQ": {
+  "identifier" : "doc:\/\/FFFoundation\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/Sj": {
+  "identifier" : "doc:\/\/FFFoundation\/Sj",
+  "title" : "Swift.Numeric",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/Sx": {
+  "identifier" : "doc:\/\/FFFoundation\/Sx",
+  "title" : "Swift.Strideable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/documentation/FFFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FFFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/GeometricValue": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "GeometricValue"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "GeometricValue"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "GeometricValue",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/geometricvalue"
+},
+"doc://FFFoundation/documentation/FFFoundation/GeometricValue/acos()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "acos"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue\/acos()",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "acos()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/geometricvalue\/acos()"
+},
+"doc://FFFoundation/documentation/FFFoundation/GeometricValue/asin()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "asin"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue\/asin()",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "asin()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/geometricvalue\/asin()"
+},
+"doc://FFFoundation/documentation/FFFoundation/GeometricValue/atan()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "atan"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue\/atan()",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "atan()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/geometricvalue\/atan()"
+},
+"doc://FFFoundation/documentation/FFFoundation/GeometricValue/cos()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "cos"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue\/cos()",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "cos()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/geometricvalue\/cos()"
+},
+"doc://FFFoundation/documentation/FFFoundation/GeometricValue/sin()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "sin"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue\/sin()",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "sin()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/geometricvalue\/sin()"
+},
+"doc://FFFoundation/documentation/FFFoundation/GeometricValue/tan()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "tan"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue\/tan()",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "tan()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/geometricvalue\/tan()"
+},
+"doc://FFFoundation/s13SignedNumericP": {
+  "identifier" : "doc:\/\/FFFoundation\/s13SignedNumericP",
+  "title" : "Swift.SignedNumeric",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s18AdditiveArithmeticP": {
+  "identifier" : "doc:\/\/FFFoundation\/s18AdditiveArithmeticP",
+  "title" : "Swift.AdditiveArithmetic",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s27ExpressibleByIntegerLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s27ExpressibleByIntegerLiteralP",
+  "title" : "Swift.ExpressibleByIntegerLiteral",
+  "type" : "unresolvable"
+}
+}
+}

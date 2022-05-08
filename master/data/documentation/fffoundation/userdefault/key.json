@@ -1,0 +1,225 @@
+{
+  "abstract" : [
+    {
+      "text" : "No overview available.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/key"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:12FFFoundation11UserDefaultV3keyAA0bC3KeyVvp",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "let"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "key"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation14UserDefaultKeyV",
+        "text" : "UserDefaultKey"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "FFFoundation"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "key"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "let"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "key"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation14UserDefaultKeyV",
+              "text" : "UserDefaultKey"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fffoundation\/userdefault\/key"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FFFoundation/documentation/FFFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FFFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/UserDefault": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "UserDefault"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "UserDefault"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "UserDefault",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/userdefault"
+},
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/key": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "key"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation14UserDefaultKeyV",
+      "text" : "UserDefaultKey"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/key",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "key",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/userdefault\/key"
+},
+"doc://FFFoundation/documentation/FFFoundation/UserDefaultKey": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "UserDefaultKey"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "UserDefaultKey"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "UserDefaultKey",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/userdefaultkey"
+}
+}
+}

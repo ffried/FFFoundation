@@ -1,0 +1,223 @@
+{
+  "abstract" : [
+    {
+      "text" : "A inverted version of ",
+      "type" : "text"
+    },
+    {
+      "code" : "self",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable\/toggled"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:12FFFoundation9TogglableP7toggledxvp",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "toggled"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "FFFoundation"
+      }
+    ],
+    "required" : true,
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "toggled"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "var"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "toggled"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Self"
+            },
+            {
+              "kind" : "text",
+              "text" : " { "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "get"
+            },
+            {
+              "kind" : "text",
+              "text" : " }"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fffoundation\/togglable\/toggled"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FFFoundation/documentation/FFFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FFFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/Togglable": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Togglable"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Togglable"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Togglable",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/togglable"
+},
+"doc://FFFoundation/documentation/FFFoundation/Togglable/toggled": {
+  "abstract" : [
+    {
+      "text" : "A inverted version of ",
+      "type" : "text"
+    },
+    {
+      "code" : "self",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "toggled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable\/toggled",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "toggled",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/togglable\/toggled"
+}
+}
+}

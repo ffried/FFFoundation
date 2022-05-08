@@ -1,0 +1,3870 @@
+{
+  "abstract" : [
+    {
+      "text" : "No overview available.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:12FFFoundation5AngleV",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "struct"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "Angle"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "FFFoundation"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "Angle"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Structure",
+    "symbolKind" : "struct",
+    "title" : "Angle"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "struct"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "Angle"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "genericParameter",
+              "text" : "Value"
+            },
+            {
+              "kind" : "text",
+              "text" : "> "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "where"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Value"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:SF",
+              "text" : "FloatingPoint"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Value"
+            },
+            {
+              "kind" : "text",
+              "text" : " == "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Value"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Stride"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/s18AdditiveArithmeticP",
+        "doc:\/\/FFFoundation\/SB",
+        "doc:\/\/FFFoundation\/SL",
+        "doc:\/\/FFFoundation\/s23CustomStringConvertibleP",
+        "doc:\/\/FFFoundation\/Se",
+        "doc:\/\/FFFoundation\/SE",
+        "doc:\/\/FFFoundation\/SQ",
+        "doc:\/\/FFFoundation\/s25ExpressibleByFloatLiteralP",
+        "doc:\/\/FFFoundation\/s27ExpressibleByIntegerLiteralP",
+        "doc:\/\/FFFoundation\/SF",
+        "doc:\/\/FFFoundation\/SH",
+        "doc:\/\/FFFoundation\/Sj",
+        "doc:\/\/FFFoundation\/s8SendableP",
+        "doc:\/\/FFFoundation\/s13SignedNumericP",
+        "doc:\/\/FFFoundation\/Sx"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/*(_:_:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/*=(_:_:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/+(_:_:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/+=(_:_:)-79ho2",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-(_:_:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-=(_:_:)-6unk4",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/\/(_:_:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/\/=(_:_:)"
+      ],
+      "title" : "Operators"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(_:)-7wgb5",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(degrees:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(exactly:)-6emnj",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(integerLiteral:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(radians:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(sign:exponent:significand:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(signOf:magnitudeOf:)-7j6mo"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/asDegrees",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/asRadians",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/description",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/exponent-swift.property",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isCanonical",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isFinite",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isInfinite",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isNaN",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isNormal",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isSignalingNaN",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isSubnormal",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isZero",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/magnitude-swift.property",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/nextDown-7h7qr",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/nextUp",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/sign",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/significand",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/ulp",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/value"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/addProduct(_:_:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/advanced(by:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/convert()",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/converted()",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/distance(to:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/formRemainder(dividingBy:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/formSquareRoot()",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/formTruncatingRemainder(dividingBy:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/hash(into:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isEqual(to:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isLess(than:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isLessThanOrEqualTo(_:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isTotallyOrdered(belowOrEqualTo:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/round(_:)"
+      ],
+      "title" : "Instance Methods"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Exponent-swift.typealias",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/IntegerLiteralType",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Magnitude-swift.typealias",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Stride"
+      ],
+      "title" : "Type Aliases"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/greatestFiniteMagnitude",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/infinity",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/leastNonzeroMagnitude",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/leastNormalMagnitude",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/nan",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/pi",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/radix-62xbh",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/signalingNaN"
+      ],
+      "title" : "Type Properties"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/degrees(_:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/radians(_:)"
+      ],
+      "title" : "Type Methods"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/AdditiveArithmetic-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/BinaryFloatingPoint-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Comparable-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Decodable-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Encodable-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Equatable-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/ExpressibleByFloatLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/FloatingPoint-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/SignedNumeric-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fffoundation\/angle"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FFFoundation/SB": {
+  "identifier" : "doc:\/\/FFFoundation\/SB",
+  "title" : "Swift.BinaryFloatingPoint",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SE": {
+  "identifier" : "doc:\/\/FFFoundation\/SE",
+  "title" : "Swift.Encodable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SF": {
+  "identifier" : "doc:\/\/FFFoundation\/SF",
+  "title" : "Swift.FloatingPoint",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SH": {
+  "identifier" : "doc:\/\/FFFoundation\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SL": {
+  "identifier" : "doc:\/\/FFFoundation\/SL",
+  "title" : "Swift.Comparable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SQ": {
+  "identifier" : "doc:\/\/FFFoundation\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/Se": {
+  "identifier" : "doc:\/\/FFFoundation\/Se",
+  "title" : "Swift.Decodable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/Sj": {
+  "identifier" : "doc:\/\/FFFoundation\/Sj",
+  "title" : "Swift.Numeric",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/Sx": {
+  "identifier" : "doc:\/\/FFFoundation\/Sx",
+  "title" : "Swift.Strideable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/documentation/FFFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FFFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Angle"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Angle"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Angle",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/*(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "*"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/*(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "*(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/*(_:_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/*=(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "*="
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/*=(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "*=(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/*=(_:_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/+(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "+"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/+(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "+(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/+(_:_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/+=(_:_:)-79ho2": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "+="
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/+=(_:_:)-79ho2",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "+=(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/+=(_:_:)-79ho2"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/-(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "-"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "-(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/-(_:_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/-=(_:_:)-6unk4": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "-="
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-=(_:_:)-6unk4",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "-=(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/-=(_:_:)-6unk4"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : " Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle//(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "\/"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/\/(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "\/(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/\/(_:_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle//=(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "\/="
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/\/=(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "\/=(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/\/=(_:_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/AdditiveArithmetic-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/AdditiveArithmetic-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "AdditiveArithmetic Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/additivearithmetic-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/BinaryFloatingPoint-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/BinaryFloatingPoint-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "BinaryFloatingPoint Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/binaryfloatingpoint-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/Comparable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Comparable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Comparable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/comparable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/Decodable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Decodable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Decodable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/decodable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/Encodable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Encodable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Encodable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/encodable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/equatable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/Exponent-swift.typealias": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Exponent"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Exponent-swift.typealias",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Exponent"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Angle.Exponent",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/exponent-swift.typealias"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/ExpressibleByFloatLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/ExpressibleByFloatLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByFloatLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/expressiblebyfloatliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/FloatingPoint-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/FloatingPoint-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "FloatingPoint Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/floatingpoint-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/IntegerLiteralType": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "IntegerLiteralType"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/IntegerLiteralType",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "IntegerLiteralType"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Angle.IntegerLiteralType",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/integerliteraltype"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/Magnitude-swift.typealias": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Magnitude"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Magnitude-swift.typealias",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Magnitude"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Angle.Magnitude",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/magnitude-swift.typealias"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/SignedNumeric-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/SignedNumeric-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "SignedNumeric Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/signednumeric-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/Stride": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Stride"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Stride",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Stride"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Angle.Stride",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/stride"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/addProduct(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "addProduct"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/addProduct(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "addProduct(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/addproduct(_:_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/advanced(by:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "advanced"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "by"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV6Stridea",
+      "text" : "Stride"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/advanced(by:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "advanced(by:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/advanced(by:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/asDegrees": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "asDegrees"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/asDegrees",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "asDegrees",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/asdegrees"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/asRadians": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "asRadians"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/asRadians",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "asRadians",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/asradians"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/convert()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "convert"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/convert()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "convert()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/convert()"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/converted()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "converted"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/converted()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "converted()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/converted()"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/degrees(_:)": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "FloatingPoint",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " and ",
+        "type" : "text"
+      },
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " is ",
+        "type" : "text"
+      },
+      {
+        "code" : "Value.Stride",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "degrees"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/degrees(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "degrees(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/degrees(_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/description": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "description"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/description",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "description",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/description"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/distance(to:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "distance"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "to"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV6Stridea",
+      "text" : "Stride"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/distance(to:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "distance(to:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/distance(to:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/exponent-swift.property": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "exponent"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Exponent"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/exponent-swift.property",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "exponent",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/exponent-swift.property"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/formRemainder(dividingBy:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "formRemainder"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "dividingBy"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/formRemainder(dividingBy:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "formRemainder(dividingBy:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/formremainder(dividingby:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/formSquareRoot()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "formSquareRoot"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/formSquareRoot()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "formSquareRoot()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/formsquareroot()"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/formTruncatingRemainder(dividingBy:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "formTruncatingRemainder"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "dividingBy"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/formTruncatingRemainder(dividingBy:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "formTruncatingRemainder(dividingBy:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/formtruncatingremainder(dividingby:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/greatestFiniteMagnitude": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "greatestFiniteMagnitude"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/greatestFiniteMagnitude",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "greatestFiniteMagnitude",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/greatestfinitemagnitude"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/hash(into:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "hash"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "into"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s6HasherV",
+      "text" : "Hasher"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/hash(into:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "hash(into:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/hash(into:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/infinity": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "infinity"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/infinity",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "infinity",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/infinity"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/init(_:)-7wgb5": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(_:)-7wgb5",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/init(_:)-7wgb5"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/init(degrees:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "degrees"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(degrees:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(degrees:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/init(degrees:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/init(exactly:)-6emnj": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "exactly"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(exactly:)-6emnj",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(exactly:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/init(exactly:)-6emnj"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/init(integerLiteral:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "integerLiteral"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "IntegerLiteralType"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(integerLiteral:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(integerLiteral:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/init(integerliteral:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/init(radians:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "radians"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(radians:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(radians:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/init(radians:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/init(sign:exponent:significand:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "sign"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s17FloatingPointSignO",
+      "text" : "FloatingPointSign"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "exponent"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Exponent"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "significand"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(sign:exponent:significand:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(sign:exponent:significand:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/init(sign:exponent:significand:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/init(signOf:magnitudeOf:)-7j6mo": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "signOf"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "magnitudeOf"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(signOf:magnitudeOf:)-7j6mo",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(signOf:magnitudeOf:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/init(signof:magnitudeof:)-7j6mo"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/isCanonical": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isCanonical"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isCanonical",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isCanonical",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/iscanonical"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/isEqual(to:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isEqual"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "to"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isEqual(to:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isEqual(to:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/isequal(to:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/isFinite": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isFinite"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isFinite",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isFinite",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/isfinite"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/isInfinite": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isInfinite"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isInfinite",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isInfinite",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/isinfinite"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/isLess(than:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isLess"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "than"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isLess(than:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isLess(than:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/isless(than:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/isLessThanOrEqualTo(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isLessThanOrEqualTo"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isLessThanOrEqualTo(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isLessThanOrEqualTo(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/islessthanorequalto(_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/isNaN": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isNaN"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isNaN",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isNaN",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/isnan"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/isNormal": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isNormal"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isNormal",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isNormal",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/isnormal"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/isSignalingNaN": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isSignalingNaN"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isSignalingNaN",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isSignalingNaN",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/issignalingnan"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/isSubnormal": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isSubnormal"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isSubnormal",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isSubnormal",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/issubnormal"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/isTotallyOrdered(belowOrEqualTo:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isTotallyOrdered"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "belowOrEqualTo"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isTotallyOrdered(belowOrEqualTo:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isTotallyOrdered(belowOrEqualTo:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/istotallyordered(beloworequalto:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/isZero": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isZero"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isZero",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isZero",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/iszero"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/leastNonzeroMagnitude": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "leastNonzeroMagnitude"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/leastNonzeroMagnitude",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "leastNonzeroMagnitude",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/leastnonzeromagnitude"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/leastNormalMagnitude": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "leastNormalMagnitude"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/leastNormalMagnitude",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "leastNormalMagnitude",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/leastnormalmagnitude"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/magnitude-swift.property": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "magnitude"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV9Magnitudea",
+      "text" : "Magnitude"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/magnitude-swift.property",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "magnitude",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/magnitude-swift.property"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/nan": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "nan"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/nan",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "nan",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/nan"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/nextDown-7h7qr": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "nextDown"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/nextDown-7h7qr",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "nextDown",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/nextdown-7h7qr"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/nextUp": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "nextUp"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/nextUp",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "nextUp",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/nextup"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/pi": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "pi"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/pi",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "pi",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/pi"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/radians(_:)": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "FloatingPoint",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " and ",
+        "type" : "text"
+      },
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " is ",
+        "type" : "text"
+      },
+      {
+        "code" : "Value.Stride",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "radians"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/radians(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "radians(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/radians(_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/radix-62xbh": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "radix"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/radix-62xbh",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "radix",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/radix-62xbh"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/round(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "round"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s25FloatingPointRoundingRuleO",
+      "text" : "FloatingPointRoundingRule"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/round(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "round(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/round(_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/sign": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "sign"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s17FloatingPointSignO",
+      "text" : "FloatingPointSign"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/sign",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "sign",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/sign"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/signalingNaN": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "signalingNaN"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/signalingNaN",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "signalingNaN",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/signalingnan"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/significand": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "significand"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/significand",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "significand",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/significand"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/ulp": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ulp"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/ulp",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "ulp",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/ulp"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/value": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "value"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/value",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "value",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/value"
+},
+"doc://FFFoundation/s13SignedNumericP": {
+  "identifier" : "doc:\/\/FFFoundation\/s13SignedNumericP",
+  "title" : "Swift.SignedNumeric",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s18AdditiveArithmeticP": {
+  "identifier" : "doc:\/\/FFFoundation\/s18AdditiveArithmeticP",
+  "title" : "Swift.AdditiveArithmetic",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s23CustomStringConvertibleP": {
+  "identifier" : "doc:\/\/FFFoundation\/s23CustomStringConvertibleP",
+  "title" : "Swift.CustomStringConvertible",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s25ExpressibleByFloatLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s25ExpressibleByFloatLiteralP",
+  "title" : "Swift.ExpressibleByFloatLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s27ExpressibleByIntegerLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s27ExpressibleByIntegerLiteralP",
+  "title" : "Swift.ExpressibleByIntegerLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8SendableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+}
+}
+}

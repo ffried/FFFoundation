@@ -1,0 +1,1253 @@
+{
+  "abstract" : [
+    {
+      "text" : "No overview available.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:12FFFoundation12SynchronizedC",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "class"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "Synchronized"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "FFFoundation"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "Synchronized"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Class",
+    "symbolKind" : "class",
+    "title" : "Synchronized"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "@propertyWrapper"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "final"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "class"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "Synchronized"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "genericParameter",
+              "text" : "Guarded"
+            },
+            {
+              "kind" : "text",
+              "text" : ">"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/SL",
+        "doc:\/\/FFFoundation\/Se",
+        "doc:\/\/FFFoundation\/SE",
+        "doc:\/\/FFFoundation\/SQ",
+        "doc:\/\/FFFoundation\/s27ExpressibleByBooleanLiteralP",
+        "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
+        "doc:\/\/FFFoundation\/s25ExpressibleByFloatLiteralP",
+        "doc:\/\/FFFoundation\/s27ExpressibleByIntegerLiteralP",
+        "doc:\/\/FFFoundation\/s23ExpressibleByNilLiteralP",
+        "doc:\/\/FFFoundation\/s32ExpressibleByStringInterpolationP",
+        "doc:\/\/FFFoundation\/s26ExpressibleByStringLiteralP",
+        "doc:\/\/FFFoundation\/s33ExpressibleByUnicodeScalarLiteralP",
+        "doc:\/\/FFFoundation\/SH",
+        "doc:\/\/FFFoundation\/s8SendableP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/init()",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/init(value:qos:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/init(wrappedValue:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/wrappedValue"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/combined(with:)-2j0co",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/combined(with:)-7o6uw",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/coordinated(with:)-8zn81",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/coordinated(with:)-9aw0d",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/exchange(with:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/withValue(do:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/withValueVoid(do:)"
+      ],
+      "title" : "Instance Methods"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/subscript(_:)"
+      ],
+      "title" : "Subscripts"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Comparable-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Decodable-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Encodable-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Equatable-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByBooleanLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByFloatLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByIntegerLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByNilLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByStringInterpolation-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByStringLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByUnicodeScalarLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Hashable-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fffoundation\/synchronized"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FFFoundation/SE": {
+  "identifier" : "doc:\/\/FFFoundation\/SE",
+  "title" : "Swift.Encodable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SH": {
+  "identifier" : "doc:\/\/FFFoundation\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SL": {
+  "identifier" : "doc:\/\/FFFoundation\/SL",
+  "title" : "Swift.Comparable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SQ": {
+  "identifier" : "doc:\/\/FFFoundation\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/Se": {
+  "identifier" : "doc:\/\/FFFoundation\/Se",
+  "title" : "Swift.Decodable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/documentation/FFFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FFFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Synchronized"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Synchronized"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Synchronized",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : " Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/Comparable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Comparable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Comparable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/comparable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/Decodable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Decodable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Decodable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/decodable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/Encodable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Encodable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Encodable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/encodable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/equatable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/ExpressibleByBooleanLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByBooleanLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByBooleanLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/expressiblebybooleanliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/ExpressibleByExtendedGraphemeClusterLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByExtendedGraphemeClusterLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/expressiblebyextendedgraphemeclusterliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/ExpressibleByFloatLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByFloatLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByFloatLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/expressiblebyfloatliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/ExpressibleByIntegerLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByIntegerLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByIntegerLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/expressiblebyintegerliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/ExpressibleByNilLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByNilLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByNilLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/expressiblebynilliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/ExpressibleByStringInterpolation-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByStringInterpolation-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByStringInterpolation Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/expressiblebystringinterpolation-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/ExpressibleByStringLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByStringLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByStringLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/expressiblebystringliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/ExpressibleByUnicodeScalarLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByUnicodeScalarLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByUnicodeScalarLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/expressiblebyunicodescalarliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/Hashable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Hashable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Hashable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/hashable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/combined(with:)-2j0co": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "combined"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "OtherGuarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "with"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC",
+      "text" : "Synchronized"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "OtherGuarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC",
+      "text" : "Synchronized"
+    },
+    {
+      "kind" : "text",
+      "text" : "<("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "OtherGuarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ")>"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/combined(with:)-2j0co",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "combined(with:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/combined(with:)-2j0co"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/combined(with:)-7o6uw": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "combined"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "with"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC",
+      "text" : "Synchronized"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC",
+      "text" : "Synchronized"
+    },
+    {
+      "kind" : "text",
+      "text" : "<("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ")>"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/combined(with:)-7o6uw",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "combined(with:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/combined(with:)-7o6uw"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/coordinated(with:)-8zn81": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "coordinated"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "OtherGuarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "with"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC",
+      "text" : "Synchronized"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "OtherGuarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "OtherGuarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/coordinated(with:)-8zn81",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "coordinated(with:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/coordinated(with:)-8zn81"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/coordinated(with:)-9aw0d": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "coordinated"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "with"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC",
+      "text" : "Synchronized"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/coordinated(with:)-9aw0d",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "coordinated(with:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/coordinated(with:)-9aw0d"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/exchange(with:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "exchange"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "with"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/exchange(with:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "exchange(with:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/exchange(with:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/init()": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Guarded",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "ExpressibleByNilLiteral",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "convenience"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/init()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/init()"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/init(value:qos:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "value"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "qos"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Dispatch0A3QoSV",
+      "text" : "DispatchQoS"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/init(value:qos:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(value:qos:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/init(value:qos:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/init(wrappedValue:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "convenience"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "wrappedValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/init(wrappedValue:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(wrappedValue:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/init(wrappedvalue:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/subscript(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "subscript"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s7KeyPathC",
+      "text" : "KeyPath"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/subscript(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "subscript(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/subscript(_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/withValue(do:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "withValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "do"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/withValue(do:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "withValue(do:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/withvalue(do:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/withValueVoid(do:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "withValueVoid"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "do"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/withValueVoid(do:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "withValueVoid(do:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/withvaluevoid(do:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/wrappedValue": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "wrappedValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Guarded"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/wrappedValue",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "wrappedValue",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/wrappedvalue"
+},
+"doc://FFFoundation/s23ExpressibleByNilLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s23ExpressibleByNilLiteralP",
+  "title" : "Swift.ExpressibleByNilLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s25ExpressibleByFloatLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s25ExpressibleByFloatLiteralP",
+  "title" : "Swift.ExpressibleByFloatLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s26ExpressibleByStringLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s26ExpressibleByStringLiteralP",
+  "title" : "Swift.ExpressibleByStringLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s27ExpressibleByBooleanLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s27ExpressibleByBooleanLiteralP",
+  "title" : "Swift.ExpressibleByBooleanLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s27ExpressibleByIntegerLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s27ExpressibleByIntegerLiteralP",
+  "title" : "Swift.ExpressibleByIntegerLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s32ExpressibleByStringInterpolationP": {
+  "identifier" : "doc:\/\/FFFoundation\/s32ExpressibleByStringInterpolationP",
+  "title" : "Swift.ExpressibleByStringInterpolation",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s33ExpressibleByUnicodeScalarLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s33ExpressibleByUnicodeScalarLiteralP",
+  "title" : "Swift.ExpressibleByUnicodeScalarLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s43ExpressibleByExtendedGraphemeClusterLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
+  "title" : "Swift.ExpressibleByExtendedGraphemeClusterLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8SendableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+}
+}
+}

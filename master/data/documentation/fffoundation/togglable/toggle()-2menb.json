@@ -1,0 +1,281 @@
+{
+  "abstract" : [
+    {
+      "text" : "By default, ",
+      "type" : "text"
+    },
+    {
+      "code" : "toggle",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " just assigns ",
+      "type" : "text"
+    },
+    {
+      "code" : "toggled",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to ",
+      "type" : "text"
+    },
+    {
+      "code" : "self",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable\/toggle()-6qpje"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable\/toggle()-2menb"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "FFFoundation",
+    "externalID" : "s:12FFFoundation9TogglablePAAE6toggleyyF",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "toggle"
+      },
+      {
+        "kind" : "text",
+        "text" : "()"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "FFFoundation"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "toggle()"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "mutating"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "func"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "toggle"
+            },
+            {
+              "kind" : "text",
+              "text" : "()"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fffoundation\/togglable\/toggle()-2menb"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FFFoundation/documentation/FFFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FFFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/Togglable": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Togglable"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Togglable"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Togglable",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/togglable"
+},
+"doc://FFFoundation/documentation/FFFoundation/Togglable/toggle()-2menb": {
+  "abstract" : [
+    {
+      "text" : "By default, ",
+      "type" : "text"
+    },
+    {
+      "code" : "toggle",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " just assigns ",
+      "type" : "text"
+    },
+    {
+      "code" : "toggled",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to ",
+      "type" : "text"
+    },
+    {
+      "code" : "self",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "toggle"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable\/toggle()-2menb",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "toggle()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/togglable\/toggle()-2menb"
+},
+"doc://FFFoundation/documentation/FFFoundation/Togglable/toggle()-6qpje": {
+  "abstract" : [
+    {
+      "text" : "Toggles ",
+      "type" : "text"
+    },
+    {
+      "code" : "self",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "defaultImplementations" : 1,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "toggle"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable\/toggle()-6qpje",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "toggle()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/togglable\/toggle()-6qpje"
+}
+}
+}

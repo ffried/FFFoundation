@@ -10,7 +10,7 @@
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/Comparable-Implementations"
       ]
     ]
   },
@@ -313,7 +313,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -374,17 +374,6 @@
   "title" : "Lazy",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/lazy"
-},
-"doc://FFFoundation/documentation/FFFoundation/Lazy/-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : " Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/lazy\/-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Lazy/...(_:_:)": {
   "abstract" : [
@@ -462,6 +451,17 @@
   "title" : "...(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/lazy\/'...(_:_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Lazy/Comparable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/Comparable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Comparable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/lazy\/comparable-implementations"
 }
 }
 }

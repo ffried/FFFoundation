@@ -1,10 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "No overview available.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -220,38 +214,9 @@
               "text" : " == "
             },
             {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation11UserDefaultV",
-              "text" : "UserDefault"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation11UserDefaultV9PublisherC",
-              "text" : "Publisher"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/Failure",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation11UserDefaultV9PublisherC7Failurea",
-              "text" : "Failure"
+              "preciseIdentifier" : "s:s5NeverO",
+              "text" : "Never"
             }
           ]
         }
@@ -261,7 +226,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -385,37 +350,6 @@
   "title" : "UserDefault.Publisher",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class"
-},
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/Failure": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "typealias"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "Failure"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/Failure",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "Failure"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "UserDefault.Publisher.Failure",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/failure"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/receive(subscriber:)": {
   "abstract" : [

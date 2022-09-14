@@ -10,7 +10,7 @@
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Comparable-Implementations"
       ]
     ]
   },
@@ -331,7 +331,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -392,17 +392,6 @@
   "title" : "Synchronized",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/synchronized"
-},
-"doc://FFFoundation/documentation/FFFoundation/Synchronized/-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : " Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/synchronized\/-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Synchronized/...(_:)-7k41s": {
   "abstract" : [
@@ -472,6 +461,17 @@
   "title" : "...(_:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/synchronized\/'...(_:)-7k41s"
+},
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/Comparable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Comparable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Comparable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/synchronized\/comparable-implementations"
 }
 }
 }

@@ -1,10 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "No overview available.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -131,7 +125,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -161,8 +155,6 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/-Implementations",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Comparable-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Decodable-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Encodable-Implementations",
@@ -291,17 +283,6 @@
   "title" : "Ref",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/ref"
-},
-"doc://FFFoundation/documentation/FFFoundation/Ref/-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : " Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/ref\/-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Ref/Comparable-Implementations": {
   "abstract" : [

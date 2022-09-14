@@ -1,10 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "No overview available.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -138,7 +132,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -175,8 +169,6 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/-Implementations",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Comparable-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Decodable-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Encodable-Implementations",
@@ -274,17 +266,6 @@
   "title" : "CoW",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cow"
-},
-"doc://FFFoundation/documentation/FFFoundation/CoW/-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : " Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/cow\/-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/CoW/Comparable-Implementations": {
   "abstract" : [

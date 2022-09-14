@@ -10,7 +10,7 @@
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Comparable-Implementations"
       ]
     ]
   },
@@ -313,7 +313,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -374,17 +374,6 @@
   "title" : "CoW",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cow"
-},
-"doc://FFFoundation/documentation/FFFoundation/CoW/-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : " Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/cow\/-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/CoW/...(_:_:)": {
   "abstract" : [
@@ -462,6 +451,17 @@
   "title" : "...(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cow\/'...(_:_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/CoW/Comparable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Comparable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Comparable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/cow\/comparable-implementations"
 }
 }
 }

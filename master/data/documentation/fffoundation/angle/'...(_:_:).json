@@ -10,7 +10,7 @@
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Comparable-Implementations"
       ]
     ]
   },
@@ -313,7 +313,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -374,17 +374,6 @@
   "title" : "Angle",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle"
-},
-"doc://FFFoundation/documentation/FFFoundation/Angle/-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : " Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/...(_:_:)": {
   "abstract" : [
@@ -462,6 +451,17 @@
   "title" : "...(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle\/'...(_:_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/Comparable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Comparable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Comparable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/comparable-implementations"
 }
 }
 }

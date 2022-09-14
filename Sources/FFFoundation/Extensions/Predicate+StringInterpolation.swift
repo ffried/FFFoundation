@@ -96,7 +96,7 @@ extension NSPredicate.Format {
         }
         
         public mutating func appendInterpolation(key: NSPredicate.Key) {
-            add(arg: key, as: .key)
+            add(arg: key.rawValue, as: .key)
         }
         
         public mutating func appendInterpolation(key: NSPredicate.Key.RawValue) {

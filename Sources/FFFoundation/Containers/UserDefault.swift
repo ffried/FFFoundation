@@ -20,7 +20,7 @@
 import Foundation
 
 @frozen
-public struct UserDefaultKey: RawRepresentable, Hashable, Codable, CustomStringConvertible, ExpressibleByStringLiteral {
+public struct UserDefaultKey: RawRepresentable, Hashable, Codable, Sendable, CustomStringConvertible, ExpressibleByStringLiteral {
     public typealias RawValue = String
     public typealias StringLiteralType = RawValue
 
@@ -38,10 +38,6 @@ public struct UserDefaultKey: RawRepresentable, Hashable, Codable, CustomStringC
         self.init(rawValue: value)
     }
 }
-
-#if compiler(>=5.5.2) && canImport(_Concurrency)
-extension UserDefaultKey: Sendable {}
-#endif
 
 @propertyWrapper
 public struct UserDefault<Value: PrimitiveUserDefaultStorable> {
@@ -82,6 +78,11 @@ public struct UserDefault<Value: PrimitiveUserDefaultStorable> {
         userDefaults.removeObject(forKey: key.rawValue)
     }
 }
+
+// UserDefaults isn't Sendable but should be... :/
+//#if compiler(>=5.7)
+//extension UserDefault: Sendable where Value: Sendable {}
+//#endif
 
 extension UserDefault where Value: ExpressibleByNilLiteral {
     @inlinable

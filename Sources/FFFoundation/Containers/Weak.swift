@@ -58,6 +58,8 @@ extension Weak where Object: ExpressibleByNilLiteral {
 }
 
 // MARK: - Conditional Conformances
+extension Weak: Sendable where Object: Sendable {}
+
 extension Weak: Equatable where Object: Equatable {
     public static func ==(lhs: Weak, rhs: Weak) -> Bool {
         lhs.wrappedValue == rhs.wrappedValue
@@ -135,7 +137,3 @@ extension Weak: ExpressibleByStringInterpolation where Object: ExpressibleByStri
         self.init(object: Object(stringInterpolation: stringInterpolation))
     }
 }
-
-#if compiler(>=5.5.2) && canImport(_Concurrency)
-extension Weak: Sendable where Object: Sendable {}
-#endif

@@ -40,10 +40,8 @@ public struct Diff<Subject: Collection, Element: Diffable> {
 public typealias SimpleDiff<Subject: Collection & Diffable> = Diff<Subject, Subject>
 public typealias ElementDiff<Subject: Collection> = Diff<Subject, Subject.SubSequence> where Subject.SubSequence: Diffable
 
-#if compiler(>=5.5.2) && canImport(_Concurrency)
 extension Diff.Change: Sendable {}
 extension Diff: Sendable where Subject: Sendable, Element: Sendable {}
-#endif
 
 extension Diff where Subject.Element: Equatable, Element == Subject.SubSequence {
     public init(base: Subject, comparedTo head: Subject, splitBy separator: Subject.Element) {

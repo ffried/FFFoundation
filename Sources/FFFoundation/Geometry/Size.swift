@@ -45,9 +45,6 @@ extension Size where Value: BinaryInteger {
     public var center: Point<Value> { .init(x: width / 2, y: height / 2) }
 }
 
+extension Size: Sendable where Value: Sendable {}
 extension Size: Encodable where Value: Encodable {}
 extension Size: Decodable where Value: Decodable {}
-
-#if compiler(>=5.5.2) && canImport(_Concurrency)
-extension Size: Sendable where Value: Sendable {}
-#endif

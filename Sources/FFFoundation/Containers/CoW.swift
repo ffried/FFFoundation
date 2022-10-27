@@ -23,7 +23,7 @@ public protocol Copyable: AnyObject {
 
 @propertyWrapper
 public struct CoW<Value: AnyObject> {
-    public typealias Copier = (Value) -> Value
+    public typealias Copier = @Sendable (Value) -> Value
 
     private let copier: Copier
 
@@ -48,6 +48,8 @@ public struct CoW<Value: AnyObject> {
         }
     }
 }
+
+extension CoW: Sendable where Value: Sendable {}
 
 extension CoW where Value: Copyable {
     @inlinable
@@ -142,8 +144,3 @@ extension CoW: ExpressibleByStringInterpolation where Value: ExpressibleByString
         self.init(wrappedValue: Value(stringInterpolation: stringInterpolation))
     }
 }
-
-// `Copier` is not (yet) @Sendable.
-//#if compiler(>=5.5.2) && canImport(_Concurrency)
-//extension CoW: Sendable where Value: Sendable {}
-//#endif

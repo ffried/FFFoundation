@@ -1,4 +1,4 @@
-public struct TypeDescription: Equatable, Hashable, Codable, CustomStringConvertible {
+public struct TypeDescription: Equatable, Hashable, Codable, Sendable, CustomStringConvertible {
     private enum CodingKeys: String, CodingKey {
         case name
         case genericParameters = "generic_parameters"
@@ -36,10 +36,6 @@ public struct TypeDescription: Equatable, Hashable, Codable, CustomStringConvert
         )
     }
 }
-
-#if compiler(>=5.5.2) && canImport(_Concurrency)
-extension TypeDescription: Sendable {}
-#endif
 
 extension StringProtocol {
     private func parseNextTypes(currentIndex: inout Index) -> Array<TypeDescription> {

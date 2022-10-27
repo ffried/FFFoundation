@@ -21,7 +21,7 @@
 import Dispatch
 
 @propertyWrapper
-public final class Synchronized<Guarded> {
+public final class Synchronized<Guarded>: @unchecked Sendable {
     private var _wrappedValue: Guarded
     private let queue: DispatchQueue
 
@@ -174,7 +174,3 @@ extension Synchronized: ExpressibleByStringInterpolation where Guarded: Expressi
         self.init(wrappedValue: Guarded(stringInterpolation: stringInterpolation))
     }
 }
-
-#if compiler(>=5.5.2) && canImport(_Concurrency)
-extension Synchronized: @unchecked Sendable {}
-#endif

@@ -235,6 +235,8 @@ fileprivate extension Angle {
     }
 }
 
+extension Angle: Sendable where Value: Sendable {}
+
 extension Angle: Encodable where Value: Encodable {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
@@ -286,7 +288,3 @@ extension Angle: BinaryFloatingPoint where Value: BinaryFloatingPoint {
                   value: .init(sign: sign, exponentBitPattern: exponentBitPattern, significandBitPattern: significandBitPattern))
     }
 }
-
-#if compiler(>=5.5.2) && canImport(_Concurrency)
-extension Angle: Sendable where Value: Sendable {}
-#endif

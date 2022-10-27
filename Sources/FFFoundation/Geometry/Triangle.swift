@@ -140,6 +140,4 @@ extension Triangle {
     }
 }
 
-#if compiler(>=5.5.2) && canImport(_Concurrency)
 extension Triangle: Sendable where Point: Sendable, Point.Value: Sendable {}
-#endif

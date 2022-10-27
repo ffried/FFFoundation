@@ -33,10 +33,7 @@ extension Point {
     public static var zero: Point { .init(x: 0, y: 0) }
 }
 
+extension Point: Sendable where Value: Sendable {}
 extension Point: Encodable where Value: Encodable {}
 extension Point: Decodable where Value: Decodable {}
 extension Point: TriangulatablePoint where Value: GeometricValue {}
-
-#if compiler(>=5.5.2) && canImport(_Concurrency)
-extension Point: Sendable where Value: Sendable {}
-#endif

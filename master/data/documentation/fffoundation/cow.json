@@ -123,7 +123,8 @@
         "doc:\/\/FFFoundation\/s32ExpressibleByStringInterpolationP",
         "doc:\/\/FFFoundation\/s26ExpressibleByStringLiteralP",
         "doc:\/\/FFFoundation\/s33ExpressibleByUnicodeScalarLiteralP",
-        "doc:\/\/FFFoundation\/SH"
+        "doc:\/\/FFFoundation\/SH",
+        "doc:\/\/FFFoundation\/s8SendableP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -829,6 +830,11 @@
 "doc://FFFoundation/s43ExpressibleByExtendedGraphemeClusterLiteralP": {
   "identifier" : "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
   "title" : "Swift.ExpressibleByExtendedGraphemeClusterLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8SendableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8SendableP",
+  "title" : "Swift.Sendable",
   "type" : "unresolvable"
 }
 }

@@ -109,6 +109,7 @@
     {
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CachingError\/CustomStringConvertible-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CachingError\/Error-Implementations"
       ],
       "title" : "Default Implementations"
@@ -169,6 +170,17 @@
   "title" : "CachingError",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cachingerror"
+},
+"doc://FFFoundation/documentation/FFFoundation/CachingError/CustomStringConvertible-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CachingError\/CustomStringConvertible-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "CustomStringConvertible Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/cachingerror\/customstringconvertible-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/CachingError/Error-Implementations": {
   "abstract" : [

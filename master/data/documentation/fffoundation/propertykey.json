@@ -133,6 +133,7 @@
     {
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/CustomStringConvertible-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/Equatable-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/ExpressibleByUnicodeScalarLiteral-Implementations",
@@ -221,6 +222,17 @@
   "title" : "PropertyKey",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/propertykey"
+},
+"doc://FFFoundation/documentation/FFFoundation/PropertyKey/CustomStringConvertible-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/CustomStringConvertible-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "CustomStringConvertible Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/propertykey\/customstringconvertible-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/PropertyKey/Equatable-Implementations": {
   "abstract" : [

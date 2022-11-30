@@ -1828,6 +1828,22 @@
               {
                 "children" : [
                   {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/angle\/halfwidthcornerquoted",
+                    "title" : "var halfWidthCornerQuoted: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/angle\/customstringconvertible-implementations",
+                "title" : "CustomStringConvertible Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
                     "title" : "Initializers",
                     "type" : "groupMarker"
                   },
@@ -2483,6 +2499,22 @@
                   {
                     "children" : [
                       {
+                        "title" : "Instance Properties",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/diff\/change\/halfwidthcornerquoted",
+                        "title" : "var halfWidthCornerQuoted: String",
+                        "type" : "property"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/diff\/change\/customstringconvertible-implementations",
+                    "title" : "CustomStringConvertible Implementations",
+                    "type" : "symbol"
+                  },
+                  {
+                    "children" : [
+                      {
                         "title" : "Operators",
                         "type" : "groupMarker"
                       },
@@ -3032,6 +3064,22 @@
               {
                 "children" : [
                   {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/propertykey\/halfwidthcornerquoted",
+                    "title" : "var halfWidthCornerQuoted: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/propertykey\/customstringconvertible-implementations",
+                "title" : "CustomStringConvertible Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
                     "title" : "Operators",
                     "type" : "groupMarker"
                   },
@@ -3405,6 +3453,22 @@
               {
                 "title" : "Default Implementations",
                 "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/typedescription\/halfwidthcornerquoted",
+                    "title" : "var halfWidthCornerQuoted: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/typedescription\/customstringconvertible-implementations",
+                "title" : "CustomStringConvertible Implementations",
+                "type" : "symbol"
               },
               {
                 "children" : [
@@ -4191,6 +4255,22 @@
               {
                 "title" : "Default Implementations",
                 "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/userdefaultkey\/halfwidthcornerquoted",
+                    "title" : "var halfWidthCornerQuoted: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/userdefaultkey\/customstringconvertible-implementations",
+                "title" : "CustomStringConvertible Implementations",
+                "type" : "symbol"
               },
               {
                 "children" : [
@@ -5390,6 +5470,22 @@
               {
                 "title" : "Default Implementations",
                 "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/cachingerror\/halfwidthcornerquoted",
+                    "title" : "var halfWidthCornerQuoted: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/cachingerror\/customstringconvertible-implementations",
+                "title" : "CustomStringConvertible Implementations",
+                "type" : "symbol"
               },
               {
                 "children" : [

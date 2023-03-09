@@ -11706,7 +11706,10 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/values-5akv3": {
   "abstract" : [
-
+    {
+      "text" : "The elements produced by the publisher, as an asynchronous sequence.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -11784,7 +11787,10 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/values-bnlo": {
   "abstract" : [
-
+    {
+      "text" : "The elements produced by the publisher, as a throwing asynchronous sequence.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

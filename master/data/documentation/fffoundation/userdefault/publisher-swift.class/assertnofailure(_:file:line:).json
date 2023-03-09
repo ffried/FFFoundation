@@ -385,7 +385,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " for internal sanity checks that are active during testing. However, it is important to note that, like its Swift counterpart ",
+              "text" : " for internal integrity checks that are active during testing. However, it is important to note that, like its Swift counterpart ",
               "type" : "text"
             },
             {
@@ -401,7 +401,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " operator asserts a fatal exception when triggered in both development\/testing ",
+              "text" : " operator asserts a fatal exception when triggered during development and testing, ",
               "type" : "text"
             },
             {
@@ -414,7 +414,7 @@
               "type" : "emphasis"
             },
             {
-              "text" : " shipping versions of code.",
+              "text" : " in shipping versions of code.",
               "type" : "text"
             }
           ],

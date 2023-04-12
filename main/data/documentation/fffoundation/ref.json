@@ -1,0 +1,681 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:12FFFoundation3RefC",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "class"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "Ref"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "FFFoundation"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "Ref"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Class",
+    "symbolKind" : "class",
+    "title" : "Ref"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "@propertyWrapper"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "final"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "class"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "Ref"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "genericParameter",
+              "text" : "Referenced"
+            },
+            {
+              "kind" : "text",
+              "text" : ">"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Copyable",
+        "doc:\/\/FFFoundation\/SL",
+        "doc:\/\/FFFoundation\/Se",
+        "doc:\/\/FFFoundation\/SE",
+        "doc:\/\/FFFoundation\/SQ",
+        "doc:\/\/FFFoundation\/s27ExpressibleByBooleanLiteralP",
+        "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
+        "doc:\/\/FFFoundation\/s25ExpressibleByFloatLiteralP",
+        "doc:\/\/FFFoundation\/s27ExpressibleByIntegerLiteralP",
+        "doc:\/\/FFFoundation\/s23ExpressibleByNilLiteralP",
+        "doc:\/\/FFFoundation\/s32ExpressibleByStringInterpolationP",
+        "doc:\/\/FFFoundation\/s26ExpressibleByStringLiteralP",
+        "doc:\/\/FFFoundation\/s33ExpressibleByUnicodeScalarLiteralP",
+        "doc:\/\/FFFoundation\/SH"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/init()",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/init(wrappedValue:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/projectedValue",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/wrappedValue"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/copy()"
+      ],
+      "title" : "Instance Methods"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Comparable-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Decodable-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Encodable-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Equatable-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByBooleanLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByFloatLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByIntegerLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByNilLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByStringInterpolation-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByStringLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByUnicodeScalarLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Hashable-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fffoundation\/ref"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FFFoundation/SE": {
+  "identifier" : "doc:\/\/FFFoundation\/SE",
+  "title" : "Swift.Encodable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SH": {
+  "identifier" : "doc:\/\/FFFoundation\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SL": {
+  "identifier" : "doc:\/\/FFFoundation\/SL",
+  "title" : "Swift.Comparable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SQ": {
+  "identifier" : "doc:\/\/FFFoundation\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/Se": {
+  "identifier" : "doc:\/\/FFFoundation\/Se",
+  "title" : "Swift.Decodable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/documentation/FFFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FFFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/Copyable": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Copyable"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Copyable",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Copyable"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Copyable",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/copyable"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Ref"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Ref"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Ref",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/Comparable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Comparable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Comparable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/comparable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/Decodable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Decodable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Decodable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/decodable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/Encodable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Encodable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Encodable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/encodable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/equatable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/ExpressibleByBooleanLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByBooleanLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByBooleanLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/expressiblebybooleanliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/ExpressibleByExtendedGraphemeClusterLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByExtendedGraphemeClusterLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/expressiblebyextendedgraphemeclusterliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/ExpressibleByFloatLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByFloatLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByFloatLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/expressiblebyfloatliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/ExpressibleByIntegerLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByIntegerLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByIntegerLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/expressiblebyintegerliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/ExpressibleByNilLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByNilLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByNilLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/expressiblebynilliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/ExpressibleByStringInterpolation-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByStringInterpolation-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByStringInterpolation Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/expressiblebystringinterpolation-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/ExpressibleByStringLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByStringLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByStringLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/expressiblebystringliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/ExpressibleByUnicodeScalarLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByUnicodeScalarLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByUnicodeScalarLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/expressiblebyunicodescalarliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/Hashable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Hashable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Hashable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/hashable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/copy()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "copy"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/copy()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "copy()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/copy()"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/init()": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Referenced",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "ExpressibleByNilLiteral",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "convenience"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/init()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/init()"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/init(wrappedValue:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "wrappedValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Referenced"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/init(wrappedValue:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(wrappedValue:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/init(wrappedvalue:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/projectedValue": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "projectedValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV",
+      "text" : "Lens"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Referenced"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/projectedValue",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "projectedValue",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/projectedvalue"
+},
+"doc://FFFoundation/documentation/FFFoundation/Ref/wrappedValue": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "wrappedValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Referenced"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/wrappedValue",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "wrappedValue",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/ref\/wrappedvalue"
+},
+"doc://FFFoundation/s23ExpressibleByNilLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s23ExpressibleByNilLiteralP",
+  "title" : "Swift.ExpressibleByNilLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s25ExpressibleByFloatLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s25ExpressibleByFloatLiteralP",
+  "title" : "Swift.ExpressibleByFloatLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s26ExpressibleByStringLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s26ExpressibleByStringLiteralP",
+  "title" : "Swift.ExpressibleByStringLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s27ExpressibleByBooleanLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s27ExpressibleByBooleanLiteralP",
+  "title" : "Swift.ExpressibleByBooleanLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s27ExpressibleByIntegerLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s27ExpressibleByIntegerLiteralP",
+  "title" : "Swift.ExpressibleByIntegerLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s32ExpressibleByStringInterpolationP": {
+  "identifier" : "doc:\/\/FFFoundation\/s32ExpressibleByStringInterpolationP",
+  "title" : "Swift.ExpressibleByStringInterpolation",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s33ExpressibleByUnicodeScalarLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s33ExpressibleByUnicodeScalarLiteralP",
+  "title" : "Swift.ExpressibleByUnicodeScalarLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s43ExpressibleByExtendedGraphemeClusterLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
+  "title" : "Swift.ExpressibleByExtendedGraphemeClusterLiteral",
+  "type" : "unresolvable"
+}
+}
+}

@@ -84,7 +84,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -238,8 +241,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/eraseToAnyPublisher()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/eraseToAnyPublisher()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to expose an instance of ",
@@ -332,8 +336,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/eraseToAnyPublisher()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/eraseToAnyPublisher()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to expose it as an ",

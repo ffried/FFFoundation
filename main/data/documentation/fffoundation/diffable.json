@@ -89,6 +89,15 @@
       "kind" : "relationships",
       "title" : "Inherits From",
       "type" : "inheritsFrom"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/String",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Substring"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforming Types",
+      "type" : "conformingTypes"
     }
   ],
   "schemaVersion" : {
@@ -210,6 +219,43 @@
   "title" : "contains(_:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/diffable\/contains(_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Swift/String": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/String",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "String"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "String",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/swift\/string"
+},
+"doc://FFFoundation/documentation/FFFoundation/Swift/Substring": {
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Substring",
+  "title" : "Substring",
+  "type" : "unresolvable"
 }
 }
 }

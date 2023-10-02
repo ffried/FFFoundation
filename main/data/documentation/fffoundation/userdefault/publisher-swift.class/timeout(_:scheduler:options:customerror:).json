@@ -173,7 +173,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -411,26 +414,6 @@
       "kind" : "declarations"
     },
     {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "A publisher that terminates if the specified interval elapses with no events received from the upstream publisher.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
-    },
-    {
       "kind" : "parameters",
       "parameters" : [
         {
@@ -494,6 +477,26 @@
     {
       "content" : [
         {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A publisher that terminates if the specified interval elapses with no events received from the upstream publisher.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    },
+    {
+      "content" : [
+        {
           "anchor" : "discussion",
           "level" : 2,
           "text" : "Discussion",
@@ -506,8 +509,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/timeout(_:scheduler:options:customError:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/timeout(_:scheduler:options:customError:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to terminate a publisher if an element isn’t delivered within a timeout interval you specify.",

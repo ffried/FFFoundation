@@ -101,7 +101,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -232,8 +235,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/max()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/max()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to determine the maximum value in the stream of elements from an upstream publisher.",
@@ -249,8 +253,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/max()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/max()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " operator emits a value when the publisher finishes, that value is the maximum of the values received from upstream, which is ",

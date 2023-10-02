@@ -101,7 +101,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -232,8 +235,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/removeDuplicates()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/removeDuplicates()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to remove repeating elements from an upstream publisher. This operator has a two-element memory: the operator uses the current and previously published elements as the basis for its comparison.",
@@ -249,8 +253,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/removeDuplicates()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/removeDuplicates()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " triggers on the doubled, tripled, and quadrupled occurrences of ",

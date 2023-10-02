@@ -126,7 +126,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -296,26 +299,6 @@
       "kind" : "declarations"
     },
     {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "A publisher that consumes — rather than publishes — duplicate elements.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
-    },
-    {
       "kind" : "parameters",
       "parameters" : [
         {
@@ -345,6 +328,26 @@
     {
       "content" : [
         {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A publisher that consumes — rather than publishes — duplicate elements.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    },
+    {
+      "content" : [
+        {
           "anchor" : "discussion",
           "level" : 2,
           "text" : "Discussion",
@@ -357,8 +360,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/tryRemoveDuplicates(by:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/tryRemoveDuplicates(by:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to remove repeating elements from an upstream publisher based upon the evaluation of elements using an error-throwing closure you provide. If your closure throws an error, the publisher terminates with the error.",
@@ -374,8 +378,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/tryRemoveDuplicates(by:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/tryRemoveDuplicates(by:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " returns ",

@@ -132,7 +132,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -308,26 +311,6 @@
       "kind" : "declarations"
     },
     {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "A cancellable instance, which you use when you end assignment of the received value. Deallocation of the result will tear down the subscription stream.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
-    },
-    {
       "kind" : "parameters",
       "parameters" : [
         {
@@ -363,6 +346,26 @@
     {
       "content" : [
         {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A cancellable instance, which you use when you end assignment of the received value. Deallocation of the result will tear down the subscription stream.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    },
+    {
+      "content" : [
+        {
           "anchor" : "discussion",
           "level" : 2,
           "text" : "Discussion",
@@ -375,8 +378,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/sink(receiveCompletion:receiveValue:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/sink(receiveCompletion:receiveValue:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to observe values received by the publisher and process them using a closure you specify.",
@@ -400,8 +404,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/sink(receiveCompletion:receiveValue:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/sink(receiveCompletion:receiveValue:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " operator’s ",
@@ -416,8 +421,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/sink(receiveCompletion:receiveValue:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/sink(receiveCompletion:receiveValue:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " operator’s ",

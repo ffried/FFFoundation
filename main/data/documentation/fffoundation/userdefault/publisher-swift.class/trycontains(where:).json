@@ -110,7 +110,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -264,6 +267,25 @@
       "kind" : "declarations"
     },
     {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "A closure that takes an element as its parameter and returns a Boolean value that indicates whether the element satisfies the closure’s comparison logic.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "predicate"
+        }
+      ]
+    },
+    {
       "content" : [
         {
           "anchor" : "return-value",
@@ -292,25 +314,6 @@
       "kind" : "content"
     },
     {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "A closure that takes an element as its parameter and returns a Boolean value that indicates whether the element satisfies the closure’s comparison logic.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "predicate"
-        }
-      ]
-    },
-    {
       "content" : [
         {
           "anchor" : "discussion",
@@ -325,8 +328,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/tryContains(where:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/tryContains(where:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to find the first element in an upstream that satisfies the error-throwing closure you provide.",
@@ -407,8 +411,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/tryContains(where:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/tryContains(where:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " operator tests values to find an element less than ",

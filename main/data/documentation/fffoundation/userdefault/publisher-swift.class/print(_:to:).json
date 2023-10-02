@@ -55,7 +55,7 @@
       },
       {
         "kind" : "text",
-        "text" : ": "
+        "text" : ": ("
       },
       {
         "kind" : "typeIdentifier",
@@ -64,7 +64,7 @@
       },
       {
         "kind" : "text",
-        "text" : "?) -> "
+        "text" : ")?) -> "
       },
       {
         "kind" : "typeIdentifier",
@@ -95,7 +95,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -199,7 +202,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
+              "text" : ": ("
             },
             {
               "kind" : "typeIdentifier",
@@ -208,7 +211,7 @@
             },
             {
               "kind" : "text",
-              "text" : "? = nil) -> "
+              "text" : ")? = nil) -> "
             },
             {
               "kind" : "typeIdentifier",
@@ -240,26 +243,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "A publisher that prints log messages for all publishing events.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
     },
     {
       "kind" : "parameters",
@@ -297,6 +280,26 @@
     {
       "content" : [
         {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A publisher that prints log messages for all publishing events.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    },
+    {
+      "content" : [
+        {
           "anchor" : "discussion",
           "level" : 2,
           "text" : "Discussion",
@@ -309,8 +312,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/print(_:to:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/print(_:to:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to log messages the console.",
@@ -525,7 +529,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": ("
     },
     {
       "kind" : "typeIdentifier",
@@ -534,7 +538,7 @@
     },
     {
       "kind" : "text",
-      "text" : "?) -> "
+      "text" : ")?) -> "
     },
     {
       "kind" : "typeIdentifier",

@@ -1127,16 +1127,16 @@
                   {
                     "children" : [
                       {
-                        "path" : "\/documentation\/fffoundation\/codableuserdefaultsstorable\/set(to:forkey:)",
+                        "path" : "\/documentation\/fffoundation\/primitiveuserdefaultstorable\/set(to:forkey:)-9mfpb",
                         "title" : "func set(to: UserDefaults, forKey: String)",
                         "type" : "method"
                       }
                     ],
-                    "title" : "CodableUserDefaultsStorable Implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
                     "type" : "groupMarker"
                   }
                 ],
-                "path" : "\/documentation\/fffoundation\/primitiveuserdefaultstorable\/set(to:forkey:)",
+                "path" : "\/documentation\/fffoundation\/primitiveuserdefaultstorable\/set(to:forkey:)-3pqz7",
                 "title" : "func set(to: UserDefaults, forKey: String)",
                 "type" : "method"
               },
@@ -1149,16 +1149,16 @@
                   {
                     "children" : [
                       {
-                        "path" : "\/documentation\/fffoundation\/codableuserdefaultsstorable\/get(from:forkey:)",
+                        "path" : "\/documentation\/fffoundation\/primitiveuserdefaultstorable\/get(from:forkey:)-9qphg",
                         "title" : "static func get(from: UserDefaults, forKey: String) -> Self?",
                         "type" : "method"
                       }
                     ],
-                    "title" : "CodableUserDefaultsStorable Implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
                     "type" : "groupMarker"
                   }
                 ],
-                "path" : "\/documentation\/fffoundation\/primitiveuserdefaultstorable\/get(from:forkey:)",
+                "path" : "\/documentation\/fffoundation\/primitiveuserdefaultstorable\/get(from:forkey:)-4n4h0",
                 "title" : "static func get(from: UserDefaults, forKey: String) -> Self?",
                 "type" : "method"
               }
@@ -1403,7 +1403,7 @@
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/fffoundation\/angle\/nextdown-7h7qr",
+                "path" : "\/documentation\/fffoundation\/angle\/nextdown",
                 "title" : "var nextDown: Angle<Value>",
                 "type" : "property"
               },
@@ -1828,22 +1828,6 @@
               {
                 "children" : [
                   {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/fffoundation\/angle\/halfwidthcornerquoted",
-                    "title" : "var halfWidthCornerQuoted: String",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/fffoundation\/angle\/customstringconvertible-implementations",
-                "title" : "CustomStringConvertible Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
                     "title" : "Initializers",
                     "type" : "groupMarker"
                   },
@@ -1942,11 +1926,6 @@
                   {
                     "path" : "\/documentation\/fffoundation\/angle\/floatingpointclass",
                     "title" : "var floatingPointClass: FloatingPointClassification",
-                    "type" : "property"
-                  },
-                  {
-                    "path" : "\/documentation\/fffoundation\/angle\/nextdown-tvel",
-                    "title" : "var nextDown: Self",
                     "type" : "property"
                   },
                   {
@@ -2495,22 +2474,6 @@
                   {
                     "title" : "Default Implementations",
                     "type" : "groupMarker"
-                  },
-                  {
-                    "children" : [
-                      {
-                        "title" : "Instance Properties",
-                        "type" : "groupMarker"
-                      },
-                      {
-                        "path" : "\/documentation\/fffoundation\/diff\/change\/halfwidthcornerquoted",
-                        "title" : "var halfWidthCornerQuoted: String",
-                        "type" : "property"
-                      }
-                    ],
-                    "path" : "\/documentation\/fffoundation\/diff\/change\/customstringconvertible-implementations",
-                    "title" : "CustomStringConvertible Implementations",
-                    "type" : "symbol"
                   },
                   {
                     "children" : [
@@ -3064,22 +3027,6 @@
               {
                 "children" : [
                   {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/fffoundation\/propertykey\/halfwidthcornerquoted",
-                    "title" : "var halfWidthCornerQuoted: String",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/fffoundation\/propertykey\/customstringconvertible-implementations",
-                "title" : "CustomStringConvertible Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
                     "title" : "Operators",
                     "type" : "groupMarker"
                   },
@@ -3457,22 +3404,6 @@
               {
                 "children" : [
                   {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/fffoundation\/typedescription\/halfwidthcornerquoted",
-                    "title" : "var halfWidthCornerQuoted: String",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/fffoundation\/typedescription\/customstringconvertible-implementations",
-                "title" : "CustomStringConvertible Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
                     "title" : "Operators",
                     "type" : "groupMarker"
                   },
@@ -3533,13 +3464,8 @@
                         "type" : "groupMarker"
                       },
                       {
-                        "path" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/values-5akv3",
+                        "path" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/values",
                         "title" : "var values: AsyncPublisher<Self>",
-                        "type" : "property"
-                      },
-                      {
-                        "path" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/values-bnlo",
-                        "title" : "var values: AsyncThrowingPublisher<Self>",
                         "type" : "property"
                       },
                       {
@@ -3883,7 +3809,7 @@
                       },
                       {
                         "path" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/print(_:to:)",
-                        "title" : "func print(String, to: TextOutputStream?) -> Publishers.Print<Self>",
+                        "title" : "func print(String, to: (TextOutputStream)?) -> Publishers.Print<Self>",
                         "type" : "method"
                       },
                       {
@@ -4255,22 +4181,6 @@
               {
                 "title" : "Default Implementations",
                 "type" : "groupMarker"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/fffoundation\/userdefaultkey\/halfwidthcornerquoted",
-                    "title" : "var halfWidthCornerQuoted: String",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/fffoundation\/userdefaultkey\/customstringconvertible-implementations",
-                "title" : "CustomStringConvertible Implementations",
-                "type" : "symbol"
               },
               {
                 "children" : [
@@ -5450,12 +5360,12 @@
               },
               {
                 "path" : "\/documentation\/fffoundation\/cachingerror\/couldnotdeserialize(underlyingerror:)",
-                "title" : "case couldNotDeserialize(underlyingError: Error?)",
+                "title" : "case couldNotDeserialize(underlyingError: (Error)?)",
                 "type" : "case"
               },
               {
                 "path" : "\/documentation\/fffoundation\/cachingerror\/couldnotserialize(underlyingerror:)",
-                "title" : "case couldNotSerialize(underlyingError: Error?)",
+                "title" : "case couldNotSerialize(underlyingError: (Error)?)",
                 "type" : "case"
               },
               {
@@ -5478,22 +5388,6 @@
                     "type" : "groupMarker"
                   },
                   {
-                    "path" : "\/documentation\/fffoundation\/cachingerror\/halfwidthcornerquoted",
-                    "title" : "var halfWidthCornerQuoted: String",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/fffoundation\/cachingerror\/customstringconvertible-implementations",
-                "title" : "CustomStringConvertible Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
                     "path" : "\/documentation\/fffoundation\/cachingerror\/localizeddescription",
                     "title" : "var localizedDescription: String",
                     "type" : "property"
@@ -5507,6 +5401,1545 @@
             "path" : "\/documentation\/fffoundation\/cachingerror",
             "title" : "CachingError",
             "type" : "enum"
+          },
+          {
+            "title" : "Extended Modules",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Classes",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/appkit\/nsimage\/cachedata()",
+                        "title" : "func cacheData() throws -> Data",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/appkit\/nsimage\/fromcache(data:)",
+                        "title" : "static func fromCache(data: Data) throws -> Self",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/appkit\/nsimage\/cachable-implementations",
+                    "title" : "Cachable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/appkit\/nsimage",
+                "title" : "NSImage",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Type Aliases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/appkit\/nslayoutconstraint\/metricvaluetype",
+                    "title" : "NSLayoutConstraint.MetricValueType",
+                    "type" : "typealias"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/appkit\/nslayoutconstraint\/metricsdictionary",
+                    "title" : "NSLayoutConstraint.MetricsDictionary",
+                    "type" : "typealias"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/appkit\/nslayoutconstraint\/viewtype",
+                    "title" : "NSLayoutConstraint.ViewType",
+                    "type" : "typealias"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/appkit\/nslayoutconstraint\/viewsdictionary",
+                    "title" : "NSLayoutConstraint.ViewsDictionary",
+                    "type" : "typealias"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/appkit\/nslayoutconstraint\/visualformattype",
+                    "title" : "NSLayoutConstraint.VisualFormatType",
+                    "type" : "typealias"
+                  },
+                  {
+                    "title" : "Type Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/appkit\/nslayoutconstraint\/constraints(withvisualformats:options:metrics:views:)",
+                    "title" : "static func constraints<Formats>(withVisualFormats: Formats, options: NSLayoutConstraint.FormatOptions, metrics: NSLayoutConstraint.MetricsDictionary?, views: NSLayoutConstraint.ViewsDictionary) -> [NSLayoutConstraint]",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/appkit\/nslayoutconstraint",
+                "title" : "NSLayoutConstraint",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/fffoundation\/appkit",
+            "title" : "AppKit",
+            "type" : "extension"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/corefoundation\/cgfloat\/acos()",
+                        "title" : "func acos() -> CGFloat",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/corefoundation\/cgfloat\/asin()",
+                        "title" : "func asin() -> CGFloat",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/corefoundation\/cgfloat\/atan()",
+                        "title" : "func atan() -> CGFloat",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/corefoundation\/cgfloat\/cos()",
+                        "title" : "func cos() -> CGFloat",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/corefoundation\/cgfloat\/sin()",
+                        "title" : "func sin() -> CGFloat",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/corefoundation\/cgfloat\/tan()",
+                        "title" : "func tan() -> CGFloat",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/corefoundation\/cgfloat\/geometricvalue-implementations",
+                    "title" : "GeometricValue Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/corefoundation\/cgfloat",
+                "title" : "CGFloat",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Type Aliases",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/corefoundation\/cgpoint\/value",
+                        "title" : "CGPoint.Value",
+                        "type" : "typealias"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/corefoundation\/cgpoint\/triangulatablepoint-implementations",
+                    "title" : "TriangulatablePoint Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/corefoundation\/cgpoint",
+                "title" : "CGPoint",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/fffoundation\/corefoundation",
+            "title" : "CoreFoundation",
+            "type" : "extension"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Properties",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/darwin\/darwinboolean\/toggled",
+                        "title" : "var toggled: DarwinBoolean",
+                        "type" : "property"
+                      },
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/darwin\/darwinboolean\/toggle()",
+                        "title" : "func toggle()",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/darwin\/darwinboolean\/togglable-implementations",
+                    "title" : "Togglable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/darwin\/darwinboolean",
+                "title" : "DarwinBoolean",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/fffoundation\/darwin",
+            "title" : "Darwin",
+            "type" : "extension"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Classes",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqueue\/asfuture(do:)-20al8",
+                    "title" : "func asFuture<T>(do: () -> T) -> GCDFuture<T>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqueue\/asfuture(do:)-6ijes",
+                    "title" : "func asFuture<T>(do: () throws -> T) -> GCDFutureResult<T, Error>",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqueue",
+                "title" : "DispatchQueue",
+                "type" : "extension"
+              },
+              {
+                "title" : "Extended Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Extended Enumerations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Default Implementations",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "children" : [
+                          {
+                            "title" : "Operators",
+                            "type" : "groupMarker"
+                          },
+                          {
+                            "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/'...(_:)-1ek9g",
+                            "title" : "static func ... (Self) -> PartialRangeThrough<Self>",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/'...(_:)-4jsns",
+                            "title" : "static func ... (Self) -> PartialRangeFrom<Self>",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/'...(_:_:)",
+                            "title" : "static func ... (Self, Self) -> ClosedRange<Self>",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/'.._(_:)",
+                            "title" : "static func ..< (Self) -> PartialRangeUpTo<Self>",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/'.._(_:_:)",
+                            "title" : "static func ..< (Self, Self) -> Range<Self>",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/_(_:_:)-50q5w",
+                            "title" : "static func < (DispatchQoS.QoSClass, DispatchQoS.QoSClass) -> Bool",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/_(_:_:)-w4b4",
+                            "title" : "static func > (Self, Self) -> Bool",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/_=(_:_:)-23c4v",
+                            "title" : "static func >= (Self, Self) -> Bool",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/_=(_:_:)-2inhw",
+                            "title" : "static func <= (Self, Self) -> Bool",
+                            "type" : "op"
+                          }
+                        ],
+                        "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/comparable-implementations",
+                        "title" : "Comparable Implementations",
+                        "type" : "symbol"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass",
+                    "title" : "DispatchQoS.QoSClass",
+                    "type" : "extension"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/'...(_:)-152di",
+                        "title" : "static func ... (Self) -> PartialRangeThrough<Self>",
+                        "type" : "op"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/'...(_:)-1it1k",
+                        "title" : "static func ... (Self) -> PartialRangeFrom<Self>",
+                        "type" : "op"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/'...(_:_:)",
+                        "title" : "static func ... (Self, Self) -> ClosedRange<Self>",
+                        "type" : "op"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/'.._(_:)",
+                        "title" : "static func ..< (Self) -> PartialRangeUpTo<Self>",
+                        "type" : "op"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/'.._(_:_:)",
+                        "title" : "static func ..< (Self, Self) -> Range<Self>",
+                        "type" : "op"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/_(_:_:)-35dlh",
+                        "title" : "static func > (Self, Self) -> Bool",
+                        "type" : "op"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/_(_:_:)-4zr71",
+                        "title" : "static func < (DispatchQoS, DispatchQoS) -> Bool",
+                        "type" : "op"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/_=(_:_:)-214ub",
+                        "title" : "static func >= (Self, Self) -> Bool",
+                        "type" : "op"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/_=(_:_:)-5lyzs",
+                        "title" : "static func <= (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/comparable-implementations",
+                    "title" : "Comparable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/dispatch\/dispatchqos",
+                "title" : "DispatchQoS",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/fffoundation\/dispatch",
+            "title" : "Dispatch",
+            "type" : "extension"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Classes",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/filemanager\/createdirectoryifneeded(at:withintermediatedirectories:attributes:)",
+                    "title" : "func createDirectoryIfNeeded(at: URL, withIntermediateDirectories: Bool, attributes: [FileAttributeKey : Any]?) throws",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/filemanager\/directoryexists(at:)",
+                    "title" : "func directoryExists(at: URL) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/filemanager\/fileexists(at:)",
+                    "title" : "func fileExists(at: URL) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/filemanager\/fileexists(at:isdirectory:)",
+                    "title" : "func fileExists(at: URL, isDirectory: UnsafeMutablePointer<ObjCBool>?) -> Bool",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/foundation\/filemanager",
+                "title" : "FileManager",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/nsattributedstring\/height(forwidth:)",
+                    "title" : "func height(forWidth: CGFloat) -> CGFloat",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/nsattributedstring\/size(forwidth:)",
+                    "title" : "func size(forWidth: CGFloat) -> CGSize",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Type Aliases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/nsattributedstring\/attributesdictionary",
+                    "title" : "NSAttributedString.AttributesDictionary",
+                    "type" : "typealias"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/foundation\/nsattributedstring",
+                "title" : "NSAttributedString",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Structures",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Initializers",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/init(stringinterpolation:)",
+                        "title" : "init(stringInterpolation: NSPredicate.Format.StringInterpolation)",
+                        "type" : "init"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/init(stringliteral:)",
+                        "title" : "init(stringLiteral: NSPredicate.Format.StringLiteralType)",
+                        "type" : "init"
+                      },
+                      {
+                        "title" : "Type Aliases",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringliteraltype",
+                        "title" : "NSPredicate.Format.StringLiteralType",
+                        "type" : "typealias"
+                      },
+                      {
+                        "title" : "Default Implementations",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "children" : [
+                          {
+                            "title" : "Initializers",
+                            "type" : "groupMarker"
+                          },
+                          {
+                            "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/init(extendedgraphemeclusterliteral:)",
+                            "title" : "init(extendedGraphemeClusterLiteral: Self.StringLiteralType)",
+                            "type" : "init"
+                          }
+                        ],
+                        "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/expressiblebyextendedgraphemeclusterliteral-implementations",
+                        "title" : "ExpressibleByExtendedGraphemeClusterLiteral Implementations",
+                        "type" : "symbol"
+                      },
+                      {
+                        "children" : [
+                          {
+                            "title" : "Structures",
+                            "type" : "groupMarker"
+                          },
+                          {
+                            "children" : [
+                              {
+                                "title" : "Initializers",
+                                "type" : "groupMarker"
+                              },
+                              {
+                                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/init(literalcapacity:interpolationcount:)",
+                                "title" : "init(literalCapacity: Int, interpolationCount: Int)",
+                                "type" : "init"
+                              },
+                              {
+                                "title" : "Instance Methods",
+                                "type" : "groupMarker"
+                              },
+                              {
+                                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-4j0xu",
+                                "title" : "func appendInterpolation(Any?)",
+                                "type" : "method"
+                              },
+                              {
+                                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-4k84l",
+                                "title" : "func appendInterpolation(NSPredicate.Key)",
+                                "type" : "method"
+                              },
+                              {
+                                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-59shz",
+                                "title" : "func appendInterpolation<Bridged>(Bridged?)",
+                                "type" : "method"
+                              },
+                              {
+                                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-6syc",
+                                "title" : "func appendInterpolation<Integer>(Integer?)",
+                                "type" : "method"
+                              },
+                              {
+                                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-6y89e",
+                                "title" : "func appendInterpolation(AnyKeyPath)",
+                                "type" : "method"
+                              },
+                              {
+                                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-7zqvm",
+                                "title" : "func appendInterpolation<Float>(Float?)",
+                                "type" : "method"
+                              },
+                              {
+                                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-85sse",
+                                "title" : "func appendInterpolation<Integer>(Integer?)",
+                                "type" : "method"
+                              },
+                              {
+                                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-8ir7f",
+                                "title" : "func appendInterpolation(Bool?)",
+                                "type" : "method"
+                              },
+                              {
+                                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-o4xx",
+                                "title" : "func appendInterpolation(NSNumber?)",
+                                "type" : "method"
+                              },
+                              {
+                                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(key:)-4d9fk",
+                                "title" : "func appendInterpolation(key: NSPredicate.Key.RawValue)",
+                                "type" : "method"
+                              },
+                              {
+                                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(key:)-4gdgp",
+                                "title" : "func appendInterpolation(key: NSPredicate.Key)",
+                                "type" : "method"
+                              },
+                              {
+                                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendliteral(_:)",
+                                "title" : "func appendLiteral(NSPredicate.Format.StringInterpolation.StringLiteralType)",
+                                "type" : "method"
+                              },
+                              {
+                                "title" : "Type Aliases",
+                                "type" : "groupMarker"
+                              },
+                              {
+                                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/stringliteraltype",
+                                "title" : "NSPredicate.Format.StringInterpolation.StringLiteralType",
+                                "type" : "typealias"
+                              }
+                            ],
+                            "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation",
+                            "title" : "NSPredicate.Format.StringInterpolation",
+                            "type" : "struct"
+                          }
+                        ],
+                        "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/expressiblebystringinterpolation-implementations",
+                        "title" : "ExpressibleByStringInterpolation Implementations",
+                        "type" : "symbol"
+                      },
+                      {
+                        "children" : [
+                          {
+                            "title" : "Initializers",
+                            "type" : "groupMarker"
+                          },
+                          {
+                            "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/init(unicodescalarliteral:)",
+                            "title" : "init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)",
+                            "type" : "init"
+                          }
+                        ],
+                        "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/expressiblebyunicodescalarliteral-implementations",
+                        "title" : "ExpressibleByUnicodeScalarLiteral Implementations",
+                        "type" : "symbol"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format",
+                    "title" : "NSPredicate.Format",
+                    "type" : "struct"
+                  },
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/init(_:)",
+                    "title" : "convenience init(NSPredicate.Format)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Type Aliases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/nspredicate\/key",
+                    "title" : "NSPredicate.Key",
+                    "type" : "typealias"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/foundation\/nspredicate",
+                "title" : "NSPredicate",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Type Aliases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/nssortdescriptor\/key",
+                    "title" : "NSSortDescriptor.Key",
+                    "type" : "typealias"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/foundation\/nssortdescriptor",
+                "title" : "NSSortDescriptor",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/operationqueue\/iscurrent",
+                    "title" : "var isCurrent: Bool",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/operationqueue\/ismain",
+                    "title" : "var isMain: Bool",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/operationqueue\/addoperation(with:completion:)",
+                    "title" : "func addOperation(with: () -> (), completion: () -> ())",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/operationqueue\/addoperationwithblockandwait(block:)",
+                    "title" : "func addOperationWithBlockAndWait(block: () -> ())",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/operationqueue\/addoperationwithblockandwaitifnotcurrentqueue(block:)",
+                    "title" : "func addOperationWithBlockAndWaitIfNotCurrentQueue(block: () -> ())",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/foundation\/operationqueue",
+                "title" : "OperationQueue",
+                "type" : "extension"
+              },
+              {
+                "title" : "Extended Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/foundation\/data\/cachedata()",
+                        "title" : "func cacheData() throws -> Data",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/foundation\/data\/fromcache(data:)",
+                        "title" : "static func fromCache(data: Data) throws -> Data",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/foundation\/data\/cachable-implementations",
+                    "title" : "Cachable Implementations",
+                    "type" : "symbol"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/foundation\/data\/set(to:forkey:)",
+                        "title" : "func set(to: UserDefaults, forKey: String)",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/foundation\/data\/get(from:forkey:)",
+                        "title" : "static func get(from: UserDefaults, forKey: String) -> Data?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/foundation\/data\/primitiveuserdefaultstorable-implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/foundation\/data",
+                "title" : "Data",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/foundation\/date\/set(to:forkey:)",
+                        "title" : "func set(to: UserDefaults, forKey: String)",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/foundation\/date\/get(from:forkey:)",
+                        "title" : "static func get(from: UserDefaults, forKey: String) -> Date?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/foundation\/date\/primitiveuserdefaultstorable-implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/foundation\/date",
+                "title" : "Date",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/locale\/localizeddeviceregion",
+                    "title" : "var localizedDeviceRegion: String?",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Type Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/foundation\/locale\/localizeddevicelanguage",
+                    "title" : "static var localizedDeviceLanguage: String?",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/foundation\/locale",
+                "title" : "Locale",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/foundation\/url\/set(to:forkey:)",
+                        "title" : "func set(to: UserDefaults, forKey: String)",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/foundation\/url\/get(from:forkey:)",
+                        "title" : "static func get(from: UserDefaults, forKey: String) -> URL?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/foundation\/url\/primitiveuserdefaultstorable-implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/foundation\/url",
+                "title" : "URL",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/fffoundation\/foundation",
+            "title" : "Foundation",
+            "type" : "extension"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Properties",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/objectivec\/objcbool\/toggled",
+                        "title" : "var toggled: ObjCBool",
+                        "type" : "property"
+                      },
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/objectivec\/objcbool\/toggle()",
+                        "title" : "func toggle()",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/objectivec\/objcbool\/togglable-implementations",
+                    "title" : "Togglable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/objectivec\/objcbool",
+                "title" : "ObjCBool",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/fffoundation\/objectivec",
+            "title" : "ObjectiveC",
+            "type" : "extension"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Protocols",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/swift\/mutablecollection\/appendweakly(_:)",
+                    "title" : "func appendWeakly<Object>(Object)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/swift\/mutablecollection\/removereleasedobjects()",
+                    "title" : "func removeReleasedObjects<Object>()",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/swift\/mutablecollection",
+                "title" : "MutableCollection",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/swift\/sequence\/activate()",
+                    "title" : "func activate()",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/swift\/sequence\/constraints(with:options:metrics:)",
+                    "title" : "func constraints(with: NSLayoutConstraint.ViewsDictionary, options: NSLayoutConstraint.FormatOptions, metrics: NSLayoutConstraint.MetricsDictionary?) -> [NSLayoutConstraint]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/swift\/sequence\/deactivate()",
+                    "title" : "func deactivate()",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/swift\/sequence\/nonreleasedobjects()",
+                    "title" : "func nonReleasedObjects<Object>() -> [Object]",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/swift\/sequence",
+                "title" : "Sequence",
+                "type" : "extension"
+              },
+              {
+                "title" : "Extended Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/array\/set(to:forkey:)",
+                        "title" : "func set(to: UserDefaults, forKey: String)",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/array\/get(from:forkey:)",
+                        "title" : "static func get(from: UserDefaults, forKey: String) -> Array<Element>?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/swift\/array\/primitiveuserdefaultstorable-implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/swift\/array",
+                "title" : "Array",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/bool\/set(to:forkey:)",
+                        "title" : "func set(to: UserDefaults, forKey: String)",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/bool\/get(from:forkey:)",
+                        "title" : "static func get(from: UserDefaults, forKey: String) -> Bool?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/swift\/bool\/primitiveuserdefaultstorable-implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
+                    "type" : "symbol"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Properties",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/bool\/toggled",
+                        "title" : "var toggled: Bool",
+                        "type" : "property"
+                      },
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/bool\/toggle()",
+                        "title" : "func toggle()",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/swift\/bool\/togglable-implementations",
+                    "title" : "Togglable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/swift\/bool",
+                "title" : "Bool",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/contiguousarray\/set(to:forkey:)",
+                        "title" : "func set(to: UserDefaults, forKey: String)",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/contiguousarray\/get(from:forkey:)",
+                        "title" : "static func get(from: UserDefaults, forKey: String) -> ContiguousArray<Element>?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/swift\/contiguousarray\/primitiveuserdefaultstorable-implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/swift\/contiguousarray",
+                "title" : "ContiguousArray",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/swift\/dictionary\/+(_:_:)",
+                    "title" : "static func + (Dictionary<Key, Value>, Dictionary<Key, Value>) -> Dictionary<Key, Value>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/swift\/dictionary\/+=(_:_:)",
+                    "title" : "static func += (inout Dictionary<Key, Value>, Dictionary<Key, Value>)",
+                    "type" : "op"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/dictionary\/set(to:forkey:)",
+                        "title" : "func set(to: UserDefaults, forKey: String)",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/dictionary\/get(from:forkey:)",
+                        "title" : "static func get(from: UserDefaults, forKey: String) -> Dictionary<Key, Value>?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/swift\/dictionary\/primitiveuserdefaultstorable-implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/swift\/dictionary",
+                "title" : "Dictionary",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/double\/acos()",
+                        "title" : "func acos() -> Double",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/double\/asin()",
+                        "title" : "func asin() -> Double",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/double\/atan()",
+                        "title" : "func atan() -> Double",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/double\/cos()",
+                        "title" : "func cos() -> Double",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/double\/sin()",
+                        "title" : "func sin() -> Double",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/double\/tan()",
+                        "title" : "func tan() -> Double",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/swift\/double\/geometricvalue-implementations",
+                    "title" : "GeometricValue Implementations",
+                    "type" : "symbol"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/double\/set(to:forkey:)",
+                        "title" : "func set(to: UserDefaults, forKey: String)",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/double\/get(from:forkey:)",
+                        "title" : "static func get(from: UserDefaults, forKey: String) -> Double?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/swift\/double\/primitiveuserdefaultstorable-implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/swift\/double",
+                "title" : "Double",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/float\/acos()",
+                        "title" : "func acos() -> Float",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/float\/asin()",
+                        "title" : "func asin() -> Float",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/float\/atan()",
+                        "title" : "func atan() -> Float",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/float\/cos()",
+                        "title" : "func cos() -> Float",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/float\/sin()",
+                        "title" : "func sin() -> Float",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/float\/tan()",
+                        "title" : "func tan() -> Float",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/swift\/float\/geometricvalue-implementations",
+                    "title" : "GeometricValue Implementations",
+                    "type" : "symbol"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/float\/set(to:forkey:)",
+                        "title" : "func set(to: UserDefaults, forKey: String)",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/float\/get(from:forkey:)",
+                        "title" : "static func get(from: UserDefaults, forKey: String) -> Float?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/swift\/float\/primitiveuserdefaultstorable-implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/swift\/float",
+                "title" : "Float",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/int\/set(to:forkey:)",
+                        "title" : "func set(to: UserDefaults, forKey: String)",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/int\/get(from:forkey:)",
+                        "title" : "static func get(from: UserDefaults, forKey: String) -> Int?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/swift\/int\/primitiveuserdefaultstorable-implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/swift\/int",
+                "title" : "Int",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/set\/set(to:forkey:)",
+                        "title" : "func set(to: UserDefaults, forKey: String)",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/set\/get(from:forkey:)",
+                        "title" : "static func get(from: UserDefaults, forKey: String) -> Set<Element>?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/swift\/set\/primitiveuserdefaultstorable-implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/swift\/set",
+                "title" : "Set",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/swift\/string\/init(class:removenamespace:)",
+                    "title" : "init(class: AnyClass, removeNamespace: Bool)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/swift\/string\/height(forwidth:attributes:)",
+                    "title" : "func height(forWidth: CGFloat, attributes: NSAttributedString.AttributesDictionary?) -> CGFloat",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/fffoundation\/swift\/string\/size(forwidth:attributes:)",
+                    "title" : "func size(forWidth: CGFloat, attributes: NSAttributedString.AttributesDictionary?) -> CGSize",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/string\/cachedata()",
+                        "title" : "func cacheData() throws -> Data",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/string\/fromcache(data:)",
+                        "title" : "static func fromCache(data: Data) throws -> String",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/swift\/string\/cachable-implementations",
+                    "title" : "Cachable Implementations",
+                    "type" : "symbol"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/string\/set(to:forkey:)",
+                        "title" : "func set(to: UserDefaults, forKey: String)",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/string\/get(from:forkey:)",
+                        "title" : "static func get(from: UserDefaults, forKey: String) -> String?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/swift\/string\/primitiveuserdefaultstorable-implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/swift\/string",
+                "title" : "String",
+                "type" : "extension"
+              },
+              {
+                "title" : "Extended Enumerations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/optional\/set(to:forkey:)",
+                        "title" : "func set(to: UserDefaults, forKey: String)",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fffoundation\/swift\/optional\/get(from:forkey:)",
+                        "title" : "static func get(from: UserDefaults, forKey: String) -> Optional<Wrapped>?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/fffoundation\/swift\/optional\/primitiveuserdefaultstorable-implementations",
+                    "title" : "PrimitiveUserDefaultStorable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/fffoundation\/swift\/optional",
+                "title" : "Optional",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/fffoundation\/swift",
+            "title" : "Swift",
+            "type" : "extension"
           }
         ],
         "path" : "\/documentation\/fffoundation",
@@ -5518,6 +6951,6 @@
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,
-    "patch" : 0
+    "patch" : 1
   }
 }

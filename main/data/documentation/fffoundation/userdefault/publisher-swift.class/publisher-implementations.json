@@ -34,8 +34,7 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/values-5akv3",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/values-bnlo"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/values"
       ],
       "title" : "Instance Properties"
     },
@@ -1630,39 +1629,7 @@
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/combineLatest(_:_:)-3c11w": {
   "abstract" : [
     {
-      "text" : "cancellable = pub1",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : ".combineLatest(pub2) { (first, second) in",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "return first * second",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "}",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : ".sink { print(“Result: ($0).”) }",
+      "text" : "Subscribes to an additional publisher and invokes a closure upon receiving output from either publisher.",
       "type" : "text"
     }
   ],
@@ -8140,7 +8107,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": ("
     },
     {
       "kind" : "typeIdentifier",
@@ -8149,7 +8116,7 @@
     },
     {
       "kind" : "text",
-      "text" : "?) -> "
+      "text" : ")?) -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -11704,7 +11671,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/tryscan(_:_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/values-5akv3": {
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/values": {
   "abstract" : [
     {
       "text" : "The elements produced by the publisher, as an asynchronous sequence.",
@@ -11778,61 +11745,12 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/values-5akv3",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/values",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "values",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/values-5akv3"
-},
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/values-bnlo": {
-  "abstract" : [
-    {
-      "text" : "The elements produced by the publisher, as a throwing asynchronous sequence.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "values"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Combine22AsyncThrowingPublisherV",
-      "text" : "AsyncThrowingPublisher"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/values-bnlo",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "values",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/values-bnlo"
+  "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/values"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/zip(_:)": {
   "abstract" : [

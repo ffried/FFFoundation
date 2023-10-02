@@ -141,6 +141,7 @@
               "text" : "."
             },
             {
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Key",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE3Keya",
               "text" : "Key"
@@ -233,6 +234,37 @@
   "title" : "FFFoundation",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Key": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Key"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Key",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Key"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "NSPredicate.Key",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/key"
 },
 "doc://FFFoundation/documentation/FFFoundation/_(_:_:)-3appj": {
   "abstract" : [

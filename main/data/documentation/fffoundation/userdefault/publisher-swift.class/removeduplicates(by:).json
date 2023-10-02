@@ -118,7 +118,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -280,26 +283,6 @@
       "kind" : "declarations"
     },
     {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "A publisher that consumes — rather than publishes — duplicate elements.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
-    },
-    {
       "kind" : "parameters",
       "parameters" : [
         {
@@ -329,6 +312,26 @@
     {
       "content" : [
         {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A publisher that consumes — rather than publishes — duplicate elements.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    },
+    {
+      "content" : [
+        {
           "anchor" : "discussion",
           "level" : 2,
           "text" : "Discussion",
@@ -341,8 +344,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/removeDuplicates(by:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/removeDuplicates(by:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to remove repeating elements from an upstream publisher based upon the evaluation of the current and previously published elements using a closure you provide.",
@@ -358,8 +362,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/removeDuplicates(by:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/removeDuplicates(by:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " operator when comparing types that don’t themselves implement ",
@@ -391,8 +396,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/removeDuplicates(by:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/removeDuplicates(by:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " functionality triggers when the ",

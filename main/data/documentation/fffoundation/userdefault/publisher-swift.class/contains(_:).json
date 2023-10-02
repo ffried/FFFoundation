@@ -117,7 +117,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -246,6 +249,25 @@
       "kind" : "declarations"
     },
     {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "An element to match against.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "output"
+        }
+      ]
+    },
+    {
       "content" : [
         {
           "anchor" : "return-value",
@@ -274,25 +296,6 @@
       "kind" : "content"
     },
     {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "An element to match against.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "output"
-        }
-      ]
-    },
-    {
       "content" : [
         {
           "anchor" : "discussion",
@@ -307,8 +310,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/contains(_:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/contains(_:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to find the first element in an upstream that’s equal to the supplied argument. The contains publisher consumes all received elements until the upstream publisher produces a matching element. Upon finding the first match, it emits ",
@@ -340,8 +344,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/contains(_:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/contains(_:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " operator emits ",

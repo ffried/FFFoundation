@@ -101,7 +101,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -291,6 +294,25 @@
       "kind" : "declarations"
     },
     {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "A publisher to monitor for its first emitted element.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "publisher"
+        }
+      ]
+    },
+    {
       "content" : [
         {
           "anchor" : "return-value",
@@ -319,25 +341,6 @@
       "kind" : "content"
     },
     {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "A publisher to monitor for its first emitted element.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "publisher"
-        }
-      ]
-    },
-    {
       "content" : [
         {
           "anchor" : "discussion",
@@ -352,8 +355,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/drop(untilOutputFrom:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/drop(untilOutputFrom:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to ignore elements from the upstream publisher until another, second, publisher delivers its first element.",
@@ -368,8 +372,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/drop(untilOutputFrom:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/drop(untilOutputFrom:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " cancels its subscription to the second publisher, and allows events from the upstream publisher to pass through.",

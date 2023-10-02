@@ -40,8 +40,7 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/floatingPointClass",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/nextDown-tvel"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/floatingPointClass"
       ],
       "title" : "Instance Properties"
     },
@@ -496,39 +495,6 @@
   "title" : "minimumMagnitude(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle\/minimummagnitude(_:_:)"
-},
-"doc://FFFoundation/documentation/FFFoundation/Angle/nextDown-tvel": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "nextDown"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/nextDown-tvel",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "nextDown",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/nextdown-tvel"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/radix-kunf": {
   "abstract" : [

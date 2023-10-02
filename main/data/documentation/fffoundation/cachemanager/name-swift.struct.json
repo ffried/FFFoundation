@@ -89,6 +89,14 @@
           ],
           "tokens" : [
             {
+              "kind" : "attribute",
+              "text" : "@frozen"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
               "kind" : "keyword",
               "text" : "struct"
             },
@@ -109,7 +117,8 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/FFFoundation\/SY"
+        "doc:\/\/FFFoundation\/SY",
+        "doc:\/\/FFFoundation\/s8SendableP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -519,6 +528,11 @@
   "title" : "rawValue",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cachemanager\/name-swift.struct\/rawvalue-swift.property"
+},
+"doc://FFFoundation/s8SendableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 }
 }
 }

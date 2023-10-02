@@ -117,7 +117,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -286,6 +289,25 @@
       "kind" : "declarations"
     },
     {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "An error-throwing closure that receives a value and returns an optional value.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "transform"
+        }
+      ]
+    },
+    {
       "content" : [
         {
           "anchor" : "return-value",
@@ -314,25 +336,6 @@
       "kind" : "content"
     },
     {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "An error-throwing closure that receives a value and returns an optional value.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "transform"
-        }
-      ]
-    },
-    {
       "content" : [
         {
           "anchor" : "discussion",
@@ -347,8 +350,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/tryCompactMap(_:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/tryCompactMap(_:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to remove ",
@@ -363,8 +367,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/Failure",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/Failure",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : ".",
@@ -380,8 +385,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/tryCompactMap(_:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/tryCompactMap(_:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " operator consumes each integer from the publisher and uses a dictionary to transform the numbers from its Arabic to Roman numerals, as an optional ",
@@ -405,8 +411,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/tryCompactMap(_:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/tryCompactMap(_:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " fails to look up a Roman numeral, it returns the optional String ",
@@ -430,8 +437,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/tryCompactMap(_:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/tryCompactMap(_:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " determines the input is ",
@@ -446,8 +454,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/tryCompactMap(_:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/tryCompactMap(_:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " operator catches this error and stops publishing, sending a ",
@@ -616,6 +625,37 @@
   "title" : "UserDefault.Publisher",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class"
+},
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/Failure": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Failure"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/Failure",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Failure"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "UserDefault.Publisher.Failure",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/failure"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/Publisher-Implementations": {
   "abstract" : [

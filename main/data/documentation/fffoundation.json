@@ -253,6 +253,18 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CachingError"
       ],
       "title" : "Enumerations"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoreFoundation",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Darwin",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift"
+      ],
+      "title" : "Extended Modules"
     }
   ],
   "variants" : [
@@ -5056,6 +5068,17 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/anytimer"
 },
+"doc://FFFoundation/documentation/FFFoundation/AppKit": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "AppKit",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/appkit"
+},
 "doc://FFFoundation/documentation/FFFoundation/Cachable": {
   "abstract" : [
 
@@ -5242,6 +5265,28 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/copyable"
 },
+"doc://FFFoundation/documentation/FFFoundation/CoreFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoreFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "CoreFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/corefoundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/Darwin": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Darwin",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Darwin",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/darwin"
+},
 "doc://FFFoundation/documentation/FFFoundation/Diff": {
   "abstract" : [
 
@@ -5304,6 +5349,17 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/diffable"
 },
+"doc://FFFoundation/documentation/FFFoundation/Dispatch": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Dispatch",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/dispatch"
+},
 "doc://FFFoundation/documentation/FFFoundation/ElementDiff": {
   "abstract" : [
 
@@ -5334,6 +5390,17 @@
   "title" : "ElementDiff",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/elementdiff"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Foundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation"
 },
 "doc://FFFoundation/documentation/FFFoundation/GCDFuture": {
   "abstract" : [
@@ -5489,6 +5556,17 @@
   "title" : "Lens",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/lens"
+},
+"doc://FFFoundation/documentation/FFFoundation/ObjectiveC": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ObjectiveC",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/objectivec"
 },
 "doc://FFFoundation/documentation/FFFoundation/Point": {
   "abstract" : [
@@ -5675,6 +5753,17 @@
   "title" : "Size",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/size"
+},
+"doc://FFFoundation/documentation/FFFoundation/Swift": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Swift",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/swift"
 },
 "doc://FFFoundation/documentation/FFFoundation/Synchronized": {
   "abstract" : [

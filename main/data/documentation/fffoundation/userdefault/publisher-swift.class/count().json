@@ -69,7 +69,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -200,8 +203,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/count()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/count()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to determine the number of elements received from the upstream publisher before it completes:",

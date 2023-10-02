@@ -117,6 +117,7 @@
               "text" : "."
             },
             {
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSSortDescriptor\/Key",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:So16NSSortDescriptorC12FFFoundationE3Keya",
               "text" : "Key"
@@ -224,6 +225,37 @@
   "title" : "!^(_:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/!_(_:)-7pzh2"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSSortDescriptor/Key": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Key"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSSortDescriptor\/Key",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Key"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "NSSortDescriptor.Key",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nssortdescriptor\/key"
 }
 }
 }

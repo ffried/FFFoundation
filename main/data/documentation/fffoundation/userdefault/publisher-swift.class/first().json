@@ -69,7 +69,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -200,16 +203,18 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/first()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/first()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to publish just the first element from an upstream publisher, then finish normally. The ",
               "type" : "text"
             },
             {
-              "code" : "Publisher\/first()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/first()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " operator requests ",
@@ -224,8 +229,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/first()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/first()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " receives any elements, it completes without emitting any values.",
@@ -241,8 +247,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/first()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/first()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " publisher republishes the first element received from the sequence publisher, ",

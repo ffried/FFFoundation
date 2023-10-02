@@ -59,7 +59,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -280,8 +283,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/receive(subscriber:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/receive(subscriber:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : ".",
@@ -296,16 +300,18 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " must implement ",
               "type" : "text"
             },
             {
-              "code" : "Publisher\/receive(subscriber:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/receive(subscriber:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : ". The implementation of ",
@@ -320,16 +326,18 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " calls through to ",
               "type" : "text"
             },
             {
-              "code" : "Publisher\/receive(subscriber:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/receive(subscriber:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : ".",
@@ -479,6 +487,59 @@
   "title" : "Publisher Implementations",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/publisher-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/receive(subscriber:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "receive"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "subscriber"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/receive(subscriber:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "receive(subscriber:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/receive(subscriber:)"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/subscribe(_:)-2uznw": {
   "abstract" : [

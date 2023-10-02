@@ -69,7 +69,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -200,8 +203,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/collect()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/collect()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to gather elements into an array that the operator emits after the upstream publisher finishes.",
@@ -235,16 +239,18 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/collect()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/collect()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " operator only sends the collected array to its downstream receiver after a request whose demand is greater than 0 items. Otherwise, ",
               "type" : "text"
             },
             {
-              "code" : "Publisher\/collect()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/collect()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " waits until it receives a non-zero request.",

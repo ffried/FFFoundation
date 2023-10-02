@@ -122,7 +122,6 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TypeDescription\/CustomStringConvertible-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TypeDescription\/Equatable-Implementations"
       ],
       "title" : "Default Implementations"
@@ -203,17 +202,6 @@
   "title" : "TypeDescription",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/typedescription"
-},
-"doc://FFFoundation/documentation/FFFoundation/TypeDescription/CustomStringConvertible-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TypeDescription\/CustomStringConvertible-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "CustomStringConvertible Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/typedescription\/customstringconvertible-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/TypeDescription/Equatable-Implementations": {
   "abstract" : [

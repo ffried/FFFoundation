@@ -69,7 +69,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -200,8 +203,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/ignoreOutput()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/ignoreOutput()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " operator to determine if a publisher is able to complete successfully or would fail.",
@@ -225,8 +229,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/ignoreOutput()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/ignoreOutput()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " operator. The operator consumes, but doesn’t republish the elements downstream. However, the sixth element, ",

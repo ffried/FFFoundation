@@ -133,7 +133,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -334,26 +337,6 @@
       "kind" : "declarations"
     },
     {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "A publisher that transforms elements by applying a closure that receives its previous return value and the next element from the upstream publisher.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
-    },
-    {
       "kind" : "parameters",
       "parameters" : [
         {
@@ -397,6 +380,26 @@
     {
       "content" : [
         {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A publisher that transforms elements by applying a closure that receives its previous return value and the next element from the upstream publisher.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    },
+    {
+      "content" : [
+        {
           "anchor" : "discussion",
           "level" : 2,
           "text" : "Discussion",
@@ -409,8 +412,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/tryScan(_:_:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/tryScan(_:_:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " to accumulate all previously-published values into a single value, which you then combine with each newly-published value.",
@@ -434,8 +438,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/tryScan(_:_:)",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/tryScan(_:_:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " calls a division function on elements of a collection publisher. The ",

@@ -202,7 +202,7 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isSubnormal",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/isZero",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/magnitude-swift.property",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/nextDown-7h7qr",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/nextDown",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/nextUp",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/sign",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/significand",
@@ -265,7 +265,6 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/AdditiveArithmetic-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/BinaryFloatingPoint-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Comparable-Implementations",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/CustomStringConvertible-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Decodable-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Encodable-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Equatable-Implementations",
@@ -1109,17 +1108,6 @@
   "title" : "Comparable Implementations",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle\/comparable-implementations"
-},
-"doc://FFFoundation/documentation/FFFoundation/Angle/CustomStringConvertible-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/CustomStringConvertible-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "CustomStringConvertible Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/customstringconvertible-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/Decodable-Implementations": {
   "abstract" : [
@@ -3280,7 +3268,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle\/nan"
 },
-"doc://FFFoundation/documentation/FFFoundation/Angle/nextDown-7h7qr": {
+"doc://FFFoundation/documentation/FFFoundation/Angle/nextDown": {
   "abstract" : [
 
   ],
@@ -3319,12 +3307,12 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/nextDown-7h7qr",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/nextDown",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "nextDown",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/nextdown-7h7qr"
+  "url" : "\/documentation\/fffoundation\/angle\/nextdown"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/nextUp": {
   "abstract" : [

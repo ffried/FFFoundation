@@ -69,7 +69,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Combine"
+        ]
       }
     ],
     "platforms" : [
@@ -200,8 +203,9 @@
               "type" : "text"
             },
             {
-              "code" : "Publisher\/last()",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/last()",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " when you need to emit only the last element from an upstream publisher.",

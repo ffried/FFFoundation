@@ -72,7 +72,10 @@
     ],
     "modules" : [
       {
-        "name" : "FFFoundation"
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Swift"
+        ]
       }
     ],
     "platforms" : [

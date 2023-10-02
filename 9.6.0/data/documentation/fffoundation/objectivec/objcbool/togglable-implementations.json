@@ -1,0 +1,208 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC\/ObjCBool"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC\/ObjCBool\/Togglable-Implementations"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "FFFoundation"
+      }
+    ],
+    "role" : "collectionGroup",
+    "title" : "Togglable Implementations"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC\/ObjCBool\/toggled"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC\/ObjCBool\/toggle()"
+      ],
+      "title" : "Instance Methods"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fffoundation\/objectivec\/objcbool\/togglable-implementations"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FFFoundation/documentation/FFFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FFFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/ObjectiveC": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ObjectiveC",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/objectivec"
+},
+"doc://FFFoundation/documentation/FFFoundation/ObjectiveC/ObjCBool": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:10ObjectiveC8ObjCBoolV",
+      "text" : "ObjCBool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC\/ObjCBool",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ObjCBool"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ObjCBool",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/objectivec\/objcbool"
+},
+"doc://FFFoundation/documentation/FFFoundation/ObjectiveC/ObjCBool/toggle()": {
+  "abstract" : [
+    {
+      "text" : "By default, ",
+      "type" : "text"
+    },
+    {
+      "code" : "toggle",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " just assigns ",
+      "type" : "text"
+    },
+    {
+      "code" : "toggled",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to ",
+      "type" : "text"
+    },
+    {
+      "code" : "self",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "toggle"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC\/ObjCBool\/toggle()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "toggle()",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/objectivec\/objcbool\/toggle()"
+},
+"doc://FFFoundation/documentation/FFFoundation/ObjectiveC/ObjCBool/toggled": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "toggled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10ObjectiveC8ObjCBoolV",
+      "text" : "ObjCBool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC\/ObjCBool\/toggled",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "toggled",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/objectivec\/objcbool\/toggled"
+}
+}
+}

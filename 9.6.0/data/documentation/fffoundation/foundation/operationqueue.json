@@ -1,0 +1,363 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "Foundation",
+    "externalID" : "s:e:s:So16NSOperationQueueC12FFFoundationE6isMainSbvp",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "extension"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "preciseIdentifier" : "c:objc(cs)NSOperationQueue",
+        "text" : "OperationQueue"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Foundation"
+        ]
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "OperationQueue"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Extended Class",
+    "symbolKind" : "extension",
+    "title" : "OperationQueue"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "extension"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSOperationQueue",
+              "text" : "OperationQueue"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/isCurrent",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/isMain"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/addOperation(with:completion:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/addOperationWithBlockAndWait(block:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/addOperationWithBlockAndWaitIfNotCurrentQueue(block:)"
+      ],
+      "title" : "Instance Methods"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fffoundation\/foundation\/operationqueue"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FFFoundation/documentation/FFFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FFFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Foundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/OperationQueue": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "c:objc(cs)NSOperationQueue",
+      "text" : "OperationQueue"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "OperationQueue"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "OperationQueue",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/operationqueue"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/OperationQueue/addOperation(with:completion:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "addOperation"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "with"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> (), "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "completion"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> ())"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/addOperation(with:completion:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "addOperation(with:completion:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/operationqueue\/addoperation(with:completion:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/OperationQueue/addOperationWithBlockAndWait(block:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "addOperationWithBlockAndWait"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "block"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> ())"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/addOperationWithBlockAndWait(block:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "addOperationWithBlockAndWait(block:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/operationqueue\/addoperationwithblockandwait(block:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/OperationQueue/addOperationWithBlockAndWaitIfNotCurrentQueue(block:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "addOperationWithBlockAndWaitIfNotCurrentQueue"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "block"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> ())"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/addOperationWithBlockAndWaitIfNotCurrentQueue(block:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "addOperationWithBlockAndWaitIfNotCurrentQueue(block:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/operationqueue\/addoperationwithblockandwaitifnotcurrentqueue(block:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/OperationQueue/isCurrent": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isCurrent"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/isCurrent",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isCurrent",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/operationqueue\/iscurrent"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/OperationQueue/isMain": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isMain"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/isMain",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isMain",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/operationqueue\/ismain"
+}
+}
+}

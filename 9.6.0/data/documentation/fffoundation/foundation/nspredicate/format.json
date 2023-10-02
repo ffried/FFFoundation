@@ -1,0 +1,422 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "Foundation",
+    "externalID" : "s:So11NSPredicateC12FFFoundationE6FormatV",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "struct"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "Format"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "FFFoundation",
+        "relatedModules" : [
+          "Foundation"
+        ]
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "Format"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Structure",
+    "symbolKind" : "struct",
+    "title" : "NSPredicate.Format"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "struct"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "Format"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
+        "doc:\/\/FFFoundation\/s32ExpressibleByStringInterpolationP",
+        "doc:\/\/FFFoundation\/s26ExpressibleByStringLiteralP",
+        "doc:\/\/FFFoundation\/s33ExpressibleByUnicodeScalarLiteralP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/init(stringInterpolation:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/init(stringLiteral:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringLiteralType"
+      ],
+      "title" : "Type Aliases"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByStringInterpolation-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByUnicodeScalarLiteral-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fffoundation\/foundation\/nspredicate\/format"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FFFoundation/documentation/FFFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FFFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Foundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "c:objc(cs)NSPredicate",
+      "text" : "NSPredicate"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "NSPredicate"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "NSPredicate",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Format"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Format"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "NSPredicate.Format",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/ExpressibleByExtendedGraphemeClusterLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByExtendedGraphemeClusterLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/expressiblebyextendedgraphemeclusterliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/ExpressibleByStringInterpolation-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByStringInterpolation-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByStringInterpolation Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/expressiblebystringinterpolation-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/ExpressibleByUnicodeScalarLiteral-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByUnicodeScalarLiteral-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByUnicodeScalarLiteral Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/expressiblebyunicodescalarliteral-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringLiteralType": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "StringLiteralType"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringLiteralType",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "StringLiteralType"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "NSPredicate.Format.StringLiteralType",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringliteraltype"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/init(stringInterpolation:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "stringInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSPredicate",
+      "text" : "NSPredicate"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV",
+      "text" : "Format"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV",
+      "text" : "StringInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/init(stringInterpolation:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(stringInterpolation:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/init(stringinterpolation:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/init(stringLiteral:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "stringLiteral"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSPredicate",
+      "text" : "NSPredicate"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV",
+      "text" : "Format"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV17StringLiteralTypea",
+      "text" : "StringLiteralType"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/init(stringLiteral:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(stringLiteral:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/init(stringliteral:)"
+},
+"doc://FFFoundation/s26ExpressibleByStringLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s26ExpressibleByStringLiteralP",
+  "title" : "Swift.ExpressibleByStringLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s32ExpressibleByStringInterpolationP": {
+  "identifier" : "doc:\/\/FFFoundation\/s32ExpressibleByStringInterpolationP",
+  "title" : "Swift.ExpressibleByStringInterpolation",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s33ExpressibleByUnicodeScalarLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s33ExpressibleByUnicodeScalarLiteralP",
+  "title" : "Swift.ExpressibleByUnicodeScalarLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s43ExpressibleByExtendedGraphemeClusterLiteralP": {
+  "identifier" : "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
+  "title" : "Swift.ExpressibleByExtendedGraphemeClusterLiteral",
+  "type" : "unresolvable"
+}
+}
+}

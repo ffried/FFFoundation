@@ -1,0 +1,924 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByStringInterpolation-Implementations"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "FFFoundation",
+    "externalID" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "struct"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "StringInterpolation"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "FFFoundation"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "StringInterpolation"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Structure",
+    "symbolKind" : "struct",
+    "title" : "NSPredicate.Format.StringInterpolation"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "struct"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "StringInterpolation"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/s27StringInterpolationProtocolP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/init(literalCapacity:interpolationCount:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-4j0xu",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-4k84l",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-59shz",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-6syc",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-6y89e",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-7zqvm",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-85sse",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-8ir7f",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-o4xx",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(key:)-4d9fk",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(key:)-4gdgp",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendLiteral(_:)"
+      ],
+      "title" : "Instance Methods"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/StringLiteralType"
+      ],
+      "title" : "Type Aliases"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FFFoundation/documentation/FFFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FFFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Foundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "c:objc(cs)NSPredicate",
+      "text" : "NSPredicate"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "NSPredicate"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "NSPredicate",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Format"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Format"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "NSPredicate.Format",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/ExpressibleByStringInterpolation-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByStringInterpolation-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ExpressibleByStringInterpolation Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/expressiblebystringinterpolation-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "StringInterpolation"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "StringInterpolation"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "NSPredicate.Format.StringInterpolation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation/StringLiteralType": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "StringLiteralType"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/StringLiteralType",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "StringLiteralType"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "NSPredicate.Format.StringInterpolation.StringLiteralType",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/stringliteraltype"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation/appendInterpolation(_:)-4j0xu": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "appendInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "Any"
+    },
+    {
+      "kind" : "text",
+      "text" : "?)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-4j0xu",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "appendInterpolation(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-4j0xu"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation/appendInterpolation(_:)-4k84l": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "appendInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSPredicate",
+      "text" : "NSPredicate"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE3Keya",
+      "text" : "Key"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-4k84l",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "appendInterpolation(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-4k84l"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation/appendInterpolation(_:)-59shz": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "appendInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Bridged"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Bridged"
+    },
+    {
+      "kind" : "text",
+      "text" : "?)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-59shz",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "appendInterpolation(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-59shz"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation/appendInterpolation(_:)-6syc": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "appendInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Integer"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Integer"
+    },
+    {
+      "kind" : "text",
+      "text" : "?)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-6syc",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "appendInterpolation(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-6syc"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation/appendInterpolation(_:)-6y89e": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "appendInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s10AnyKeyPathC",
+      "text" : "AnyKeyPath"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-6y89e",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "appendInterpolation(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-6y89e"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation/appendInterpolation(_:)-7zqvm": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "appendInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Float"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Float"
+    },
+    {
+      "kind" : "text",
+      "text" : "?)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-7zqvm",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "appendInterpolation(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-7zqvm"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation/appendInterpolation(_:)-85sse": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "appendInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Integer"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Integer"
+    },
+    {
+      "kind" : "text",
+      "text" : "?)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-85sse",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "appendInterpolation(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-85sse"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation/appendInterpolation(_:)-8ir7f": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "appendInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : "?)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-8ir7f",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "appendInterpolation(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-8ir7f"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation/appendInterpolation(_:)-o4xx": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "appendInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSNumber",
+      "text" : "NSNumber"
+    },
+    {
+      "kind" : "text",
+      "text" : "?)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-o4xx",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "appendInterpolation(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(_:)-o4xx"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation/appendInterpolation(key:)-4d9fk": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "appendInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "key"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSPredicate",
+      "text" : "NSPredicate"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE3Keya",
+      "text" : "Key"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11PropertyKeyV8RawValuea",
+      "text" : "RawValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(key:)-4d9fk",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "appendInterpolation(key:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(key:)-4d9fk"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation/appendInterpolation(key:)-4gdgp": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "appendInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "key"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSPredicate",
+      "text" : "NSPredicate"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE3Keya",
+      "text" : "Key"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(key:)-4gdgp",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "appendInterpolation(key:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendinterpolation(key:)-4gdgp"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation/appendLiteral(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "appendLiteral"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSPredicate",
+      "text" : "NSPredicate"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV",
+      "text" : "Format"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV",
+      "text" : "StringInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV0D11LiteralTypea",
+      "text" : "StringLiteralType"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendLiteral(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "appendLiteral(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/appendliteral(_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation/init(literalCapacity:interpolationCount:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "literalCapacity"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "interpolationCount"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/init(literalCapacity:interpolationCount:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(literalCapacity:interpolationCount:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/stringinterpolation\/init(literalcapacity:interpolationcount:)"
+},
+"doc://FFFoundation/s27StringInterpolationProtocolP": {
+  "identifier" : "doc:\/\/FFFoundation\/s27StringInterpolationProtocolP",
+  "title" : "Swift.StringInterpolationProtocol",
+  "type" : "unresolvable"
+}
+}
+}

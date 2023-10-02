@@ -20,6 +20,7 @@
 #if !canImport(os)
 import Foundation
 
+@frozen
 public struct OSLogType: RawRepresentable, Hashable {
     public typealias RawValue = UInt8
 
@@ -85,7 +86,7 @@ public final class OSLog: NSObject {
         }
     }
 
-    fileprivate func write(message: StaticString, dso _: UnsafeRawPointer?, type: OSLogType, args: [CVarArg]) {
+    fileprivate func write(message: StaticString, dso _: UnsafeRawPointer?, type: OSLogType, args: Array<any CVarArg>) {
         guard isEnabled(type: type) else { return }
         print("\(kind.logString) - [\(type.logString)]: \(String(format: String(describing: message), arguments: args))")
     }
@@ -97,6 +98,7 @@ extension OSLog {
 }
 
 extension OSLog {
+    @frozen
     public struct Category: RawRepresentable, Hashable {
         public typealias RawValue = String
 
@@ -107,7 +109,7 @@ extension OSLog {
     }
 }
 
-public func os_log(_ msg: StaticString, dso: UnsafeRawPointer? = #dsohandle, log: OSLog = .default, type: OSLogType = .default, _ args: CVarArg...) {
+public func os_log(_ msg: StaticString, dso: UnsafeRawPointer? = #dsohandle, log: OSLog = .default, type: OSLogType = .default, _ args: any CVarArg...) {
     log.write(message: msg, dso: dso, type: type, args: args)
 }
 #endif

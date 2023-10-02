@@ -116,13 +116,13 @@ extension Synchronized: Comparable where Guarded: Comparable {
 }
 
 extension Synchronized: Encodable where Guarded: Encodable {
-    public func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         try wrappedValue.encode(to: encoder)
     }
 }
 
 extension Synchronized: Decodable where Guarded: Decodable {
-    public convenience init(from decoder: Decoder) throws {
+    public convenience init(from decoder: any Decoder) throws {
         try self.init(wrappedValue: Guarded(from: decoder))
     }
 }

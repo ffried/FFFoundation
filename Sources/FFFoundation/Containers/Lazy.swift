@@ -80,13 +80,13 @@ extension Lazy: Comparable where Deferred: Comparable {
 }
 
 extension Lazy: Encodable where Deferred: Encodable {
-    public func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         try wrappedValue.encode(to: encoder)
     }
 }
 
 extension Lazy: Decodable where Deferred: Decodable {
-    public init(from decoder: Decoder) throws {
+    public init(from decoder: any Decoder) throws {
         let value = try Deferred(from: decoder)
         self.init(wrappedValue: value)
     }

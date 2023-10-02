@@ -83,7 +83,7 @@ fileprivate extension Diff {
 }
 
 extension Diff: Encodable where Subject: Encodable, Element: Encodable {
-    public func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(base, forKey: .base)
         try container.encode(head, forKey: .head)
@@ -97,7 +97,7 @@ extension Diff: Encodable where Subject: Encodable, Element: Encodable {
 }
 
 extension Diff: Decodable where Subject: Decodable, Element: Decodable {
-    public init(from decoder: Decoder) throws {
+    public init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         base = try container.decode(Subject.self, forKey: .base)
         head = try container.decode(Subject.self, forKey: .head)
@@ -139,7 +139,7 @@ extension Diff {
             "\(lineSign)\(element)\n"
         }
 
-        public init(from decoder: Decoder) throws {
+        public init(from decoder: any Decoder) throws {
             let container = try decoder.singleValueContainer()
             switch try container.decode(String.self) {
             case "unchanged": self = .unchanged
@@ -151,7 +151,7 @@ extension Diff {
             }
         }
 
-        public func encode(to encoder: Encoder) throws {
+        public func encode(to encoder: any Encoder) throws {
             var container = encoder.singleValueContainer()
             switch self {
             case .unchanged: try container.encode("unchanged")

@@ -3,7 +3,7 @@ import XCTest
 
 protocol GenericTestType {
     static var typeName: String { get }
-    static var genericParams: [GenericTestType.Type] { get }
+    static var genericParams: Array<any GenericTestType.Type> { get }
 }
 
 fileprivate extension GenericTestType {
@@ -11,13 +11,13 @@ fileprivate extension GenericTestType {
         return typeName.firstIndex(of: ".").map { String(typeName[typeName.index(after: $0)...]) } ?? typeName
     }
 
-    static func fullTypeName(basedOn namePath: (GenericTestType.Type) -> String) -> String {
+    static func fullTypeName(basedOn namePath: (any GenericTestType.Type) -> String) -> String {
         return namePath(self) + (genericParams.isEmpty ? "" : "<" + genericParams.map { $0.fullTypeName(basedOn: namePath) }.joined(separator: ", ") + ">")
     }
 }
 
 private func _XCTAssertEqual<TestType: GenericTestType>(_ desc: TypeDescription, _ testType: TestType.Type, _ message: @autoclosure () -> String, file: StaticString, line: UInt) {
-    func assertEqual(_ desc: TypeDescription, _ testType: GenericTestType.Type, _ message: @autoclosure () -> String, recursionIndexPath: IndexPath) {
+    func assertEqual(_ desc: TypeDescription, _ testType: any GenericTestType.Type, _ message: @autoclosure () -> String, recursionIndexPath: IndexPath) {
         func extendedMessage(for message: @autoclosure () -> String) -> String {
             return recursionIndexPath.isEmpty
                 ? message()
@@ -34,19 +34,13 @@ private func _XCTAssertEqual<TestType: GenericTestType>(_ desc: TypeDescription,
     assertEqual(desc, testType, message(), recursionIndexPath: [])
 }
 
-#if swift(>=5.3)
 func XCTAssertEqual<TestType: GenericTestType>(_ desc: TypeDescription, _ testType: TestType.Type, _ message: @autoclosure () -> String = "", file: StaticString = #filePath, line: UInt = #line) {
     _XCTAssertEqual(desc, testType, message(), file: file, line: line)
 }
-#else
-func XCTAssertEqual<TestType: GenericTestType>(_ desc: TypeDescription, _ testType: TestType.Type, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {
-    _XCTAssertEqual(desc, testType, message(), file: file, line: line)
-}
-#endif
 
 extension String: GenericTestType {
     static let typeName = "Swift.String"
-    static let genericParams: [GenericTestType.Type] = []
+    static let genericParams: Array<any GenericTestType.Type> = []
 }
 
 final class TypeDescriptionTests: XCTestCase {
@@ -56,19 +50,19 @@ final class TypeDescriptionTests: XCTestCase {
 
     struct NonGeneric: GenericTestType {
         static let typeName = "\(TypeDescriptionTests.typePrefix).NonGeneric"
-        static let genericParams: [GenericTestType.Type] = []
+        static let genericParams: Array<any GenericTestType.Type> = []
     }
     struct OneGeneric<T: GenericTestType>: GenericTestType {
         static var typeName: String { return "\(TypeDescriptionTests.typePrefix).OneGeneric" }
-        static var genericParams: [GenericTestType.Type] { return [T.self] }
+        static var genericParams: Array<any GenericTestType.Type> { return [T.self] }
     }
     struct TwoGeneric<T: GenericTestType, U: GenericTestType>: GenericTestType {
         static var typeName: String { return "\(TypeDescriptionTests.typePrefix).TwoGeneric" }
-        static var genericParams: [GenericTestType.Type] { return [T.self, U.self] }
+        static var genericParams: Array<any GenericTestType.Type> { return [T.self, U.self] }
     }
     struct ThreeGeneric<T: GenericTestType, U: GenericTestType, V: GenericTestType>: GenericTestType {
         static var typeName: String { return "\(TypeDescriptionTests.typePrefix).ThreeGeneric" }
-        static var genericParams: [GenericTestType.Type] { return [T.self, U.self, V.self] }
+        static var genericParams: Array<any GenericTestType.Type> { return [T.self, U.self, V.self] }
     }
 
     override func setUp() {

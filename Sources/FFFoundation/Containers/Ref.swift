@@ -62,13 +62,13 @@ extension Ref: Comparable where Referenced: Comparable {
 }
 
 extension Ref: Encodable where Referenced: Encodable {
-    public func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         try wrappedValue.encode(to: encoder)
     }
 }
 
 extension Ref: Decodable where Referenced: Decodable {
-    public convenience init(from decoder: Decoder) throws {
+    public convenience init(from decoder: any Decoder) throws {
         let value = try Referenced(from: decoder)
         self.init(wrappedValue: value)
     }

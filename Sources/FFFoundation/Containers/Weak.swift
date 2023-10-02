@@ -79,13 +79,13 @@ extension Weak: Hashable where Object: Hashable {
 //}
 
 extension Weak: Encodable where Object: Encodable {
-    public func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         try wrappedValue.encode(to: encoder)
     }
 }
 
 extension Weak: Decodable where Object: Decodable {
-    public init(from decoder: Decoder) throws {
+    public init(from decoder: any Decoder) throws {
         try self.init(object: Object(from: decoder))
     }
 }

@@ -101,7 +101,7 @@ public final class GCDFuture<Value>: @unchecked Sendable {
     }
 
     @inlinable
-    public func map<T>(_ transformer: @escaping (Value) throws -> T) -> GCDFutureResult<T, Error> {
+    public func map<T>(_ transformer: @escaping (Value) throws -> T) -> GCDFutureResult<T, any Error> {
         map { val in Result { try transformer(val) } }
     }
 
@@ -111,10 +111,10 @@ public final class GCDFuture<Value>: @unchecked Sendable {
         return future
     }
 
-    public func flatMap<T>(_ transformer: @escaping (Value) throws -> GCDFuture<T>) -> GCDFutureResult<T, Error> {
+    public func flatMap<T>(_ transformer: @escaping (Value) throws -> GCDFuture<T>) -> GCDFutureResult<T, any Error> {
         flatMap { [workerQueue] in
             do { return try transformer($0).map { .success($0) } }
-            catch { return GCDFutureResult<T, Error>(queue: workerQueue, value: .failure(error)) }
+            catch { return GCDFutureResult<T, any Error>(queue: workerQueue, value: .failure(error)) }
         }
     }
 
@@ -167,7 +167,7 @@ extension GCDFutureResult {
     @discardableResult
     @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
     public func complete<Success>(with task: @escaping @Sendable () async throws -> Success) -> Task<Void, Never>
-    where Value == Result<Success, Error>
+    where Value == Result<Success, any Error>
     {
         Task {
             do {
@@ -202,16 +202,16 @@ extension GCDFutureResult {
     }
 
     @inlinable
-    public func map<Success, Failure: Error, T>(_ transformer: @escaping (Success) throws -> T) -> GCDFutureResult<T, Error>
+    public func map<Success, Failure: Error, T>(_ transformer: @escaping (Success) throws -> T) -> GCDFutureResult<T, any Error>
     where Value == Result<Success, Failure>
     {
         map { val in try transformer(val.get()) }
     }
 
-    public func flatMap<Success, T>(_ transformer: @escaping (Success) throws -> GCDFutureResult<T, Error>) -> GCDFutureResult<T, Error>
-    where Value == Result<Success, Error>
+    public func flatMap<Success, T>(_ transformer: @escaping (Success) throws -> GCDFutureResult<T, any Error>) -> GCDFutureResult<T, any Error>
+    where Value == Result<Success, any Error>
     {
-        let future = GCDFutureResult<T, Error>(queue: workerQueue)
+        let future = GCDFutureResult<T, any Error>(queue: workerQueue)
         whenDone {
             do {
                 try transformer($0.get()).cascade(other: future)
@@ -245,8 +245,8 @@ extension DispatchQueue {
         return future
     }
 
-    public final func asFuture<T>(do work: @escaping () throws -> T) -> GCDFutureResult<T, Error> {
-        let future = GCDFutureResult<T, Error>(queue: self)
+    public final func asFuture<T>(do work: @escaping () throws -> T) -> GCDFutureResult<T, any Error> {
+        let future = GCDFutureResult<T, any Error>(queue: self)
         self.async { future.complete(with: Result { try work() }) }
         return future
     }

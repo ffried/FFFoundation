@@ -56,7 +56,7 @@ public final class CacheManager<Object: Cachable> {
     }
 
     @Synchronized
-    private var memoryCache: [ObjectIdentification: Object] = [:]
+    private var memoryCache: Dictionary<ObjectIdentification, Object> = .init()
 
     public init(name: Name = .default, shouldMigrateFromOldNamingBehavior: Bool = true) throws {
         self.name = name
@@ -65,8 +65,8 @@ public final class CacheManager<Object: Cachable> {
         let baseFolder = try CacheManager.cacheFolder(in: fileManager)
         let folder = baseFolder.appendingPathComponent(name.rawValue).appendingPathComponent("\(Object.self)")
         if shouldMigrateFromOldNamingBehavior,
-            case let oldPath = baseFolder.appendingPathComponent(name.rawValue + "\(Object.self)"),
-            fileManager.directoryExists(at: oldPath) {
+           case let oldPath = baseFolder.appendingPathComponent(name.rawValue + "\(Object.self)"),
+           fileManager.directoryExists(at: oldPath) {
             try fileManager.moveItem(at: oldPath, to: folder)
         }
         try fileManager.createDirectoryIfNeeded(at: folder)
@@ -75,16 +75,16 @@ public final class CacheManager<Object: Cachable> {
     }
 
     // MARK: - Memory warnings
-    private var memoryWarningsObserver: NSObjectProtocol?
+    private var memoryWarningsObserver: (any NSObjectProtocol)?
     private func registerForMemoryWarnings() {
-        #if canImport(UIKit) && !os(watchOS)
-            let opQueue = OperationQueue()
-            opQueue.underlyingQueue = queue
-            let name = UIApplication.didReceiveMemoryWarningNotification
-            memoryWarningsObserver = NotificationCenter.default.addObserver(forName: name, object: nil, queue: opQueue) { [weak self] _ in
-                self?.clearMemoryCache()
-            }
-        #endif
+#if canImport(UIKit) && !os(watchOS)
+        let opQueue = OperationQueue()
+        opQueue.underlyingQueue = queue
+        let name = UIApplication.didReceiveMemoryWarningNotification
+        memoryWarningsObserver = NotificationCenter.default.addObserver(forName: name, object: nil, queue: opQueue) { [weak self] _ in
+            self?.clearMemoryCache()
+        }
+#endif
     }
 
     // MARK: - Private helpers
@@ -161,17 +161,21 @@ extension CacheManager {
 }
 
 extension CacheManager {
+    @frozen
     public struct Name: RawRepresentable {
         public typealias RawValue = String
 
         public let rawValue: RawValue
-        public init(rawValue: RawValue) { self.rawValue = rawValue }
+        
+        public init(rawValue: RawValue) {
+            self.rawValue = rawValue
+        }
     }
 }
 
 public enum CachingError: Error, CustomStringConvertible {
-    case couldNotSerialize(underlyingError: Error?)
-    case couldNotDeserialize(underlyingError: Error?)
+    case couldNotSerialize(underlyingError: (any Error)?)
+    case couldNotDeserialize(underlyingError: (any Error)?)
 
     public var description: String {
         switch self {
@@ -198,30 +202,30 @@ extension String: Cachable {
 }
 
 #if canImport(UIKit)
-    extension UIImage: Cachable {
-        public func cacheData() throws -> Data {
-            guard let data = jpegData(compressionQuality: 0.95) else { throw CachingError.couldNotSerialize(underlyingError: nil) }
-            return data
-        }
-
-        public static func fromCache(data: Data) throws -> Self {
-            guard let img = self.init(data: data) else { throw CachingError.couldNotDeserialize(underlyingError: nil) }
-            return img
-        }
+extension UIImage: Cachable {
+    public func cacheData() throws -> Data {
+        guard let data = jpegData(compressionQuality: 0.95) else { throw CachingError.couldNotSerialize(underlyingError: nil) }
+        return data
     }
+
+    public static func fromCache(data: Data) throws -> Self {
+        guard let img = self.init(data: data) else { throw CachingError.couldNotDeserialize(underlyingError: nil) }
+        return img
+    }
+}
 #endif
 
 #if canImport(AppKit) && !os(iOS) // macCatalyst has os(iOS)
-    import AppKit
-    extension NSImage: Cachable {
-        public func cacheData() throws -> Data {
-            guard let data = tiffRepresentation else { throw CachingError.couldNotSerialize(underlyingError: nil) }
-            return data
-        }
-
-        public static func fromCache(data: Data) throws -> Self {
-            guard let img = self.init(data: data) else { throw CachingError.couldNotDeserialize(underlyingError: nil) }
-            return img
-        }
+import AppKit
+extension NSImage: Cachable {
+    public func cacheData() throws -> Data {
+        guard let data = tiffRepresentation else { throw CachingError.couldNotSerialize(underlyingError: nil) }
+        return data
     }
+
+    public static func fromCache(data: Data) throws -> Self {
+        guard let img = self.init(data: data) else { throw CachingError.couldNotDeserialize(underlyingError: nil) }
+        return img
+    }
+}
 #endif

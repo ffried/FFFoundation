@@ -86,13 +86,13 @@ extension CoW: Comparable where Value: Comparable {
 }
 
 extension CoW: Encodable where Value: Encodable {
-    public func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         try wrappedValue.encode(to: encoder)
     }
 }
 
 extension CoW: Decodable where Value: Decodable, Value: Copyable {
-    public init(from decoder: Decoder) throws {
+    public init(from decoder: any Decoder) throws {
         try self.init(wrappedValue: Value(from: decoder))
     }
 }

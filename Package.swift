@@ -8,9 +8,9 @@ let swiftSettings: Array<SwiftSetting> = [
     .enableUpcomingFeature("ExistentialAny"),
     .enableUpcomingFeature("BareSlashRegexLiterals"),
     .enableUpcomingFeature("DisableOutwardActorInference"),
-    .enableExperimentalFeature("AccessLevelOnImport"),
-    //    .enableExperimentalFeature("VariadicGenerics"),
-    //    .unsafeFlags(["-warn-concurrency"], .when(configuration: .debug)),
+//    .enableExperimentalFeature("AccessLevelOnImport"),
+//    .enableExperimentalFeature("VariadicGenerics"),
+//    .unsafeFlags(["-warn-concurrency"], .when(configuration: .debug)),
 ]
 
 let package = Package(

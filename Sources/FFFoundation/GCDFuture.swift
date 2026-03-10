@@ -34,9 +34,15 @@ public final class GCDFuture<Value: Sendable>: @unchecked Sendable {
     @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
     var value: Value {
         get async {
+#if compiler(>=6.2)
             unsafe await withUnsafeContinuation { cont in
                 whenDone { unsafe cont.resume(returning: $0) }
             }
+#else
+            await withUnsafeContinuation { cont in
+                whenDone { cont.resume(returning: $0) }
+            }
+#endif
         }
     }
 
@@ -118,41 +124,48 @@ public final class GCDFuture<Value: Sendable>: @unchecked Sendable {
         }
     }
 
-    @safe private struct UnsafeSendingPointer: @unchecked Sendable, ~Swift.Copyable {
+#if compiler(>=6.2)
+    @safe
+    fileprivate struct UnsafeSendingPointer: @unchecked Sendable, ~Swift.Copyable {
         private let pointer: UnsafeMutablePointer<Value>
 
         init() {
-#if compiler(>=6.2)
             unsafe pointer = .allocate(capacity: 1)
-#else
-            pointer = .allocate(capacity: 1)
-#endif
         }
 
         func setValue(_ value: Value) {
-#if compiler(>=6.2)
             unsafe pointer.initialize(to: value)
-#else
-            pointer.initialize(to: value)
-#endif
         }
 
         /*consuming*/ func get() -> Value {
-#if compiler(>=6.2)
             unsafe pointer.move()
-#else
-            pointer.move()
-#endif
         }
 
         deinit {
-#if compiler(>=6.2)
             unsafe pointer.deallocate()
-#else
-            pointer.deallocate()
-#endif
         }
     }
+#else
+    fileprivate struct UnsafeSendingPointer: @unchecked Sendable, ~Swift.Copyable {
+        private let pointer: UnsafeMutablePointer<Value>
+
+        init() {
+            pointer = .allocate(capacity: 1)
+        }
+
+        func setValue(_ value: Value) {
+            pointer.initialize(to: value)
+        }
+
+        /*consuming*/ func get() -> Value {
+            pointer.move()
+        }
+
+        deinit {
+            pointer.deallocate()
+        }
+    }
+#endif
 
     @available(*, noasync, message: "Do not block in concurrently executing code! Await `value` instead.")
     public func wait() -> Value {

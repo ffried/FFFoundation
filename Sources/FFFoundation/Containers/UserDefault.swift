@@ -158,7 +158,8 @@ extension UserDefault where Value: ExpressibleByDictionaryLiteral {
     }
 }
 
-#if canImport(Darwin)
+// Compiler check needed to prevent parsing of code in nested compiler checks
+#if compiler(>=6.0) && canImport(Darwin)
 extension UserDefault {
     private final class KVObserver: NSObject {
         private var context = 0

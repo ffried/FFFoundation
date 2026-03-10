@@ -1,3 +1,4 @@
+#if compiler(>=6.1)
 import Testing
 import Foundation
 @testable import FFFoundation
@@ -172,3 +173,4 @@ struct UserDefaultTests: ~Swift.Copyable {
         #expect(dict?["range"] as? [Int] == [objValue.range.lowerBound, objValue.range.upperBound])
     }
 }
+#endif

@@ -81,7 +81,7 @@ public final class CacheManager<Object: Cachable>: Sendable {
         try fileManager.createDirectoryIfNeeded(at: folder)
         self.folder = folder
         _nonSendableState = .init(value: .init(fileManager: fileManager), qos: .default)
-#if canImport(UIKit) && !os(watchOS)
+#if compiler(>=6.0) && canImport(UIKit) && !os(watchOS)
         let opQueue = OperationQueue()
 #if compiler(>=6.2)
         unsafe opQueue.underlyingQueue = queue

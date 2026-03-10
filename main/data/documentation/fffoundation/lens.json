@@ -38,6 +38,10 @@
         "text" : "Lens"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Lens.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Lens.swift#L84"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -108,6 +112,17 @@
       "kind" : "declarations"
     }
   ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/s8SendableP",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
   "schemaVersion" : {
     "major" : 0,
     "minor" : 3,
@@ -118,12 +133,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/init(getter:setter:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/binding",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/wrappedValue"
@@ -131,12 +150,16 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Subscripts",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/subscript(dynamicMember:)"
       ],
       "title" : "Subscripts"
     },
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/constant(_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/readOnly(getter:)"
@@ -548,6 +571,16 @@
   "title" : "wrappedValue",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/lens\/wrappedvalue"
+},
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8SendableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 }
 }
 }

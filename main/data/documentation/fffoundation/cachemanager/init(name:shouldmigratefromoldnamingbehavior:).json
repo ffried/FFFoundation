@@ -84,6 +84,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "CacheManager.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/CacheManager.swift#L70"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",

@@ -36,7 +36,7 @@
           "type" : "text"
         },
         {
-          "code" : "Copyable",
+          "code" : "ReferenceCopyable",
           "type" : "codeVoice"
         },
         {
@@ -46,7 +46,7 @@
       ]
     },
     "extendedModule" : "FFFoundation",
-    "externalID" : "s:12FFFoundation3CoWVA2A8CopyableRzrlE12wrappedValueACyxGx_tcfc",
+    "externalID" : "s:12FFFoundation3CoWVA2A17ReferenceCopyableRzrlE12wrappedValueACyxGx_tcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -78,6 +78,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "CoW.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/CoW.swift#L67"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -215,7 +219,7 @@
         "type" : "text"
       },
       {
-        "code" : "Copyable",
+        "code" : "ReferenceCopyable",
         "type" : "codeVoice"
       },
       {

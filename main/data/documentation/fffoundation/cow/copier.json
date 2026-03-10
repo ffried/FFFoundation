@@ -39,6 +39,10 @@
         "text" : "Copier"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "CoW.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/CoW.swift#L29"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Alias",
     "symbolKind" : "typealias",

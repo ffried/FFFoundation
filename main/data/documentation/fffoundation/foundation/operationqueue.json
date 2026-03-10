@@ -89,6 +89,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/isCurrent",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/isMain"
@@ -96,6 +98,8 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/addOperation(with:completion:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/addOperationWithBlockAndWait(block:)",

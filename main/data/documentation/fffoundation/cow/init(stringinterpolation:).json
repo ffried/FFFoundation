@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/ExpressibleByStringInterpolation-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW"
       ]
     ]
   },
@@ -37,7 +36,7 @@
           "type" : "text"
         },
         {
-          "code" : "Copyable",
+          "code" : "ReferenceCopyable",
           "type" : "codeVoice"
         },
         {
@@ -55,7 +54,7 @@
       ]
     },
     "extendedModule" : "FFFoundation",
-    "externalID" : "s:12FFFoundation3CoWVA2A8CopyableRzs32ExpressibleByStringInterpolationRzrlE06stringG0ACyxG0fG0sAEPQz_tcfc",
+    "externalID" : "s:12FFFoundation3CoWVA2A17ReferenceCopyableRzs32ExpressibleByStringInterpolationRzrlE06stringH0ACyxG0gH0sAEPQz_tcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -83,6 +82,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s32ExpressibleByStringInterpolationP0cD0Qa",
         "text" : "StringInterpolation"
       },
       {
@@ -95,6 +95,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "CoW.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/CoW.swift#L154"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -137,6 +141,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s32ExpressibleByStringInterpolationP0cD0Qa",
               "text" : "StringInterpolation"
             },
             {
@@ -213,17 +218,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cow"
 },
-"doc://FFFoundation/documentation/FFFoundation/CoW/ExpressibleByStringInterpolation-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/ExpressibleByStringInterpolation-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByStringInterpolation Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/cow\/expressiblebystringinterpolation-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/CoW/init(stringInterpolation:)": {
   "abstract" : [
 
@@ -251,7 +245,7 @@
         "type" : "text"
       },
       {
-        "code" : "Copyable",
+        "code" : "ReferenceCopyable",
         "type" : "codeVoice"
       },
       {
@@ -295,6 +289,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s32ExpressibleByStringInterpolationP0cD0Qa",
       "text" : "StringInterpolation"
     },
     {

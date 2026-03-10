@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/Comparable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy"
       ]
     ]
   },
@@ -316,17 +315,6 @@
   "title" : "Lazy",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/lazy"
-},
-"doc://FFFoundation/documentation/FFFoundation/Lazy/Comparable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/Comparable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Comparable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/lazy\/comparable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Lazy/_=(_:_:)-2t9no": {
   "abstract" : [

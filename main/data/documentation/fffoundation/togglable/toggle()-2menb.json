@@ -33,8 +33,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable\/toggle()-6qpje"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable"
       ]
     ]
   },
@@ -69,6 +68,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Togglable.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Togglable.swift#L34"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -234,48 +237,6 @@
   "title" : "toggle()",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/togglable\/toggle()-2menb"
-},
-"doc://FFFoundation/documentation/FFFoundation/Togglable/toggle()-6qpje": {
-  "abstract" : [
-    {
-      "text" : "Toggles ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
-      "type" : "text"
-    }
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "toggle"
-    },
-    {
-      "kind" : "text",
-      "text" : "()"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable\/toggle()-6qpje",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "toggle()",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/togglable\/toggle()-6qpje"
 }
 }
 }

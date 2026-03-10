@@ -45,6 +45,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Weak.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Weak.swift#L23"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",

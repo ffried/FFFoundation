@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Hashable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref"
       ]
     ]
   },
@@ -96,6 +95,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Ref.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Ref.swift#L52"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -230,17 +233,6 @@
   "title" : "Ref",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/ref"
-},
-"doc://FFFoundation/documentation/FFFoundation/Ref/Hashable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Hashable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Hashable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/ref\/hashable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Ref/hash(into:)": {
   "abstract" : [

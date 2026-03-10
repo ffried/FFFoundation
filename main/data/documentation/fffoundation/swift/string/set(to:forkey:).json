@@ -4,8 +4,7 @@
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/String",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/String\/PrimitiveUserDefaultStorable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/String"
       ]
     ]
   },
@@ -77,6 +76,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "UserDefaultsStorable.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefaultsStorable.swift#L176"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -240,17 +243,6 @@
   "title" : "String",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/swift\/string"
-},
-"doc://FFFoundation/documentation/FFFoundation/Swift/String/PrimitiveUserDefaultStorable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/String\/PrimitiveUserDefaultStorable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "PrimitiveUserDefaultStorable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/swift\/string\/primitiveuserdefaultstorable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Swift/String/set(to:forKey:)": {
   "abstract" : [

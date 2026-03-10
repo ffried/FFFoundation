@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak\/Hashable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak"
       ]
     ]
   },
@@ -96,6 +95,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Weak.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Weak.swift#L79"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -230,17 +233,6 @@
   "title" : "Weak",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/weak"
-},
-"doc://FFFoundation/documentation/FFFoundation/Weak/Hashable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak\/Hashable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Hashable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/weak\/hashable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Weak/hash(into:)": {
   "abstract" : [

@@ -38,6 +38,10 @@
         "text" : "PrimitiveUserDefaultStorable"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "UserDefaultsStorable.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefaultsStorable.swift#L32"
+    },
     "role" : "symbol",
     "roleHeading" : "Protocol",
     "symbolKind" : "protocol",
@@ -65,6 +69,15 @@
             {
               "kind" : "identifier",
               "text" : "PrimitiveUserDefaultStorable"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s16SendableMetatypeP",
+              "text" : "SendableMetatype"
             }
           ]
         }
@@ -73,6 +86,14 @@
     }
   ],
   "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP"
+      ],
+      "kind" : "relationships",
+      "title" : "Inherits From",
+      "type" : "inheritsFrom"
+    },
     {
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CodableUserDefaultsStorable"
@@ -112,14 +133,18 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PrimitiveUserDefaultStorable\/set(to:forKey:)-3pqz7"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PrimitiveUserDefaultStorable\/set(to:forKey:)"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PrimitiveUserDefaultStorable\/get(from:forKey:)-4n4h0"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PrimitiveUserDefaultStorable\/get(from:forKey:)"
       ],
       "title" : "Type Methods"
     }
@@ -307,7 +332,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/primitiveuserdefaultstorable"
 },
-"doc://FFFoundation/documentation/FFFoundation/PrimitiveUserDefaultStorable/get(from:forKey:)-4n4h0": {
+"doc://FFFoundation/documentation/FFFoundation/PrimitiveUserDefaultStorable/get(from:forKey:)": {
   "abstract" : [
 
   ],
@@ -380,15 +405,15 @@
       "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PrimitiveUserDefaultStorable\/get(from:forKey:)-4n4h0",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PrimitiveUserDefaultStorable\/get(from:forKey:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "get(from:forKey:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/primitiveuserdefaultstorable\/get(from:forkey:)-4n4h0"
+  "url" : "\/documentation\/fffoundation\/primitiveuserdefaultstorable\/get(from:forkey:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/PrimitiveUserDefaultStorable/set(to:forKey:)-3pqz7": {
+"doc://FFFoundation/documentation/FFFoundation/PrimitiveUserDefaultStorable/set(to:forKey:)": {
   "abstract" : [
 
   ],
@@ -445,13 +470,13 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PrimitiveUserDefaultStorable\/set(to:forKey:)-3pqz7",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PrimitiveUserDefaultStorable\/set(to:forKey:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "set(to:forKey:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/primitiveuserdefaultstorable\/set(to:forkey:)-3pqz7"
+  "url" : "\/documentation\/fffoundation\/primitiveuserdefaultstorable\/set(to:forkey:)"
 },
 "doc://FFFoundation/documentation/FFFoundation/Swift/Array": {
   "abstract" : [
@@ -956,6 +981,11 @@
   "title" : "String",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/swift\/string"
+},
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 }
 }
 }

@@ -38,6 +38,10 @@
         "text" : "Ref"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Ref.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Ref.swift#L22"
+    },
     "role" : "symbol",
     "roleHeading" : "Class",
     "symbolKind" : "class",
@@ -103,8 +107,9 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Copyable",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ReferenceCopyable",
         "doc:\/\/FFFoundation\/SL",
+        "doc:\/\/FFFoundation\/s8CopyableP",
         "doc:\/\/FFFoundation\/Se",
         "doc:\/\/FFFoundation\/SE",
         "doc:\/\/FFFoundation\/SQ",
@@ -133,6 +138,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/init()",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/init(wrappedValue:)"
@@ -140,6 +147,8 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/projectedValue",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/wrappedValue"
@@ -147,12 +156,15 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/copy()"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Comparable-Implementations",
@@ -221,37 +233,6 @@
   "title" : "FFFoundation",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation"
-},
-"doc://FFFoundation/documentation/FFFoundation/Copyable": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "protocol"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "Copyable"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Copyable",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "Copyable"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "Copyable",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/copyable"
 },
 "doc://FFFoundation/documentation/FFFoundation/Ref": {
   "abstract" : [
@@ -637,6 +618,37 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/ref\/wrappedvalue"
 },
+"doc://FFFoundation/documentation/FFFoundation/ReferenceCopyable": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ReferenceCopyable"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ReferenceCopyable",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ReferenceCopyable"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ReferenceCopyable",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/referencecopyable"
+},
 "doc://FFFoundation/s23ExpressibleByNilLiteralP": {
   "identifier" : "doc:\/\/FFFoundation\/s23ExpressibleByNilLiteralP",
   "title" : "Swift.ExpressibleByNilLiteral",
@@ -675,6 +687,11 @@
 "doc://FFFoundation/s43ExpressibleByExtendedGraphemeClusterLiteralP": {
   "identifier" : "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
   "title" : "Swift.ExpressibleByExtendedGraphemeClusterLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8CopyableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
+  "title" : "Swift.Copyable",
   "type" : "unresolvable"
 }
 }

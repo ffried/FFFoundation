@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByUnicodeScalarLiteral-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref"
       ]
     ]
   },
@@ -83,6 +82,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s33ExpressibleByUnicodeScalarLiteralP0cdE4TypeQa",
         "text" : "UnicodeScalarLiteralType"
       },
       {
@@ -95,6 +95,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Ref.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Ref.swift#L101"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -153,6 +157,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s33ExpressibleByUnicodeScalarLiteralP0cdE4TypeQa",
               "text" : "UnicodeScalarLiteralType"
             },
             {
@@ -229,17 +234,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/ref"
 },
-"doc://FFFoundation/documentation/FFFoundation/Ref/ExpressibleByUnicodeScalarLiteral-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByUnicodeScalarLiteral-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByUnicodeScalarLiteral Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/ref\/expressiblebyunicodescalarliteral-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/Ref/init(unicodeScalarLiteral:)": {
   "abstract" : [
 
@@ -311,6 +305,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s33ExpressibleByUnicodeScalarLiteralP0cdE4TypeQa",
       "text" : "UnicodeScalarLiteralType"
     },
     {

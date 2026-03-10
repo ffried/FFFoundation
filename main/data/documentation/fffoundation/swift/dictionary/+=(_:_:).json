@@ -150,6 +150,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "DictionaryExtensions.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/DictionaryExtensions.swift#L27"
+    },
     "role" : "symbol",
     "roleHeading" : "Operator",
     "symbolKind" : "op",

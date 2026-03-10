@@ -4,8 +4,7 @@
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoreFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoreFoundation\/CGFloat",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoreFoundation\/CGFloat\/GeometricValue-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoreFoundation\/CGFloat"
       ]
     ]
   },
@@ -48,6 +47,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "GeometricValue.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Geometry\/GeometricValue.swift#L58"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -166,17 +169,6 @@
   "title" : "CGFloat",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/corefoundation\/cgfloat"
-},
-"doc://FFFoundation/documentation/FFFoundation/CoreFoundation/CGFloat/GeometricValue-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoreFoundation\/CGFloat\/GeometricValue-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "GeometricValue Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/corefoundation\/cgfloat\/geometricvalue-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/CoreFoundation/CGFloat/tan()": {
   "abstract" : [

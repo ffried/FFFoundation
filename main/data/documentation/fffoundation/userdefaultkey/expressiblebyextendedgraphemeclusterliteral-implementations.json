@@ -19,6 +19,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "ExpressibleByExtendedGraphemeClusterLiteral Implementations"
   },
   "schemaVersion" : {
@@ -31,9 +32,10 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/init(extendedGraphemeClusterLiteral:)"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/init(unicodeScalarLiteral:)"
       ],
       "title" : "Initializers"
     }
@@ -94,7 +96,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefaultkey"
 },
-"doc://FFFoundation/documentation/FFFoundation/UserDefaultKey/init(extendedGraphemeClusterLiteral:)": {
+"doc://FFFoundation/documentation/FFFoundation/UserDefaultKey/init(unicodeScalarLiteral:)": {
   "abstract" : [
 
   ],
@@ -121,7 +123,7 @@
         "type" : "text"
       },
       {
-        "code" : "Self.StringLiteralType",
+        "code" : "Self.UnicodeScalarLiteralType",
         "type" : "codeVoice"
       },
       {
@@ -141,7 +143,7 @@
     },
     {
       "kind" : "externalParam",
-      "text" : "extendedGraphemeClusterLiteral"
+      "text" : "unicodeScalarLiteral"
     },
     {
       "kind" : "text",
@@ -157,19 +159,20 @@
     },
     {
       "kind" : "typeIdentifier",
-      "text" : "StringLiteralType"
+      "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
+      "text" : "ExtendedGraphemeClusterLiteralType"
     },
     {
       "kind" : "text",
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/init(extendedGraphemeClusterLiteral:)",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/init(unicodeScalarLiteral:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(extendedGraphemeClusterLiteral:)",
+  "title" : "init(unicodeScalarLiteral:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefaultkey\/init(extendedgraphemeclusterliteral:)"
+  "url" : "\/documentation\/fffoundation\/userdefaultkey\/init(unicodescalarliteral:)"
 }
 }
 }

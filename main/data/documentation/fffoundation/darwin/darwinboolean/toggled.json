@@ -4,8 +4,7 @@
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Darwin",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Darwin\/DarwinBoolean",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Darwin\/DarwinBoolean\/Togglable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Darwin\/DarwinBoolean"
       ]
     ]
   },
@@ -48,6 +47,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Togglable.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Togglable.swift#L53"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -178,17 +181,6 @@
   "title" : "DarwinBoolean",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/darwin\/darwinboolean"
-},
-"doc://FFFoundation/documentation/FFFoundation/Darwin/DarwinBoolean/Togglable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Darwin\/DarwinBoolean\/Togglable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Togglable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/darwin\/darwinboolean\/togglable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Darwin/DarwinBoolean/toggled": {
   "abstract" : [

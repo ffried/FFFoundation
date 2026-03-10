@@ -41,6 +41,10 @@
         "text" : "StringLiteralType"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Predicate+StringInterpolation.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/Predicate+StringInterpolation.swift#L26"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Alias",
     "symbolKind" : "typealias",

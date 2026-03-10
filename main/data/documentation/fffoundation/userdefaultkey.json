@@ -38,6 +38,10 @@
         "text" : "UserDefaultKey"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "UserDefault.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefault.swift#L23"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -92,7 +96,8 @@
         "doc:\/\/FFFoundation\/s33ExpressibleByUnicodeScalarLiteralP",
         "doc:\/\/FFFoundation\/SH",
         "doc:\/\/FFFoundation\/SY",
-        "doc:\/\/FFFoundation\/s8SendableP"
+        "doc:\/\/FFFoundation\/s8SendableP",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -109,6 +114,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/init(rawValue:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/init(stringLiteral:)"
@@ -116,6 +123,8 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/description",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/rawValue-swift.property"
@@ -123,6 +132,8 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/RawValue-swift.typealias",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/StringLiteralType"
@@ -130,11 +141,12 @@
       "title" : "Type Aliases"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/Equatable-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/ExpressibleByUnicodeScalarLiteral-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/ExpressibleByStringLiteral-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/RawRepresentable-Implementations"
       ],
       "title" : "Default Implementations"
@@ -243,16 +255,16 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefaultkey\/expressiblebyextendedgraphemeclusterliteral-implementations"
 },
-"doc://FFFoundation/documentation/FFFoundation/UserDefaultKey/ExpressibleByUnicodeScalarLiteral-Implementations": {
+"doc://FFFoundation/documentation/FFFoundation/UserDefaultKey/ExpressibleByStringLiteral-Implementations": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/ExpressibleByUnicodeScalarLiteral-Implementations",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/ExpressibleByStringLiteral-Implementations",
   "kind" : "article",
   "role" : "collectionGroup",
-  "title" : "ExpressibleByUnicodeScalarLiteral Implementations",
+  "title" : "ExpressibleByStringLiteral Implementations",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefaultkey\/expressiblebyunicodescalarliteral-implementations"
+  "url" : "\/documentation\/fffoundation\/userdefaultkey\/expressiblebystringliteral-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefaultKey/RawRepresentable-Implementations": {
   "abstract" : [
@@ -497,6 +509,11 @@
   "title" : "rawValue",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefaultkey\/rawvalue-swift.property"
+},
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://FFFoundation/s23CustomStringConvertibleP": {
   "identifier" : "doc:\/\/FFFoundation\/s23CustomStringConvertibleP",

@@ -38,6 +38,10 @@
         "text" : "UserDefault"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "UserDefault.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefault.swift#L43"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -117,6 +121,9 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/FFFoundation\/s8CopyableP",
+        "doc:\/\/FFFoundation\/s8SendableP",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP",
         "doc:\/\/FFFoundation\/7SwiftUI15DynamicPropertyP"
       ],
       "kind" : "relationships",
@@ -134,24 +141,40 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Classes",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class"
       ],
       "title" : "Classes"
     },
     {
+      "anchor" : "Structures",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values"
+      ],
+      "title" : "Structures"
+    },
+    {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(userDefaults:key:)-12xia",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(userDefaults:key:)-1x9sa",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(userDefaults:key:)-76rmt",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(userDefaults:key:)-7zvqv",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(userDefaults:key:)-86asg",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(userDefaults:key:defaultValue:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(wrappedValue:userDefaults:key:)"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(userDefaults:key:defaultValue:)-4fqr1",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(userDefaults:key:defaultValue:)-8gf9s",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(wrappedValue:userDefaults:key:)-55nw8",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(wrappedValue:userDefaults:key:)-9bvnq"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/binding",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/defaultValue",
@@ -164,12 +187,15 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/delete()"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/DynamicProperty-Implementations"
@@ -193,7 +219,7 @@
 "references": {
 "doc://FFFoundation/7SwiftUI15DynamicPropertyP": {
   "identifier" : "doc:\/\/FFFoundation\/7SwiftUI15DynamicPropertyP",
-  "title" : "SwiftUI.DynamicProperty",
+  "title" : "SwiftUICore.DynamicProperty",
   "type" : "unresolvable"
 },
 "doc://FFFoundation/documentation/FFFoundation": {
@@ -343,6 +369,77 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class"
 },
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/Values": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "PrimitiveUserDefaultStorable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " and ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Values"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Values"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "UserDefault.Values",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/userdefault\/values"
+},
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/binding": {
   "abstract" : [
 
@@ -379,6 +476,7 @@
       }
     ]
   },
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -958,7 +1056,126 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/init(userdefaults:key:)-86asg"
 },
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/init(userDefaults:key:defaultValue:)": {
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/init(userDefaults:key:defaultValue:)-4fqr1": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "PrimitiveUserDefaultStorable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " and ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "userDefaults"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSUserDefaults",
+      "text" : "UserDefaults"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "key"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation14UserDefaultKeyV",
+      "text" : "UserDefaultKey"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "defaultValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure "
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(userDefaults:key:defaultValue:)-4fqr1",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(userDefaults:key:defaultValue:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/userdefault\/init(userdefaults:key:defaultvalue:)-4fqr1"
+},
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/init(userDefaults:key:defaultValue:)-8gf9s": {
   "abstract" : [
 
   ],
@@ -1011,7 +1228,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure "
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -1022,14 +1247,14 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(userDefaults:key:defaultValue:)",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(userDefaults:key:defaultValue:)-8gf9s",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "init(userDefaults:key:defaultValue:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/init(userdefaults:key:defaultvalue:)"
+  "url" : "\/documentation\/fffoundation\/userdefault\/init(userdefaults:key:defaultvalue:)-8gf9s"
 },
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/init(wrappedValue:userDefaults:key:)": {
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/init(wrappedValue:userDefaults:key:)-55nw8": {
   "abstract" : [
 
   ],
@@ -1048,7 +1273,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure "
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -1093,12 +1326,131 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(wrappedValue:userDefaults:key:)",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(wrappedValue:userDefaults:key:)-55nw8",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "init(wrappedValue:userDefaults:key:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/init(wrappedvalue:userdefaults:key:)"
+  "url" : "\/documentation\/fffoundation\/userdefault\/init(wrappedvalue:userdefaults:key:)-55nw8"
+},
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/init(wrappedValue:userDefaults:key:)-9bvnq": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "PrimitiveUserDefaultStorable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " and ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "wrappedValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure "
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "userDefaults"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSUserDefaults",
+      "text" : "UserDefaults"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "key"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation14UserDefaultKeyV",
+      "text" : "UserDefaultKey"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/init(wrappedValue:userDefaults:key:)-9bvnq",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(wrappedValue:userDefaults:key:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/userdefault\/init(wrappedvalue:userdefaults:key:)-9bvnq"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/key": {
   "abstract" : [
@@ -1329,6 +1681,21 @@
   "title" : "wrappedValue",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/wrappedvalue"
+},
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8CopyableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8SendableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 }
 }
 }

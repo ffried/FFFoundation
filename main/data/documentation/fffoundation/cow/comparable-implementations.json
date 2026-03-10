@@ -19,6 +19,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "Comparable Implementations"
   },
   "schemaVersion" : {
@@ -31,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Operators",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/...(_:)-6s441",
@@ -38,8 +40,8 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/...(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/.._(_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/.._(_:_:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/_(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/_(_:_:)-3uzgd",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/_(_:_:)-9w2cd",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/_=(_:_:)-2siee",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/_=(_:_:)-505vs"
       ],
@@ -471,80 +473,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cow\/'.._(_:_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/CoW/_(_:_:)-3uzgd": {
-  "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether the value of the first argument",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is greater than that of the second argument.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : ">"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/_(_:_:)-3uzgd",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : ">(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/cow\/_(_:_:)-3uzgd"
-},
-"doc://FFFoundation/documentation/FFFoundation/CoW/_(_:_:)-9w2cd": {
+"doc://FFFoundation/documentation/FFFoundation/CoW/_(_:_:)": {
   "abstract" : [
 
   ],
@@ -649,12 +578,85 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/_(_:_:)-9w2cd",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/_(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/cow\/_(_:_:)-9w2cd"
+  "url" : "\/documentation\/fffoundation\/cow\/_(_:_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/CoW/_(_:_:)-3uzgd": {
+  "abstract" : [
+    {
+      "text" : "Returns a Boolean value indicating whether the value of the first argument",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "is greater than that of the second argument.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : ">"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/_(_:_:)-3uzgd",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : ">(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/cow\/_(_:_:)-3uzgd"
 },
 "doc://FFFoundation/documentation/FFFoundation/CoW/_=(_:_:)-2siee": {
   "abstract" : [

@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak\/ExpressibleByStringLiteral-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak"
       ]
     ]
   },
@@ -75,6 +74,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s26ExpressibleByStringLiteralP0cD4TypeQa",
         "text" : "StringLiteralType"
       },
       {
@@ -87,6 +87,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Weak.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Weak.swift#L139"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -137,6 +141,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s26ExpressibleByStringLiteralP0cD4TypeQa",
               "text" : "StringLiteralType"
             },
             {
@@ -213,17 +218,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/weak"
 },
-"doc://FFFoundation/documentation/FFFoundation/Weak/ExpressibleByStringLiteral-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak\/ExpressibleByStringLiteral-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByStringLiteral Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/weak\/expressiblebystringliteral-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/Weak/init(stringLiteral:)": {
   "abstract" : [
 
@@ -287,6 +281,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s26ExpressibleByStringLiteralP0cD4TypeQa",
       "text" : "StringLiteralType"
     },
     {

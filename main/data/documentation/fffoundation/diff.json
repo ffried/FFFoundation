@@ -38,6 +38,10 @@
         "text" : "Diff"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Diff.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Diff.swift#L30"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -134,9 +138,11 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/FFFoundation\/s8CopyableP",
         "doc:\/\/FFFoundation\/Se",
         "doc:\/\/FFFoundation\/SE",
-        "doc:\/\/FFFoundation\/s8SendableP"
+        "doc:\/\/FFFoundation\/s8SendableP",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -153,6 +159,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/init(base:comparedTo:)-7fkd7",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/init(base:comparedTo:)-9hpc9",
@@ -162,6 +170,8 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/base",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/changes-swift.property",
@@ -170,18 +180,23 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/Changes-swift.typealias"
       ],
       "title" : "Type Aliases"
     },
     {
+      "anchor" : "Enumerations",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/Change"
       ],
       "title" : "Enumerations"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/Decodable-Implementations",
@@ -862,6 +877,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST7ElementQa",
       "text" : "Element"
     },
     {
@@ -1019,6 +1035,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST7ElementQa",
       "text" : "Element"
     },
     {
@@ -1063,6 +1080,16 @@
   "title" : "Diffable",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/diffable"
+},
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8CopyableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
 },
 "doc://FFFoundation/s8SendableP": {
   "identifier" : "doc:\/\/FFFoundation\/s8SendableP",

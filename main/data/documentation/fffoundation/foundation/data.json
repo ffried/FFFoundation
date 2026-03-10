@@ -83,7 +83,9 @@
     {
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Cachable",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PrimitiveUserDefaultStorable"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PrimitiveUserDefaultStorable",
+        "doc:\/\/FFFoundation\/s8CopyableP",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -100,6 +102,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/Data\/Cachable-Implementations",
@@ -259,6 +262,16 @@
   "title" : "PrimitiveUserDefaultStorable",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/primitiveuserdefaultstorable"
+},
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8CopyableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
 }
 }
 }

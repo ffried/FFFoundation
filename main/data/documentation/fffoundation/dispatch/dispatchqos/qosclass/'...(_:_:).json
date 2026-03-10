@@ -11,8 +11,7 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/Comparable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass"
       ]
     ]
   },
@@ -509,17 +508,6 @@
   "title" : "...(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/'...(_:_:)"
-},
-"doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/Comparable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/Comparable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Comparable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/comparable-implementations"
 }
 }
 }

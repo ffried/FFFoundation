@@ -19,6 +19,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "SignedNumeric Implementations"
   },
   "schemaVersion" : {
@@ -31,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Operators",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-(_:)"
@@ -38,6 +40,7 @@
       "title" : "Operators"
     },
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/negate()"
@@ -103,10 +106,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/-(_:)": {
   "abstract" : [
-    {
-      "text" : "Returns the additive inverse of the specified value.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -159,10 +159,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/negate()": {
   "abstract" : [
-    {
-      "text" : "Replaces this value with its additive inverse.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

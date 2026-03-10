@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref"
       ]
     ]
   },
@@ -83,6 +82,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
         "text" : "ExtendedGraphemeClusterLiteralType"
       },
       {
@@ -95,6 +95,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Ref.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Ref.swift#L107"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -153,6 +157,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
               "text" : "ExtendedGraphemeClusterLiteralType"
             },
             {
@@ -229,17 +234,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/ref"
 },
-"doc://FFFoundation/documentation/FFFoundation/Ref/ExpressibleByExtendedGraphemeClusterLiteral-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByExtendedGraphemeClusterLiteral Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/ref\/expressiblebyextendedgraphemeclusterliteral-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/Ref/init(extendedGraphemeClusterLiteral:)": {
   "abstract" : [
 
@@ -311,6 +305,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
       "text" : "ExtendedGraphemeClusterLiteralType"
     },
     {

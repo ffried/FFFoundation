@@ -105,6 +105,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "FileManager+Directories.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/FileManager+Directories.swift#L47"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",

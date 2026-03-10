@@ -39,6 +39,10 @@
         "text" : "RawValue"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "PropertyKey.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/PropertyKey.swift#L22"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Alias",
     "symbolKind" : "typealias",

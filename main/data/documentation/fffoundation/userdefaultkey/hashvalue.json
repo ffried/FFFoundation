@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/RawRepresentable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey"
       ]
     ]
   },
@@ -213,17 +212,6 @@
   "title" : "UserDefaultKey",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefaultkey"
-},
-"doc://FFFoundation/documentation/FFFoundation/UserDefaultKey/RawRepresentable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/RawRepresentable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "RawRepresentable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefaultkey\/rawrepresentable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefaultKey/hashValue": {
   "abstract" : [

@@ -26,8 +26,7 @@
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Bool",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Bool\/Togglable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Bool"
       ]
     ]
   },
@@ -70,6 +69,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Togglable.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Togglable.swift#L42"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -200,17 +203,6 @@
   "title" : "Bool",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/swift\/bool"
-},
-"doc://FFFoundation/documentation/FFFoundation/Swift/Bool/Togglable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Bool\/Togglable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Togglable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/swift\/bool\/togglable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Swift/Bool/toggled": {
   "abstract" : [

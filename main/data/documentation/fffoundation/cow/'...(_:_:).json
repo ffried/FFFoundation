@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Comparable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW"
       ]
     ]
   },
@@ -454,17 +453,6 @@
   "title" : "...(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cow\/'...(_:_:)"
-},
-"doc://FFFoundation/documentation/FFFoundation/CoW/Comparable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Comparable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Comparable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/cow\/comparable-implementations"
 }
 }
 }

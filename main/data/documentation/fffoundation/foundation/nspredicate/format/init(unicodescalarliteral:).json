@@ -5,8 +5,7 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByUnicodeScalarLiteral-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format"
       ]
     ]
   },
@@ -77,6 +76,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
         "text" : "ExtendedGraphemeClusterLiteralType"
       },
       {
@@ -142,6 +142,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
               "text" : "ExtendedGraphemeClusterLiteralType"
             },
             {
@@ -261,17 +262,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format"
 },
-"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/ExpressibleByUnicodeScalarLiteral-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByUnicodeScalarLiteral-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByUnicodeScalarLiteral Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/expressiblebyunicodescalarliteral-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/init(unicodeScalarLiteral:)": {
   "abstract" : [
 
@@ -335,6 +325,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
       "text" : "ExtendedGraphemeClusterLiteralType"
     },
     {

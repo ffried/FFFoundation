@@ -38,6 +38,10 @@
         "text" : "TriangulatablePoint"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Triangle.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Geometry\/Triangle.swift#L21"
+    },
     "role" : "symbol",
     "roleHeading" : "Protocol",
     "symbolKind" : "protocol",
@@ -71,7 +75,9 @@
               "text" : "<"
             },
             {
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint\/Value",
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation19TriangulatablePointP5ValueQa",
               "text" : "Value"
             },
             {
@@ -105,18 +111,24 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Associated-Types",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint\/Value"
       ],
       "title" : "Associated Types"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint\/init(x:y:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint\/x",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint\/y"
@@ -341,6 +353,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation19TriangulatablePointP5ValueQa",
       "text" : "Value"
     },
     {
@@ -365,6 +378,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation19TriangulatablePointP5ValueQa",
       "text" : "Value"
     },
     {
@@ -411,6 +425,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation19TriangulatablePointP5ValueQa",
       "text" : "Value"
     }
   ],
@@ -453,6 +468,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation19TriangulatablePointP5ValueQa",
       "text" : "Value"
     }
   ],

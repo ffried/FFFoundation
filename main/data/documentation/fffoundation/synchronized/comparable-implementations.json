@@ -19,6 +19,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "Comparable Implementations"
   },
   "schemaVersion" : {
@@ -31,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Operators",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/...(_:)-7k41s",
@@ -38,7 +40,7 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/...(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/.._(_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/.._(_:_:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/_(_:_:)-354ym",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/_(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/_(_:_:)-4smg0",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/_=(_:_:)-3toy7",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/_=(_:_:)-4xt8"
@@ -471,7 +473,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/synchronized\/'.._(_:_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/Synchronized/_(_:_:)-354ym": {
+"doc://FFFoundation/documentation/FFFoundation/Synchronized/_(_:_:)": {
   "abstract" : [
 
   ],
@@ -576,12 +578,12 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/_(_:_:)-354ym",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/_(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/synchronized\/_(_:_:)-354ym"
+  "url" : "\/documentation\/fffoundation\/synchronized\/_(_:_:)"
 },
 "doc://FFFoundation/documentation/FFFoundation/Synchronized/_(_:_:)-4smg0": {
   "abstract" : [

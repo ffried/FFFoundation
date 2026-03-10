@@ -33,8 +33,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/RawRepresentable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey"
       ]
     ]
   },
@@ -109,7 +108,7 @@
       },
       {
         "kind" : "text",
-        "text" : ": "
+        "text" : ": any "
       },
       {
         "kind" : "typeIdentifier",
@@ -171,7 +170,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
+              "text" : ": any "
             },
             {
               "kind" : "typeIdentifier",
@@ -303,17 +302,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/propertykey"
 },
-"doc://FFFoundation/documentation/FFFoundation/PropertyKey/RawRepresentable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/RawRepresentable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "RawRepresentable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/propertykey\/rawrepresentable-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/PropertyKey/init(from:)": {
   "abstract" : [
     {
@@ -408,7 +396,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

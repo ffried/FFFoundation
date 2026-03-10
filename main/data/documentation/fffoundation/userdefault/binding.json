@@ -1,4 +1,15 @@
 {
+  "deprecationSummary" : [
+    {
+      "inlineContent" : [
+        {
+          "text" : "Use SwiftUI.AppStorage or SwiftUI.SceneStorage instead",
+          "type" : "text"
+        }
+      ],
+      "type" : "paragraph"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -115,8 +126,18 @@
         "introducedAt" : "6.0",
         "name" : "watchOS",
         "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : true,
+        "message" : "Use SwiftUI.AppStorage or SwiftUI.SceneStorage instead",
+        "unavailable" : false
       }
     ],
+    "remoteSource" : {
+      "fileName" : "UserDefault.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefault.swift#L310"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -280,6 +301,7 @@
       }
     ]
   },
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",

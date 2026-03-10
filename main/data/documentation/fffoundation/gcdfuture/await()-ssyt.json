@@ -53,8 +53,18 @@
       }
     ],
     "platforms" : [
-
+      {
+        "beta" : false,
+        "deprecated" : true,
+        "message" : "Use 'wait'",
+        "renamed" : "wait",
+        "unavailable" : false
+      }
     ],
+    "remoteSource" : {
+      "fileName" : "GCDFuture.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/GCDFuture.swift#L171"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -134,6 +144,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",

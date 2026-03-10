@@ -38,6 +38,10 @@
         "text" : "GeometricValue"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "GeometricValue.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Geometry\/GeometricValue.swift#L23"
+    },
     "role" : "symbol",
     "roleHeading" : "Protocol",
     "symbolKind" : "protocol",
@@ -119,6 +123,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue\/acos()",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue\/asin()",

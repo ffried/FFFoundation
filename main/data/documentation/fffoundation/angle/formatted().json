@@ -25,8 +25,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/BinaryFloatingPoint-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle"
       ]
     ]
   },
@@ -205,17 +204,6 @@
   "title" : "Angle",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle"
-},
-"doc://FFFoundation/documentation/FFFoundation/Angle/BinaryFloatingPoint-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/BinaryFloatingPoint-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "BinaryFloatingPoint Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/binaryfloatingpoint-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/formatted()": {
   "abstract" : [

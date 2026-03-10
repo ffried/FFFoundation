@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/Encodable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff"
       ]
     ]
   },
@@ -119,7 +118,7 @@
       },
       {
         "kind" : "text",
-        "text" : ": "
+        "text" : ": any "
       },
       {
         "kind" : "typeIdentifier",
@@ -140,6 +139,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Diff.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Diff.swift#L89"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -186,7 +189,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
+              "text" : ": any "
             },
             {
               "kind" : "typeIdentifier",
@@ -270,17 +273,6 @@
   "title" : "Diff",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/diff"
-},
-"doc://FFFoundation/documentation/FFFoundation/Diff/Encodable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/Encodable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Encodable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/diff\/encodable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Diff/encode(to:)": {
   "abstract" : [
@@ -389,7 +381,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

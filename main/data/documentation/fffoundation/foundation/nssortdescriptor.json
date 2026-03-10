@@ -89,6 +89,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSSortDescriptor\/Key"
       ],

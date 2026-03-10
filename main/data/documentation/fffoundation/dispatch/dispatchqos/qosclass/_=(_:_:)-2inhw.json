@@ -19,8 +19,7 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/Comparable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass"
       ]
     ]
   },
@@ -371,17 +370,6 @@
   "title" : "DispatchQoS.QoSClass",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass"
-},
-"doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/Comparable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/Comparable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Comparable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/comparable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/_=(_:_:)-2inhw": {
   "abstract" : [

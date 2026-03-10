@@ -44,6 +44,10 @@
         "text" : "Format"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Predicate+StringInterpolation.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/Predicate+StringInterpolation.swift#L25"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -101,6 +105,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/init(stringInterpolation:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/init(stringLiteral:)"
@@ -108,17 +114,20 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringLiteralType"
       ],
       "title" : "Type Aliases"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByStringInterpolation-Implementations",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByUnicodeScalarLiteral-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByStringLiteral-Implementations"
       ],
       "title" : "Default Implementations"
     }
@@ -244,16 +253,16 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/expressiblebystringinterpolation-implementations"
 },
-"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/ExpressibleByUnicodeScalarLiteral-Implementations": {
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/ExpressibleByStringLiteral-Implementations": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByUnicodeScalarLiteral-Implementations",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByStringLiteral-Implementations",
   "kind" : "article",
   "role" : "collectionGroup",
-  "title" : "ExpressibleByUnicodeScalarLiteral Implementations",
+  "title" : "ExpressibleByStringLiteral Implementations",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/expressiblebyunicodescalarliteral-implementations"
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/expressiblebystringliteral-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringLiteralType": {
   "abstract" : [

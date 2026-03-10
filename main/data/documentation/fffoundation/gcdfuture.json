@@ -1,4 +1,15 @@
 {
+  "deprecationSummary" : [
+    {
+      "inlineContent" : [
+        {
+          "text" : "Use Swift concurrency instead",
+          "type" : "text"
+        }
+      ],
+      "type" : "paragraph"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -38,6 +49,18 @@
         "text" : "GCDFuture"
       }
     ],
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : true,
+        "message" : "Use Swift concurrency instead",
+        "unavailable" : false
+      }
+    ],
+    "remoteSource" : {
+      "fileName" : "GCDFuture.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/GCDFuture.swift#L23"
+    },
     "role" : "symbol",
     "roleHeading" : "Class",
     "symbolKind" : "class",
@@ -84,7 +107,28 @@
             },
             {
               "kind" : "text",
-              "text" : ">"
+              "text" : "> "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "where"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Value"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s8SendableP",
+              "text" : "Sendable"
             }
           ]
         }
@@ -95,7 +139,8 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/FFFoundation\/s8SendableP"
+        "doc:\/\/FFFoundation\/s8SendableP",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -112,40 +157,46 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/init()",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/init(error:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/init(value:)-5wqc8",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/init(value:)-6ku0p"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/init(value:)-iop3"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/await()-51xoc",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/await()-9nfh",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/await()-ssyt",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/cascade(other:)-447ok",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/cascade(other:)-hxwb",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-1937y",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/cascade(other:)-82d38",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-52gr1",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-5eaik",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-xzwb",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/fail(with:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/flatMap(_:)-4doz2",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/flatMap(_:)-5jev4",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/flatMap(_:)-61r79",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/map(_:)-51u4y",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/map(_:)-9k4q",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/map(_:)-9oa25",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/flatMap(_:)-2mm32",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/flatMap(_:)-3yopr",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/flatMap(_:)-88i5",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/map(_:)-1mj4c",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/map(_:)-8l9b1",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/map(_:)-9ns5w",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/onError(do:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/onSuccess(do:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/succeed(with:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/wait()-3bv35",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/wait()-2vl8g",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/wait()-6udq2",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/whenDone(do:)"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/Handler"
       ],
@@ -181,6 +232,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -212,6 +264,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -239,10 +292,42 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/gcdfuture\/handler"
 },
-"doc://FFFoundation/documentation/FFFoundation/GCDFuture/await()-51xoc": {
+"doc://FFFoundation/documentation/FFFoundation/GCDFuture/await()-9nfh": {
   "abstract" : [
 
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
   "deprecated" : true,
   "fragments" : [
     {
@@ -290,12 +375,12 @@
       "text" : "Success"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/await()-51xoc",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/await()-9nfh",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "await()",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/gcdfuture\/await()-51xoc"
+  "url" : "\/documentation\/fffoundation\/gcdfuture\/await()-9nfh"
 },
 "doc://FFFoundation/documentation/FFFoundation/GCDFuture/await()-ssyt": {
   "abstract" : [
@@ -335,6 +420,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -385,10 +471,43 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/gcdfuture\/cascade(other:)-447ok"
 },
-"doc://FFFoundation/documentation/FFFoundation/GCDFuture/cascade(other:)-hxwb": {
+"doc://FFFoundation/documentation/FFFoundation/GCDFuture/cascade(other:)-82d38": {
   "abstract" : [
 
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -456,17 +575,96 @@
       "text" : ">)"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/cascade(other:)-hxwb",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/cascade(other:)-82d38",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "cascade(other:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/gcdfuture\/cascade(other:)-hxwb"
+  "url" : "\/documentation\/fffoundation\/gcdfuture\/cascade(other:)-82d38"
 },
-"doc://FFFoundation/documentation/FFFoundation/GCDFuture/complete(with:)-1937y": {
+"doc://FFFoundation/documentation/FFFoundation/GCDFuture/complete(with:)-52gr1": {
   "abstract" : [
 
   ],
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "complete"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "with"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-52gr1",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "complete(with:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/gcdfuture\/complete(with:)-52gr1"
+},
+"doc://FFFoundation/documentation/FFFoundation/GCDFuture/complete(with:)-5eaik": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -552,62 +750,18 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-1937y",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-5eaik",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "complete(with:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/gcdfuture\/complete(with:)-1937y"
-},
-"doc://FFFoundation/documentation/FFFoundation/GCDFuture/complete(with:)-52gr1": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "complete"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "with"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ")"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-52gr1",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "complete(with:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/gcdfuture\/complete(with:)-52gr1"
+  "url" : "\/documentation\/fffoundation\/gcdfuture\/complete(with:)-5eaik"
 },
 "doc://FFFoundation/documentation/FFFoundation/GCDFuture/complete(with:)-xzwb": {
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -688,6 +842,39 @@
   "abstract" : [
 
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -745,10 +932,140 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/gcdfuture\/fail(with:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/GCDFuture/flatMap(_:)-4doz2": {
+"doc://FFFoundation/documentation/FFFoundation/GCDFuture/flatMap(_:)-2mm32": {
   "abstract" : [
 
   ],
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "flatMap"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC",
+      "text" : "GCDFuture"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation15GCDFutureResulta",
+      "text" : "GCDFutureResult"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", any "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s5ErrorP",
+      "text" : "Error"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/flatMap(_:)-2mm32",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "flatMap(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/gcdfuture\/flatmap(_:)-2mm32"
+},
+"doc://FFFoundation/documentation/FFFoundation/GCDFuture/flatMap(_:)-3yopr": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -813,7 +1130,7 @@
     },
     {
       "kind" : "text",
-      "text" : ", "
+      "text" : ", any "
     },
     {
       "kind" : "typeIdentifier",
@@ -839,7 +1156,7 @@
     },
     {
       "kind" : "text",
-      "text" : ", "
+      "text" : ", any "
     },
     {
       "kind" : "typeIdentifier",
@@ -851,17 +1168,18 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/flatMap(_:)-4doz2",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/flatMap(_:)-3yopr",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "flatMap(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/gcdfuture\/flatmap(_:)-4doz2"
+  "url" : "\/documentation\/fffoundation\/gcdfuture\/flatmap(_:)-3yopr"
 },
-"doc://FFFoundation/documentation/FFFoundation/GCDFuture/flatMap(_:)-5jev4": {
+"doc://FFFoundation/documentation/FFFoundation/GCDFuture/flatMap(_:)-88i5": {
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -930,113 +1248,18 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/flatMap(_:)-5jev4",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/flatMap(_:)-88i5",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "flatMap(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/gcdfuture\/flatmap(_:)-5jev4"
-},
-"doc://FFFoundation/documentation/FFFoundation/GCDFuture/flatMap(_:)-61r79": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "flatMap"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ">(("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ") "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "throws"
-    },
-    {
-      "kind" : "text",
-      "text" : " -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC",
-      "text" : "GCDFuture"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ">) -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation15GCDFutureResulta",
-      "text" : "GCDFutureResult"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:s5ErrorP",
-      "text" : "Error"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/flatMap(_:)-61r79",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "flatMap(_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/gcdfuture\/flatmap(_:)-61r79"
+  "url" : "\/documentation\/fffoundation\/gcdfuture\/flatmap(_:)-88i5"
 },
 "doc://FFFoundation/documentation/FFFoundation/GCDFuture/init()": {
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1066,6 +1289,39 @@
   "abstract" : [
 
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1127,6 +1383,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1168,10 +1425,43 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/gcdfuture\/init(value:)-5wqc8"
 },
-"doc://FFFoundation/documentation/FFFoundation/GCDFuture/init(value:)-6ku0p": {
+"doc://FFFoundation/documentation/FFFoundation/GCDFuture/init(value:)-iop3": {
   "abstract" : [
 
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1222,17 +1512,50 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/init(value:)-6ku0p",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/init(value:)-iop3",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "init(value:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/gcdfuture\/init(value:)-6ku0p"
+  "url" : "\/documentation\/fffoundation\/gcdfuture\/init(value:)-iop3"
 },
-"doc://FFFoundation/documentation/FFFoundation/GCDFuture/map(_:)-51u4y": {
+"doc://FFFoundation/documentation/FFFoundation/GCDFuture/map(_:)-1mj4c": {
   "abstract" : [
 
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1313,7 +1636,7 @@
     },
     {
       "kind" : "text",
-      "text" : ", "
+      "text" : ", any "
     },
     {
       "kind" : "typeIdentifier",
@@ -1325,17 +1648,18 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/map(_:)-51u4y",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/map(_:)-1mj4c",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "map(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/gcdfuture\/map(_:)-51u4y"
+  "url" : "\/documentation\/fffoundation\/gcdfuture\/map(_:)-1mj4c"
 },
-"doc://FFFoundation/documentation/FFFoundation/GCDFuture/map(_:)-9k4q": {
+"doc://FFFoundation/documentation/FFFoundation/GCDFuture/map(_:)-8l9b1": {
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1395,17 +1719,18 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/map(_:)-9k4q",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/map(_:)-8l9b1",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "map(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/gcdfuture\/map(_:)-9k4q"
+  "url" : "\/documentation\/fffoundation\/gcdfuture\/map(_:)-8l9b1"
 },
-"doc://FFFoundation/documentation/FFFoundation/GCDFuture/map(_:)-9oa25": {
+"doc://FFFoundation/documentation/FFFoundation/GCDFuture/map(_:)-9ns5w": {
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1470,7 +1795,7 @@
     },
     {
       "kind" : "text",
-      "text" : ", "
+      "text" : ", any "
     },
     {
       "kind" : "typeIdentifier",
@@ -1482,17 +1807,50 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/map(_:)-9oa25",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/map(_:)-9ns5w",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "map(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/gcdfuture\/map(_:)-9oa25"
+  "url" : "\/documentation\/fffoundation\/gcdfuture\/map(_:)-9ns5w"
 },
 "doc://FFFoundation/documentation/FFFoundation/GCDFuture/onError(do:)": {
   "abstract" : [
 
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1554,6 +1912,39 @@
   "abstract" : [
 
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1615,6 +2006,39 @@
   "abstract" : [
 
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1672,10 +2096,43 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/gcdfuture\/succeed(with:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/GCDFuture/wait()-3bv35": {
+"doc://FFFoundation/documentation/FFFoundation/GCDFuture/wait()-2vl8g": {
   "abstract" : [
 
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1722,17 +2179,18 @@
       "text" : "Success"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/wait()-3bv35",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/wait()-2vl8g",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "wait()",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/gcdfuture\/wait()-3bv35"
+  "url" : "\/documentation\/fffoundation\/gcdfuture\/wait()-2vl8g"
 },
 "doc://FFFoundation/documentation/FFFoundation/GCDFuture/wait()-6udq2": {
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1766,6 +2224,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1824,6 +2283,11 @@
   "title" : "whenDone(do:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/gcdfuture\/whendone(do:)"
+},
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://FFFoundation/s8SendableP": {
   "identifier" : "doc:\/\/FFFoundation\/s8SendableP",

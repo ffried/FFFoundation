@@ -41,6 +41,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "UserDefault.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefault.swift#L55"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -57,20 +61,6 @@
             "macOS"
           ],
           "tokens" : [
-            {
-              "kind" : "attribute",
-              "text" : "@"
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy",
-              "kind" : "attribute",
-              "preciseIdentifier" : "s:12FFFoundation4LazyV",
-              "text" : "Lazy"
-            },
-            {
-              "kind" : "text",
-              "text" : " "
-            },
             {
               "kind" : "keyword",
               "text" : "var"
@@ -149,37 +139,6 @@
   "title" : "FFFoundation",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation"
-},
-"doc://FFFoundation/documentation/FFFoundation/Lazy": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "Lazy"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "Lazy"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "Lazy",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/lazy"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault": {
   "abstract" : [

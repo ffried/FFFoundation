@@ -38,6 +38,10 @@
         "text" : "Angle"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Angle.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Geometry\/Angle.swift#L21"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -121,6 +125,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sx6StrideQa",
               "text" : "Stride"
             }
           ]
@@ -135,6 +140,7 @@
         "doc:\/\/FFFoundation\/s18AdditiveArithmeticP",
         "doc:\/\/FFFoundation\/SB",
         "doc:\/\/FFFoundation\/SL",
+        "doc:\/\/FFFoundation\/s8CopyableP",
         "doc:\/\/FFFoundation\/s23CustomStringConvertibleP",
         "doc:\/\/FFFoundation\/Se",
         "doc:\/\/FFFoundation\/SE",
@@ -145,6 +151,7 @@
         "doc:\/\/FFFoundation\/SH",
         "doc:\/\/FFFoundation\/Sj",
         "doc:\/\/FFFoundation\/s8SendableP",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP",
         "doc:\/\/FFFoundation\/s13SignedNumericP",
         "doc:\/\/FFFoundation\/Sx"
       ],
@@ -163,31 +170,37 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Operators",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/*(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/*=(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/+(_:_:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/+=(_:_:)-79ho2",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/+=(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-(_:_:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-=(_:_:)-6unk4",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/\/(_:_:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/\/=(_:_:)"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-=(_:_:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_(_:_:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_=(_:_:)"
       ],
       "title" : "Operators"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(_:)-7wgb5",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(degrees:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(exactly:)-6emnj",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(exactly:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(integerLiteral:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(radians:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(sign:exponent:significand:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(signOf:magnitudeOf:)-7j6mo"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(signOf:magnitudeOf:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/asDegrees",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/asRadians",
@@ -212,6 +225,8 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/addProduct(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/advanced(by:)",
@@ -231,6 +246,8 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Exponent-swift.typealias",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/IntegerLiteralType",
@@ -240,6 +257,8 @@
       "title" : "Type Aliases"
     },
     {
+      "anchor" : "Type-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/greatestFiniteMagnitude",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/infinity",
@@ -247,12 +266,14 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/leastNormalMagnitude",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/nan",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/pi",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/radix-62xbh",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/radix",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/signalingNaN"
       ],
       "title" : "Type Properties"
     },
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/degrees(_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/radians(_:)"
@@ -260,6 +281,7 @@
       "title" : "Type Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/AdditiveArithmetic-Implementations",
@@ -643,7 +665,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle\/+(_:_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/Angle/+=(_:_:)-79ho2": {
+"doc://FFFoundation/documentation/FFFoundation/Angle/+=(_:_:)": {
   "abstract" : [
 
   ],
@@ -719,12 +741,12 @@
       "text" : ">)"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/+=(_:_:)-79ho2",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/+=(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "+=(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/+=(_:_:)-79ho2"
+  "url" : "\/documentation\/fffoundation\/angle\/+=(_:_:)"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/-(_:_:)": {
   "abstract" : [
@@ -818,7 +840,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle\/-(_:_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/Angle/-=(_:_:)-6unk4": {
+"doc://FFFoundation/documentation/FFFoundation/Angle/-=(_:_:)": {
   "abstract" : [
 
   ],
@@ -894,187 +916,12 @@
       "text" : ">)"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-=(_:_:)-6unk4",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/-=(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "-=(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/-=(_:_:)-6unk4"
-},
-"doc://FFFoundation/documentation/FFFoundation/Angle//(_:_:)": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "\/"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">, "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">) -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/\/(_:_:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "\/(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/\/(_:_:)"
-},
-"doc://FFFoundation/documentation/FFFoundation/Angle//=(_:_:)": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "\/="
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "keyword",
-      "text" : "inout"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">, "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">)"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/\/=(_:_:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "\/=(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/\/=(_:_:)"
+  "url" : "\/documentation\/fffoundation\/angle\/-=(_:_:)"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/AdditiveArithmetic-Implementations": {
   "abstract" : [
@@ -1298,6 +1145,181 @@
   "title" : "Angle.Stride",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle\/stride"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/_(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "\/"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "\/(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/_(_:_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/_=(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "\/="
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV",
+      "text" : "Angle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_=(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "\/=(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/_=(_:_:)"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/addProduct(_:_:)": {
   "abstract" : [
@@ -2178,7 +2200,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle\/infinity"
 },
-"doc://FFFoundation/documentation/FFFoundation/Angle/init(_:)-7wgb5": {
+"doc://FFFoundation/documentation/FFFoundation/Angle/init(_:)": {
   "abstract" : [
 
   ],
@@ -2208,12 +2230,12 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(_:)-7wgb5",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "init(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/init(_:)-7wgb5"
+  "url" : "\/documentation\/fffoundation\/angle\/init(_:)"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/init(degrees:)": {
   "abstract" : [
@@ -2252,7 +2274,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle\/init(degrees:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/Angle/init(exactly:)-6emnj": {
+"doc://FFFoundation/documentation/FFFoundation/Angle/init(exactly:)": {
   "abstract" : [
 
   ],
@@ -2290,12 +2312,12 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(exactly:)-6emnj",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(exactly:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "init(exactly:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/init(exactly:)-6emnj"
+  "url" : "\/documentation\/fffoundation\/angle\/init(exactly:)"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/init(integerLiteral:)": {
   "abstract" : [
@@ -2484,7 +2506,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle\/init(sign:exponent:significand:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/Angle/init(signOf:magnitudeOf:)-7j6mo": {
+"doc://FFFoundation/documentation/FFFoundation/Angle/init(signOf:magnitudeOf:)": {
   "abstract" : [
 
   ],
@@ -2548,12 +2570,12 @@
       "text" : ">)"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(signOf:magnitudeOf:)-7j6mo",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(signOf:magnitudeOf:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "init(signOf:magnitudeOf:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/init(signof:magnitudeof:)-7j6mo"
+  "url" : "\/documentation\/fffoundation\/angle\/init(signof:magnitudeof:)"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/isCanonical": {
   "abstract" : [
@@ -3524,7 +3546,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle\/radians(_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/Angle/radix-62xbh": {
+"doc://FFFoundation/documentation/FFFoundation/Angle/radix": {
   "abstract" : [
 
   ],
@@ -3559,12 +3581,12 @@
       "text" : "Int"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/radix-62xbh",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/radix",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "radix",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/radix-62xbh"
+  "url" : "\/documentation\/fffoundation\/angle\/radix"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/round(_:)": {
   "abstract" : [
@@ -3822,6 +3844,11 @@
   "title" : "Swift.SignedNumeric",
   "type" : "unresolvable"
 },
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
 "doc://FFFoundation/s18AdditiveArithmeticP": {
   "identifier" : "doc:\/\/FFFoundation\/s18AdditiveArithmeticP",
   "title" : "Swift.AdditiveArithmetic",
@@ -3840,6 +3867,11 @@
 "doc://FFFoundation/s27ExpressibleByIntegerLiteralP": {
   "identifier" : "doc:\/\/FFFoundation\/s27ExpressibleByIntegerLiteralP",
   "title" : "Swift.ExpressibleByIntegerLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8CopyableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
+  "title" : "Swift.Copyable",
   "type" : "unresolvable"
 },
 "doc://FFFoundation/s8SendableP": {

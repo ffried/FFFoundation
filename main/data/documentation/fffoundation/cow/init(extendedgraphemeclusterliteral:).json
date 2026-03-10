@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW"
       ]
     ]
   },
@@ -37,7 +36,7 @@
           "type" : "text"
         },
         {
-          "code" : "Copyable",
+          "code" : "ReferenceCopyable",
           "type" : "codeVoice"
         },
         {
@@ -55,7 +54,7 @@
       ]
     },
     "extendedModule" : "FFFoundation",
-    "externalID" : "s:12FFFoundation3CoWVA2A8CopyableRzs43ExpressibleByExtendedGraphemeClusterLiteralRzrlE08extendedghI0ACyxG0fghI4TypesAEPQz_tcfc",
+    "externalID" : "s:12FFFoundation3CoWVA2A17ReferenceCopyableRzs43ExpressibleByExtendedGraphemeClusterLiteralRzrlE08extendedhiJ0ACyxG0ghiJ4TypesAEPQz_tcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -83,6 +82,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
         "text" : "ExtendedGraphemeClusterLiteralType"
       },
       {
@@ -95,6 +95,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "CoW.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/CoW.swift#L142"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -145,6 +149,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
               "text" : "ExtendedGraphemeClusterLiteralType"
             },
             {
@@ -221,17 +226,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cow"
 },
-"doc://FFFoundation/documentation/FFFoundation/CoW/ExpressibleByExtendedGraphemeClusterLiteral-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByExtendedGraphemeClusterLiteral Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/cow\/expressiblebyextendedgraphemeclusterliteral-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/CoW/init(extendedGraphemeClusterLiteral:)": {
   "abstract" : [
 
@@ -259,7 +253,7 @@
         "type" : "text"
       },
       {
-        "code" : "Copyable",
+        "code" : "ReferenceCopyable",
         "type" : "codeVoice"
       },
       {
@@ -303,6 +297,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
       "text" : "ExtendedGraphemeClusterLiteralType"
     },
     {

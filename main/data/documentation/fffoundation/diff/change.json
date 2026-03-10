@@ -88,6 +88,10 @@
         "text" : "Change"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Diff.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Diff.swift#L122"
+    },
     "role" : "symbol",
     "roleHeading" : "Enumeration",
     "symbolKind" : "enum",
@@ -130,7 +134,8 @@
         "doc:\/\/FFFoundation\/SE",
         "doc:\/\/FFFoundation\/SQ",
         "doc:\/\/FFFoundation\/SH",
-        "doc:\/\/FFFoundation\/s8SendableP"
+        "doc:\/\/FFFoundation\/s8SendableP",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -147,6 +152,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/Change\/added",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/Change\/removed",
@@ -155,12 +162,16 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/Change\/init(from:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/Change\/description",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/Change\/lineSign"
@@ -168,6 +179,8 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/Change\/annotatedLine(for:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/Change\/encode(to:)"
@@ -175,6 +188,7 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/Change\/Equatable-Implementations"
@@ -484,7 +498,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",
@@ -526,7 +540,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",
@@ -632,6 +646,11 @@
   "title" : "Diff.Change.unchanged",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/diff\/change\/unchanged"
+},
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://FFFoundation/s23CustomStringConvertibleP": {
   "identifier" : "doc:\/\/FFFoundation\/s23CustomStringConvertibleP",

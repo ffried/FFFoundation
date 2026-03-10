@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/ExpressibleByFloatLiteral-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle"
       ]
     ]
   },
@@ -128,6 +127,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Angle.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Geometry\/Angle.swift#L269"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -263,17 +266,6 @@
   "title" : "Angle",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle"
-},
-"doc://FFFoundation/documentation/FFFoundation/Angle/ExpressibleByFloatLiteral-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/ExpressibleByFloatLiteral-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByFloatLiteral Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/expressiblebyfloatliteral-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/init(floatLiteral:)": {
   "abstract" : [

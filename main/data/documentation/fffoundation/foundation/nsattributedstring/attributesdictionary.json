@@ -44,6 +44,10 @@
         "text" : "AttributesDictionary"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "NSAttributedStringExtensions.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/NSAttributedStringExtensions.swift#L31"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Alias",
     "symbolKind" : "typealias",

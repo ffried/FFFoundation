@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/Hashable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy"
       ]
     ]
   },
@@ -96,6 +95,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Lazy.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Lazy.swift#L72"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -230,17 +233,6 @@
   "title" : "Lazy",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/lazy"
-},
-"doc://FFFoundation/documentation/FFFoundation/Lazy/Hashable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/Hashable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Hashable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/lazy\/hashable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Lazy/hash(into:)": {
   "abstract" : [

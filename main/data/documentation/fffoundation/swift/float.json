@@ -86,11 +86,13 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PrimitiveUserDefaultStorable",
         "doc:\/\/FFFoundation\/s18AdditiveArithmeticP",
         "doc:\/\/FFFoundation\/SL",
+        "doc:\/\/FFFoundation\/s8CopyableP",
         "doc:\/\/FFFoundation\/SQ",
         "doc:\/\/FFFoundation\/s27ExpressibleByIntegerLiteralP",
         "doc:\/\/FFFoundation\/SF",
         "doc:\/\/FFFoundation\/SH",
         "doc:\/\/FFFoundation\/Sj",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP",
         "doc:\/\/FFFoundation\/s13SignedNumericP",
         "doc:\/\/FFFoundation\/Sx"
       ],
@@ -109,6 +111,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Float\/GeometricValue-Implementations",
@@ -304,6 +307,11 @@
   "title" : "Swift.SignedNumeric",
   "type" : "unresolvable"
 },
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
 "doc://FFFoundation/s18AdditiveArithmeticP": {
   "identifier" : "doc:\/\/FFFoundation\/s18AdditiveArithmeticP",
   "title" : "Swift.AdditiveArithmetic",
@@ -312,6 +320,11 @@
 "doc://FFFoundation/s27ExpressibleByIntegerLiteralP": {
   "identifier" : "doc:\/\/FFFoundation\/s27ExpressibleByIntegerLiteralP",
   "title" : "Swift.ExpressibleByIntegerLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8CopyableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
+  "title" : "Swift.Copyable",
   "type" : "unresolvable"
 }
 }

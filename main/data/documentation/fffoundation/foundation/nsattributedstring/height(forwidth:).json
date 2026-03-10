@@ -64,6 +64,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "NSAttributedStringExtensions.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/NSAttributedStringExtensions.swift#L40"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",

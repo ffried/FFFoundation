@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Comparable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized"
       ]
     ]
   },
@@ -464,17 +463,6 @@
   "title" : "..<(_:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/synchronized\/'.._(_:)"
-},
-"doc://FFFoundation/documentation/FFFoundation/Synchronized/Comparable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Comparable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Comparable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/synchronized\/comparable-implementations"
 }
 }
 }

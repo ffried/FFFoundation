@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Encodable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref"
       ]
     ]
   },
@@ -71,7 +70,7 @@
       },
       {
         "kind" : "text",
-        "text" : ": "
+        "text" : ": any "
       },
       {
         "kind" : "typeIdentifier",
@@ -92,6 +91,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Ref.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Ref.swift#L64"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -138,7 +141,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
+              "text" : ": any "
             },
             {
               "kind" : "typeIdentifier",
@@ -223,17 +226,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/ref"
 },
-"doc://FFFoundation/documentation/FFFoundation/Ref/Encodable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/Encodable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Encodable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/ref\/encodable-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/Ref/encode(to:)": {
   "abstract" : [
 
@@ -293,7 +285,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

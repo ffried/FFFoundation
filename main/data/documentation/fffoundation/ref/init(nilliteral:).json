@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByNilLiteral-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref"
       ]
     ]
   },
@@ -79,6 +78,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Ref.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Ref.swift#L77"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -188,17 +191,6 @@
   "title" : "Ref",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/ref"
-},
-"doc://FFFoundation/documentation/FFFoundation/Ref/ExpressibleByNilLiteral-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/ExpressibleByNilLiteral-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByNilLiteral Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/ref\/expressiblebynilliteral-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Ref/init(nilLiteral:)": {
   "abstract" : [

@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak\/Decodable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak"
       ]
     ]
   },
@@ -63,7 +62,7 @@
       },
       {
         "kind" : "text",
-        "text" : ": "
+        "text" : ": any "
       },
       {
         "kind" : "typeIdentifier",
@@ -84,6 +83,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Weak.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Weak.swift#L97"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -122,7 +125,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
+              "text" : ": any "
             },
             {
               "kind" : "typeIdentifier",
@@ -207,17 +210,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/weak"
 },
-"doc://FFFoundation/documentation/FFFoundation/Weak/Decodable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak\/Decodable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Decodable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/weak\/decodable-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/Weak/init(from:)": {
   "abstract" : [
 
@@ -269,7 +261,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

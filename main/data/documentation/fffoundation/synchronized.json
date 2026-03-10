@@ -38,6 +38,10 @@
         "text" : "Synchronized"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Synchronized.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Synchronized.swift#L24"
+    },
     "role" : "symbol",
     "roleHeading" : "Class",
     "symbolKind" : "class",
@@ -104,6 +108,7 @@
     {
       "identifiers" : [
         "doc:\/\/FFFoundation\/SL",
+        "doc:\/\/FFFoundation\/s8CopyableP",
         "doc:\/\/FFFoundation\/Se",
         "doc:\/\/FFFoundation\/SE",
         "doc:\/\/FFFoundation\/SQ",
@@ -116,7 +121,8 @@
         "doc:\/\/FFFoundation\/s26ExpressibleByStringLiteralP",
         "doc:\/\/FFFoundation\/s33ExpressibleByUnicodeScalarLiteralP",
         "doc:\/\/FFFoundation\/SH",
-        "doc:\/\/FFFoundation\/s8SendableP"
+        "doc:\/\/FFFoundation\/s8SendableP",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -133,6 +139,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/init()",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/init(value:qos:)",
@@ -141,12 +149,16 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/wrappedValue"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/combined(with:)-2j0co",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/combined(with:)-7o6uw",
@@ -159,12 +171,15 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Subscripts",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/subscript(_:)"
       ],
       "title" : "Subscripts"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Comparable-Implementations",
@@ -1185,6 +1200,11 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/synchronized\/wrappedvalue"
 },
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
 "doc://FFFoundation/s23ExpressibleByNilLiteralP": {
   "identifier" : "doc:\/\/FFFoundation\/s23ExpressibleByNilLiteralP",
   "title" : "Swift.ExpressibleByNilLiteral",
@@ -1223,6 +1243,11 @@
 "doc://FFFoundation/s43ExpressibleByExtendedGraphemeClusterLiteralP": {
   "identifier" : "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
   "title" : "Swift.ExpressibleByExtendedGraphemeClusterLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8CopyableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
+  "title" : "Swift.Copyable",
   "type" : "unresolvable"
 },
 "doc://FFFoundation/s8SendableP": {

@@ -33,6 +33,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Extended-Protocols",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/MutableCollection",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Sequence"
@@ -40,6 +42,8 @@
       "title" : "Extended Protocols"
     },
     {
+      "anchor" : "Extended-Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Array",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Bool",
@@ -48,12 +52,15 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Double",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Float",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Int",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/LazySequence",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Set",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/String"
       ],
       "title" : "Extended Structures"
     },
     {
+      "anchor" : "Extended-Enumerations",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Optional"
       ],
@@ -319,6 +326,38 @@
   "title" : "Int",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/swift\/int"
+},
+"doc://FFFoundation/documentation/FFFoundation/Swift/LazySequence": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:s12LazySequenceV",
+      "text" : "LazySequence"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/LazySequence",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "LazySequence"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "LazySequence",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/swift\/lazysequence"
 },
 "doc://FFFoundation/documentation/FFFoundation/Swift/MutableCollection": {
   "abstract" : [

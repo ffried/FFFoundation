@@ -4,8 +4,7 @@
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit\/NSImage",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit\/NSImage\/Cachable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit\/NSImage"
       ]
     ]
   },
@@ -80,6 +79,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "CacheManager.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/CacheManager.swift#L235"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Method",
     "symbolKind" : "method",
@@ -230,17 +233,6 @@
   "title" : "NSImage",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/appkit\/nsimage"
-},
-"doc://FFFoundation/documentation/FFFoundation/AppKit/NSImage/Cachable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit\/NSImage\/Cachable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Cachable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/appkit\/nsimage\/cachable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/AppKit/NSImage/fromCache(data:)": {
   "abstract" : [

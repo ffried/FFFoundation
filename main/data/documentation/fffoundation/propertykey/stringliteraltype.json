@@ -39,6 +39,10 @@
         "text" : "StringLiteralType"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "PropertyKey.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/PropertyKey.swift#L23"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Alias",
     "symbolKind" : "typealias",

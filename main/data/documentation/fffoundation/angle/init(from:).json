@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Decodable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle"
       ]
     ]
   },
@@ -95,7 +94,7 @@
       },
       {
         "kind" : "text",
-        "text" : ": "
+        "text" : ": any "
       },
       {
         "kind" : "typeIdentifier",
@@ -116,6 +115,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Angle.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Geometry\/Angle.swift#L252"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -154,7 +157,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
+              "text" : ": any "
             },
             {
               "kind" : "typeIdentifier",
@@ -239,17 +242,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle"
 },
-"doc://FFFoundation/documentation/FFFoundation/Angle/Decodable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Decodable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Decodable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/decodable-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/Angle/init(from:)": {
   "abstract" : [
 
@@ -333,7 +325,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

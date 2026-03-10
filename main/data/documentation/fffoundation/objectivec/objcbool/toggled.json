@@ -4,8 +4,7 @@
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC\/ObjCBool",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC\/ObjCBool\/Togglable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC\/ObjCBool"
       ]
     ]
   },
@@ -48,6 +47,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Togglable.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Togglable.swift#L47"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -178,17 +181,6 @@
   "title" : "ObjCBool",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/objectivec\/objcbool"
-},
-"doc://FFFoundation/documentation/FFFoundation/ObjectiveC/ObjCBool/Togglable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ObjectiveC\/ObjCBool\/Togglable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Togglable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/objectivec\/objcbool\/togglable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/ObjectiveC/ObjCBool/toggled": {
   "abstract" : [

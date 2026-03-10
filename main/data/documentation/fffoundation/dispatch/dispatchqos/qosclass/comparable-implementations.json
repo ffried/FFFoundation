@@ -21,6 +21,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "Comparable Implementations"
   },
   "schemaVersion" : {
@@ -33,6 +34,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Operators",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/...(_:)-1ek9g",
@@ -40,7 +42,7 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/...(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/.._(_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/.._(_:_:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_(_:_:)-50q5w",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_(_:_:)-w4b4",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_=(_:_:)-23c4v",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_=(_:_:)-2inhw"
@@ -526,7 +528,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/'.._(_:_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/_(_:_:)-50q5w": {
+"doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/_(_:_:)": {
   "abstract" : [
 
   ],
@@ -601,12 +603,12 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_(_:_:)-50q5w",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/_(_:_:)-50q5w"
+  "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/_(_:_:)"
 },
 "doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/_(_:_:)-w4b4": {
   "abstract" : [

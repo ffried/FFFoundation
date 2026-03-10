@@ -82,6 +82,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/FFFoundation\/s8CopyableP",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint"
       ],
       "kind" : "relationships",
@@ -99,6 +100,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoreFoundation\/CGPoint\/TriangulatablePoint-Implementations"
@@ -215,6 +217,11 @@
   "title" : "TriangulatablePoint",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/triangulatablepoint"
+},
+"doc://FFFoundation/s8CopyableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
 }
 }
 }

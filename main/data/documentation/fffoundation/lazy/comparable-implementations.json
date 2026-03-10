@@ -19,6 +19,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "Comparable Implementations"
   },
   "schemaVersion" : {
@@ -31,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Operators",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/...(_:)-1cqnz",
@@ -38,8 +40,8 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/...(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/.._(_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/.._(_:_:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_(_:_:)-1tcbb",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_(_:_:)-h05i",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_=(_:_:)-2t9no",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_=(_:_:)-9lgno"
       ],
@@ -471,80 +473,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/lazy\/'.._(_:_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/Lazy/_(_:_:)-1tcbb": {
-  "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether the value of the first argument",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is greater than that of the second argument.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : ">"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_(_:_:)-1tcbb",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : ">(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/lazy\/_(_:_:)-1tcbb"
-},
-"doc://FFFoundation/documentation/FFFoundation/Lazy/_(_:_:)-h05i": {
+"doc://FFFoundation/documentation/FFFoundation/Lazy/_(_:_:)": {
   "abstract" : [
 
   ],
@@ -649,12 +578,85 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_(_:_:)-h05i",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/lazy\/_(_:_:)-h05i"
+  "url" : "\/documentation\/fffoundation\/lazy\/_(_:_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Lazy/_(_:_:)-1tcbb": {
+  "abstract" : [
+    {
+      "text" : "Returns a Boolean value indicating whether the value of the first argument",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "is greater than that of the second argument.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : ">"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_(_:_:)-1tcbb",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : ">(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/lazy\/_(_:_:)-1tcbb"
 },
 "doc://FFFoundation/documentation/FFFoundation/Lazy/_=(_:_:)-2t9no": {
   "abstract" : [

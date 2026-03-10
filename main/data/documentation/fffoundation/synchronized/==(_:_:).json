@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Equatable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized"
       ]
     ]
   },
@@ -122,6 +121,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Synchronized.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Synchronized.swift#L99"
+    },
     "role" : "symbol",
     "roleHeading" : "Operator",
     "symbolKind" : "op",
@@ -404,17 +407,6 @@
   "title" : "==(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/synchronized\/==(_:_:)"
-},
-"doc://FFFoundation/documentation/FFFoundation/Synchronized/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/synchronized\/equatable-implementations"
 }
 }
 }

@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Hashable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW"
       ]
     ]
   },
@@ -96,6 +95,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "CoW.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/CoW.swift#L88"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -230,17 +233,6 @@
   "title" : "CoW",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cow"
-},
-"doc://FFFoundation/documentation/FFFoundation/CoW/Hashable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Hashable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Hashable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/cow\/hashable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/CoW/hash(into:)": {
   "abstract" : [

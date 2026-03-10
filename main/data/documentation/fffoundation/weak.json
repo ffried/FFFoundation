@@ -38,6 +38,10 @@
         "text" : "Weak"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Weak.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Weak.swift#L22"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -111,6 +115,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/FFFoundation\/s8CopyableP",
         "doc:\/\/FFFoundation\/Se",
         "doc:\/\/FFFoundation\/SE",
         "doc:\/\/FFFoundation\/SQ",
@@ -123,7 +128,8 @@
         "doc:\/\/FFFoundation\/s26ExpressibleByStringLiteralP",
         "doc:\/\/FFFoundation\/s33ExpressibleByUnicodeScalarLiteralP",
         "doc:\/\/FFFoundation\/SH",
-        "doc:\/\/FFFoundation\/s8SendableP"
+        "doc:\/\/FFFoundation\/s8SendableP",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -140,6 +146,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak\/init()",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak\/init(object:)",
@@ -148,6 +156,8 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak\/wasReleased",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak\/wrappedValue"
@@ -155,6 +165,7 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Weak\/Decodable-Implementations",
@@ -579,6 +590,11 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/weak\/wrappedvalue"
 },
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
 "doc://FFFoundation/s23ExpressibleByNilLiteralP": {
   "identifier" : "doc:\/\/FFFoundation\/s23ExpressibleByNilLiteralP",
   "title" : "Swift.ExpressibleByNilLiteral",
@@ -617,6 +633,11 @@
 "doc://FFFoundation/s43ExpressibleByExtendedGraphemeClusterLiteralP": {
   "identifier" : "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
   "title" : "Swift.ExpressibleByExtendedGraphemeClusterLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8CopyableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
+  "title" : "Swift.Copyable",
   "type" : "unresolvable"
 },
 "doc://FFFoundation/s8SendableP": {

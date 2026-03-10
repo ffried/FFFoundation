@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/ExpressibleByUnicodeScalarLiteral-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey"
       ]
     ]
   },
@@ -75,6 +74,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
         "text" : "ExtendedGraphemeClusterLiteralType"
       },
       {
@@ -140,6 +140,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
               "text" : "ExtendedGraphemeClusterLiteralType"
             },
             {
@@ -216,17 +217,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/propertykey"
 },
-"doc://FFFoundation/documentation/FFFoundation/PropertyKey/ExpressibleByUnicodeScalarLiteral-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/ExpressibleByUnicodeScalarLiteral-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByUnicodeScalarLiteral Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/propertykey\/expressiblebyunicodescalarliteral-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/PropertyKey/init(unicodeScalarLiteral:)": {
   "abstract" : [
 
@@ -290,6 +280,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
       "text" : "ExtendedGraphemeClusterLiteralType"
     },
     {

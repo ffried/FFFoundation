@@ -83,6 +83,8 @@
     {
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PrimitiveUserDefaultStorable",
+        "doc:\/\/FFFoundation\/s8CopyableP",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable"
       ],
       "kind" : "relationships",
@@ -100,6 +102,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Bool\/PrimitiveUserDefaultStorable-Implementations",
@@ -259,6 +262,16 @@
   "title" : "Togglable",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/togglable"
+},
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8CopyableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
 }
 }
 }

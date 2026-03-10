@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey"
       ]
     ]
   },
@@ -75,6 +74,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s26ExpressibleByStringLiteralP0cD4TypeQa",
         "text" : "StringLiteralType"
       },
       {
@@ -140,6 +140,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s26ExpressibleByStringLiteralP0cD4TypeQa",
               "text" : "StringLiteralType"
             },
             {
@@ -216,17 +217,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/propertykey"
 },
-"doc://FFFoundation/documentation/FFFoundation/PropertyKey/ExpressibleByExtendedGraphemeClusterLiteral-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByExtendedGraphemeClusterLiteral Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/propertykey\/expressiblebyextendedgraphemeclusterliteral-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/PropertyKey/init(extendedGraphemeClusterLiteral:)": {
   "abstract" : [
 
@@ -290,6 +280,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s26ExpressibleByStringLiteralP0cD4TypeQa",
       "text" : "StringLiteralType"
     },
     {

@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/ExpressibleByStringInterpolation-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy"
       ]
     ]
   },
@@ -75,6 +74,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s32ExpressibleByStringInterpolationP0cD0Qa",
         "text" : "StringInterpolation"
       },
       {
@@ -87,6 +87,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Lazy.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Lazy.swift#L139"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -129,6 +133,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s32ExpressibleByStringInterpolationP0cD0Qa",
               "text" : "StringInterpolation"
             },
             {
@@ -205,17 +210,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/lazy"
 },
-"doc://FFFoundation/documentation/FFFoundation/Lazy/ExpressibleByStringInterpolation-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/ExpressibleByStringInterpolation-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByStringInterpolation Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/lazy\/expressiblebystringinterpolation-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/Lazy/init(stringInterpolation:)": {
   "abstract" : [
 
@@ -279,6 +273,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s32ExpressibleByStringInterpolationP0cD0Qa",
       "text" : "StringInterpolation"
     },
     {

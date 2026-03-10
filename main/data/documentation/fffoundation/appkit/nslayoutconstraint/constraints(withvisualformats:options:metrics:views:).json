@@ -184,6 +184,10 @@
         "unavailable" : false
       }
     ],
+    "remoteSource" : {
+      "fileName" : "NSLayoutConstraint+FFAdditions.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/NSLayoutConstraint+FFAdditions.swift#L42"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Method",
     "symbolKind" : "method",
@@ -380,6 +384,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:ST7ElementQa",
               "text" : "Element"
             },
             {

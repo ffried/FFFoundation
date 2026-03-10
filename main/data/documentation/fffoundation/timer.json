@@ -38,6 +38,10 @@
         "text" : "Timer"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Timer.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Timer.swift#L27"
+    },
     "role" : "symbol",
     "roleHeading" : "Class",
     "symbolKind" : "class",
@@ -102,12 +106,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Timer\/init(interval:repeats:queue:userInfo:block:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Timer\/block-swift.property",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Timer\/interval",
@@ -119,6 +127,8 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Timer\/fire()",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Timer\/invalidate()",
@@ -127,6 +137,8 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Timer\/Block-swift.typealias"
       ],

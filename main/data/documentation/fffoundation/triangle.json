@@ -38,6 +38,10 @@
         "text" : "Triangle"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Triangle.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Geometry\/Triangle.swift#L38"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -113,7 +117,9 @@
               "text" : "."
             },
             {
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint\/Value",
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation19TriangulatablePointP5ValueQa",
               "text" : "Value"
             },
             {
@@ -129,7 +135,9 @@
               "text" : "."
             },
             {
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint\/Value",
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation19TriangulatablePointP5ValueQa",
               "text" : "Value"
             },
             {
@@ -138,6 +146,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sx6StrideQa",
               "text" : "Stride"
             }
           ]
@@ -151,7 +160,8 @@
       "identifiers" : [
         "doc:\/\/FFFoundation\/SQ",
         "doc:\/\/FFFoundation\/SH",
-        "doc:\/\/FFFoundation\/s8SendableP"
+        "doc:\/\/FFFoundation\/s8SendableP",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -168,12 +178,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Operators",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle\/==(_:_:)"
       ],
       "title" : "Operators"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle\/init(a:b:c:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle\/init(orthogonallyOnCWithA:b:)"
@@ -181,6 +195,8 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle\/_-2jn26",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle\/_-96pkw",
@@ -198,12 +214,16 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle\/hash(into:)"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle\/Angle",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle\/Distance"
@@ -211,6 +231,7 @@
       "title" : "Type Aliases"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle\/Equatable-Implementations"
@@ -1879,6 +1900,46 @@
   "title" : "TriangulatablePoint",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/triangulatablepoint"
+},
+"doc://FFFoundation/documentation/FFFoundation/TriangulatablePoint/Value": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "associatedtype"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : " : "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation14GeometricValueP",
+      "text" : "GeometricValue"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint\/Value",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "Value",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/triangulatablepoint\/value"
+},
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://FFFoundation/s8SendableP": {
   "identifier" : "doc:\/\/FFFoundation\/s8SendableP",

@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/ExpressibleByBooleanLiteral-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy"
       ]
     ]
   },
@@ -75,6 +74,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s27ExpressibleByBooleanLiteralP0cD4TypeQa",
         "text" : "BooleanLiteralType"
       },
       {
@@ -87,6 +87,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Lazy.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Lazy.swift#L103"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -137,6 +141,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s27ExpressibleByBooleanLiteralP0cD4TypeQa",
               "text" : "BooleanLiteralType"
             },
             {
@@ -213,17 +218,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/lazy"
 },
-"doc://FFFoundation/documentation/FFFoundation/Lazy/ExpressibleByBooleanLiteral-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/ExpressibleByBooleanLiteral-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByBooleanLiteral Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/lazy\/expressiblebybooleanliteral-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/Lazy/init(booleanLiteral:)": {
   "abstract" : [
 
@@ -287,6 +281,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s27ExpressibleByBooleanLiteralP0cD4TypeQa",
       "text" : "BooleanLiteralType"
     },
     {

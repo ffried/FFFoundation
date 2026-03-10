@@ -39,6 +39,10 @@
         "text" : "Distance"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Triangle.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Geometry\/Triangle.swift#L40"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Alias",
     "symbolKind" : "typealias",
@@ -80,7 +84,9 @@
               "text" : "."
             },
             {
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint\/Value",
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation19TriangulatablePointP5ValueQa",
               "text" : "Value"
             }
           ]
@@ -183,6 +189,41 @@
   "title" : "Triangle.Distance",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/triangle\/distance"
+},
+"doc://FFFoundation/documentation/FFFoundation/TriangulatablePoint/Value": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "associatedtype"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : " : "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation14GeometricValueP",
+      "text" : "GeometricValue"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint\/Value",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "Value",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/triangulatablepoint\/value"
 }
 }
 }

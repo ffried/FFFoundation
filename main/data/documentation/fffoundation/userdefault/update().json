@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/DynamicProperty-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault"
       ]
     ]
   },
@@ -14,7 +13,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI15DynamicPropertyPAAE6updateyyF::SYNTHESIZED::s:12FFFoundation11UserDefaultV",
     "fragments" : [
       {
@@ -38,7 +37,7 @@
       {
         "name" : "FFFoundation",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -181,17 +180,6 @@
   "title" : "UserDefault",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault"
-},
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/DynamicProperty-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/DynamicProperty-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "DynamicProperty Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/dynamicproperty-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/update()": {
   "abstract" : [

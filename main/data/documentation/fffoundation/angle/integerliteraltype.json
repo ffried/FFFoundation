@@ -39,6 +39,10 @@
         "text" : "IntegerLiteralType"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Angle.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Geometry\/Angle.swift#L23"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Alias",
     "symbolKind" : "typealias",
@@ -81,6 +85,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s27ExpressibleByIntegerLiteralP0cD4TypeQa",
               "text" : "IntegerLiteralType"
             }
           ]

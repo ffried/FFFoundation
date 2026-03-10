@@ -85,7 +85,9 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Cachable",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diffable",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PrimitiveUserDefaultStorable",
-        "doc:\/\/FFFoundation\/SQ"
+        "doc:\/\/FFFoundation\/s8CopyableP",
+        "doc:\/\/FFFoundation\/SQ",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -102,12 +104,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/String\/init(class:removeNamespace:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/String\/height(forWidth:attributes:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/String\/size(forWidth:attributes:)"
@@ -115,6 +121,7 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/String\/Cachable-Implementations",
@@ -538,6 +545,16 @@
   "title" : "size(forWidth:attributes:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/swift\/string\/size(forwidth:attributes:)"
+},
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8CopyableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
 }
 }
 }

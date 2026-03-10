@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Decodable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized"
       ]
     ]
   },
@@ -71,7 +70,7 @@
       },
       {
         "kind" : "text",
-        "text" : ": "
+        "text" : ": any "
       },
       {
         "kind" : "typeIdentifier",
@@ -92,6 +91,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Synchronized.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Synchronized.swift#L125"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -138,7 +141,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
+              "text" : ": any "
             },
             {
               "kind" : "typeIdentifier",
@@ -223,17 +226,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/synchronized"
 },
-"doc://FFFoundation/documentation/FFFoundation/Synchronized/Decodable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Decodable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Decodable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/synchronized\/decodable-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/Synchronized/init(from:)": {
   "abstract" : [
 
@@ -293,7 +285,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

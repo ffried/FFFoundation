@@ -38,6 +38,10 @@
         "text" : "CoW"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "CoW.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/CoW.swift#L28"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -112,6 +116,7 @@
     {
       "identifiers" : [
         "doc:\/\/FFFoundation\/SL",
+        "doc:\/\/FFFoundation\/s8CopyableP",
         "doc:\/\/FFFoundation\/Se",
         "doc:\/\/FFFoundation\/SE",
         "doc:\/\/FFFoundation\/SQ",
@@ -124,7 +129,8 @@
         "doc:\/\/FFFoundation\/s26ExpressibleByStringLiteralP",
         "doc:\/\/FFFoundation\/s33ExpressibleByUnicodeScalarLiteralP",
         "doc:\/\/FFFoundation\/SH",
-        "doc:\/\/FFFoundation\/s8SendableP"
+        "doc:\/\/FFFoundation\/s8SendableP",
+        "doc:\/\/FFFoundation\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -141,33 +147,43 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init()",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(copyingWith:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:copyingWith:)"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:copyingWith:)-612q8",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:copyingWith:)-8wvop"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/wrappedValue"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/copyIfNeeded()"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Copier"
       ],
       "title" : "Type Aliases"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Comparable-Implementations",
@@ -498,7 +514,7 @@
         "type" : "text"
       },
       {
-        "code" : "Copyable",
+        "code" : "ReferenceCopyable",
         "type" : "codeVoice"
       },
       {
@@ -646,7 +662,7 @@
         "type" : "text"
       },
       {
-        "code" : "Copyable",
+        "code" : "ReferenceCopyable",
         "type" : "codeVoice"
       },
       {
@@ -688,7 +704,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cow\/init(wrappedvalue:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/CoW/init(wrappedValue:copyingWith:)": {
+"doc://FFFoundation/documentation/FFFoundation/CoW/init(wrappedValue:copyingWith:)-612q8": {
   "abstract" : [
 
   ],
@@ -752,12 +768,115 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:copyingWith:)",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:copyingWith:)-612q8",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "init(wrappedValue:copyingWith:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/cow\/init(wrappedvalue:copyingwith:)"
+  "url" : "\/documentation\/fffoundation\/cow\/init(wrappedvalue:copyingwith:)-612q8"
+},
+"doc://FFFoundation/documentation/FFFoundation/CoW/init(wrappedValue:copyingWith:)-8wvop": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "wrappedValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "copyingWith"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation3CoWV",
+      "text" : "CoW"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation3CoWV6Copiera",
+      "text" : "Copier"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:copyingWith:)-8wvop",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(wrappedValue:copyingWith:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/cow\/init(wrappedvalue:copyingwith:)-8wvop"
 },
 "doc://FFFoundation/documentation/FFFoundation/CoW/wrappedValue": {
   "abstract" : [
@@ -791,6 +910,11 @@
   "title" : "wrappedValue",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cow\/wrappedvalue"
+},
+"doc://FFFoundation/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FFFoundation\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://FFFoundation/s23ExpressibleByNilLiteralP": {
   "identifier" : "doc:\/\/FFFoundation\/s23ExpressibleByNilLiteralP",
@@ -830,6 +954,11 @@
 "doc://FFFoundation/s43ExpressibleByExtendedGraphemeClusterLiteralP": {
   "identifier" : "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
   "title" : "Swift.ExpressibleByExtendedGraphemeClusterLiteral",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s8CopyableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
+  "title" : "Swift.Copyable",
   "type" : "unresolvable"
 },
 "doc://FFFoundation/s8SendableP": {

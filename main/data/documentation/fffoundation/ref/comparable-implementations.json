@@ -19,6 +19,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "Comparable Implementations"
   },
   "schemaVersion" : {
@@ -31,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Operators",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/...(_:)-178zv",
@@ -38,7 +40,7 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/...(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/.._(_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/.._(_:_:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_(_:_:)-1byy1",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_(_:_:)-2stvc",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_=(_:_:)-43i0o",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_=(_:_:)-jnh1"
@@ -471,7 +473,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/ref\/'.._(_:_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/Ref/_(_:_:)-1byy1": {
+"doc://FFFoundation/documentation/FFFoundation/Ref/_(_:_:)": {
   "abstract" : [
 
   ],
@@ -576,12 +578,12 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_(_:_:)-1byy1",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/ref\/_(_:_:)-1byy1"
+  "url" : "\/documentation\/fffoundation\/ref\/_(_:_:)"
 },
 "doc://FFFoundation/documentation/FFFoundation/Ref/_(_:_:)-2stvc": {
   "abstract" : [

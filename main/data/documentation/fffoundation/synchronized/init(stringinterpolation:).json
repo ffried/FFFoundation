@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByStringInterpolation-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized"
       ]
     ]
   },
@@ -83,6 +82,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s32ExpressibleByStringInterpolationP0cD0Qa",
         "text" : "StringInterpolation"
       },
       {
@@ -95,6 +95,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Synchronized.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Synchronized.swift#L173"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -145,6 +149,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s32ExpressibleByStringInterpolationP0cD0Qa",
               "text" : "StringInterpolation"
             },
             {
@@ -221,17 +226,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/synchronized"
 },
-"doc://FFFoundation/documentation/FFFoundation/Synchronized/ExpressibleByStringInterpolation-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/ExpressibleByStringInterpolation-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByStringInterpolation Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/synchronized\/expressiblebystringinterpolation-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/Synchronized/init(stringInterpolation:)": {
   "abstract" : [
 
@@ -303,6 +297,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s32ExpressibleByStringInterpolationP0cD0Qa",
       "text" : "StringInterpolation"
     },
     {

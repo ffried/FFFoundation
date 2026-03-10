@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Encodable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle"
       ]
     ]
   },
@@ -103,7 +102,7 @@
       },
       {
         "kind" : "text",
-        "text" : ": "
+        "text" : ": any "
       },
       {
         "kind" : "typeIdentifier",
@@ -124,6 +123,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Angle.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Geometry\/Angle.swift#L241"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -170,7 +173,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
+              "text" : ": any "
             },
             {
               "kind" : "typeIdentifier",
@@ -254,17 +257,6 @@
   "title" : "Angle",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle"
-},
-"doc://FFFoundation/documentation/FFFoundation/Angle/Encodable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Encodable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Encodable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/encodable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/encode(to:)": {
   "abstract" : [
@@ -357,7 +349,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

@@ -37,7 +37,7 @@
       },
       {
         "kind" : "text",
-        "text" : ": ("
+        "text" : ": (any "
       },
       {
         "kind" : "typeIdentifier",
@@ -54,6 +54,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "CacheManager.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/CacheManager.swift#L187"
+    },
     "role" : "symbol",
     "roleHeading" : "Case",
     "symbolKind" : "case",
@@ -92,7 +96,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": ("
+              "text" : ": (any "
             },
             {
               "kind" : "typeIdentifier",
@@ -200,7 +204,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": ("
+      "text" : ": (any "
     },
     {
       "kind" : "typeIdentifier",

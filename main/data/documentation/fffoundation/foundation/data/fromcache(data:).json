@@ -4,8 +4,7 @@
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/Data",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/Data\/Cachable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/Data"
       ]
     ]
   },
@@ -81,6 +80,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "CacheManager.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/CacheManager.swift#L205"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Method",
     "symbolKind" : "method",
@@ -232,17 +235,6 @@
   "title" : "Data",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/foundation\/data"
-},
-"doc://FFFoundation/documentation/FFFoundation/Foundation/Data/Cachable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/Data\/Cachable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Cachable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/foundation\/data\/cachable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Foundation/Data/fromCache(data:)": {
   "abstract" : [

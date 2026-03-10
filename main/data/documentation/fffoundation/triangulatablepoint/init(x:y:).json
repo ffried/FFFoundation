@@ -41,6 +41,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation19TriangulatablePointP5ValueQa",
         "text" : "Value"
       },
       {
@@ -65,6 +66,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation19TriangulatablePointP5ValueQa",
         "text" : "Value"
       },
       {
@@ -77,6 +79,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Triangle.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Geometry\/Triangle.swift#L27"
+    },
     "required" : true,
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -119,7 +125,9 @@
               "text" : "."
             },
             {
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint\/Value",
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation19TriangulatablePointP5ValueQa",
               "text" : "Value"
             },
             {
@@ -143,7 +151,9 @@
               "text" : "."
             },
             {
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint\/Value",
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation19TriangulatablePointP5ValueQa",
               "text" : "Value"
             },
             {
@@ -220,6 +230,41 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/triangulatablepoint"
 },
+"doc://FFFoundation/documentation/FFFoundation/TriangulatablePoint/Value": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "associatedtype"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : " : "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation14GeometricValueP",
+      "text" : "GeometricValue"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint\/Value",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "Value",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/triangulatablepoint\/value"
+},
 "doc://FFFoundation/documentation/FFFoundation/TriangulatablePoint/init(x:y:)": {
   "abstract" : [
 
@@ -251,6 +296,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation19TriangulatablePointP5ValueQa",
       "text" : "Value"
     },
     {
@@ -275,6 +321,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation19TriangulatablePointP5ValueQa",
       "text" : "Value"
     },
     {

@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/ExpressibleByNilLiteral-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW"
       ]
     ]
   },
@@ -37,7 +36,7 @@
           "type" : "text"
         },
         {
-          "code" : "Copyable",
+          "code" : "ReferenceCopyable",
           "type" : "codeVoice"
         },
         {
@@ -55,7 +54,7 @@
       ]
     },
     "extendedModule" : "FFFoundation",
-    "externalID" : "s:12FFFoundation3CoWVA2A8CopyableRzs23ExpressibleByNilLiteralRzrlE03nilG0ACyxGyt_tcfc",
+    "externalID" : "s:12FFFoundation3CoWVA2A17ReferenceCopyableRzs23ExpressibleByNilLiteralRzrlE03nilH0ACyxGyt_tcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -79,6 +78,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "CoW.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/CoW.swift#L112"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -181,17 +184,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cow"
 },
-"doc://FFFoundation/documentation/FFFoundation/CoW/ExpressibleByNilLiteral-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/ExpressibleByNilLiteral-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByNilLiteral Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/cow\/expressiblebynilliteral-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/CoW/init(nilLiteral:)": {
   "abstract" : [
 
@@ -219,7 +211,7 @@
         "type" : "text"
       },
       {
-        "code" : "Copyable",
+        "code" : "ReferenceCopyable",
         "type" : "codeVoice"
       },
       {

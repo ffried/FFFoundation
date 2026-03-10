@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Size",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Size\/Decodable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Size"
       ]
     ]
   },
@@ -79,7 +78,7 @@
       },
       {
         "kind" : "text",
-        "text" : ": "
+        "text" : ": any "
       },
       {
         "kind" : "typeIdentifier",
@@ -138,7 +137,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
+              "text" : ": any "
             },
             {
               "kind" : "typeIdentifier",
@@ -223,17 +222,6 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/size"
 },
-"doc://FFFoundation/documentation/FFFoundation/Size/Decodable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Size\/Decodable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Decodable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/size\/decodable-implementations"
-},
 "doc://FFFoundation/documentation/FFFoundation/Size/init(from:)": {
   "abstract" : [
 
@@ -301,7 +289,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

@@ -4,8 +4,7 @@
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Double",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Double\/GeometricValue-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Double"
       ]
     ]
   },
@@ -48,6 +47,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "GeometricValue.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Geometry\/GeometricValue.swift#L38"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -166,17 +169,6 @@
   "title" : "Double",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/swift\/double"
-},
-"doc://FFFoundation/documentation/FFFoundation/Swift/Double/GeometricValue-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Double\/GeometricValue-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "GeometricValue Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/swift\/double\/geometricvalue-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Swift/Double/atan()": {
   "abstract" : [

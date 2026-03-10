@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Hashable-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized"
       ]
     ]
   },
@@ -96,6 +95,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Synchronized.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Synchronized.swift#L106"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -230,17 +233,6 @@
   "title" : "Synchronized",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/synchronized"
-},
-"doc://FFFoundation/documentation/FFFoundation/Synchronized/Hashable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Synchronized\/Hashable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Hashable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/synchronized\/hashable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Synchronized/hash(into:)": {
   "abstract" : [

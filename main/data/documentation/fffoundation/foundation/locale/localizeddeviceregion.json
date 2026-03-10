@@ -51,6 +51,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Locale+LanguageRegion.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/Locale+LanguageRegion.swift#L31"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",

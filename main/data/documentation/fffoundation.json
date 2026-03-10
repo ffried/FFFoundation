@@ -33,6 +33,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Classes",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture",
@@ -43,19 +45,23 @@
       "title" : "Classes"
     },
     {
+      "anchor" : "Protocols",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Cachable",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CodableUserDefaultsStorable",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Copyable",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diffable",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GeometricValue",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PrimitiveUserDefaultStorable",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ReferenceCopyable",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint"
       ],
       "title" : "Protocols"
     },
     {
+      "anchor" : "Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW",
@@ -74,6 +80,8 @@
       "title" : "Structures"
     },
     {
+      "anchor" : "Operators",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/!(_:)-4ense",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/!(_:)-8kbms",
@@ -240,8 +248,11 @@
       "title" : "Operators"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AnyTimer",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Copyable",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ElementDiff",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFutureResult",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/SimpleDiff"
@@ -249,12 +260,16 @@
       "title" : "Type Aliases"
     },
     {
+      "anchor" : "Enumerations",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CachingError"
       ],
       "title" : "Enumerations"
     },
     {
+      "anchor" : "Extended-Modules",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoreFoundation",
@@ -5238,10 +5253,11 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "protocol"
+      "text" : "typealias"
     },
     {
       "kind" : "text",
@@ -5406,6 +5422,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -5437,6 +5454,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -5691,6 +5709,37 @@
   "title" : "Ref",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/ref"
+},
+"doc://FFFoundation/documentation/FFFoundation/ReferenceCopyable": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ReferenceCopyable"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/ReferenceCopyable",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ReferenceCopyable"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ReferenceCopyable",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/referencecopyable"
 },
 "doc://FFFoundation/documentation/FFFoundation/SimpleDiff": {
   "abstract" : [

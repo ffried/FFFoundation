@@ -21,6 +21,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "ExpressibleByExtendedGraphemeClusterLiteral Implementations"
   },
   "schemaVersion" : {
@@ -33,9 +34,10 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/init(extendedGraphemeClusterLiteral:)"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/init(unicodeScalarLiteral:)"
       ],
       "title" : "Initializers"
     }
@@ -139,7 +141,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format"
 },
-"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/init(extendedGraphemeClusterLiteral:)": {
+"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/init(unicodeScalarLiteral:)": {
   "abstract" : [
 
   ],
@@ -166,7 +168,7 @@
         "type" : "text"
       },
       {
-        "code" : "Self.StringLiteralType",
+        "code" : "Self.UnicodeScalarLiteralType",
         "type" : "codeVoice"
       },
       {
@@ -186,7 +188,7 @@
     },
     {
       "kind" : "externalParam",
-      "text" : "extendedGraphemeClusterLiteral"
+      "text" : "unicodeScalarLiteral"
     },
     {
       "kind" : "text",
@@ -202,19 +204,20 @@
     },
     {
       "kind" : "typeIdentifier",
-      "text" : "StringLiteralType"
+      "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
+      "text" : "ExtendedGraphemeClusterLiteralType"
     },
     {
       "kind" : "text",
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/init(extendedGraphemeClusterLiteral:)",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/init(unicodeScalarLiteral:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(extendedGraphemeClusterLiteral:)",
+  "title" : "init(unicodeScalarLiteral:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/init(extendedgraphemeclusterliteral:)"
+  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/init(unicodescalarliteral:)"
 }
 }
 }

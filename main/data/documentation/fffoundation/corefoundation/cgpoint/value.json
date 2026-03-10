@@ -4,8 +4,7 @@
       [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoreFoundation",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoreFoundation\/CGPoint",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoreFoundation\/CGPoint\/TriangulatablePoint-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoreFoundation\/CGPoint"
       ]
     ]
   },
@@ -45,6 +44,10 @@
         "text" : "Value"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Triangle.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Geometry\/Triangle.swift#L34"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Alias",
     "symbolKind" : "typealias",
@@ -163,17 +166,6 @@
   "title" : "CGPoint",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/corefoundation\/cgpoint"
-},
-"doc://FFFoundation/documentation/FFFoundation/CoreFoundation/CGPoint/TriangulatablePoint-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoreFoundation\/CGPoint\/TriangulatablePoint-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "TriangulatablePoint Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/corefoundation\/cgpoint\/triangulatablepoint-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/CoreFoundation/CGPoint/Value": {
   "abstract" : [

@@ -89,6 +89,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit\/NSLayoutConstraint\/MetricValueType",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit\/NSLayoutConstraint\/MetricsDictionary",
@@ -99,6 +101,8 @@
       "title" : "Type Aliases"
     },
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit\/NSLayoutConstraint\/constraints(withVisualFormats:options:metrics:views:)"
       ],

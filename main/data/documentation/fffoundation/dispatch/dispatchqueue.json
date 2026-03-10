@@ -14,7 +14,7 @@
   "kind" : "symbol",
   "metadata" : {
     "extendedModule" : "Dispatch",
-    "externalID" : "s:e:s:So17OS_dispatch_queueC12FFFoundationE8asFuture2doAC9GCDFutureCyxGxyc_tlF",
+    "externalID" : "s:e:s:So17OS_dispatch_queueC12FFFoundationE8asFuture2doAC9GCDFutureCyxGxyYbYTc_ts8SendableRzlF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -89,9 +89,11 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQueue\/asFuture(do:)-20al8",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQueue\/asFuture(do:)-6ijes"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQueue\/asFuture(do:)-13427",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQueue\/asFuture(do:)-5rk6j"
       ],
       "title" : "Instance Methods"
     }
@@ -164,10 +166,11 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqueue"
 },
-"doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQueue/asFuture(do:)-20al8": {
+"doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQueue/asFuture(do:)-13427": {
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -202,6 +205,10 @@
       "text" : ": () -> "
     },
     {
+      "kind" : "keyword",
+      "text" : "sending "
+    },
+    {
       "kind" : "typeIdentifier",
       "text" : "T"
     },
@@ -227,17 +234,18 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQueue\/asFuture(do:)-20al8",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQueue\/asFuture(do:)-13427",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "asFuture(do:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqueue\/asfuture(do:)-20al8"
+  "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqueue\/asfuture(do:)-13427"
 },
-"doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQueue/asFuture(do:)-6ijes": {
+"doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQueue/asFuture(do:)-5rk6j": {
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -280,6 +288,10 @@
       "text" : " -> "
     },
     {
+      "kind" : "keyword",
+      "text" : "sending "
+    },
+    {
       "kind" : "typeIdentifier",
       "text" : "T"
     },
@@ -302,7 +314,7 @@
     },
     {
       "kind" : "text",
-      "text" : ", "
+      "text" : ", any "
     },
     {
       "kind" : "typeIdentifier",
@@ -314,12 +326,12 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQueue\/asFuture(do:)-6ijes",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQueue\/asFuture(do:)-5rk6j",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "asFuture(do:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqueue\/asfuture(do:)-6ijes"
+  "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqueue\/asfuture(do:)-5rk6j"
 }
 }
 }

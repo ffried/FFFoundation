@@ -41,6 +41,10 @@
         "name" : "FFFoundation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "GeometricValue.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Geometry\/GeometricValue.swift#L26"
+    },
     "required" : true,
     "role" : "symbol",
     "roleHeading" : "Instance Method",

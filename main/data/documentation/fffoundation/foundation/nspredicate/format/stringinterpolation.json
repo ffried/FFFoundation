@@ -5,8 +5,7 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByStringInterpolation-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format"
       ]
     ]
   },
@@ -43,6 +42,10 @@
         "text" : "StringInterpolation"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Predicate+StringInterpolation.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/Predicate+StringInterpolation.swift#L51"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -97,12 +100,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/init(literalCapacity:interpolationCount:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-4j0xu",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/appendInterpolation(_:)-4k84l",
@@ -120,6 +127,8 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/StringLiteralType"
       ],
@@ -224,17 +233,6 @@
   "title" : "NSPredicate.Format",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format"
-},
-"doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/ExpressibleByStringInterpolation-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/ExpressibleByStringInterpolation-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByStringInterpolation Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/foundation\/nspredicate\/format\/expressiblebystringinterpolation-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/Foundation/NSPredicate/Format/StringInterpolation": {
   "abstract" : [

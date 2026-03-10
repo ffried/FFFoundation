@@ -15,7 +15,7 @@
   "kind" : "symbol",
   "metadata" : {
     "extendedModule" : "Foundation",
-    "externalID" : "s:So16NSOperationQueueC12FFFoundationE040addOperationWithBlockAndWaitIfNotCurrentB05blockyyyc_tF",
+    "externalID" : "s:So16NSOperationQueueC12FFFoundationE040addOperationWithBlockAndWaitIfNotCurrentB05blockyyyYbc_tF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -50,6 +50,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "OperationQueue+FFAdditions.swift",
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/OperationQueue+FFAdditions.swift#L39"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -91,12 +95,12 @@
               "text" : ": "
             },
             {
-              "kind" : "keyword",
-              "text" : "@escaping"
+              "kind" : "attribute",
+              "text" : "@escaping "
             },
             {
               "kind" : "text",
-              "text" : " () -> ())"
+              "text" : "() -> ())"
             }
           ]
         }

@@ -145,7 +145,7 @@ public final class GCDFuture<Value: Sendable>: @unchecked Sendable {
             unsafe pointer.deallocate()
         }
     }
-#elseif compiler(>=6.1)
+#elseif compiler(<6.1)
     fileprivate struct UnsafeSendingPointer: @unchecked Sendable, ~Swift.Copyable {
         private let pointer: UnsafeMutablePointer<Value>
 

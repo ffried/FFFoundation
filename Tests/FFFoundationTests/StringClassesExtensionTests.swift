@@ -1,33 +1,24 @@
-import XCTest
+import Testing
 import Foundation
 @testable import FFFoundation
 
 #if os(Linux)
 final class StringClassesExtensionTestClass: NSObject {}
 #else
-@objc
-final class StringClassesExtensionTestClass: NSObject {}
+@objc final class StringClassesExtensionTestClass: NSObject {}
 #endif
 
-final class StringClassesExtensionTests: XCTestCase {
-
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-
-    func testStringCreatingFromClassRemovingNamespace() {
+@Suite
+struct StringClassesExtensionTests {
+    @Test
+    func stringCreatingFromClassRemovingNamespace() {
         let str = String(class: StringClassesExtensionTestClass.self, removeNamespace: true)
-        XCTAssertEqual(str, "StringClassesExtensionTestClass")
+        #expect(str == "StringClassesExtensionTestClass")
     }
 
-    func testStringCreatingFromClassWithoutRemovingNamespace() {
+    @Test
+    func stringCreatingFromClassWithoutRemovingNamespace() {
         let str = String(class: StringClassesExtensionTestClass.self, removeNamespace: false)
-        XCTAssertEqual(str, NSStringFromClass(StringClassesExtensionTestClass.self))
+        #expect(str == NSStringFromClass(StringClassesExtensionTestClass.self))
     }
 }

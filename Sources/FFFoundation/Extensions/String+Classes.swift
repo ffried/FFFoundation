@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-import func Foundation.NSStringFromClass
+import Foundation
 
 extension String {
     /// Swift-aware NSStringFromClass. Removes '.' in Swift class names if `removeNamespace` is `true`.

@@ -19,9 +19,7 @@
 //
 
 #if canImport(CoreGraphics)
-import class Foundation.NSAttributedString
-import struct CoreGraphics.CGFloat
-import struct CoreGraphics.CGSize
+public import Foundation
 
 extension String {
     public func size(forWidth width: CGFloat, attributes: NSAttributedString.AttributesDictionary? = nil) -> CGSize {

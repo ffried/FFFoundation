@@ -22,7 +22,8 @@
 public struct Lazy<Deferred> {
     private let constructor: () -> Deferred
 
-    @CoW private var _wrappedValue: Ref<Deferred?> = .init()
+    @CoW
+    private var _wrappedValue: Ref<Deferred?> = .init()
 
     public var wrappedValue: Deferred {
         get {

@@ -19,14 +19,11 @@
 //
 
 #if (canImport(UIKit) && !os(watchOS)) || canImport(AppKit) 
-import class Foundation.NSNumber
+public import Foundation
 #if canImport(UIKit)
-import class UIKit.UIView
-import class UIKit.NSLayoutConstraint
-import struct UIKit.CGFloat
+public import UIKit
 #elseif canImport(AppKit)
-import class AppKit.NSView
-import class AppKit.NSLayoutConstraint
+public import AppKit
 #endif
 
 @available(macOS 10.7, iOS 6.0, tvOS 6.0, *)
@@ -54,10 +51,12 @@ extension NSLayoutConstraint {
 
 @available(macOS 10.7, iOS 6.0, tvOS 6.0, *)
 extension Sequence where Element == NSLayoutConstraint {
+    @MainActor
     public func activate() {
         NSLayoutConstraint.activate(Array(self))
     }
 
+    @MainActor
     public func deactivate() {
         NSLayoutConstraint.deactivate(Array(self))
     }
@@ -65,6 +64,7 @@ extension Sequence where Element == NSLayoutConstraint {
 
 @available(macOS 10.7, iOS 6.0, tvOS 6.0, *)
 extension Sequence where Element == NSLayoutConstraint.VisualFormatType {
+    @MainActor
     public func constraints(with views: NSLayoutConstraint.ViewsDictionary,
                             options: NSLayoutConstraint.FormatOptions = [],
                             metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {

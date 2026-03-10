@@ -17,7 +17,7 @@
 //  limitations under the License.
 //
 
-import Foundation
+public import Foundation
 #if canImport(os)
 import os
 #endif
@@ -29,7 +29,7 @@ extension UserDefaults {
     }
 }
 
-public protocol PrimitiveUserDefaultStorable {
+public protocol PrimitiveUserDefaultStorable: SendableMetatype {
     static func get(from userDefaults: UserDefaults, forKey key: String) -> Self?
     func set(to userDefaults: UserDefaults, forKey key: String)
 }
@@ -44,8 +44,23 @@ extension CodableUserDefaultsStorable {
             return try PropertyListDecoder().decode(Self.self, from: data)
         } catch {
 #if !os(Linux)
+#if compiler(>=6.2)
+            unsafe os_log("[UserDefault] Could not decode %@ for key %@ from user defaults %@",
+                          log: .ffFoundation, type: .error, String(describing: Self.self), key, userDefaults)
+#else
             os_log("[UserDefault] Could not decode %@ for key %@ from user defaults %@",
                    log: .ffFoundation, type: .error, String(describing: Self.self), key, userDefaults)
+#endif
+#else
+#if compiler(>=6.2)
+            unsafe String(describing: Self.self).withCString { type in
+                unsafe key.withCString { keyStr in
+                    unsafe String(describing: userDefaults).withCString { ud in
+                        unsafe os_log("[UserDefault] Could not decode %@ for key %@ from user defaults %@",
+                                      log: .ffFoundation, type: .error, type, keyStr, ud)
+                    }
+                }
+            }
 #else
             String(describing: Self.self).withCString { type in
                 key.withCString { keyStr in
@@ -56,18 +71,38 @@ extension CodableUserDefaultsStorable {
                 }
             }
 #endif
+#endif
             return nil
         }
     }
 
     public func set(to userDefaults: UserDefaults, forKey key: String) {
         do {
+#if compiler(>=6.2)
+            let object = unsafe try PropertyListSerialization.propertyList(from: PropertyListEncoder().encode(self), options: [], format: nil)
+#else
             let object = try PropertyListSerialization.propertyList(from: PropertyListEncoder().encode(self), options: [], format: nil)
+#endif
             userDefaults.set(object, forKey: key)
         } catch {
 #if !os(Linux)
+#if compiler(>=6.2)
+            unsafe os_log("[UserDefault] Could not encode %@ for key %@ for user defaults %@",
+                          log: .ffFoundation, type: .error, String(describing: Self.self), key, userDefaults)
+#else
             os_log("[UserDefault] Could not encode %@ for key %@ for user defaults %@",
                    log: .ffFoundation, type: .error, String(describing: Self.self), key, userDefaults)
+#endif
+#else
+#if compiler(>=6.2)
+            unsafe String(describing: Self.self).withCString { type in
+                unsafe key.withCString { keyStr in
+                    unsafe String(describing: userDefaults).withCString { ud in
+                        unsafe os_log("[UserDefault] Could not encode %@ for key %@ for user defaults %@",
+                                      log: .ffFoundation, type: .error, type, keyStr, ud)
+                    }
+                }
+            }
 #else
             String(describing: Self.self).withCString { type in
                 key.withCString { keyStr in
@@ -77,6 +112,7 @@ extension CodableUserDefaultsStorable {
                     }
                 }
             }
+#endif
 #endif
         }
     }
@@ -208,7 +244,7 @@ extension Array: PrimitiveUserDefaultStorable where Element: PrimitiveUserDefaul
 extension ContiguousArray: PrimitiveUserDefaultStorable where Element: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        (userDefaults.array(forKey: key) as? Array<Element>).map(Self.init)
+        (userDefaults.array(forKey: key) as? Array<Element>).map { Self.init($0) }
     }
 
     @inlinable
@@ -220,7 +256,7 @@ extension ContiguousArray: PrimitiveUserDefaultStorable where Element: Primitive
 extension Set: PrimitiveUserDefaultStorable where Element: PrimitiveUserDefaultStorable {
     @inlinable
     public static func get(from userDefaults: UserDefaults, forKey key: String) -> Self? {
-        (userDefaults.array(forKey: key) as? Array<Element>).map(Self.init)
+        (userDefaults.array(forKey: key) as? Array<Element>).map { Self.init($0) }
     }
 
     @inlinable

@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-import struct Foundation.Locale
+public import Foundation
 
 extension Locale {
     public static var localizedDeviceLanguage: String? {

@@ -1,109 +1,105 @@
-import XCTest
+import Testing
 @testable import FFFoundation
 
-final class TriangleTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-
-    func testTriangleBeingEquatable() {
-        let triangle1 = Triangle(orthogonallyOnCWithA: Point(x: 1, y: 1),
-                                 b: Point(x: 3, y: 4))
-        let triangle2 = Triangle(orthogonallyOnCWithA: Point(x: 2, y: 2),
-                                 b: Point(x: 4, y: 5))
-        XCTAssertEqual(triangle1, triangle2)
+@Suite
+struct TriangleTests {
+    @Test
+    func triangleBeingEquatable() {
+        let triangle1 = Triangle(orthogonallyOnCWithA: TestPoint(x: 1, y: 1),
+                                 b: TestPoint(x: 3, y: 4))
+        let triangle2 = Triangle(orthogonallyOnCWithA: TestPoint(x: 2, y: 2),
+                                 b: TestPoint(x: 4, y: 5))
+        #expect(triangle1 == triangle2)
     }
 
-    func testTriangleBeingHashable() {
+    @Test
+    func triangleBeingHashable() {
         var hasher1 = Hasher()
-        let triangle1 = Triangle(orthogonallyOnCWithA: Point(x: 1, y: 1),
-                                 b: Point(x: 3, y: 4))
+        let triangle1 = Triangle(orthogonallyOnCWithA: TestPoint(x: 1, y: 1),
+                                 b: TestPoint(x: 3, y: 4))
         triangle1.hash(into: &hasher1)
         var hasher2 = Hasher()
-        let triangle2 = Triangle(orthogonallyOnCWithA: Point(x: 2, y: 2),
-                                 b: Point(x: 4, y: 5))
+        let triangle2 = Triangle(orthogonallyOnCWithA: TestPoint(x: 2, y: 2),
+                                 b: TestPoint(x: 4, y: 5))
         triangle2.hash(into: &hasher2)
-        XCTAssertEqual(hasher1.finalize(), hasher2.finalize())
+        #expect(hasher1.finalize() == hasher2.finalize())
     }
-    
-    func testOrthogonalTriangleCalculation() {
-        let pointA = Point(x: 1, y: 1)
-        let pointB = Point(x: 3, y: 4)
+
+    @Test
+    func orthogonalTriangleCalculation() {
+        let pointA = TestPoint(x: 1, y: 1)
+        let pointB = TestPoint(x: 3, y: 4)
 
         let triangle = Triangle(orthogonallyOnCWithA: pointA, b: pointB)
         
-        XCTAssertEqual(triangle.pointA, pointA)
-        XCTAssertEqual(triangle.pointB, pointB)
-        XCTAssertEqual(triangle.pointC, Point(x: 1, y: 4))
-        XCTAssertEqual(triangle.a, 2, accuracy: .ulpOfOne)
-        XCTAssertEqual(triangle.b, 3, accuracy: .ulpOfOne)
-        XCTAssertEqual(triangle.c, 3.60555127546399, accuracy: .ulpOfOne * 4)
-        XCTAssertEqual(triangle.α, .radians(0.588002603547568), accuracy: .ulpOfOne * 2)
-        XCTAssertEqual(triangle.β, .radians(0.982793723247329), accuracy: .ulpOfOne)
-        XCTAssertEqual(triangle.γ, .pi / 2, accuracy: .ulpOfOne)
+        #expect(triangle.pointA == pointA)
+        #expect(triangle.pointB == pointB)
+        #expect(triangle.pointC == TestPoint(x: 1, y: 4))
+        #expect(abs(triangle.a.distance(to: 2)) <= .ulpOfOne)
+        #expect(abs(triangle.b.distance(to: 3)) <= .ulpOfOne)
+        #expect(abs(triangle.c.distance(to: 3.60555127546399)) <= .ulpOfOne * 4)
+        #expect(abs(triangle.α.distance(to: .radians(0.588002603547568))) <= .ulpOfOne * 2)
+        #expect(abs(triangle.β.distance(to: .radians(0.982793723247329))) <= .ulpOfOne)
+        #expect(abs(triangle.γ.distance(to: .pi / 2)) <= .ulpOfOne)
     }
 
-    func testOrthogonalTriangleWithSinglePoint() {
-        let point = Point(x: 0, y: 0)
+    @Test
+    func orthogonalTriangleWithSinglePoint() {
+        let point = TestPoint(x: 0, y: 0)
         let triangle = Triangle(orthogonallyOnCWithA: point, b: point)
-        XCTAssertEqual(triangle.points.a, point)
-        XCTAssertEqual(triangle.points.b, point)
-        XCTAssertEqual(triangle.points.c, point)
-        XCTAssertEqual(triangle.sides.a, 0)
-        XCTAssertEqual(triangle.sides.b, 0)
-        XCTAssertEqual(triangle.sides.c, 0)
-        XCTAssertTrue(triangle.angles.α.isNaN)
-        XCTAssertTrue(triangle.angles.β.isNaN)
-        XCTAssertEqual(triangle.angles.γ, .pi / 2, accuracy: .ulpOfOne)
+        #expect(triangle.points.a == point)
+        #expect(triangle.points.b == point)
+        #expect(triangle.points.c == point)
+        #expect(triangle.sides.a == 0)
+        #expect(triangle.sides.b == 0)
+        #expect(triangle.sides.c == 0)
+        #expect(triangle.angles.α.isNaN)
+        #expect(triangle.angles.β.isNaN)
+        #expect(abs(triangle.angles.γ.distance(to: .pi / 2)) <= .ulpOfOne)
     }
-    
-    func testTriangleWithAllPointsGiven() {
-        let pointA = Point(x: 1, y: 1)
-        let pointB = Point(x: 7, y: 3)
-        let pointC = Point(x: 9, y: 7)
-        let a: Point.Value = (4 * 4 + 2 * 2).squareRoot()
-        let b: Point.Value = (6 * 6 + 8 * 8).squareRoot()
-        let c: Point.Value = (2 * 2 + 6 * 6).squareRoot()
+
+    @Test
+    func triangleWithAllPointsGiven() {
+        let pointA = TestPoint(x: 1, y: 1)
+        let pointB = TestPoint(x: 7, y: 3)
+        let pointC = TestPoint(x: 9, y: 7)
+        let a: TestPoint.Value = (4 * 4 + 2 * 2).squareRoot()
+        let b: TestPoint.Value = (6 * 6 + 8 * 8).squareRoot()
+        let c: TestPoint.Value = (2 * 2 + 6 * 6).squareRoot()
         let cosα = (b * b + c * c - a * a) / (2 * b * c)
         let cosβ = (a * a + c * c - b * b) / (2 * a * c)
         let cosγ = (a * a + b * b - c * c) / (2 * a * b)
         
         let sut = Triangle(a: pointA, b: pointB, c: pointC)
         
-        XCTAssertEqual(sut.pointA, pointA)
-        XCTAssertEqual(sut.pointB, pointB)
-        XCTAssertEqual(sut.pointC, pointC)
-        XCTAssertEqual(sut.a, a)
-        XCTAssertEqual(sut.b, b)
-        XCTAssertEqual(sut.c, c)
-        XCTAssertEqual(sut.α, .radians(cosα.acos()))
-        XCTAssertEqual(sut.β, .radians(cosβ.acos()))
-        XCTAssertEqual(sut.γ, .radians(cosγ.acos()))
+        #expect(sut.pointA == pointA)
+        #expect(sut.pointB == pointB)
+        #expect(sut.pointC == pointC)
+        #expect(sut.a == a)
+        #expect(sut.b == b)
+        #expect(sut.c == c)
+        #expect(sut.α == .radians(cosα.acos()))
+        #expect(sut.β == .radians(cosβ.acos()))
+        #expect(sut.γ == .radians(cosγ.acos()))
     }
 
-    func testTriangleWithAllPointsBeingTheSame() {
-        let point = Point(x: 0, y: 0)
+    @Test
+    func triangleWithAllPointsBeingTheSame() {
+        let point = TestPoint(x: 0, y: 0)
         let triangle = Triangle(a: point, b: point, c: point)
-        XCTAssertEqual(triangle.points.a, point)
-        XCTAssertEqual(triangle.points.b, point)
-        XCTAssertEqual(triangle.points.c, point)
-        XCTAssertEqual(triangle.sides.a, 0)
-        XCTAssertEqual(triangle.sides.b, 0)
-        XCTAssertEqual(triangle.sides.c, 0)
-        XCTAssertTrue(triangle.angles.α.isNaN)
-        XCTAssertTrue(triangle.angles.β.isNaN)
-        XCTAssertTrue(triangle.angles.γ.isNaN)
+        #expect(triangle.points.a == point)
+        #expect(triangle.points.b == point)
+        #expect(triangle.points.c == point)
+        #expect(triangle.sides.a == 0)
+        #expect(triangle.sides.b == 0)
+        #expect(triangle.sides.c == 0)
+        #expect(triangle.angles.α.isNaN)
+        #expect(triangle.angles.β.isNaN)
+        #expect(triangle.angles.γ.isNaN)
     }
 }
 
-fileprivate struct Point: Equatable, TriangulatablePoint {
+fileprivate struct TestPoint: Equatable, TriangulatablePoint {
     let x: Double
     let y: Double
 }

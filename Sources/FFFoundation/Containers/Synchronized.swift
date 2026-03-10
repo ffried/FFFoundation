@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-import Dispatch
+public import Dispatch
 
 @propertyWrapper
 public final class Synchronized<Guarded>: @unchecked Sendable {

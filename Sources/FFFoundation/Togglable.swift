@@ -18,10 +18,7 @@
 //  limitations under the License.
 //
 
-import struct Foundation.ObjCBool
-#if canImport(Darwin)
-import struct Darwin.DarwinBoolean
-#endif
+public import Foundation
 
 public protocol Togglable {
     /// A inverted version of `self`.

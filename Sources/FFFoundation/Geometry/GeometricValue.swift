@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-import Foundation
+public import Foundation
 
 public protocol GeometricValue: FloatingPoint {
     func sin() -> Self

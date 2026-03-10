@@ -19,16 +19,12 @@
 //
 
 #if canImport(CoreGraphics)
-import class Foundation.NSAttributedString
-import struct CoreGraphics.CGFloat
-import struct CoreGraphics.CGSize
-import struct CoreGraphics.CGRect
-import func CoreGraphics.ceil
+public import Foundation
 
 #if canImport(UIKit)
-import struct UIKit.NSStringDrawingOptions
-#else
-import class Foundation.NSString
+import UIKit
+#elseif canImport(AppKit)
+import AppKit
 #endif
 
 extension NSAttributedString {
@@ -36,22 +32,7 @@ extension NSAttributedString {
 
     public final func size(forWidth width: CGFloat) -> CGSize {
         let boundingSize = CGSize(width: width, height: .greatestFiniteMagnitude)
-#if canImport(UIKit)
-        let options: NSStringDrawingOptions
-#else
-        let options: NSString.DrawingOptions
-#endif
-        options = .usesLineFragmentOrigin
-        let rawSize: CGRect
-#if canImport(UIKit)
-        rawSize = boundingRect(with: boundingSize, options: options, context: nil)
-#elseif canImport(AppKit)
-        if #available(macOS 10.11, *) {
-            rawSize = boundingRect(with: boundingSize, options: options, context: nil)
-        } else {
-            rawSize = boundingRect(with: boundingSize, options: options)
-        }
-#endif
+        let rawSize = boundingRect(with: boundingSize, options: .usesLineFragmentOrigin, context: nil)
         return CGSize(width: ceil(rawSize.width), height: ceil(rawSize.height))
     }
 

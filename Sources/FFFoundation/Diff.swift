@@ -18,9 +18,12 @@
 //  limitations under the License.
 //
 
+import Foundation
+
 public protocol Diffable: Equatable {
     func contains(_ other: Self) -> Bool
 }
+
 extension String: Diffable {}
 extension Substring: Diffable {}
 
@@ -121,17 +124,17 @@ extension Diff {
 
         public var description: String {
             switch self {
-            case .unchanged: return "Unchanged"
-            case .added: return "Added"
-            case .removed: return "Removed"
+            case .unchanged: "Unchanged"
+            case .added: "Added"
+            case .removed: "Removed"
             }
         }
 
         public var lineSign: String {
             switch self {
-            case .unchanged: return ""
-            case .added: return "+"
-            case .removed: return "-"
+            case .unchanged: ""
+            case .added: "+"
+            case .removed: "-"
             }
         }
 

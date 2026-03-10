@@ -1,101 +1,97 @@
-import XCTest
+import Foundation
+import Testing
 @testable import FFFoundation
 
-final class TimerTests: XCTestCase {
-    
-    var timer: AnyTimer? = nil
+fileprivate extension ExpressibleByIntegerLiteral {
+    static var nsecPerSec: Self { 1_000_000_000 }
+}
 
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        timer = nil
-        super.tearDown()
-    }
-
-    func testTimerFiringManually() {
+@Suite
+struct TimerTests {
+    @Test
+    func timerFiringManually() {
         var timerInClosure: AnyTimer?
-        timer = AnyTimer(interval: 2, block: { timerInClosure = $0 })
-        timer?.fire()
-        XCTAssertNotNil(timerInClosure)
-        XCTAssertTrue(timerInClosure === timer)
+        let timer = AnyTimer(interval: 2, block: { timerInClosure = $0 })
+        timer.fire()
+        #expect(timerInClosure === timer)
     }
 
-    func testTimerInvalidatesOnDeinit() {
-        let exp = expectation(description: "Timer must not fire")
-        exp.isInverted = true
-        let timerInterval: TimeInterval = 2.0
-        timer = AnyTimer(interval: timerInterval, block: { _ in exp.fulfill() })
-        timer?.schedule()
-        timer = nil // deinit
-        waitForExpectations(timeout: timerInterval * 2, handler: nil)
+    @Test
+    func timerInvalidatesOnDeinit() async throws {
+        try await confirmation(expectedCount: 0) { confirmation in
+            let timerInterval: TimeInterval = 2.0
+            var timer: AnyTimer? = AnyTimer(interval: timerInterval, block: { _ in confirmation() })
+            timer?.schedule()
+            timer = nil // deinit
+            try await Task.sleep(nanoseconds: UInt64(timerInterval * .nsecPerSec) * 2)
+        }
     }
 
-    func testTimerWithShortIntervalAndNoTolerance() {
-        let exp = expectation(description: "Timer with short interval and no tolerance")
-        var date = Date()
-        let timerInterval: TimeInterval = 2.0
-        let isMainThread = Thread.isMainThread
-        timer = AnyTimer(interval: timerInterval, block: { timer in
-            let interval = Date().timeIntervalSince(date)
-            XCTAssertEqual(Thread.isMainThread, isMainThread)
-            XCTAssertEqual(interval, timerInterval, accuracy: 0.02)
-            
-            exp.fulfill()
-        })
-        
-        date = Date()
-        timer?.schedule()
-        waitForExpectations(timeout: timerInterval * 2, handler: nil)
-    }
-    
-    func testTimerWithShortIntervalAndTolerance() {
-        let exp = expectation(description: "Timer with short interval and tolerance")
-        var date = Date()
-        let timerInterval: TimeInterval = 2.0
-        let tolerance: TimeInterval = 0.5
-        
-        timer = AnyTimer(interval: timerInterval, block: { timer in
-            let interval = Date().timeIntervalSince(date)
-            XCTAssertEqual(interval, timerInterval, accuracy: tolerance)
-            exp.fulfill()
-        })
-        timer?.tolerance = tolerance
-        date = Date()
-        timer?.schedule()
-        waitForExpectations(timeout: timerInterval * 2, handler: nil)
-    }
-    
-    func testRepeatingTimerWithShortIntervalAndTolerance() {
-        let exp = expectation(description: "Repeating Timer with short interval and tolerance")
-        var date = Date()
-        let timerInterval: TimeInterval = 2.0
-        let tolerance: TimeInterval = 0.5
-        var accuracies = Array<TimeInterval>()
-        
-        let repeats = 5
-        var counter = 0
-        timer = AnyTimer(interval: timerInterval, repeats: true, block: { timer in
-            let interval = Date().timeIntervalSince(date)
+    @Test
+    func timerWithShortIntervalAndNoTolerance() async throws {
+        try await confirmation(expectedCount: 1) { exp in
+            var date = Date()
+            let timerInterval: TimeInterval = 2.0
+            let timer = AnyTimer(interval: timerInterval, block: { timer in
+                #expect(abs(abs(date.timeIntervalSinceNow) - timerInterval) <= 0.02)
+                exp()
+            })
             date = Date()
-            accuracies.append(interval)
-            counter += 1
-            if counter >= repeats {
-                timer.invalidate()
-                exp.fulfill()
+            timer.schedule()
+            try await Task.sleep(nanoseconds: UInt64(timerInterval * .nsecPerSec) * 2)
+        }
+    }
+
+    @Test
+    func timerWithShortIntervalAndTolerance() async throws {
+        try await confirmation(expectedCount: 1) { exp in
+            var date = Date()
+            let timerInterval: TimeInterval = 2.0
+            let tolerance: TimeInterval = 0.5
+
+            let timer = AnyTimer(interval: timerInterval, block: { timer in
+                #expect(abs(abs(date.timeIntervalSinceNow) - timerInterval) <= tolerance)
+                exp()
+            })
+            timer.tolerance = tolerance
+            date = Date()
+            timer.schedule()
+            try await Task.sleep(nanoseconds: UInt64(timerInterval * .nsecPerSec) * 2)
+        }
+    }
+
+    @Test
+    func repeatingTimerWithShortIntervalAndTolerance() async throws {
+        try await confirmation(expectedCount: 1) { exp in
+            var date = Date()
+            let timerInterval: TimeInterval = 2.0
+            let tolerance: TimeInterval = 0.5
+            var accuracies = Array<TimeInterval>()
+
+            let repeats = 5
+            var counter = 0
+            let timer = AnyTimer(interval: timerInterval, repeats: true, block: { timer in
+                let interval = Date().timeIntervalSince(date)
+                date = Date()
+                accuracies.append(interval)
+                counter += 1
+                if counter >= repeats {
+                    timer.invalidate()
+                    exp()
+                }
+            })
+            timer.tolerance = tolerance
+            date = Date()
+            timer.schedule()
+            while counter < repeats {
+                try await Task.sleep(nanoseconds: UInt64(timerInterval * .nsecPerSec))
             }
-        })
-        timer?.tolerance = tolerance
-        date = Date()
-        timer?.schedule()
-        waitForExpectations(timeout: timerInterval * TimeInterval(repeats) * 2, handler: nil)
-        XCTAssertEqual(counter, repeats)
-        XCTAssertEqual(accuracies.count, repeats)
-        accuracies.forEach {
-            XCTAssertEqual($0, timerInterval, accuracy: tolerance + 0.09)
+
+            #expect(counter == repeats)
+            #expect(accuracies.count == repeats)
+            accuracies.forEach {
+                #expect(abs($0 - timerInterval) <= tolerance + 0.09)
+            }
         }
     }
 }

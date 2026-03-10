@@ -1,7 +1,7 @@
 import XCTest
 @testable import FFFoundation
 
-protocol GenericTestType {
+protocol GenericTestType: SendableMetatype {
     static var typeName: String { get }
     static var genericParams: Array<any GenericTestType.Type> { get }
 }
@@ -63,16 +63,6 @@ final class TypeDescriptionTests: XCTestCase {
     struct ThreeGeneric<T: GenericTestType, U: GenericTestType, V: GenericTestType>: GenericTestType {
         static var typeName: String { return "\(TypeDescriptionTests.typePrefix).ThreeGeneric" }
         static var genericParams: Array<any GenericTestType.Type> { return [T.self, U.self, V.self] }
-    }
-
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
     }
 
     func testTypeDescriptionWithNonGenericType() {

@@ -17,13 +17,16 @@
 //  limitations under the License.
 //
 
-public protocol Copyable: AnyObject {
+public protocol ReferenceCopyable: AnyObject {
     func copy() -> Self
 }
 
+@available(*, deprecated, renamed: "ReferenceCopyable")
+public typealias Copyable = ReferenceCopyable
+
 @propertyWrapper
 public struct CoW<Value: AnyObject> {
-    public typealias Copier = @Sendable (Value) -> Value
+    public typealias Copier = (Value) -> Value
 
     private let copier: Copier
 
@@ -36,10 +39,14 @@ public struct CoW<Value: AnyObject> {
         }
     }
 
-    public init(wrappedValue: Value, copyingWith copier: @escaping Copier) {
-        _wrappedValue = wrappedValue
-        self.copier = copier
+    private init(_wrappedValue: Value, _copier: @escaping Copier) {
+        self._wrappedValue = _wrappedValue
+        self.copier = _copier
         copyIfNeeded()
+    }
+
+    public init(wrappedValue: Value, copyingWith copier: @escaping Copier) {
+        self.init(_wrappedValue: wrappedValue, _copier: copier)
     }
 
     public mutating func copyIfNeeded() {
@@ -49,9 +56,13 @@ public struct CoW<Value: AnyObject> {
     }
 }
 
-extension CoW: Sendable where Value: Sendable {}
+extension CoW: @unchecked Sendable where Value: Sendable {
+    public init(wrappedValue: Value, copyingWith copier: @escaping @Sendable Copier) {
+        self.init(_wrappedValue: wrappedValue, _copier: copier)
+    }
+}
 
-extension CoW where Value: Copyable {
+extension CoW where Value: ReferenceCopyable {
     @inlinable
     public init(wrappedValue: Value) { self.init(wrappedValue: wrappedValue, copyingWith: { $0.copy() }) }
 }
@@ -61,7 +72,7 @@ extension CoW where Value: ExpressibleByNilLiteral {
     public init(copyingWith copier: @escaping Copier) { self.init(wrappedValue: nil, copyingWith: copier) }
 }
 
-extension CoW where Value: Copyable, Value: ExpressibleByNilLiteral {
+extension CoW where Value: ReferenceCopyable, Value: ExpressibleByNilLiteral {
     @inlinable
     public init() { self.init(wrappedValue: nil) }
 }
@@ -91,55 +102,55 @@ extension CoW: Encodable where Value: Encodable {
     }
 }
 
-extension CoW: Decodable where Value: Decodable, Value: Copyable {
+extension CoW: Decodable where Value: Decodable, Value: ReferenceCopyable {
     public init(from decoder: any Decoder) throws {
         try self.init(wrappedValue: Value(from: decoder))
     }
 }
 
-extension CoW: ExpressibleByNilLiteral where Value: ExpressibleByNilLiteral, Value: Copyable {
+extension CoW: ExpressibleByNilLiteral where Value: ExpressibleByNilLiteral, Value: ReferenceCopyable {
     public init(nilLiteral: ()) {
         self.init(wrappedValue: Value(nilLiteral: nilLiteral))
     }
 }
 
-extension CoW: ExpressibleByBooleanLiteral where Value: ExpressibleByBooleanLiteral, Value: Copyable {
+extension CoW: ExpressibleByBooleanLiteral where Value: ExpressibleByBooleanLiteral, Value: ReferenceCopyable {
     public init(booleanLiteral value: Value.BooleanLiteralType) {
         self.init(wrappedValue: Value(booleanLiteral: value))
     }
 }
 
-extension CoW: ExpressibleByIntegerLiteral where Value: ExpressibleByIntegerLiteral, Value: Copyable {
+extension CoW: ExpressibleByIntegerLiteral where Value: ExpressibleByIntegerLiteral, Value: ReferenceCopyable {
     public init(integerLiteral value: Value.IntegerLiteralType) {
         self.init(wrappedValue: Value(integerLiteral: value))
     }
 }
 
-extension CoW: ExpressibleByFloatLiteral where Value: ExpressibleByFloatLiteral, Value: Copyable {
+extension CoW: ExpressibleByFloatLiteral where Value: ExpressibleByFloatLiteral, Value: ReferenceCopyable {
     public init(floatLiteral value: Value.FloatLiteralType) {
         self.init(wrappedValue: Value(floatLiteral: value))
     }
 }
 
-extension CoW: ExpressibleByUnicodeScalarLiteral where Value: ExpressibleByUnicodeScalarLiteral, Value: Copyable {
+extension CoW: ExpressibleByUnicodeScalarLiteral where Value: ExpressibleByUnicodeScalarLiteral, Value: ReferenceCopyable {
     public init(unicodeScalarLiteral value: Value.UnicodeScalarLiteralType) {
         self.init(wrappedValue: Value(unicodeScalarLiteral: value))
     }
 }
 
-extension CoW: ExpressibleByExtendedGraphemeClusterLiteral where Value: ExpressibleByExtendedGraphemeClusterLiteral, Value: Copyable {
+extension CoW: ExpressibleByExtendedGraphemeClusterLiteral where Value: ExpressibleByExtendedGraphemeClusterLiteral, Value: ReferenceCopyable {
     public init(extendedGraphemeClusterLiteral value: Value.ExtendedGraphemeClusterLiteralType) {
         self.init(wrappedValue: Value(extendedGraphemeClusterLiteral: value))
     }
 }
 
-extension CoW: ExpressibleByStringLiteral where Value: ExpressibleByStringLiteral, Value: Copyable {
+extension CoW: ExpressibleByStringLiteral where Value: ExpressibleByStringLiteral, Value: ReferenceCopyable {
     public init(stringLiteral value: Value.StringLiteralType) {
         self.init(wrappedValue: Value(stringLiteral: value))
     }
 }
 
-extension CoW: ExpressibleByStringInterpolation where Value: ExpressibleByStringInterpolation, Value: Copyable {
+extension CoW: ExpressibleByStringInterpolation where Value: ExpressibleByStringInterpolation, Value: ReferenceCopyable {
     public init(stringInterpolation: Value.StringInterpolation) {
         self.init(wrappedValue: Value(stringInterpolation: stringInterpolation))
     }

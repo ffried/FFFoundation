@@ -17,11 +17,11 @@
 //  limitations under the License.
 //
 
-import class Dispatch.DispatchQueue
-import class Dispatch.DispatchSemaphore
+public import Dispatch
 
-public final class GCDFuture<Value>: @unchecked Sendable {
-    public typealias Handler = (Value) -> ()
+@available(*, deprecated, message: "Use Swift concurrency instead")
+public final class GCDFuture<Value: Sendable>: @unchecked Sendable {
+    public typealias Handler = @Sendable (Value) -> ()
     private enum State {
         case unfinished(Array<Handler>)
         case finished(Value)
@@ -34,8 +34,8 @@ public final class GCDFuture<Value>: @unchecked Sendable {
     @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
     var value: Value {
         get async {
-            await withUnsafeContinuation { cont in
-                whenDone { cont.resume(returning: $0) }
+            unsafe await withUnsafeContinuation { cont in
+                whenDone { unsafe cont.resume(returning: $0) }
             }
         }
     }
@@ -94,49 +94,89 @@ public final class GCDFuture<Value>: @unchecked Sendable {
         whenDone(do: other.complete)
     }
 
-    public func map<T>(_ transformer: @escaping (Value) -> T) -> GCDFuture<T> {
+    public func map<T>(_ transformer: @escaping @Sendable (Value) -> T) -> GCDFuture<T> {
         let future = GCDFuture<T>(queue: workerQueue)
         whenDone { future.complete(with: transformer($0)) }
         return future
     }
 
     @inlinable
-    public func map<T>(_ transformer: @escaping (Value) throws -> T) -> GCDFutureResult<T, any Error> {
+    public func map<T>(_ transformer: @escaping @Sendable (Value) throws -> T) -> GCDFutureResult<T, any Error> {
         map { val in Result { try transformer(val) } }
     }
 
-    public func flatMap<T>(_ transformer: @escaping (Value) -> GCDFuture<T>) -> GCDFuture<T> {
+    public func flatMap<T>(_ transformer: @escaping @Sendable (Value) -> GCDFuture<T>) -> GCDFuture<T> {
         let future = GCDFuture<T>(queue: workerQueue)
         whenDone { transformer($0).cascade(other: future) }
         return future
     }
 
-    public func flatMap<T>(_ transformer: @escaping (Value) throws -> GCDFuture<T>) -> GCDFutureResult<T, any Error> {
+    public func flatMap<T>(_ transformer: @escaping @Sendable (Value) throws -> GCDFuture<T>) -> GCDFutureResult<T, any Error> {
         flatMap { [workerQueue] in
             do { return try transformer($0).map { .success($0) } }
             catch { return GCDFutureResult<T, any Error>(queue: workerQueue, value: .failure(error)) }
         }
     }
 
+    @safe private struct UnsafeSendingPointer: @unchecked Sendable, ~Swift.Copyable {
+        private let pointer: UnsafeMutablePointer<Value>
+
+        init() {
+#if compiler(>=6.2)
+            unsafe pointer = .allocate(capacity: 1)
+#else
+            pointer = .allocate(capacity: 1)
+#endif
+        }
+
+        func setValue(_ value: Value) {
+#if compiler(>=6.2)
+            unsafe pointer.initialize(to: value)
+#else
+            pointer.initialize(to: value)
+#endif
+        }
+
+        /*consuming*/ func get() -> Value {
+#if compiler(>=6.2)
+            unsafe pointer.move()
+#else
+            pointer.move()
+#endif
+        }
+
+        deinit {
+#if compiler(>=6.2)
+            unsafe pointer.deallocate()
+#else
+            pointer.deallocate()
+#endif
+        }
+    }
+
+    @available(*, noasync, message: "Do not block in concurrently executing code! Await `value` instead.")
     public func wait() -> Value {
         let semaphore = DispatchSemaphore(value: 0)
-        var value: Value!
+        let ptr = UnsafeSendingPointer()
         whenDone {
-            value = $0
+            ptr.setValue($0)
             semaphore.signal()
         }
         semaphore.wait()
-        return value
+        return ptr.get()
     }
 
     @available(*, deprecated, message: "Use 'wait'", renamed: "wait")
+    @available(*, noasync, message: "Do not block in concurrently executing code! Await `value` instead.")
     public func await() -> Value {
         wait()
     }
 }
 
-public typealias GCDFutureResult<Value, Failure: Error> = GCDFuture<Result<Value, Failure>>
+@available(*, deprecated, message: "Use Swift concurrency instead")
+public typealias GCDFutureResult<Value: Sendable, Failure: Error> = GCDFuture<Result<Value, Failure>>
 
+@available(*, deprecated, message: "Use Swift concurrency instead")
 extension GCDFutureResult {
     @inlinable
     public convenience init<Success, Failure: Error>(value: Success)
@@ -184,31 +224,30 @@ extension GCDFutureResult {
         whenDone(do: other.complete)
     }
 
-    public func onSuccess<Success, Failure: Error>(do work: @escaping (Success) -> ())
+    public func onSuccess<Success, Failure: Error>(do work: @escaping @Sendable (Success) -> ())
     where Value == Result<Success, Failure>
     {
         whenDone { _ = $0.map(work) }
     }
 
-    public func onError<Success, Failure: Error>(do work: @escaping (Failure) -> ())
+    public func onError<Success, Failure: Error>(do work: @escaping @Sendable (Failure) -> ())
     where Value == Result<Success, Failure>
     {
         whenDone {
-            switch $0 {
-            case .success(_): break
-            case .failure(let error): work(error)
+            if case .failure(let error) = $0 {
+                work(error)
             }
         }
     }
 
     @inlinable
-    public func map<Success, Failure: Error, T>(_ transformer: @escaping (Success) throws -> T) -> GCDFutureResult<T, any Error>
+    public func map<Success, Failure: Error, T>(_ transformer: @escaping @Sendable (Success) throws -> T) -> GCDFutureResult<T, any Error>
     where Value == Result<Success, Failure>
     {
         map { val in try transformer(val.get()) }
     }
 
-    public func flatMap<Success, T>(_ transformer: @escaping (Success) throws -> GCDFutureResult<T, any Error>) -> GCDFutureResult<T, any Error>
+    public func flatMap<Success, T>(_ transformer: @escaping @Sendable (Success) throws -> GCDFutureResult<T, any Error>) -> GCDFutureResult<T, any Error>
     where Value == Result<Success, any Error>
     {
         let future = GCDFutureResult<T, any Error>(queue: workerQueue)
@@ -223,6 +262,7 @@ extension GCDFutureResult {
     }
 
     @inlinable
+    @available(*, noasync, message: "Do not block in concurrently executing code! Await `value` instead.")
     public func wait<Success, Failure: Error>() throws -> Success
     where Value == Result<Success, Failure>
     {
@@ -231,6 +271,7 @@ extension GCDFutureResult {
 
     @inlinable
     @available(*, deprecated, message: "Use 'wait'", renamed: "wait")
+    @available(*, noasync, message: "Do not block in concurrently executing code! Await `value` instead.")
     public func await<Success, Failure: Error>() throws -> Success
     where Value == Result<Success, Failure>
     {
@@ -238,14 +279,15 @@ extension GCDFutureResult {
     }
 }
 
+@available(*, deprecated, message: "Use Swift concurrency instead")
 extension DispatchQueue {
-    public final func asFuture<T>(do work: @escaping () -> T) -> GCDFuture<T> {
+    public final func asFuture<T>(do work: @escaping @Sendable () -> sending T) -> GCDFuture<T> {
         let future = GCDFuture<T>(queue: self)
         self.async { future.complete(with: work()) }
         return future
     }
 
-    public final func asFuture<T>(do work: @escaping () throws -> T) -> GCDFutureResult<T, any Error> {
+    public final func asFuture<T>(do work: @escaping @Sendable () throws -> sending T) -> GCDFutureResult<T, any Error> {
         let future = GCDFutureResult<T, any Error>(queue: self)
         self.async { future.complete(with: Result { try work() }) }
         return future

@@ -18,14 +18,7 @@
 //  limitations under the License.
 //
 
-import class Foundation.FileManager
-import struct Foundation.FileAttributeKey
-import struct Foundation.URL
-#if os(Linux)
-import struct Foundation.ObjCBool
-#else
-import struct ObjectiveC.ObjCBool
-#endif
+public import Foundation
 
 extension FileManager {
     @inlinable
@@ -33,17 +26,27 @@ extension FileManager {
 
     @inlinable
     public func fileExists(at url: URL, isDirectory: UnsafeMutablePointer<ObjCBool>?) -> Bool {
+#if compiler(>=6.2)
+        unsafe fileExists(atPath: url.path, isDirectory: isDirectory)
+#else
         fileExists(atPath: url.path, isDirectory: isDirectory)
+#endif
     }
 
     @inlinable
     public func directoryExists(at url: URL) -> Bool {
         var isDir: ObjCBool = false
+#if compiler(>=6.2)
+        return unsafe fileExists(at: url, isDirectory: &isDir) && isDir.boolValue
+#else
         return fileExists(at: url, isDirectory: &isDir) && isDir.boolValue
+#endif
     }
 
     @inlinable
-    public func createDirectoryIfNeeded(at url: URL, withIntermediateDirectories: Bool = true, attributes: [FileAttributeKey: Any]? = nil) throws {
+    public func createDirectoryIfNeeded(at url: URL,
+                                        withIntermediateDirectories: Bool = true,
+                                        attributes: [FileAttributeKey: Any]? = nil) throws {
         guard !directoryExists(at: url) else { return }
         try createDirectory(at: url, withIntermediateDirectories: withIntermediateDirectories, attributes: attributes)
     }

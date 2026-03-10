@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-import typealias Foundation.TimeInterval
+public import Foundation
 import Dispatch
 #if os(Linux)
 import CDispatch

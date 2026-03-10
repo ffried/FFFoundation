@@ -18,7 +18,7 @@
 //
 
 #if !canImport(os)
-import Foundation
+public import Foundation
 
 @frozen
 public struct OSLogType: RawRepresentable, Hashable {

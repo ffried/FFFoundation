@@ -18,50 +18,59 @@
 //  limitations under the License.
 //
 
-import Foundation
+public import Foundation
 #if canImport(UIKit)
-import UIKit
+public import UIKit
 #endif
 
-public protocol Cachable {
+public protocol Cachable: SendableMetatype {
     static func fromCache(data: Data) throws -> Self
 
     func cacheData() throws -> Data
 }
 
 // TODO: Implement expiration attributes
-public final class CacheManager<Object: Cachable> {
+public final class CacheManager<Object: Cachable>: Sendable {
     public typealias ObjectIdentification = String
 
-    private let fileManager: FileManager
+    private struct NonSendableState {
+        let fileManager: FileManager
+#if canImport(UIKit) && !os(watchOS)
+        var memoryWarningsObserver: (any NSObjectProtocol)?
+#endif
+        var memoryCache: Dictionary<ObjectIdentification, Object> = .init()
+        var timer: Timer<Void>?
+    }
+
+    private let _nonSendableState: Synchronized<NonSendableState>
+    private var fileManager: FileManager { _nonSendableState.wrappedValue.fileManager }
+
     // TODO: Use queue also for user operations
     private let queue = DispatchQueue(label: "net.ffried.fffoundation.cachemanager", attributes: .concurrent)
     private let folder: URL
     public let name: Name
 
-    private var timer: Timer<Void>?
-
-    public var clearsMemoryCachePeriodically: Bool = false {
-        didSet {
-            guard clearsMemoryCachePeriodically != oldValue else { return }
-            if clearsMemoryCachePeriodically {
-                timer = Timer(interval: 30, repeats: true, queue: queue) { [weak self] _ in self?.clearMemoryCache() }
-                timer?.tolerance = 10
-                timer?.schedule()
-            } else {
-                timer?.invalidate()
-                timer = nil
+    public var clearsMemoryCachePeriodically: Bool {
+        get { _nonSendableState.wrappedValue.timer != nil }
+        set {
+            _nonSendableState.withValueVoid {
+                guard ($0.timer != nil) != newValue else { return }
+                if newValue {
+                    $0.timer = Timer(interval: 30, repeats: true, queue: queue) { [weak self] _ in self?.clearMemoryCache() }
+                    $0.timer?.tolerance = 10
+                    $0.timer?.schedule()
+                } else {
+                    $0.timer?.invalidate()
+                    $0.timer = nil
+                }
             }
         }
     }
 
-    @Synchronized
-    private var memoryCache: Dictionary<ObjectIdentification, Object> = .init()
-
     public init(name: Name = .default, shouldMigrateFromOldNamingBehavior: Bool = true) throws {
-        self.name = name
         let fileManager = FileManager()
-        self.fileManager = fileManager
+
+        self.name = name
         let baseFolder = try CacheManager.cacheFolder(in: fileManager)
         let folder = baseFolder.appendingPathComponent(name.rawValue).appendingPathComponent("\(Object.self)")
         if shouldMigrateFromOldNamingBehavior,
@@ -71,19 +80,19 @@ public final class CacheManager<Object: Cachable> {
         }
         try fileManager.createDirectoryIfNeeded(at: folder)
         self.folder = folder
-        registerForMemoryWarnings()
-    }
-
-    // MARK: - Memory warnings
-    private var memoryWarningsObserver: (any NSObjectProtocol)?
-    private func registerForMemoryWarnings() {
+        _nonSendableState = .init(value: .init(fileManager: fileManager), qos: .default)
 #if canImport(UIKit) && !os(watchOS)
         let opQueue = OperationQueue()
+#if compiler(>=6.2)
+        unsafe opQueue.underlyingQueue = queue
+#else
         opQueue.underlyingQueue = queue
+#endif
         let name = UIApplication.didReceiveMemoryWarningNotification
-        memoryWarningsObserver = NotificationCenter.default.addObserver(forName: name, object: nil, queue: opQueue) { [weak self] _ in
+        let memoryWarningsObserver = NotificationCenter.default.addObserver(forName: name, object: nil, queue: opQueue) { [weak self] _ in
             self?.clearMemoryCache()
         }
+        _nonSendableState.withValueVoid { $0.memoryWarningsObserver = memoryWarningsObserver }
 #endif
     }
 
@@ -123,12 +132,12 @@ public final class CacheManager<Object: Cachable> {
     }
 
     public func object(for identification: ObjectIdentification) throws -> Object? {
-        try memoryCache[identification] ?? object(at: cacheURL(for: identification))
+        try _nonSendableState.wrappedValue.memoryCache[identification] ?? object(at: cacheURL(for: identification))
     }
 
     public func cache(object: Object, for identification: ObjectIdentification) throws {
         try cache(object: object, at: cacheURL(for: identification))
-        _memoryCache.withValueVoid { $0[identification] = object }
+        _nonSendableState.withValueVoid { $0.memoryCache[identification] = object }
     }
 
     public func cacheObject(for identification: ObjectIdentification, at url: URL) throws {
@@ -145,7 +154,7 @@ public final class CacheManager<Object: Cachable> {
         return url
     }
 
-    public func clearMemoryCache() { _memoryCache.withValueVoid { $0.removeAll() } }
+    public func clearMemoryCache() { _nonSendableState.withValueVoid { $0.memoryCache.removeAll() } }
     public func clearCache() throws {
         clearMemoryCache()
         guard fileManager.fileExists(at: folder) else { return }
@@ -216,7 +225,7 @@ extension UIImage: Cachable {
 #endif
 
 #if canImport(AppKit) && !os(iOS) // macCatalyst has os(iOS)
-import AppKit
+public import AppKit
 extension NSImage: Cachable {
     public func cacheData() throws -> Data {
         guard let data = tiffRepresentation else { throw CachingError.couldNotSerialize(underlyingError: nil) }

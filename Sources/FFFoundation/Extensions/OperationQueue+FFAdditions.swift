@@ -18,29 +18,29 @@
 //  limitations under the License.
 //
 
-import class Foundation.OperationQueue
-import class Foundation.BlockOperation
+public import Foundation
 
 extension OperationQueue {
     public var isMain: Bool { self === type(of: self).main }
     
     public var isCurrent: Bool { type(of: self).current.flatMap { $0 === self } ?? false }
     
-    public func addOperation(with block: @escaping () -> (), completion: @escaping () -> ()) {
+    public func addOperation(with block: @escaping @Sendable () -> (),
+                             completion: @escaping @Sendable () -> ()) {
         let operation = BlockOperation(block: block)
         operation.completionBlock = completion
         addOperation(operation)
     }
     
-    public func addOperationWithBlockAndWait(block: @escaping () -> ()) {
+    public func addOperationWithBlockAndWait(block: @escaping @Sendable () -> ()) {
         addOperation(with: block, andWait: true)
     }
     
-    public func addOperationWithBlockAndWaitIfNotCurrentQueue(block: @escaping () -> ()) {
+    public func addOperationWithBlockAndWaitIfNotCurrentQueue(block: @escaping @Sendable () -> ()) {
         addOperation(with: block, andWait: !isCurrent)
     }
     
-    private final func addOperation(with block: @escaping () -> (), andWait wait: Bool) {
+    private final func addOperation(with block: @escaping @Sendable () -> (), andWait wait: Bool) {
         let operation = BlockOperation(block: block)
         addOperations([operation], waitUntilFinished: wait)
     }

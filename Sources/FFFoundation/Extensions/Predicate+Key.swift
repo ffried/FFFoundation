@@ -17,7 +17,7 @@
 //  limitations under the License.
 //
 
-import Foundation
+public import Foundation
 
 extension NSPredicate {
     public typealias Key = PropertyKey

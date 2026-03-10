@@ -1,4 +1,5 @@
-import XCTest
+import Testing
+import Foundation
 @testable import FFFoundation
 
 fileprivate extension UserDefaultKey {
@@ -39,43 +40,43 @@ fileprivate extension UserDefaultKey {
     ]
 }
 
-final class UserDefaultTests: XCTestCase {
+@Suite
+struct UserDefaultTests: ~Swift.Copyable {
     struct TestObject: CodableUserDefaultsStorable, Equatable {
         let string: String
         let dict: Dictionary<String, String>
         let range: Range<Int>
     }
 
-    private(set) var userDefaults: UserDefaults = .standard
+    let userDefaults: UserDefaults
+
+    init() throws {
+        userDefaults = try #require(.init(suiteName: UUID().uuidString))
+    }
+
+    deinit {
+        UserDefaultKey.allTestKeys.forEach {
+            userDefaults.removeObject(forKey: $0.rawValue)
+        }
+    }
 
     private func castedPrimitive<T: PrimitiveUserDefaultStorable>(for key: UserDefaultKey) -> T? {
         userDefaults.object(forKey: key.rawValue) as? T
     }
 
-    override func setUpWithError() throws {
-        try super.setUpWithError()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        userDefaults = try XCTUnwrap(.init(suiteName: UUID().uuidString))
+    @Test
+    func primitiveUserDefaultKeyDescription() {
+        #expect(String(describing: UserDefaultKey.inexisting) == UserDefaultKey.inexisting.rawValue)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        UserDefaultKey.allTestKeys.forEach {
-            userDefaults.removeObject(forKey: $0.rawValue)
-        }
-        try super.tearDownWithError()
+    @Test
+    func primitiveUserDefaultReadingUsingInexistingKey() {
+        #expect(UserDefault<Data?>(userDefaults: userDefaults, key: .inexisting).wrappedValue == nil)
+        #expect(UserDefault<Bool?>(userDefaults: userDefaults, key: .inexisting).wrappedValue == nil)
     }
 
-    func testPrimitiveUserDefaultKeyDescription() {
-        XCTAssertEqual(String(describing: UserDefaultKey.inexisting), UserDefaultKey.inexisting.rawValue)
-    }
-
-    func testPrimitiveUserDefaultReadingUsingInexistingKey() {
-        XCTAssertNil(UserDefault<Data?>(userDefaults: userDefaults, key: .inexisting).wrappedValue)
-        XCTAssertNil(UserDefault<Bool?>(userDefaults: userDefaults, key: .inexisting).wrappedValue)
-    }
-
-    func testPrimitiveUserDefaultReadingUsingDefaults() {
+    @Test
+    func primitiveUserDefaultReadingUsingDefaults() {
         let bool = UserDefault<Bool>(userDefaults: userDefaults, key: .random)
         let int = UserDefault<Int>(userDefaults: userDefaults, key: .random)
         let float = UserDefault<Float>(userDefaults: userDefaults, key: .random)
@@ -89,21 +90,22 @@ final class UserDefaultTests: XCTestCase {
         let intSet = UserDefault<Set<Int>>(userDefaults: userDefaults, key: .random)
         let boolDict = UserDefault<Dictionary<String, Bool>>(userDefaults: userDefaults, key: .random)
 
-        XCTAssertEqual(bool.wrappedValue, bool.defaultValue)
-        XCTAssertEqual(int.wrappedValue, int.defaultValue)
-        XCTAssertEqual(float.wrappedValue, float.defaultValue)
-        XCTAssertEqual(double.wrappedValue, double.defaultValue)
-        XCTAssertEqual(string.wrappedValue, string.defaultValue)
-        XCTAssertEqual(data.wrappedValue, data.defaultValue)
-        XCTAssertEqual(url.wrappedValue, url.defaultValue)
-        XCTAssertEqual(optionalInt.wrappedValue, optionalInt.defaultValue)
-        XCTAssertEqual(doubleArray.wrappedValue, doubleArray.defaultValue)
-        XCTAssertEqual(doubleContArray.wrappedValue, doubleContArray.defaultValue)
-        XCTAssertEqual(intSet.wrappedValue, intSet.defaultValue)
-        XCTAssertEqual(boolDict.wrappedValue, boolDict.defaultValue)
+        #expect(bool.wrappedValue == bool.defaultValue)
+        #expect(int.wrappedValue == int.defaultValue)
+        #expect(float.wrappedValue == float.defaultValue)
+        #expect(double.wrappedValue == double.defaultValue)
+        #expect(string.wrappedValue == string.defaultValue)
+        #expect(data.wrappedValue == data.defaultValue)
+        #expect(url.wrappedValue == url.defaultValue)
+        #expect(optionalInt.wrappedValue == optionalInt.defaultValue)
+        #expect(doubleArray.wrappedValue == doubleArray.defaultValue)
+        #expect(doubleContArray.wrappedValue == doubleContArray.defaultValue)
+        #expect(intSet.wrappedValue == intSet.defaultValue)
+        #expect(boolDict.wrappedValue == boolDict.defaultValue)
     }
 
-    func testPrimitiveUserDefaultReading() {
+    @Test
+    func primitiveUserDefaultReading() {
         let bool = UserDefault<Bool>(userDefaults: userDefaults, key: .boolKey)
         let int = UserDefault<Int>(userDefaults: userDefaults, key: .intKey)
         let float = UserDefault<Float>(userDefaults: userDefaults, key: .floatKey)
@@ -130,42 +132,43 @@ final class UserDefaultTests: XCTestCase {
         intSet.wrappedValue = [42, 43, 44]
         boolDict.wrappedValue = ["true": true, "false": false]
 
-        XCTAssertTrue(bool.wrappedValue)
-        XCTAssertEqual(castedPrimitive(for: bool.key), true)
-        XCTAssertEqual(int.wrappedValue, 42)
-        XCTAssertEqual(castedPrimitive(for: int.key), 42)
-        XCTAssertEqual(float.wrappedValue, 42.42)
-        XCTAssertEqual(castedPrimitive(for: float.key), 42.42 as Float)
-        XCTAssertEqual(double.wrappedValue, 42.4242)
-        XCTAssertEqual(castedPrimitive(for: double.key), 42.4242)
-        XCTAssertEqual(string.wrappedValue, "Testing")
-        XCTAssertEqual(castedPrimitive(for: string.key), "Testing")
-        XCTAssertEqual(data.wrappedValue, Data(1...8))
-        XCTAssertEqual(castedPrimitive(for: data.key), Data(1...8))
-        XCTAssertEqual(url.wrappedValue, URL(fileURLWithPath: "/path/to/somewhere"))
-        XCTAssertEqual(userDefaults.url(forKey: url.key.rawValue), URL(fileURLWithPath: "/path/to/somewhere"))
-        XCTAssertEqual(optionalInt.wrappedValue, 42)
-        XCTAssertEqual(castedPrimitive(for: optionalInt.key), 42)
-        XCTAssertEqual(doubleArray.wrappedValue, [42.42, 42.4242])
-        XCTAssertEqual(castedPrimitive(for: doubleArray.key), [42.42, 42.4242])
-        XCTAssertEqual(doubleContArray.wrappedValue, [42.42, 42.4242])
-        XCTAssertEqual(castedPrimitive(for: doubleContArray.key), [42.42, 42.4242] as Array)
-        XCTAssertEqual(intSet.wrappedValue, [42, 43, 44])
-        XCTAssertEqual((castedPrimitive(for: intSet.key) as Array<Int>?)?.sorted(), [42, 43, 44])
-        XCTAssertEqual(boolDict.wrappedValue, ["true": true, "false": false])
-        XCTAssertEqual(castedPrimitive(for: boolDict.key), ["true": true, "false": false])
+        #expect(bool.wrappedValue)
+        #expect(castedPrimitive(for: bool.key) == true)
+        #expect(int.wrappedValue == 42)
+        #expect(castedPrimitive(for: int.key) == 42)
+        #expect(float.wrappedValue == 42.42)
+        #expect(castedPrimitive(for: float.key) == 42.42 as Float)
+        #expect(double.wrappedValue == 42.4242)
+        #expect(castedPrimitive(for: double.key) == 42.4242)
+        #expect(string.wrappedValue == "Testing")
+        #expect(castedPrimitive(for: string.key) == "Testing")
+        #expect(data.wrappedValue == Data(1...8))
+        #expect(castedPrimitive(for: data.key) == Data(1...8))
+        #expect(url.wrappedValue == URL(fileURLWithPath: "/path/to/somewhere"))
+        #expect(userDefaults.url(forKey: url.key.rawValue) == URL(fileURLWithPath: "/path/to/somewhere"))
+        #expect(optionalInt.wrappedValue == 42)
+        #expect(castedPrimitive(for: optionalInt.key) == 42)
+        #expect(doubleArray.wrappedValue == [42.42, 42.4242])
+        #expect(castedPrimitive(for: doubleArray.key) == [42.42, 42.4242])
+        #expect(doubleContArray.wrappedValue == [42.42, 42.4242])
+        #expect(castedPrimitive(for: doubleContArray.key) == [42.42, 42.4242])
+        #expect(intSet.wrappedValue == [42, 43, 44])
+        #expect((castedPrimitive(for: intSet.key) as Array<Int>?)?.sorted() == [42, 43, 44])
+        #expect(boolDict.wrappedValue == ["true": true, "false": false])
+        #expect(castedPrimitive(for: boolDict.key) == ["true": true, "false": false])
     }
 
-    func testCodableUserDefaultReading() {
+    @Test
+    func codableUserDefaultReading() {
         let object = UserDefault<TestObject?>(userDefaults: userDefaults, key: .codableObject)
-        XCTAssertNil(object.wrappedValue)
+        #expect(object.wrappedValue == nil)
         let objValue = TestObject(string: "Test", dict: ["key1": "value1", "key2": "value2"], range: 2..<42)
         object.wrappedValue = objValue
-        XCTAssertEqual(object.wrappedValue, objValue)
+        #expect(object.wrappedValue == objValue)
         let dict = userDefaults.object(forKey: object.key.rawValue) as? [String: Any]
-        XCTAssertNotNil(dict)
-        XCTAssertEqual(dict?["string"] as? String, objValue.string)
-        XCTAssertEqual(dict?["dict"] as? [String: String], objValue.dict)
-        XCTAssertEqual(dict?["range"] as? [Int], [objValue.range.lowerBound, objValue.range.upperBound])
+        #expect(dict != nil)
+        #expect(dict?["string"] as? String == objValue.string)
+        #expect(dict?["dict"] as? [String: String] == objValue.dict)
+        #expect(dict?["range"] as? [Int] == [objValue.range.lowerBound, objValue.range.upperBound])
     }
 }

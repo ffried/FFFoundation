@@ -19,12 +19,11 @@
 //
 
 @propertyWrapper
-public final class Ref<Referenced>: Copyable {
+public final class Ref<Referenced>: ReferenceCopyable {
     public var wrappedValue: Referenced
 
     public var projectedValue: Lens<Referenced> {
-        Lens(getter: { self.wrappedValue },
-             setter: { self.wrappedValue = $0 })
+        Lens(base: self, keyPath: \.wrappedValue)
     }
 
     public init(wrappedValue: Referenced) {

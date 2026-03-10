@@ -41,6 +41,15 @@ extension Sequence {
     }
 }
 
+extension LazySequence {
+    @inlinable
+    public func nonReleasedObjects<Object>() -> some Sequence<Object>
+    where Element == Weak<Object>
+    {
+        compactMap(\.wrappedValue)
+    }
+}
+
 extension MutableCollection where Self: RangeReplaceableCollection {
     public mutating func removeReleasedObjects<Object>() where Element == Weak<Object> {
         removeAll(where: \.wasReleased)

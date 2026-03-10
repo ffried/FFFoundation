@@ -17,7 +17,7 @@
 //  limitations under the License.
 //
 
-import Foundation
+public import Foundation
 
 extension NSSortDescriptor {
     public typealias Key = PropertyKey

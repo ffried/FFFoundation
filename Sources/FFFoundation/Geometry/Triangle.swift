@@ -18,7 +18,6 @@
 //  limitations under the License.
 //
 
-#if compiler(>=5.7)
 public protocol TriangulatablePoint<Value> {
     associatedtype Value: GeometricValue
 
@@ -27,19 +26,9 @@ public protocol TriangulatablePoint<Value> {
 
     init(x: Value, y: Value)
 }
-#else
-public protocol TriangulatablePoint {
-    associatedtype Value: GeometricValue
-
-    var x: Value { get }
-    var y: Value { get }
-
-    init(x: Value, y: Value)
-}
-#endif
 
 #if canImport(CoreGraphics)
-import CoreGraphics
+public import CoreGraphics
 
 extension CGPoint: TriangulatablePoint {
     public typealias Value = CGFloat

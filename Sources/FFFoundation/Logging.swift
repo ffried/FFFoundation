@@ -18,7 +18,7 @@
 //
 
 #if canImport(os)
-import os
+public import os
 #endif
 
 extension OSLog {

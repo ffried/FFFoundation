@@ -1,91 +1,101 @@
-import XCTest
+import Testing
 @testable import FFFoundation
 
-final class AngleTests: XCTestCase {
-    func testAngleIsCorrectlyExpressibleAsLiterals() {
+@Suite
+struct AngleTests {
+    @Test
+    func angleIsCorrectlyExpressibleAsLiterals() {
         let intLiteral: Angle<Double> = 1
         let fltLiteral: Angle<Double> = 1.34
 
-        XCTAssertEqual(intLiteral.value, 1)
-        XCTAssertEqual(intLiteral.value, intLiteral.asRadians.value)
-        XCTAssertEqual(fltLiteral.value, 1.34)
-        XCTAssertEqual(fltLiteral.value, fltLiteral.asRadians.value)
+        #expect(intLiteral.value == 1)
+        #expect(intLiteral.value == intLiteral.asRadians.value)
+        #expect(fltLiteral.value == 1.34)
+        #expect(fltLiteral.value == fltLiteral.asRadians.value)
     }
 
-    func testAngleConvertsCorrectly() {
+    @Test
+    func angleConvertsCorrectly() {
         let degrees = Angle<Double>(degrees: 90)
         let radians = Angle<Double>(radians: .pi / 2)
 
-        XCTAssertEqual(radians.asDegrees.value, 90, accuracy: .ulpOfOne)
-        XCTAssertEqual(degrees.asRadians.value, .pi / 2, accuracy: .ulpOfOne)
-        XCTAssertEqual(radians.asRadians.value, .pi / 2, accuracy: .ulpOfOne)
-        XCTAssertEqual(degrees.asDegrees.value, 90, accuracy: .ulpOfOne)
-        XCTAssertEqual(radians.converted().value, 90, accuracy: .ulpOfOne)
-        XCTAssertEqual(degrees.converted().value, .pi / 2, accuracy: .ulpOfOne)
+        #expect(abs(radians.asDegrees.value.distance(to: 90)) <= .ulpOfOne)
+        #expect(abs(degrees.asRadians.value.distance(to: .pi / 2)) <= .ulpOfOne)
+        #expect(abs(radians.asRadians.value.distance(to: .pi / 2)) <= .ulpOfOne)
+        #expect(abs(degrees.asDegrees.value.distance(to: 90)) <= .ulpOfOne)
+        #expect(abs(radians.converted().value.distance(to: 90)) <= .ulpOfOne)
+        #expect(abs(degrees.converted().value.distance(to: .pi / 2)) <= .ulpOfOne)
     }
 
-    func testAngleComparesCorrectlyBetweenKinds() {
+    @Test
+    func angleComparesCorrectlyBetweenKinds() {
         let degrees = Angle<Double>(degrees: 90)
         let radians = Angle<Double>(radians: .pi / 2)
-        XCTAssertEqual(degrees, radians, accuracy: .ulpOfOne)
-        XCTAssertEqual(degrees == radians, degrees.isEqual(to: radians))
+        #expect(abs(degrees.distance(to: radians)) <= .ulpOfOne)
+        #expect((degrees == radians) == degrees.isEqual(to: radians))
     }
 
-    func testAngleHashesBasedOnRadians() {
+    @Test
+    func angleHashesBasedOnRadians() {
         let degrees = Angle<Double>(degrees: 90)
         let radians = Angle<Double>(radians: .pi / 2)
-        XCTAssertEqual(Set([degrees, radians]).count, 1)
+        #expect(Set([degrees, radians]).count == 1)
     }
 
-    func testAngleSumsCorrectlyBetweenKinds() {
+    @Test
+    func angleSumsCorrectlyBetweenKinds() {
         let base = Angle<Double>(radians: .pi / 2)
         let sum = base + .degrees(1)
-        XCTAssertEqual(sum, .radians(base.value + (.pi / 180)), accuracy: .ulpOfOne)
+        #expect(abs(sum.distance(to: .radians(base.value + (.pi / 180)))) <= .ulpOfOne)
     }
 
-    func testAngleSubtractsCorrectlyBetweenKinds() {
+    @Test
+    func angleSubtractsCorrectlyBetweenKinds() {
         let base = Angle<Double>(radians: .pi / 2)
         let difference = base - .degrees(1)
-        XCTAssertEqual(difference, .radians(base.value - (.pi / 180)), accuracy: .ulpOfOne)
+        #expect(abs(difference.distance(to: .radians(base.value - (.pi / 180)))) <= .ulpOfOne)
     }
 
-    func testAngleMultipliesCorrectlyBetweenKinds() {
+    @Test
+    func angleMultipliesCorrectlyBetweenKinds() {
         let base = Angle<Double>(radians: .pi / 2)
         let multiplied = base * .degrees(1)
-        XCTAssertEqual(multiplied, .radians(base.value * (.pi / 180)), accuracy: .ulpOfOne)
+        #expect(abs(multiplied.distance(to: .radians(base.value * (.pi / 180)))) <= .ulpOfOne)
     }
 
-    func testAngleDividesCorrectlyBetweenKinds() {
+    @Test
+    func angleDividesCorrectlyBetweenKinds() {
         let base = Angle<Double>(radians: .pi / 2)
         let division = base / .degrees(1)
-        XCTAssertEqual(division, .radians(base.value / (.pi / 180)), accuracy: .ulpOfOne)
+        #expect(abs(division.distance(to: .radians(base.value / (.pi / 180)))) <= .ulpOfOne)
     }
 
-    func testAngleFloatingPointConformance() {
+    @Test
+    func angleFloatingPointConformance() {
         typealias TestAngle = Angle<Double>
         let testAngle = TestAngle(degrees: 90)
-        XCTAssertEqual(TestAngle.radix, Double.radix)
-        XCTAssertEqual(TestAngle.nan.isNaN, TestAngle.radians(.nan).isNaN)
-        XCTAssertEqual(TestAngle.signalingNaN.isSignalingNaN, TestAngle.radians(.signalingNaN).isSignalingNaN)
-        XCTAssertEqual(TestAngle.infinity, .radians(.infinity))
-        XCTAssertEqual(TestAngle.pi, .radians(.pi))
-        XCTAssertEqual(TestAngle.greatestFiniteMagnitude, .radians(.greatestFiniteMagnitude))
-        XCTAssertEqual(TestAngle.leastNonzeroMagnitude, .radians(.leastNonzeroMagnitude))
-        XCTAssertEqual(TestAngle.leastNormalMagnitude, .radians(.leastNormalMagnitude))
-        XCTAssertEqual(testAngle.exponent, testAngle.value.exponent)
-        XCTAssertEqual(testAngle.sign, testAngle.value.sign)
-        XCTAssertEqual(testAngle.isNormal, testAngle.value.isNormal)
-        XCTAssertEqual(testAngle.isFinite, testAngle.value.isFinite)
-        XCTAssertEqual(testAngle.isZero, testAngle.value.isZero)
-        XCTAssertEqual(testAngle.isSubnormal, testAngle.value.isSubnormal)
-        XCTAssertEqual(testAngle.isInfinite, testAngle.value.isInfinite)
-        XCTAssertEqual(testAngle.isNaN, testAngle.value.isNaN)
-        XCTAssertEqual(testAngle.isSignalingNaN, testAngle.value.isSignalingNaN)
-        XCTAssertEqual(testAngle.isCanonical, testAngle.value.isCanonical)
-        XCTAssertEqual(testAngle.magnitude, .degrees(testAngle.value.magnitude))
-        XCTAssertEqual(testAngle.ulp, .degrees(testAngle.value.ulp))
-        XCTAssertEqual(testAngle.significand, .degrees(testAngle.value.significand))
-        XCTAssertEqual(testAngle.nextUp, .degrees(testAngle.value.nextUp))
-        XCTAssertEqual(testAngle.nextDown, .degrees(testAngle.value.nextDown))
+        #expect(TestAngle.radix == Double.radix)
+        #expect(TestAngle.nan.isNaN == TestAngle.radians(.nan).isNaN)
+        #expect(TestAngle.signalingNaN.isSignalingNaN == TestAngle.radians(.signalingNaN).isSignalingNaN)
+        #expect(TestAngle.infinity == .radians(.infinity))
+        #expect(TestAngle.pi == .radians(.pi))
+        #expect(TestAngle.greatestFiniteMagnitude == .radians(.greatestFiniteMagnitude))
+        #expect(TestAngle.leastNonzeroMagnitude == .radians(.leastNonzeroMagnitude))
+        #expect(TestAngle.leastNormalMagnitude == .radians(.leastNormalMagnitude))
+        #expect(testAngle.exponent == testAngle.value.exponent)
+        #expect(testAngle.sign == testAngle.value.sign)
+        #expect(testAngle.isNormal == testAngle.value.isNormal)
+        #expect(testAngle.isFinite == testAngle.value.isFinite)
+        #expect(testAngle.isZero == testAngle.value.isZero)
+        #expect(testAngle.isSubnormal == testAngle.value.isSubnormal)
+        #expect(testAngle.isInfinite == testAngle.value.isInfinite)
+        #expect(testAngle.isNaN == testAngle.value.isNaN)
+        #expect(testAngle.isSignalingNaN == testAngle.value.isSignalingNaN)
+        #expect(testAngle.isCanonical == testAngle.value.isCanonical)
+        #expect(testAngle.magnitude == .degrees(testAngle.value.magnitude))
+        #expect(testAngle.ulp == .degrees(testAngle.value.ulp))
+        #expect(testAngle.significand == .degrees(testAngle.value.significand))
+        #expect(testAngle.nextUp == .degrees(testAngle.value.nextUp))
+        #expect(testAngle.nextDown == .degrees(testAngle.value.nextDown))
     }
 }

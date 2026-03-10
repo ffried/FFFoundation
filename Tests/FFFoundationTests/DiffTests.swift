@@ -1,47 +1,32 @@
-import XCTest
+import Testing
 @testable import FFFoundation
 
-final class DiffTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-
-    func testChangeLignSign() {
+@Suite
+struct DiffTests {
+    @Test
+    func changeLignSign() {
         let change1: SimpleDiff<String>.Change = .unchanged
         let change2: SimpleDiff<String>.Change = .added
         let change3: SimpleDiff<String>.Change = .removed
 
-        let change1Sign = change1.lineSign
-        let change2Sign = change2.lineSign
-        let change3Sign = change3.lineSign
-
-        XCTAssertEqual(change1Sign, "")
-        XCTAssertEqual(change2Sign, "+")
-        XCTAssertEqual(change3Sign, "-")
+        #expect(change1.lineSign == "")
+        #expect(change2.lineSign == "+")
+        #expect(change3.lineSign == "-")
     }
 
-    func testChangeAnnotation() {
+    @Test
+    func changeAnnotation() {
         let change1: SimpleDiff<String>.Change = .unchanged
         let change2: SimpleDiff<String>.Change = .added
         let change3: SimpleDiff<String>.Change = .removed
 
-        let change1Annotated = change1.annotatedLine(for: "Test")
-        let change2Annotated = change2.annotatedLine(for: "Test")
-        let change3Annotated = change3.annotatedLine(for: "Test")
-
-        XCTAssertEqual(change1Annotated, "Test\n")
-        XCTAssertEqual(change2Annotated, "+Test\n")
-        XCTAssertEqual(change3Annotated, "-Test\n")
+        #expect(change1.annotatedLine(for: "Test") == "Test\n")
+        #expect(change2.annotatedLine(for: "Test") == "+Test\n")
+        #expect(change3.annotatedLine(for: "Test") == "-Test\n")
     }
 
-    func testSimpleDiff() {
+    @Test
+    func simpleDiff() {
         let baseString = "abcdef".map(String.init).joined(separator: "\n")
         let headString = "adbcdegh".map(String.init).joined(separator: "\n")
 
@@ -58,14 +43,15 @@ final class DiffTests: XCTestCase {
             ("g", .added),
             ("h", .added)
         ]
-        XCTAssertEqual(expectedChanges.count, simpleDiff.changes.count)
+        #expect(expectedChanges.count == simpleDiff.changes.count)
         for (idx, ((expectedStr, expectedChange), (actualStr, actualChange))) in zip(expectedChanges, simpleDiff.changes).enumerated() {
-            XCTAssertEqual(expectedStr, actualStr, "Strings not equal at \(idx)")
-            XCTAssertEqual(expectedChange, actualChange, "Change not equal at \(idx)")
+            #expect(expectedStr == actualStr, "Strings not equal at \(idx)")
+            #expect(expectedChange == actualChange, "Change not equal at \(idx)")
         }
     }
 
-    func testMoreAdvancedDiff() {
+    @Test
+    func moreAdvancedDiff() {
         let baseJSON = """
         {
           "_id": "59d5e2154ed8569da4294fc7",
@@ -209,6 +195,6 @@ final class DiffTests: XCTestCase {
         let diff = SimpleDiff<String>(base: baseJSON, comparedTo: headJSON)
 
         let annotatedDiff = diff.changes.reduce(into: "") { $0 += $1.1.annotatedLine(for: $1.0) }
-        XCTAssertEqual(annotatedDiff, expectedAnnotatedDiff)
+        #expect(annotatedDiff == expectedAnnotatedDiff)
     }
 }

@@ -19,7 +19,7 @@
 
 // KVC is only available on Darwin platforms
 #if canImport(ObjectiveC)
-import Foundation
+public import Foundation
 
 extension NSPredicate {
     public struct Format: ExpressibleByStringInterpolation {

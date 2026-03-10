@@ -18,19 +18,19 @@
 //  limitations under the License.
 //
 
-import Dispatch
+public import Dispatch
 
-extension DispatchQoS: Comparable {
+extension DispatchQoS: @retroactive Comparable {
     public static func <(lhs: Self, rhs: Self) -> Bool {
         lhs.qosClass < rhs.qosClass
     }
 }
 
-extension DispatchQoS.QoSClass: Comparable {
+extension DispatchQoS.QoSClass: @retroactive Comparable {
     private var sortValue: UInt32 {
-        #if !os(Linux)
+#if !os(Linux)
         return rawValue.rawValue
-        #else
+#else
         switch self {
         case .background: return 0x09
 //        case .maintenance: return 0x05
@@ -40,7 +40,7 @@ extension DispatchQoS.QoSClass: Comparable {
         case .userInteractive: return 0x21
         case .unspecified: return 0x00
         }
-        #endif
+#endif
     }
 
     public static func <(lhs: Self, rhs: Self) -> Bool {

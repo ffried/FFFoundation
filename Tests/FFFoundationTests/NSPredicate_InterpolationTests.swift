@@ -1,108 +1,111 @@
-import XCTest
+import Testing
 import Foundation
 @testable import FFFoundation
 
-final class PredicateInterpolationTests: XCTestCase {
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-
-    func testPredicateCreationFromString() {
-        #if canImport(ObjectiveC)
+@Suite
+struct PredicateInterpolationTests {
+    @Test
+    func predicateCreationFromString() {
+#if canImport(ObjectiveC)
         let predicate = NSPredicate("this = that")
-        XCTAssertEqual(predicate.predicateFormat, "this == that")
-        #endif
+        #expect(predicate.predicateFormat == "this == that")
+#endif
     }
 
-    func testPredicateCreationFromStringInterpolationWithStringKeyAndStringValue() {
-        #if canImport(ObjectiveC)
+    @Test
+    func predicateCreationFromStringInterpolationWithStringKeyAndStringValue() {
+#if canImport(ObjectiveC)
         let predicate = NSPredicate("\(key: "some_key") = \("string_value")")
-        XCTAssertEqual(predicate.predicateFormat, #"some_key == "string_value""#)
-        #endif
+        #expect(predicate.predicateFormat == #"some_key == "string_value""#)
+#endif
     }
 
-    func testPredicateCreationFromStringInterpolationWithStringKeyAndBoolValue() {
-        #if canImport(ObjectiveC)
+    @Test
+    func predicateCreationFromStringInterpolationWithStringKeyAndBoolValue() {
+#if canImport(ObjectiveC)
         let predicate = NSPredicate("\(key: "bool_key") = \(true)")
-        XCTAssertEqual(predicate.predicateFormat, "bool_key == 1")
-        #endif
+        #expect(predicate.predicateFormat == "bool_key == 1")
+#endif
     }
 
-    func testPredicateCreationFromStringInterpolationWithStringKeyAndSignedIntValue() {
-        #if canImport(ObjectiveC)
+    @Test
+    func predicateCreationFromStringInterpolationWithStringKeyAndSignedIntValue() {
+#if canImport(ObjectiveC)
         let predicate = NSPredicate("\(key: "int_key") = \(-42 as Int16)")
-        XCTAssertEqual(predicate.predicateFormat, "int_key == -42")
-        #endif
+        #expect(predicate.predicateFormat == "int_key == -42")
+#endif
     }
 
-    func testPredicateCreationFromStringInterpolationWithStringKeyAndUnsignedIntValue() {
-        #if canImport(ObjectiveC)
+    @Test
+    func predicateCreationFromStringInterpolationWithStringKeyAndUnsignedIntValue() {
+#if canImport(ObjectiveC)
         let predicate = NSPredicate("\(key: "uint_key") = \(42 as UInt16)")
-        XCTAssertEqual(predicate.predicateFormat, "uint_key == 42")
-        #endif
+        #expect(predicate.predicateFormat == "uint_key == 42")
+#endif
     }
 
-    func testPredicateCreationFromStringInterpolationWithStringKeyAndDoubleValue() {
-        #if canImport(ObjectiveC)
+    @Test
+    func predicateCreationFromStringInterpolationWithStringKeyAndDoubleValue() {
+#if canImport(ObjectiveC)
         let predicate = NSPredicate("\(key: "double_key") = \(42.42)")
-        XCTAssertEqual(predicate.predicateFormat, "double_key == 42.42")
-        #endif
+        #expect(predicate.predicateFormat == "double_key == 42.42")
+#endif
     }
 
-    func testPredicateCreationFromStringInterpolationWithStringKeyAndNumberValue() {
-        #if canImport(ObjectiveC)
+    @Test
+    func predicateCreationFromStringInterpolationWithStringKeyAndNumberValue() {
+#if canImport(ObjectiveC)
         let predicate = NSPredicate("\(key: "number_key") = \(NSNumber(value: false))")
-        XCTAssertEqual(predicate.predicateFormat, "number_key == 0")
-        #endif
+        #expect(predicate.predicateFormat == "number_key == 0")
+#endif
     }
 
-    func testPredicateCreationFromStringInterpolationWithStringKeyAndOptionalValue() {
-        #if canImport(ObjectiveC)
+    @Test
+    func predicateCreationFromStringInterpolationWithStringKeyAndOptionalValue() {
+#if canImport(ObjectiveC)
         let optional: Int? = nil
         let predicate = NSPredicate("\(key: "optional_int_key") = \(optional)")
-        XCTAssertEqual(predicate.predicateFormat, "optional_int_key == nil")
-        #endif
+        #expect(predicate.predicateFormat == "optional_int_key == nil")
+#endif
     }
 
-    func testPredicateCreationFromStringInterpolationWithStringKeyAndNilValue() {
-        #if canImport(ObjectiveC)
+    @Test
+    func predicateCreationFromStringInterpolationWithStringKeyAndNilValue() {
+#if canImport(ObjectiveC)
         let predicate = NSPredicate("\(key: "null_key") = \(nil as Any?)")
-        XCTAssertEqual(predicate.predicateFormat, "null_key == nil")
-        #endif
+        #expect(predicate.predicateFormat == "null_key == nil")
+#endif
     }
 
-    func testPredicateCreationFromStringInterpolationWithStringKeyAndBridgeableValue() {
-        #if canImport(ObjectiveC)
+    @Test
+    func predicateCreationFromStringInterpolationWithStringKeyAndBridgeableValue() {
+#if canImport(ObjectiveC)
         let value = Date(timeIntervalSinceReferenceDate: 592299475.57712)
         let predicate = NSPredicate("\(key: "bridgeable_key") = \(value)")
-        XCTAssertEqual(predicate.predicateFormat, #"bridgeable_key == CAST(592299475.577120, "NSDate")"#)
-        #endif
+        #expect(predicate.predicateFormat == #"bridgeable_key == CAST(592299475.577120, "NSDate")"#)
+#endif
     }
 
-    func testPredicateCreationFromStringInterpolationWithStringKeyAndNilBridgeableValue() {
-        #if canImport(ObjectiveC)
+    @Test
+    func predicateCreationFromStringInterpolationWithStringKeyAndNilBridgeableValue() {
+#if canImport(ObjectiveC)
         let value: Date? = nil
         let predicate = NSPredicate("\(key: "optional_bridgeable_key") = \(value)")
-        XCTAssertEqual(predicate.predicateFormat, #"optional_bridgeable_key == nil"#)
-        #endif
+        #expect(predicate.predicateFormat == #"optional_bridgeable_key == nil"#)
+#endif
     }
 
-    #if canImport(ObjectiveC)
+#if canImport(ObjectiveC)
     fileprivate final class TestObject: NSObject {
         @objc dynamic var string: String = "test"
     }
-    #endif
+#endif
 
-    func testPredicateCreationFromStringInterpolationWithKeyPathKeyAndStringValue() {
-        #if canImport(ObjectiveC)
+    @Test
+    func predicateCreationFromStringInterpolationWithKeyPathKeyAndStringValue() {
+#if canImport(ObjectiveC)
         let predicate = NSPredicate("\(\TestObject.string) = \("string_value")")
-        XCTAssertEqual(predicate.predicateFormat, #"string == "string_value""#)
-        #endif
+        #expect(predicate.predicateFormat == #"string == "string_value""#)
+#endif
     }
 }

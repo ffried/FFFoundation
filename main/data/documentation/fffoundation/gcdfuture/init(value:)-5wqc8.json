@@ -74,7 +74,7 @@
     ],
     "remoteSource" : {
       "fileName" : "GCDFuture.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/GCDFuture.swift#L54"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/GCDFuture.swift#L60"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",

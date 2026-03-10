@@ -21,6 +21,8 @@
 public import Foundation
 #if os(Linux)
 import CDispatch
+#endif
+#if os(Linux) || compiler(<6.1)
 @preconcurrency import Dispatch
 #else
 import Dispatch

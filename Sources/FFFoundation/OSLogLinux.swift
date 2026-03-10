@@ -21,7 +21,7 @@
 public import Foundation
 
 @frozen
-public struct OSLogType: RawRepresentable, Hashable {
+public struct OSLogType: RawRepresentable, Hashable, Sendable {
     public typealias RawValue = UInt8
 
     public let rawValue: RawValue
@@ -47,8 +47,8 @@ public struct OSLogType: RawRepresentable, Hashable {
     }
 }
 
-public final class OSLog: NSObject {
-    private enum Kind: Equatable {
+public final class OSLog: NSObject, Sendable {
+    private enum Kind: Equatable, Sendable {
         case `default`
         case `disabled`
         case custom(subsystem: String, category: Category)
@@ -99,7 +99,7 @@ extension OSLog {
 
 extension OSLog {
     @frozen
-    public struct Category: RawRepresentable, Hashable {
+    public struct Category: RawRepresentable, Hashable, Sendable {
         public typealias RawValue = String
 
         public let rawValue: RawValue

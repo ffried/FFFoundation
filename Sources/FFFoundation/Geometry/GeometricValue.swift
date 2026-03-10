@@ -30,32 +30,50 @@ public protocol GeometricValue: FloatingPoint {
 }
 
 extension Double: GeometricValue {
+    @inlinable
     public func sin() -> Double { Foundation.sin(self) }
+    @inlinable
     public func asin() -> Double { Foundation.asin(self) }
+    @inlinable
     public func cos() -> Double { Foundation.cos(self) }
+    @inlinable
     public func acos() -> Double { Foundation.acos(self) }
+    @inlinable
     public func tan() -> Double { Foundation.tan(self) }
+    @inlinable
     public func atan() -> Double { Foundation.atan(self) }
 }
 
 extension Float: GeometricValue {
+    @inlinable
     public func sin() -> Float { Foundation.sin(self) }
+    @inlinable
     public func asin() -> Float { Foundation.asin(self) }
+    @inlinable
     public func cos() -> Float { Foundation.cos(self) }
+    @inlinable
     public func acos() -> Float { Foundation.acos(self) }
+    @inlinable
     public func tan() -> Float { Foundation.tan(self) }
+    @inlinable
     public func atan() -> Float { Foundation.atan(self) }
 }
 
 #if canImport(CoreGraphics)
-import CoreGraphics
+public import CoreGraphics
 
 extension CGFloat: GeometricValue {
+    @inlinable
     public func sin() -> CGFloat { CoreGraphics.sin(self) }
+    @inlinable
     public func asin() -> CGFloat { CoreGraphics.asin(self) }
+    @inlinable
     public func cos() -> CGFloat { CoreGraphics.cos(self) }
+    @inlinable
     public func acos() -> CGFloat { CoreGraphics.acos(self) }
+    @inlinable
     public func tan() -> CGFloat { CoreGraphics.tan(self) }
+    @inlinable
     public func atan() -> CGFloat { CoreGraphics.atan(self) }
 }
 #endif

@@ -19,9 +19,11 @@
 //
 
 public import Foundation
-import Dispatch
 #if os(Linux)
 import CDispatch
+@preconcurrency import Dispatch
+#else
+import Dispatch
 #endif
 
 public final class Timer<T> {

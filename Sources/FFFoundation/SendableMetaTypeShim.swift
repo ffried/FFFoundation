@@ -1,3 +1,3 @@
-#if compiler(<6.1)
+#if compiler(<6.2)
 public typealias SendableMetatype = Any
 #endif

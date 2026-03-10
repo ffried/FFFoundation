@@ -6,7 +6,7 @@ updates:
     open-pull-requests-limit: 10
     schedule:
       interval: daily
-      time: 08:00
+      time: "08:00"
       timezone: Europe/Berlin
 
   - package-ecosystem: swift
@@ -14,5 +14,5 @@ updates:
     open-pull-requests-limit: 10
     schedule:
       interval: daily
-      time: 08:00
+      time: "08:00"
       timezone: Europe/Berlin

@@ -158,6 +158,7 @@ extension UserDefault where Value: ExpressibleByDictionaryLiteral {
     }
 }
 
+#if canImport(Darwin)
 extension UserDefault {
     private final class KVObserver: NSObject {
         private var context = 0
@@ -269,6 +270,7 @@ extension UserDefault where Value: Sendable {
 }
 
 extension UserDefault.Values: Sendable where Value: Sendable {}
+#endif
 
 #if arch(arm64) || arch(x86_64)
 #if canImport(Combine)

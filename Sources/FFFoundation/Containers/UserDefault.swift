@@ -265,7 +265,7 @@ extension UserDefault where Value: Sendable {
         }
     }
 
-    var values: Values {
+    public var values: Values {
         .init(userDefault: self, yieldInitial: false)
     }
 }

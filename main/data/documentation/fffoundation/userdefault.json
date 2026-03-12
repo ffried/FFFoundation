@@ -152,7 +152,7 @@
       "anchor" : "Structures",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct"
       ],
       "title" : "Structures"
     },
@@ -182,6 +182,7 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/projectedValue",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/publisher-swift.property",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/userDefaults",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/values-swift.property",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/wrappedValue"
       ],
       "title" : "Instance Properties"
@@ -369,7 +370,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class"
 },
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/Values": {
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct": {
   "abstract" : [
 
   ],
@@ -427,7 +428,7 @@
       "text" : "Values"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -438,7 +439,7 @@
   "role" : "symbol",
   "title" : "UserDefault.Values",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/values"
+  "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/binding": {
   "abstract" : [
@@ -1648,6 +1649,97 @@
   "title" : "userDefaults",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/userdefaults"
+},
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/values-swift.property": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "PrimitiveUserDefaultStorable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " and ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "values"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV",
+      "text" : "UserDefault"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV",
+      "text" : "Values"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/values-swift.property",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "values",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.property"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/wrappedValue": {
   "abstract" : [

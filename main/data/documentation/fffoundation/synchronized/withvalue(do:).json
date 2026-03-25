@@ -99,7 +99,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Synchronized.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Synchronized.swift#L53"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Synchronized.swift#L61"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",

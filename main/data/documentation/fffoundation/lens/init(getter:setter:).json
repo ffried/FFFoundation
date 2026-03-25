@@ -13,7 +13,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:12FFFoundation4LensV6getter6setterACyxGxyc_yxctcfc",
+    "externalID" : "s:12FFFoundation4LensV6getter6setterACyxGxyc_yxnctcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -48,6 +48,14 @@
         "text" : ": ("
       },
       {
+        "kind" : "keyword",
+        "text" : "consuming"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
         "kind" : "typeIdentifier",
         "text" : "Value"
       },
@@ -63,7 +71,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Lens.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Lens.swift#L104"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Lens.swift#L127"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -136,6 +144,14 @@
             {
               "kind" : "text",
               "text" : "("
+            },
+            {
+              "kind" : "keyword",
+              "text" : "consuming"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "kind" : "typeIdentifier",
@@ -251,6 +267,14 @@
     {
       "kind" : "text",
       "text" : ": ("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "consuming"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",

@@ -80,7 +80,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Synchronized.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Synchronized.swift#L131"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Synchronized.swift#L139"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",

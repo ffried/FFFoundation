@@ -123,7 +123,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Synchronized.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Synchronized.swift#L99"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Synchronized.swift#L107"
     },
     "role" : "symbol",
     "roleHeading" : "Operator",

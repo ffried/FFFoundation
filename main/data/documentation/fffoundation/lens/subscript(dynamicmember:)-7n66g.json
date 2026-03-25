@@ -9,7 +9,7 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/subscript(dynamicMember:)"
+    "url" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/subscript(dynamicMember:)-7n66g"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -89,7 +89,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Lens.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Lens.swift#L108"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Lens.swift#L132"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Subscript",
@@ -207,7 +207,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/fffoundation\/lens\/subscript(dynamicmember:)"
+        "\/documentation\/fffoundation\/lens\/subscript(dynamicmember:)-7n66g"
       ],
       "traits" : [
         {
@@ -260,7 +260,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/lens"
 },
-"doc://FFFoundation/documentation/FFFoundation/Lens/subscript(dynamicMember:)": {
+"doc://FFFoundation/documentation/FFFoundation/Lens/subscript(dynamicMember:)-7n66g": {
   "abstract" : [
 
   ],
@@ -332,12 +332,12 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/subscript(dynamicMember:)",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/subscript(dynamicMember:)-7n66g",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "subscript(dynamicMember:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/lens\/subscript(dynamicmember:)"
+  "url" : "\/documentation\/fffoundation\/lens\/subscript(dynamicmember:)-7n66g"
 }
 }
 }

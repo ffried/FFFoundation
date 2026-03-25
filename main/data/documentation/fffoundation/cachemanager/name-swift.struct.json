@@ -121,6 +121,8 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/FFFoundation\/SQ",
+        "doc:\/\/FFFoundation\/SH",
         "doc:\/\/FFFoundation\/SY",
         "doc:\/\/FFFoundation\/s8SendableP",
         "doc:\/\/FFFoundation\/s16SendableMetatypeP"
@@ -170,6 +172,15 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct\/default"
       ],
       "title" : "Type Properties"
+    },
+    {
+      "anchor" : "Default-Implementations",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct\/Equatable-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct\/RawRepresentable-Implementations"
+      ],
+      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -186,6 +197,16 @@
   ]
 , 
 "references": {
+"doc://FFFoundation/SH": {
+  "identifier" : "doc:\/\/FFFoundation\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/SQ": {
+  "identifier" : "doc:\/\/FFFoundation\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
 "doc://FFFoundation/SY": {
   "identifier" : "doc:\/\/FFFoundation\/SY",
   "title" : "Swift.RawRepresentable",
@@ -295,6 +316,28 @@
   "title" : "CacheManager.Name",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cachemanager\/name-swift.struct"
+},
+"doc://FFFoundation/documentation/FFFoundation/CacheManager/Name-swift.struct/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/cachemanager\/name-swift.struct\/equatable-implementations"
+},
+"doc://FFFoundation/documentation/FFFoundation/CacheManager/Name-swift.struct/RawRepresentable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct\/RawRepresentable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "RawRepresentable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/cachemanager\/name-swift.struct\/rawrepresentable-implementations"
 },
 "doc://FFFoundation/documentation/FFFoundation/CacheManager/Name-swift.struct/RawValue-swift.typealias": {
   "abstract" : [

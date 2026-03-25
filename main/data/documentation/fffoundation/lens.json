@@ -40,7 +40,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Lens.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Lens.swift#L84"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/Lens.swift#L107"
     },
     "role" : "symbol",
     "roleHeading" : "Structure",
@@ -153,7 +153,8 @@
       "anchor" : "Subscripts",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/subscript(dynamicMember:)"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/subscript(dynamicMember:)-5j88t",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/subscript(dynamicMember:)-7n66g"
       ],
       "title" : "Subscripts"
     },
@@ -302,6 +303,14 @@
       "text" : "("
     },
     {
+      "kind" : "keyword",
+      "text" : "consuming"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
       "kind" : "typeIdentifier",
       "text" : "Value"
     },
@@ -370,6 +379,14 @@
     {
       "kind" : "text",
       "text" : ": ("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "consuming"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -460,7 +477,86 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/lens\/readonly(getter:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/Lens/subscript(dynamicMember:)": {
+"doc://FFFoundation/documentation/FFFoundation/Lens/subscript(dynamicMember:)-5j88t": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "subscript"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "dynamicMember"
+    },
+    {
+      "kind" : "text",
+      "text" : " _: "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s24ReferenceWritableKeyPathC",
+      "text" : "ReferenceWritableKeyPath"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV",
+      "text" : "Lens"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/subscript(dynamicMember:)-5j88t",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "subscript(dynamicMember:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/lens\/subscript(dynamicmember:)-5j88t"
+},
+"doc://FFFoundation/documentation/FFFoundation/Lens/subscript(dynamicMember:)-7n66g": {
   "abstract" : [
 
   ],
@@ -532,12 +628,12 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/subscript(dynamicMember:)",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/subscript(dynamicMember:)-7n66g",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "subscript(dynamicMember:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/lens\/subscript(dynamicmember:)"
+  "url" : "\/documentation\/fffoundation\/lens\/subscript(dynamicmember:)-7n66g"
 },
 "doc://FFFoundation/documentation/FFFoundation/Lens/wrappedValue": {
   "abstract" : [

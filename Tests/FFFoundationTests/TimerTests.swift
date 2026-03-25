@@ -6,7 +6,7 @@ fileprivate extension ExpressibleByIntegerLiteral {
     static var nsecPerSec: Self { 1_000_000_000 }
 }
 
-@Suite
+@Suite(.timeLimit(.minutes(2)))
 struct TimerTests {
     @Test
     func timerFiringManually() {
@@ -17,7 +17,7 @@ struct TimerTests {
     }
 
     private func makeTimer(interval: TimeInterval, repeats: Bool = false, block: @escaping (AnyTimer) -> Void) -> AnyTimer {
-        AnyTimer(interval: interval, block: block)
+        AnyTimer(interval: interval, repeats: repeats, block: block)
     }
 
     @Test

@@ -44,6 +44,8 @@ fileprivate struct ConstantStorage<Value>: LensStorage {
 #endif
 }
 
+extension ConstantStorage: Sendable where Value: Sendable {}
+
 fileprivate struct AccessorsStorage<Value>: LensStorage {
     let getter: @Sendable () -> Value
     let setter: @Sendable (Value) -> ()
@@ -60,12 +62,17 @@ fileprivate struct AccessorsStorage<Value>: LensStorage {
 
 extension AccessorsStorage: Sendable where Value: Sendable {}
 
-fileprivate struct KeyPathStorage<ParentValue, Value>: LensStorage {
-    let parent: Lens<ParentValue>
-    let keyPath: WritableKeyPath<ParentValue, Value>
+fileprivate protocol KeyPathStorageProtocol: LensStorage {
+    associatedtype Parent
+    associatedtype Value
+    associatedtype KeyPath: Swift.WritableKeyPath<Parent, Value>
 
+    var parent: Lens<Parent> { get }
+    var keyPath: KeyPath { get }
+}
+
+extension KeyPathStorageProtocol {
     func read() -> Value { parent.wrappedValue[keyPath: keyPath] }
-    func write(_ newValue: Value) { parent.wrappedValue[keyPath: keyPath] = newValue }
 
 #if arch(arm64) || arch(x86_64)
 #if canImport(Combine) && canImport(SwiftUI)
@@ -76,7 +83,23 @@ fileprivate struct KeyPathStorage<ParentValue, Value>: LensStorage {
 #endif
 }
 
-extension KeyPathStorage: @unchecked Sendable where ParentValue: Sendable, Value: Sendable {}
+fileprivate struct WritableKeyPathStorage<ParentValue, Value>: KeyPathStorageProtocol {
+    let parent: Lens<ParentValue>
+    let keyPath: WritableKeyPath<ParentValue, Value>
+
+    func write(_ newValue: Value) { parent.wrappedValue[keyPath: keyPath] = newValue }
+}
+
+extension WritableKeyPathStorage: @unchecked Sendable where ParentValue: Sendable, Value: Sendable {}
+
+fileprivate struct ReferenceWritableKeyPathStorage<ParentValue, Value>: KeyPathStorageProtocol {
+    let parent: Lens<ParentValue>
+    let keyPath: ReferenceWritableKeyPath<ParentValue, Value>
+
+    func write(_ newValue: Value) { parent.wrappedValue[keyPath: keyPath] = newValue }
+}
+
+extension ReferenceWritableKeyPathStorage: @unchecked Sendable where ParentValue: Sendable, Value: Sendable {}
 
 @propertyWrapper
 @dynamicMemberLookup
@@ -96,17 +119,22 @@ public struct Lens<Value> {
         self.storage = storage
     }
 
-    internal init<Base>(base: Base, keyPath: WritableKeyPath<Base, Value>) {
-        self.init(storage: KeyPathStorage(parent: .constant(base), keyPath: keyPath))
+    internal init<Base>(base: Base, keyPath: ReferenceWritableKeyPath<Base, Value>) {
+        self.init(storage: ReferenceWritableKeyPathStorage(parent: .constant(base), keyPath: keyPath))
     }
 
     @preconcurrency
-    public init(getter: @escaping @Sendable () -> Value, setter: @escaping @Sendable (Value) -> ()) {
+    public init(getter: @escaping @Sendable () -> Value, setter: @escaping @Sendable (consuming Value) -> ()) {
         self.init(storage: AccessorsStorage(getter: getter, setter: setter))
     }
 
+    @_disfavoredOverload
     public subscript<T>(dynamicMember keyPath: WritableKeyPath<Value, T>) -> Lens<T> {
-        Lens<T>(storage: KeyPathStorage(parent: self, keyPath: keyPath))
+        Lens<T>(storage: WritableKeyPathStorage(parent: self, keyPath: keyPath))
+    }
+
+    public subscript<T>(dynamicMember keyPath: ReferenceWritableKeyPath<Value, T>) -> Lens<T> {
+        Lens<T>(storage: ReferenceWritableKeyPathStorage(parent: self, keyPath: keyPath))
     }
 
     /// Returns a readonly lens. The setter may be called, but has no effect.
@@ -118,7 +146,7 @@ public struct Lens<Value> {
 
     /// Returns a constant value. The setter of the resulting Lens must not be called!
     /// - Parameter value: The constant value to wrap in a Lens.
-    public static func constant(_ value: Value) -> Lens {
+    public static func constant(_ value: consuming Value) -> Lens {
         Lens(storage: ConstantStorage(value: value))
     }
 }

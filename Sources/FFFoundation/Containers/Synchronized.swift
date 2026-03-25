@@ -44,11 +44,19 @@ public final class Synchronized<Guarded>: @unchecked Sendable {
         return queue.sync { _wrappedValue[keyPath: keyPath] }
     }
 
+#if compiler(>=6.3)
+    @inline(always)
+    private func withMutableValue<T>(do work: (inout Guarded) throws -> T) rethrows -> T {
+        dispatchPrecondition(condition: .onQueue(queue))
+        return try work(&_wrappedValue)
+    }
+#else
     @inline(__always)
     private func withMutableValue<T>(do work: (inout Guarded) throws -> T) rethrows -> T {
         dispatchPrecondition(condition: .onQueue(queue))
         return try work(&_wrappedValue)
     }
+#endif
 
     public func withValue<T>(do work: (inout Guarded) throws -> T) rethrows -> T {
         dispatchPrecondition(condition: .notOnQueue(queue))

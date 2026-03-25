@@ -26,7 +26,7 @@ public final class Ref<Referenced>: ReferenceCopyable {
         Lens(base: self, keyPath: \.wrappedValue)
     }
 
-    public init(wrappedValue: Referenced) {
+    public init(wrappedValue: consuming Referenced) {
         self.wrappedValue = wrappedValue
     }
 

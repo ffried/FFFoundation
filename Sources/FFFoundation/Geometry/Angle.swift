@@ -18,13 +18,15 @@
 //  limitations under the License.
 //
 
-public struct Angle<Value: FloatingPoint>: FloatingPoint, CustomStringConvertible where Value.Stride == Value {
+public struct Angle<Value>: /*~Swift.Copyable,*/ FloatingPoint, CustomStringConvertible
+where /*Value: ~Swift.Copyable,*/ Value: FloatingPoint, Value.Stride == Value
+{
     public typealias Stride = Angle
     public typealias IntegerLiteralType = Value.IntegerLiteralType
     public typealias Exponent = Value.Exponent
     public typealias Magnitude = Angle
 
-    private enum Kind {
+    private enum Kind: Sendable {
         case radians, degrees
     }
 
@@ -33,8 +35,8 @@ public struct Angle<Value: FloatingPoint>: FloatingPoint, CustomStringConvertibl
 
     public var description: String {
         switch kind {
-        case .radians: return "\(value) radians"
-        case .degrees: return "\(value) degrees"
+        case .radians: "\(value) radians"
+        case .degrees: "\(value) degrees"
         }
     }
 
@@ -52,15 +54,15 @@ public struct Angle<Value: FloatingPoint>: FloatingPoint, CustomStringConvertibl
 
     public var asRadians: Angle<Value> {
         switch kind {
-        case .radians: return self
-        case .degrees: return converted()
+        case .radians: self
+        case .degrees: converted()
         }
     }
     
     public var asDegrees: Angle<Value> {
         switch kind {
-        case .radians: return converted()
-        case .degrees: return self
+        case .radians: converted()
+        case .degrees: self
         }
     }
 
@@ -236,6 +238,7 @@ fileprivate extension Angle {
 }
 
 extension Angle: Sendable where Value: Sendable {}
+//extension Angle: Swift.Copyable where Value: Swift.Copyable {}
 
 extension Angle: Encodable where Value: Encodable {
     public func encode(to encoder: any Encoder) throws {

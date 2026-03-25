@@ -28,6 +28,7 @@ import CDispatch
 import Dispatch
 #endif
 
+@available(*, noasync, message: "Use Task.sleep instead")
 public final class Timer<T> {
     public typealias Block = (Timer) -> ()
     
@@ -91,4 +92,5 @@ public final class Timer<T> {
     }
 }
 
+@available(*, noasync, message: "Use Task.sleep instead")
 public typealias AnyTimer = Timer<Any>

@@ -172,5 +172,15 @@ struct UserDefaultTests: ~Swift.Copyable {
         #expect(dict?["dict"] as? [String: String] == objValue.dict)
         #expect(dict?["range"] as? [Int] == [objValue.range.lowerBound, objValue.range.upperBound])
     }
+
+    @Test
+    func userDefaultLensReadingAndWriting() {
+        let int = UserDefault<Int>(userDefaults: userDefaults, key: .intKey)
+        let lens = int.projectedValue
+        #expect(lens.wrappedValue == int.wrappedValue)
+        lens.wrappedValue = 42
+        #expect(lens.wrappedValue == 42)
+        #expect(int.wrappedValue == 42)
+    }
 }
 #endif

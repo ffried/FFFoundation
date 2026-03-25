@@ -19,7 +19,7 @@
 //
 
 @frozen
-public struct Point<Value: Numeric & Hashable>: Hashable {
+public struct Point<Value: /*~Swift.Copyable & */Numeric & Hashable>: Hashable/*, ~Swift.Copyable*/ {
     public var x: Value
     public var y: Value
 
@@ -34,6 +34,7 @@ extension Point {
 }
 
 extension Point: Sendable where Value: Sendable {}
+//extension Point: Copyable where Value: Copyable {}
 extension Point: Encodable where Value: Encodable {}
 extension Point: Decodable where Value: Decodable {}
 extension Point: TriangulatablePoint where Value: GeometricValue {}

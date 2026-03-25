@@ -16,11 +16,15 @@ struct TimerTests {
         #expect(timerInClosure === timer)
     }
 
+    private func makeTimer(interval: TimeInterval, repeats: Bool = false, block: @escaping (AnyTimer) -> Void) -> AnyTimer {
+        AnyTimer(interval: interval, block: block)
+    }
+
     @Test
     func timerInvalidatesOnDeinit() async throws {
         try await confirmation(expectedCount: 0) { confirmation in
             let timerInterval: TimeInterval = 2.0
-            var timer: AnyTimer? = AnyTimer(interval: timerInterval, block: { _ in confirmation() })
+            var timer: Optional<_> = makeTimer(interval: timerInterval, block: { _ in confirmation() })
             timer?.schedule()
             timer = nil // deinit
             try await Task.sleep(nanoseconds: UInt64(timerInterval * .nsecPerSec) * 2)
@@ -32,7 +36,7 @@ struct TimerTests {
         try await confirmation(expectedCount: 1) { exp in
             var date = Date()
             let timerInterval: TimeInterval = 2.0
-            let timer = AnyTimer(interval: timerInterval, block: { timer in
+            let timer = makeTimer(interval: timerInterval, block: { timer in
                 #expect(abs(abs(date.timeIntervalSinceNow) - timerInterval) <= 0.02)
                 exp()
             })
@@ -49,7 +53,7 @@ struct TimerTests {
             let timerInterval: TimeInterval = 2.0
             let tolerance: TimeInterval = 0.5
 
-            let timer = AnyTimer(interval: timerInterval, block: { timer in
+            let timer = makeTimer(interval: timerInterval, block: { timer in
                 #expect(abs(abs(date.timeIntervalSinceNow) - timerInterval) <= tolerance)
                 exp()
             })
@@ -70,7 +74,7 @@ struct TimerTests {
 
             let repeats = 5
             var counter = 0
-            let timer = AnyTimer(interval: timerInterval, repeats: true, block: { timer in
+            let timer = makeTimer(interval: timerInterval, repeats: true, block: { timer in
                 let interval = Date().timeIntervalSince(date)
                 date = Date()
                 accuracies.append(interval)

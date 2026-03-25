@@ -43,7 +43,6 @@ public struct Diff<Subject: Collection, Element: Diffable> {
 public typealias SimpleDiff<Subject: Collection & Diffable> = Diff<Subject, Subject>
 public typealias ElementDiff<Subject: Collection> = Diff<Subject, Subject.SubSequence> where Subject.SubSequence: Diffable
 
-extension Diff.Change: Sendable {}
 extension Diff: Sendable where Subject: Sendable, Element: Sendable {}
 
 extension Diff where Subject.Element: Equatable, Element == Subject.SubSequence {
@@ -119,7 +118,7 @@ extension Diff: Decodable where Subject: Decodable, Element: Decodable {
 }
 
 extension Diff {
-    public enum Change: Hashable, CustomStringConvertible, Codable {
+    public enum Change: Sendable, Hashable, CustomStringConvertible, Codable {
         case unchanged, added, removed
 
         public var description: String {

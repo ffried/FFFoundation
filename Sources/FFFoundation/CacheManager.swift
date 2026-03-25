@@ -171,7 +171,7 @@ extension CacheManager {
 
 extension CacheManager {
     @frozen
-    public struct Name: RawRepresentable {
+    public struct Name: Sendable, RawRepresentable, Hashable {
         public typealias RawValue = String
 
         public let rawValue: RawValue
@@ -189,9 +189,9 @@ public enum CachingError: Error, CustomStringConvertible {
     public var description: String {
         switch self {
         case .couldNotSerialize(let underlyingError):
-            return "Could not serialize!\nUnderlying error: \(underlyingError.map { "\($0)" } ?? "nil")"
+            "Could not serialize!\nUnderlying error: \(underlyingError.map { "\($0)" } ?? "nil")"
         case .couldNotDeserialize(let underlyingError):
-            return "Could not de-serialize!\nUnderlying error: \(underlyingError.map { "\($0)" } ?? "nil")"
+            "Could not de-serialize!\nUnderlying error: \(underlyingError.map { "\($0)" } ?? "nil")"
         }
     }
 }

@@ -6,7 +6,19 @@ fileprivate extension ExpressibleByIntegerLiteral {
     static var nsecPerSec: Self { 1_000_000_000 }
 }
 
-@Suite(.timeLimit(.minutes(2)))
+fileprivate struct EmptyTrait: SuiteTrait {
+    var isRecursive: Bool { true }
+}
+
+var timerTimeLimit: any SuiteTrait {
+    if #available(macOS 13.0, iOS 16.0, tvOS 16.0, watchOS 9.0, *) {
+        .timeLimit(.minutes(2))
+    } else {
+        EmptyTrait()
+    }
+}
+
+@Suite(timerTimeLimit)
 struct TimerTests {
     @Test
     func timerFiringManually() {

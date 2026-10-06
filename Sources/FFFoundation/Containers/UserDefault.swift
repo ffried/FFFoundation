@@ -224,10 +224,16 @@ extension UserDefault where Value: Sendable {
                 self.underlyingIterator = underlyingIterator
             }
 
+#if swift(>=6.2)
             @concurrent
             public mutating func next() async -> Element? {
                 await underlyingIterator.next()
             }
+#else
+            public mutating func next() async -> Element? {
+                await underlyingIterator.next()
+            }
+#endif
 
             @available(macOS 15.0, iOS 18.0, watchOS 11.0, tvOS 18.0, visionOS 2.0, *)
             public mutating func next(isolation actor: isolated (any Actor)?) async throws(Failure) -> Element? {

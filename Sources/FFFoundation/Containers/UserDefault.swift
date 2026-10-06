@@ -224,6 +224,7 @@ extension UserDefault where Value: Sendable {
                 self.underlyingIterator = underlyingIterator
             }
 
+            @concurrent
             public mutating func next() async -> Element? {
                 await underlyingIterator.next()
             }

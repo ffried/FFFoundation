@@ -57,7 +57,9 @@ public struct CoW<Value: AnyObject> {
 }
 
 extension CoW: @unchecked Sendable where Value: Sendable {
-    public init(wrappedValue: Value, copyingWith copier: @escaping @Sendable Copier) {
+    public typealias SendableCopier = @Sendable (Value) -> Value
+
+    public init(wrappedValue: Value, copyingWith copier: @escaping SendableCopier) {
         self.init(_wrappedValue: wrappedValue, _copier: copier)
     }
 }

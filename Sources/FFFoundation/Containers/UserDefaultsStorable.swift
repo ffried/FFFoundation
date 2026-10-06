@@ -43,8 +43,7 @@ extension CodableUserDefaultsStorable {
             let data = try PropertyListSerialization.data(fromPropertyList: value, format: .binary, options: 0)
             return try PropertyListDecoder().decode(Self.self, from: data)
         } catch {
-// Compiler check needed to prevent parsing of code in nested compiler checks
-#if compiler(>=6.0) && !os(Linux)
+#if !os(Linux)
 #if compiler(>=6.2)
             unsafe os_log("[UserDefault] Could not decode %@ for key %@ from user defaults %@",
                           log: .ffFoundation, type: .error, String(describing: Self.self), key, userDefaults)
@@ -52,8 +51,7 @@ extension CodableUserDefaultsStorable {
             os_log("[UserDefault] Could not decode %@ for key %@ from user defaults %@",
                    log: .ffFoundation, type: .error, String(describing: Self.self), key, userDefaults)
 #endif
-#elseif compiler(>=6.0)
-#if compiler(>=6.2)
+#elseif compiler(>=6.2)
             unsafe String(describing: Self.self).withCString { type in
                 unsafe key.withCString { keyStr in
                     unsafe String(describing: userDefaults).withCString { ud in
@@ -72,7 +70,6 @@ extension CodableUserDefaultsStorable {
                 }
             }
 #endif
-#endif
             return nil
         }
     }
@@ -86,7 +83,7 @@ extension CodableUserDefaultsStorable {
 #endif
             userDefaults.set(object, forKey: key)
         } catch {
-#if compiler(>=6.0) && !os(Linux)
+#if !os(Linux)
 #if compiler(>=6.2)
             unsafe os_log("[UserDefault] Could not encode %@ for key %@ for user defaults %@",
                           log: .ffFoundation, type: .error, String(describing: Self.self), key, userDefaults)
@@ -94,8 +91,7 @@ extension CodableUserDefaultsStorable {
             os_log("[UserDefault] Could not encode %@ for key %@ for user defaults %@",
                    log: .ffFoundation, type: .error, String(describing: Self.self), key, userDefaults)
 #endif
-#elseif compiler(>=6.0)
-#if compiler(>=6.2)
+#elseif compiler(>=6.2)
             unsafe String(describing: Self.self).withCString { type in
                 unsafe key.withCString { keyStr in
                     unsafe String(describing: userDefaults).withCString { ud in
@@ -113,7 +109,6 @@ extension CodableUserDefaultsStorable {
                     }
                 }
             }
-#endif
 #endif
         }
     }

@@ -39,11 +39,11 @@ extension NSLayoutConstraint {
     public typealias MetricsDictionary = Dictionary<String, MetricValueType>
     public typealias ViewsDictionary   = Dictionary<String, ViewType>
 
-    public static func constraints<Formats: Sequence>(withVisualFormats formats: Formats,
+    @inlinable
+    public static func constraints(withVisualFormats formats: some Sequence<VisualFormatType>,
                                                       options: FormatOptions = [],
                                                       metrics: MetricsDictionary? = nil,
-                                                      views: ViewsDictionary) -> [NSLayoutConstraint]
-    where Formats.Element == VisualFormatType
+                                                      views: ViewsDictionary) -> Array<NSLayoutConstraint>
     {
         formats.flatMap { constraints(withVisualFormat: $0, options: options, metrics: metrics, views: views) }
     }
@@ -52,11 +52,13 @@ extension NSLayoutConstraint {
 @available(macOS 10.7, iOS 6.0, tvOS 6.0, *)
 extension Sequence where Element == NSLayoutConstraint {
     @MainActor
+    @inlinable
     public func activate() {
         NSLayoutConstraint.activate(Array(self))
     }
 
     @MainActor
+    @inlinable
     public func deactivate() {
         NSLayoutConstraint.deactivate(Array(self))
     }
@@ -65,9 +67,10 @@ extension Sequence where Element == NSLayoutConstraint {
 @available(macOS 10.7, iOS 6.0, tvOS 6.0, *)
 extension Sequence where Element == NSLayoutConstraint.VisualFormatType {
     @MainActor
+    @inlinable
     public func constraints(with views: NSLayoutConstraint.ViewsDictionary,
                             options: NSLayoutConstraint.FormatOptions = [],
-                            metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> [NSLayoutConstraint] {
+                            metrics: NSLayoutConstraint.MetricsDictionary? = nil) -> Array<NSLayoutConstraint> {
         NSLayoutConstraint.constraints(withVisualFormats: self, options: options, metrics: metrics, views: views)
     }
 }

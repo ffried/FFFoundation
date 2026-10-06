@@ -21,7 +21,7 @@
 import Foundation
 
 public protocol Diffable: Equatable {
-    func contains(_ other: Self) -> Bool
+    func contains(_ other: borrowing Self) -> Bool
 }
 
 extension String: Diffable {}

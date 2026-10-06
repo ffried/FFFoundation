@@ -20,7 +20,7 @@
 
 public import Foundation
 
-public protocol Togglable {
+public protocol Togglable: ~Swift.Copyable {
     /// A inverted version of `self`.
     var toggled: Self { get }
 

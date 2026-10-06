@@ -18,13 +18,23 @@ public struct TypeDescription: Equatable, Hashable, Codable, Sendable, CustomStr
         self.genericParameters = genericParameters
     }
 
-    public init<T>(_ type: T.Type) {
+#if swift(>=6.2)
+    public init<T: ~Swift.Copyable & ~Escapable>(_ type: T.Type) {
         self = String(reflecting: type).parseType()
     }
 
-    public init(any type: Any.Type) {
+    public init(any type: any (~Swift.Copyable & ~Escapable).Type) {
         self = String(reflecting: type).parseType()
     }
+#else
+    public init<T: ~Swift.Copyable>(_ type: T.Type) {
+        self = String(reflecting: type).parseType()
+    }
+
+    public init(any type: any (~Swift.Copyable).Type) {
+        self = String(reflecting: type).parseType()
+    }
+#endif
 
     public func typeName(includingModule: Bool = true) -> String {
         (

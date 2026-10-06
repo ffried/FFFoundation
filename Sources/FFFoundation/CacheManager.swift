@@ -23,7 +23,7 @@ public import Foundation
 public import UIKit
 #endif
 
-public protocol Cachable: SendableMetatype {
+public protocol Cachable: SendableMetatype, ~Swift.Copyable {
     static func fromCache(data: Data) throws -> Self
 
     func cacheData() throws -> Data
@@ -33,7 +33,7 @@ public protocol Cachable: SendableMetatype {
 public final class CacheManager<Object: Cachable>: Sendable {
     public typealias ObjectIdentification = String
 
-    private struct NonSendableState {
+    fileprivate struct NonSendableState {
         let fileManager: FileManager
 #if canImport(UIKit) && !os(watchOS)
         var memoryWarningsObserver: (any NSObjectProtocol)?
@@ -81,7 +81,7 @@ public final class CacheManager<Object: Cachable>: Sendable {
         try fileManager.createDirectoryIfNeeded(at: folder)
         self.folder = folder
         _nonSendableState = .init(value: .init(fileManager: fileManager), qos: .default)
-#if compiler(>=6.0) && canImport(UIKit) && !os(watchOS)
+#if canImport(UIKit) && !os(watchOS)
         let opQueue = OperationQueue()
 #if compiler(>=6.2)
         unsafe opQueue.underlyingQueue = queue
@@ -163,6 +163,8 @@ public final class CacheManager<Object: Cachable>: Sendable {
     }
 }
 
+extension CacheManager.NonSendableState: Swift.Copyable where Object: Swift.Copyable {}
+
 extension CacheManager {
     public static func cacheFolder(in fileManager: FileManager = .default) throws -> URL {
         try fileManager.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
@@ -171,7 +173,7 @@ extension CacheManager {
 
 extension CacheManager {
     @frozen
-    public struct Name: Sendable, RawRepresentable, Hashable {
+    public struct Name: Sendable, RawRepresentable, Hashable, Swift.Copyable {
         public typealias RawValue = String
 
         public let rawValue: RawValue

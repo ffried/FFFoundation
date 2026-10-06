@@ -110,7 +110,7 @@
     ],
     "remoteSource" : {
       "fileName" : "UserDefaultsStorable.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefaultsStorable.swift#L220"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefaultsStorable.swift#L216"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",

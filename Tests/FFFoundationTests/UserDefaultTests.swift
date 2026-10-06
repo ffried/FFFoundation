@@ -1,4 +1,3 @@
-#if compiler(>=6.1)
 import Testing
 import Foundation
 @testable import FFFoundation
@@ -183,4 +182,3 @@ struct UserDefaultTests: ~Swift.Copyable {
         #expect(int.wrappedValue == 42)
     }
 }
-#endif

@@ -66,6 +66,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation3CoWVA2A17ReferenceCopyableRzrlE5Valuexmfp",
         "text" : "Value"
       },
       {
@@ -80,7 +81,7 @@
     ],
     "remoteSource" : {
       "fileName" : "CoW.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/CoW.swift#L67"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/CoW.swift#L69"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -116,6 +117,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation3CoWVA2A17ReferenceCopyableRzrlE5Valuexmfp",
               "text" : "Value"
             },
             {
@@ -247,6 +249,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation3CoWVA2A17ReferenceCopyableRzrlE5Valuexmfp",
       "text" : "Value"
     },
     {

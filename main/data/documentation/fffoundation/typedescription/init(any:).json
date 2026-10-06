@@ -13,7 +13,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:12FFFoundation15TypeDescriptionV3anyACypXp_tcfc",
+    "externalID" : "s:12FFFoundation15TypeDescriptionV3anyACypRi_s_Ri0_sXPXp_tcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -29,15 +29,37 @@
       },
       {
         "kind" : "text",
-        "text" : ": any "
+        "text" : ": "
       },
       {
         "kind" : "keyword",
-        "text" : "Any"
+        "text" : "any"
       },
       {
         "kind" : "text",
-        "text" : ".Type)"
+        "text" : " (~Swift"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s8CopyableP",
+        "text" : "Copyable"
+      },
+      {
+        "kind" : "text",
+        "text" : " & ~"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s9EscapableP",
+        "text" : "Escapable"
+      },
+      {
+        "kind" : "text",
+        "text" : ").Type)"
       }
     ],
     "modules" : [
@@ -47,7 +69,7 @@
     ],
     "remoteSource" : {
       "fileName" : "TypeDescription.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/TypeDescription.swift#L25"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/TypeDescription.swift#L26"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -87,15 +109,37 @@
             },
             {
               "kind" : "text",
-              "text" : ": any "
+              "text" : ": "
             },
             {
               "kind" : "keyword",
-              "text" : "Any"
+              "text" : "any"
             },
             {
               "kind" : "text",
-              "text" : ".Type)"
+              "text" : " (~Swift"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s8CopyableP",
+              "text" : "Copyable"
+            },
+            {
+              "kind" : "text",
+              "text" : " & ~"
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s9EscapableP",
+              "text" : "Escapable"
+            },
+            {
+              "kind" : "text",
+              "text" : ").Type)"
             }
           ]
         }
@@ -186,15 +230,37 @@
     },
     {
       "kind" : "text",
-      "text" : ": any "
+      "text" : ": "
     },
     {
       "kind" : "keyword",
-      "text" : "Any"
+      "text" : "any"
     },
     {
       "kind" : "text",
-      "text" : ".Type)"
+      "text" : " (~Swift"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8CopyableP",
+      "text" : "Copyable"
+    },
+    {
+      "kind" : "text",
+      "text" : " & ~"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s9EscapableP",
+      "text" : "Escapable"
+    },
+    {
+      "kind" : "text",
+      "text" : ").Type)"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TypeDescription\/init(any:)",

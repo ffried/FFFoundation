@@ -42,6 +42,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation4DiffV7Elementq_mfp",
         "text" : "Element"
       },
       {
@@ -113,6 +114,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation4DiffV7Elementq_mfp",
               "text" : "Element"
             },
             {
@@ -304,6 +306,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4DiffV7Elementq_mfp",
       "text" : "Element"
     },
     {

@@ -104,6 +104,7 @@
         "doc:\/\/FFFoundation\/Se",
         "doc:\/\/FFFoundation\/SE",
         "doc:\/\/FFFoundation\/SQ",
+        "doc:\/\/FFFoundation\/s9EscapableP",
         "doc:\/\/FFFoundation\/s27ExpressibleByBooleanLiteralP",
         "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
         "doc:\/\/FFFoundation\/s25ExpressibleByFloatLiteralP",
@@ -476,6 +477,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LazyV8Deferredxmfp",
       "text" : "Deferred"
     },
     {
@@ -518,15 +520,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Deferred"
-    },
-    {
-      "kind" : "text",
-      "text" : ">)"
+      "text" : ")"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/init(other:)",
@@ -559,14 +553,15 @@
     },
     {
       "kind" : "attribute",
-      "text" : "@autoclosure "
+      "text" : "@autoclosure"
     },
     {
       "kind" : "text",
-      "text" : "() -> "
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LazyV8Deferredxmfp",
       "text" : "Deferred"
     },
     {
@@ -633,6 +628,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LazyV8Deferredxmfp",
       "text" : "Deferred"
     }
   ],
@@ -686,6 +682,11 @@
 "doc://FFFoundation/s8CopyableP": {
   "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
   "title" : "Swift.Copyable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s9EscapableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s9EscapableP",
+  "title" : "Swift.Escapable",
   "type" : "unresolvable"
 }
 }

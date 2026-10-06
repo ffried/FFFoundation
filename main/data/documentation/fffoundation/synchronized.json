@@ -112,6 +112,7 @@
         "doc:\/\/FFFoundation\/Se",
         "doc:\/\/FFFoundation\/SE",
         "doc:\/\/FFFoundation\/SQ",
+        "doc:\/\/FFFoundation\/s9EscapableP",
         "doc:\/\/FFFoundation\/s27ExpressibleByBooleanLiteralP",
         "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
         "doc:\/\/FFFoundation\/s25ExpressibleByFloatLiteralP",
@@ -471,6 +472,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC8combined4withACyx_qd__tGACyqd__G_tlF12OtherGuardedL_qd__mfp",
       "text" : "OtherGuarded"
     },
     {
@@ -488,6 +490,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {
@@ -496,6 +499,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC8combined4withACyx_qd__tGACyqd__G_tlF12OtherGuardedL_qd__mfp",
       "text" : "OtherGuarded"
     },
     {
@@ -546,15 +550,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Guarded"
-    },
-    {
-      "kind" : "text",
-      "text" : ">) -> "
+      "text" : ") -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -567,6 +563,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {
@@ -575,6 +572,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {
@@ -637,6 +635,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC11coordinated4withx_qd__tACyqd__G_tlF12OtherGuardedL_qd__mfp",
       "text" : "OtherGuarded"
     },
     {
@@ -645,6 +644,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {
@@ -653,6 +653,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC11coordinated4withx_qd__tACyqd__G_tlF12OtherGuardedL_qd__mfp",
       "text" : "OtherGuarded"
     },
     {
@@ -703,18 +704,11 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
+      "text" : ") -> ("
     },
     {
       "kind" : "typeIdentifier",
-      "text" : "Guarded"
-    },
-    {
-      "kind" : "text",
-      "text" : ">) -> ("
-    },
-    {
-      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {
@@ -723,6 +717,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {
@@ -768,6 +763,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {
@@ -776,6 +772,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     }
   ],
@@ -824,14 +821,6 @@
   },
   "fragments" : [
     {
-      "kind" : "keyword",
-      "text" : "convenience"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
       "kind" : "identifier",
       "text" : "init"
     },
@@ -870,6 +859,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {
@@ -907,14 +897,6 @@
   ],
   "fragments" : [
     {
-      "kind" : "keyword",
-      "text" : "convenience"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
       "kind" : "identifier",
       "text" : "init"
     },
@@ -932,6 +914,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {
@@ -978,6 +961,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {
@@ -986,6 +970,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedCyqd__s7KeyPathCyxqd__Gcluip1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -994,6 +979,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedCyqd__s7KeyPathCyxqd__Gcluip1TL_qd__mfp",
       "text" : "T"
     }
   ],
@@ -1051,6 +1037,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {
@@ -1067,6 +1054,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC9withValue2doqd__qd__xzKXE_tKlF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -1083,6 +1071,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC9withValue2doqd__qd__xzKXE_tKlF1TL_qd__mfp",
       "text" : "T"
     }
   ],
@@ -1132,6 +1121,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {
@@ -1190,6 +1180,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     }
   ],
@@ -1253,6 +1244,11 @@
 "doc://FFFoundation/s8SendableP": {
   "identifier" : "doc:\/\/FFFoundation\/s8SendableP",
   "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s9EscapableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s9EscapableP",
+  "title" : "Swift.Escapable",
   "type" : "unresolvable"
 }
 }

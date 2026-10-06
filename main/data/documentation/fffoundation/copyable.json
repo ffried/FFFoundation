@@ -38,14 +38,6 @@
         "text" : "Copyable"
       }
     ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "renamed" : "ReferenceCopyable",
-        "unavailable" : false
-      }
-    ],
     "remoteSource" : {
       "fileName" : "CoW.swift",
       "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/CoW.swift#L25"

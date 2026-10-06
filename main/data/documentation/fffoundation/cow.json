@@ -120,6 +120,7 @@
         "doc:\/\/FFFoundation\/Se",
         "doc:\/\/FFFoundation\/SE",
         "doc:\/\/FFFoundation\/SQ",
+        "doc:\/\/FFFoundation\/s9EscapableP",
         "doc:\/\/FFFoundation\/s27ExpressibleByBooleanLiteralP",
         "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
         "doc:\/\/FFFoundation\/s25ExpressibleByFloatLiteralP",
@@ -153,8 +154,8 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init()",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(copyingWith:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:copyingWith:)-612q8",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:copyingWith:)-8wvop"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:copyingWith:)-20uyb",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:copyingWith:)-612q8"
       ],
       "title" : "Initializers"
     },
@@ -178,7 +179,8 @@
       "anchor" : "Type-Aliases",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Copier"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Copier",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/SendableCopier"
       ],
       "title" : "Type Aliases"
     },
@@ -458,6 +460,69 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cow\/hashable-implementations"
 },
+"doc://FFFoundation/documentation/FFFoundation/CoW/SendableCopier": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "SendableCopier"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/SendableCopier",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SendableCopier"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "CoW.SendableCopier",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/cow\/sendablecopier"
+},
 "doc://FFFoundation/documentation/FFFoundation/CoW/copyIfNeeded()": {
   "abstract" : [
 
@@ -603,23 +668,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation3CoWV",
-      "text" : "CoW"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation3CoWV6Copiera",
       "text" : "Copier"
     },
@@ -690,6 +738,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation3CoWVA2A17ReferenceCopyableRzrlE5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -704,78 +753,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cow\/init(wrappedvalue:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/CoW/init(wrappedValue:copyingWith:)-612q8": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "identifier",
-      "text" : "init"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "wrappedValue"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "copyingWith"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation3CoWV",
-      "text" : "CoW"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation3CoWV6Copiera",
-      "text" : "Copier"
-    },
-    {
-      "kind" : "text",
-      "text" : ")"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:copyingWith:)-612q8",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "init(wrappedValue:copyingWith:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/cow\/init(wrappedvalue:copyingwith:)-612q8"
-},
-"doc://FFFoundation/documentation/FFFoundation/CoW/init(wrappedValue:copyingWith:)-8wvop": {
+"doc://FFFoundation/documentation/FFFoundation/CoW/init(wrappedValue:copyingWith:)-20uyb": {
   "abstract" : [
 
   ],
@@ -830,6 +808,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation3CoWVAAs8SendableRzrlE5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -846,20 +825,58 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation3CoWV",
-      "text" : "CoW"
+      "preciseIdentifier" : "s:12FFFoundation3CoWVAAs8SendableRzrlE0C6Copiera",
+      "text" : "SendableCopier"
     },
     {
       "kind" : "text",
-      "text" : "<"
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:copyingWith:)-20uyb",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(wrappedValue:copyingWith:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/cow\/init(wrappedvalue:copyingwith:)-20uyb"
+},
+"doc://FFFoundation/documentation/FFFoundation/CoW/init(wrappedValue:copyingWith:)-612q8": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "wrappedValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation3CoWV5Valuexmfp",
       "text" : "Value"
     },
     {
       "kind" : "text",
-      "text" : ">."
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "copyingWith"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
     },
     {
       "kind" : "typeIdentifier",
@@ -871,12 +888,12 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:copyingWith:)-8wvop",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/init(wrappedValue:copyingWith:)-612q8",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "init(wrappedValue:copyingWith:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/cow\/init(wrappedvalue:copyingwith:)-8wvop"
+  "url" : "\/documentation\/fffoundation\/cow\/init(wrappedvalue:copyingwith:)-612q8"
 },
 "doc://FFFoundation/documentation/FFFoundation/CoW/wrappedValue": {
   "abstract" : [
@@ -901,6 +918,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation3CoWV5Valuexmfp",
       "text" : "Value"
     }
   ],
@@ -964,6 +982,11 @@
 "doc://FFFoundation/s8SendableP": {
   "identifier" : "doc:\/\/FFFoundation\/s8SendableP",
   "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s9EscapableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s9EscapableP",
+  "title" : "Swift.Escapable",
   "type" : "unresolvable"
 }
 }

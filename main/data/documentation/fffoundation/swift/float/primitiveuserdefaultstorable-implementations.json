@@ -178,12 +178,7 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sf",
-      "text" : "Float"
+      "text" : ") -> `Self`"
     },
     {
       "kind" : "text",

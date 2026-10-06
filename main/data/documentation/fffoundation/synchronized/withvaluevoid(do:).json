@@ -49,6 +49,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
         "text" : "Guarded"
       },
       {
@@ -144,6 +145,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
               "text" : "Guarded"
             },
             {
@@ -280,6 +282,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {

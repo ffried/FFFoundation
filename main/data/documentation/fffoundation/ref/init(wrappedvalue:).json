@@ -41,6 +41,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation3RefC10Referencedxmfp",
         "text" : "Referenced"
       },
       {
@@ -99,6 +100,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation3RefC10Referencedxmfp",
               "text" : "Referenced"
             },
             {
@@ -206,6 +208,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation3RefC10Referencedxmfp",
       "text" : "Referenced"
     },
     {

@@ -61,6 +61,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF4RootL_xmfp",
         "text" : "Root"
       },
       {
@@ -69,6 +70,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
         "text" : "Value"
       },
       {
@@ -77,6 +79,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
         "text" : "Value"
       },
       {
@@ -169,6 +172,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF4RootL_xmfp",
               "text" : "Root"
             },
             {
@@ -177,6 +181,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
               "text" : "Value"
             },
             {
@@ -193,6 +198,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
               "text" : "Value"
             },
             {
@@ -337,6 +343,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -345,6 +352,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -353,6 +361,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {

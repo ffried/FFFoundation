@@ -43,9 +43,9 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/.._(_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/.._(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_(_:_:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_(_:_:)-w4b4",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_=(_:_:)-23c4v",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_=(_:_:)-2inhw"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_(_:_:)-361u4",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_=(_:_:)-1hzy3",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_=(_:_:)-fnov"
       ],
       "title" : "Operators"
     }
@@ -161,10 +161,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/...(_:)-1ek9g": {
   "abstract" : [
-    {
-      "text" : "Returns a partial range up to, and including, its upper bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -230,10 +227,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/...(_:)-4jsns": {
   "abstract" : [
-    {
-      "text" : "Returns a partial range extending upward from a lower bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -299,10 +293,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/...(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a closed range that contains both of its bounds.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -376,10 +367,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/.._(_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a partial range up to, but not including, its upper bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -445,18 +433,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/.._(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a half-open range that contains its lower bound but not its upper",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -559,39 +536,11 @@
     },
     {
       "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:8Dispatch0A3QoSV",
-      "text" : "DispatchQoS"
+      "text" : "(`Self`"
     },
     {
       "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:8Dispatch0A3QoSV0B6SClassO",
-      "text" : "QoSClass"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:8Dispatch0A3QoSV",
-      "text" : "DispatchQoS"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:8Dispatch0A3QoSV0B6SClassO",
-      "text" : "QoSClass"
+      "text" : ", `Self`"
     },
     {
       "kind" : "text",
@@ -610,20 +559,9 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/_(_:_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/_(_:_:)-w4b4": {
+"doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/_(_:_:)-361u4": {
   "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether the value of the first argument",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is greater than that of the second argument.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -655,12 +593,28 @@
       "text" : "("
     },
     {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
       "kind" : "typeIdentifier",
       "text" : "Self"
     },
     {
       "kind" : "text",
       "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -676,100 +630,16 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_(_:_:)-w4b4",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_(_:_:)-361u4",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : ">(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/_(_:_:)-w4b4"
+  "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/_(_:_:)-361u4"
 },
-"doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/_=(_:_:)-23c4v": {
+"doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/_=(_:_:)-1hzy3": {
   "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether the value of the first argument",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is greater than or equal to that of the second argument.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : ">="
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_=(_:_:)-23c4v",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : ">=(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/_=(_:_:)-23c4v"
-},
-"doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/_=(_:_:)-2inhw": {
-  "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether the value of the first argument",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is less than or equal to that of the second argument.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -801,12 +671,28 @@
       "text" : "("
     },
     {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
       "kind" : "typeIdentifier",
       "text" : "Self"
     },
     {
       "kind" : "text",
       "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -822,12 +708,90 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_=(_:_:)-2inhw",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_=(_:_:)-1hzy3",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<=(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/_=(_:_:)-2inhw"
+  "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/_=(_:_:)-1hzy3"
+},
+"doc://FFFoundation/documentation/FFFoundation/Dispatch/DispatchQoS/QoSClass/_=(_:_:)-fnov": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : ">="
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Dispatch\/DispatchQoS\/QoSClass\/_=(_:_:)-fnov",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : ">=(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass\/_=(_:_:)-fnov"
 }
 }
 }

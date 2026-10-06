@@ -36,7 +36,8 @@
       "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct\/hashValue"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct\/hashValue",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct\/rawAttachmentValueRepresentation"
       ],
       "title" : "Instance Properties"
     },
@@ -47,6 +48,14 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct\/hash(into:)"
       ],
       "title" : "Instance Methods"
+    },
+    {
+      "anchor" : "Type-Methods",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct\/makeFromRawAttachmentValue(_:)"
+      ],
+      "title" : "Type Methods"
     }
   ],
   "variants" : [
@@ -351,6 +360,158 @@
   "title" : "hashValue",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/cachemanager\/name-swift.struct\/hashvalue"
+},
+"doc://FFFoundation/documentation/FFFoundation/CacheManager/Name-swift.struct/makeFromRawAttachmentValue(_:)": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "RawValue",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "CVAttachmentValueRepresentable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "makeFromRawAttachmentValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9CoreVideo20CVAttachmentRawValueV",
+      "text" : "CVAttachmentRawValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct\/makeFromRawAttachmentValue(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "makeFromRawAttachmentValue(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/cachemanager\/name-swift.struct\/makefromrawattachmentvalue(_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/CacheManager/Name-swift.struct/rawAttachmentValueRepresentation": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "RawValue",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "CVAttachmentValueRepresentable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "rawAttachmentValueRepresentation"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9CoreVideo20CVAttachmentRawValueV",
+      "text" : "CVAttachmentRawValue"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct\/rawAttachmentValueRepresentation",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "rawAttachmentValueRepresentation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/cachemanager\/name-swift.struct\/rawattachmentvaluerepresentation"
 }
 }
 }

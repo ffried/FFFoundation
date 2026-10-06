@@ -97,10 +97,19 @@
       },
       {
         "kind" : "text",
-        "text" : ">(("
+        "text" : ">("
+      },
+      {
+        "kind" : "attribute",
+        "text" : "@Sendable"
+      },
+      {
+        "kind" : "text",
+        "text" : " ("
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACys6ResultOyqd_1_s5Error_pGGqd_1_qd__YbKcAFyqd__qd_0_GRszs8SendableRd__sAGRd_0_sAKRd_1_r1_lF7SuccessL_qd__mfp",
         "text" : "Success"
       },
       {
@@ -117,6 +126,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACys6ResultOyqd_1_s5Error_pGGqd_1_qd__YbKcAFyqd__qd_0_GRszs8SendableRd__sAGRd_0_sAKRd_1_r1_lF1TL_qd_1_mfp",
         "text" : "T"
       },
       {
@@ -134,11 +144,20 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACys6ResultOyqd_1_s5Error_pGGqd_1_qd__YbKcAFyqd__qd_0_GRszs8SendableRd__sAGRd_0_sAKRd_1_r1_lF1TL_qd_1_mfp",
         "text" : "T"
       },
       {
         "kind" : "text",
-        "text" : ", any "
+        "text" : ", "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "any"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "typeIdentifier",
@@ -153,14 +172,6 @@
     "modules" : [
       {
         "name" : "FFFoundation"
-      }
-    ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use Swift concurrency instead",
-        "unavailable" : false
       }
     ],
     "remoteSource" : {
@@ -241,14 +252,23 @@
             },
             {
               "kind" : "attribute",
-              "text" : "@escaping "
+              "text" : "@escaping"
             },
             {
               "kind" : "text",
-              "text" : "("
+              "text" : " "
+            },
+            {
+              "kind" : "attribute",
+              "text" : "@Sendable"
+            },
+            {
+              "kind" : "text",
+              "text" : " ("
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACys6ResultOyqd_1_s5Error_pGGqd_1_qd__YbKcAFyqd__qd_0_GRszs8SendableRd__sAGRd_0_sAKRd_1_r1_lF7SuccessL_qd__mfp",
               "text" : "Success"
             },
             {
@@ -265,6 +285,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACys6ResultOyqd_1_s5Error_pGGqd_1_qd__YbKcAFyqd__qd_0_GRszs8SendableRd__sAGRd_0_sAKRd_1_r1_lF1TL_qd_1_mfp",
               "text" : "T"
             },
             {
@@ -283,11 +304,20 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACys6ResultOyqd_1_s5Error_pGGqd_1_qd__YbKcAFyqd__qd_0_GRszs8SendableRd__sAGRd_0_sAKRd_1_r1_lF1TL_qd_1_mfp",
               "text" : "T"
             },
             {
               "kind" : "text",
-              "text" : ", any "
+              "text" : ", "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "any"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "kind" : "typeIdentifier",
@@ -533,10 +563,19 @@
     },
     {
       "kind" : "text",
-      "text" : ">(("
+      "text" : ">("
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " ("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACys6ResultOyqd_1_s5Error_pGGqd_1_qd__YbKcAFyqd__qd_0_GRszs8SendableRd__sAGRd_0_sAKRd_1_r1_lF7SuccessL_qd__mfp",
       "text" : "Success"
     },
     {
@@ -553,6 +592,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACys6ResultOyqd_1_s5Error_pGGqd_1_qd__YbKcAFyqd__qd_0_GRszs8SendableRd__sAGRd_0_sAKRd_1_r1_lF1TL_qd_1_mfp",
       "text" : "T"
     },
     {
@@ -570,11 +610,20 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACys6ResultOyqd_1_s5Error_pGGqd_1_qd__YbKcAFyqd__qd_0_GRszs8SendableRd__sAGRd_0_sAKRd_1_r1_lF1TL_qd_1_mfp",
       "text" : "T"
     },
     {
       "kind" : "text",
-      "text" : ", any "
+      "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",

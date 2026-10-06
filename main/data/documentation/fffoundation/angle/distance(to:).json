@@ -50,28 +50,12 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
         "text" : "Value"
       },
       {
         "kind" : "text",
         "text" : ">) -> "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation5AngleV",
-        "text" : "Angle"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Value"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
       },
       {
         "kind" : "typeIdentifier",
@@ -148,29 +132,12 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
               "text" : "Value"
             },
             {
               "kind" : "text",
               "text" : ">) -> "
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation5AngleV",
-              "text" : "Angle"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Stride",
@@ -319,28 +286,12 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
       "kind" : "text",
       "text" : ">) -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",

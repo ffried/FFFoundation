@@ -41,9 +41,9 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/.._(_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/.._(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_(_:_:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_(_:_:)-2stvc",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_=(_:_:)-43i0o",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_=(_:_:)-jnh1"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_(_:_:)-5dzz2",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_=(_:_:)-42030",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_=(_:_:)-8lef7"
       ],
       "title" : "Operators"
     }
@@ -106,10 +106,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Ref/...(_:)-178zv": {
   "abstract" : [
-    {
-      "text" : "Returns a partial range up to, and including, its upper bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -175,10 +172,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Ref/...(_:)-96pzr": {
   "abstract" : [
-    {
-      "text" : "Returns a partial range extending upward from a lower bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -244,10 +238,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Ref/...(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a closed range that contains both of its bounds.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -321,10 +312,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Ref/.._(_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a partial range up to, but not including, its upper bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -390,18 +378,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Ref/.._(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a half-open range that contains its lower bound but not its upper",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -545,15 +522,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Referenced"
-    },
-    {
-      "kind" : "text",
-      "text" : ">, "
+      "text" : ", "
     },
     {
       "kind" : "typeIdentifier",
@@ -562,15 +531,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Referenced"
-    },
-    {
-      "kind" : "text",
-      "text" : ">) -> "
+      "text" : ") -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -585,20 +546,9 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/ref\/_(_:_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/Ref/_(_:_:)-2stvc": {
+"doc://FFFoundation/documentation/FFFoundation/Ref/_(_:_:)-5dzz2": {
   "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether the value of the first argument",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is greater than that of the second argument.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -630,12 +580,28 @@
       "text" : "("
     },
     {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
       "kind" : "typeIdentifier",
       "text" : "Self"
     },
     {
       "kind" : "text",
       "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -651,27 +617,16 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_(_:_:)-2stvc",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_(_:_:)-5dzz2",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : ">(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/ref\/_(_:_:)-2stvc"
+  "url" : "\/documentation\/fffoundation\/ref\/_(_:_:)-5dzz2"
 },
-"doc://FFFoundation/documentation/FFFoundation/Ref/_=(_:_:)-43i0o": {
+"doc://FFFoundation/documentation/FFFoundation/Ref/_=(_:_:)-42030": {
   "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether the value of the first argument",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is greater than or equal to that of the second argument.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -703,12 +658,28 @@
       "text" : "("
     },
     {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
       "kind" : "typeIdentifier",
       "text" : "Self"
     },
     {
       "kind" : "text",
       "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -724,27 +695,16 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_=(_:_:)-43i0o",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_=(_:_:)-42030",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : ">=(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/ref\/_=(_:_:)-43i0o"
+  "url" : "\/documentation\/fffoundation\/ref\/_=(_:_:)-42030"
 },
-"doc://FFFoundation/documentation/FFFoundation/Ref/_=(_:_:)-jnh1": {
+"doc://FFFoundation/documentation/FFFoundation/Ref/_=(_:_:)-8lef7": {
   "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether the value of the first argument",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is less than or equal to that of the second argument.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -776,12 +736,28 @@
       "text" : "("
     },
     {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
       "kind" : "typeIdentifier",
       "text" : "Self"
     },
     {
       "kind" : "text",
       "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -797,12 +773,12 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_=(_:_:)-jnh1",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Ref\/_=(_:_:)-8lef7",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<=(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/ref\/_=(_:_:)-jnh1"
+  "url" : "\/documentation\/fffoundation\/ref\/_=(_:_:)-8lef7"
 }
 }
 }

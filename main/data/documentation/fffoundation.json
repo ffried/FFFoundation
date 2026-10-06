@@ -398,6 +398,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1nopySo11NSPredicateCs7KeyPathCyxSbGlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -525,6 +526,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSQR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -542,6 +544,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSQR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -550,6 +553,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSQR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -604,6 +608,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCxSg_AA11PropertyKeyVtSZRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -694,6 +699,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCAA11PropertyKeyV_xSgtSURzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -748,6 +754,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCxSg_AA11PropertyKeyVtSURzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -828,6 +835,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -845,6 +853,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSFR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -853,6 +862,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -907,6 +917,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCxSg_AA11PropertyKeyVtSFRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -987,6 +998,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -1004,6 +1016,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSUR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -1012,6 +1025,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -1084,6 +1098,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCAA11PropertyKeyV_xSgtSQRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -1285,6 +1300,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSUR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -1293,6 +1309,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -1301,6 +1318,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -1363,6 +1381,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -1380,6 +1399,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -1388,6 +1408,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -1451,6 +1472,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxSo8NSNumberCG_AHSgtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -1540,6 +1562,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSZR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -1548,6 +1571,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -1556,6 +1580,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -1628,6 +1653,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCSo8NSNumberCSg_s7KeyPathCyxAFGtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -1691,6 +1717,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCxSg_AA11PropertyKeyVtSQRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -1845,6 +1872,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSFR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -1853,6 +1881,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -1861,6 +1890,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -1933,6 +1963,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCSbSg_s7KeyPathCyxSbGtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -2014,6 +2045,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCAA11PropertyKeyV_xSgtSFRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -2068,6 +2100,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCxSg_AA11PropertyKeyVt10Foundation20ReferenceConvertibleRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -2157,6 +2190,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSQR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -2165,6 +2199,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSQR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -2173,6 +2208,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSQR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -2310,6 +2346,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCAA11PropertyKeyV_xSgtSZRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -2373,6 +2410,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxSbG_SbSgtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -2453,6 +2491,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -2470,6 +2509,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSZR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -2478,6 +2518,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -2549,6 +2590,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_Sgt10Foundation20ReferenceConvertibleR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -2557,6 +2599,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_Sgt10Foundation20ReferenceConvertibleR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -2565,6 +2608,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCs7KeyPathCyxq_G_q_Sgt10Foundation20ReferenceConvertibleR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -2637,6 +2681,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2neoiySo11NSPredicateCAA11PropertyKeyV_xSgt10Foundation20ReferenceConvertibleRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -2764,6 +2809,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2nxopySo16NSSortDescriptorCs7KeyPathCyxq_GSLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -2772,6 +2818,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2nxopySo16NSSortDescriptorCs7KeyPathCyxq_GSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -2899,6 +2946,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSQR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -2907,6 +2955,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSQR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -2915,6 +2964,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSQR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -2987,6 +3037,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCAA11PropertyKeyV_xSgt10Foundation20ReferenceConvertibleRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -3058,6 +3109,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSZR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -3066,6 +3118,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -3074,6 +3127,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -3145,6 +3199,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSUR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -3153,6 +3208,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -3161,6 +3217,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -3233,6 +3290,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCAA11PropertyKeyV_xSgtSURzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -3305,6 +3363,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCSo8NSNumberCSg_s7KeyPathCyxAFGtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -3377,6 +3436,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxSo8NSNumberCG_AHSgtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -3579,6 +3639,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCxSg_AA11PropertyKeyVtSURzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -3668,6 +3729,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_Sgt10Foundation20ReferenceConvertibleR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -3676,6 +3738,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_Sgt10Foundation20ReferenceConvertibleR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -3684,6 +3747,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_Sgt10Foundation20ReferenceConvertibleR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -3803,6 +3867,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCxSg_AA11PropertyKeyVtSZRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -3893,6 +3958,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCAA11PropertyKeyV_xSgtSQRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -3947,6 +4013,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCxSg_AA11PropertyKeyVtSFRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -4027,6 +4094,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -4044,6 +4112,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSFR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -4052,6 +4121,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -4106,6 +4176,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCxSg_AA11PropertyKeyVt10Foundation20ReferenceConvertibleRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -4196,6 +4267,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCAA11PropertyKeyV_xSgtSZRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -4267,6 +4339,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSFR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -4275,6 +4348,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -4283,6 +4357,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxq_G_q_SgtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -4337,6 +4412,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCxSg_AA11PropertyKeyVtSQRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -4427,6 +4503,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCAA11PropertyKeyV_xSgtSFRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -4490,6 +4567,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCs7KeyPathCyxSbG_SbSgtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -4570,6 +4648,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSQR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -4587,6 +4666,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSQR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -4595,6 +4675,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSQR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -4667,6 +4748,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCSbSg_s7KeyPathCyxSbGtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -4803,6 +4885,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -4820,6 +4903,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -4828,6 +4912,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -4890,6 +4975,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -4907,6 +4993,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSZR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -4915,6 +5002,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -4977,6 +5065,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -4994,6 +5083,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSUR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -5002,6 +5092,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2eeoiySo11NSPredicateCq_Sg_s7KeyPathCyxq_GtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -6201,6 +6292,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1xopySo16NSSortDescriptorCs7KeyPathCyxq_GSLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -6209,6 +6301,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1xopySo16NSSortDescriptorCs7KeyPathCyxq_GSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -6271,6 +6364,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -6288,6 +6382,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -6296,6 +6391,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -6358,6 +6454,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -6375,6 +6472,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -6383,6 +6481,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -6437,6 +6536,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCx_AA11PropertyKeyVtSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -6527,6 +6627,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCAA11PropertyKeyV_xtSZRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -6598,6 +6699,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -6606,6 +6708,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -6614,6 +6717,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -6676,6 +6780,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -6693,6 +6798,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -6701,6 +6807,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -6967,6 +7074,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -6975,6 +7083,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -6983,6 +7092,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -7055,6 +7165,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCAA11PropertyKeyV_xtSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -7109,6 +7220,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCx_AA11PropertyKeyVt10Foundation20ReferenceConvertibleRzSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -7199,6 +7311,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCAA11PropertyKeyV_xt10Foundation20ReferenceConvertibleRzSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -7253,6 +7366,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCx_AA11PropertyKeyVtSZRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -7342,6 +7456,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -7350,6 +7465,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -7358,6 +7474,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -7429,6 +7546,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -7437,6 +7555,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -7445,6 +7564,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -7517,6 +7637,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCSo8NSNumberC_s7KeyPathCyxAFGtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -7580,6 +7701,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCx_AA11PropertyKeyVt10Foundation20ReferenceConvertibleRzSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -7670,6 +7792,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCAA11PropertyKeyV_xtSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -7742,6 +7865,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCAA11PropertyKeyV_xt10Foundation20ReferenceConvertibleRzSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -7805,6 +7929,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxSo8NSNumberCG_AHtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -7885,6 +8010,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -7902,6 +8028,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -7910,6 +8037,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -7981,6 +8109,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -7989,6 +8118,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -7997,6 +8127,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -8051,6 +8182,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCx_AA11PropertyKeyVtSURzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -8123,6 +8255,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCx_AA11PropertyKeyVtSFRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -8195,6 +8328,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCx_AA11PropertyKeyVtSFRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -8275,6 +8409,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -8292,6 +8427,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -8300,6 +8436,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -8363,6 +8500,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxSo8NSNumberCG_AHtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -8443,6 +8581,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -8460,6 +8599,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -8468,6 +8608,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -8530,6 +8671,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -8547,6 +8689,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -8555,6 +8698,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -8626,6 +8770,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -8634,6 +8779,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -8642,6 +8788,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -8714,6 +8861,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCAA11PropertyKeyV_xtSURzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -8785,6 +8933,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -8793,6 +8942,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -8801,6 +8951,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -8872,6 +9023,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -8880,6 +9032,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -8888,6 +9041,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -8942,6 +9096,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCx_AA11PropertyKeyVtSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -9032,6 +9187,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCAA11PropertyKeyV_xtSURzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -9103,6 +9259,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -9111,6 +9268,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -9119,6 +9277,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -9191,6 +9350,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCSo8NSNumberC_s7KeyPathCyxAFGtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -9262,6 +9422,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -9279,6 +9440,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -9287,6 +9449,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -9341,6 +9504,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCx_AA11PropertyKeyVtSZRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -9430,6 +9594,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -9438,6 +9603,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -9446,6 +9612,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -9508,6 +9675,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -9525,6 +9693,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -9533,6 +9702,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -9605,6 +9775,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCAA11PropertyKeyV_xtSFRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -9677,6 +9848,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCAA11PropertyKeyV_xtSFRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -9739,6 +9911,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -9756,6 +9929,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -9764,6 +9938,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1goiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -9818,6 +9993,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCx_AA11PropertyKeyVtSURzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -9908,6 +10084,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1loiySo11NSPredicateCAA11PropertyKeyV_xtSZRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -10044,6 +10221,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -10052,6 +10230,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -10060,6 +10239,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -10132,6 +10312,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCAA11PropertyKeyV_xt10Foundation20ReferenceConvertibleRzSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -10195,6 +10376,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxSo8NSNumberCG_AHtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -10285,6 +10467,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCAA11PropertyKeyV_xtSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -10404,6 +10587,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCx_AA11PropertyKeyVt10Foundation20ReferenceConvertibleRzSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -10494,6 +10678,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCSo8NSNumberC_s7KeyPathCyxAFGtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -10565,6 +10750,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -10582,6 +10768,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -10590,6 +10777,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -10717,6 +10905,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -10734,6 +10923,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -10742,6 +10932,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -10814,6 +11005,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCAA11PropertyKeyV_xtSFRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -10876,6 +11068,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -10893,6 +11086,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -10901,6 +11095,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -10963,6 +11158,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -10980,6 +11176,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -10988,6 +11185,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11051,6 +11249,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxSo8NSNumberCG_AHtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -11141,6 +11340,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCAA11PropertyKeyV_xtSZRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -11212,6 +11412,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -11220,6 +11421,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11228,6 +11430,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11290,6 +11493,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11307,6 +11511,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -11315,6 +11520,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_Gt10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11377,6 +11583,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11394,6 +11601,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -11402,6 +11610,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11473,6 +11682,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -11481,6 +11691,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11489,6 +11700,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11560,6 +11772,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -11568,6 +11781,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11576,6 +11790,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11638,6 +11853,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11655,6 +11871,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -11663,6 +11880,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11717,6 +11935,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCx_AA11PropertyKeyVtSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -11789,6 +12008,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCx_AA11PropertyKeyVtSURzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -11878,6 +12098,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -11886,6 +12107,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11894,6 +12116,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -11948,6 +12171,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCx_AA11PropertyKeyVtSZRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -12085,6 +12309,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCx_AA11PropertyKeyVtSZRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -12240,6 +12465,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCSo8NSNumberC_s7KeyPathCyxAFGtlF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -12311,6 +12537,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -12328,6 +12555,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -12336,6 +12564,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -12398,6 +12627,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -12415,6 +12645,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -12423,6 +12654,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -12477,6 +12709,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCx_AA11PropertyKeyVtSFRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -12566,6 +12799,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -12574,6 +12808,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -12582,6 +12817,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCs7KeyPathCyxq_G_q_t10Foundation20ReferenceConvertibleR_SLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -12654,6 +12890,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCAA11PropertyKeyV_xt10Foundation20ReferenceConvertibleRzSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -12708,6 +12945,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCx_AA11PropertyKeyVt10Foundation20ReferenceConvertibleRzSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -12798,6 +13036,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCAA11PropertyKeyV_xtSURzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -12869,6 +13108,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -12877,6 +13117,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -12885,6 +13126,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSFR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -12956,6 +13198,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -12964,6 +13207,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -12972,6 +13216,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -13026,6 +13271,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCx_AA11PropertyKeyVtSFRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -13116,6 +13362,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCAA11PropertyKeyV_xtSZRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -13188,6 +13435,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCAA11PropertyKeyV_xtSFRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -13242,6 +13490,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCx_AA11PropertyKeyVtSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -13331,6 +13580,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -13339,6 +13589,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -13347,6 +13598,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -13419,6 +13671,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCAA11PropertyKeyV_xtSURzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -13491,6 +13744,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCAA11PropertyKeyV_xtSLRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {
@@ -13562,6 +13816,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -13570,6 +13825,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -13578,6 +13834,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCs7KeyPathCyxq_G_q_tSZR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -13640,6 +13897,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -13657,6 +13915,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -13665,6 +13924,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCq__s7KeyPathCyxq_GtSUR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {
@@ -13719,6 +13979,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2geoiySo11NSPredicateCx_AA11PropertyKeyVtSURzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {

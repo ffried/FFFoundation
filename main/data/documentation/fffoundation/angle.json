@@ -145,6 +145,7 @@
         "doc:\/\/FFFoundation\/Se",
         "doc:\/\/FFFoundation\/SE",
         "doc:\/\/FFFoundation\/SQ",
+        "doc:\/\/FFFoundation\/s9EscapableP",
         "doc:\/\/FFFoundation\/s25ExpressibleByFloatLiteralP",
         "doc:\/\/FFFoundation\/s27ExpressibleByIntegerLiteralP",
         "doc:\/\/FFFoundation\/SF",
@@ -292,7 +293,8 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Equatable-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/ExpressibleByFloatLiteral-Implementations",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/FloatingPoint-Implementations",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/SignedNumeric-Implementations"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/SignedNumeric-Implementations",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Strideable-Implementations"
       ],
       "title" : "Default Implementations"
     }
@@ -442,6 +444,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -459,6 +462,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -476,6 +480,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -542,6 +547,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -559,6 +565,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -617,6 +624,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -634,6 +642,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -651,6 +660,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -717,6 +727,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -734,6 +745,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -792,6 +804,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -809,6 +822,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -826,6 +840,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -892,6 +907,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -909,6 +925,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1146,6 +1163,17 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle\/stride"
 },
+"doc://FFFoundation/documentation/FFFoundation/Angle/Strideable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Strideable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Strideable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/strideable-implementations"
+},
 "doc://FFFoundation/documentation/FFFoundation/Angle/_(_:_:)": {
   "abstract" : [
 
@@ -1190,6 +1218,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1207,6 +1236,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1224,6 +1254,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1290,6 +1321,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1307,6 +1339,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1353,6 +1386,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1370,6 +1404,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1415,23 +1450,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation5AngleV6Stridea",
       "text" : "Stride"
     },
@@ -1450,6 +1468,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1496,6 +1515,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1542,6 +1562,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1617,6 +1638,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1710,6 +1732,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1720,18 +1743,6 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation5AngleV",
       "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/degrees(_:)",
@@ -1815,28 +1826,12 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
       "kind" : "text",
       "text" : ">) -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -1874,23 +1869,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV8Exponenta",
       "text" : "Exponent"
     }
   ],
@@ -1941,6 +1920,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -2024,6 +2004,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -2078,6 +2059,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -2186,6 +2168,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -2223,6 +2206,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleVyACyxGqd__cSzRd__lufc6SourceL_qd__mfp",
       "text" : "Source"
     },
     {
@@ -2260,6 +2244,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -2305,6 +2290,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV7exactlyACyxGSgqd___tcSzRd__lufc6SourceL_qd__mfp",
       "text" : "Source"
     },
     {
@@ -2342,23 +2328,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV18IntegerLiteralTypea",
       "text" : "IntegerLiteralType"
     },
     {
@@ -2396,6 +2366,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -2450,23 +2421,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV8Exponenta",
       "text" : "Exponent"
     },
     {
@@ -2488,15 +2443,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">)"
+      "text" : ")"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(sign:exponent:significand:)",
@@ -2534,15 +2481,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">, "
+      "text" : ", "
     },
     {
       "kind" : "externalParam",
@@ -2559,15 +2498,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">)"
+      "text" : ")"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(signOf:magnitudeOf:)",
@@ -2651,6 +2582,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -2778,6 +2710,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -2829,6 +2762,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -3024,6 +2958,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -3117,6 +3052,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -3171,6 +3107,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -3205,23 +3142,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -3276,6 +3196,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -3322,6 +3243,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -3368,6 +3290,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -3422,6 +3345,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -3515,6 +3439,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -3525,18 +3450,6 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation5AngleV",
       "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/radians(_:)",
@@ -3700,6 +3613,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -3746,6 +3660,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -3792,6 +3707,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -3829,6 +3745,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     }
   ],
@@ -3877,6 +3794,11 @@
 "doc://FFFoundation/s8SendableP": {
   "identifier" : "doc:\/\/FFFoundation\/s8SendableP",
   "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s9EscapableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s9EscapableP",
+  "title" : "Swift.Escapable",
   "type" : "unresolvable"
 }
 }

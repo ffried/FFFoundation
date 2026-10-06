@@ -1,34 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "Format ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " with the given format. ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " is first converted to ",
-      "type" : "text"
-    },
-    {
-      "code" : "S.FormatInput",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " type, then format with the given format.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -106,6 +76,20 @@
         "deprecated" : false,
         "introducedAt" : "15.0",
         "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "iPadOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "Mac Catalyst",
         "unavailable" : false
       },
       {
@@ -330,34 +314,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/formatted(_:)-7s7pr": {
   "abstract" : [
-    {
-      "text" : "Format ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " with the given format. ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " is first converted to ",
-      "type" : "text"
-    },
-    {
-      "code" : "S.FormatInput",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " type, then format with the given format.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

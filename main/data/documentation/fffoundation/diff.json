@@ -141,6 +141,7 @@
         "doc:\/\/FFFoundation\/s8CopyableP",
         "doc:\/\/FFFoundation\/Se",
         "doc:\/\/FFFoundation\/SE",
+        "doc:\/\/FFFoundation\/s9EscapableP",
         "doc:\/\/FFFoundation\/s8SendableP",
         "doc:\/\/FFFoundation\/s16SendableMetatypeP"
       ],
@@ -426,6 +427,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4DiffV7Subjectxmfp",
       "text" : "Subject"
     }
   ],
@@ -456,31 +458,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation4DiffV",
-      "text" : "Diff"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Subject"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Element"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -518,6 +495,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4DiffV7Subjectxmfp",
       "text" : "Subject"
     }
   ],
@@ -837,6 +815,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4DiffVA2A8DiffableRzSmRzq_RszSQ7ElementSTRpzrlE7Subjectxmfp",
       "text" : "Subject"
     },
     {
@@ -853,6 +832,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4DiffVA2A8DiffableRzSmRzq_RszSQ7ElementSTRpzrlE7Subjectxmfp",
       "text" : "Subject"
     },
     {
@@ -869,6 +849,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4DiffVA2A8DiffableRzSmRzq_RszSQ7ElementSTRpzrlE7Subjectxmfp",
       "text" : "Subject"
     },
     {
@@ -995,6 +976,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4DiffVAA11SubSequenceQzRs_SQ7ElementRpzrlE7Subjectxmfp",
       "text" : "Subject"
     },
     {
@@ -1011,6 +993,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4DiffVAA11SubSequenceQzRs_SQ7ElementRpzrlE7Subjectxmfp",
       "text" : "Subject"
     },
     {
@@ -1027,6 +1010,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4DiffVAA11SubSequenceQzRs_SQ7ElementRpzrlE7Subjectxmfp",
       "text" : "Subject"
     },
     {
@@ -1094,6 +1078,11 @@
 "doc://FFFoundation/s8SendableP": {
   "identifier" : "doc:\/\/FFFoundation\/s8SendableP",
   "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s9EscapableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s9EscapableP",
+  "title" : "Swift.Escapable",
   "type" : "unresolvable"
 }
 }

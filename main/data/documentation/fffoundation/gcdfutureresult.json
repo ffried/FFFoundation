@@ -49,14 +49,6 @@
         "text" : "GCDFutureResult"
       }
     ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use Swift concurrency instead",
-        "unavailable" : false
-      }
-    ],
     "remoteSource" : {
       "fileName" : "GCDFuture.swift",
       "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/GCDFuture.swift#L190"
@@ -130,6 +122,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation15GCDFutureResulta5Valuexmfp",
               "text" : "Value"
             },
             {
@@ -138,6 +131,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation15GCDFutureResulta7Failureq_mfp",
               "text" : "Failure"
             },
             {

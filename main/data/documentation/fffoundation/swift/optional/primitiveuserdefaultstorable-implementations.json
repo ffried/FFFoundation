@@ -210,24 +210,11 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sq",
-      "text" : "Optional"
+      "text" : ") -> `Self`"
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Wrapped"
-    },
-    {
-      "kind" : "text",
-      "text" : ">?"
+      "text" : "?"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Optional\/get(from:forKey:)",

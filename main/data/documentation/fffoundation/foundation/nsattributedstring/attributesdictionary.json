@@ -91,15 +91,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "c:objc(cs)NSAttributedString",
-              "text" : "NSAttributedString"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "kind" : "typeIdentifier",
               "preciseIdentifier" : "c:@T@NSAttributedStringKey",
               "text" : "Key"
             },

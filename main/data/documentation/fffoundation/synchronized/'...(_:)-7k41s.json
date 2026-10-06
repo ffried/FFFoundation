@@ -1,10 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "Returns a partial range extending upward from a lower bound.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -165,170 +159,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "The lower bound for the range.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "minimum"
-        }
-      ]
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Use the postfix range operator (postfix ",
-              "type" : "text"
-            },
-            {
-              "code" : "...",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ") to create a partial range",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "of any type that conforms to the ",
-              "type" : "text"
-            },
-            {
-              "code" : "Comparable",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " protocol. This example",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "creates a ",
-              "type" : "text"
-            },
-            {
-              "code" : "PartialRangeFrom<Double>",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " instance that includes any value",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "greater than or equal to ",
-              "type" : "text"
-            },
-            {
-              "code" : "5.0",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "let atLeastFive = 5.0...",
-            "",
-            "atLeastFive.contains(4.0)     \/\/ false",
-            "atLeastFive.contains(5.0)     \/\/ true",
-            "atLeastFive.contains(6.0)     \/\/ true"
-          ],
-          "syntax" : null,
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "You can use this type of partial range of a collection’s indices to",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "represent the range from the partial range’s lower bound up to the end",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "of the collection.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "let numbers = [10, 20, 30, 40, 50, 60, 70]",
-            "print(numbers[3...])",
-            "\/\/ Prints \"[40, 50, 60, 70]\""
-          ],
-          "syntax" : null,
-          "type" : "codeListing"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                },
-                {
-                  "code" : "minimum",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " must compare equal to itself (i.e. cannot be NaN).",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Precondition",
-          "style" : "note",
-          "type" : "aside"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -397,10 +227,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Synchronized/...(_:)-7k41s": {
   "abstract" : [
-    {
-      "text" : "Returns a partial range extending upward from a lower bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

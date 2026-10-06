@@ -41,23 +41,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation12CacheManagerC",
-        "text" : "CacheManager"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Object"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12FFFoundation12CacheManagerC20ObjectIdentificationa",
         "text" : "ObjectIdentification"
       },
@@ -75,6 +58,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation12CacheManagerC6Objectxmfp",
         "text" : "Object"
       },
       {
@@ -140,24 +124,6 @@
               "text" : ": "
             },
             {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation12CacheManagerC",
-              "text" : "CacheManager"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Object"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
-            },
-            {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/ObjectIdentification",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:12FFFoundation12CacheManagerC20ObjectIdentificationa",
@@ -177,6 +143,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation12CacheManagerC6Objectxmfp",
               "text" : "Object"
             },
             {
@@ -315,23 +282,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation12CacheManagerC",
-      "text" : "CacheManager"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Object"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation12CacheManagerC20ObjectIdentificationa",
       "text" : "ObjectIdentification"
     },
@@ -349,6 +299,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12CacheManagerC6Objectxmfp",
       "text" : "Object"
     },
     {

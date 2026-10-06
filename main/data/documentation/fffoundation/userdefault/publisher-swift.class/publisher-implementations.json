@@ -36,8 +36,7 @@
       "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/values-5akv3",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/values-bnlo"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/values"
       ],
       "title" : "Instance Properties"
     },
@@ -278,10 +277,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/allSatisfy(_:)": {
   "abstract" : [
-    {
-      "text" : "Publishes a single Boolean value that indicates whether all received elements pass a given predicate.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -362,10 +358,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/append(_:)": {
   "abstract" : [
-    {
-      "text" : "Appends a publisher’s output with the specified elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -489,10 +482,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/assertNoFailure(_:file:line:)": {
   "abstract" : [
-    {
-      "text" : "Raises a fatal error when its upstream publisher fails, and otherwise republishes all received input.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -590,10 +580,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/assign(to:)": {
   "abstract" : [
-    {
-      "text" : "Republishes elements received from a publisher, by assigning them to a property marked as a publisher.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -705,10 +692,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/assign(to:on:)": {
   "abstract" : [
-    {
-      "text" : "Assigns each element from a publisher to a property on an object.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -840,10 +824,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/breakpoint(receiveSubscription:receiveOutput:receiveCompletion:)": {
   "abstract" : [
-    {
-      "text" : "Raises a debugger signal when a provided closure needs to stop the process in the debugger.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1010,10 +991,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/breakpointOnError()": {
   "abstract" : [
-    {
-      "text" : "Raises a debugger signal upon receiving a failure.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1068,10 +1046,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/buffer(size:prefetch:whenFull:)": {
   "abstract" : [
-    {
-      "text" : "Buffers elements received from an upstream publisher.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1212,10 +1187,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/catch(_:)": {
   "abstract" : [
-    {
-      "text" : "Handles errors from an upstream publisher by replacing it with another publisher.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1311,10 +1283,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/collect()": {
   "abstract" : [
-    {
-      "text" : "Collects all received elements, and emits a single array of the collection when the upstream publisher finishes.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1369,10 +1338,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/collect(_:)": {
   "abstract" : [
-    {
-      "text" : "Collects up to the specified number of elements, and then emits a single array of the collection.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1436,10 +1402,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/collect(_:options:)": {
   "abstract" : [
-    {
-      "text" : "Collects elements by a given time-grouping strategy, and emits a single array of the collection.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1561,10 +1524,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/combineLatest(_:)": {
   "abstract" : [
-    {
-      "text" : "Subscribes to an additional publisher and publishes a tuple upon receiving output from either publisher.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1643,10 +1603,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/combineLatest(_:_:)-3c11w": {
   "abstract" : [
-    {
-      "text" : "Subscribes to an additional publisher and invokes a closure upon receiving output from either publisher.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1801,10 +1758,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/combineLatest(_:_:)-9m3g5": {
   "abstract" : [
-    {
-      "text" : "Subscribes to two additional publishers and publishes a tuple upon receiving output from any of the publishers.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1907,10 +1861,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/combineLatest(_:_:_:)-15ycy": {
   "abstract" : [
-    {
-      "text" : "Subscribes to three additional publishers and publishes a tuple upon receiving output from any of the publishers.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2037,10 +1988,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/combineLatest(_:_:_:)-fdcg": {
   "abstract" : [
-    {
-      "text" : "Subscribes to two additional publishers and invokes a closure upon receiving output from any of the publishers.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2236,10 +2184,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/combineLatest(_:_:_:_:)": {
   "abstract" : [
-    {
-      "text" : "Subscribes to three additional publishers and invokes a closure upon receiving output from any of the publishers.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2476,10 +2421,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/compactMap(_:)": {
   "abstract" : [
-    {
-      "text" : "Calls a closure with each received element and publishes any returned optional that has a value.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2575,10 +2517,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/contains(_:)": {
   "abstract" : [
-    {
-      "text" : "Publishes a Boolean value upon receiving an element equal to the argument.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -2682,10 +2621,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/contains(where:)": {
   "abstract" : [
-    {
-      "text" : "Publishes a Boolean value upon receiving an element that satisfies the predicate closure.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2774,10 +2710,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/count()": {
   "abstract" : [
-    {
-      "text" : "Publishes the number of elements received from the upstream publisher.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2832,10 +2765,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/debounce(for:scheduler:options:)": {
   "abstract" : [
-    {
-      "text" : "Publishes elements only after a specified time interval elapses between events.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2981,10 +2911,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/decode(type:decoder:)": {
   "abstract" : [
-    {
-      "text" : "Decodes the output from the upstream using a specified decoder.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -3103,10 +3030,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/delay(for:tolerance:scheduler:options:)": {
   "abstract" : [
-    {
-      "text" : "Delays delivery of all output to the downstream receiver by a specified amount of time on a particular scheduler.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -3286,10 +3210,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/drop(untilOutputFrom:)": {
   "abstract" : [
-    {
-      "text" : "Ignores elements from the upstream publisher until it receives an element from a second publisher.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -3376,10 +3297,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/drop(while:)": {
   "abstract" : [
-    {
-      "text" : "Omits elements from the upstream publisher until a given closure returns false, before republishing all remaining elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -3468,10 +3386,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/dropFirst(_:)": {
   "abstract" : [
-    {
-      "text" : "Omits the specified number of elements before republishing subsequent elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -3535,10 +3450,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/encode(encoder:)": {
   "abstract" : [
-    {
-      "text" : "Encodes the output from upstream using a specified encoder.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -3657,10 +3569,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/eraseToAnyPublisher()": {
   "abstract" : [
-    {
-      "text" : "Wraps this publisher with a type eraser.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -3732,10 +3641,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/filter(_:)": {
   "abstract" : [
-    {
-      "text" : "Republishes all elements that match a provided closure.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -3816,10 +3722,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/first()": {
   "abstract" : [
-    {
-      "text" : "Publishes the first element of a stream, then finishes.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -3874,10 +3777,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/first(where:)": {
   "abstract" : [
-    {
-      "text" : "Publishes the first element of a stream to satisfy a predicate closure, then finishes normally.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -3966,10 +3866,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/flatMap(maxPublishers:_:)-1qe4p": {
   "abstract" : [
-    {
-      "text" : "Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -4099,10 +3996,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/flatMap(maxPublishers:_:)-2qu69": {
   "abstract" : [
-    {
-      "text" : "Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -4259,10 +4153,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/flatMap(maxPublishers:_:)-2r8ow": {
   "abstract" : [
-    {
-      "text" : "Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -4451,10 +4342,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/flatMap(maxPublishers:_:)-4xc7v": {
   "abstract" : [
-    {
-      "text" : "Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -4608,10 +4496,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/handleEvents(receiveSubscription:receiveOutput:receiveCompletion:receiveCancel:receiveRequest:)": {
   "abstract" : [
-    {
-      "text" : "Performs the specified closures when publisher events occur.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -4830,10 +4715,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/ignoreOutput()": {
   "abstract" : [
-    {
-      "text" : "Ignores all upstream elements, but passes along the upstream publisher’s completion state (finished or failed).",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -4888,10 +4770,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/last()": {
   "abstract" : [
-    {
-      "text" : "Publishes the last element of a stream, after the stream finishes.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -4946,10 +4825,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/last(where:)": {
   "abstract" : [
-    {
-      "text" : "Publishes the last element of a stream that satisfies a predicate closure, after upstream finishes.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -5038,10 +4914,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/makeConnectable()": {
   "abstract" : [
-    {
-      "text" : "Creates a connectable wrapper around the publisher.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -5128,10 +5001,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/map(_:)-1ewlj": {
   "abstract" : [
-    {
-      "text" : "Transforms all elements from the upstream publisher with a provided closure.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -5227,10 +5097,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/map(_:)-2r04p": {
   "abstract" : [
-    {
-      "text" : "Publishes the value of a key path.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -5335,10 +5202,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/map(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Publishes the values of two key paths as a tuple.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -5493,10 +5357,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/map(_:_:_:)": {
   "abstract" : [
-    {
-      "text" : "Publishes the values of three key paths as a tuple.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -5701,10 +5562,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/mapError(_:)": {
   "abstract" : [
-    {
-      "text" : "Converts any failure from the upstream publisher into a new error.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -5800,10 +5658,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/max()": {
   "abstract" : [
-    {
-      "text" : "Publishes the maximum value received from the upstream publisher, after it finishes.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -5890,10 +5745,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/max(by:)": {
   "abstract" : [
-    {
-      "text" : "Publishes the maximum value received from the upstream publisher, using the provided ordering closure.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -5999,10 +5851,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/measureInterval(using:options:)": {
   "abstract" : [
-    {
-      "text" : "Measures and emits the time interval between events received from an upstream publisher.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -6114,10 +5963,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/merge(with:)": {
   "abstract" : [
-    {
-      "text" : "Combines elements from this publisher with those from another publisher of the same type, delivering an interleaved sequence of elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -6188,10 +6034,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/merge(with:_:)": {
   "abstract" : [
-    {
-      "text" : "Combines elements from this publisher with those from two other publishers, delivering an interleaved sequence of elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -6302,10 +6145,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/merge(with:_:_:)": {
   "abstract" : [
-    {
-      "text" : "Combines elements from this publisher with those from three other publishers, delivering an interleaved sequence of elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -6440,10 +6280,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/merge(with:_:_:_:)": {
   "abstract" : [
-    {
-      "text" : "Combines elements from this publisher with those from four other publishers, delivering an interleaved sequence of elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -6602,10 +6439,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/merge(with:_:_:_:_:)": {
   "abstract" : [
-    {
-      "text" : "Combines elements from this publisher with those from five other publishers, delivering an interleaved sequence of elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -6788,10 +6622,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/merge(with:_:_:_:_:_:)": {
   "abstract" : [
-    {
-      "text" : "Combines elements from this publisher with those from six other publishers, delivering an interleaved sequence of elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -6998,10 +6829,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/merge(with:_:_:_:_:_:_:)": {
   "abstract" : [
-    {
-      "text" : "Combines elements from this publisher with those from seven other publishers, delivering an interleaved sequence of elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -7232,10 +7060,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/min()": {
   "abstract" : [
-    {
-      "text" : "Publishes the minimum value received from the upstream publisher, after it finishes.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -7322,10 +7147,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/min(by:)": {
   "abstract" : [
-    {
-      "text" : "Publishes the minimum value received from the upstream publisher, after it finishes.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -7431,10 +7253,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/multicast(_:)": {
   "abstract" : [
-    {
-      "text" : "Applies a closure to create a subject that delivers elements to subscribers.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -7513,10 +7332,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/multicast(subject:)": {
   "abstract" : [
-    {
-      "text" : "Provides a subject to deliver elements to multiple subscribers.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -7603,10 +7419,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/output(at:)": {
   "abstract" : [
-    {
-      "text" : "Publishes a specific element, indicated by its index in the sequence of published elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -7678,10 +7491,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/output(in:)": {
   "abstract" : [
-    {
-      "text" : "Publishes elements specified by their range in the sequence of published elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -7760,10 +7570,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/prefix(_:)": {
   "abstract" : [
-    {
-      "text" : "Republishes elements up to the specified maximum count.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -7827,10 +7634,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/prefix(untilOutputFrom:)": {
   "abstract" : [
-    {
-      "text" : "Republishes elements until another publisher emits an element.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -7917,10 +7721,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/prefix(while:)": {
   "abstract" : [
-    {
-      "text" : "Republishes elements while a predicate closure indicates publishing should continue.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -8009,10 +7810,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/prepend(_:)": {
   "abstract" : [
-    {
-      "text" : "Prefixes a publisher’s output with the specified values.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -8136,10 +7934,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/print(_:to:)": {
   "abstract" : [
-    {
-      "text" : "Prints log messages for all publishing events.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -8220,10 +8015,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/receive(on:options:)": {
   "abstract" : [
-    {
-      "text" : "Specifies the scheduler on which to receive elements from the publisher.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -8335,10 +8127,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/reduce(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Applies a closure that collects each element of a stream and publishes a final result upon completion.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -8450,10 +8239,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/removeDuplicates()": {
   "abstract" : [
-    {
-      "text" : "Publishes only elements that don’t match the previous element.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -8540,10 +8326,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/removeDuplicates(by:)": {
   "abstract" : [
-    {
-      "text" : "Publishes only elements that don’t match the previous element, as evaluated by a provided closure.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -8649,10 +8432,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/replaceEmpty(with:)": {
   "abstract" : [
-    {
-      "text" : "Replaces an empty stream with the provided element.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -8732,10 +8512,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/replaceError(with:)": {
   "abstract" : [
-    {
-      "text" : "Replaces any errors in the stream with the provided element.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -8815,10 +8592,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/replaceNil(with:)": {
   "abstract" : [
-    {
-      "text" : "Replaces nil elements in the stream with the provided element.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -8905,10 +8679,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/retry(_:)": {
   "abstract" : [
-    {
-      "text" : "Attempts to recreate a failed subscription with the upstream publisher up to the number of times you specify.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -8972,18 +8743,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/scan(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Transforms elements from the upstream publisher by providing the current",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "element to a closure along with the last value returned by the closure.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -9095,10 +8855,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/setFailureType(to:)": {
   "abstract" : [
-    {
-      "text" : "Changes the failure type declared by the upstream publisher.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -9217,10 +8974,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/share()": {
   "abstract" : [
-    {
-      "text" : "Shares the output of an upstream publisher with multiple subscribers.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -9275,10 +9029,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/sink(receiveCompletion:receiveValue:)": {
   "abstract" : [
-    {
-      "text" : "Attaches a subscriber with closure-based behavior.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -9398,10 +9149,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/sink(receiveValue:)": {
   "abstract" : [
-    {
-      "text" : "Attaches a subscriber with closure-based behavior to a publisher that never fails.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -9501,10 +9249,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/subscribe(_:)-11d00": {
   "abstract" : [
-    {
-      "text" : "Attaches the specified subject to this publisher.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -9554,10 +9299,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/subscribe(_:)-2uznw": {
   "abstract" : [
-    {
-      "text" : "Attaches the specified subscriber to this publisher.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -9602,10 +9344,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/subscribe(on:options:)": {
   "abstract" : [
-    {
-      "text" : "Specifies the scheduler on which to perform subscribe, cancel, and request operations.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -9717,10 +9456,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/switchToLatest()": {
   "abstract" : [
-    {
-      "text" : "Republishes elements sent by the most recently received publisher.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -9884,10 +9620,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/throttle(for:scheduler:latest:)": {
   "abstract" : [
-    {
-      "text" : "Publishes either the most-recent or first element published by the upstream publisher in the specified time interval.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -10025,10 +9758,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/timeout(_:scheduler:options:customError:)": {
   "abstract" : [
-    {
-      "text" : "Terminates publishing if the upstream publisher exceeds the specified time interval without producing an element.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -10191,10 +9921,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryAllSatisfy(_:)": {
   "abstract" : [
-    {
-      "text" : "Publishes a single Boolean value that indicates whether all received elements pass a given error-throwing predicate.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -10283,10 +10010,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryCatch(_:)": {
   "abstract" : [
-    {
-      "text" : "Handles errors from an upstream publisher by either replacing it with another publisher or throwing a new error.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -10390,10 +10114,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryCompactMap(_:)": {
   "abstract" : [
-    {
-      "text" : "Calls an error-throwing closure with each received element and publishes any returned optional that has a value.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -10497,10 +10218,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryContains(where:)": {
   "abstract" : [
-    {
-      "text" : "Publishes a Boolean value upon receiving an element that satisfies the throwing predicate closure.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -10597,10 +10315,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryDrop(while:)": {
   "abstract" : [
-    {
-      "text" : "Omits elements from the upstream publisher until an error-throwing closure returns false, before republishing all remaining elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -10697,10 +10412,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryFilter(_:)": {
   "abstract" : [
-    {
-      "text" : "Republishes all elements that match a provided error-throwing closure.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -10789,10 +10501,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryFirst(where:)": {
   "abstract" : [
-    {
-      "text" : "Publishes the first element of a stream to satisfy a throwing predicate closure, then finishes normally.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -10889,10 +10598,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryLast(where:)": {
   "abstract" : [
-    {
-      "text" : "Publishes the last element of a stream that satisfies an error-throwing predicate closure, after the stream finishes.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -10989,10 +10695,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryMap(_:)": {
   "abstract" : [
-    {
-      "text" : "Transforms all elements from the upstream publisher with a provided error-throwing closure.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -11096,10 +10799,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryMax(by:)": {
   "abstract" : [
-    {
-      "text" : "Publishes the maximum value received from the upstream publisher, using the provided error-throwing closure to order the items.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -11213,10 +10913,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryMin(by:)": {
   "abstract" : [
-    {
-      "text" : "Publishes the minimum value received from the upstream publisher, using the provided error-throwing closure to order the items.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -11330,10 +11027,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryPrefix(while:)": {
   "abstract" : [
-    {
-      "text" : "Republishes elements while an error-throwing predicate closure indicates publishing should continue.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -11430,10 +11124,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryReduce(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Applies an error-throwing closure that collects each element of a stream and publishes a final result upon completion.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -11553,10 +11244,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryRemoveDuplicates(by:)": {
   "abstract" : [
-    {
-      "text" : "Publishes only elements that don’t match the previous element, as evaluated by a provided error-throwing closure.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -11670,10 +11358,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/tryScan(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Transforms elements from the upstream publisher by providing the current element to an error-throwing closure along with the last value returned by the closure.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -11791,12 +11476,9 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/tryscan(_:_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/values-5akv3": {
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/values": {
   "abstract" : [
-    {
-      "text" : "The elements produced by the publisher, as an asynchronous sequence.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -11865,68 +11547,16 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/values-5akv3",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/values",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "values",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/values-5akv3"
-},
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/values-bnlo": {
-  "abstract" : [
-    {
-      "text" : "The elements produced by the publisher, as a throwing asynchronous sequence.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "values"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Combine22AsyncThrowingPublisherV",
-      "text" : "AsyncThrowingPublisher"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Publisher-swift.class\/values-bnlo",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "values",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/values-bnlo"
+  "url" : "\/documentation\/fffoundation\/userdefault\/publisher-swift.class\/values"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/zip(_:)": {
   "abstract" : [
-    {
-      "text" : "Combines elements from another publisher and deliver pairs of elements as tuples.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -12005,10 +11635,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/zip(_:_:)-8fb30": {
   "abstract" : [
-    {
-      "text" : "Combines elements from two other publishers and delivers groups of elements as tuples.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -12111,10 +11738,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/zip(_:_:)-8ulcl": {
   "abstract" : [
-    {
-      "text" : "Combines elements from another publisher and delivers a transformed output.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -12269,10 +11893,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/zip(_:_:_:)-1og57": {
   "abstract" : [
-    {
-      "text" : "Combines elements from three other publishers and delivers groups of elements as tuples.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -12399,10 +12020,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/zip(_:_:_:)-d2p": {
   "abstract" : [
-    {
-      "text" : "Combines elements from two other publishers and delivers a transformed output.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -12598,10 +12216,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Publisher-swift.class/zip(_:_:_:_:)": {
   "abstract" : [
-    {
-      "text" : "Combines elements from three other publishers and delivers a transformed output.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

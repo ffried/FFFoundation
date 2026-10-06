@@ -42,7 +42,8 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(_:strategy:)-6num6",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(_:strategy:)-80vot",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(exactly:)-455qs",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(sign:exponentBitPattern:significandBitPattern:)"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(sign:exponentBitPattern:significandBitPattern:)",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(signOf:magnitudeOf:)-692mg"
       ],
       "title" : "Initializers"
     },
@@ -81,6 +82,7 @@
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/exponentBitCount",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/radix-kunf",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/significandBitCount"
       ],
       "title" : "Type Properties"
@@ -380,6 +382,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleVAASBRzrlE5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -555,23 +558,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleVAASBRzrlE11RawExponenta",
       "text" : "RawExponent"
     }
   ],
@@ -584,26 +571,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/formatted()": {
   "abstract" : [
-    {
-      "text" : "Format ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " with ",
-      "type" : "text"
-    },
-    {
-      "code" : "FloatingPointFormatStyle()",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -637,18 +605,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/formatted(_:)-32r4t": {
   "abstract" : [
-    {
-      "text" : "Format ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " with the given format.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -706,34 +663,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/formatted(_:)-7s7pr": {
   "abstract" : [
-    {
-      "text" : "Format ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " with the given format. ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " is first converted to ",
-      "type" : "text"
-    },
-    {
-      "code" : "S.FormatInput",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " type, then format with the given format.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -791,18 +721,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/init(_:)-5t5aa": {
   "abstract" : [
-    {
-      "text" : "Creates a new instance from the given value, rounded to the closest",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "possible representation.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -839,42 +758,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/init(_:format:lenient:)-3m74h": {
   "abstract" : [
-    {
-      "text" : "Initialize an instance by parsing ",
-      "type" : "text"
-    },
-    {
-      "code" : "value",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " with a ",
-      "type" : "text"
-    },
-    {
-      "code" : "ParseStrategy",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " created with the given ",
-      "type" : "text"
-    },
-    {
-      "code" : "format",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " and the ",
-      "type" : "text"
-    },
-    {
-      "code" : "lenient",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " argument.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1186,26 +1070,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/init(_:strategy:)-80vot": {
   "abstract" : [
-    {
-      "text" : "Initialize an instance by parsing ",
-      "type" : "text"
-    },
-    {
-      "code" : "value",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " with the given ",
-      "type" : "text"
-    },
-    {
-      "code" : "strategy",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1271,18 +1136,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/init(exactly:)-455qs": {
   "abstract" : [
-    {
-      "text" : "Creates a new instance from the given value, if it can be represented",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "exactly.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1413,23 +1267,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleVAASBRzrlE11RawExponenta",
       "text" : "RawExponent"
     },
     {
@@ -1446,23 +1284,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleVAASBRzrlE14RawSignificanda",
       "text" : "RawSignificand"
     },
     {
@@ -1476,6 +1298,101 @@
   "title" : "init(sign:exponentBitPattern:significandBitPattern:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle\/init(sign:exponentbitpattern:significandbitpattern:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/init(signOf:magnitudeOf:)-692mg": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "signOf"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "magnitudeOf"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(signOf:magnitudeOf:)-692mg",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(signOf:magnitudeOf:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/init(signof:magnitudeof:)-692mg"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/radix-kunf": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "radix"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/radix-kunf",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "radix",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/radix-kunf"
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/significandBitCount": {
   "abstract" : [
@@ -1638,23 +1555,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleVAASBRzrlE14RawSignificanda",
       "text" : "RawSignificand"
     }
   ],

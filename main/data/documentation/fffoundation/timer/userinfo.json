@@ -13,7 +13,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:12FFFoundation5TimerC8userInfoxSgvp",
+    "externalID" : "s:12FFFoundation5TimerCAARi_zrlE8userInfoxSgvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -33,6 +33,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE1Txmfp",
         "text" : "T"
       },
       {
@@ -83,6 +84,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE1Txmfp",
               "text" : "T"
             },
             {
@@ -182,6 +184,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE1Txmfp",
       "text" : "T"
     },
     {

@@ -82,23 +82,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation5AngleV",
-        "text" : "Angle"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Value"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation5AngleVAASBRzrlE11RawExponenta",
         "text" : "RawExponent"
       }
     ],
@@ -144,25 +128,9 @@
               "text" : ": "
             },
             {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle",
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/RawExponent",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation5AngleV",
-              "text" : "Angle"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
-            },
-            {
-              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation5AngleVAASBRzrlE11RawExponenta",
               "text" : "RawExponent"
             },
             {
@@ -247,6 +215,85 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle"
 },
+"doc://FFFoundation/documentation/FFFoundation/Angle/RawExponent": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "BinaryFloatingPoint",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " and ",
+        "type" : "text"
+      },
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " is ",
+        "type" : "text"
+      },
+      {
+        "code" : "Value.Stride",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "RawExponent"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/RawExponent",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "RawExponent"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Angle.RawExponent",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/rawexponent"
+},
 "doc://FFFoundation/documentation/FFFoundation/Angle/exponentBitPattern": {
   "abstract" : [
 
@@ -318,23 +365,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleVAASBRzrlE11RawExponenta",
       "text" : "RawExponent"
     }
   ],

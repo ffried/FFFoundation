@@ -27,14 +27,6 @@
     "externalID" : "s:12FFFoundation9GCDFutureCACyxGycfc",
     "fragments" : [
       {
-        "kind" : "keyword",
-        "text" : "convenience"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
         "kind" : "identifier",
         "text" : "init"
       },
@@ -46,14 +38,6 @@
     "modules" : [
       {
         "name" : "FFFoundation"
-      }
-    ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use Swift concurrency instead",
-        "unavailable" : false
       }
     ],
     "remoteSource" : {
@@ -169,14 +153,6 @@
   ],
   "deprecated" : true,
   "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "convenience"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
     {
       "kind" : "identifier",
       "text" : "init"

@@ -33,14 +33,15 @@
       },
       {
         "kind" : "attribute",
-        "text" : "@autoclosure "
+        "text" : "@autoclosure"
       },
       {
         "kind" : "text",
-        "text" : "() -> "
+        "text" : " () -> "
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation11UserDefaultV5Valuexmfp",
         "text" : "Value"
       },
       {
@@ -125,18 +126,23 @@
             },
             {
               "kind" : "attribute",
-              "text" : "@autoclosure "
-            },
-            {
-              "kind" : "attribute",
-              "text" : "@escaping "
+              "text" : "@escaping"
             },
             {
               "kind" : "text",
-              "text" : "() -> "
+              "text" : " "
+            },
+            {
+              "kind" : "attribute",
+              "text" : "@autoclosure"
+            },
+            {
+              "kind" : "text",
+              "text" : " () -> "
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation11UserDefaultV5Valuexmfp",
               "text" : "Value"
             },
             {
@@ -271,14 +277,15 @@
     },
     {
       "kind" : "attribute",
-      "text" : "@autoclosure "
+      "text" : "@autoclosure"
     },
     {
       "kind" : "text",
-      "text" : "() -> "
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV5Valuexmfp",
       "text" : "Value"
     },
     {

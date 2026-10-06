@@ -1,26 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "A non-blocking sequence of ",
-      "type" : "text"
-    },
-    {
-      "code" : "Characters",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " created by decoding the elements of ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " as UTF8.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -119,6 +97,20 @@
         "deprecated" : false,
         "introducedAt" : "15.0",
         "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "iPadOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "Mac Catalyst",
         "unavailable" : false
       },
       {
@@ -343,26 +335,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/characters": {
   "abstract" : [
-    {
-      "text" : "A non-blocking sequence of ",
-      "type" : "text"
-    },
-    {
-      "code" : "Characters",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " created by decoding the elements of ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " as UTF8.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [

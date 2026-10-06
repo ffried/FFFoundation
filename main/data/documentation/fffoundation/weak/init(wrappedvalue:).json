@@ -33,6 +33,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation4WeakV6Objectxmfp",
         "text" : "Object"
       },
       {
@@ -83,6 +84,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation4WeakV6Objectxmfp",
               "text" : "Object"
             },
             {
@@ -182,6 +184,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4WeakV6Objectxmfp",
       "text" : "Object"
     },
     {

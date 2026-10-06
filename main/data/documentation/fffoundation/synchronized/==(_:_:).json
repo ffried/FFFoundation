@@ -83,15 +83,7 @@
       },
       {
         "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Guarded"
-      },
-      {
-        "kind" : "text",
-        "text" : ">, "
+        "text" : ", "
       },
       {
         "kind" : "typeIdentifier",
@@ -100,15 +92,7 @@
       },
       {
         "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Guarded"
-      },
-      {
-        "kind" : "text",
-        "text" : ">) -> "
+        "text" : ") -> "
       },
       {
         "kind" : "typeIdentifier",
@@ -185,15 +169,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Guarded"
-            },
-            {
-              "kind" : "text",
-              "text" : ">, "
+              "text" : ", "
             },
             {
               "kind" : "internalParam",
@@ -211,15 +187,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Guarded"
-            },
-            {
-              "kind" : "text",
-              "text" : ">) -> "
+              "text" : ") -> "
             },
             {
               "kind" : "typeIdentifier",
@@ -368,15 +336,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Guarded"
-    },
-    {
-      "kind" : "text",
-      "text" : ">, "
+      "text" : ", "
     },
     {
       "kind" : "typeIdentifier",
@@ -385,15 +345,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Guarded"
-    },
-    {
-      "kind" : "text",
-      "text" : ">) -> "
+      "text" : ") -> "
     },
     {
       "kind" : "typeIdentifier",

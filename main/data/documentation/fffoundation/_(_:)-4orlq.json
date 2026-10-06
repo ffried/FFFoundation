@@ -61,6 +61,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation1xopySo16NSSortDescriptorCs7KeyPathCyxq_GSLR_r0_lF4RootL_xmfp",
         "text" : "Root"
       },
       {
@@ -69,6 +70,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation1xopySo16NSSortDescriptorCs7KeyPathCyxq_GSLR_r0_lF5ValueL_q_mfp",
         "text" : "Value"
       },
       {
@@ -161,6 +163,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation1xopySo16NSSortDescriptorCs7KeyPathCyxq_GSLR_r0_lF4RootL_xmfp",
               "text" : "Root"
             },
             {
@@ -169,6 +172,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation1xopySo16NSSortDescriptorCs7KeyPathCyxq_GSLR_r0_lF5ValueL_q_mfp",
               "text" : "Value"
             },
             {
@@ -296,6 +300,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1xopySo16NSSortDescriptorCs7KeyPathCyxq_GSLR_r0_lF4RootL_xmfp",
       "text" : "Root"
     },
     {
@@ -304,6 +309,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation1xopySo16NSSortDescriptorCs7KeyPathCyxq_GSLR_r0_lF5ValueL_q_mfp",
       "text" : "Value"
     },
     {

@@ -77,6 +77,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation3CoWV5Valuexmfp",
               "text" : "Value"
             },
             {
@@ -85,6 +86,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation3CoWV5Valuexmfp",
               "text" : "Value"
             }
           ]

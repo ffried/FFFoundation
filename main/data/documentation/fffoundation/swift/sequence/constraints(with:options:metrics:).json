@@ -141,7 +141,16 @@
       },
       {
         "kind" : "text",
-        "text" : "?) -> ["
+        "text" : "?) -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sa",
+        "text" : "Array"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
       },
       {
         "kind" : "typeIdentifier",
@@ -150,7 +159,7 @@
       },
       {
         "kind" : "text",
-        "text" : "]"
+        "text" : ">"
       }
     ],
     "modules" : [
@@ -172,6 +181,20 @@
       {
         "beta" : false,
         "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "iPadOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "Mac Catalyst",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
         "introducedAt" : "10.7",
         "name" : "macOS",
         "unavailable" : false
@@ -186,7 +209,7 @@
     ],
     "remoteSource" : {
       "fileName" : "NSLayoutConstraint+FFAdditions.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/NSLayoutConstraint+FFAdditions.swift#L68"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/NSLayoutConstraint+FFAdditions.swift#L71"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -319,7 +342,16 @@
             },
             {
               "kind" : "text",
-              "text" : "? = nil) -> ["
+              "text" : "? = nil) -> "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sa",
+              "text" : "Array"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
             },
             {
               "kind" : "typeIdentifier",
@@ -328,7 +360,7 @@
             },
             {
               "kind" : "text",
-              "text" : "]"
+              "text" : ">"
             }
           ]
         }
@@ -603,7 +635,16 @@
     },
     {
       "kind" : "text",
-      "text" : "?) -> ["
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sa",
+      "text" : "Array"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
     },
     {
       "kind" : "typeIdentifier",
@@ -612,7 +653,7 @@
     },
     {
       "kind" : "text",
-      "text" : "]"
+      "text" : ">"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Swift\/Sequence\/constraints(with:options:metrics:)",

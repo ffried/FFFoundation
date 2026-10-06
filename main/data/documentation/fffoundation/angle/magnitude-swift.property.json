@@ -33,23 +33,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation5AngleV",
-        "text" : "Angle"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Value"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12FFFoundation5AngleV9Magnitudea",
         "text" : "Magnitude"
       }
@@ -94,24 +77,6 @@
             {
               "kind" : "text",
               "text" : ": "
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation5AngleV",
-              "text" : "Angle"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Magnitude-swift.typealias",
@@ -252,23 +217,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",

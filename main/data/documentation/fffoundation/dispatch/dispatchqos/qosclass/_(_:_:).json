@@ -44,39 +44,11 @@
       },
       {
         "kind" : "text",
-        "text" : "("
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:8Dispatch0A3QoSV",
-        "text" : "DispatchQoS"
+        "text" : "(`Self`"
       },
       {
         "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:8Dispatch0A3QoSV0B6SClassO",
-        "text" : "QoSClass"
-      },
-      {
-        "kind" : "text",
-        "text" : ", "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:8Dispatch0A3QoSV",
-        "text" : "DispatchQoS"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:8Dispatch0A3QoSV0B6SClassO",
-        "text" : "QoSClass"
+        "text" : ", `Self`"
       },
       {
         "kind" : "text",
@@ -150,21 +122,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:8Dispatch0A3QoSV",
-              "text" : "DispatchQoS"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:8Dispatch0A3QoSV0B6SClassO",
-              "text" : "QoSClass"
+              "text" : ": `Self`"
             },
             {
               "kind" : "text",
@@ -176,21 +134,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:8Dispatch0A3QoSV",
-              "text" : "DispatchQoS"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:8Dispatch0A3QoSV0B6SClassO",
-              "text" : "QoSClass"
+              "text" : ": `Self`"
             },
             {
               "kind" : "text",
@@ -355,39 +299,11 @@
     },
     {
       "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:8Dispatch0A3QoSV",
-      "text" : "DispatchQoS"
+      "text" : "(`Self`"
     },
     {
       "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:8Dispatch0A3QoSV0B6SClassO",
-      "text" : "QoSClass"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:8Dispatch0A3QoSV",
-      "text" : "DispatchQoS"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:8Dispatch0A3QoSV0B6SClassO",
-      "text" : "QoSClass"
+      "text" : ", `Self`"
     },
     {
       "kind" : "text",

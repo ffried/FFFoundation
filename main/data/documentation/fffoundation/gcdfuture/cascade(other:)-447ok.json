@@ -61,6 +61,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
         "text" : "Value"
       },
       {
@@ -71,14 +72,6 @@
     "modules" : [
       {
         "name" : "FFFoundation"
-      }
-    ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use Swift concurrency instead",
-        "unavailable" : false
       }
     ],
     "remoteSource" : {
@@ -137,6 +130,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
               "text" : "Value"
             },
             {
@@ -255,6 +249,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
       "text" : "Value"
     },
     {

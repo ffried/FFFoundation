@@ -13,7 +13,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:12FFFoundation15TypeDescriptionVyACxmclufc",
+    "externalID" : "s:12FFFoundation15TypeDescriptionVyACxmcRi_zRi0_zlufc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -33,6 +33,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation15TypeDescriptionVyACxmcRi_zRi0_zlufc1TL_xmfp",
         "text" : "T"
       },
       {
@@ -47,7 +48,7 @@
     ],
     "remoteSource" : {
       "fileName" : "TypeDescription.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/TypeDescription.swift#L21"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/TypeDescription.swift#L22"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -99,11 +100,36 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation15TypeDescriptionVyACxmcRi_zRi0_zlufc1TL_xmfp",
               "text" : "T"
             },
             {
               "kind" : "text",
-              "text" : ".Type)"
+              "text" : ".Type) "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "where"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "T"
+            },
+            {
+              "kind" : "text",
+              "text" : " : ~Copyable, "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "T"
+            },
+            {
+              "kind" : "text",
+              "text" : " : ~Escapable"
             }
           ]
         }
@@ -198,6 +224,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation15TypeDescriptionVyACxmcRi_zRi0_zlufc1TL_xmfp",
       "text" : "T"
     },
     {

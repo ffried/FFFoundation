@@ -122,6 +122,7 @@
     {
       "identifiers" : [
         "doc:\/\/FFFoundation\/s8CopyableP",
+        "doc:\/\/FFFoundation\/s9EscapableP",
         "doc:\/\/FFFoundation\/s8SendableP",
         "doc:\/\/FFFoundation\/s16SendableMetatypeP",
         "doc:\/\/FFFoundation\/7SwiftUI15DynamicPropertyP"
@@ -506,6 +507,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -543,6 +545,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV5Valuexmfp",
       "text" : "Value"
     }
   ],
@@ -1154,14 +1157,23 @@
     },
     {
       "kind" : "attribute",
-      "text" : "@autoclosure "
+      "text" : "@Sendable"
     },
     {
       "kind" : "text",
-      "text" : "() -> "
+      "text" : " "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure"
+    },
+    {
+      "kind" : "text",
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1233,14 +1245,15 @@
     },
     {
       "kind" : "attribute",
-      "text" : "@autoclosure "
+      "text" : "@autoclosure"
     },
     {
       "kind" : "text",
-      "text" : "() -> "
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1278,14 +1291,15 @@
     },
     {
       "kind" : "attribute",
-      "text" : "@autoclosure "
+      "text" : "@autoclosure"
     },
     {
       "kind" : "text",
-      "text" : "() -> "
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1397,14 +1411,23 @@
     },
     {
       "kind" : "attribute",
-      "text" : "@autoclosure "
+      "text" : "@Sendable"
     },
     {
       "kind" : "text",
-      "text" : "() -> "
+      "text" : " "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure"
+    },
+    {
+      "kind" : "text",
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1519,6 +1542,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1585,23 +1609,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV",
-      "text" : "UserDefault"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -1713,23 +1720,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV",
-      "text" : "UserDefault"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV",
       "text" : "Values"
     }
@@ -1764,6 +1754,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV5Valuexmfp",
       "text" : "Value"
     }
   ],
@@ -1787,6 +1778,11 @@
 "doc://FFFoundation/s8SendableP": {
   "identifier" : "doc:\/\/FFFoundation\/s8SendableP",
   "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s9EscapableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s9EscapableP",
+  "title" : "Swift.Escapable",
   "type" : "unresolvable"
 }
 }

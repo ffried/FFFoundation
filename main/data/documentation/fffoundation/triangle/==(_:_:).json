@@ -54,6 +54,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation8TriangleV5Pointxmfp",
         "text" : "Point"
       },
       {
@@ -71,6 +72,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation8TriangleV5Pointxmfp",
         "text" : "Point"
       },
       {
@@ -156,6 +158,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation8TriangleV5Pointxmfp",
               "text" : "Point"
             },
             {
@@ -182,6 +185,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation8TriangleV5Pointxmfp",
               "text" : "Point"
             },
             {
@@ -307,6 +311,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation8TriangleV5Pointxmfp",
       "text" : "Point"
     },
     {
@@ -324,6 +329,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation8TriangleV5Pointxmfp",
       "text" : "Point"
     },
     {

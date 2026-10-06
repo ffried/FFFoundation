@@ -203,7 +203,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> (), "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " () -> (), "
     },
     {
       "kind" : "externalParam",
@@ -211,7 +219,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> ())"
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " () -> ())"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/addOperation(with:completion:)",
@@ -248,7 +264,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> ())"
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " () -> ())"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/addOperationWithBlockAndWait(block:)",
@@ -285,7 +309,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> ())"
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " () -> ())"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/addOperationWithBlockAndWaitIfNotCurrentQueue(block:)",

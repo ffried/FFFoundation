@@ -48,10 +48,19 @@
       },
       {
         "kind" : "text",
-        "text" : ">(("
+        "text" : ">("
+      },
+      {
+        "kind" : "attribute",
+        "text" : "@Sendable"
+      },
+      {
+        "kind" : "text",
+        "text" : " ("
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
         "text" : "Value"
       },
       {
@@ -69,6 +78,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACyqd__GAExYbcs8SendableRd__lF1TL_qd__mfp",
         "text" : "T"
       },
       {
@@ -86,6 +96,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACyqd__GAExYbcs8SendableRd__lF1TL_qd__mfp",
         "text" : "T"
       },
       {
@@ -96,14 +107,6 @@
     "modules" : [
       {
         "name" : "FFFoundation"
-      }
-    ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use Swift concurrency instead",
-        "unavailable" : false
       }
     ],
     "remoteSource" : {
@@ -168,14 +171,23 @@
             },
             {
               "kind" : "attribute",
-              "text" : "@escaping "
+              "text" : "@escaping"
             },
             {
               "kind" : "text",
-              "text" : "("
+              "text" : " "
+            },
+            {
+              "kind" : "attribute",
+              "text" : "@Sendable"
+            },
+            {
+              "kind" : "text",
+              "text" : " ("
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
               "text" : "Value"
             },
             {
@@ -194,6 +206,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACyqd__GAExYbcs8SendableRd__lF1TL_qd__mfp",
               "text" : "T"
             },
             {
@@ -212,6 +225,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACyqd__GAExYbcs8SendableRd__lF1TL_qd__mfp",
               "text" : "T"
             },
             {
@@ -338,10 +352,19 @@
     },
     {
       "kind" : "text",
-      "text" : ">(("
+      "text" : ">("
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " ("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -359,6 +382,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACyqd__GAExYbcs8SendableRd__lF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -376,6 +400,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACyqd__GAExYbcs8SendableRd__lF1TL_qd__mfp",
       "text" : "T"
     },
     {

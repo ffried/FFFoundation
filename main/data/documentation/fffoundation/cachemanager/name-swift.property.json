@@ -33,23 +33,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation12CacheManagerC",
-        "text" : "CacheManager"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Object"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12FFFoundation12CacheManagerC4NameV",
         "text" : "Name"
       }
@@ -94,24 +77,6 @@
             {
               "kind" : "text",
               "text" : ": "
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation12CacheManagerC",
-              "text" : "CacheManager"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Object"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct",
@@ -272,23 +237,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation12CacheManagerC",
-      "text" : "CacheManager"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Object"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",

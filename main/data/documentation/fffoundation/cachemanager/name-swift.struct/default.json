@@ -80,15 +80,7 @@
       },
       {
         "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Object"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
+        "text" : "."
       },
       {
         "kind" : "typeIdentifier",
@@ -103,7 +95,7 @@
     ],
     "remoteSource" : {
       "fileName" : "CacheManager.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/CacheManager.swift#L200"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/CacheManager.swift#L202"
     },
     "role" : "symbol",
     "roleHeading" : "Type Property",
@@ -153,15 +145,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Object"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
+              "text" : "."
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct",
@@ -382,15 +366,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Object"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
+      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

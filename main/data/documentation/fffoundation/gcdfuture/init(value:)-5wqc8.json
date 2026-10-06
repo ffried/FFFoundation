@@ -27,14 +27,6 @@
     "externalID" : "s:12FFFoundation9GCDFutureC5valueACyxGx_tcfc",
     "fragments" : [
       {
-        "kind" : "keyword",
-        "text" : "convenience"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
         "kind" : "identifier",
         "text" : "init"
       },
@@ -52,6 +44,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
         "text" : "Value"
       },
       {
@@ -62,14 +55,6 @@
     "modules" : [
       {
         "name" : "FFFoundation"
-      }
-    ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use Swift concurrency instead",
-        "unavailable" : false
       }
     ],
     "remoteSource" : {
@@ -118,6 +103,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
               "text" : "Value"
             },
             {
@@ -202,14 +188,6 @@
   "deprecated" : true,
   "fragments" : [
     {
-      "kind" : "keyword",
-      "text" : "convenience"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
       "kind" : "identifier",
       "text" : "init"
     },
@@ -227,6 +205,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
       "text" : "Value"
     },
     {

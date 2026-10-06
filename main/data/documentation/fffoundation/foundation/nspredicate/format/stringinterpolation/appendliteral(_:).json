@@ -36,33 +36,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "c:objc(cs)NSPredicate",
-        "text" : "NSPredicate"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV",
-        "text" : "Format"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV",
-        "text" : "StringInterpolation"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV0D11LiteralTypea",
         "text" : "StringLiteralType"
       },
@@ -135,35 +108,6 @@
             {
               "kind" : "text",
               "text" : ": "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "c:objc(cs)NSPredicate",
-              "text" : "NSPredicate"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV",
-              "text" : "Format"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV",
-              "text" : "StringInterpolation"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/NSPredicate\/Format\/StringInterpolation\/StringLiteralType",
@@ -370,33 +314,6 @@
     {
       "kind" : "text",
       "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)NSPredicate",
-      "text" : "NSPredicate"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV",
-      "text" : "Format"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV",
-      "text" : "StringInterpolation"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

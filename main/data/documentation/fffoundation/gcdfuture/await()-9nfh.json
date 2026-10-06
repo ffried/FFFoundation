@@ -101,21 +101,13 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5awaitqd__yKs6ResultOyqd__qd_0_GRszs8SendableRd__s5ErrorRd_0_r0_lF7SuccessL_qd__mfp",
         "text" : "Success"
       }
     ],
     "modules" : [
       {
         "name" : "FFFoundation"
-      }
-    ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use 'wait'",
-        "renamed" : "wait",
-        "unavailable" : false
       }
     ],
     "remoteSource" : {
@@ -180,6 +172,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5awaitqd__yKs6ResultOyqd__qd_0_GRszs8SendableRd__s5ErrorRd_0_r0_lF7SuccessL_qd__mfp",
               "text" : "Success"
             },
             {
@@ -408,6 +401,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5awaitqd__yKs6ResultOyqd__qd_0_GRszs8SendableRd__s5ErrorRd_0_r0_lF7SuccessL_qd__mfp",
       "text" : "Success"
     }
   ],

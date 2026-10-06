@@ -97,7 +97,7 @@
     ],
     "remoteSource" : {
       "fileName" : "CoW.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/CoW.swift#L88"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/CoW.swift#L90"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",

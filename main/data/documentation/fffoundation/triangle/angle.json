@@ -73,7 +73,11 @@
             },
             {
               "kind" : "text",
-              "text" : " = "
+              "text" : " = FFFoundation"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle",
@@ -87,6 +91,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation8TriangleV5Pointxmfp",
               "text" : "Point"
             },
             {

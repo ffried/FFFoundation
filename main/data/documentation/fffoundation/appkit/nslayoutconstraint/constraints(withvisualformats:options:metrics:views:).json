@@ -39,15 +39,7 @@
       },
       {
         "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "genericParameter",
-        "text" : "Formats"
-      },
-      {
-        "kind" : "text",
-        "text" : ">("
+        "text" : "("
       },
       {
         "kind" : "externalParam",
@@ -58,12 +50,30 @@
         "text" : ": "
       },
       {
-        "kind" : "typeIdentifier",
-        "text" : "Formats"
+        "kind" : "keyword",
+        "text" : "some"
       },
       {
         "kind" : "text",
-        "text" : ", "
+        "text" : " "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:ST",
+        "text" : "Sequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:So18NSLayoutConstraintC12FFFoundationE16VisualFormatTypea",
+        "text" : "VisualFormatType"
+      },
+      {
+        "kind" : "text",
+        "text" : ">, "
       },
       {
         "kind" : "externalParam",
@@ -72,15 +82,6 @@
       {
         "kind" : "text",
         "text" : ": "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "c:objc(cs)NSLayoutConstraint",
-        "text" : "NSLayoutConstraint"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
       },
       {
         "kind" : "typeIdentifier",
@@ -101,15 +102,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "c:objc(cs)NSLayoutConstraint",
-        "text" : "NSLayoutConstraint"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:So18NSLayoutConstraintC12FFFoundationE17MetricsDictionarya",
         "text" : "MetricsDictionary"
       },
@@ -127,21 +119,21 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "c:objc(cs)NSLayoutConstraint",
-        "text" : "NSLayoutConstraint"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:So18NSLayoutConstraintC12FFFoundationE15ViewsDictionarya",
         "text" : "ViewsDictionary"
       },
       {
         "kind" : "text",
-        "text" : ") -> ["
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sa",
+        "text" : "Array"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
       },
       {
         "kind" : "typeIdentifier",
@@ -150,7 +142,7 @@
       },
       {
         "kind" : "text",
-        "text" : "]"
+        "text" : ">"
       }
     ],
     "modules" : [
@@ -172,6 +164,20 @@
       {
         "beta" : false,
         "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "iPadOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "Mac Catalyst",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
         "introducedAt" : "10.7",
         "name" : "macOS",
         "unavailable" : false
@@ -186,7 +192,7 @@
     ],
     "remoteSource" : {
       "fileName" : "NSLayoutConstraint+FFAdditions.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/NSLayoutConstraint+FFAdditions.swift#L42"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/NSLayoutConstraint+FFAdditions.swift#L43"
     },
     "role" : "symbol",
     "roleHeading" : "Type Method",
@@ -226,15 +232,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "genericParameter",
-              "text" : "Formats"
-            },
-            {
-              "kind" : "text",
-              "text" : ">("
+              "text" : "("
             },
             {
               "kind" : "externalParam",
@@ -253,12 +251,31 @@
               "text" : ": "
             },
             {
-              "kind" : "typeIdentifier",
-              "text" : "Formats"
+              "kind" : "keyword",
+              "text" : "some"
             },
             {
               "kind" : "text",
-              "text" : ", "
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:ST",
+              "text" : "Sequence"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit\/NSLayoutConstraint\/VisualFormatType",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:So18NSLayoutConstraintC12FFFoundationE16VisualFormatTypea",
+              "text" : "VisualFormatType"
+            },
+            {
+              "kind" : "text",
+              "text" : ">, "
             },
             {
               "kind" : "externalParam",
@@ -267,15 +284,6 @@
             {
               "kind" : "text",
               "text" : ": "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "c:objc(cs)NSLayoutConstraint",
-              "text" : "NSLayoutConstraint"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
             },
             {
               "kind" : "typeIdentifier",
@@ -293,15 +301,6 @@
             {
               "kind" : "text",
               "text" : ": "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "c:objc(cs)NSLayoutConstraint",
-              "text" : "NSLayoutConstraint"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit\/NSLayoutConstraint\/MetricsDictionary",
@@ -322,15 +321,6 @@
               "text" : ": "
             },
             {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "c:objc(cs)NSLayoutConstraint",
-              "text" : "NSLayoutConstraint"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit\/NSLayoutConstraint\/ViewsDictionary",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:So18NSLayoutConstraintC12FFFoundationE15ViewsDictionarya",
@@ -338,7 +328,16 @@
             },
             {
               "kind" : "text",
-              "text" : ") -> ["
+              "text" : ") -> "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sa",
+              "text" : "Array"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
             },
             {
               "kind" : "typeIdentifier",
@@ -347,54 +346,7 @@
             },
             {
               "kind" : "text",
-              "text" : "] "
-            },
-            {
-              "kind" : "keyword",
-              "text" : "where"
-            },
-            {
-              "kind" : "text",
-              "text" : " "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Formats"
-            },
-            {
-              "kind" : "text",
-              "text" : " : "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:ST",
-              "text" : "Sequence"
-            },
-            {
-              "kind" : "text",
-              "text" : ", "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Formats"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:ST7ElementQa",
-              "text" : "Element"
-            },
-            {
-              "kind" : "text",
-              "text" : " == "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:SS",
-              "text" : "String"
+              "text" : ">"
             }
           ]
         }
@@ -540,6 +492,37 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/appkit\/nslayoutconstraint\/viewsdictionary"
 },
+"doc://FFFoundation/documentation/FFFoundation/AppKit/NSLayoutConstraint/VisualFormatType": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "VisualFormatType"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit\/NSLayoutConstraint\/VisualFormatType",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "VisualFormatType"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "NSLayoutConstraint.VisualFormatType",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/appkit\/nslayoutconstraint\/visualformattype"
+},
 "doc://FFFoundation/documentation/FFFoundation/AppKit/NSLayoutConstraint/constraints(withVisualFormats:options:metrics:views:)": {
   "abstract" : [
 
@@ -567,15 +550,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "Formats"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
+      "text" : "("
     },
     {
       "kind" : "externalParam",
@@ -586,12 +561,30 @@
       "text" : ": "
     },
     {
-      "kind" : "typeIdentifier",
-      "text" : "Formats"
+      "kind" : "keyword",
+      "text" : "some"
     },
     {
       "kind" : "text",
-      "text" : ", "
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST",
+      "text" : "Sequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So18NSLayoutConstraintC12FFFoundationE16VisualFormatTypea",
+      "text" : "VisualFormatType"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
     },
     {
       "kind" : "externalParam",
@@ -600,15 +593,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)NSLayoutConstraint",
-      "text" : "NSLayoutConstraint"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",
@@ -629,15 +613,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)NSLayoutConstraint",
-      "text" : "NSLayoutConstraint"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:So18NSLayoutConstraintC12FFFoundationE17MetricsDictionarya",
       "text" : "MetricsDictionary"
     },
@@ -655,21 +630,21 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)NSLayoutConstraint",
-      "text" : "NSLayoutConstraint"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:So18NSLayoutConstraintC12FFFoundationE15ViewsDictionarya",
       "text" : "ViewsDictionary"
     },
     {
       "kind" : "text",
-      "text" : ") -> ["
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sa",
+      "text" : "Array"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
     },
     {
       "kind" : "typeIdentifier",
@@ -678,7 +653,7 @@
     },
     {
       "kind" : "text",
-      "text" : "]"
+      "text" : ">"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit\/NSLayoutConstraint\/constraints(withVisualFormats:options:metrics:views:)",

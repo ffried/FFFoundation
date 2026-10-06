@@ -33,15 +33,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation14UserDefaultKeyV",
-        "text" : "UserDefaultKey"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12FFFoundation14UserDefaultKeyV17StringLiteralTypea",
         "text" : "StringLiteralType"
       },
@@ -98,16 +89,6 @@
             {
               "kind" : "text",
               "text" : ": "
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation14UserDefaultKeyV",
-              "text" : "UserDefaultKey"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/StringLiteralType",
@@ -240,15 +221,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation14UserDefaultKeyV",
-      "text" : "UserDefaultKey"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

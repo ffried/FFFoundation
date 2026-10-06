@@ -49,14 +49,6 @@
     "externalID" : "s:12FFFoundation3RefCAAs32ExpressibleByStringInterpolationRzlE06stringF0ACyxG0eF0Qz_tcfc",
     "fragments" : [
       {
-        "kind" : "keyword",
-        "text" : "convenience"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
         "kind" : "identifier",
         "text" : "init"
       },
@@ -74,6 +66,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation3RefCAAs32ExpressibleByStringInterpolationRzlE10Referencedxmfp",
         "text" : "Referenced"
       },
       {
@@ -141,6 +134,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation3RefCAAs32ExpressibleByStringInterpolationRzlE10Referencedxmfp",
               "text" : "Referenced"
             },
             {
@@ -264,14 +258,6 @@
   },
   "fragments" : [
     {
-      "kind" : "keyword",
-      "text" : "convenience"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
       "kind" : "identifier",
       "text" : "init"
     },
@@ -289,6 +275,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation3RefCAAs32ExpressibleByStringInterpolationRzlE10Referencedxmfp",
       "text" : "Referenced"
     },
     {

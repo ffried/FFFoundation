@@ -411,6 +411,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV06appendE0yyxSg10Foundation20ReferenceConvertibleRzlF7BridgedL_xmfp",
       "text" : "Bridged"
     },
     {
@@ -456,6 +457,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV06appendE0yyxSgSURzlF7IntegerL_xmfp",
       "text" : "Integer"
     },
     {
@@ -539,6 +541,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV06appendE0yyxSgSFRzlF5FloatL_xmfp",
       "text" : "Float"
     },
     {
@@ -584,6 +587,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV06appendE0yyxSgSZRzlF7IntegerL_xmfp",
       "text" : "Integer"
     },
     {
@@ -813,33 +817,6 @@
     {
       "kind" : "text",
       "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)NSPredicate",
-      "text" : "NSPredicate"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV",
-      "text" : "Format"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV",
-      "text" : "StringInterpolation"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

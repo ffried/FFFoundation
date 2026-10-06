@@ -80,18 +80,6 @@
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:12FFFoundation5AngleV",
               "text" : "Angle"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">"
             }
           ]
         }

@@ -88,7 +88,23 @@
             },
             {
               "kind" : "text",
-              "text" : ">"
+              "text" : "> "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "where"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "T"
+            },
+            {
+              "kind" : "text",
+              "text" : " : ~Copyable"
             }
           ]
         }
@@ -255,24 +271,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5TimerC",
-      "text" : "Timer"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5TimerC5Blocka",
+      "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE5Blocka",
       "text" : "Block"
     }
   ],
@@ -385,7 +384,16 @@
       "text" : ": "
     },
     {
+      "kind" : "keyword",
+      "text" : "consuming"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE1Txmfp",
       "text" : "T"
     },
     {
@@ -402,24 +410,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5TimerC",
-      "text" : "Timer"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5TimerC5Blocka",
+      "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE5Blocka",
       "text" : "Block"
     },
     {
@@ -651,6 +642,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE1Txmfp",
       "text" : "T"
     },
     {

@@ -55,6 +55,20 @@
       {
         "beta" : false,
         "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "iPadOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "Mac Catalyst",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
         "introducedAt" : "10.7",
         "name" : "macOS",
         "unavailable" : false
@@ -120,15 +134,6 @@
             {
               "kind" : "text",
               "text" : ", "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "c:objc(cs)NSLayoutConstraint",
-              "text" : "NSLayoutConstraint"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/AppKit\/NSLayoutConstraint\/ViewType",

@@ -51,11 +51,9 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/compactMap(_:)-7dcwo",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/contains(_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/contains(where:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/drop(while:)-33t8",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/drop(while:)-460k7",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/drop(while:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/dropFirst(_:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/filter(_:)-42jja",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/filter(_:)-7ospm",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/filter(_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/first(where:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/flatMap(_:)-2mrf7",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/flatMap(_:)-3j41j",
@@ -68,8 +66,7 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/min()",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/min(by:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/prefix(_:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/prefix(while:)-421sb",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/prefix(while:)-7g1nv",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/prefix(while:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/reduce(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/reduce(into:_:)"
       ],
@@ -205,18 +202,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/allSatisfy(_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a Boolean value that indicates whether all elements produced by the",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "asynchronous sequence satisfy the given predicate.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -308,26 +294,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/characters": {
   "abstract" : [
-    {
-      "text" : "A non-blocking sequence of ",
-      "type" : "text"
-    },
-    {
-      "code" : "Characters",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " created by decoding the elements of ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " as UTF8.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -405,26 +372,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/compactMap(_:)-6yhi7": {
   "abstract" : [
-    {
-      "text" : "Creates an asynchronous sequence that maps the given closure over the",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "asynchronous sequence’s elements, omitting results that don’t return a",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "value.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -519,18 +467,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/compactMap(_:)-7dcwo": {
   "abstract" : [
-    {
-      "text" : "Creates an asynchronous sequence that maps an error-throwing closure over",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "the base sequence’s elements, omitting results that don’t return a value.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -633,18 +570,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/contains(_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a Boolean value that indicates whether the asynchronous sequence",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "contains the given element.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -743,18 +669,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/contains(where:)": {
   "abstract" : [
-    {
-      "text" : "Returns a Boolean value that indicates whether the asynchronous sequence",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "contains an element that satisfies the given predicate.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -852,127 +767,9 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/contains(where:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/drop(while:)-33t8": {
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/drop(while:)": {
   "abstract" : [
-    {
-      "text" : "Omits elements from the base sequence until a given error-throwing closure",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "returns false, after which it passes through all remaining elements.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "drop"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "while"
-    },
-    {
-      "kind" : "text",
-      "text" : ": ("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sci7ElementQa",
-      "text" : "Element"
-    },
-    {
-      "kind" : "text",
-      "text" : ") "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "async"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "throws"
-    },
-    {
-      "kind" : "text",
-      "text" : " -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12_Concurrency30AsyncThrowingDropWhileSequenceV",
-      "text" : "AsyncThrowingDropWhileSequence"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/drop(while:)-33t8",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "drop(while:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/drop(while:)-33t8"
-},
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/drop(while:)-460k7": {
-  "abstract" : [
-    {
-      "text" : "Omits elements from the base asynchronous sequence until a given closure",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "returns false, after which it passes through all remaining elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1051,27 +848,16 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/drop(while:)-460k7",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/drop(while:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "drop(while:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/drop(while:)-460k7"
+  "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/drop(while:)"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/dropFirst(_:)": {
   "abstract" : [
-    {
-      "text" : "Omits a specified number of elements from the base asynchronous sequence,",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "then passes through all remaining elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1124,20 +910,9 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/dropfirst(_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/filter(_:)-42jja": {
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/filter(_:)": {
   "abstract" : [
-    {
-      "text" : "Creates an asynchronous sequence that contains, in order, the elements of",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "the base sequence that satisfy the given predicate.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1208,126 +983,16 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/filter(_:)-42jja",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/filter(_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "filter(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/filter(_:)-42jja"
-},
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/filter(_:)-7ospm": {
-  "abstract" : [
-    {
-      "text" : "Creates an asynchronous sequence that contains, in order, the elements of",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "the base sequence that satisfy the given error-throwing predicate.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "filter"
-    },
-    {
-      "kind" : "text",
-      "text" : "(("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sci7ElementQa",
-      "text" : "Element"
-    },
-    {
-      "kind" : "text",
-      "text" : ") "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "async"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "throws"
-    },
-    {
-      "kind" : "text",
-      "text" : " -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12_Concurrency27AsyncThrowingFilterSequenceV",
-      "text" : "AsyncThrowingFilterSequence"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/filter(_:)-7ospm",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "filter(_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/filter(_:)-7ospm"
+  "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/filter(_:)"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/first(where:)": {
   "abstract" : [
-    {
-      "text" : "Returns the first element of the sequence that satisfies the given",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "predicate.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1439,26 +1104,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/flatMap(_:)-2mrf7": {
   "abstract" : [
-    {
-      "text" : "Creates an asynchronous sequence that concatenates the results of calling",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "the given error-throwing transformation with each element of this",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "sequence.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1561,18 +1207,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/flatMap(_:)-3j41j": {
   "abstract" : [
-    {
-      "text" : "Creates an asynchronous sequence that concatenates the results of calling",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "the given transformation with each element of this sequence.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1667,18 +1302,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/flatMap(_:)-3wix6": {
   "abstract" : [
-    {
-      "text" : "Creates an asynchronous sequence that concatenates the results of calling",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "the given transformation with each element of this sequence.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1773,18 +1397,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/flatMap(_:)-81jtc": {
   "abstract" : [
-    {
-      "text" : "Creates an asynchronous sequence that concatenates the results of calling",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "the given transformation with each element of this sequence.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1879,26 +1492,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/lines": {
   "abstract" : [
-    {
-      "text" : "A non-blocking sequence of newline-separated ",
-      "type" : "text"
-    },
-    {
-      "code" : "Strings",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " created by decoding the elements of ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " as UTF8.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -1976,18 +1570,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/map(_:)-2298r": {
   "abstract" : [
-    {
-      "text" : "Creates an asynchronous sequence that maps the given error-throwing",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "closure over the asynchronous sequence’s elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2090,18 +1673,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/map(_:)-4na6w": {
   "abstract" : [
-    {
-      "text" : "Creates an asynchronous sequence that maps the given closure over the",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "asynchronous sequence’s elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2196,18 +1768,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/max()": {
   "abstract" : [
-    {
-      "text" : "Returns the maximum element in an asynchronous sequence of comparable",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "elements.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -2301,18 +1862,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/max(by:)": {
   "abstract" : [
-    {
-      "text" : "Returns the maximum element in the asynchronous sequence, using the given",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "predicate as the comparison between elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2441,18 +1991,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/min()": {
   "abstract" : [
-    {
-      "text" : "Returns the minimum element in an asynchronous sequence of comparable",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "elements.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -2546,18 +2085,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/min(by:)": {
   "abstract" : [
-    {
-      "text" : "Returns the minimum element in the asynchronous sequence, using the given",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "predicate as the comparison between elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2686,18 +2214,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/prefix(_:)": {
   "abstract" : [
-    {
-      "text" : "Returns an asynchronous sequence, up to the specified maximum length,",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "containing the initial elements of the base asynchronous sequence.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2750,20 +2267,9 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/prefix(_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/prefix(while:)-421sb": {
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/prefix(while:)": {
   "abstract" : [
-    {
-      "text" : "Returns an asynchronous sequence, containing the initial, consecutive",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "elements of the base sequence that satisfy the given predicate.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2850,150 +2356,16 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/prefix(while:)-421sb",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/prefix(while:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "prefix(while:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/prefix(while:)-421sb"
-},
-"doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/prefix(while:)-7g1nv": {
-  "abstract" : [
-    {
-      "text" : "Returns an asynchronous sequence, containing the initial, consecutive",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "elements of the base sequence that satisfy the given error-throwing",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "predicate.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "prefix"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "while"
-    },
-    {
-      "kind" : "text",
-      "text" : ": ("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sci7ElementQa",
-      "text" : "Element"
-    },
-    {
-      "kind" : "text",
-      "text" : ") "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "async"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "throws"
-    },
-    {
-      "kind" : "text",
-      "text" : " -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    },
-    {
-      "kind" : "text",
-      "text" : ") "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "rethrows"
-    },
-    {
-      "kind" : "text",
-      "text" : " -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12_Concurrency32AsyncThrowingPrefixWhileSequenceV",
-      "text" : "AsyncThrowingPrefixWhileSequence"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/prefix(while:)-7g1nv",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "prefix(while:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/prefix(while:)-7g1nv"
+  "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/prefix(while:)"
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/reduce(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Returns the result of combining the elements of the asynchronous sequence",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "using the given closure.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -3107,18 +2479,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/reduce(into:_:)": {
   "abstract" : [
-    {
-      "text" : "Returns the result of combining the elements of the asynchronous sequence",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "using the given closure, given a mutable initial value.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -3249,26 +2610,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/unicodeScalars": {
   "abstract" : [
-    {
-      "text" : "A non-blocking sequence of ",
-      "type" : "text"
-    },
-    {
-      "code" : "UnicodeScalars",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " created by decoding the elements of ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " as UTF8.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [

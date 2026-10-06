@@ -1,26 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "Initialize an instance by parsing ",
-      "type" : "text"
-    },
-    {
-      "code" : "value",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " with the given ",
-      "type" : "text"
-    },
-    {
-      "code" : "strategy",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -106,6 +84,20 @@
         "deprecated" : false,
         "introducedAt" : "15.0",
         "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "iPadOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "Mac Catalyst",
         "unavailable" : false
       },
       {
@@ -338,26 +330,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/init(_:strategy:)-80vot": {
   "abstract" : [
-    {
-      "text" : "Initialize an instance by parsing ",
-      "type" : "text"
-    },
-    {
-      "code" : "value",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " with the given ",
-      "type" : "text"
-    },
-    {
-      "code" : "strategy",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

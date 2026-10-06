@@ -85,6 +85,20 @@
       {
         "beta" : false,
         "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "iPadOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "Mac Catalyst",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
         "introducedAt" : "10.7",
         "name" : "macOS",
         "unavailable" : false
@@ -99,7 +113,7 @@
     ],
     "remoteSource" : {
       "fileName" : "NSLayoutConstraint+FFAdditions.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/NSLayoutConstraint+FFAdditions.swift#L55"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Extensions\/NSLayoutConstraint+FFAdditions.swift#L56"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",

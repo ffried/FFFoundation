@@ -83,6 +83,7 @@
     {
       "identifiers" : [
         "doc:\/\/FFFoundation\/s8CopyableP",
+        "doc:\/\/FFFoundation\/s9EscapableP",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/TriangulatablePoint"
       ],
       "kind" : "relationships",
@@ -221,6 +222,11 @@
 "doc://FFFoundation/s8CopyableP": {
   "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
   "title" : "Swift.Copyable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s9EscapableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s9EscapableP",
+  "title" : "Swift.Escapable",
   "type" : "unresolvable"
 }
 }

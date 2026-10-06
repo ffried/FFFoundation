@@ -97,10 +97,19 @@
       },
       {
         "kind" : "text",
-        "text" : ": ("
+        "text" : ": "
+      },
+      {
+        "kind" : "attribute",
+        "text" : "@Sendable"
+      },
+      {
+        "kind" : "text",
+        "text" : " ("
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7onError2doyyqd_0_Ybc_ts6ResultOyqd__qd_0_GRszs8SendableRd__s0D0Rd_0_r0_lF7FailureL_qd_0_mfp",
         "text" : "Failure"
       },
       {
@@ -111,14 +120,6 @@
     "modules" : [
       {
         "name" : "FFFoundation"
-      }
-    ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use Swift concurrency instead",
-        "unavailable" : false
       }
     ],
     "remoteSource" : {
@@ -191,14 +192,23 @@
             },
             {
               "kind" : "attribute",
-              "text" : "@escaping "
+              "text" : "@escaping"
             },
             {
               "kind" : "text",
-              "text" : "("
+              "text" : " "
+            },
+            {
+              "kind" : "attribute",
+              "text" : "@Sendable"
+            },
+            {
+              "kind" : "text",
+              "text" : " ("
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7onError2doyyqd_0_Ybc_ts6ResultOyqd__qd_0_GRszs8SendableRd__s0D0Rd_0_r0_lF7FailureL_qd_0_mfp",
               "text" : "Failure"
             },
             {
@@ -423,10 +433,19 @@
     },
     {
       "kind" : "text",
-      "text" : ": ("
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " ("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7onError2doyyqd_0_Ybc_ts6ResultOyqd__qd_0_GRszs8SendableRd__s0D0Rd_0_r0_lF7FailureL_qd_0_mfp",
       "text" : "Failure"
     },
     {

@@ -110,6 +110,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7cascade5otheryACys6ResultOyqd__qd_0_GG_tAHRszs8SendableRd__s5ErrorRd_0_r0_lF7SuccessL_qd__mfp",
         "text" : "Success"
       },
       {
@@ -118,6 +119,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7cascade5otheryACys6ResultOyqd__qd_0_GG_tAHRszs8SendableRd__s5ErrorRd_0_r0_lF7FailureL_qd_0_mfp",
         "text" : "Failure"
       },
       {
@@ -128,14 +130,6 @@
     "modules" : [
       {
         "name" : "FFFoundation"
-      }
-    ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use Swift concurrency instead",
-        "unavailable" : false
       }
     ],
     "remoteSource" : {
@@ -210,6 +204,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7cascade5otheryACys6ResultOyqd__qd_0_GG_tAHRszs8SendableRd__s5ErrorRd_0_r0_lF7SuccessL_qd__mfp",
               "text" : "Success"
             },
             {
@@ -218,6 +213,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7cascade5otheryACys6ResultOyqd__qd_0_GG_tAHRszs8SendableRd__s5ErrorRd_0_r0_lF7FailureL_qd_0_mfp",
               "text" : "Failure"
             },
             {
@@ -455,6 +451,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7cascade5otheryACys6ResultOyqd__qd_0_GG_tAHRszs8SendableRd__s5ErrorRd_0_r0_lF7SuccessL_qd__mfp",
       "text" : "Success"
     },
     {
@@ -463,6 +460,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7cascade5otheryACys6ResultOyqd__qd_0_GG_tAHRszs8SendableRd__s5ErrorRd_0_r0_lF7FailureL_qd_0_mfp",
       "text" : "Failure"
     },
     {

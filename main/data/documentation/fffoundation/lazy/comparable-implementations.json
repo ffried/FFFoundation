@@ -41,9 +41,9 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/.._(_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/.._(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_(_:_:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_(_:_:)-1tcbb",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_=(_:_:)-2t9no",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_=(_:_:)-9lgno"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_(_:_:)-v4ll",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_=(_:_:)-2gn3x",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_=(_:_:)-rimg"
       ],
       "title" : "Operators"
     }
@@ -106,10 +106,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Lazy/...(_:)-1cqnz": {
   "abstract" : [
-    {
-      "text" : "Returns a partial range up to, and including, its upper bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -175,10 +172,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Lazy/...(_:)-4as9u": {
   "abstract" : [
-    {
-      "text" : "Returns a partial range extending upward from a lower bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -244,10 +238,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Lazy/...(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a closed range that contains both of its bounds.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -321,10 +312,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Lazy/.._(_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a partial range up to, but not including, its upper bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -390,18 +378,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Lazy/.._(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a half-open range that contains its lower bound but not its upper",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -545,15 +522,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Deferred"
-    },
-    {
-      "kind" : "text",
-      "text" : ">, "
+      "text" : ", "
     },
     {
       "kind" : "typeIdentifier",
@@ -562,15 +531,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Deferred"
-    },
-    {
-      "kind" : "text",
-      "text" : ">) -> "
+      "text" : ") -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -585,20 +546,9 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/lazy\/_(_:_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/Lazy/_(_:_:)-1tcbb": {
+"doc://FFFoundation/documentation/FFFoundation/Lazy/_(_:_:)-v4ll": {
   "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether the value of the first argument",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is greater than that of the second argument.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -630,12 +580,28 @@
       "text" : "("
     },
     {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
       "kind" : "typeIdentifier",
       "text" : "Self"
     },
     {
       "kind" : "text",
       "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -651,27 +617,16 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_(_:_:)-1tcbb",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_(_:_:)-v4ll",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : ">(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/lazy\/_(_:_:)-1tcbb"
+  "url" : "\/documentation\/fffoundation\/lazy\/_(_:_:)-v4ll"
 },
-"doc://FFFoundation/documentation/FFFoundation/Lazy/_=(_:_:)-2t9no": {
+"doc://FFFoundation/documentation/FFFoundation/Lazy/_=(_:_:)-2gn3x": {
   "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether the value of the first argument",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is less than or equal to that of the second argument.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -703,12 +658,28 @@
       "text" : "("
     },
     {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
       "kind" : "typeIdentifier",
       "text" : "Self"
     },
     {
       "kind" : "text",
       "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -724,27 +695,16 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_=(_:_:)-2t9no",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_=(_:_:)-2gn3x",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<=(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/lazy\/_=(_:_:)-2t9no"
+  "url" : "\/documentation\/fffoundation\/lazy\/_=(_:_:)-2gn3x"
 },
-"doc://FFFoundation/documentation/FFFoundation/Lazy/_=(_:_:)-9lgno": {
+"doc://FFFoundation/documentation/FFFoundation/Lazy/_=(_:_:)-rimg": {
   "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether the value of the first argument",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is greater than or equal to that of the second argument.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -776,12 +736,28 @@
       "text" : "("
     },
     {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
       "kind" : "typeIdentifier",
       "text" : "Self"
     },
     {
       "kind" : "text",
       "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -797,12 +773,12 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_=(_:_:)-9lgno",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/_=(_:_:)-rimg",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : ">=(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/lazy\/_=(_:_:)-9lgno"
+  "url" : "\/documentation\/fffoundation\/lazy\/_=(_:_:)-rimg"
 }
 }
 }

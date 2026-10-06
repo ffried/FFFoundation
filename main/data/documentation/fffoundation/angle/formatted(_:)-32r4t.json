@@ -1,18 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "Format ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " with the given format.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -90,6 +76,20 @@
         "deprecated" : false,
         "introducedAt" : "15.0",
         "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "iPadOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "Mac Catalyst",
         "unavailable" : false
       },
       {
@@ -313,18 +313,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/formatted(_:)-32r4t": {
   "abstract" : [
-    {
-      "text" : "Format ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " with the given format.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

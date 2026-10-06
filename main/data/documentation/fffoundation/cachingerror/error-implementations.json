@@ -98,10 +98,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/CachingError/localizedDescription": {
   "abstract" : [
-    {
-      "text" : "Retrieve the localized description for this error.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

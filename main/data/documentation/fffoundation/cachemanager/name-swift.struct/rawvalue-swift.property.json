@@ -34,32 +34,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation12CacheManagerC",
-        "text" : "CacheManager"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Object"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation12CacheManagerC4NameV",
-        "text" : "Name"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12FFFoundation12CacheManagerC4NameV8RawValuea",
         "text" : "RawValue"
       }
@@ -71,7 +45,7 @@
     ],
     "remoteSource" : {
       "fileName" : "CacheManager.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/CacheManager.swift#L177"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/CacheManager.swift#L179"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
@@ -104,34 +78,6 @@
             {
               "kind" : "text",
               "text" : ": "
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation12CacheManagerC",
-              "text" : "CacheManager"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Object"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation12CacheManagerC4NameV",
-              "text" : "Name"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CacheManager\/Name-swift.struct\/RawValue-swift.typealias",
@@ -323,32 +269,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation12CacheManagerC",
-      "text" : "CacheManager"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Object"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation12CacheManagerC4NameV",
-      "text" : "Name"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

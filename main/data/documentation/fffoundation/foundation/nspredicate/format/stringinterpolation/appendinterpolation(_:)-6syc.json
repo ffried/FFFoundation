@@ -44,6 +44,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV06appendE0yyxSgSURzlF7IntegerL_xmfp",
         "text" : "Integer"
       },
       {
@@ -126,6 +127,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV06appendE0yyxSgSURzlF7IntegerL_xmfp",
               "text" : "Integer"
             },
             {
@@ -328,6 +330,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV06appendE0yyxSgSURzlF7IntegerL_xmfp",
       "text" : "Integer"
     },
     {

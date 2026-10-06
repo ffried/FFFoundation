@@ -50,6 +50,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation11UserDefaultV9PublisherC7receive10subscriberyqd___t5InputQyd__Rsz7Combine10SubscriberRd__s5NeverO7FailureRtd__lF1SL_qd__mfp",
         "text" : "S"
       },
       {
@@ -68,6 +69,20 @@
         "deprecated" : false,
         "introducedAt" : "13.0",
         "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iPadOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "Mac Catalyst",
         "unavailable" : false
       },
       {
@@ -94,7 +109,7 @@
     ],
     "remoteSource" : {
       "fileName" : "UserDefault.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefault.swift#L296"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefault.swift#L297"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -146,6 +161,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation11UserDefaultV9PublisherC7receive10subscriberyqd___t5InputQyd__Rsz7Combine10SubscriberRd__s5NeverO7FailureRtd__lF1SL_qd__mfp",
               "text" : "S"
             },
             {
@@ -396,6 +412,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV9PublisherC7receive10subscriberyqd___t5InputQyd__Rsz7Combine10SubscriberRd__s5NeverO7FailureRtd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {

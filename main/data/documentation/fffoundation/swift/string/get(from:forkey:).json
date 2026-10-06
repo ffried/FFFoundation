@@ -73,12 +73,7 @@
       },
       {
         "kind" : "text",
-        "text" : ") -> "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:SS",
-        "text" : "String"
+        "text" : ") -> `Self`"
       },
       {
         "kind" : "text",
@@ -95,7 +90,7 @@
     ],
     "remoteSource" : {
       "fileName" : "UserDefaultsStorable.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefaultsStorable.swift#L172"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefaultsStorable.swift#L167"
     },
     "role" : "symbol",
     "roleHeading" : "Type Method",
@@ -185,12 +180,7 @@
             },
             {
               "kind" : "text",
-              "text" : ") -> "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:SS",
-              "text" : "String"
+              "text" : ") -> `Self`"
             },
             {
               "kind" : "text",
@@ -339,12 +329,7 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
+      "text" : ") -> `Self`"
     },
     {
       "kind" : "text",

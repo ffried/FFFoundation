@@ -1,18 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "Creates a new instance from the given value, rounded to the closest",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "possible representation.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -144,53 +130,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "A floating-point value to be converted.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "value"
-        }
-      ]
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "If two representable values are equally close, the result is the value",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "with more trailing zeros in its significand bit pattern.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -259,18 +198,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/init(_:)-5t5aa": {
   "abstract" : [
-    {
-      "text" : "Creates a new instance from the given value, rounded to the closest",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "possible representation.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

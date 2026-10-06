@@ -58,6 +58,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation12SynchronizedC11coordinated4withx_qd__tACyqd__G_tlF12OtherGuardedL_qd__mfp",
         "text" : "OtherGuarded"
       },
       {
@@ -66,6 +67,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
         "text" : "Guarded"
       },
       {
@@ -74,6 +76,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation12SynchronizedC11coordinated4withx_qd__tACyqd__G_tlF12OtherGuardedL_qd__mfp",
         "text" : "OtherGuarded"
       },
       {
@@ -158,6 +161,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation12SynchronizedC11coordinated4withx_qd__tACyqd__G_tlF12OtherGuardedL_qd__mfp",
               "text" : "OtherGuarded"
             },
             {
@@ -166,6 +170,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
               "text" : "Guarded"
             },
             {
@@ -174,6 +179,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation12SynchronizedC11coordinated4withx_qd__tACyqd__G_tlF12OtherGuardedL_qd__mfp",
               "text" : "OtherGuarded"
             },
             {
@@ -298,6 +304,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC11coordinated4withx_qd__tACyqd__G_tlF12OtherGuardedL_qd__mfp",
       "text" : "OtherGuarded"
     },
     {
@@ -306,6 +313,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {
@@ -314,6 +322,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC11coordinated4withx_qd__tACyqd__G_tlF12OtherGuardedL_qd__mfp",
       "text" : "OtherGuarded"
     },
     {

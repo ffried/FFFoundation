@@ -49,14 +49,6 @@
     "externalID" : "s:12FFFoundation3RefCAAs27ExpressibleByBooleanLiteralRzlE07booleanF0ACyxG0eF4TypeQz_tcfc",
     "fragments" : [
       {
-        "kind" : "keyword",
-        "text" : "convenience"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
         "kind" : "identifier",
         "text" : "init"
       },
@@ -74,6 +66,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation3RefCAAs27ExpressibleByBooleanLiteralRzlE10Referencedxmfp",
         "text" : "Referenced"
       },
       {
@@ -149,6 +142,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation3RefCAAs27ExpressibleByBooleanLiteralRzlE10Referencedxmfp",
               "text" : "Referenced"
             },
             {
@@ -272,14 +266,6 @@
   },
   "fragments" : [
     {
-      "kind" : "keyword",
-      "text" : "convenience"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
       "kind" : "identifier",
       "text" : "init"
     },
@@ -297,6 +283,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation3RefCAAs27ExpressibleByBooleanLiteralRzlE10Referencedxmfp",
       "text" : "Referenced"
     },
     {

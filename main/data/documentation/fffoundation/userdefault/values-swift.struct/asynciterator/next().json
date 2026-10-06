@@ -43,41 +43,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation11UserDefaultV",
-        "text" : "UserDefault"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Value"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV",
-        "text" : "Values"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV",
-        "text" : "AsyncIterator"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV7Elementa",
         "text" : "Element"
       },
       {
@@ -92,7 +58,7 @@
     ],
     "remoteSource" : {
       "fileName" : "UserDefault.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefault.swift#L227"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefault.swift#L228"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -110,6 +76,14 @@
             "macOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "@concurrent"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "mutating"
@@ -143,45 +117,9 @@
               "text" : " -> "
             },
             {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault",
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/AsyncIterator\/Element",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation11UserDefaultV",
-              "text" : "UserDefault"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV",
-              "text" : "Values"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/AsyncIterator",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV",
-              "text" : "AsyncIterator"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV7Elementa",
               "text" : "Element"
             },
             {
@@ -360,6 +298,37 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/asynciterator"
 },
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/AsyncIterator/Element": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Element"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/AsyncIterator\/Element",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Element"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "UserDefault.Values.AsyncIterator.Element",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/asynciterator\/element"
+},
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/AsyncIterator/next()": {
   "abstract" : [
 
@@ -391,41 +360,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV",
-      "text" : "UserDefault"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV",
-      "text" : "Values"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV",
-      "text" : "AsyncIterator"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV7Elementa",
       "text" : "Element"
     },
     {

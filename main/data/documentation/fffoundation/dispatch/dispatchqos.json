@@ -83,7 +83,6 @@
     {
       "identifiers" : [
         "doc:\/\/FFFoundation\/SL",
-        "doc:\/\/FFFoundation\/s8CopyableP",
         "doc:\/\/FFFoundation\/SQ"
       ],
       "kind" : "relationships",
@@ -246,11 +245,6 @@
   "title" : "DispatchQoS.QoSClass",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/dispatch\/dispatchqos\/qosclass"
-},
-"doc://FFFoundation/s8CopyableP": {
-  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
-  "title" : "Swift.Copyable",
-  "type" : "unresolvable"
 }
 }
 }

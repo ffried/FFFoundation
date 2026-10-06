@@ -33,6 +33,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation4LazyV8Deferredxmfp",
         "text" : "Deferred"
       }
     ],
@@ -79,6 +80,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation4LazyV8Deferredxmfp",
               "text" : "Deferred"
             },
             {
@@ -194,6 +196,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LazyV8Deferredxmfp",
       "text" : "Deferred"
     }
   ],

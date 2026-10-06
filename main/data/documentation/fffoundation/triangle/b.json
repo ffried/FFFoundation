@@ -82,23 +82,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation8TriangleV",
-        "text" : "Triangle"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Point"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation8TriangleV8Distancea",
         "text" : "Distance"
       }
     ],
@@ -144,25 +128,9 @@
               "text" : ": "
             },
             {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle",
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle\/Distance",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation8TriangleV",
-              "text" : "Triangle"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Point"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
-            },
-            {
-              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation8TriangleV8Distancea",
               "text" : "Distance"
             },
             {
@@ -247,6 +215,37 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/triangle"
 },
+"doc://FFFoundation/documentation/FFFoundation/Triangle/Distance": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Distance"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle\/Distance",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Distance"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Triangle.Distance",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/triangle\/distance"
+},
 "doc://FFFoundation/documentation/FFFoundation/Triangle/b": {
   "abstract" : [
 
@@ -318,23 +317,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation8TriangleV",
-      "text" : "Triangle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Point"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation8TriangleV8Distancea",
       "text" : "Distance"
     }
   ],

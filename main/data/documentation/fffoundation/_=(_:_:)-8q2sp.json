@@ -62,6 +62,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCAA11PropertyKeyV_xtSFRzlF5ValueL_xmfp",
         "text" : "Value"
       },
       {
@@ -164,6 +165,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCAA11PropertyKeyV_xtSFRzlF5ValueL_xmfp",
               "text" : "Value"
             },
             {
@@ -323,6 +325,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation2leoiySo11NSPredicateCAA11PropertyKeyV_xtSFRzlF5ValueL_xmfp",
       "text" : "Value"
     },
     {

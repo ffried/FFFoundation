@@ -108,10 +108,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/+(_:)": {
   "abstract" : [
-    {
-      "text" : "Returns the given number unchanged.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

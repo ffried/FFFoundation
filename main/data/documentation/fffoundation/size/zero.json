@@ -84,18 +84,6 @@
         "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12FFFoundation4SizeV",
         "text" : "Size"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Value"
-      },
-      {
-        "kind" : "text",
-        "text" : ">"
       }
     ],
     "modules" : [
@@ -155,15 +143,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : "> { "
+              "text" : " { "
             },
             {
               "kind" : "keyword",
@@ -316,18 +296,6 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation4SizeV",
       "text" : "Size"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Size\/zero",

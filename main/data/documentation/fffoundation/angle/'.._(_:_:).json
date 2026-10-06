@@ -1,18 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "Returns a half-open range that contains its lower bound but not its upper",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "bound.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -197,128 +183,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "The lower bound for the range.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "minimum"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "The upper bound for the range.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "maximum"
-        }
-      ]
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Use the half-open range operator (",
-              "type" : "text"
-            },
-            {
-              "code" : "..<",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ") to create a range of any type",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "that conforms to the ",
-              "type" : "text"
-            },
-            {
-              "code" : "Comparable",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " protocol. This example creates a",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "code" : "Range<Double>",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " from zero up to, but not including, 5.0.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "let lessThanFive = 0.0..<5.0",
-            "print(lessThanFive.contains(3.14))  \/\/ Prints \"true\"",
-            "print(lessThanFive.contains(5.0))   \/\/ Prints \"false\""
-          ],
-          "syntax" : null,
-          "type" : "codeListing"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                },
-                {
-                  "code" : "minimum <= maximum",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Precondition",
-          "style" : "note",
-          "type" : "aside"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -387,18 +251,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/.._(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a half-open range that contains its lower bound but not its upper",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

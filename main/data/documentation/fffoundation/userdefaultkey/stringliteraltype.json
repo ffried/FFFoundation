@@ -76,16 +76,6 @@
               "text" : " = "
             },
             {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation14UserDefaultKeyV",
-              "text" : "UserDefaultKey"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefaultKey\/RawValue-swift.typealias",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:12FFFoundation14UserDefaultKeyV8RawValuea",

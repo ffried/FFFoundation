@@ -33,6 +33,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation3CoWV5Valuexmfp",
         "text" : "Value"
       },
       {
@@ -46,23 +47,6 @@
       {
         "kind" : "text",
         "text" : ": "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation3CoWV",
-        "text" : "CoW"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Value"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
       },
       {
         "kind" : "typeIdentifier",
@@ -117,6 +101,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation3CoWV5Valuexmfp",
               "text" : "Value"
             },
             {
@@ -141,25 +126,11 @@
             },
             {
               "kind" : "attribute",
-              "text" : "@escaping "
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation3CoWV",
-              "text" : "CoW"
+              "text" : "@escaping"
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
+              "text" : " "
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Copier",
@@ -295,6 +266,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation3CoWV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -308,23 +280,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation3CoWV",
-      "text" : "CoW"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",

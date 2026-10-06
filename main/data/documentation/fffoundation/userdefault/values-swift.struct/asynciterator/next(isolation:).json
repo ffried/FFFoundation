@@ -47,7 +47,15 @@
       },
       {
         "kind" : "text",
-        "text" : " (any "
+        "text" : " ("
+      },
+      {
+        "kind" : "keyword",
+        "text" : "any"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "typeIdentifier",
@@ -76,41 +84,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation11UserDefaultV",
-        "text" : "UserDefault"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Value"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV",
-        "text" : "Values"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV",
-        "text" : "AsyncIterator"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV7Failurea",
         "text" : "Failure"
       },
@@ -120,41 +93,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation11UserDefaultV",
-        "text" : "UserDefault"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Value"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV",
-        "text" : "Values"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV",
-        "text" : "AsyncIterator"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV7Elementa",
         "text" : "Element"
       },
       {
@@ -173,6 +112,20 @@
         "deprecated" : false,
         "introducedAt" : "18.0",
         "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "18.0",
+        "name" : "iPadOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "18.0",
+        "name" : "Mac Catalyst",
         "unavailable" : false
       },
       {
@@ -206,7 +159,7 @@
     ],
     "remoteSource" : {
       "fileName" : "UserDefault.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefault.swift#L232"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefault.swift#L233"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -270,7 +223,15 @@
             },
             {
               "kind" : "text",
-              "text" : " (any "
+              "text" : " ("
+            },
+            {
+              "kind" : "keyword",
+              "text" : "any"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "kind" : "typeIdentifier",
@@ -298,44 +259,6 @@
               "text" : "("
             },
             {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation11UserDefaultV",
-              "text" : "UserDefault"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV",
-              "text" : "Values"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/AsyncIterator",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV",
-              "text" : "AsyncIterator"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/AsyncIterator\/Failure",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV7Failurea",
@@ -346,45 +269,9 @@
               "text" : ") -> "
             },
             {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault",
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/AsyncIterator\/Element",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation11UserDefaultV",
-              "text" : "UserDefault"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV",
-              "text" : "Values"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/AsyncIterator",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV",
-              "text" : "AsyncIterator"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV7Elementa",
               "text" : "Element"
             },
             {
@@ -563,6 +450,37 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/asynciterator"
 },
+"doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/AsyncIterator/Element": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Element"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/UserDefault\/Values-swift.struct\/AsyncIterator\/Element",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Element"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "UserDefault.Values.AsyncIterator.Element",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/userdefault\/values-swift.struct\/asynciterator\/element"
+},
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/AsyncIterator/Failure": {
   "abstract" : [
 
@@ -629,7 +547,15 @@
     },
     {
       "kind" : "text",
-      "text" : " (any "
+      "text" : " ("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -658,41 +584,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV",
-      "text" : "UserDefault"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV",
-      "text" : "Values"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV",
-      "text" : "AsyncIterator"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV7Failurea",
       "text" : "Failure"
     },
@@ -702,41 +593,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV",
-      "text" : "UserDefault"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV",
-      "text" : "Values"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV",
-      "text" : "AsyncIterator"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultVAAs8SendableRzrlE6ValuesV13AsyncIteratorV7Elementa",
       "text" : "Element"
     },
     {

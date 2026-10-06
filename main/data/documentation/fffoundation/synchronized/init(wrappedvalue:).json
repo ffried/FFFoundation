@@ -16,14 +16,6 @@
     "externalID" : "s:12FFFoundation12SynchronizedC12wrappedValueACyxGx_tcfc",
     "fragments" : [
       {
-        "kind" : "keyword",
-        "text" : "convenience"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
         "kind" : "identifier",
         "text" : "init"
       },
@@ -41,6 +33,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
         "text" : "Guarded"
       },
       {
@@ -99,6 +92,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
               "text" : "Guarded"
             },
             {
@@ -181,14 +175,6 @@
   ],
   "fragments" : [
     {
-      "kind" : "keyword",
-      "text" : "convenience"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
       "kind" : "identifier",
       "text" : "init"
     },
@@ -206,6 +192,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {

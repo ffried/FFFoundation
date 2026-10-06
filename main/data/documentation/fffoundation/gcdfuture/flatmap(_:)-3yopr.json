@@ -89,10 +89,19 @@
       },
       {
         "kind" : "text",
-        "text" : ">(("
+        "text" : ">("
+      },
+      {
+        "kind" : "attribute",
+        "text" : "@Sendable"
+      },
+      {
+        "kind" : "text",
+        "text" : " ("
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACys6ResultOyqd_0_s5Error_pGGAIqd__YbKcAFyqd__sAG_pGRszs8SendableRd__sAKRd_0_r0_lF7SuccessL_qd__mfp",
         "text" : "Success"
       },
       {
@@ -118,11 +127,20 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACys6ResultOyqd_0_s5Error_pGGAIqd__YbKcAFyqd__sAG_pGRszs8SendableRd__sAKRd_0_r0_lF1TL_qd_0_mfp",
         "text" : "T"
       },
       {
         "kind" : "text",
-        "text" : ", any "
+        "text" : ", "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "any"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "typeIdentifier",
@@ -144,11 +162,20 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACys6ResultOyqd_0_s5Error_pGGAIqd__YbKcAFyqd__sAG_pGRszs8SendableRd__sAKRd_0_r0_lF1TL_qd_0_mfp",
         "text" : "T"
       },
       {
         "kind" : "text",
-        "text" : ", any "
+        "text" : ", "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "any"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "typeIdentifier",
@@ -163,14 +190,6 @@
     "modules" : [
       {
         "name" : "FFFoundation"
-      }
-    ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use Swift concurrency instead",
-        "unavailable" : false
       }
     ],
     "remoteSource" : {
@@ -243,14 +262,23 @@
             },
             {
               "kind" : "attribute",
-              "text" : "@escaping "
+              "text" : "@escaping"
             },
             {
               "kind" : "text",
-              "text" : "("
+              "text" : " "
+            },
+            {
+              "kind" : "attribute",
+              "text" : "@Sendable"
+            },
+            {
+              "kind" : "text",
+              "text" : " ("
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACys6ResultOyqd_0_s5Error_pGGAIqd__YbKcAFyqd__sAG_pGRszs8SendableRd__sAKRd_0_r0_lF7SuccessL_qd__mfp",
               "text" : "Success"
             },
             {
@@ -277,11 +305,20 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACys6ResultOyqd_0_s5Error_pGGAIqd__YbKcAFyqd__sAG_pGRszs8SendableRd__sAKRd_0_r0_lF1TL_qd_0_mfp",
               "text" : "T"
             },
             {
               "kind" : "text",
-              "text" : ", any "
+              "text" : ", "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "any"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "kind" : "typeIdentifier",
@@ -304,11 +341,20 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACys6ResultOyqd_0_s5Error_pGGAIqd__YbKcAFyqd__sAG_pGRszs8SendableRd__sAKRd_0_r0_lF1TL_qd_0_mfp",
               "text" : "T"
             },
             {
               "kind" : "text",
-              "text" : ", any "
+              "text" : ", "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "any"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "kind" : "typeIdentifier",
@@ -530,10 +576,19 @@
     },
     {
       "kind" : "text",
-      "text" : ">(("
+      "text" : ">("
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " ("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACys6ResultOyqd_0_s5Error_pGGAIqd__YbKcAFyqd__sAG_pGRszs8SendableRd__sAKRd_0_r0_lF7SuccessL_qd__mfp",
       "text" : "Success"
     },
     {
@@ -559,11 +614,20 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACys6ResultOyqd_0_s5Error_pGGAIqd__YbKcAFyqd__sAG_pGRszs8SendableRd__sAKRd_0_r0_lF1TL_qd_0_mfp",
       "text" : "T"
     },
     {
       "kind" : "text",
-      "text" : ", any "
+      "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -585,11 +649,20 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACys6ResultOyqd_0_s5Error_pGGAIqd__YbKcAFyqd__sAG_pGRszs8SendableRd__sAKRd_0_r0_lF1TL_qd_0_mfp",
       "text" : "T"
     },
     {
       "kind" : "text",
-      "text" : ", any "
+      "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",

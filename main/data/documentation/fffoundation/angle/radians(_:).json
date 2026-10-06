@@ -90,6 +90,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
         "text" : "Value"
       },
       {
@@ -100,18 +101,6 @@
         "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12FFFoundation5AngleV",
         "text" : "Angle"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Value"
-      },
-      {
-        "kind" : "text",
-        "text" : ">"
       }
     ],
     "modules" : [
@@ -181,6 +170,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
               "text" : "Value"
             },
             {
@@ -192,18 +182,6 @@
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:12FFFoundation5AngleV",
               "text" : "Angle"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">"
             }
           ]
         }
@@ -354,6 +332,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -364,18 +343,6 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation5AngleV",
       "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/radians(_:)",

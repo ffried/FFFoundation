@@ -39,7 +39,15 @@
       },
       {
         "kind" : "text",
-        "text" : ": () -> ())"
+        "text" : ": "
+      },
+      {
+        "kind" : "attribute",
+        "text" : "@Sendable"
+      },
+      {
+        "kind" : "text",
+        "text" : " () -> ())"
       }
     ],
     "modules" : [
@@ -96,11 +104,19 @@
             },
             {
               "kind" : "attribute",
-              "text" : "@escaping "
+              "text" : "@escaping"
             },
             {
               "kind" : "text",
-              "text" : "() -> ())"
+              "text" : " "
+            },
+            {
+              "kind" : "attribute",
+              "text" : "@Sendable"
+            },
+            {
+              "kind" : "text",
+              "text" : " () -> ())"
             }
           ]
         }
@@ -211,7 +227,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> ())"
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " () -> ())"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Foundation\/OperationQueue\/addOperationWithBlockAndWait(block:)",

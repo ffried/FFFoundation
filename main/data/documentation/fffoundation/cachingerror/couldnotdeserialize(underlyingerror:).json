@@ -37,7 +37,15 @@
       },
       {
         "kind" : "text",
-        "text" : ": (any "
+        "text" : ": ("
+      },
+      {
+        "kind" : "keyword",
+        "text" : "any"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "typeIdentifier",
@@ -56,7 +64,7 @@
     ],
     "remoteSource" : {
       "fileName" : "CacheManager.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/CacheManager.swift#L187"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/CacheManager.swift#L189"
     },
     "role" : "symbol",
     "roleHeading" : "Case",
@@ -96,7 +104,15 @@
             },
             {
               "kind" : "text",
-              "text" : ": (any "
+              "text" : ": ("
+            },
+            {
+              "kind" : "keyword",
+              "text" : "any"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "kind" : "typeIdentifier",
@@ -204,7 +220,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": (any "
+      "text" : ": ("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",

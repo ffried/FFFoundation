@@ -33,6 +33,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation5PointV5Valuexmfp",
         "text" : "Value"
       }
     ],
@@ -79,6 +80,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation5PointV5Valuexmfp",
               "text" : "Value"
             }
           ]
@@ -174,6 +176,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5PointV5Valuexmfp",
       "text" : "Value"
     }
   ],

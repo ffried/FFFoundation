@@ -42,6 +42,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
         "text" : "Guarded"
       },
       {
@@ -50,6 +51,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation12SynchronizedCyqd__s7KeyPathCyxqd__Gcluip1TL_qd__mfp",
         "text" : "T"
       },
       {
@@ -58,6 +60,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation12SynchronizedCyqd__s7KeyPathCyxqd__Gcluip1TL_qd__mfp",
         "text" : "T"
       }
     ],
@@ -121,6 +124,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
               "text" : "Guarded"
             },
             {
@@ -129,6 +133,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation12SynchronizedCyqd__s7KeyPathCyxqd__Gcluip1TL_qd__mfp",
               "text" : "T"
             },
             {
@@ -137,6 +142,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation12SynchronizedCyqd__s7KeyPathCyxqd__Gcluip1TL_qd__mfp",
               "text" : "T"
             },
             {
@@ -253,6 +259,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedC7Guardedxmfp",
       "text" : "Guarded"
     },
     {
@@ -261,6 +268,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedCyqd__s7KeyPathCyxqd__Gcluip1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -269,6 +277,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedCyqd__s7KeyPathCyxqd__Gcluip1TL_qd__mfp",
       "text" : "T"
     }
   ],

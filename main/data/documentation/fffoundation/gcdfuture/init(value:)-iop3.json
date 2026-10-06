@@ -60,14 +60,6 @@
     "externalID" : "s:12FFFoundation9GCDFutureC5valueACys6ResultOyqd__qd_0_GGqd___tcAGRszs8SendableRd__s5ErrorRd_0_r0_lufc",
     "fragments" : [
       {
-        "kind" : "keyword",
-        "text" : "convenience"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
         "kind" : "identifier",
         "text" : "init"
       },
@@ -101,6 +93,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5valueACys6ResultOyqd__qd_0_GGqd___tcAGRszs8SendableRd__s5ErrorRd_0_r0_lufc7SuccessL_qd__mfp",
         "text" : "Success"
       },
       {
@@ -111,14 +104,6 @@
     "modules" : [
       {
         "name" : "FFFoundation"
-      }
-    ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use Swift concurrency instead",
-        "unavailable" : false
       }
     ],
     "remoteSource" : {
@@ -183,6 +168,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5valueACys6ResultOyqd__qd_0_GGqd___tcAGRszs8SendableRd__s5ErrorRd_0_r0_lufc7SuccessL_qd__mfp",
               "text" : "Success"
             },
             {
@@ -370,14 +356,6 @@
   "deprecated" : true,
   "fragments" : [
     {
-      "kind" : "keyword",
-      "text" : "convenience"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
       "kind" : "identifier",
       "text" : "init"
     },
@@ -411,6 +389,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5valueACys6ResultOyqd__qd_0_GGqd___tcAGRszs8SendableRd__s5ErrorRd_0_r0_lufc7SuccessL_qd__mfp",
       "text" : "Success"
     },
     {

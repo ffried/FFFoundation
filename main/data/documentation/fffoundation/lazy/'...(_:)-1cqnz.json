@@ -1,10 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "Returns a partial range up to, and including, its upper bound.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -165,170 +159,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "The upper bound for the range.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "maximum"
-        }
-      ]
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Use the prefix closed range operator (prefix ",
-              "type" : "text"
-            },
-            {
-              "code" : "...",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ") to create a partial",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "range of any type that conforms to the ",
-              "type" : "text"
-            },
-            {
-              "code" : "Comparable",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " protocol. This",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "example creates a ",
-              "type" : "text"
-            },
-            {
-              "code" : "PartialRangeThrough<Double>",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " instance that includes",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "any value less than or equal to ",
-              "type" : "text"
-            },
-            {
-              "code" : "5.0",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "let throughFive = ...5.0",
-            "",
-            "throughFive.contains(4.0)     \/\/ true",
-            "throughFive.contains(5.0)     \/\/ true",
-            "throughFive.contains(6.0)     \/\/ false"
-          ],
-          "syntax" : null,
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "You can use this type of partial range of a collection’s indices to",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "represent the range from the start of the collection up to, and",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "including, the partial range’s upper bound.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "let numbers = [10, 20, 30, 40, 50, 60, 70]",
-            "print(numbers[...3])",
-            "\/\/ Prints \"[10, 20, 30, 40]\""
-          ],
-          "syntax" : null,
-          "type" : "codeListing"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                },
-                {
-                  "code" : "maximum",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " must compare equal to itself (i.e. cannot be NaN).",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Precondition",
-          "style" : "note",
-          "type" : "aside"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -397,10 +227,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Lazy/...(_:)-1cqnz": {
   "abstract" : [
-    {
-      "text" : "Returns a partial range up to, and including, its upper bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

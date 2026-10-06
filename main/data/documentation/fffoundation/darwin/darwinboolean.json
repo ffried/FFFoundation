@@ -82,7 +82,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/FFFoundation\/s8CopyableP",
+        "doc:\/\/FFFoundation\/s9EscapableP",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Togglable"
       ],
       "kind" : "relationships",
@@ -218,9 +218,9 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/togglable"
 },
-"doc://FFFoundation/s8CopyableP": {
-  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
-  "title" : "Swift.Copyable",
+"doc://FFFoundation/s9EscapableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s9EscapableP",
+  "title" : "Swift.Escapable",
   "type" : "unresolvable"
 }
 }

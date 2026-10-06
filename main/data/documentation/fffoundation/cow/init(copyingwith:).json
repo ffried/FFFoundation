@@ -66,23 +66,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation3CoWV",
-        "text" : "CoW"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Value"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12FFFoundation3CoWV6Copiera",
         "text" : "Copier"
       },
@@ -98,7 +81,7 @@
     ],
     "remoteSource" : {
       "fileName" : "CoW.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/CoW.swift#L72"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/CoW.swift#L74"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -142,25 +125,11 @@
             },
             {
               "kind" : "attribute",
-              "text" : "@escaping "
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation3CoWV",
-              "text" : "CoW"
+              "text" : "@escaping"
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
+              "text" : " "
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/CoW\/Copier",
@@ -325,23 +294,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation3CoWV",
-      "text" : "CoW"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",

@@ -1,42 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "Initialize an instance by parsing ",
-      "type" : "text"
-    },
-    {
-      "code" : "value",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " with a ",
-      "type" : "text"
-    },
-    {
-      "code" : "ParseStrategy",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " created with the given ",
-      "type" : "text"
-    },
-    {
-      "code" : "format",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " and the ",
-      "type" : "text"
-    },
-    {
-      "code" : "lenient",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " argument.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -132,6 +94,20 @@
         "deprecated" : false,
         "introducedAt" : "15.0",
         "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "iPadOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "Mac Catalyst",
         "unavailable" : false
       },
       {
@@ -323,42 +299,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/init(_:format:lenient:)-3m74h": {
   "abstract" : [
-    {
-      "text" : "Initialize an instance by parsing ",
-      "type" : "text"
-    },
-    {
-      "code" : "value",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " with a ",
-      "type" : "text"
-    },
-    {
-      "code" : "ParseStrategy",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " created with the given ",
-      "type" : "text"
-    },
-    {
-      "code" : "format",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " and the ",
-      "type" : "text"
-    },
-    {
-      "code" : "lenient",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " argument.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

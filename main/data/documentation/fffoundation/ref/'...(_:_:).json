@@ -1,10 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "Returns a closed range that contains both of its bounds.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -189,128 +183,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "The lower bound for the range.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "minimum"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "The upper bound for the range.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "maximum"
-        }
-      ]
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Use the closed range operator (",
-              "type" : "text"
-            },
-            {
-              "code" : "...",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ") to create a closed range of any type",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "that conforms to the ",
-              "type" : "text"
-            },
-            {
-              "code" : "Comparable",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " protocol. This example creates a",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "code" : "ClosedRange<Character>",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " from “a” up to, and including, “z”.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "let lowercase = \"a\"...\"z\"",
-            "print(lowercase.contains(\"z\"))",
-            "\/\/ Prints \"true\""
-          ],
-          "syntax" : null,
-          "type" : "codeListing"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                },
-                {
-                  "code" : "minimum <= maximum",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Precondition",
-          "style" : "note",
-          "type" : "aside"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -379,10 +251,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Ref/...(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a closed range that contains both of its bounds.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

@@ -256,6 +256,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -312,6 +313,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -322,18 +324,6 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation4LensV",
       "text" : "Lens"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/constant(_:)",
@@ -362,10 +352,19 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -378,7 +377,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": ("
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " ("
     },
     {
       "kind" : "keyword",
@@ -390,6 +397,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -442,10 +450,19 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -456,18 +473,6 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation4LensV",
       "text" : "Lens"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/readOnly(getter:)",
@@ -517,6 +522,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -525,6 +531,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV13dynamicMemberACyqd__Gs24ReferenceWritableKeyPathCyxqd__G_tcluip1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -542,6 +549,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV13dynamicMemberACyqd__Gs24ReferenceWritableKeyPathCyxqd__G_tcluip1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -596,6 +604,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -604,6 +613,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV13dynamicMemberACyqd__Gs15WritableKeyPathCyxqd__G_tcluip1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -621,6 +631,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV13dynamicMemberACyqd__Gs15WritableKeyPathCyxqd__G_tcluip1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -658,6 +669,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV5Valuexmfp",
       "text" : "Value"
     }
   ],

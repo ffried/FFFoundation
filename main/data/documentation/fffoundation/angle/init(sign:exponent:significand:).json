@@ -50,23 +50,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation5AngleV",
-        "text" : "Angle"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Value"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation5AngleV8Exponenta",
         "text" : "Exponent"
       },
       {
@@ -88,15 +72,7 @@
       },
       {
         "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Value"
-      },
-      {
-        "kind" : "text",
-        "text" : ">)"
+        "text" : ")"
       }
     ],
     "modules" : [
@@ -158,25 +134,9 @@
               "text" : ": "
             },
             {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle",
+              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Exponent-swift.typealias",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation5AngleV",
-              "text" : "Angle"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
-            },
-            {
-              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation5AngleV8Exponenta",
               "text" : "Exponent"
             },
             {
@@ -199,15 +159,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">)"
+              "text" : ")"
             }
           ]
         }
@@ -279,6 +231,37 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle"
 },
+"doc://FFFoundation/documentation/FFFoundation/Angle/Exponent-swift.typealias": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Exponent"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/Exponent-swift.typealias",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Exponent"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Angle.Exponent",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/exponent-swift.typealias"
+},
 "doc://FFFoundation/documentation/FFFoundation/Angle/init(sign:exponent:significand:)": {
   "abstract" : [
 
@@ -319,23 +302,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5AngleV",
-      "text" : "Angle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV8Exponenta",
       "text" : "Exponent"
     },
     {
@@ -357,15 +324,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">)"
+      "text" : ")"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/init(sign:exponent:significand:)",

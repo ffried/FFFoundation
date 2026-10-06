@@ -77,37 +77,12 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation4DiffV7Elementq_mfp",
               "text" : "Element"
             },
             {
               "kind" : "text",
               "text" : ", "
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation4DiffV",
-              "text" : "Diff"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Subject"
-            },
-            {
-              "kind" : "text",
-              "text" : ", "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Element"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Diff\/Change",

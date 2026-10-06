@@ -49,14 +49,6 @@
         "text" : "GCDFuture"
       }
     ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use Swift concurrency instead",
-        "unavailable" : false
-      }
-    ],
     "remoteSource" : {
       "fileName" : "GCDFuture.swift",
       "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/GCDFuture.swift#L23"
@@ -176,8 +168,8 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/cascade(other:)-447ok",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/cascade(other:)-82d38",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-52gr1",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-5eaik",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-xzwb",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-78p8r",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-8ifqq",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/fail(with:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/flatMap(_:)-2mm32",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/flatMap(_:)-3yopr",
@@ -372,6 +364,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5awaitqd__yKs6ResultOyqd__qd_0_GRszs8SendableRd__s5ErrorRd_0_r0_lF7SuccessL_qd__mfp",
       "text" : "Success"
     }
   ],
@@ -406,6 +399,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
       "text" : "Value"
     }
   ],
@@ -457,6 +451,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -560,6 +555,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7cascade5otheryACys6ResultOyqd__qd_0_GG_tAHRszs8SendableRd__s5ErrorRd_0_r0_lF7SuccessL_qd__mfp",
       "text" : "Success"
     },
     {
@@ -568,6 +564,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7cascade5otheryACys6ResultOyqd__qd_0_GG_tAHRszs8SendableRd__s5ErrorRd_0_r0_lF7FailureL_qd_0_mfp",
       "text" : "Failure"
     },
     {
@@ -614,6 +611,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -628,7 +626,7 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/gcdfuture\/complete(with:)-52gr1"
 },
-"doc://FFFoundation/documentation/FFFoundation/GCDFuture/complete(with:)-5eaik": {
+"doc://FFFoundation/documentation/FFFoundation/GCDFuture/complete(with:)-78p8r": {
   "abstract" : [
 
   ],
@@ -696,7 +694,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " () "
     },
     {
       "kind" : "keyword",
@@ -716,6 +722,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC8complete4withScTyyts5NeverOGqd__yYaYbKYCc_ts6ResultOyqd__s5Error_pGRszs8SendableRd__lF7SuccessL_qd__mfp",
       "text" : "Success"
     },
     {
@@ -750,14 +757,14 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-5eaik",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-78p8r",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "complete(with:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/gcdfuture\/complete(with:)-5eaik"
+  "url" : "\/documentation\/fffoundation\/gcdfuture\/complete(with:)-78p8r"
 },
-"doc://FFFoundation/documentation/FFFoundation/GCDFuture/complete(with:)-xzwb": {
+"doc://FFFoundation/documentation/FFFoundation/GCDFuture/complete(with:)-8ifqq": {
   "abstract" : [
 
   ],
@@ -785,7 +792,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " () "
     },
     {
       "kind" : "keyword",
@@ -797,6 +812,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -831,12 +847,12 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-xzwb",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/GCDFuture\/complete(with:)-8ifqq",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "complete(with:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/gcdfuture\/complete(with:)-xzwb"
+  "url" : "\/documentation\/fffoundation\/gcdfuture\/complete(with:)-8ifqq"
 },
 "doc://FFFoundation/documentation/FFFoundation/GCDFuture/fail(with:)": {
   "abstract" : [
@@ -918,6 +934,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC4fail4withyqd_0__ts6ResultOyqd__qd_0_GRszs8SendableRd__s5ErrorRd_0_r0_lF7FailureL_qd_0_mfp",
       "text" : "Failure"
     },
     {
@@ -960,10 +977,19 @@
     },
     {
       "kind" : "text",
-      "text" : ">(("
+      "text" : ">("
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " ("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -989,6 +1015,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACys6ResultOyqd__s5Error_pGGACyqd__GxYbKcs8SendableRd__lF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -1006,11 +1033,20 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACys6ResultOyqd__s5Error_pGGACyqd__GxYbKcs8SendableRd__lF1TL_qd__mfp",
       "text" : "T"
     },
     {
       "kind" : "text",
-      "text" : ", any "
+      "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -1097,10 +1133,19 @@
     },
     {
       "kind" : "text",
-      "text" : ">(("
+      "text" : ">("
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " ("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACys6ResultOyqd_0_s5Error_pGGAIqd__YbKcAFyqd__sAG_pGRszs8SendableRd__sAKRd_0_r0_lF7SuccessL_qd__mfp",
       "text" : "Success"
     },
     {
@@ -1126,11 +1171,20 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACys6ResultOyqd_0_s5Error_pGGAIqd__YbKcAFyqd__sAG_pGRszs8SendableRd__sAKRd_0_r0_lF1TL_qd_0_mfp",
       "text" : "T"
     },
     {
       "kind" : "text",
-      "text" : ", any "
+      "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -1152,11 +1206,20 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACys6ResultOyqd_0_s5Error_pGGAIqd__YbKcAFyqd__sAG_pGRszs8SendableRd__sAKRd_0_r0_lF1TL_qd_0_mfp",
       "text" : "T"
     },
     {
       "kind" : "text",
-      "text" : ", any "
+      "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -1203,10 +1266,19 @@
     },
     {
       "kind" : "text",
-      "text" : ">(("
+      "text" : ">("
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " ("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1224,6 +1296,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACyqd__GAExYbcs8SendableRd__lF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -1241,6 +1314,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7flatMapyACyqd__GAExYbcs8SendableRd__lF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -1261,14 +1335,6 @@
   ],
   "deprecated" : true,
   "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "convenience"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
     {
       "kind" : "identifier",
       "text" : "init"
@@ -1324,14 +1390,6 @@
   "deprecated" : true,
   "fragments" : [
     {
-      "kind" : "keyword",
-      "text" : "convenience"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
       "kind" : "identifier",
       "text" : "init"
     },
@@ -1365,6 +1423,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5errorACys6ResultOyqd__qd_0_GGqd_0__tcAGRszs8SendableRd__s5ErrorRd_0_r0_lufc7FailureL_qd_0_mfp",
       "text" : "Failure"
     },
     {
@@ -1386,14 +1445,6 @@
   "deprecated" : true,
   "fragments" : [
     {
-      "kind" : "keyword",
-      "text" : "convenience"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
       "kind" : "identifier",
       "text" : "init"
     },
@@ -1411,6 +1462,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1464,14 +1516,6 @@
   "deprecated" : true,
   "fragments" : [
     {
-      "kind" : "keyword",
-      "text" : "convenience"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
       "kind" : "identifier",
       "text" : "init"
     },
@@ -1505,6 +1549,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5valueACys6ResultOyqd__qd_0_GGqd___tcAGRszs8SendableRd__s5ErrorRd_0_r0_lufc7SuccessL_qd__mfp",
       "text" : "Success"
     },
     {
@@ -1595,10 +1640,19 @@
     },
     {
       "kind" : "text",
-      "text" : ">(("
+      "text" : ">("
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " ("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACys6ResultOyqd_1_s5Error_pGGqd_1_qd__YbKcAFyqd__qd_0_GRszs8SendableRd__sAGRd_0_sAKRd_1_r1_lF7SuccessL_qd__mfp",
       "text" : "Success"
     },
     {
@@ -1615,6 +1669,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACys6ResultOyqd_1_s5Error_pGGqd_1_qd__YbKcAFyqd__qd_0_GRszs8SendableRd__sAGRd_0_sAKRd_1_r1_lF1TL_qd_1_mfp",
       "text" : "T"
     },
     {
@@ -1632,11 +1687,20 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACys6ResultOyqd_1_s5Error_pGGqd_1_qd__YbKcAFyqd__qd_0_GRszs8SendableRd__sAGRd_0_sAKRd_1_r1_lF1TL_qd_1_mfp",
       "text" : "T"
     },
     {
       "kind" : "text",
-      "text" : ", any "
+      "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -1683,10 +1747,19 @@
     },
     {
       "kind" : "text",
-      "text" : ">(("
+      "text" : ">("
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " ("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1695,6 +1768,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACyqd__Gqd__xYbcs8SendableRd__lF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -1712,6 +1786,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACyqd__Gqd__xYbcs8SendableRd__lF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -1754,10 +1829,19 @@
     },
     {
       "kind" : "text",
-      "text" : ">(("
+      "text" : ">("
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " ("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1774,6 +1858,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACys6ResultOyqd__s5Error_pGGqd__xYbKcs8SendableRd__lF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -1791,11 +1876,20 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC3mapyACys6ResultOyqd__s5Error_pGGqd__xYbKcs8SendableRd__lF1TL_qd__mfp",
       "text" : "T"
     },
     {
       "kind" : "text",
-      "text" : ", any "
+      "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -1890,10 +1984,19 @@
     },
     {
       "kind" : "text",
-      "text" : ": ("
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " ("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7onError2doyyqd_0_Ybc_ts6ResultOyqd__qd_0_GRszs8SendableRd__s0D0Rd_0_r0_lF7FailureL_qd_0_mfp",
       "text" : "Failure"
     },
     {
@@ -1984,10 +2087,19 @@
     },
     {
       "kind" : "text",
-      "text" : ": ("
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " ("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC9onSuccess2doyyqd__Ybc_ts6ResultOyqd__qd_0_GRszs8SendableRd__s5ErrorRd_0_r0_lF0D0L_qd__mfp",
       "text" : "Success"
     },
     {
@@ -2082,6 +2194,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC7succeed4withyqd___ts6ResultOyqd__qd_0_GRszs8SendableRd__s5ErrorRd_0_r0_lF7SuccessL_qd__mfp",
       "text" : "Success"
     },
     {
@@ -2176,6 +2289,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC4waitqd__yKs6ResultOyqd__qd_0_GRszs8SendableRd__s5ErrorRd_0_r0_lF7SuccessL_qd__mfp",
       "text" : "Success"
     }
   ],
@@ -2210,6 +2324,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC5Valuexmfp",
       "text" : "Value"
     }
   ],
@@ -2249,23 +2364,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC",
-      "text" : "GCDFuture"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",

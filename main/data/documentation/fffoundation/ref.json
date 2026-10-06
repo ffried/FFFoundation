@@ -113,6 +113,7 @@
         "doc:\/\/FFFoundation\/Se",
         "doc:\/\/FFFoundation\/SE",
         "doc:\/\/FFFoundation\/SQ",
+        "doc:\/\/FFFoundation\/s9EscapableP",
         "doc:\/\/FFFoundation\/s27ExpressibleByBooleanLiteralP",
         "doc:\/\/FFFoundation\/s43ExpressibleByExtendedGraphemeClusterLiteralP",
         "doc:\/\/FFFoundation\/s25ExpressibleByFloatLiteralP",
@@ -479,14 +480,6 @@
   },
   "fragments" : [
     {
-      "kind" : "keyword",
-      "text" : "convenience"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
       "kind" : "identifier",
       "text" : "init"
     },
@@ -533,6 +526,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation3RefC10Referencedxmfp",
       "text" : "Referenced"
     },
     {
@@ -579,6 +573,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation3RefC10Referencedxmfp",
       "text" : "Referenced"
     },
     {
@@ -616,6 +611,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation3RefC10Referencedxmfp",
       "text" : "Referenced"
     }
   ],
@@ -700,6 +696,11 @@
 "doc://FFFoundation/s8CopyableP": {
   "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
   "title" : "Swift.Copyable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s9EscapableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s9EscapableP",
+  "title" : "Swift.Escapable",
   "type" : "unresolvable"
 }
 }

@@ -13,7 +13,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:12FFFoundation5TimerC5Blocka",
+    "externalID" : "s:12FFFoundation5TimerCAARi_zrlE5Blocka",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -83,15 +83,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "T"
-            },
-            {
-              "kind" : "text",
-              "text" : ">) -> ()"
+              "text" : ") -> ()"
             }
           ]
         }

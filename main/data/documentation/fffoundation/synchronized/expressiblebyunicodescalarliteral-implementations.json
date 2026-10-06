@@ -134,14 +134,6 @@
   },
   "fragments" : [
     {
-      "kind" : "keyword",
-      "text" : "convenience"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
       "kind" : "identifier",
       "text" : "init"
     },
@@ -159,6 +151,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation12SynchronizedCAAs33ExpressibleByUnicodeScalarLiteralRzlE7Guardedxmfp",
       "text" : "Guarded"
     },
     {

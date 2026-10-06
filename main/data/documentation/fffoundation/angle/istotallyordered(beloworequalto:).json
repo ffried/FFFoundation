@@ -50,6 +50,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
         "text" : "Value"
       },
       {
@@ -131,6 +132,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
               "text" : "Value"
             },
             {
@@ -252,6 +254,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5AngleV5Valuexmfp",
       "text" : "Value"
     },
     {

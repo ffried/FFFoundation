@@ -33,6 +33,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation4DiffV7Subjectxmfp",
         "text" : "Subject"
       }
     ],
@@ -79,6 +80,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation4DiffV7Subjectxmfp",
               "text" : "Subject"
             }
           ]
@@ -174,6 +176,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4DiffV7Subjectxmfp",
       "text" : "Subject"
     }
   ],

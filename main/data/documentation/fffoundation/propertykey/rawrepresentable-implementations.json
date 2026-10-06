@@ -43,7 +43,8 @@
       "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/hashValue"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/hashValue",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/rawAttachmentValueRepresentation"
       ],
       "title" : "Instance Properties"
     },
@@ -55,6 +56,14 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/hash(into:)"
       ],
       "title" : "Instance Methods"
+    },
+    {
+      "anchor" : "Type-Methods",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/makeFromRawAttachmentValue(_:)"
+      ],
+      "title" : "Type Methods"
     }
   ],
   "variants" : [
@@ -115,30 +124,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/PropertyKey/encode(to:)": {
   "abstract" : [
-    {
-      "text" : "Encodes this value into the given encoder, when the type’s ",
-      "type" : "text"
-    },
-    {
-      "code" : "RawValue",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is ",
-      "type" : "text"
-    },
-    {
-      "code" : "String",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -420,34 +406,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/PropertyKey/init(from:)": {
   "abstract" : [
-    {
-      "text" : "Creates a new instance by decoding from the given decoder, when the",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "type’s ",
-      "type" : "text"
-    },
-    {
-      "code" : "RawValue",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " is ",
-      "type" : "text"
-    },
-    {
-      "code" : "String",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -534,6 +493,158 @@
   "title" : "init(from:)",
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/propertykey\/init(from:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/PropertyKey/makeFromRawAttachmentValue(_:)": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "RawValue",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "CVAttachmentValueRepresentable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "makeFromRawAttachmentValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9CoreVideo20CVAttachmentRawValueV",
+      "text" : "CVAttachmentRawValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/makeFromRawAttachmentValue(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "makeFromRawAttachmentValue(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/propertykey\/makefromrawattachmentvalue(_:)"
+},
+"doc://FFFoundation/documentation/FFFoundation/PropertyKey/rawAttachmentValueRepresentation": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "RawValue",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "CVAttachmentValueRepresentable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "rawAttachmentValueRepresentation"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9CoreVideo20CVAttachmentRawValueV",
+      "text" : "CVAttachmentRawValue"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/rawAttachmentValueRepresentation",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "rawAttachmentValueRepresentation",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/propertykey\/rawattachmentvaluerepresentation"
 }
 }
 }

@@ -51,10 +51,19 @@
       },
       {
         "kind" : "text",
-        "text" : ": () -> "
+        "text" : ": "
+      },
+      {
+        "kind" : "attribute",
+        "text" : "@Sendable"
+      },
+      {
+        "kind" : "text",
+        "text" : " () -> "
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation4LensV5Valuexmfp",
         "text" : "Value"
       },
       {
@@ -65,18 +74,6 @@
         "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12FFFoundation4LensV",
         "text" : "Lens"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Value"
-      },
-      {
-        "kind" : "text",
-        "text" : ">"
       }
     ],
     "modules" : [
@@ -138,14 +135,23 @@
             },
             {
               "kind" : "attribute",
-              "text" : "@escaping "
+              "text" : "@escaping"
             },
             {
               "kind" : "text",
-              "text" : "() -> "
+              "text" : " "
+            },
+            {
+              "kind" : "attribute",
+              "text" : "@Sendable"
+            },
+            {
+              "kind" : "text",
+              "text" : " () -> "
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation4LensV5Valuexmfp",
               "text" : "Value"
             },
             {
@@ -157,18 +163,6 @@
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:12FFFoundation4LensV",
               "text" : "Lens"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">"
             }
           ]
         }
@@ -297,10 +291,19 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LensV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -311,18 +314,6 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation4LensV",
       "text" : "Lens"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lens\/readOnly(getter:)",

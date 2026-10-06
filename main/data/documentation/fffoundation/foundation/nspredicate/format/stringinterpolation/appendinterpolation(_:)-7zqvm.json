@@ -44,6 +44,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV06appendE0yyxSgSFRzlF5FloatL_xmfp",
         "text" : "Float"
       },
       {
@@ -126,6 +127,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV06appendE0yyxSgSFRzlF5FloatL_xmfp",
               "text" : "Float"
             },
             {
@@ -328,6 +330,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11NSPredicateC12FFFoundationE6FormatV19StringInterpolationV06appendE0yyxSgSFRzlF5FloatL_xmfp",
       "text" : "Float"
     },
     {

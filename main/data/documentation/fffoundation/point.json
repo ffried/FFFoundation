@@ -141,6 +141,7 @@
         "doc:\/\/FFFoundation\/Se",
         "doc:\/\/FFFoundation\/SE",
         "doc:\/\/FFFoundation\/SQ",
+        "doc:\/\/FFFoundation\/s9EscapableP",
         "doc:\/\/FFFoundation\/SH",
         "doc:\/\/FFFoundation\/s8SendableP",
         "doc:\/\/FFFoundation\/s16SendableMetatypeP",
@@ -316,6 +317,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5PointV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -332,6 +334,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5PointV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -369,6 +372,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5PointV5Valuexmfp",
       "text" : "Value"
     }
   ],
@@ -402,6 +406,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5PointV5Valuexmfp",
       "text" : "Value"
     }
   ],
@@ -485,18 +490,6 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation5PointV",
       "text" : "Point"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Point\/zero",
@@ -582,6 +575,11 @@
 "doc://FFFoundation/s8SendableP": {
   "identifier" : "doc:\/\/FFFoundation\/s8SendableP",
   "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+},
+"doc://FFFoundation/s9EscapableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s9EscapableP",
+  "title" : "Swift.Escapable",
   "type" : "unresolvable"
 }
 }

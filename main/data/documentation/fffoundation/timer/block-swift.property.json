@@ -13,7 +13,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:12FFFoundation5TimerC5blockyyACyxGcvp",
+    "externalID" : "s:12FFFoundation5TimerCAARi_zrlE5blockyyACyxGcvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -33,24 +33,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation5TimerC",
-        "text" : "Timer"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "T"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation5TimerC5Blocka",
+        "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE5Blocka",
         "text" : "Block"
       }
     ],
@@ -96,27 +79,9 @@
               "text" : ": "
             },
             {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Timer",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation5TimerC",
-              "text" : "Timer"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "T"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
-            },
-            {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Timer\/Block-swift.typealias",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation5TimerC5Blocka",
+              "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE5Blocka",
               "text" : "Block"
             }
           ]
@@ -243,24 +208,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5TimerC",
-      "text" : "Timer"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5TimerC5Blocka",
+      "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE5Blocka",
       "text" : "Block"
     }
   ],

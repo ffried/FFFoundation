@@ -33,6 +33,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation4LazyV8Deferredxmfp",
         "text" : "Deferred"
       },
       {
@@ -83,14 +84,15 @@
             },
             {
               "kind" : "attribute",
-              "text" : "@escaping "
+              "text" : "@escaping"
             },
             {
               "kind" : "text",
-              "text" : "() -> "
+              "text" : " () -> "
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation4LazyV8Deferredxmfp",
               "text" : "Deferred"
             },
             {
@@ -190,6 +192,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4LazyV8Deferredxmfp",
       "text" : "Deferred"
     },
     {

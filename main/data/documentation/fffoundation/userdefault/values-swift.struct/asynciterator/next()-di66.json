@@ -1,42 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "Default implementation of ",
-      "type" : "text"
-    },
-    {
-      "code" : "next()",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " in terms of ",
-      "type" : "text"
-    },
-    {
-      "code" : "next(isolation:)",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ", which",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is required to maintain backward compatibility with existing async",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "iterators.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -137,6 +99,20 @@
         "deprecated" : false,
         "introducedAt" : "18.0",
         "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "18.0",
+        "name" : "iPadOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "18.0",
+        "name" : "Mac Catalyst",
         "unavailable" : false
       },
       {
@@ -432,42 +408,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/AsyncIterator/next()-di66": {
   "abstract" : [
-    {
-      "text" : "Default implementation of ",
-      "type" : "text"
-    },
-    {
-      "code" : "next()",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " in terms of ",
-      "type" : "text"
-    },
-    {
-      "code" : "next(isolation:)",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ", which",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is required to maintain backward compatibility with existing async",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "iterators.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

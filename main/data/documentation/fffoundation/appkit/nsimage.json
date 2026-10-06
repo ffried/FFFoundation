@@ -83,7 +83,7 @@
     {
       "identifiers" : [
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Cachable",
-        "doc:\/\/FFFoundation\/s8CopyableP",
+        "doc:\/\/FFFoundation\/s9EscapableP",
         "doc:\/\/FFFoundation\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
@@ -224,9 +224,9 @@
   "title" : "Swift.SendableMetatype",
   "type" : "unresolvable"
 },
-"doc://FFFoundation/s8CopyableP": {
-  "identifier" : "doc:\/\/FFFoundation\/s8CopyableP",
-  "title" : "Swift.Copyable",
+"doc://FFFoundation/s9EscapableP": {
+  "identifier" : "doc:\/\/FFFoundation\/s9EscapableP",
+  "title" : "Swift.Escapable",
   "type" : "unresolvable"
 }
 }

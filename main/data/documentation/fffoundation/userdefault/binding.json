@@ -86,6 +86,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation11UserDefaultV5Valuexmfp",
         "text" : "Value"
       },
       {
@@ -109,6 +110,20 @@
       {
         "beta" : false,
         "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iPadOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "Mac Catalyst",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
         "introducedAt" : "10.15",
         "name" : "macOS",
         "unavailable" : false
@@ -126,17 +141,11 @@
         "introducedAt" : "6.0",
         "name" : "watchOS",
         "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use SwiftUI.AppStorage or SwiftUI.SceneStorage instead",
-        "unavailable" : false
       }
     ],
     "remoteSource" : {
       "fileName" : "UserDefault.swift",
-      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefault.swift#L311"
+      "url" : "https:\/\/github.com\/ffried\/FFFoundation\/blob\/refs\/heads\/main\/Sources\/FFFoundation\/Containers\/UserDefault.swift#L312"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
@@ -181,6 +190,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation11UserDefaultV5Valuexmfp",
               "text" : "Value"
             },
             {
@@ -330,6 +340,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation11UserDefaultV5Valuexmfp",
       "text" : "Value"
     },
     {

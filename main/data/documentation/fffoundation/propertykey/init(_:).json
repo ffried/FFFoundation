@@ -25,15 +25,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation11PropertyKeyV",
-        "text" : "PropertyKey"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12FFFoundation11PropertyKeyV8RawValuea",
         "text" : "RawValue"
       },
@@ -90,16 +81,6 @@
             {
               "kind" : "text",
               "text" : ": "
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation11PropertyKeyV",
-              "text" : "PropertyKey"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/PropertyKey\/RawValue-swift.typealias",
@@ -224,15 +205,6 @@
     {
       "kind" : "text",
       "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation11PropertyKeyV",
-      "text" : "PropertyKey"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

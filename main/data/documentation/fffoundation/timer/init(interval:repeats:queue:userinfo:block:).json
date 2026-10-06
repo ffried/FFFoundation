@@ -13,7 +13,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:12FFFoundation5TimerC8interval7repeats5queue8userInfo5blockACyxGSd_SbSo012OS_dispatch_E0CxSgyAIctcfc",
+    "externalID" : "s:12FFFoundation5TimerCAARi_zrlE8interval7repeats5queue8userInfo5blockACyxGSd_SbSo012OS_dispatch_E0CxSgyAIctcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -83,7 +83,16 @@
         "text" : ": "
       },
       {
+        "kind" : "keyword",
+        "text" : "consuming"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE1Txmfp",
         "text" : "T"
       },
       {
@@ -100,24 +109,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation5TimerC",
-        "text" : "Timer"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "T"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation5TimerC5Blocka",
+        "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE5Blocka",
         "text" : "Block"
       },
       {
@@ -218,7 +210,16 @@
               "text" : ": "
             },
             {
+              "kind" : "keyword",
+              "text" : "consuming"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE1Txmfp",
               "text" : "T"
             },
             {
@@ -235,30 +236,16 @@
             },
             {
               "kind" : "attribute",
-              "text" : "@escaping "
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Timer",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation5TimerC",
-              "text" : "Timer"
+              "text" : "@escaping"
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "T"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
+              "text" : " "
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Timer\/Block-swift.typealias",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation5TimerC5Blocka",
+              "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE5Blocka",
               "text" : "Block"
             },
             {
@@ -439,7 +426,16 @@
       "text" : ": "
     },
     {
+      "kind" : "keyword",
+      "text" : "consuming"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE1Txmfp",
       "text" : "T"
     },
     {
@@ -456,24 +452,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5TimerC",
-      "text" : "Timer"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation5TimerC5Blocka",
+      "preciseIdentifier" : "s:12FFFoundation5TimerCAARi_zrlE5Blocka",
       "text" : "Block"
     },
     {

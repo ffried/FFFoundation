@@ -97,10 +97,19 @@
       },
       {
         "kind" : "text",
-        "text" : ": ("
+        "text" : ": "
+      },
+      {
+        "kind" : "attribute",
+        "text" : "@Sendable"
+      },
+      {
+        "kind" : "text",
+        "text" : " ("
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation9GCDFutureC9onSuccess2doyyqd__Ybc_ts6ResultOyqd__qd_0_GRszs8SendableRd__s5ErrorRd_0_r0_lF0D0L_qd__mfp",
         "text" : "Success"
       },
       {
@@ -111,14 +120,6 @@
     "modules" : [
       {
         "name" : "FFFoundation"
-      }
-    ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use Swift concurrency instead",
-        "unavailable" : false
       }
     ],
     "remoteSource" : {
@@ -191,14 +192,23 @@
             },
             {
               "kind" : "attribute",
-              "text" : "@escaping "
+              "text" : "@escaping"
             },
             {
               "kind" : "text",
-              "text" : "("
+              "text" : " "
+            },
+            {
+              "kind" : "attribute",
+              "text" : "@Sendable"
+            },
+            {
+              "kind" : "text",
+              "text" : " ("
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation9GCDFutureC9onSuccess2doyyqd__Ybc_ts6ResultOyqd__qd_0_GRszs8SendableRd__s5ErrorRd_0_r0_lF0D0L_qd__mfp",
               "text" : "Success"
             },
             {
@@ -423,10 +433,19 @@
     },
     {
       "kind" : "text",
-      "text" : ": ("
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " ("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation9GCDFutureC9onSuccess2doyyqd__Ybc_ts6ResultOyqd__qd_0_GRszs8SendableRd__s5ErrorRd_0_r0_lF0D0L_qd__mfp",
       "text" : "Success"
     },
     {

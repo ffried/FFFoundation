@@ -38,15 +38,7 @@
       },
       {
         "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Deferred"
-      },
-      {
-        "kind" : "text",
-        "text" : ">)"
+        "text" : ")"
       }
     ],
     "modules" : [
@@ -98,15 +90,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Deferred"
-            },
-            {
-              "kind" : "text",
-              "text" : ">)"
+              "text" : ")"
             }
           ]
         }
@@ -206,15 +190,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Deferred"
-    },
-    {
-      "kind" : "text",
-      "text" : ">)"
+      "text" : ")"
     }
   ],
   "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Lazy\/init(other:)",

@@ -58,14 +58,27 @@
       },
       {
         "kind" : "text",
-        "text" : ": () -> "
+        "text" : ": "
+      },
+      {
+        "kind" : "attribute",
+        "text" : "@Sendable"
+      },
+      {
+        "kind" : "text",
+        "text" : " () -> "
       },
       {
         "kind" : "keyword",
-        "text" : "sending "
+        "text" : "sending"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:So17OS_dispatch_queueC12FFFoundationE8asFuture2doAC9GCDFutureCyxGxyYbYTc_ts8SendableRzlF1TL_xmfp",
         "text" : "T"
       },
       {
@@ -83,6 +96,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:So17OS_dispatch_queueC12FFFoundationE8asFuture2doAC9GCDFutureCyxGxyYbYTc_ts8SendableRzlF1TL_xmfp",
         "text" : "T"
       },
       {
@@ -96,14 +110,6 @@
         "relatedModules" : [
           "Dispatch"
         ]
-      }
-    ],
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : true,
-        "message" : "Use Swift concurrency instead",
-        "unavailable" : false
       }
     ],
     "remoteSource" : {
@@ -176,18 +182,31 @@
             },
             {
               "kind" : "attribute",
-              "text" : "@escaping "
+              "text" : "@escaping"
             },
             {
               "kind" : "text",
-              "text" : "() -> "
+              "text" : " "
+            },
+            {
+              "kind" : "attribute",
+              "text" : "@Sendable"
+            },
+            {
+              "kind" : "text",
+              "text" : " () -> "
             },
             {
               "kind" : "keyword",
-              "text" : "sending "
+              "text" : "sending"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:So17OS_dispatch_queueC12FFFoundationE8asFuture2doAC9GCDFutureCyxGxyYbYTc_ts8SendableRzlF1TL_xmfp",
               "text" : "T"
             },
             {
@@ -206,6 +225,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:So17OS_dispatch_queueC12FFFoundationE8asFuture2doAC9GCDFutureCyxGxyYbYTc_ts8SendableRzlF1TL_xmfp",
               "text" : "T"
             },
             {
@@ -351,14 +371,27 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : " () -> "
     },
     {
       "kind" : "keyword",
-      "text" : "sending "
+      "text" : "sending"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So17OS_dispatch_queueC12FFFoundationE8asFuture2doAC9GCDFutureCyxGxyYbYTc_ts8SendableRzlF1TL_xmfp",
       "text" : "T"
     },
     {
@@ -376,6 +409,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So17OS_dispatch_queueC12FFFoundationE8asFuture2doAC9GCDFutureCyxGxyYbYTc_ts8SendableRzlF1TL_xmfp",
       "text" : "T"
     },
     {

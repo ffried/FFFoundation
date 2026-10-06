@@ -203,42 +203,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/AsyncIterator/next()-di66": {
   "abstract" : [
-    {
-      "text" : "Default implementation of ",
-      "type" : "text"
-    },
-    {
-      "code" : "next()",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " in terms of ",
-      "type" : "text"
-    },
-    {
-      "code" : "next(isolation:)",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ", which",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is required to maintain backward compatibility with existing async",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "iterators.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -317,42 +282,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/UserDefault/Values-swift.struct/AsyncIterator/next(isolation:)-7w8gm": {
   "abstract" : [
-    {
-      "text" : "Default implementation of ",
-      "type" : "text"
-    },
-    {
-      "code" : "next(isolation:)",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " in terms of ",
-      "type" : "text"
-    },
-    {
-      "code" : "next()",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ", which",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is required to maintain backward compatibility with existing async",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "iterators.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

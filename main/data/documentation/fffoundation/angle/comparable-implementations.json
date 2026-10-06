@@ -40,11 +40,9 @@
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/...(_:_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/.._(_:)",
         "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/.._(_:_:)",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_(_:_:)-2vo6",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_(_:_:)-3iaps",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_(_:_:)-9x37y",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_=(_:_:)-5850s",
-        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_=(_:_:)-90fqg"
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_(_:_:)-8ukyf",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_=(_:_:)-1jr5q",
+        "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_=(_:_:)-26y5c"
       ],
       "title" : "Operators"
     }
@@ -107,10 +105,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/...(_:)-4lq4i": {
   "abstract" : [
-    {
-      "text" : "Returns a partial range up to, and including, its upper bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -176,10 +171,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/...(_:)-72d04": {
   "abstract" : [
-    {
-      "text" : "Returns a partial range extending upward from a lower bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -245,10 +237,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/...(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a closed range that contains both of its bounds.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -322,10 +311,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/.._(_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a partial range up to, but not including, its upper bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -391,18 +377,7 @@
 },
 "doc://FFFoundation/documentation/FFFoundation/Angle/.._(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a half-open range that contains its lower bound but not its upper",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "bound.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -474,20 +449,9 @@
   "type" : "topic",
   "url" : "\/documentation\/fffoundation\/angle\/'.._(_:_:)"
 },
-"doc://FFFoundation/documentation/FFFoundation/Angle/_(_:_:)-2vo6": {
+"doc://FFFoundation/documentation/FFFoundation/Angle/_(_:_:)-8ukyf": {
   "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether the value of the first argument",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is greater than that of the second argument.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -519,12 +483,28 @@
       "text" : "("
     },
     {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
       "kind" : "typeIdentifier",
       "text" : "Self"
     },
     {
       "kind" : "text",
       "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -540,224 +520,16 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_(_:_:)-2vo6",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_(_:_:)-8ukyf",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : ">(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/_(_:_:)-2vo6"
+  "url" : "\/documentation\/fffoundation\/angle\/_(_:_:)-8ukyf"
 },
-"doc://FFFoundation/documentation/FFFoundation/Angle/_(_:_:)-3iaps": {
+"doc://FFFoundation/documentation/FFFoundation/Angle/_=(_:_:)-1jr5q": {
   "abstract" : [
 
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "<"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_(_:_:)-3iaps",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "<(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/_(_:_:)-3iaps"
-},
-"doc://FFFoundation/documentation/FFFoundation/Angle/_(_:_:)-9x37y": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "<"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_(_:_:)-9x37y",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "<(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/_(_:_:)-9x37y"
-},
-"doc://FFFoundation/documentation/FFFoundation/Angle/_=(_:_:)-5850s": {
-  "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether the value of the first argument",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is less than or equal to that of the second argument.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "<="
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_=(_:_:)-5850s",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "<=(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/_=(_:_:)-5850s"
-},
-"doc://FFFoundation/documentation/FFFoundation/Angle/_=(_:_:)-90fqg": {
-  "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether the value of the first argument",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "is greater than or equal to that of the second argument.",
-      "type" : "text"
-    }
   ],
   "fragments" : [
     {
@@ -789,12 +561,28 @@
       "text" : "("
     },
     {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
       "kind" : "typeIdentifier",
       "text" : "Self"
     },
     {
       "kind" : "text",
       "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -810,12 +598,90 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_=(_:_:)-90fqg",
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_=(_:_:)-1jr5q",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : ">=(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/fffoundation\/angle\/_=(_:_:)-90fqg"
+  "url" : "\/documentation\/fffoundation\/angle\/_=(_:_:)-1jr5q"
+},
+"doc://FFFoundation/documentation/FFFoundation/Angle/_=(_:_:)-26y5c": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "<="
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "borrowing"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Angle\/_=(_:_:)-26y5c",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "<=(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fffoundation\/angle\/_=(_:_:)-26y5c"
 }
 }
 }

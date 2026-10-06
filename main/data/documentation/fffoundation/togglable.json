@@ -69,6 +69,10 @@
             {
               "kind" : "identifier",
               "text" : "Togglable"
+            },
+            {
+              "kind" : "text",
+              "text" : " : ~Copyable"
             }
           ]
         }

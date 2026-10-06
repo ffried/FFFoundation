@@ -37,23 +37,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation8TriangleV",
-        "text" : "Triangle"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Point"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12FFFoundation8TriangleV5Anglea",
         "text" : "Angle"
       },
@@ -67,23 +50,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation8TriangleV",
-        "text" : "Triangle"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Point"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12FFFoundation8TriangleV5Anglea",
         "text" : "Angle"
       },
@@ -94,23 +60,6 @@
       {
         "kind" : "text",
         "text" : ": "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:12FFFoundation8TriangleV",
-        "text" : "Triangle"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Point"
-      },
-      {
-        "kind" : "text",
-        "text" : ">."
       },
       {
         "kind" : "typeIdentifier",
@@ -168,24 +117,6 @@
               "text" : ": "
             },
             {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation8TriangleV",
-              "text" : "Triangle"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Point"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
-            },
-            {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle\/Angle",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:12FFFoundation8TriangleV5Anglea",
@@ -200,24 +131,6 @@
               "text" : ": "
             },
             {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation8TriangleV",
-              "text" : "Triangle"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Point"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
-            },
-            {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle\/Angle",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:12FFFoundation8TriangleV5Anglea",
@@ -230,24 +143,6 @@
             {
               "kind" : "text",
               "text" : ": "
-            },
-            {
-              "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:12FFFoundation8TriangleV",
-              "text" : "Triangle"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Point"
-            },
-            {
-              "kind" : "text",
-              "text" : ">."
             },
             {
               "identifier" : "doc:\/\/FFFoundation\/documentation\/FFFoundation\/Triangle\/Angle",
@@ -387,23 +282,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation8TriangleV",
-      "text" : "Triangle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Point"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation8TriangleV5Anglea",
       "text" : "Angle"
     },
@@ -417,23 +295,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation8TriangleV",
-      "text" : "Triangle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Point"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12FFFoundation8TriangleV5Anglea",
       "text" : "Angle"
     },
@@ -444,23 +305,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12FFFoundation8TriangleV",
-      "text" : "Triangle"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Point"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",

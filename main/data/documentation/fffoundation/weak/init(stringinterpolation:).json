@@ -66,6 +66,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12FFFoundation4WeakVAAs32ExpressibleByStringInterpolationRzrlE6Objectxmfp",
         "text" : "Object"
       },
       {
@@ -125,6 +126,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12FFFoundation4WeakVAAs32ExpressibleByStringInterpolationRzrlE6Objectxmfp",
               "text" : "Object"
             },
             {
@@ -265,6 +267,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12FFFoundation4WeakVAAs32ExpressibleByStringInterpolationRzrlE6Objectxmfp",
       "text" : "Object"
     },
     {
